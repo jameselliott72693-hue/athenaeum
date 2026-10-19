@@ -1,0 +1,136 @@
+{
+  "id": "keynes",
+  "name": "John Maynard Keynes",
+  "years": "1883\u20131946",
+  "place": "Cambridge",
+  "epithet": "Treaties, prices, and employment",
+  "dossier": "Cambridge economist and Treasury man. The Economic Consequences of the Peace (1919) and A Tract on Monetary Reform (1923) are quoted below; both are in the public domain in the United States. The General Theory of Employment, Interest and Money (1936) is still in copyright: that card is a summary and a bibliographic link, not a quotation.",
+  "tableId": "modern",
+  "tables": [
+    "modern"
+  ],
+  "portrait": "images/keynes.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      392,
+      494,
+      587
+    ]
+  },
+  "voice": "I ask what this does to prices, work, and the peace of Europe.",
+  "works": [
+    {
+      "title": "The Economic Consequences of the Peace",
+      "url": "https://www.gutenberg.org/ebooks/15776",
+      "note": "1919. Public domain."
+    },
+    {
+      "title": "A Tract on Monetary Reform",
+      "url": "https://www.gutenberg.org/ebooks/65278",
+      "note": "1923. Public domain."
+    },
+    {
+      "title": "The General Theory of Employment, Interest and Money",
+      "url": "https://archive.org/details/in.ernet.dli.2015.115101",
+      "note": "1936. Still in copyright. Bibliographic record only; nothing from it is quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "justice",
+        "society"
+      ],
+      "claim": "The policy of reducing Germany to servitude for a generation, of degrading the lives of millions of human beings, and of depriving a whole nation of happiness should be abhorrent and detestable,--abhorrent and detestable, even if it were possible, even if it enriched ourselves, even if it did not sow the decay of the whole civilized life of Europe.",
+      "press": "against",
+      "work": "The Economic Consequences of the Peace",
+      "loc": "Chapter 4, The treaty",
+      "url": "https://www.gutenberg.org/ebooks/15776",
+      "bears": "He rejects a settlement that would degrade a whole nation, even if it paid.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "power"
+      ],
+      "claim": "But, if ever the action of a single individual matters, the collapse of The President has been one of the decisive moral events of history; and I must make an attempt to explain it.",
+      "press": "qualifies",
+      "work": "The Economic Consequences of the Peace",
+      "loc": "Chapter 3, The conference",
+      "url": "https://www.gutenberg.org/ebooks/15776",
+      "bears": "He treats Wilson's failure at the conference as a moral event, not only a diplomatic one.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "society"
+      ],
+      "claim": "In truth, the gold standard is already a barbarous relic.",
+      "press": "against",
+      "work": "A Tract on Monetary Reform",
+      "loc": "Chapter 4, Alternative aims in monetary policy",
+      "url": "https://www.gutenberg.org/ebooks/65278",
+      "bears": "He wants the standard of value managed for prices and employment, not tied to an old gold parity.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "society"
+      ],
+      "claim": "This element of risk is greatly aggravated by the instability of the standard of value.",
+      "press": "against",
+      "work": "A Tract on Monetary Reform",
+      "loc": "Preface",
+      "url": "https://www.gutenberg.org/ebooks/65278",
+      "bears": "An unstable measuring-rod of money wastes effort in risk.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "power",
+        "society"
+      ],
+      "claim": "In the General Theory he argues that a rich economy can settle into a level of employment that leaves willing workers idle, because spending need not be enough to buy what those workers could produce, and that the government may have to support demand.",
+      "press": "for",
+      "work": "The General Theory of Employment, Interest and Money",
+      "loc": "The argument of the book, summarized",
+      "url": "https://archive.org/details/in.ernet.dli.2015.115101",
+      "bears": "A summary, not a quotation. The 1936 book remains in copyright.",
+      "verbatim": false
+    }
+  ]
+}

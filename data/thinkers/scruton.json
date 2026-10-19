@@ -1,0 +1,125 @@
+{
+  "id": "scruton",
+  "name": "Roger Scruton",
+  "years": "1944\u20132020",
+  "place": "Buslingthorpe, Lincolnshire",
+  "epithet": "Attachment to a home",
+  "dossier": "English philosopher of aesthetics and politics. The Meaning of Conservatism argues that conservatism is a politics of attachment to an existing home, not a universal program. How to Be a Conservative returns to culture, beauty, and the institutions of a free society. Both books are in copyright. These cards summarize them. They are not quotations.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/scruton.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      262,
+      330,
+      392
+    ]
+  },
+  "voice": "I ask whether this is something a person could be at home in.",
+  "works": [
+    {
+      "title": "The Meaning of Conservatism",
+      "url": "https://archive.org/details/meaningofconserv00scru",
+      "note": "In copyright. Library catalog record. Not quoted."
+    },
+    {
+      "title": "How to Be a Conservative",
+      "url": "https://openlibrary.org/works/OL36033048W",
+      "note": "In copyright. Library catalog record. Not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "custom"
+      ],
+      "claim": "In The Meaning of Conservatism, Scruton argues that conservatism starts from attachment to an existing form of life, not from a doctrine that could be applied anywhere.",
+      "press": "for",
+      "work": "The Meaning of Conservatism",
+      "loc": "The opening argument",
+      "url": "https://archive.org/details/meaningofconserv00scru",
+      "bears": "A summary, not a quotation. Home, nation, and settlement come before a universal plan.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "custom",
+        "society"
+      ],
+      "claim": "He treats freedom as something that grows inside institutions \u2014 law, property, family, and a shared culture \u2014 rather than as the absence of every authority.",
+      "press": "qualifies",
+      "work": "The Meaning of Conservatism",
+      "loc": "On liberty and establishment",
+      "url": "https://archive.org/details/meaningofconserv00scru",
+      "bears": "A summary, not a quotation. Liberty without a settlement is not the good he is defending.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "culture",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "culture",
+        "society"
+      ],
+      "claim": "How to Be a Conservative defends the high culture, the religious inheritance, and the ordinary decencies of a nation as goods a politics ought to look after.",
+      "press": "for",
+      "work": "How to Be a Conservative",
+      "loc": "On culture and the sacred",
+      "url": "https://openlibrary.org/works/OL36033048W",
+      "bears": "A summary, not a quotation. Beauty and worship are part of the political argument, not hobbies beside it.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "society"
+      ],
+      "claim": "He argues that a common education initiates the young into a civilization, and that a school which refuses that task leaves them with nowhere to stand.",
+      "press": "for",
+      "work": "How to Be a Conservative",
+      "loc": "On education",
+      "url": "https://openlibrary.org/works/OL36033048W",
+      "bears": "A summary, not a quotation. Teaching is inheritance, not only a skill.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "power",
+        "custom"
+      ],
+      "claim": "He is hostile to a managerial state that treats a country as a problem to be solved by experts who need not belong to it.",
+      "press": "against",
+      "work": "The Meaning of Conservatism",
+      "loc": "On the state and the nation",
+      "url": "https://archive.org/details/meaningofconserv00scru",
+      "bears": "A summary, not a quotation. Authority, for him, should be the authority of a home, not of a plan.",
+      "verbatim": false
+    }
+  ]
+}

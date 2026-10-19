@@ -1,10 +1,10 @@
 {
   "id": "chesterton",
   "name": "G. K. Chesterton",
-  "years": "1874–1936",
+  "years": "1874\u20131936",
   "place": "London",
   "epithet": "The defender of the ordinary",
-  "dossier": "London journalist, poet, and essayist. Heretics and Orthodoxy argue that modern thought has isolated virtues until they go mad, and that tradition is the democracy of the dead — a refusal to submit to the small oligarchy of those merely walking about. What’s Wrong with the World defends the ordinary home against schemes that treat people as material to be rearranged.",
+  "dossier": "London journalist, poet, and essayist. Heretics and Orthodoxy argue that modern thought has isolated virtues until they go mad, and that tradition is the democracy of the dead \u2014 a refusal to submit to the small oligarchy of those merely walking about. What\u2019s Wrong with the World defends the ordinary home against schemes that treat people as material to be rearranged.",
   "tableId": "letters",
   "portrait": "images/chesterton.jpg",
   "sound": {
@@ -28,7 +28,7 @@
       "note": "Project Gutenberg"
     },
     {
-      "title": "What’s Wrong with the World",
+      "title": "What\u2019s Wrong with the World",
       "url": "https://www.gutenberg.org/ebooks/1717",
       "note": "Project Gutenberg"
     }
@@ -95,7 +95,7 @@
       ],
       "claim": "Representative government, the one universal relic, is a very poor fragment of the full republican idea.",
       "press": "qualifies",
-      "work": "What’s Wrong with the World",
+      "work": "What\u2019s Wrong with the World",
       "loc": "Part One, V. The Unfinished Temple",
       "url": "https://www.gutenberg.org/ebooks/1717",
       "bears": "A ballot without the public thing the revolution had actually willed is the shell of a republic."
@@ -112,7 +112,7 @@
       ],
       "claim": "The family is the only anarchist institution. It is older than law and stands outside the state. A reform that begins by rearranging the home has already mistaken the material.",
       "press": "against",
-      "work": "What’s Wrong with the World",
+      "work": "What\u2019s Wrong with the World",
       "loc": "Part One, VII. The Free Family",
       "url": "https://www.gutenberg.org/ebooks/1717",
       "bears": "He treats the household as prior to the public scheme."
@@ -143,7 +143,7 @@
       ],
       "claim": "Never was the past more venerated by men than it was by the French Revolutionists. They invoked the little republics of antiquity. Man can only find life among the dead.",
       "press": "against",
-      "work": "What’s Wrong with the World",
+      "work": "What\u2019s Wrong with the World",
       "loc": "Part One, IV. The Fear of the Past",
       "url": "https://www.gutenberg.org/ebooks/1717",
       "bears": "Even a revolution plants itself in some earlier picture of a common life. A start from nothing is a myth."
@@ -176,7 +176,7 @@
       ],
       "claim": "There are two things, and two things only, for the human mind, a dogma and a prejudice. A doctrine is a definite point; a prejudice is a direction.",
       "press": "qualifies",
-      "work": "What’s Wrong with the World",
+      "work": "What\u2019s Wrong with the World",
       "loc": "Part One, III. The New Hypocrite",
       "url": "https://www.gutenberg.org/ebooks/1717",
       "bears": "A school that will not name its creed has not escaped doctrine. It has only refused to say which point the mind is being given."
@@ -193,7 +193,7 @@
       ],
       "claim": "Property is merely the art of the democracy. It means that every man should have something that he can shape in his own image, as he is shaped in the image of heaven.",
       "press": "qualifies",
-      "work": "What’s Wrong with the World",
+      "work": "What\u2019s Wrong with the World",
       "loc": "Part One, VI. The Enemies of Property",
       "url": "https://www.gutenberg.org/ebooks/1717",
       "bears": "He wants property widely held, not abolished and not concentrated."
@@ -229,5 +229,8 @@
       "url": "https://www.gutenberg.org/ebooks/16769",
       "bears": "A single explanation, pressed past its measure, is a kind of insanity."
     }
+  ],
+  "tables": [
+    "letters"
   ]
 }

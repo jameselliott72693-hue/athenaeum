@@ -1,7 +1,7 @@
 {
   "id": "mill",
   "name": "John Stuart Mill",
-  "years": "1806–1873",
+  "years": "1806\u20131873",
   "place": "London",
   "epithet": "The defender of experiments in living",
   "dossier": "English philosopher and Member of Parliament. On Liberty argues against the tyranny of the majority and against society enforcing one pattern of life. Utilitarianism states the greatest-happiness principle, including the distinction of higher and lower pleasures.",
@@ -74,7 +74,7 @@
       "loc": "Chapter IV",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "claim": "The only purpose for which power can be rightfully exercised over a member of a civilized community, against his will, is to prevent harm to others. His own good is not a sufficient warrant.",
-      "bears": "The line is harm to others, not the majority’s dislike of a life."
+      "bears": "The line is harm to others, not the majority\u2019s dislike of a life."
     },
     {
       "domains": [
@@ -91,8 +91,120 @@
       "url": "https://www.gutenberg.org/ebooks/11224",
       "claim": "The creed which accepts as the foundation of morals utility, or the greatest happiness principle, holds that actions are right in proportion as they tend to promote happiness.",
       "bears": "He does have a moral standard. It is happiness, with a rank among pleasures, not the absence of any standard."
+    },
+    {
+      "topics": [
+        "liberty",
+        "power",
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "moral"
+      ],
+      "claim": "That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others.",
+      "press": "against",
+      "work": "On Liberty",
+      "loc": "Chapter I, Introductory",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "bears": "Coercion of a competent adult needs the prevention of harm to other people.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "moral"
+      ],
+      "claim": "His own good, either physical or moral, is not a sufficient warrant.",
+      "press": "against",
+      "work": "On Liberty",
+      "loc": "Chapter I, Introductory",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "bears": "A person's own good does not by itself justify forcing him.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "society",
+        "moral"
+      ],
+      "claim": "As it is useful that while mankind are imperfect there should be different opinions, so is it that there should be different experiments of living; that free scope should be given to varieties of character, short of injury to others; and that the worth of different modes of life should be proved practically, when any one thinks fit to try them.",
+      "press": "for",
+      "work": "On Liberty",
+      "loc": "Chapter III, Of individuality",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "bears": "Different ways of living are how an imperfect society learns, so long as others are not injured.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "custom",
+        "liberty",
+        "society"
+      ],
+      "domains": [
+        "custom",
+        "liberty",
+        "society"
+      ],
+      "claim": "The despotism of custom is everywhere the standing hindrance to human advancement, being in unceasing antagonism to that disposition to aim at something better than customary, which is called, according to circumstances, the spirit of liberty, or that of progress or improvement.",
+      "press": "against",
+      "work": "On Liberty",
+      "loc": "Chapter III, Of individuality",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "bears": "Custom, when it is despotic, blocks the attempt to live better than the usual way.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "justice"
+      ],
+      "claim": "The creed which accepts as the foundation of morals, Utility, or the Greatest Happiness Principle, holds that actions are right in proportion as they tend to promote happiness, wrong as they tend to produce the reverse of happiness.",
+      "press": "qualifies",
+      "work": "Utilitarianism",
+      "loc": "Chapter II, What utilitarianism is",
+      "url": "https://www.gutenberg.org/ebooks/11224",
+      "bears": "Rightness, on this creed, tracks the tendency to happiness.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "society"
+      ],
+      "claim": "The meaning of representative government is, that the whole people, or some numerous portion of them, exercise through deputies periodically elected by themselves the ultimate controlling power, which, in every constitution, must reside somewhere.",
+      "press": "for",
+      "work": "Considerations on Representative Government",
+      "loc": "Chapter III",
+      "url": "https://www.gutenberg.org/ebooks/5669",
+      "bears": "Representative government means the people hold the ultimate controlling power through elected deputies.",
+      "verbatim": true
     }
   ],
   "tableId": "letters",
-  "portrait": "images/mill.svg"
+  "portrait": "images/mill.svg",
+  "tables": [
+    "letters",
+    "classical"
+  ]
 }

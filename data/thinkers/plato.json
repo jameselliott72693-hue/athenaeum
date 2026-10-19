@@ -1,7 +1,7 @@
 {
   "id": "plato",
   "name": "Plato",
-  "years": "c. 428–348 BCE",
+  "years": "c. 428\u2013348 BCE",
   "place": "Athens",
   "epithet": "The founder of the Academy",
   "dossier": "Athenian philosopher, student of Socrates and teacher of Aristotle. The Republic asks what justice is in a city and in a soul, and treats education as the turning of the whole person toward what is.",
@@ -32,7 +32,7 @@
         "society"
       ],
       "work": "The Republic",
-      "loc": "II, 369b–372a",
+      "loc": "II, 369b\u2013372a",
       "url": "https://www.gutenberg.org/ebooks/1497",
       "claim": "A city comes into being because no one is self-sufficient. We gather because we need one another.",
       "bears": "The political community starts from need, not from a slogan."
@@ -47,7 +47,7 @@
         "society"
       ],
       "work": "The Republic",
-      "loc": "IV, 433a–434c",
+      "loc": "IV, 433a\u2013434c",
       "url": "https://www.gutenberg.org/ebooks/1497",
       "claim": "Justice in the city is each part doing its own work, and not seizing the work of another.",
       "bears": "He refuses the idea that justice is simply the advantage of the stronger."
@@ -63,7 +63,7 @@
         "justice"
       ],
       "work": "The Republic",
-      "loc": "IV, 443c–444a",
+      "loc": "IV, 443c\u2013444a",
       "url": "https://www.gutenberg.org/ebooks/1497",
       "claim": "Justice in the soul is the same pattern: reason, spirit, and appetite each in its place, so that the person is one rather than a crowd.",
       "bears": "A public order that ignores the order inside the person has not yet said what justice is."
@@ -79,7 +79,7 @@
         "moral"
       ],
       "work": "The Republic",
-      "loc": "VII, 514a–518d",
+      "loc": "VII, 514a\u2013518d",
       "url": "https://www.gutenberg.org/ebooks/1497",
       "claim": "Education is not putting sight into blind eyes. It is turning the whole soul toward what is more real, until the person can see by a light he did not invent.",
       "bears": "A curriculum that only trains cleverness, and never asks what is worth seeing, has missed the turn."
@@ -95,12 +95,15 @@
         "power"
       ],
       "work": "The Republic",
-      "loc": "I, 338c–347e",
+      "loc": "I, 338c\u2013347e",
       "url": "https://www.gutenberg.org/ebooks/1497",
       "claim": "Thrasymachus says justice is the interest of the stronger. Socrates refuses him: an art, properly so called, seeks the good of its subject, not the profit of the one who wields it.",
       "bears": "Power does not become justice by succeeding."
     }
   ],
   "tableId": "letters",
-  "portrait": "images/plato.svg"
+  "portrait": "images/plato.svg",
+  "tables": [
+    "letters"
+  ]
 }

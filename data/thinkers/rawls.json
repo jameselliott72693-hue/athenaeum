@@ -1,0 +1,120 @@
+{
+  "id": "rawls",
+  "name": "John Rawls",
+  "years": "1921\u20132002",
+  "place": "Baltimore",
+  "epithet": "Justice as fairness",
+  "dossier": "American political philosopher at Harvard. A Theory of Justice proposes that the principles of a just society are those free and equal persons would choose under a veil of ignorance. Political Liberalism later asks how such a society can be stable when citizens disagree about the good life. Both books are in copyright. These cards summarize them and link a library record. They are not quotations.",
+  "tableId": "modern",
+  "tables": [
+    "modern"
+  ],
+  "portrait": "images/rawls.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      294,
+      370,
+      466
+    ]
+  },
+  "voice": "I ask whether the least advantaged could accept the rule this sets.",
+  "works": [
+    {
+      "title": "A Theory of Justice",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "note": "1971; revised edition 1999. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "justice",
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "moral"
+      ],
+      "claim": "A Theory of Justice asks which principles people would choose for a society if they did not know their own talents, class, or conception of the good.",
+      "press": "qualifies",
+      "work": "A Theory of Justice",
+      "loc": "The original position and the veil of ignorance",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. The device is a way of reasoning about fairness, not a historical meeting.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "liberty"
+      ],
+      "domains": [
+        "justice",
+        "liberty"
+      ],
+      "claim": "One principle he defends gives each person an equal scheme of basic liberties, and it is not to be traded away for wealth.",
+      "press": "for",
+      "work": "A Theory of Justice",
+      "loc": "The first principle, equal basic liberties",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. Liberty has a priority over gains in income.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "equality",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "equality",
+        "society"
+      ],
+      "claim": "A second principle allows social and economic inequalities only when they are attached to offices open to all, and when they work to the benefit of the least advantaged.",
+      "press": "qualifies",
+      "work": "A Theory of Justice",
+      "loc": "The difference principle",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. Inequality is not forbidden, but it has to justify itself to the worst off.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "moral",
+        "liberty"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "liberty"
+      ],
+      "claim": "Political Liberalism, summarized from the direction of the theory, asks how citizens who disagree deeply about religion and the good can still affirm one political conception of justice.",
+      "press": "qualifies",
+      "work": "A Theory of Justice",
+      "loc": "The later problem of stability, carried in the theory of justice as fairness",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. A moral compass for the society is political, not a single comprehensive faith.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "society"
+      ],
+      "claim": "He treats education and the fair value of political liberty as conditions without which the equal liberties are only formal.",
+      "press": "for",
+      "work": "A Theory of Justice",
+      "loc": "On the worth of liberty and background institutions",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. The principles reach schools and the background rules of the economy.",
+      "verbatim": false
+    }
+  ]
+}

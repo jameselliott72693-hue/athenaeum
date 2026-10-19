@@ -1,0 +1,118 @@
+{
+  "id": "chambers",
+  "name": "Whittaker Chambers",
+  "years": "1901\u20131961",
+  "place": "Philadelphia",
+  "epithet": "A witness against a faith",
+  "dossier": "American journalist and a former underground Communist. Witness is his account of that life, of the Hiss case, and of his conversion. It is in copyright. These cards summarize the book and link a library record. They are not quotations. He wrote little here on the technical questions of money, schooling, or administration.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/chambers.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      196,
+      247,
+      294
+    ]
+  },
+  "voice": "I ask which faith this serves, and what it costs to leave it.",
+  "works": [
+    {
+      "title": "Witness",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "note": "1952. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "religion"
+      ],
+      "claim": "The foreword, addressed to his children, presents the Cold War as a choice about whether man belongs to God or to the state.",
+      "press": "for",
+      "work": "Witness",
+      "loc": "Foreword, Letter to my children",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. The political conflict is, for him, first a religious one.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "moral",
+        "society"
+      ],
+      "claim": "He describes communism as a faith with its own vision of man, not merely as a set of economic measures.",
+      "press": "against",
+      "work": "Witness",
+      "loc": "On communism as a faith",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. A policy argument misses the book if it ignores that claim.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "moral"
+      ],
+      "claim": "The Hiss chapters are about the cost of telling the truth against a cause one has served, and about whether a court can hear that kind of truth.",
+      "press": "qualifies",
+      "work": "Witness",
+      "loc": "The Hiss case",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. Informing, as he tells it, is a moral ordeal, not a tactic.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "religion"
+      ],
+      "domains": [
+        "society",
+        "religion"
+      ],
+      "claim": "Leaving the party, in his telling, was a conversion: he could not keep a politics that required him to deny the soul.",
+      "press": "for",
+      "work": "Witness",
+      "loc": "The break",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. The moral compass he defends is explicitly religious.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "claim": "He warns that a free society can lose to a disciplined faith if it thinks the quarrel is only about administration.",
+      "press": "against",
+      "work": "Witness",
+      "loc": "On the stakes of the struggle",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. Comfort and procedure are not, for him, a match for a total faith.",
+      "verbatim": false
+    }
+  ]
+}

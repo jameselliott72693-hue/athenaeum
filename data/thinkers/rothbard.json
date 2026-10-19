@@ -1,0 +1,118 @@
+{
+  "id": "rothbard",
+  "name": "Murray Rothbard",
+  "years": "1926\u20131995",
+  "place": "Bronx",
+  "epithet": "No aggression, and a private order",
+  "dossier": "American economist and a founder of modern anarcho-capitalism. For a New Liberty sets out a political ethic in which aggression is forbidden and the services of the state are to be supplied privately. The book is in copyright. The book is in copyright. These cards summarize it and do not quote it. The link is a library catalog record.",
+  "tableId": "classical",
+  "tables": [
+    "classical"
+  ],
+  "portrait": "images/rothbard.svg",
+  "sound": {
+    "wave": "sawtooth",
+    "notes": [
+      247,
+      311,
+      392
+    ]
+  },
+  "voice": "I ask who is aggressing, and by what right.",
+  "works": [
+    {
+      "title": "For a New Liberty",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "note": "In copyright. Library catalog record. Not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "liberty",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "liberty",
+        "justice"
+      ],
+      "claim": "The book takes as its political ethic a ban on aggression: no person, and no group calling itself the state, may initiate force against another.",
+      "press": "against",
+      "work": "For a New Liberty",
+      "loc": "The nonaggression axiom",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. The moral rule is stated as a ban, not as a goal for a planner.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "society"
+      ],
+      "claim": "He treats the state as a monopoly of force over a territory, funded by compulsion, and he denies that the monopoly changes the morality of the force.",
+      "press": "against",
+      "work": "For a New Liberty",
+      "loc": "The state",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. A legal name does not, on this account, create a right to coerce.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "justice"
+      ],
+      "domains": [
+        "property",
+        "justice"
+      ],
+      "claim": "Scarce goods, he argues, need an owner, and the owner is the person who first used what was unowned, or who received it from such a person.",
+      "press": "for",
+      "work": "For a New Liberty",
+      "loc": "On property",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. Property is the rule that tells people whose permission is required.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "liberty"
+      ],
+      "domains": [
+        "knowledge",
+        "liberty"
+      ],
+      "claim": "Schools, in his sketch, would be as private as bakeries, and a parent would not be taxed to support a doctrine he rejects.",
+      "press": "for",
+      "work": "For a New Liberty",
+      "loc": "On education",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. Education is not, for him, a necessary state service.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "He argues that defense, courts, and the poor can be provided by agreement and charity, and that a moral society does not begin by licensing a coercer.",
+      "press": "qualifies",
+      "work": "For a New Liberty",
+      "loc": "On defense and welfare",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. The hard cases are answered by denying the state an exemption.",
+      "verbatim": false
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "dewey",
+  "name": "John Dewey",
+  "years": "1859\u20131952",
+  "place": "Burlington, Vermont",
+  "epithet": "Democracy as a way of living",
+  "dossier": "American philosopher and educator. Democracy and Education, published in 1916 and quoted here, treats democracy as a mode of associated living and education as the way a society continues. Later books, including Liberalism and Social Action, are still in copyright and are not quoted.",
+  "tableId": "modern",
+  "tables": [
+    "modern"
+  ],
+  "portrait": "images/dewey.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      330,
+      415,
+      494
+    ]
+  },
+  "voice": "I ask whether this is a shared life, or only a machine for decisions.",
+  "works": [
+    {
+      "title": "Democracy and Education",
+      "url": "https://www.gutenberg.org/ebooks/852",
+      "note": "1916. Public domain."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "knowledge",
+        "moral"
+      ],
+      "claim": "A democracy is more than a form of government; it is primarily a mode of associated living, of conjoint communicated experience.",
+      "press": "for",
+      "work": "Democracy and Education",
+      "loc": "Chapter 7, The democratic conception in education",
+      "url": "https://www.gutenberg.org/ebooks/852",
+      "bears": "Democracy, here, is a way of living and communicating, not only a ballot.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "knowledge",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "knowledge",
+        "custom"
+      ],
+      "claim": "Society exists through a process of transmission quite as much as biological life.",
+      "press": "for",
+      "work": "Democracy and Education",
+      "loc": "Chapter 1, Education as a necessity of life",
+      "url": "https://www.gutenberg.org/ebooks/852",
+      "bears": "A society continues by passing on habits, ideas, and standards.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "Men live in a community in virtue of the things which they have in common; and communication is the way in which they come to possess things in common.",
+      "press": "for",
+      "work": "Democracy and Education",
+      "loc": "Chapter 1, Education as a necessity of life",
+      "url": "https://www.gutenberg.org/ebooks/852",
+      "bears": "What people hold in common, and how they communicate it, is what makes a community.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "knowledge"
+      ],
+      "claim": "Results, conduct, are what counts; they afford the sole measure of morality.",
+      "press": "qualifies",
+      "work": "Democracy and Education",
+      "loc": "Chapter 26, Theories of morals",
+      "url": "https://www.gutenberg.org/ebooks/852",
+      "bears": "He measures morality by conduct and results, not by a named intuition.",
+      "verbatim": true
+    }
+  ]
+}

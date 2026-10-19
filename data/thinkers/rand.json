@@ -1,0 +1,120 @@
+{
+  "id": "rand",
+  "name": "Ayn Rand",
+  "years": "1905\u20131982",
+  "place": "Saint Petersburg",
+  "epithet": "Reason, rights, and no initiated force",
+  "dossier": "Novelist and philosopher. The Virtue of Selfishness collects essays in which she connects a morality of rational self-interest to a politics that forbids the initiation of force. The essays are in copyright. These cards summarize them and link the Ayn Rand Institute. They do not quote her sentences.",
+  "tableId": "classical",
+  "tables": [
+    "classical"
+  ],
+  "portrait": "images/rand.svg",
+  "sound": {
+    "wave": "square",
+    "notes": [
+      392,
+      494,
+      587
+    ]
+  },
+  "voice": "I ask whether this treats a mind as a means to someone else's end.",
+  "works": [
+    {
+      "title": "The Virtue of Selfishness",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "note": "1964. In copyright. Ayn Rand Institute record. Not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "liberty",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "liberty",
+        "society"
+      ],
+      "claim": "In these essays Rand treats individual rights as the way an ethic of rational self-interest becomes a rule for living with other people: force is forbidden so that each person can act on his own judgment.",
+      "press": "for",
+      "work": "The Virtue of Selfishness",
+      "loc": "Man's Rights",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. Rights are the political translation of the moral argument, in her system.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "liberty",
+        "justice"
+      ],
+      "domains": [
+        "power",
+        "liberty",
+        "justice"
+      ],
+      "claim": "She holds that a government is proper only when it protects rights by retaliating against those who start the use of force, and not when it becomes a provider of goods.",
+      "press": "against",
+      "work": "The Virtue of Selfishness",
+      "loc": "The Nature of Government",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. The state's job, on this account, is narrow and armed.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "moral"
+      ],
+      "domains": [
+        "property",
+        "moral"
+      ],
+      "claim": "Capitalism, as she defends it, is the system that leaves production and trade to consent, and she treats an attack on property as an attack on the life of a rational person.",
+      "press": "for",
+      "work": "The Virtue of Selfishness",
+      "loc": "On capitalism",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. Property is not a side policy; it is part of the moral claim.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "society"
+      ],
+      "claim": "She argues that reason is a person's only means of knowledge, and that a society which demands faith or sacrifice as a duty is at war with the mind.",
+      "press": "against",
+      "work": "The Virtue of Selfishness",
+      "loc": "The Objectivist ethics",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. The moral compass she offers is reason, not sacrifice.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "society"
+      ],
+      "claim": "She rejects the idea that a person's talent or product belongs to the group that needs it, and she calls that claim a moral inversion.",
+      "press": "against",
+      "work": "The Virtue of Selfishness",
+      "loc": "On altruism as a political ethic",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. Need, in her argument, is not a claim on another person's life.",
+      "verbatim": false
+    }
+  ]
+}

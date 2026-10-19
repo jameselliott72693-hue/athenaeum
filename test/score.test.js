@@ -57,4 +57,23 @@ assert.strictEqual(full.ok, true);
 assert.strictEqual(full.ids.length, 12);
 assert.strictEqual(new Set(full.ids).size, 12);
 
+const byTable = Object.fromEntries(catalog.tables.map((t) => [t.id, new Set(t.thinkers)]));
+assert.deepStrictEqual([...byTable.traditionalist], ["burke", "kirk", "buckley", "oakeshott", "scruton", "tocqueville", "weaver", "chambers", "strauss"]);
+assert.deepStrictEqual([...byTable.classical], ["locke", "mises", "hayek", "friedman", "rothbard", "rand", "smith", "spencer", "mill"]);
+assert.deepStrictEqual([...byTable.modern], ["dewey", "rawls", "green", "keynes", "berlin", "sen"]);
+for (const id of ["traditionalist", "classical", "modern"]) {
+  const draw = chooseRandom({ tables: catalog.tables, thinkers, traditionId: id, size: 5, onlyRelevant: false, relevance: rel, rng: () => 0.4 });
+  assert.strictEqual(draw.ok, true, id);
+  assert.ok(draw.ids.every((thinkerId) => byTable[id].has(thinkerId)), id + " mixed traditions");
+  const seated = draw.ids.map((thinkerId) => byId[thinkerId]);
+  assert.ok(seated.some((t) => scoreThinker(t, compass, rel).speaks), id + " should have a speaker on a moral compass");
+}
+
+["burke", "tocqueville", "locke", "smith", "mill", "spencer", "green", "dewey", "keynes"].forEach((id) => {
+  const scored = scoreThinker(byId[id], compass, rel);
+  const best = scored.matches.reduce((n, m) => Math.max(n, m.score), 0);
+  const verbatimTied = scored.matches.some((m) => m.score === best && m.entry.verbatim);
+  if (verbatimTied) assert.strictEqual(!!scored.matches[0].entry.verbatim, true, id + " should speak the public-domain sentence when it matches as well as a summary");
+});
+
 console.log("score tests passed");

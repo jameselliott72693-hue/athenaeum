@@ -1,0 +1,129 @@
+{
+  "id": "sen",
+  "name": "Amartya Sen",
+  "years": "1933\u2013",
+  "place": "Santiniketan",
+  "epithet": "Freedom as what a person can actually do",
+  "dossier": "Economist and philosopher, a Nobel laureate, and still living. Development as Freedom argues that development is the growth of real freedoms, and that famines are political as well as agricultural. The Idea of Justice asks how to compare injustices without a single perfect blueprint. His books are in copyright. These cards summarize them and link a library catalog. They are not quotations.",
+  "tableId": "modern",
+  "tables": [
+    "modern"
+  ],
+  "portrait": "images/sen.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      415,
+      494
+    ]
+  },
+  "voice": "I ask what a person can actually do and be under this rule.",
+  "works": [
+    {
+      "title": "Development as Freedom",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "note": "1999. In copyright. Library catalog record. Not quoted."
+    },
+    {
+      "title": "The Idea of Justice",
+      "url": "https://archive.org/details/ideaofjustice0000sena",
+      "note": "2009. In copyright. Library catalog record. Not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "liberty",
+        "society",
+        "property"
+      ],
+      "domains": [
+        "liberty",
+        "society",
+        "property"
+      ],
+      "claim": "Development as Freedom treats development as the expansion of the freedoms people actually have \u2014 to live, to read, to take part, to buy and sell \u2014 and not as income alone.",
+      "press": "for",
+      "work": "Development as Freedom",
+      "loc": "The argument of the book",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. Income is a means. The subject is capability.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "justice"
+      ],
+      "claim": "He argues from the historical record that famines do not occur in functioning democracies with a free press, because the people who would starve have a way to punish the government.",
+      "press": "for",
+      "work": "Development as Freedom",
+      "loc": "On famines and democracy",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. Democracy is a protection against a particular disaster, not only a procedure.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "justice"
+      ],
+      "claim": "The Idea of Justice compares actual injustices and asks what would reduce them, rather than beginning from one complete picture of a perfectly just society.",
+      "press": "qualifies",
+      "work": "The Idea of Justice",
+      "loc": "The approach of the book",
+      "url": "https://archive.org/details/ideaofjustice0000sena",
+      "bears": "A summary, not a quotation. A moral compass, here, is comparative.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society",
+        "liberty"
+      ],
+      "domains": [
+        "knowledge",
+        "society",
+        "liberty"
+      ],
+      "claim": "Education, public discussion, and a free press are, in his account, parts of freedom themselves, and also the way a society notices misery.",
+      "press": "for",
+      "work": "Development as Freedom",
+      "loc": "On participation and transparency",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. Voice is a capability, and a safeguard.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "equality",
+        "moral",
+        "society"
+      ],
+      "claim": "The capability approach asks what each person is able to do and be, so that equality is not only equality of income or of formal rights.",
+      "press": "qualifies",
+      "work": "Development as Freedom",
+      "loc": "On capabilities",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. Two people with the same income may not have the same freedom.",
+      "verbatim": false
+    }
+  ]
+}

@@ -49,7 +49,7 @@
       return { idle: true, score: 0, speaks: false, tier: null, hits: 0, matches: [], topics: [] };
     }
     const scored = (thinker.entries || []).map((entry) => ({ entry, ...scoreEntry(entry, text, rel) }));
-    scored.sort((a, b) => b.score - a.score || b.lexical.length - a.lexical.length);
+    scored.sort((a, b) => b.score - a.score || b.lexical.length - a.lexical.length || Number(!!b.entry.verbatim) - Number(!!a.entry.verbatim));
     const matches = scored.filter((s) => s.score > 0);
     const score = matches.reduce((n, s) => n + s.score, 0);
     return {
@@ -74,6 +74,11 @@
     return out;
   }
 
+  function memberOf(thinker, tableId) {
+    if (Array.isArray(thinker.tables) && thinker.tables.length) return thinker.tables.includes(tableId);
+    return thinker.tableId === tableId;
+  }
+
   function chooseRandom(opts) {
     const tables = opts.tables || [];
     const thinkers = opts.thinkers || [];
@@ -89,7 +94,7 @@
     if (size < limits.min || size > limits.hardMax) {
       return { ok: false, message: `Choose a panel from ${limits.min} to ${limits.hardMax}.` };
     }
-    let pool = thinkers.filter((t) => t.tableId === table.id);
+    let pool = thinkers.filter((t) => memberOf(t, table.id));
     if (opts.onlyRelevant) {
       if (String(opts.subject || "").trim().length < 3) {
         return { ok: false, message: "Enter a subject before limiting the draw to chairs who have written on it." };
@@ -112,5 +117,5 @@
     return { ok: true, ids, table, note };
   }
 
-  return { wordsOf, subjectTopics, scoreEntry, scoreThinker, tierOf, chooseRandom, shuffle };
+  return { wordsOf, subjectTopics, scoreEntry, scoreThinker, tierOf, chooseRandom, shuffle, memberOf };
 });

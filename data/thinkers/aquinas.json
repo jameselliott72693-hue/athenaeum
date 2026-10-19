@@ -1,10 +1,10 @@
 {
   "id": "aquinas",
   "name": "Thomas Aquinas",
-  "years": "1225–1274",
+  "years": "1225\u20131274",
   "place": "Aquino",
   "epithet": "The scholastic",
-  "dossier": "A Dominican friar, student of Albert the Great, and teacher in Paris and Italy. The Summa Theologiae sets out Christian doctrine in the order of a beginner’s course, drawing Aristotle into the account of law, virtue, and the last end. Law is an ordinance of reason for the common good. Natural law is reason’s share in the eternal law, and its first precept is that good is to be done and evil avoided.",
+  "dossier": "A Dominican friar, student of Albert the Great, and teacher in Paris and Italy. The Summa Theologiae sets out Christian doctrine in the order of a beginner\u2019s course, drawing Aristotle into the account of law, virtue, and the last end. Law is an ordinance of reason for the common good. Natural law is reason\u2019s share in the eternal law, and its first precept is that good is to be done and evil avoided.",
   "tableId": "letters",
   "portrait": "images/aquinas.jpg",
   "sound": {
@@ -50,7 +50,7 @@
       "work": "Summa Theologiae",
       "loc": "I-II, q. 94, a. 2",
       "url": "https://www.newadvent.org/summa/2094.htm",
-      "bears": "Natural law is reason’s sharing in the eternal law; its first principle is do good and avoid evil."
+      "bears": "Natural law is reason\u2019s sharing in the eternal law; its first principle is do good and avoid evil."
     },
     {
       "topics": [
@@ -118,7 +118,7 @@
       "claim": "Human law should not be changed unless the common good gains as much as it loses. Custom has the force of law, and a change of law injures the common good by habit.",
       "press": "against",
       "work": "Summa Theologiae",
-      "loc": "I-II, q. 97, a. 1–3",
+      "loc": "I-II, q. 97, a. 1\u20133",
       "url": "https://www.newadvent.org/summa/2097.htm",
       "bears": "Law may be changed, but not lightly, and custom can obtain the force of law."
     },
@@ -149,10 +149,10 @@
         "power",
         "custom"
       ],
-      "claim": "Eternal law is the type of divine wisdom directing all acts. Natural law is the rational creature’s participation in it. Human law is a particular determination of that law.",
+      "claim": "Eternal law is the type of divine wisdom directing all acts. Natural law is the rational creature\u2019s participation in it. Human law is a particular determination of that law.",
       "press": "qualifies",
       "work": "Summa Theologiae",
-      "loc": "I-II, q. 91, a. 1–3",
+      "loc": "I-II, q. 91, a. 1\u20133",
       "url": "https://www.newadvent.org/summa/2091.htm",
       "bears": "Human law has authority only as derived from the eternal law."
     },
@@ -182,7 +182,7 @@
         "liberty",
         "property"
       ],
-      "claim": "If the need be so manifest and urgent that it is evident the need must be remedied at once, then it is lawful for a man to succor his need by means of another’s property, taking it either openly or secretly. Nor is this theft.",
+      "claim": "If the need be so manifest and urgent that it is evident the need must be remedied at once, then it is lawful for a man to succor his need by means of another\u2019s property, taking it either openly or secretly. Nor is this theft.",
       "press": "qualifies",
       "work": "Summa Theologiae",
       "loc": "II-II, q. 66, a. 7",
@@ -229,7 +229,7 @@
         "justice",
         "liberty"
       ],
-      "claim": "Nothing hinders one act from having two effects, only one of which is intended. The act of self-defense may have a double effect: the saving of one’s life, and the slaying of the aggressor.",
+      "claim": "Nothing hinders one act from having two effects, only one of which is intended. The act of self-defense may have a double effect: the saving of one\u2019s life, and the slaying of the aggressor.",
       "press": "qualifies",
       "work": "Summa Theologiae",
       "loc": "II-II, q. 64, a. 7",
@@ -253,5 +253,8 @@
       "url": "https://www.newadvent.org/summa/2092.htm",
       "bears": "Law is not only a restraint. It is ordered to the virtue of those who live under it."
     }
+  ],
+  "tables": [
+    "letters"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "smith",
   "name": "Adam Smith",
-  "years": "1723–1790",
+  "years": "1723\u20131790",
   "place": "Kirkcaldy",
   "epithet": "The moral philosopher",
   "dossier": "Scottish moral philosopher and political economist. The Theory of Moral Sentiments, which this shelf uses, explains approval and disapproval by sympathy and by the impartial spectator. The Wealth of Nations comes later.",
@@ -48,7 +48,7 @@
         "moral"
       ],
       "work": "The Theory of Moral Sentiments",
-      "loc": "III.1–2, the impartial spectator",
+      "loc": "III.1\u20132, the impartial spectator",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "claim": "We examine our own conduct as we imagine any fair and impartial spectator would examine it. The man within the breast is that spectator.",
       "bears": "A shared moral standard is not a poll. It is the judgment we make when we have set our own interest aside."
@@ -85,8 +85,82 @@
       "url": "https://www.gutenberg.org/ebooks/58559",
       "claim": "Custom and fashion influence our judgments of beauty, and they influence moral judgments too, but they do not create the sentiments they modify.",
       "bears": "A local habit can bend approval. It is not the whole of the moral sense."
+    },
+    {
+      "topics": [
+        "property",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "society"
+      ],
+      "claim": "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest.",
+      "press": "qualifies",
+      "work": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "loc": "Book I, Chapter II",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "bears": "Ordinary provision comes from each person's attention to his own interest.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "society"
+      ],
+      "claim": "By preferring the support of domestic to that of foreign industry, he intends only his own security; and by directing that industry in such a manner as its produce may be of the greatest value, he intends only his own gain; and he is in this, as in many other cases, led by an invisible hand to promote an end which was no part of his intention.",
+      "press": "qualifies",
+      "work": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "loc": "Book IV, Chapter II",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "bears": "A person seeking his own gain can serve a social end he did not intend.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "moral",
+        "society"
+      ],
+      "claim": "Justice, on the contrary, is the main pillar that upholds the whole edifice.",
+      "press": "for",
+      "work": "The Theory of Moral Sentiments",
+      "loc": "Part II, Section II, on justice",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "bears": "In the Essays of Adam Smith, which contain the Theory. Justice holds the social building up; benevolence alone does not.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "HOW selfish soever man may be supposed, there are evidently some principles in his nature, which interest him in the fortune of others, and render their happiness necessary to him, though he derives nothing from it except the pleasure of seeing it.",
+      "press": "for",
+      "work": "The Theory of Moral Sentiments",
+      "loc": "Part I, opening",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "bears": "The book opens by denying that selfishness is the whole of human nature.",
+      "verbatim": true
     }
   ],
   "tableId": "letters",
-  "portrait": "images/smith.svg"
+  "portrait": "images/smith.svg",
+  "tables": [
+    "letters",
+    "classical"
+  ]
 }

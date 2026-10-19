@@ -1,0 +1,120 @@
+{
+  "id": "weaver",
+  "name": "Richard M. Weaver",
+  "years": "1910\u20131963",
+  "place": "Weaverville, North Carolina",
+  "epithet": "Ideas have a direction",
+  "dossier": "American rhetorician and traditionalist, teaching at the University of Chicago. Ideas Have Consequences argues that the modern West, having dropped a transcendent standard of truth, is left with opinion, sentiment, and a spoiled language. The book is in copyright. These cards summarize it and link a library record. They are not quotations.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/weaver.svg",
+  "sound": {
+    "wave": "sawtooth",
+    "notes": [
+      220,
+      277,
+      330
+    ]
+  },
+  "voice": "I ask what standard this idea is secretly using.",
+  "works": [
+    {
+      "title": "Ideas Have Consequences",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "note": "1948. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "knowledge"
+      ],
+      "claim": "The opening chapter argues that once a society gives up any truth above private feeling, it has no measure left for opinion.",
+      "press": "against",
+      "work": "Ideas Have Consequences",
+      "loc": "Chapter 1, The unsentimental sentiment",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. A culture of pure sentiment cannot say why one judgment is better than another.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "liberty",
+        "moral"
+      ],
+      "domains": [
+        "property",
+        "liberty",
+        "moral"
+      ],
+      "claim": "A later chapter treats private property as the last widely accepted right that still ties a person to something outside his wishes.",
+      "press": "for",
+      "work": "Ideas Have Consequences",
+      "loc": "The last metaphysical right",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. Property, for him, is a metaphysical right, not only an economic tool.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "culture",
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "culture",
+        "knowledge",
+        "society"
+      ],
+      "claim": "He argues that mass media and a spoiled language flatten distinctions until a people cannot say what is excellent.",
+      "press": "against",
+      "work": "Ideas Have Consequences",
+      "loc": "On language and the mass",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. Words are part of the moral damage, not a side issue.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "society"
+      ],
+      "claim": "He defends distinction and hierarchy in culture against a sentiment that calls every distinction an insult.",
+      "press": "qualifies",
+      "work": "Ideas Have Consequences",
+      "loc": "Distinction and hierarchy",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. A society that cannot rank goods cannot educate.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "custom",
+        "moral"
+      ],
+      "domains": [
+        "custom",
+        "moral"
+      ],
+      "claim": "The book's direction is that a restored order would have to recover piety toward nature, the past, and a truth the present did not invent.",
+      "press": "for",
+      "work": "Ideas Have Consequences",
+      "loc": "The closing argument",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. Piety is his name for the posture a culture needs.",
+      "verbatim": false
+    }
+  ]
+}

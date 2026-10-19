@@ -1,0 +1,116 @@
+{
+  "id": "strauss",
+  "name": "Leo Strauss",
+  "years": "1899\u20131973",
+  "place": "Kirchhain, Hesse",
+  "epithet": "Natural right above history",
+  "dossier": "Political philosopher who taught at the University of Chicago. Natural Right and History asks whether political judgment still has a standard above history and convention. The book is in copyright. These cards summarize it and link a library record. They are not quotations. He is thin, on this shelf, on budgets, central banks, and welfare administration.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/strauss.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      247,
+      311,
+      370
+    ]
+  },
+  "voice": "I ask whether this still admits a standard above the fashion of the age.",
+  "works": [
+    {
+      "title": "Natural Right and History",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "note": "1953. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "justice"
+      ],
+      "claim": "The introduction argues that if natural right is rejected, political judgment is left with history and preference, and no standard above them.",
+      "press": "for",
+      "work": "Natural Right and History",
+      "loc": "Introduction",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. The crisis he names is the loss of a standard.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "knowledge"
+      ],
+      "claim": "He distinguishes classic natural right from later doctrines that found right in self-preservation or in history.",
+      "press": "qualifies",
+      "work": "Natural Right and History",
+      "loc": "Classic natural right, and the modern turn",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. Not every theory that says 'nature' is the one he is defending.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "society",
+        "justice"
+      ],
+      "claim": "A political philosophy, on his account, begins with the question of the best regime, which is a question about the right way to live together, not only about procedures.",
+      "press": "for",
+      "work": "Natural Right and History",
+      "loc": "On the best regime",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. The moral question is not optional for politics.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "liberty",
+        "custom"
+      ],
+      "claim": "He is wary of identifying natural right with the current liberal settlement, as if the ancestral or the ancient had nothing to ask of it.",
+      "press": "qualifies",
+      "work": "Natural Right and History",
+      "loc": "On the quarrel of ancients and moderns",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. The tradition includes a challenge to modern assumptions.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "moral"
+      ],
+      "domains": [
+        "power",
+        "moral"
+      ],
+      "claim": "He treats the historicist claim \u2014 that every standard is the product of its time \u2014 as itself a political doctrine with consequences for whoever holds power.",
+      "press": "against",
+      "work": "Natural Right and History",
+      "loc": "On historicism",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. A denial of natural right does not leave politics untouched.",
+      "verbatim": false
+    }
+  ]
+}

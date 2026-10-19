@@ -1,0 +1,118 @@
+{
+  "id": "berlin",
+  "name": "Isaiah Berlin",
+  "years": "1909\u20131997",
+  "place": "Riga",
+  "epithet": "Two liberties, and many goods",
+  "dossier": "Historian of ideas at Oxford. Two Concepts of Liberty, later collected in Four Essays on Liberty and in Liberty, distinguishes freedom from interference and freedom as self-mastery, and warns that the second can license coercion. The essay is in copyright. These cards summarize it and link a library record of Liberty. They are not quotations.",
+  "tableId": "modern",
+  "tables": [
+    "modern"
+  ],
+  "portrait": "images/berlin.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      220,
+      277,
+      349
+    ]
+  },
+  "voice": "I ask how much room this leaves a person who disagrees.",
+  "works": [
+    {
+      "title": "Liberty, incorporating Four Essays on Liberty",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "note": "Includes Two Concepts of Liberty, 1958. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "liberty",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "claim": "Negative liberty, in the essay, is the area in which a person is not interfered with by others. The political question is how wide that area is.",
+      "press": "for",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "Two Concepts of Liberty, on negative freedom",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. Freedom here is measured by the absence of coercion.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "power",
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "moral"
+      ],
+      "claim": "Positive liberty begins as the wish to be one's own master. Berlin argues that a government can twist that wish into a claim to force people toward their supposed real freedom.",
+      "press": "against",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "Two Concepts of Liberty, on positive freedom",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. A doctrine of self-mastery can become a doctrine of coercion.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "He argues that genuine human goods can conflict, so a politics that promises one final harmony is promising something the world does not offer.",
+      "press": "qualifies",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "On value pluralism, in and around the essay",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. A shared moral life still contains real collisions.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "custom"
+      ],
+      "claim": "Belonging to a nation or a culture is, he grants, a real human need, but he refuses to let that need swallow the freedom of the person who dissents.",
+      "press": "qualifies",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "On recognition and belonging",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. Home matters, and so does the person who will not fit it.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "justice"
+      ],
+      "domains": [
+        "knowledge",
+        "justice"
+      ],
+      "claim": "He is hostile to the claim that a statesman or a party knows a person's true end better than the person does, and may therefore override him.",
+      "press": "against",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "Two Concepts of Liberty, on the abuse of the higher self",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. Paternal knowledge is not a title to coerce.",
+      "verbatim": false
+    }
+  ]
+}

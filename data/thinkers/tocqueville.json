@@ -1,7 +1,7 @@
 {
   "id": "tocqueville",
   "name": "Alexis de Tocqueville",
-  "years": "1805–1859",
+  "years": "1805\u20131859",
   "place": "Paris",
   "epithet": "The observer of mores",
   "dossier": "French magistrate and author of Democracy in America. The Reeve translation, which this shelf uses, is in the public domain. He argues that mores, more than laws, sustain a free republic, and he warns against the tyranny of the majority.",
@@ -93,8 +93,103 @@
       "url": "https://www.gutenberg.org/ebooks/816",
       "claim": "Individualism disposes each member of the community to sever himself from the mass, and to draw apart with his family and friends.",
       "bears": "A democracy can lose the common life without anyone passing a law against it."
+    },
+    {
+      "topics": [
+        "liberty",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "society"
+      ],
+      "claim": "At the present time the liberty of association is become a necessary guarantee against the tyranny of the majority.",
+      "press": "for",
+      "work": "Democracy in America",
+      "loc": "Volume 1, on association and the majority",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "bears": "Henry Reeve's translation. Association is a check on a majority that holds the administration.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "society"
+      ],
+      "claim": "The omnipotence of the majority appears to me to present such extreme perils to the American Republics that the dangerous measure which is used to repress it seems to be more advantageous than prejudicial.",
+      "press": "qualifies",
+      "work": "Democracy in America",
+      "loc": "Volume 1, on the omnipotence of the majority",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "bears": "Henry Reeve's translation. An unchecked majority is the danger he is willing to meet with a risky remedy.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "custom"
+      ],
+      "claim": "I comprise, therefore, under this term the whole moral and intellectual condition of a people.",
+      "press": "for",
+      "work": "Democracy in America",
+      "loc": "Volume 1, on mores",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "bears": "Henry Reeve's translation. He uses mores for the moral and intellectual condition that keeps a republic.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "Our fathers were only acquainted with egotism.",
+      "press": "qualifies",
+      "work": "Democracy in America",
+      "loc": "Volume 2, chapter 2, Of individualism in democratic countries",
+      "url": "https://www.gutenberg.org/ebooks/816",
+      "bears": "Henry Reeve's translation. Individualism, as he defines it, is newer than plain selfishness.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "liberty"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "liberty"
+      ],
+      "claim": "Above this race of men stands an immense and tutelary power, which takes upon itself alone to secure their gratifications, and to watch over their fate.",
+      "press": "against",
+      "work": "Democracy in America",
+      "loc": "Volume 2, on the immense tutelary power",
+      "url": "https://www.gutenberg.org/ebooks/816",
+      "bears": "Henry Reeve's translation. A mild, minute power can keep citizens in a kind of permanent childhood.",
+      "verbatim": true
     }
   ],
   "tableId": "letters",
-  "portrait": "images/tocqueville.svg"
+  "portrait": "images/tocqueville.svg",
+  "tables": [
+    "letters",
+    "traditionalist"
+  ]
 }

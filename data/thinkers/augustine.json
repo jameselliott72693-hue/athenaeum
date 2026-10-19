@@ -1,7 +1,7 @@
 {
   "id": "augustine",
   "name": "Augustine",
-  "years": "354–430",
+  "years": "354\u2013430",
   "place": "Hippo",
   "epithet": "The bishop of two cities",
   "dossier": "North African bishop and author of the Confessions and The City of God. He describes two cities formed by two loves, and treats peace as the tranquillity of order.",
@@ -87,5 +87,8 @@
     }
   ],
   "tableId": "letters",
-  "portrait": "images/augustine.svg"
+  "portrait": "images/augustine.svg",
+  "tables": [
+    "letters"
+  ]
 }

@@ -1,15 +1,20 @@
 (function () {
   const A = window.Athenaeum;
+  const Store = window.AthenaeumStore;
   const state = {
     thinkers: [],
     tables: [],
     relevance: null,
     seated: [],
     minutes: [],
-    tableFilter: "any",
+    seatings: [],
+    bookmarks: [],
+    reading: null,
+    tableFilter: "letters",
     query: "",
     scoring: false,
     undo: null,
+    undoTable: null,
     audio: null,
     sound: { muted: false, volume: 70 },
     revealToken: 0
@@ -48,13 +53,20 @@
     try { localStorage.setItem(key, JSON.stringify(value)); } catch (err) { /* full or private */ }
   }
 
+  function onTable(person, tableId) {
+    if (!person) return false;
+    if (Array.isArray(person.tables) && person.tables.length) return person.tables.includes(tableId);
+    return person.tableId === tableId;
+  }
+
   function activeTable() {
-    if (state.seated.length) {
-      const person = byId(state.seated[0]);
-      if (person) return tableById(person.tableId) || state.tables[0];
-    }
-    if (state.tableFilter !== "any") return tableById(state.tableFilter) || state.tables[0];
+    if (state.tableFilter && state.tableFilter !== "any") return tableById(state.tableFilter) || state.tables[0];
     return state.tables[0];
+  }
+
+  function uid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return `id-${Date.now()}-${Math.random().toString(16).slice(2)}`;
   }
 
   function scoreOf(thinker) {
@@ -76,10 +88,42 @@
 
   function worksList(score) {
     if (!score || score.idle || state.scoring) return "";
-    const items = (score.matches || []).slice(0, 4).map((m) =>
-      `<li>${esc(m.entry.work)}, ${esc(m.entry.loc)}</li>`).join("");
+    const items = (score.matches || []).slice(0, 4).map((m) => {
+      const kind = m.entry.verbatim ? "Quotation" : "Summary";
+      return `<li><span class="meta">${kind}.</span> ${esc(m.entry.work)}, ${esc(m.entry.loc)}</li>`;
+    }).join("");
     const body = items || "<li>No passage on this shelf matches.</li>";
     return `<details class="works"><summary>Works on this</summary><ul>${body}</ul></details>`;
+  }
+
+  function renderHub() {
+    const host = $("hub");
+    if (!host) return;
+    host.innerHTML = state.tables.map((t) => {
+      const on = state.tableFilter === t.id;
+      const n = state.thinkers.filter((p) => onTable(p, t.id)).length;
+      return `<button type="button" class="hub-card" data-table="${esc(t.id)}" aria-pressed="${on ? "true" : "false"}">
+        <span class="kicker">${esc(t.tradition)}</span>
+        <strong>${esc(t.name)}</strong>
+        <span class="meta">${n} chairs</span>
+      </button>`;
+    }).join("");
+  }
+
+  function selectTable(id) {
+    if (id === state.tableFilter) return true;
+    if (state.seated.length) {
+      $("err").textContent = "A sitting stays inside one tradition. Clear the table before opening another.";
+      return false;
+    }
+    state.tableFilter = id;
+    const table = id === "any" ? state.tables[0] : tableById(id);
+    if (table) $("panel-size").value = String(table.limits.defaultCount);
+    $("err").textContent = "";
+    renderHub();
+    renderRoster();
+    renderTable();
+    return true;
   }
 
   function renderTradition() {
@@ -88,6 +132,7 @@
     select.innerHTML = `<option value="any">Any tradition</option>` + state.tables.map((t) =>
       `<option value="${esc(t.id)}">${esc(t.name)}</option>`).join("");
     select.value = current;
+    renderHub();
     const table = activeTable();
     if (!table) return;
     const size = $("panel-size");
@@ -100,7 +145,7 @@
 
   function renderRoster() {
     const q = state.query.trim().toLowerCase();
-    let list = state.thinkers.filter((t) => state.tableFilter === "any" || t.tableId === state.tableFilter);
+    let list = state.thinkers.filter((t) => state.tableFilter === "any" || onTable(t, state.tableFilter));
     if (q) list = list.filter((t) => `${t.name} ${t.epithet} ${t.years}`.toLowerCase().includes(q));
     const text = subjectText();
     const status = $("score-status");
@@ -224,14 +269,16 @@
       err.textContent = "";
       return;
     }
-    if (state.seated.length) {
-      const current = byId(state.seated[0]);
-      if (current && current.tableId !== person.tableId) {
-        err.textContent = "A sitting stays inside one tradition. Clear the table before seating someone from another.";
-        return;
-      }
+    const table = activeTable();
+    if (state.tableFilter === "any") {
+      err.textContent = "Choose one table first. A sitting stays inside one tradition.";
+      return;
     }
-    const limits = (tableById(person.tableId) || activeTable()).limits;
+    if (!onTable(person, table.id)) {
+      err.textContent = "A sitting stays inside one tradition. Clear the table before seating someone from another.";
+      return;
+    }
+    const limits = table.limits;
     if (state.seated.length >= limits.hardMax) {
       err.textContent = `This table seats ${limits.hardMax} at most. Remove someone first.`;
       return;
@@ -241,9 +288,13 @@
   }
 
   function seatPreset() {
-    const table = state.tableFilter === "any" ? state.tables[0] : tableById(state.tableFilter);
+    if (state.tableFilter === "any") {
+      $("err").textContent = "Choose one table first. A sitting stays inside one tradition.";
+      return;
+    }
+    const table = activeTable();
     if (!table) return;
-    setSeated((table.preset || []).slice(0, table.limits.hardMax));
+    setSeated((table.preset || []).filter((id) => onTable(byId(id), table.id)).slice(0, table.limits.hardMax));
     $("err").textContent = "";
   }
 
@@ -264,7 +315,13 @@
       return;
     }
     if (!state.undo) state.undo = state.seated.slice();
+    if (!state.undoTable) state.undoTable = state.tableFilter;
     $("undo-random").disabled = false;
+    if (drawn.table && drawn.table.id !== state.tableFilter) {
+      state.tableFilter = drawn.table.id;
+      renderHub();
+      renderTradition();
+    }
     setSeated(drawn.ids);
     const verb = reroll ? "Rerolled" : "Seated";
     note.textContent = `${verb} ${drawn.ids.length} from ${drawn.table.name}. ${drawn.note}`.trim();
@@ -274,8 +331,19 @@
   function undoRandom() {
     if (!state.undo) return;
     const previous = state.undo;
+    const previousTable = state.undoTable;
     state.undo = null;
+    state.undoTable = null;
     $("undo-random").disabled = true;
+    if (previousTable && previousTable !== state.tableFilter && !previous.length) {
+      state.tableFilter = previousTable;
+      renderHub();
+      renderTradition();
+    } else if (previousTable && previous.length) {
+      state.tableFilter = previousTable;
+      renderHub();
+      renderTradition();
+    }
     setSeated(previous);
     $("random-note").textContent = "Restored the seating from before the draw.";
   }
@@ -297,13 +365,19 @@
     return base;
   }
 
+  function passageLine(entry) {
+    if (entry.verbatim) return `From ${entry.work}, ${entry.loc}: “${entry.claim}”`;
+    return `Summary of ${entry.work}, ${entry.loc}, not a quotation: ${entry.claim}`;
+  }
+
   function applyTo(entry, operative, lean) {
     const act = {
       for: "gives this sentence a title",
       against: "withholds a title from this sentence",
       qualifies: "will not let this sentence pass until it is tried against the standard"
     }[lean];
-    return `Applied to “${operative}”: the passage ${act}. ${entry.bears}`;
+    const noun = entry.verbatim ? "passage" : "summary";
+    return `Applied to “${operative}”: the ${noun} ${act}. ${entry.bears}`;
   }
 
   function buildSpeech(thinker, topic, brief, scored) {
@@ -316,12 +390,14 @@
     const paragraphs = [
       thinker.voice || `On “${topic},” I start from what I argued.`,
       brief ? `The sentence I take as operative is: ${operative}` : "No separate brief was laid down, so the question itself has to carry the weight.",
-      `From ${primary.work}, ${primary.loc}: ${primary.claim}`,
+      passageLine(primary),
       applyTo(primary, operative, lean)
     ];
-    if (secondary) paragraphs.push(`A further pressure, from ${secondary.work}, ${secondary.loc}: ${secondary.claim}`);
+    if (secondary) paragraphs.push(passageLine(secondary));
     paragraphs.push(LEAN_LINE[lean]);
-    const cites = [primary, secondary].filter(Boolean).map((c) => ({ work: c.work, loc: c.loc, url: c.url, bears: c.bears }));
+    const cites = [primary, secondary].filter(Boolean).map((c) => ({
+      work: c.work, loc: c.loc, url: c.url, bears: c.bears, verbatim: !!c.verbatim
+    }));
     return { paragraphs, cites, lean, operative };
   }
 
@@ -329,9 +405,10 @@
     const by = { for: [], against: [], qualifies: [] };
     session.forEach((s) => { if (by[s.lean]) by[s.lean].push(s); });
     const out = [];
+    const noun = (s) => (s.cites && s.cites[0] && s.cites[0].verbatim ? "passage" : "summary");
     const pair = (a, b, line) => { if (a && b) out.push({ from: a.name, to: b.name, text: line(a, b) }); };
     pair(by.against[0], by.for[0], (a, b) =>
-      `${a.name}, to ${b.name}: the sentence “${operative}” does not get a title from ${a.cites[0].work}. Your lean grants what that passage withholds.`);
+      `${a.name}, to ${b.name}: the sentence “${operative}” does not get a title from ${a.cites[0].work}. Your lean grants what that ${noun(a)} withholds.`);
     pair(by.qualifies[0], by.against[0] || by.for[0], (a, b) =>
       `${a.name}, to ${b.name}: I will not let “${operative}” pass or fail in a word. ${a.cites[0].work}, ${a.cites[0].loc}, still has to be applied to the facts.`);
     return out.slice(0, 2);
@@ -368,7 +445,8 @@
     });
   }
 
-  function remarkHtml(person, body, lean, meta) {
+  function remarkHtml(person, body, lean, meta, turnIndex) {
+    const save = turnIndex == null ? "" : `<button type="button" class="text-btn" data-save-turn="${turnIndex}">Bookmark this turn</button>`;
     return `<article class="remark${lean === "abstain" ? " abstain" : ""} reveal">
       <div class="remark-head">
         <img class="avatar" src="${esc(safeUrl(person.portrait))}" alt="" />
@@ -380,6 +458,7 @@
         </div>
       </div>
       ${body}
+      ${save}
     </article>`;
   }
 
@@ -431,18 +510,20 @@
     $("print-sitting").addEventListener("click", () => window.print());
     const turns = $("turns");
     const steps = [];
-    (reading.chairs || []).forEach((c) => {
+    state.reading = reading;
+    (reading.chairs || []).forEach((c, i) => {
       const person = byId(c.id) || { id: c.id, name: c.name, years: "", portrait: "", sound: null };
       steps.push({
         person,
-        html: remarkHtml(person, (c.paragraphs || []).map((p) => `<p>${esc(p)}</p>`).join("") + citeHtml(c.cites), c.lean, c.hits ? `${c.hits} passage${c.hits === 1 ? "" : "s"}` : "")
+        html: remarkHtml(person, (c.paragraphs || []).map((p) => `<p>${esc(p)}</p>`).join("") + citeHtml(c.cites, i), c.lean, c.hits ? `${c.hits} passage${c.hits === 1 ? "" : "s"}` : "", i)
       });
     });
-    (reading.abstained || []).forEach((a) => {
+    (reading.abstained || []).forEach((a, i) => {
+      const turnIndex = (reading.chairs || []).length + i;
       const person = byId(a.id) || { id: a.id, name: a.name, years: "", portrait: "", sound: null };
       steps.push({
         person,
-        html: remarkHtml(person, `<p>${esc(a.reason)}</p>`, "abstain", "Sits out")
+        html: remarkHtml(person, `<p>${esc(a.reason)}</p>`, "abstain", "Sits out", turnIndex)
       });
     });
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -465,10 +546,10 @@
     if (!steps.length) turns.insertAdjacentHTML("beforeend", closeHtml(reading));
   }
 
-  function citeHtml(cites) {
+  function citeHtml(cites, turnIndex) {
     if (!cites || !cites.length) return "";
-    return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${cites.map((c) =>
-      `<li><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.work)}</a><span class="loc">, ${esc(c.loc)}</span><p class="bears">${esc(c.bears)}</p></li>`).join("")}</ol></div>`;
+    return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${cites.map((c, i) =>
+      `<li><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.work)}</a><span class="loc">, ${esc(c.loc)}</span><p class="bears">${esc(c.bears)}</p><button type="button" class="text-btn" data-save-cite="${turnIndex}:${i}">Bookmark this citation</button></li>`).join("")}</ol></div>`;
   }
 
   function sittingText(reading) {
@@ -614,7 +695,8 @@
       cites: x.speech.cites
     }));
     const reading = {
-      when: new Date().toLocaleString(),
+      id: uid(),
+      when: new Date().toISOString(),
       topic,
       brief,
       topics: A.subjectTopics(text, state.relevance),
@@ -630,8 +712,9 @@
       }))
     };
     state.minutes.unshift(reading);
-    state.minutes = state.minutes.slice(0, 8);
-    saveJson("athenaeum.minutes", state.minutes);
+    Store.put("sittings", reading).catch(() => {
+      $("memory-note").textContent = "This sitting could not be saved in the browser.";
+    });
     renderShelf();
     renderReading(reading, { animate: true, sound: true });
     $("session").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -679,11 +762,15 @@
   function bind() {
     $("search").addEventListener("input", () => { state.query = $("search").value; renderRoster(); });
     $("tradition").addEventListener("change", () => {
-      state.tableFilter = $("tradition").value;
-      const table = state.tableFilter === "any" ? state.tables[0] : tableById(state.tableFilter);
-      if (table) $("panel-size").value = String(table.limits.defaultCount);
-      renderTradition();
-      renderRoster();
+      const next = $("tradition").value;
+      if (!selectTable(next)) $("tradition").value = state.tableFilter;
+      else renderTradition();
+    });
+    const hub = $("hub");
+    if (hub) hub.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-table]");
+      if (!btn) return;
+      if (selectTable(btn.dataset.table)) renderTradition();
     });
     $("roster").addEventListener("click", (e) => {
       const dossier = e.target.closest("[data-dossier]");
@@ -723,8 +810,9 @@
       const drop = e.target.closest("[data-drop]");
       if (drop) {
         e.stopPropagation();
+        const reading = state.minutes[Number(drop.dataset.drop)];
         state.minutes.splice(Number(drop.dataset.drop), 1);
-        saveJson("athenaeum.minutes", state.minutes);
+        if (reading && reading.id) Store.remove("sittings", reading.id).catch(() => {});
         renderShelf();
         return;
       }
@@ -733,11 +821,47 @@
       const reading = state.minutes[Number(btn.dataset.minute)];
       if (!reading) return;
       await unlockAudio();
-      $("topic").value = reading.topic || "";
-      $("brief").value = reading.brief || "";
-      setSeated(reading.seated || []);
-      scheduleScore();
-      renderReading(reading, { animate: true, sound: true });
+      openReading(reading);
+    });
+    $("seatings").addEventListener("click", (e) => {
+      const drop = e.target.closest("[data-drop-seating]");
+      if (drop) {
+        e.stopPropagation();
+        const row = state.seatings[Number(drop.dataset.dropSeating)];
+        state.seatings.splice(Number(drop.dataset.dropSeating), 1);
+        if (row && row.id) Store.remove("seatings", row.id).catch(() => {});
+        renderSeatings();
+        return;
+      }
+      const btn = e.target.closest("[data-seating]");
+      if (!btn) return;
+      const row = state.seatings[Number(btn.dataset.seating)];
+      if (row) loadSeating(row);
+    });
+    $("save-seating").addEventListener("click", saveSeating);
+    $("bookmarks").addEventListener("click", (e) => {
+      const drop = e.target.closest("[data-drop-bookmark]");
+      if (!drop) return;
+      e.stopPropagation();
+      const row = state.bookmarks[Number(drop.dataset.dropBookmark)];
+      state.bookmarks.splice(Number(drop.dataset.dropBookmark), 1);
+      if (row && row.id) Store.remove("bookmarks", row.id).catch(() => {});
+      renderBookmarks();
+    });
+    $("open-tally").addEventListener("click", openTally);
+    $("close-tally").addEventListener("click", () => $("tally").close());
+    $("tally-table").addEventListener("change", renderTally);
+    $("export-memory").addEventListener("click", exportMemory);
+    $("import-memory").addEventListener("click", () => $("import-file").click());
+    $("import-file").addEventListener("change", importMemory);
+    $("session").addEventListener("click", (e) => {
+      const turn = e.target.closest("[data-save-turn]");
+      if (turn) { bookmarkTurn(Number(turn.dataset.saveTurn)); return; }
+      const cite = e.target.closest("[data-save-cite]");
+      if (cite) {
+        const [turnIndex, citeIndex] = cite.dataset.saveCite.split(":").map(Number);
+        bookmarkCite(turnIndex, citeIndex);
+      }
     });
     $("dossier").addEventListener("click", (e) => { if (e.target.id === "dossier") $("dossier").close(); });
     $("dossier").addEventListener("cancel", (e) => { e.preventDefault(); $("dossier").close(); });
@@ -765,6 +889,224 @@
     document.addEventListener("pointerdown", () => { unlockAudio(); }, { passive: true });
   }
 
+  function renderSeatings() {
+    const host = $("seatings");
+    host.innerHTML = state.seatings.length
+      ? state.seatings.map((row, i) => `<button type="button" data-seating="${i}"><strong>${esc(row.name || "Seating")}</strong><span class="when">${esc(row.when || "")} · ${esc((row.thinkerIds || []).length)} chairs</span><span class="drop" data-drop-seating="${i}">Discard</span></button>`).join("")
+      : `<p class="empty">No seatings saved yet.</p>`;
+  }
+
+  function renderBookmarks() {
+    const host = $("bookmarks");
+    if (!host) return;
+    host.innerHTML = state.bookmarks.length
+      ? state.bookmarks.map((row, i) => {
+        const title = row.kind === "citation" ? (row.work || "Citation") : (row.thinkerName || "Turn");
+        const detail = row.kind === "citation"
+          ? `${row.thinkerName || "Citation"} · ${row.loc || ""}`
+          : (row.topic || "");
+        return `<button type="button" data-bookmark="${i}"><strong>${esc(title)}</strong><span class="when">${esc(detail)}</span><span class="drop" data-drop-bookmark="${i}">Discard</span></button>`;
+      }).join("")
+      : `<p class="empty">No bookmarks yet.</p>`;
+  }
+
+  async function saveSeating() {
+    if (state.tableFilter === "any") {
+      $("err").textContent = "Choose one table first.";
+      return;
+    }
+    if (state.seated.length < activeTable().limits.min) {
+      $("err").textContent = `Seat at least ${activeTable().limits.min} chairs before saving a seating.`;
+      return;
+    }
+    const row = {
+      id: uid(),
+      name: $("seating-name").value.trim() || `${activeTable().name} seating`,
+      tableId: activeTable().id,
+      thinkerIds: state.seated.slice(),
+      when: new Date().toISOString()
+    };
+    state.seatings.unshift(row);
+    await Store.put("seatings", row);
+    $("seating-name").value = "";
+    $("memory-note").textContent = `Saved “${row.name}”.`;
+    renderSeatings();
+  }
+
+  function loadSeating(row) {
+    if (row.tableId && tableById(row.tableId)) state.tableFilter = row.tableId;
+    renderHub();
+    renderTradition();
+    setSeated((row.thinkerIds || []).filter((id) => byId(id)));
+    $("memory-note").textContent = `Loaded “${row.name || "seating"}”.`;
+    $("err").textContent = "";
+  }
+
+  function openReading(reading) {
+    $("topic").value = reading.topic || "";
+    $("brief").value = reading.brief || "";
+    if (reading.tableId && tableById(reading.tableId)) state.tableFilter = reading.tableId;
+    renderHub();
+    renderTradition();
+    setSeated(reading.seated || []);
+    scheduleScore();
+    renderReading(reading, { animate: true, sound: true });
+  }
+
+  function bookmarkTurn(index) {
+    const reading = state.reading;
+    if (!reading) return;
+    const chair = (reading.chairs || [])[index];
+    const quiet = !chair ? (reading.abstained || [])[index - (reading.chairs || []).length] : null;
+    const person = chair || quiet;
+    if (!person) return;
+    const row = {
+      id: uid(),
+      kind: "turn",
+      at: new Date().toISOString(),
+      sittingId: reading.id || "",
+      tableId: reading.tableId || state.tableFilter,
+      topic: reading.topic,
+      thinkerId: person.id,
+      thinkerName: person.name,
+      excerpt: chair ? (chair.paragraphs || []).join(" ") : (quiet.reason || ""),
+      work: chair && chair.cites && chair.cites[0] ? chair.cites[0].work : "",
+      loc: chair && chair.cites && chair.cites[0] ? chair.cites[0].loc : "",
+      url: chair && chair.cites && chair.cites[0] ? chair.cites[0].url : ""
+    };
+    state.bookmarks.unshift(row);
+    Store.put("bookmarks", row).then(() => {
+      $("memory-note").textContent = `Bookmarked ${person.name}'s turn.`;
+      renderBookmarks();
+    });
+  }
+
+  function bookmarkCite(turnIndex, citeIndex) {
+    const reading = state.reading;
+    const chair = reading && (reading.chairs || [])[turnIndex];
+    const cite = chair && (chair.cites || [])[citeIndex];
+    if (!cite) return;
+    const row = {
+      id: uid(),
+      kind: "citation",
+      at: new Date().toISOString(),
+      sittingId: reading.id || "",
+      tableId: reading.tableId || state.tableFilter,
+      topic: reading.topic,
+      thinkerId: chair.id,
+      thinkerName: chair.name,
+      excerpt: cite.bears || "",
+      work: cite.work,
+      loc: cite.loc,
+      url: cite.url
+    };
+    state.bookmarks.unshift(row);
+    Store.put("bookmarks", row).then(() => {
+      $("memory-note").textContent = `Bookmarked ${cite.work}.`;
+      renderBookmarks();
+    });
+  }
+
+  function tallyRows(tableId) {
+    const counts = new Map();
+    state.minutes.forEach((sitting) => {
+      if (tableId && tableId !== "all" && sitting.tableId !== tableId) return;
+      (sitting.chairs || []).forEach((chair) => {
+        (chair.cites || []).forEach((cite) => {
+          const key = `${cite.work}||${cite.loc || ""}`;
+          const row = counts.get(key) || { work: cite.work, loc: cite.loc || "", url: cite.url || "", count: 0 };
+          row.count += 1;
+          counts.set(key, row);
+        });
+      });
+    });
+    return [...counts.values()].sort((a, b) => b.count - a.count || a.work.localeCompare(b.work));
+  }
+
+  function renderTally() {
+    const tableId = $("tally-table").value;
+    const rows = tallyRows(tableId);
+    $("tally-body").innerHTML = rows.length
+      ? rows.map((row) => `<div class="tally-row"><div><a href="${esc(safeUrl(row.url))}" target="_blank" rel="noopener">${esc(row.work)}</a><div class="meta">${esc(row.loc)}</div></div><span>${row.count}</span></div>`).join("")
+      : `<p class="empty">No saved sitting has cited a work yet.</p>`;
+  }
+
+  function openTally() {
+    const select = $("tally-table");
+    select.innerHTML = `<option value="all">All tables</option>` + state.tables.map((t) => `<option value="${esc(t.id)}">${esc(t.name)}</option>`).join("");
+    select.value = state.tableFilter !== "any" && tableById(state.tableFilter) ? state.tableFilter : "all";
+    renderTally();
+    $("tally").showModal();
+  }
+
+  async function exportMemory() {
+    const data = await Store.dump();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "athenaeum-memory.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(a.href);
+    $("memory-note").textContent = "Exported bookmarks, seatings, and full sittings.";
+  }
+
+  async function importMemory(event) {
+    const file = event.target.files && event.target.files[0];
+    event.target.value = "";
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      const added = await Store.merge(data);
+      state.minutes = await Store.all("sittings");
+      state.seatings = await Store.all("seatings");
+      state.bookmarks = await Store.all("bookmarks");
+      sortMemory();
+      renderShelf();
+      renderSeatings();
+      renderBookmarks();
+      $("memory-note").textContent = `Imported ${added.sittings} sittings, ${added.seatings} seatings, and ${added.bookmarks} bookmarks. Nothing already saved was deleted.`;
+    } catch (err) {
+      $("memory-note").textContent = "That file could not be read as Athenaeum memory.";
+    }
+  }
+
+  function sortMemory() {
+    const stamp = (row) => Date.parse(row.at || row.when || "") || 0;
+    state.minutes.sort((a, b) => stamp(b) - stamp(a));
+    state.seatings.sort((a, b) => stamp(b) - stamp(a));
+    state.bookmarks.sort((a, b) => stamp(b) - stamp(a));
+  }
+
+  function inferTable(ids) {
+    const matches = state.tables.filter((t) => ids.length && ids.every((id) => onTable(byId(id), t.id)));
+    if (matches.length === 1) return matches[0].id;
+    const letters = matches.find((t) => t.id === "letters");
+    return (letters || matches[0] || state.tables[0]).id;
+  }
+
+  async function migrateLocalHistory() {
+    if (localStorage.getItem("athenaeum.memoryMigrated") === "1") return;
+    const minutes = loadJson("athenaeum.minutes", []);
+    for (const reading of minutes) {
+      if (!reading || !reading.topic) continue;
+      if (!reading.id) reading.id = uid();
+      await Store.put("sittings", reading);
+    }
+    const seats = loadJson("athenaeum.seated", []);
+    if (Array.isArray(seats) && seats.length) {
+      await Store.put("seatings", {
+        id: "legacy-seated",
+        name: "Seating kept from this browser",
+        tableId: "letters",
+        thinkerIds: seats.filter((id) => byId(id)),
+        when: new Date().toISOString()
+      });
+    }
+    localStorage.setItem("athenaeum.memoryMigrated", "1");
+  }
+
   async function boot() {
     const catalog = await fetch("data/tables.json").then((r) => r.json());
     state.tables = catalog.tables;
@@ -774,7 +1116,12 @@
     const legacy = loadJson("athenaeum.five", null);
     const initial = Array.isArray(savedSeats) ? savedSeats : (Array.isArray(legacy) ? legacy : []);
     state.seated = initial.filter((id) => byId(id));
-    state.minutes = loadJson("athenaeum.minutes", []).filter((m) => m && m.topic).slice(0, 8);
+    if (state.seated.length) state.tableFilter = inferTable(state.seated);
+    await migrateLocalHistory();
+    state.minutes = (await Store.all("sittings")).filter((m) => m && m.topic);
+    state.seatings = await Store.all("seatings");
+    state.bookmarks = await Store.all("bookmarks");
+    sortMemory();
     const sound = loadJson("athenaeum.sound", null);
     if (sound && typeof sound.muted === "boolean") state.sound.muted = sound.muted;
     if (sound && Number.isFinite(sound.volume)) state.sound.volume = sound.volume;
@@ -787,11 +1134,14 @@
     if (draft.topic) $("topic").value = draft.topic;
     if (draft.brief) $("brief").value = draft.brief;
     $("only-wrap").hidden = subjectText().length < 3;
-    $("panel-size").value = String((state.tables[0] && state.tables[0].limits.defaultCount) || 5);
+    $("panel-size").value = String((activeTable() && activeTable().limits.defaultCount) || 5);
     bind();
     renderRoster();
     renderTable();
     renderShelf();
+    renderSeatings();
+    renderBookmarks();
+    if (state.bookmarks.length) $("memory-note").textContent = `${state.bookmarks.length} bookmark${state.bookmarks.length === 1 ? "" : "s"} saved.`;
     if (state.minutes[0]) renderReading(state.minutes[0], { animate: false, sound: false });
   }
 

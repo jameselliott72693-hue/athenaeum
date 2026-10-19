@@ -28,7 +28,7 @@
       <div>
         <p class="kicker">A reading room</p>
         <h1>The Athenaeum</h1>
-        <p class="lede">Seat who you want. Paste a subject or an article. Each chair answers from his writings, or sits out when the shelf has nothing on the point.</p>
+        <p class="lede">Choose a table. Seat who you want. Each chair answers from his writings, or sits out when the shelf has nothing on the point.</p>
       </div>
     </div>
     <div class="header-tools">
@@ -42,6 +42,12 @@
   </header>
 
   <main>
+    <section class="hub" aria-labelledby="hub-heading">
+      <p class="kicker">Choose a table</p>
+      <h2 id="hub-heading">One tradition at a time</h2>
+      <p class="lede">A sitting stays inside the table you open. The present shelf remains. The political tables do not mix.</p>
+      <div id="hub" class="hub-row"></div>
+    </section>
     <div class="grid">
       <section class="pane" aria-labelledby="pool-heading">
         <p class="kicker">1 · The pool</p>
@@ -57,8 +63,25 @@
         <div class="row-btns">
           <button type="button" id="seat-preset">Seat the usual five</button>
         </div>
+        <p class="kicker" style="margin-top:18px">Saved seatings</p>
+        <label class="field" for="seating-name">Name this seating</label>
+        <input id="seating-name" type="text" maxlength="80" placeholder="Optional name" />
+        <div class="row-btns">
+          <button type="button" id="save-seating">Save this seating</button>
+        </div>
+        <div id="seatings" class="shelf"></div>
         <p class="kicker" style="margin-top:18px">Saved sittings</p>
         <div id="shelf" class="shelf"></div>
+        <p class="kicker" style="margin-top:18px">Bookmarks</p>
+        <div id="bookmarks" class="shelf"></div>
+        <p class="kicker" style="margin-top:18px">Memory</p>
+        <div class="row-btns">
+          <button type="button" id="open-tally">Citation tally</button>
+          <button type="button" id="export-memory">Export JSON</button>
+          <button type="button" id="import-memory">Import JSON</button>
+        </div>
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+        <p id="memory-note" class="hint" role="status"></p>
       </section>
 
       <section class="pane" aria-labelledby="table-heading">
@@ -100,7 +123,7 @@
         <div id="lineup" class="lineup" hidden></div>
         <p id="err" class="err" role="alert"></p>
         <button type="button" class="solid wide" id="weigh">Ask the table</button>
-        <p class="hint">⌘/Ctrl + Enter asks. The first request unlocks sound. Your draft and your sittings stay in this browser.</p>
+        <p class="hint">⌘/Ctrl + Enter asks. The first request unlocks sound. Bookmarks, seatings, and full sittings stay in this browser, and you can export them.</p>
       </section>
     </div>
     <div id="session" class="session" aria-live="polite"></div>
@@ -109,10 +132,21 @@
   <dialog id="dossier" class="dossier">
     <div class="dossier-body" id="dossier-body"></div>
   </dialog>
+  <dialog id="tally" class="dossier">
+    <div class="dossier-body">
+      <p class="kicker">Citation tally</p>
+      <h2>Works cited in saved sittings</h2>
+      <label class="field" for="tally-table">Table</label>
+      <select id="tally-table"></select>
+      <div id="tally-body"></div>
+      <button type="button" class="solid" id="close-tally">Close</button>
+    </div>
+  </dialog>
   <footer>
-    <p>Responses are reconstructions from published arguments, not quotations and not a claim to know what the dead would say. Each citation names the work, the place in it, and a link. A chair with nothing relevant on this shelf sits out, in view. Lewis’s major books remain in copyright; those links point to the work, not to a free full text. Each chair’s chime is generated in the browser.</p>
+    <p>A line in quotation marks is the book’s own words, and only from a text in the public domain. Every other card is a summary, not a quotation. Copyrighted books are linked, not copied. A chair with nothing relevant on this shelf sits out, in view. Each chair’s chime is generated in the browser. Bookmarks, seatings, and full sittings stay in this browser until you export them.</p>
   </footer>
   <script src="score.js"></script>
+  <script src="store.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
