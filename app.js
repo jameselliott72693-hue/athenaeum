@@ -1,6 +1,7 @@
 (function () {
   const A = window.Athenaeum;
   const Panel = window.AthenaeumPanel;
+  const Compare = window.AthenaeumCompare;
   const Books = window.AthenaeumBooks;
   const Store = window.AthenaeumStore;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
@@ -160,6 +161,7 @@
       `<option value="${esc(t.id)}">${esc(t.name)}</option>`).join("");
     select.value = current;
     renderHub();
+    fillCompare();
     const table = activeTable();
     if (!table) return;
     const size = $("panel-size");
@@ -168,6 +170,93 @@
     if (!size.value) size.value = String(table.limits.defaultCount);
     const preset = table.preset || [];
     $("seat-preset").textContent = `Seat the usual ${preset.length}`;
+  }
+
+  function fillCompare() {
+    const first = $("compare-a");
+    const second = $("compare-b");
+    if (!first || !second) return;
+    const keepFirst = first.value;
+    const keepSecond = second.value;
+    const options = state.tables.map((table) => `<option value="${esc(table.id)}">${esc(table.name)}</option>`).join("");
+    first.innerHTML = options;
+    second.innerHTML = options;
+    const ids = state.tables.map((table) => table.id);
+    first.value = ids.includes(keepFirst) ? keepFirst : (ids.includes("christian") ? "christian" : ids[0]);
+    second.value = ids.includes(keepSecond) ? keepSecond : (ids.includes("traditionalist") ? "traditionalist" : (ids[1] || ids[0]));
+    if (first.value === second.value && ids.length > 1) second.value = ids.find((id) => id !== first.value);
+  }
+
+  function comparePills(topics) {
+    if (!topics.length) return `<span>None</span>`;
+    return topics.map((topic) => `<span>${esc(topic)}</span>`).join("");
+  }
+
+  function compareSide(table, lines) {
+    const body = lines.length
+      ? lines.map((line) => `<div class="compare-line"><p class="meta">${esc(line.speaker)}</p><p>${esc(line.paragraph)}</p><p class="meta">${line.url ? `<a href="${esc(safeUrl(line.url))}" target="_blank" rel="noopener">${esc(line.work)}</a>` : esc(line.work)}${line.loc ? `, ${esc(line.loc)}` : ""}</p></div>`).join("")
+      : `<p class="empty">No card or passage was cited.</p>`;
+    return `<section class="compare-side"><h3>${esc(table.name)}</h3>${body}</section>`;
+  }
+
+  function renderCompare(left, right, topic, view) {
+    const host = $("compare");
+    host.hidden = false;
+    host.innerHTML = `
+      <div class="compare-head">
+        <p class="kicker">Where the cited cards meet</p>
+        <h2>${esc(topic)}</h2>
+        <p class="lede">Topics below are the ones named on the cards and passages these chairs actually spoke. Nothing is added.</p>
+        <p class="meta">Named at both tables</p>
+        <div class="compare-topics">${comparePills(view.both)}</div>
+        <p class="meta">Named only at ${esc(left.name)}</p>
+        <div class="compare-topics">${comparePills(view.onlyLeft)}</div>
+        <p class="meta">Named only at ${esc(right.name)}</p>
+        <div class="compare-topics">${comparePills(view.onlyRight)}</div>
+      </div>
+      <div class="compare-grid">
+        ${compareSide(left, view.left)}
+        ${compareSide(right, view.right)}
+      </div>`;
+  }
+
+  async function compareTables() {
+    const note = $("compare-note");
+    const topic = $("topic").value.trim();
+    const brief = $("brief").value.trim();
+    const left = tableById($("compare-a").value);
+    const right = tableById($("compare-b").value);
+    if (topic.length < 8) {
+      note.textContent = "Give the subject a few more words.";
+      return;
+    }
+    if (!left || !right || left.id === right.id) {
+      note.textContent = "Choose two different tables.";
+      return;
+    }
+    const leftPeople = (left.preset || []).map(byId).filter(Boolean);
+    const rightPeople = (right.preset || []).map(byId).filter(Boolean);
+    if (leftPeople.length < 2 || rightPeople.length < 2) {
+      note.textContent = "Each table needs its usual chairs.";
+      return;
+    }
+    note.textContent = "Asking both tables…";
+    const text = `${topic} ${brief}`.trim();
+    if (Books) {
+      try { await Books.ensure(leftPeople.concat(rightPeople).map((thinker) => thinker.id)); } catch (err) { /* the cards still answer */ }
+    }
+    const shared = {
+      text,
+      relevance: state.relevance,
+      scoreThinker: judge,
+      distinctive: A.distinctive,
+      opening: "subject"
+    };
+    const leftRound = Panel.buildRound(Object.assign({ thinkers: leftPeople }, shared));
+    const rightRound = Panel.buildRound(Object.assign({ thinkers: rightPeople }, shared));
+    renderCompare(left, right, topic, Compare.cited(leftRound, rightRound));
+    note.textContent = `${left.name} and ${right.name}, from the cards and passages they cited.`;
+    $("compare").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function renderRoster() {
@@ -1292,6 +1381,7 @@
     $("reroll").addEventListener("click", () => randomSeat(true));
     $("undo-random").addEventListener("click", undoRandom);
     $("weigh").addEventListener("click", weigh);
+    $("compare-go").addEventListener("click", compareTables);
     $("book-go").addEventListener("click", searchBooks);
     $("book-query").addEventListener("keydown", (e) => {
       if (e.key === "Enter") { e.preventDefault(); searchBooks(); }
