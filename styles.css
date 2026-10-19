@@ -130,6 +130,7 @@ label.field { display: block; margin: 14px 0 6px; }
   flex-wrap: wrap;
   gap: 8px;
 }
+#share-note { flex: 1 1 100%; overflow-wrap: anywhere; }
 .card-actions { margin-top: 8px; }
 .avatar, .mark {
   border: 1px solid var(--line);
@@ -315,4 +316,6 @@ footer { color: var(--soft); font-size: 14px; }
   header, .grid, footer, .session-tools, .playback, .moderator-form, .playback-keys, dialog { display: none !important; }
   body, .remark, .close-panel, h1, h2, h3, p, li, a { color: #111 !important; background: #fff !important; }
   .remark, .close-panel { break-inside: avoid; border-color: #ccc; }
+  .cites { word-break: break-word; }
+  .cites a[href]::after { content: " (" attr(href) ")"; }
 }

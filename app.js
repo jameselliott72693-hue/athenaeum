@@ -3,6 +3,7 @@
   const Panel = window.AthenaeumPanel;
   const Books = window.AthenaeumBooks;
   const Store = window.AthenaeumStore;
+  const Share = window.AthenaeumShare;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
     thinkers: [],
@@ -705,8 +706,27 @@
         <button type="button" id="download-sitting">Download text</button>
         <button type="button" id="download-pdf">Download PDF</button>
         <button type="button" id="print-sitting">Print</button>
+        <button type="button" id="share-sitting">Share link</button>
+        <p id="share-note" class="hint" role="status"></p>
       </div>
       <div id="turns"></div>`;
+  }
+
+  async function shareSitting(reading) {
+    const note = $("share-note");
+    let packed = null;
+    try { packed = await Share.pack(reading); } catch (err) { packed = null; }
+    if (!packed || !packed.ok) {
+      if (note) note.textContent = "This sitting is too long for a link. Download the text or the PDF instead.";
+      return;
+    }
+    const url = `${location.origin}${location.pathname}${location.search}${packed.hash}`;
+    let copied = false;
+    try {
+      await navigator.clipboard.writeText(url);
+      copied = true;
+    } catch (err) { copied = false; }
+    if (note) note.innerHTML = `${copied ? "Link copied. " : "Copy this link. "}<a href="${esc(packed.hash)}">${esc(url)}</a>`;
   }
 
   function renderPanel(reading, opts) {
@@ -724,6 +744,7 @@
     $("download-sitting").addEventListener("click", () => downloadSitting(reading));
     $("download-pdf").addEventListener("click", () => downloadPdf(reading));
     $("print-sitting").addEventListener("click", () => window.print());
+    $("share-sitting").addEventListener("click", () => shareSitting(reading));
     bindTransport();
     if (opts && opts.play) beginPlayback();
     else showFinished(reading);
@@ -813,6 +834,8 @@
         <button type="button" id="download-sitting">Download text</button>
         <button type="button" id="download-pdf">Download PDF</button>
         <button type="button" id="print-sitting">Print</button>
+        <button type="button" id="share-sitting">Share link</button>
+        <p id="share-note" class="hint" role="status"></p>
       </div>
       <div id="turns"></div>`;
     $("copy-sitting").addEventListener("click", async () => {
@@ -825,6 +848,7 @@
     $("download-sitting").addEventListener("click", () => downloadSitting(reading));
     $("download-pdf").addEventListener("click", () => downloadPdf(reading));
     $("print-sitting").addEventListener("click", () => window.print());
+    $("share-sitting").addEventListener("click", () => shareSitting(reading));
     const turns = $("turns");
     const steps = [];
     state.reading = reading;
@@ -1472,14 +1496,14 @@
     $("err").textContent = "";
   }
 
-  function openReading(reading) {
+  function openReading(reading, opts) {
     $("topic").value = reading.topic || "";
     $("brief").value = reading.brief || "";
     if (reading.tableId && tableById(reading.tableId)) state.tableFilter = reading.tableId;
     renderHub();
     renderTradition();
     setSeated(reading.seated || []);
-    scheduleScore();
+    if (!(opts && opts.books === false)) scheduleScore();
     renderReading(reading, { play: false, animate: false, sound: false });
   }
 
@@ -1683,7 +1707,12 @@
     renderSeatings();
     renderBookmarks();
     if (state.bookmarks.length) $("memory-note").textContent = `${state.bookmarks.length} bookmark${state.bookmarks.length === 1 ? "" : "s"} saved.`;
-    if (state.minutes[0]) renderReading(state.minutes[0], { animate: false, sound: false });
+    let shared = null;
+    if (Share && location.hash) {
+      try { shared = await Share.unpack(location.hash); } catch (err) { shared = null; }
+    }
+    if (shared && shared.topic) openReading(shared, { books: false });
+    else if (state.minutes[0]) renderReading(state.minutes[0], { animate: false, sound: false });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
