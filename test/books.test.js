@@ -73,7 +73,7 @@ function claimOf(paragraph) {
 }
 
 const seen = [];
-["christian", "ancient", "traditionalist"].forEach((tableId) => {
+["christian", "ancient", "traditionalist", "eastern", "enlightenment", "founding"].forEach((tableId) => {
   const built = roundFor(tableId, compass);
   const again = roundFor(tableId, compass);
   assert.deepStrictEqual(built.turns.map((turn) => turn.paragraphs), again.turns.map((turn) => turn.paragraphs), tableId + " drifted");

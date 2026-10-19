@@ -1,0 +1,171 @@
+{
+  "id": "confucius",
+  "name": "Confucius",
+  "years": "551–479 BC",
+  "place": "Lu",
+  "epithet": "Learning, government, and the superior man",
+  "dossier": "The Analects are quoted from James Legge's public-domain translation. This chair does not speak for the later Confucian school, and it does not sit with the Daoist chairs except on this Eastern table.",
+  "tableId": "eastern",
+  "tables": [
+    "eastern"
+  ],
+  "portrait": "images/confucius.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      392,
+      440,
+      523
+    ]
+  },
+  "voice": "I ask what the people can trust, and whether the talk ever turns to righteousness.",
+  "works": [
+    {
+      "title": "Confucian Analects",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "note": "Project Gutenberg ebook 4094, Chinese Classics, volume 1"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "moral"
+      ],
+      "claim": "The Master said, 'Is it not pleasant to learn with a constant perseverance and application?",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "BOOK I. HSIO R., paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "The Analects open on learning that is practiced, and on the person who is not thrown off when others take no notice.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "moral"
+      ],
+      "claim": "The Master said, To rule a country of a thousand chariots, there must be reverent attention to business, and sincerity; economy in expenditure, and love for men; and the employment of the people at the proper seasons.'",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "BOOK I. HSIO R., paragraph 5",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "Rule, in this saying, is attention, sincerity, thrift, and employing people in season.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "war"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "war"
+      ],
+      "claim": "The Master said, 'The requisites of government are that there be sufficiency of food, sufficiency of military equipment, and the confidence of the people in their ruler.'",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "BOOK XII. YEN YUAN., paragraph 11",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "Food, arms, and the people's confidence are named together as what government requires.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "The Master said, 'When a number of people are together, for a whole day, without their conversation turning on righteousness, and when they are fond of carrying out the suggestions of a small shrewdness;-- theirs is indeed a hard case.'",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "BOOK XV. WEI LING KUNG., paragraph 20",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "A day of talk that never turns to righteousness is called a hard case.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "power",
+        "justice"
+      ],
+      "claim": "When right principles prevail in the kingdom, government will not be in the hands of the Great officers.",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "BOOK XVI. KE SHE., paragraph 20",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "When the right principles hold, the great officers do not take the government into their own hands.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "knowledge"
+      ],
+      "claim": "Learning in the opening of the Analects is something practiced, shared with friends who come from far away, and finished in a person who is not upset when he goes unnoticed.",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "A summary, not a quotation. Practice and company belong with learning.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Government, in the sayings used here, depends on the people's confidence as well as on food and arms, and on employing them at the proper seasons.",
+      "press": "qualifies",
+      "work": "Confucian Analects",
+      "loc": "Book I and Book XII",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "A summary, not a quotation. Confidence is named with food and arms.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "A company whose talk never turns to righteousness is treated as a failure, and a kingdom where right principles prevail is one the great officers do not capture.",
+      "press": "for",
+      "work": "Confucian Analects",
+      "loc": "Book XV and Book XVI",
+      "url": "https://www.gutenberg.org/ebooks/4094",
+      "bears": "A summary, not a quotation. Righteousness is a public concern, not a private hobby.",
+      "verbatim": false
+    }
+  ]
+}

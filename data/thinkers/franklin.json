@@ -1,0 +1,172 @@
+{
+  "id": "franklin",
+  "name": "Benjamin Franklin",
+  "years": "1706–1790",
+  "place": "Philadelphia",
+  "epithet": "Virtue practiced by the week",
+  "dossier": "The Autobiography and The Way to Wealth are his own English. The Way to Wealth is the 1758 preface as printed in 1810. The publisher's advertisements are not searched.",
+  "tableId": "founding",
+  "tables": [
+    "founding"
+  ],
+  "portrait": "images/franklin.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      349,
+      440,
+      523
+    ]
+  },
+  "voice": "I keep a chart, and I would rather not squander the stuff life is made of.",
+  "works": [
+    {
+      "title": "Autobiography of Benjamin Franklin",
+      "url": "https://www.gutenberg.org/ebooks/20203",
+      "note": "Project Gutenberg ebook 20203"
+    },
+    {
+      "title": "The Way to Wealth",
+      "url": "https://www.gutenberg.org/ebooks/43855",
+      "note": "Project Gutenberg ebook 43855, the 1810 Darton edition of Poor Richard Improved"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Thus, if in the first week I could keep my first line, marked T, clear of spots, I suppos'd the habit of that virtue so much strengthen'd, and its opposite weaken'd, that I might venture extending my attention to include the next, and for the following week keep both lines clear of spots.",
+      "press": "for",
+      "work": "Autobiography of Benjamin Franklin",
+      "loc": "TEMPERANCE., paragraph 3",
+      "url": "https://www.gutenberg.org/ebooks/20203",
+      "bears": "The chart of virtues is a weekly practice: keep one line clear, then the next.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "\"There seems to me at present to be great occasion for raising a United Party for Virtue, by forming the virtuous and good men of all nations into a regular body, to be govern'd by suitable good and wise rules, which good and wise men may probably be more unanimous in their obedience to, than common people are to common laws.",
+      "press": "for",
+      "work": "Autobiography of Benjamin Franklin",
+      "loc": "TEMPERANCE., paragraph 56",
+      "url": "https://www.gutenberg.org/ebooks/20203",
+      "bears": "The plan he records is a party of virtuous people under rules they can agree to obey.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "society"
+      ],
+      "claim": "The libraries were augmented by donations; reading became fashionable; and our people, having no publick amusements to divert their attention from study, became better acquainted with books, and in a few years were observ'd by strangers to be better instructed and more intelligent than people of the same rank generally are in other countries.",
+      "press": "for",
+      "work": "Autobiography of Benjamin Franklin",
+      "loc": "BUSINESS SUCCESS AND FIRST PUBLIC SERVICE, paragraph 58",
+      "url": "https://www.gutenberg.org/ebooks/20203",
+      "bears": "The subscription libraries, he says, made reading fashionable and the people better instructed.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "economy"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "economy"
+      ],
+      "claim": "It would be thought a hard government that should tax its people one-tenth part of their time to be employed in its service: but idleness taxes many of us much more; sloth, by bringing on diseases, absolutely shortens life.",
+      "press": "qualifies",
+      "work": "The Way to Wealth",
+      "loc": "The Way to Wealth, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/43855",
+      "bears": "Idleness is compared to a tax heavier than a tenth of one's time owed to government.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "economy"
+      ],
+      "domains": [
+        "moral",
+        "economy"
+      ],
+      "claim": "\"Sloth, like rust, consumes faster than labour wears, while the used key is always bright,\" as Poor Richard says.",
+      "press": "for",
+      "work": "The Way to Wealth",
+      "loc": "The Way to Wealth, paragraph 2",
+      "url": "https://www.gutenberg.org/ebooks/43855",
+      "bears": "Poor Richard's line, quoted in the preface, sets used labor against rusting sloth.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "The autobiography's chart takes the virtues one week at a time, keeping a line clear of spots before adding the next.",
+      "press": "for",
+      "work": "Autobiography of Benjamin Franklin",
+      "loc": "The art of virtue",
+      "url": "https://www.gutenberg.org/ebooks/20203",
+      "bears": "A summary, not a quotation. Virtue is practiced as a record, not only praised.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "He writes of a united party for virtue, good people of different nations under rules they could actually agree to keep.",
+      "press": "for",
+      "work": "Autobiography of Benjamin Franklin",
+      "loc": "The united party for virtue",
+      "url": "https://www.gutenberg.org/ebooks/20203",
+      "bears": "A summary, not a quotation. A shared moral project is a body of people with rules.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "economy",
+        "knowledge"
+      ],
+      "domains": [
+        "society",
+        "economy",
+        "knowledge"
+      ],
+      "claim": "The Way to Wealth treats idleness as a heavier tax than a tenth of one's time, and the libraries are credited with making the people better instructed.",
+      "press": "qualifies",
+      "work": "The Way to Wealth",
+      "loc": "The Way to Wealth and the subscription library",
+      "url": "https://www.gutenberg.org/ebooks/43855",
+      "bears": "A summary, not a quotation. Time, labor, and books are the practical instruments.",
+      "verbatim": false
+    }
+  ]
+}

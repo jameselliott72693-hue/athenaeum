@@ -97,6 +97,36 @@ for (const id of ["christian", "ancient", "victorian"]) {
   const seated = table.preset.map((thinkerId) => byId[thinkerId]);
   assert.ok(seated.filter((thinker) => scoreThinker(thinker, compass, rel).speaks).length >= 2, id + " preset should hold a conversation");
 }
+for (const id of ["eastern", "enlightenment", "founding"]) {
+  const table = catalog.tables.find((item) => item.id === id);
+  assert.strictEqual(table.thinkers.length, 6, id);
+  assert.ok(table.preset.every((thinkerId) => table.thinkers.includes(thinkerId)), id);
+  table.thinkers.forEach((thinkerId) => {
+    const thinker = byId[thinkerId];
+    assert.ok(thinker.tables.includes(id), thinkerId);
+    assert.ok(thinker.entries.length >= 8, thinkerId);
+    thinker.entries.forEach((entry) => {
+      if (entry.verbatim) {
+        assert.strictEqual(entry.verbatim, true);
+      } else {
+        assert.ok(String(entry.bears || "").startsWith("A summary, not a quotation."), thinkerId);
+      }
+      assert.ok(entry.url && entry.work && entry.loc && entry.claim, thinkerId);
+    });
+  });
+  const seated = table.preset.map((thinkerId) => byId[thinkerId]);
+  assert.ok(seated.filter((thinker) => scoreThinker(thinker, compass, rel).speaks).length >= 2, id + " preset should hold a conversation");
+}
+["confucius", "mencius", "hume", "rousseau", "kant", "washington", "paine"].forEach((id) => {
+  assert.ok(byId[id].entries.some((entry) => entry.verbatim), id);
+});
+for (const id of ["eastern", "enlightenment", "founding"].flatMap((tableId) => catalog.tables.find((item) => item.id === tableId).thinkers)) {
+  const files = fs.readdirSync(path.join(__dirname, "../data/books/text")).filter((name) => name.startsWith(id + "-") || name === id + ".txt");
+  const blob = files.map((name) => fs.readFileSync(path.join(__dirname, "../data/books/text", name), "utf8")).join("\n");
+  byId[id].entries.filter((entry) => entry.verbatim).forEach((entry) => {
+    assert.ok(blob.includes(entry.claim), id + " quote is not in the cleaned text: " + entry.claim.slice(0, 80));
+  });
+}
 assert.ok(byId.dante.entries.some((entry) => entry.verbatim && /gloomy wood/.test(entry.claim)));
 assert.ok(byId.lucretius.entries.some((entry) => entry.verbatim && /Nothing from nothing/.test(entry.claim)));
 assert.ok(byId.arnold.entries.some((entry) => entry.verbatim && /study of perfection/.test(entry.claim)));

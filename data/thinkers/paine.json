@@ -1,0 +1,180 @@
+{
+  "id": "paine",
+  "name": "Thomas Paine",
+  "years": "1737–1809",
+  "place": "Thetford",
+  "epithet": "Common sense and the rights of man",
+  "dossier": "Common Sense and Rights of Man are his own English. Conway's introduction before Rights of Man is not in the searched text. The Age of Reason is not this index.",
+  "tableId": "founding",
+  "tables": [
+    "founding"
+  ],
+  "portrait": "images/paine.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      415,
+      494
+    ]
+  },
+  "voice": "I separate society from government before I praise either.",
+  "works": [
+    {
+      "title": "Common Sense",
+      "url": "https://www.gutenberg.org/ebooks/147",
+      "note": "Project Gutenberg ebook 147"
+    },
+    {
+      "title": "Rights of Man",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "note": "Project Gutenberg ebook 3742, Writings, volume 2, edited by Moncure Daniel Conway"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Society in every state is a blessing, but government even in its best state is but a necessary evil; in its worst state an intolerable one; for when we suffer, or are exposed to the same miseries by a government, which we might expect in a country without government, our calamity is heightened by reflecting that we furnish the means by which we suffer.",
+      "press": "qualifies",
+      "work": "Common Sense",
+      "loc": "Of the origin and design of government, paragraph 2",
+      "url": "https://www.gutenberg.org/ebooks/147",
+      "bears": "Common Sense separates society, which meets wants, from government, which restrains wickedness.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "custom",
+        "society"
+      ],
+      "claim": "The Parliament or the people of 1688, or of any other period, had no more right to dispose of the people of the present day, or to bind or to control them in any shape whatever, than the parliament or the people of the present day have to dispose of, bind or control those who are to live a hundred or a thousand years hence.",
+      "press": "against",
+      "work": "Rights of Man",
+      "loc": "Rights of Man, paragraph 19",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "bears": "No earlier parliament, he says, can bind the people who are alive now.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "religion",
+        "justice"
+      ],
+      "domains": [
+        "liberty",
+        "religion",
+        "justice"
+      ],
+      "claim": "Toleration is not the opposite of Intolerance, but is the counterfeit of it.",
+      "press": "against",
+      "work": "Rights of Man",
+      "loc": "Rights of Man, paragraph 343",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "bears": "Both toleration and intolerance are called despotisms over conscience.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "power",
+        "society"
+      ],
+      "claim": "Revolutions, then, have for their object a change in the moral condition of governments, and with this change the burthen of public taxes will lessen, and civilisation will be left to the enjoyment of that abundance, of which it is now deprived.",
+      "press": "for",
+      "work": "Rights of Man",
+      "loc": "INTERSPERSED WITH MISCELLANEOUS OBSERVATIONS, paragraph 18",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "bears": "Revolutions are described as a change in the moral condition of governments, and then in the weight of taxes.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "equality"
+      ],
+      "domains": [
+        "moral",
+        "equality"
+      ],
+      "claim": "Vice and virtue, ignorance and wisdom, in short, every quality good or bad, is put on the same level.",
+      "press": "against",
+      "work": "Rights of Man",
+      "loc": "CHAPTER III. OF THE OLD AND NEW SYSTEMS OF GOVERNMENT, paragraph 10",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "bears": "He objects to a scheme that puts vice and virtue on the same level.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Common Sense calls society a blessing and government, even at its best, a necessary evil, because one springs from wants and the other from wickedness.",
+      "press": "qualifies",
+      "work": "Common Sense",
+      "loc": "Of the origin and design of government",
+      "url": "https://www.gutenberg.org/ebooks/147",
+      "bears": "A summary, not a quotation. The two are not the same thing.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "liberty",
+        "custom"
+      ],
+      "claim": "Rights of Man denies that the parliament of 1688 can bind the people of a later day.",
+      "press": "against",
+      "work": "Rights of Man",
+      "loc": "Rights of Man, part 1",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "bears": "A summary, not a quotation. The dead do not govern the living.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "religion",
+        "liberty"
+      ],
+      "domains": [
+        "moral",
+        "religion",
+        "liberty"
+      ],
+      "claim": "Toleration is called a counterfeit of intolerance, both of them despotisms over conscience, and a revolution is described as a change in the moral condition of governments.",
+      "press": "against",
+      "work": "Rights of Man",
+      "loc": "Rights of Man",
+      "url": "https://www.gutenberg.org/ebooks/3742",
+      "bears": "A summary, not a quotation. Conscience is not a grant, and a revolution is judged by the morals of the government it leaves.",
+      "verbatim": false
+    }
+  ]
+}
