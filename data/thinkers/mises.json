@@ -107,11 +107,15 @@
     {
       "topics": [
         "justice",
-        "society"
+        "society",
+        "economy",
+        "welfare"
       ],
       "domains": [
         "justice",
-        "society"
+        "society",
+        "economy",
+        "welfare"
       ],
       "claim": "He treats inflation and privileged credit as ways a government shifts wealth without an open tax, and therefore as a kind of fraud on the public.",
       "press": "against",
@@ -119,6 +123,63 @@
       "loc": "On money and credit",
       "url": "https://archive.org/details/humanactiontreat00vonm",
       "bears": "A summary, not a quotation. Money is a moral subject because it changes who owns what.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "war",
+        "liberty",
+        "society"
+      ],
+      "domains": [
+        "war",
+        "liberty",
+        "society"
+      ],
+      "claim": "Liberalism treats peace as a requirement of a free society, and war as the destruction of the division of labor on which that society lives.",
+      "press": "against",
+      "work": "Liberalism: The Classical Tradition",
+      "loc": "On peace and war",
+      "url": "https://archive.org/details/liberalismclassi00vonm",
+      "bears": "A summary, not a quotation. A market order, on this argument, cannot be a permanent war economy.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "justice",
+        "economy"
+      ],
+      "domains": [
+        "equality",
+        "justice",
+        "economy"
+      ],
+      "claim": "He rejects equality of wealth as a political goal, and he treats an attempt to impose it as a destruction of the property and the prices a society uses to calculate.",
+      "press": "against",
+      "work": "Liberalism: The Classical Tradition",
+      "loc": "On equality and property",
+      "url": "https://archive.org/details/liberalismclassi00vonm",
+      "bears": "A summary, not a quotation. Equal freedom under law is not, for him, equal shares.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "power",
+        "property"
+      ],
+      "domains": [
+        "democracy",
+        "power",
+        "property"
+      ],
+      "claim": "He argues that a democracy which can abolish property by vote has traded the liberal limit on power for a new absolutism with more voters.",
+      "press": "against",
+      "work": "Liberalism: The Classical Tradition",
+      "loc": "On democracy and liberalism",
+      "url": "https://archive.org/details/liberalismclassi00vonm",
+      "bears": "A summary, not a quotation. The vote does not, in this book, authorize every use of the state.",
       "verbatim": false
     }
   ]

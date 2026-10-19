@@ -4,7 +4,7 @@
   "years": "1859\u20131952",
   "place": "Burlington, Vermont",
   "epithet": "Democracy as a way of living",
-  "dossier": "American philosopher and educator. Democracy and Education, published in 1916 and quoted here, treats democracy as a mode of associated living and education as the way a society continues. Later books, including Liberalism and Social Action, are still in copyright and are not quoted.",
+  "dossier": "American philosopher and educator. Democracy and Education (1916), The Public and Its Problems (1927), and Human Nature and Conduct (1922) are quoted here; all three are in the public domain in the United States. Later books, including Liberalism and Social Action (1935), are still in copyright and are not quoted.",
   "tableId": "modern",
   "tables": [
     "modern"
@@ -24,6 +24,16 @@
       "title": "Democracy and Education",
       "url": "https://www.gutenberg.org/ebooks/852",
       "note": "1916. Public domain."
+    },
+    {
+      "title": "The Public and Its Problems",
+      "url": "https://www.gutenberg.org/ebooks/71000",
+      "note": "1927. Public domain in the United States. Project Gutenberg."
+    },
+    {
+      "title": "Human Nature and Conduct",
+      "url": "https://www.gutenberg.org/ebooks/41386",
+      "note": "1922. Public domain. Project Gutenberg."
     }
   ],
   "entries": [
@@ -97,6 +107,82 @@
       "loc": "Chapter 26, Theories of morals",
       "url": "https://www.gutenberg.org/ebooks/852",
       "bears": "He measures morality by conduct and results, not by a named intuition.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "democracy"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "democracy"
+      ],
+      "claim": "The only statement which can be made is a purely formal one: the state is the organization of the public effected through officials for the protection of the interests shared by its members.",
+      "press": "qualifies",
+      "work": "The Public and Its Problems",
+      "loc": "Chapter 1, Search for the Public",
+      "url": "https://www.gutenberg.org/ebooks/71000",
+      "bears": "The state is not, for him, a thing apart from a public and its officials.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "power",
+        "democracy"
+      ],
+      "domains": [
+        "knowledge",
+        "power",
+        "democracy"
+      ],
+      "claim": "No government by experts in which the masses do not have the chance to inform the experts as to their needs can be anything but an oligarchy managed in the interests of the few.",
+      "press": "against",
+      "work": "The Public and Its Problems",
+      "loc": "Chapter 6, The problem of method",
+      "url": "https://www.gutenberg.org/ebooks/71000",
+      "bears": "Expertise does not replace a public that can tell the experts what it needs.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "democracy",
+        "society",
+        "knowledge"
+      ],
+      "domains": [
+        "democracy",
+        "society",
+        "knowledge"
+      ],
+      "claim": "Viewed as a historical tendency exhibited in a chain of movements which have affected the forms of government over almost the entire globe during the last century and a half, democracy is a complex affair.",
+      "press": "qualifies",
+      "work": "The Public and Its Problems",
+      "loc": "The democratic state",
+      "url": "https://www.gutenberg.org/ebooks/71000",
+      "bears": "He refuses to treat democracy as one simple machine.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "custom",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "custom",
+        "society"
+      ],
+      "claim": "Customs in any case constitute moral standards. For they are active demands for certain ways of acting.",
+      "press": "for",
+      "work": "Human Nature and Conduct",
+      "loc": "Custom and morality",
+      "url": "https://www.gutenberg.org/ebooks/41386",
+      "bears": "A moral standard, here, is a custom that demands a way of acting, not a rule delivered from outside the habits people already share.",
       "verbatim": true
     }
   ]

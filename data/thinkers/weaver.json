@@ -4,7 +4,7 @@
   "years": "1910\u20131963",
   "place": "Weaverville, North Carolina",
   "epithet": "Ideas have a direction",
-  "dossier": "American rhetorician and traditionalist, teaching at the University of Chicago. Ideas Have Consequences argues that the modern West, having dropped a transcendent standard of truth, is left with opinion, sentiment, and a spoiled language. The book is in copyright. These cards summarize it and link a library record. They are not quotations.",
+  "dossier": "American rhetorician and traditionalist, teaching at the University of Chicago. Ideas Have Consequences argues that the modern West, having dropped a transcendent standard of truth, is left with opinion, sentiment, and a spoiled language. The book is in copyright. These cards summarize it and link a library record. They are not quotations. The property chapter is as close as this book comes to money and welfare: property as a metaphysical right, not a schedule of benefits.",
   "tableId": "traditionalist",
   "tables": [
     "traditionalist"
@@ -114,6 +114,63 @@
       "loc": "The closing argument",
       "url": "https://archive.org/details/ideashaveconsequ0000rich",
       "bears": "A summary, not a quotation. Piety is his name for the posture a culture needs.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "property",
+        "welfare"
+      ],
+      "domains": [
+        "economy",
+        "property",
+        "welfare"
+      ],
+      "claim": "The chapter on the last metaphysical right treats private property as the right that still ties a person to something outside appetite, and it treats a politics that dissolves property into a claim for support from the state as the loss of that right.",
+      "press": "for",
+      "work": "Ideas Have Consequences",
+      "loc": "The last metaphysical right",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. Welfare that replaces property is, in this chapter, a metaphysical loss and not only a budget.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "knowledge"
+      ],
+      "claim": "The book argues that a culture recovers a standard only if it recovers piety toward a truth it did not invent, which for Weaver is a religious posture and not a private opinion.",
+      "press": "for",
+      "work": "Ideas Have Consequences",
+      "loc": "Piety and the transcendent standard",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. The moral compass he wants is not a poll of feelings.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "power",
+        "equality"
+      ],
+      "domains": [
+        "democracy",
+        "power",
+        "equality"
+      ],
+      "claim": "He argues that a mass democracy which flatters every opinion equally cannot educate, because education requires the right to say that one thing is better than another.",
+      "press": "against",
+      "work": "Ideas Have Consequences",
+      "loc": "Distinction and the mass",
+      "url": "https://archive.org/details/ideashaveconsequ0000rich",
+      "bears": "A summary, not a quotation. A vote does not, for him, settle what is excellent.",
       "verbatim": false
     }
   ]

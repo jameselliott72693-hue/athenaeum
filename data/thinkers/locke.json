@@ -4,7 +4,7 @@
   "years": "1632\u20131704",
   "place": "Somerset",
   "epithet": "The theorist of trust",
-  "dossier": "English physician and philosopher. The Second Treatise of Government derives political power from consent and limits it by a natural law that forbids harm to the life, health, liberty, or possessions of another.",
+  "dossier": "English physician and philosopher. The Second Treatise of Government derives political power from consent and limits it by a natural law that forbids harm to the life, health, liberty, or possessions of another. A Letter Concerning Toleration, in William Popple's public-domain translation, keeps the care of souls out of the magistrate's hands.",
   "voice": "I ask first what the law of nature already forbids, before I ask what a majority has voted.",
   "sound": {
     "wave": "triangle",
@@ -19,6 +19,11 @@
       "title": "Second Treatise of Government",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "note": "Project Gutenberg"
+    },
+    {
+      "title": "A Letter Concerning Toleration",
+      "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
+      "note": "1689, William Popple's translation. Public domain. Wikisource."
     }
   ],
   "entries": [
@@ -127,12 +132,14 @@
       "topics": [
         "liberty",
         "society",
-        "power"
+        "power",
+        "equality"
       ],
       "domains": [
         "liberty",
         "society",
-        "power"
+        "power",
+        "equality"
       ],
       "claim": "MEN being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent.",
       "press": "against",
@@ -159,6 +166,80 @@
       "loc": "Chapter XIX, Of the dissolution of government",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "bears": "A legislature that takes absolute power over lives, liberties, and estates forfeits its trust.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "liberty"
+      ],
+      "domains": [
+        "religion",
+        "liberty"
+      ],
+      "claim": "I esteem that toleration to be the chief characteristic mark of the true Church.",
+      "press": "for",
+      "work": "A Letter Concerning Toleration",
+      "loc": "Opening",
+      "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
+      "bears": "Toleration, not force, is the mark he looks for in a church.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "power",
+        "liberty"
+      ],
+      "domains": [
+        "religion",
+        "power",
+        "liberty"
+      ],
+      "claim": "First, because the care of souls is not committed to the civil magistrate, any more than to other men.",
+      "press": "against",
+      "work": "A Letter Concerning Toleration",
+      "loc": "The magistrate and the care of souls",
+      "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
+      "bears": "The state is not given the cure of souls.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "religion",
+        "power",
+        "justice"
+      ],
+      "claim": "In the second place, the care of souls cannot belong to the civil magistrate, because his power consists only in outward force; but true and saving religion consists in the inward persuasion of the mind, without which nothing can be acceptable to God.",
+      "press": "against",
+      "work": "A Letter Concerning Toleration",
+      "loc": "Force and inward persuasion",
+      "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
+      "bears": "Punishment can reach the body. It cannot make a belief.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "war",
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "war",
+        "power",
+        "justice"
+      ],
+      "claim": "But conquest is as far from setting up any government, as demolishing an house is from building a new one in the place.",
+      "press": "against",
+      "work": "Second Treatise of Government",
+      "loc": "Chapter XVI, Of conquest",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "bears": "Victory is not consent, and it does not found a government.",
       "verbatim": true
     }
   ],

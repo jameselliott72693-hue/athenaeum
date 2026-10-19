@@ -321,6 +321,46 @@
       "url": "https://www.gutenberg.org/ebooks/15679",
       "bears": "The political partnership includes the dead and the unborn, so one generation is not free to tear it up.",
       "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "custom",
+        "power",
+        "democracy"
+      ],
+      "domains": [
+        "religion",
+        "custom",
+        "power",
+        "democracy"
+      ],
+      "claim": "We are resolved to keep an established church, an established monarchy, an established aristocracy, and an established democracy, each in the degree it exists, and in no greater.",
+      "press": "for",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On establishments",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "Church and constitution are, for him, things to keep, each in the degree the country already has.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "custom",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "custom",
+        "moral"
+      ],
+      "claim": "The science of constructing a commonwealth, or renovating it, or reforming it, is, like every other experimental science, not to be taught a priori.",
+      "press": "against",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On the science of a commonwealth",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "A constitution is not, for him, a diagram drawn ahead of experience.",
+      "verbatim": true
     }
   ],
   "tables": [

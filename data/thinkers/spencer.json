@@ -4,7 +4,7 @@
   "years": "1820\u20131903",
   "place": "Derby",
   "epithet": "Equal freedom, and a small state",
-  "dossier": "English philosopher of evolution and sociology. Social Statics stated a law of equal freedom. The Right to Ignore the State, later dropped from that book, argued that a citizen may withdraw from political combination. Education argued that schooling should prepare a person for complete living. The Man versus the State, not quoted here, came later.",
+  "dossier": "English philosopher of evolution and sociology. Social Statics stated a law of equal freedom. The Right to Ignore the State, later dropped from that book, argued that a citizen may withdraw from political combination. Education argued that schooling should prepare a person for complete living. The Man versus the State (1884), quoted from the Appleton edition on the Internet Archive, turns those limits against parliamentary compulsion, the poor law, and what he calls the coming slavery.",
   "tableId": "classical",
   "tables": [
     "classical"
@@ -29,6 +29,11 @@
       "title": "Essays on Education and Kindred Subjects",
       "url": "https://www.gutenberg.org/ebooks/16510",
       "note": "Includes \u201cWhat Knowledge Is of Most Worth?\u201d Public domain."
+    },
+    {
+      "title": "The Man versus the State",
+      "url": "https://archive.org/details/manversusstateco00spen",
+      "note": "1884. Public domain. Internet Archive scan of the Appleton edition. The sentences below are in that scan."
     }
   ],
   "entries": [
@@ -85,6 +90,99 @@
       "loc": "What Knowledge Is of Most Worth?",
       "url": "https://www.gutenberg.org/ebooks/16510",
       "bears": "Education is judged by whether it prepares a person for a complete life.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "power",
+        "liberty",
+        "custom"
+      ],
+      "claim": "The great political superstition of the past was the divine right of kings. The great political superstition of the present is the divine right of parliaments.",
+      "press": "against",
+      "work": "The Man versus the State",
+      "loc": "The Great Political Superstition",
+      "url": "https://archive.org/details/manversusstateco00spen",
+      "bears": "A majority vote does not, for him, sanctify a command.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "claim": "The function of Liberalism in the past was that of putting a limit to the powers of kings. The function of true Liberalism in the future will be that of putting a limit to the powers of Parliaments.",
+      "press": "against",
+      "work": "The Man versus the State",
+      "loc": "The New Toryism",
+      "url": "https://archive.org/details/manversusstateco00spen",
+      "bears": "He turns the old liberal limit around and aims it at elected power.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "society"
+      ],
+      "claim": "All socialism involves slavery.",
+      "press": "against",
+      "work": "The Man versus the State",
+      "loc": "The Coming Slavery",
+      "url": "https://archive.org/details/manversusstateco00spen",
+      "bears": "His name for a life organized by compulsory cooperation.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "economy",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "economy",
+        "power"
+      ],
+      "claim": "The degree of his slavery varies according to the ratio between that which he is forced to yield up and that which he is allowed to retain; and it matters not whether his master is a single person or a society.",
+      "press": "against",
+      "work": "The Man versus the State",
+      "loc": "The Coming Slavery",
+      "url": "https://archive.org/details/manversusstateco00spen",
+      "bears": "What is taken by compulsion, not the name of the taker, is the measure.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "welfare",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "welfare",
+        "moral",
+        "power"
+      ],
+      "claim": "I admit that those who made, and modified, and administered, the old Poor Law, were responsible for producing an appalling amount of demoralization, which it will take more than one generation to remove.",
+      "press": "against",
+      "work": "The Man versus the State",
+      "loc": "The Coming Slavery",
+      "url": "https://archive.org/details/manversusstateco00spen",
+      "bears": "Poor relief, as he had watched it, could unteach the habits it meant to help.",
       "verbatim": true
     }
   ]

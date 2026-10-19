@@ -18,6 +18,16 @@ ranked.forEach((r) => console.log(r.tier, r.score, r.hits, r.speaks ? "speaks" :
 ["lewis", "aristotle", "aquinas", "burke", "smith", "augustine"].forEach((id) => {
   assert.ok(scoreThinker(byId[id], compass, rel).speaks, id + " should speak on a moral compass");
 });
+
+const schooling = "Should the state direct what schools may teach?";
+const smithSchool = scoreThinker(byId.smith, schooling, rel);
+assert.ok(smithSchool.speaks, "Smith should speak on schooling");
+assert.ok(smithSchool.matches.some((m) => /education of the common people|parish schools/i.test(m.entry.claim)), "the schooling card should be the Wealth of Nations passage");
+assert.ok(byId.locke.entries.some((e) => e.verbatim && e.work === "A Letter Concerning Toleration" && /care of souls/.test(e.claim)));
+assert.ok(byId.spencer.entries.some((e) => e.verbatim && e.work === "The Man versus the State" && /divine right of parliaments/.test(e.claim)));
+for (const id of [].concat(...["traditionalist", "classical", "modern"].map((tableId) => catalog.tables.find((t) => t.id === tableId).thinkers))) {
+  assert.ok(byId[id].entries.length >= 8, id + " should have at least eight cards");
+}
 assert.strictEqual(scoreThinker(byId.lewis, compass, rel).tier, "high");
 assert.ok(ranked.filter((r) => r.tier === "high").length < ranked.length);
 assert.strictEqual(scoreThinker(byId.locke, compass, rel).tier, "mid");

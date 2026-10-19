@@ -24,6 +24,11 @@
       "title": "Utilitarianism",
       "url": "https://www.gutenberg.org/ebooks/11224",
       "note": "Project Gutenberg"
+    },
+    {
+      "title": "Principles of Political Economy",
+      "url": "https://www.gutenberg.org/ebooks/30107",
+      "note": "1848. Project Gutenberg."
     }
   ],
   "entries": [
@@ -198,6 +203,82 @@
       "loc": "Chapter III",
       "url": "https://www.gutenberg.org/ebooks/5669",
       "bears": "Representative government means the people hold the ultimate controlling power through elected deputies.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "family",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "family",
+        "power"
+      ],
+      "claim": "Over himself, over his own body and mind, the individual is sovereign.",
+      "press": "for",
+      "work": "On Liberty",
+      "loc": "Chapter I, Introductory",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "bears": "The limit he draws is around the mature person, not around children.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "family",
+        "liberty",
+        "knowledge"
+      ],
+      "domains": [
+        "family",
+        "liberty",
+        "knowledge"
+      ],
+      "claim": "We are not speaking of children, or of young persons below the age which the law may fix as that of manhood or womanhood.",
+      "press": "qualifies",
+      "work": "On Liberty",
+      "loc": "Chapter I, Introductory",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "bears": "The sovereignty he gives a person does not yet belong to a child.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "justice",
+        "economy"
+      ],
+      "domains": [
+        "property",
+        "justice",
+        "economy"
+      ],
+      "claim": "The laws of property have never yet conformed to the principles on which the justification of private property rests.",
+      "press": "qualifies",
+      "work": "Principles of Political Economy",
+      "loc": "Book II, Chapter I, Of Property",
+      "url": "https://www.gutenberg.org/ebooks/30107",
+      "bears": "He defends property as a principle and says the laws on the books have not matched it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "justice"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "justice"
+      ],
+      "claim": "Private property, in every defense made of it, is supposed to mean the guarantee to individuals of the fruits of their own labor and abstinence.",
+      "press": "for",
+      "work": "Principles of Political Economy",
+      "loc": "Book II, Chapter I, Of Property",
+      "url": "https://www.gutenberg.org/ebooks/30107",
+      "bears": "The justification he repeats is that a person keeps what his labor and abstinence produced.",
       "verbatim": true
     }
   ],

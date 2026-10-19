@@ -53,12 +53,16 @@
       "topics": [
         "liberty",
         "custom",
-        "society"
+        "society",
+        "family",
+        "property"
       ],
       "domains": [
         "liberty",
         "custom",
-        "society"
+        "society",
+        "family",
+        "property"
       ],
       "claim": "He treats freedom as something that grows inside institutions \u2014 law, property, family, and a shared culture \u2014 rather than as the absence of every authority.",
       "press": "qualifies",
@@ -119,6 +123,63 @@
       "loc": "On the state and the nation",
       "url": "https://archive.org/details/meaningofconserv00scru",
       "bears": "A summary, not a quotation. Authority, for him, should be the authority of a home, not of a plan.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "custom"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "custom"
+      ],
+      "claim": "How to Be a Conservative defends the religious inheritance of a country as part of the settlement that teaches people their duties, not as a private hobby beside politics.",
+      "press": "for",
+      "work": "How to Be a Conservative",
+      "loc": "On religion",
+      "url": "https://openlibrary.org/works/OL36033048W",
+      "bears": "A summary, not a quotation. Faith is one of the attachments he thinks a conservative has a reason to keep.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "society"
+      ],
+      "claim": "He defends the market as one part of a civil settlement, useful because it coordinates strangers, and dangerous when it is asked to replace loyalty, law, and home.",
+      "press": "qualifies",
+      "work": "The Meaning of Conservatism",
+      "loc": "On the market and the settlement",
+      "url": "https://archive.org/details/meaningofconserv00scru",
+      "bears": "A summary, not a quotation. An economy is not, for him, a full account of a society.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "equality",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "equality",
+        "society"
+      ],
+      "claim": "He distinguishes justice from the envy that calls every inherited advantage an injury, and he resists a politics whose remedy is to level attachments until nothing is held in common but the state.",
+      "press": "against",
+      "work": "The Meaning of Conservatism",
+      "loc": "On justice and leveling",
+      "url": "https://archive.org/details/meaningofconserv00scru",
+      "bears": "A summary, not a quotation. Equality that abolishes the institutions people love is not the justice he is defending.",
       "verbatim": false
     }
   ]

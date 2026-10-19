@@ -4,7 +4,7 @@
   "years": "1899\u20131973",
   "place": "Kirchhain, Hesse",
   "epithet": "Natural right above history",
-  "dossier": "Political philosopher who taught at the University of Chicago. Natural Right and History asks whether political judgment still has a standard above history and convention. The book is in copyright. These cards summarize it and link a library record. They are not quotations. He is thin, on this shelf, on budgets, central banks, and welfare administration.",
+  "dossier": "Political philosopher who taught at the University of Chicago. Natural Right and History asks whether political judgment still has a standard above history and convention. The book is in copyright. These cards summarize it and link a library record. They are not quotations. The card on Locke and property is his reading of modern natural right. It is not a manual of inflation, budgets, or welfare administration, which this book does not provide.",
   "tableId": "traditionalist",
   "tables": [
     "traditionalist"
@@ -110,6 +110,63 @@
       "loc": "On historicism",
       "url": "https://archive.org/details/naturalrighthis00stra",
       "bears": "A summary, not a quotation. A denial of natural right does not leave politics untouched.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "moral"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "moral"
+      ],
+      "claim": "In the chapters on modern natural right, Strauss reads Locke's account of property and of comfortable self-preservation as a turn in which acquisition becomes morally respectable and the state is justified as the protector of that pursuit.",
+      "press": "qualifies",
+      "work": "Natural Right and History",
+      "loc": "The modern turn, and the chapter on Locke",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. This is his reading of a philosophy of property. It is not a theory of prices or of a central bank.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "justice",
+        "knowledge"
+      ],
+      "domains": [
+        "religion",
+        "justice",
+        "knowledge"
+      ],
+      "claim": "Natural Right and History keeps the theological-political question open: whether a standard for political life can be known by reason, and how that question stands beside revelation.",
+      "press": "qualifies",
+      "work": "Natural Right and History",
+      "loc": "Classic natural right and the theological-political problem",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. Religion is not, in this book, a private taste added after the regime is chosen.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "equality",
+        "custom"
+      ],
+      "domains": [
+        "democracy",
+        "equality",
+        "custom"
+      ],
+      "claim": "He refuses to identify natural right with the present democratic settlement, and he treats a historicism that calls every standard a local product as a doctrine with its own politics.",
+      "press": "qualifies",
+      "work": "Natural Right and History",
+      "loc": "On historicism and the modern regime",
+      "url": "https://archive.org/details/naturalrighthis00stra",
+      "bears": "A summary, not a quotation. Equality of esteem among all standards is, for him, itself a claim that needs judging.",
       "verbatim": false
     }
   ]

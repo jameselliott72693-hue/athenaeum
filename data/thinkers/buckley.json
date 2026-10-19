@@ -4,7 +4,7 @@
   "years": "1925\u20132008",
   "place": "New York",
   "epithet": "A university is not a blank slate",
-  "dossier": "Editor of National Review and a leading voice of postwar American conservatism. God and Man at Yale, his first book, charged his university with teaching against the religious and economic beliefs of the alumni who sustained it. The book is in copyright. These cards summarize it and link a library record. They are not quotations.",
+  "dossier": "Editor of National Review and a leading voice of postwar American conservatism. God and Man at Yale, his first book, charged his university with teaching against the religious and economic beliefs of the alumni who sustained it. The book is in copyright. These cards summarize it and link a library record. They are not quotations. The economics he attacks there is collectivist teaching, not a later technical debate about a central bank.",
   "tableId": "traditionalist",
   "tables": [
     "traditionalist"
@@ -112,6 +112,63 @@
       "loc": "On the college as a community",
       "url": "https://archive.org/details/godmanatyale0000will",
       "bears": "A summary, not a quotation. Institutional purpose limits what neutrality can mean.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "welfare",
+        "power"
+      ],
+      "domains": [
+        "economy",
+        "welfare",
+        "power"
+      ],
+      "claim": "God and Man at Yale's economics chapters argue that the classroom was forming students against the competitive economy the alumni thought the college existed to sustain, and in favor of collectivist direction of wealth.",
+      "press": "against",
+      "work": "God and Man at Yale",
+      "loc": "The chapters on economics",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. The quarrel about money, as he stages it, is a quarrel about what the college teaches.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "welfare",
+        "equality",
+        "justice"
+      ],
+      "domains": [
+        "welfare",
+        "equality",
+        "justice"
+      ],
+      "claim": "The book treats a college that lives on gifts and fees as answerable to the people who sustain it, rather than as an agency free to redistribute their convictions along with their money.",
+      "press": "against",
+      "work": "God and Man at Yale",
+      "loc": "On alumni, trustees, and doctrine",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. He will not separate the purse from the creed the purse was given to support.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "liberty",
+        "knowledge"
+      ],
+      "domains": [
+        "democracy",
+        "liberty",
+        "knowledge"
+      ],
+      "claim": "Academic freedom, on his account, is not a rule that every doctrine must be given equal institutional backing inside a college that was founded for a particular faith and a particular economic order.",
+      "press": "qualifies",
+      "work": "God and Man at Yale",
+      "loc": "The chapters on academic freedom",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. A democratic society can still have schools that are not neutral about their own premises.",
       "verbatim": false
     }
   ]
