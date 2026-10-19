@@ -117,5 +117,5 @@
     return { ok: true, ids, table, note };
   }
 
-  return { wordsOf, subjectTopics, scoreEntry, scoreThinker, tierOf, chooseRandom, shuffle, memberOf };
+  return { wordsOf, distinctive, subjectTopics, scoreEntry, scoreThinker, tierOf, chooseRandom, shuffle, memberOf };
 });

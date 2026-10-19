@@ -1,6 +1,8 @@
 (function () {
   const A = window.Athenaeum;
+  const Panel = window.AthenaeumPanel;
   const Store = window.AthenaeumStore;
+  const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
     thinkers: [],
     tables: [],
@@ -17,7 +19,8 @@
     undoTable: null,
     audio: null,
     sound: { muted: false, volume: 70 },
-    revealToken: 0
+    revealToken: 0,
+    playback: { speed: "normal", paused: true, index: 0, timer: null, token: 0 }
   };
 
   const $ = (id) => document.getElementById(id);
@@ -348,70 +351,40 @@
     $("random-note").textContent = "Restored the seating from before the draw.";
   }
 
-  const LEAN_LINE = {
-    for: "I press for the proposal, so far as it accords with the standard I have cited.",
-    against: "I press against the proposal. The standard I have cited does not give it a title.",
-    qualifies: "I qualify. The proposal has to be tried against the standard, and it does not pass or fail in a word."
-  };
-
-  function leanOf(entry, topic, brief) {
-    const text = `${topic} ${brief}`.toLowerCase();
-    const rupture = /\b(ban|outlaw|discard|abolish|require|direct|mandat|revolution|verify|repress|censor)\b/.test(text);
-    const preserve = /\b(preserve|defend|keep|inherit|restore)\b/.test(text) && !rupture;
-    const base = entry.press || "qualifies";
-    if (preserve && base === "against") return "for";
-    if (preserve && base === "for") return "against";
-    if (!rupture && !preserve) return base === "against" ? "qualifies" : base;
-    return base;
-  }
-
-  function passageLine(entry) {
-    if (entry.verbatim) return `From ${entry.work}, ${entry.loc}: “${entry.claim}”`;
-    return `Summary of ${entry.work}, ${entry.loc}, not a quotation: ${entry.claim}`;
-  }
-
-  function applyTo(entry, operative, lean) {
-    const act = {
-      for: "gives this sentence a title",
-      against: "withholds a title from this sentence",
-      qualifies: "will not let this sentence pass until it is tried against the standard"
-    }[lean];
-    const noun = entry.verbatim ? "passage" : "summary";
-    return `Applied to “${operative}”: the ${noun} ${act}. ${entry.bears}`;
-  }
-
-  function buildSpeech(thinker, topic, brief, scored) {
-    const matches = scored.matches.filter((m) => m.score > 0);
-    const primary = matches[0] && matches[0].entry;
-    if (!primary) return null;
-    const secondary = matches[1] ? matches[1].entry : null;
-    const operative = (brief || "").replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] || topic;
-    const lean = leanOf(primary, topic, brief);
-    const paragraphs = [
-      thinker.voice || `On “${topic},” I start from what I argued.`,
-      brief ? `The sentence I take as operative is: ${operative}` : "No separate brief was laid down, so the question itself has to carry the weight.",
-      passageLine(primary),
-      applyTo(primary, operative, lean)
-    ];
-    if (secondary) paragraphs.push(passageLine(secondary));
-    paragraphs.push(LEAN_LINE[lean]);
-    const cites = [primary, secondary].filter(Boolean).map((c) => ({
-      work: c.work, loc: c.loc, url: c.url, bears: c.bears, verbatim: !!c.verbatim
+  function projectReading(reading) {
+    if (!reading || !Array.isArray(reading.turns)) return;
+    reading.chairs = reading.turns.filter((turn) => turn.kind === "chair").map((turn) => ({
+      id: turn.id,
+      name: turn.name,
+      lean: turn.lean,
+      hits: turn.hits || (turn.cites || []).length,
+      paragraphs: (turn.paragraphs || []).slice(),
+      cites: turn.cites || [],
+      replyTo: turn.replyTo || null
     }));
-    return { paragraphs, cites, lean, operative };
+    reading.abstained = reading.turns.filter((turn) => turn.kind === "abstain" || turn.kind === "silence").map((turn) => ({
+      id: turn.id || "",
+      name: turn.name || "The table",
+      reason: turn.editorial || turn.reason || ""
+    }));
   }
 
-  function exchangesOf(session, operative) {
-    const by = { for: [], against: [], qualifies: [] };
-    session.forEach((s) => { if (by[s.lean]) by[s.lean].push(s); });
-    const out = [];
-    const noun = (s) => (s.cites && s.cites[0] && s.cites[0].verbatim ? "passage" : "summary");
-    const pair = (a, b, line) => { if (a && b) out.push({ from: a.name, to: b.name, text: line(a, b) }); };
-    pair(by.against[0], by.for[0], (a, b) =>
-      `${a.name}, to ${b.name}: the sentence “${operative}” does not get a title from ${a.cites[0].work}. Your lean grants what that ${noun(a)} withholds.`);
-    pair(by.qualifies[0], by.against[0] || by.for[0], (a, b) =>
-      `${a.name}, to ${b.name}: I will not let “${operative}” pass or fail in a word. ${a.cites[0].work}, ${a.cites[0].loc}, still has to be applied to the facts.`);
-    return out.slice(0, 2);
+  function clearPlayTimer() {
+    if (state.playback.timer) window.clearTimeout(state.playback.timer);
+    state.playback.timer = null;
+  }
+
+  function stopPlaybackClock() {
+    state.playback.token += 1;
+    clearPlayTimer();
+  }
+
+  function persistReading(reading) {
+    projectReading(reading);
+    return Store.put("sittings", reading).catch(() => {
+      const note = $("memory-note");
+      if (note) note.textContent = "This sitting could not be saved in the browser.";
+    });
   }
 
   async function unlockAudio() {
@@ -480,7 +453,310 @@
     </section>`;
   }
 
+  function turnHtml(turn, index) {
+    const save = `<button type="button" class="text-btn" data-save-turn="${index}">Bookmark this turn</button>`;
+    if (turn.kind === "moderator") {
+      const who = turn.toId ? `To ${esc(turn.toName)}` : "To the table";
+      return `<article class="remark moderator" data-turn="${index}">
+        <div class="remark-head"><div><p class="kicker">Moderator</p><h3>${who}</h3></div></div>
+        <p class="moderator-ask">${esc(turn.text || "")}</p>
+        ${save}
+      </article>`;
+    }
+    if (turn.kind === "silence") {
+      return `<article class="remark notice" data-turn="${index}">
+        <p class="editorial"><span class="note-flag">Note, not a chair’s words.</span> ${esc(turn.editorial || "")}</p>
+      </article>`;
+    }
+    const person = byId(turn.id) || { name: turn.name, years: "", portrait: "" };
+    const reply = turn.replyTo ? `<p class="reply-to">Answers ${esc(turn.replyTo.name)}.</p>` : "";
+    const passages = (turn.paragraphs || []).map((paragraph) => `<p class="passage">${esc(paragraph)}</p>`).join("");
+    const meta = turn.kind === "abstain" ? "Sits out" : (turn.hits ? `${turn.hits} passage${turn.hits === 1 ? "" : "s"}` : "");
+    return `<article class="remark${turn.kind === "abstain" ? " abstain" : ""}" data-turn="${index}">
+      <div class="remark-head">
+        <img class="avatar" src="${person.portrait ? esc(safeUrl(person.portrait)) : ""}" alt="" />
+        <div>
+          <p class="kicker">${esc(person.years || "")}</p>
+          <h3>${esc(turn.name)}</h3>
+          ${turn.lean ? `<span class="lean ${esc(turn.lean)}">${esc(turn.lean)}</span>` : ""}
+          ${meta ? `<span class="meta"> ${esc(meta)}</span>` : ""}
+        </div>
+      </div>
+      <p class="editorial"><span class="note-flag">Note, not a chair’s words.</span> ${esc(turn.editorial || "")}</p>
+      ${reply}
+      ${passages}
+      ${citeHtml(turn.cites, index)}
+      ${save}
+    </article>`;
+  }
+
+  function closeFromTurns(reading) {
+    const items = (reading.turns || []).map((turn) => {
+      if (turn.kind === "moderator") {
+        const who = turn.toId ? esc(turn.toName) : "the table";
+        return `<li><strong>Moderator</strong> asked ${who}.</li>`;
+      }
+      if (turn.kind === "chair" && turn.replyTo) {
+        return `<li><strong>${esc(turn.name)}</strong> answers <strong>${esc(turn.replyTo.name)}</strong>.</li>`;
+      }
+      if (turn.kind === "chair") return `<li><strong>${esc(turn.name)}</strong> addresses the subject.</li>`;
+      return `<li>${esc(turn.editorial || "")}</li>`;
+    }).join("");
+    return `<section class="close-panel" id="close-panel"><p class="kicker">Where the thread went</p><ul>${items}</ul></section>`;
+  }
+
+  function updatePlayButtons() {
+    const button = $("play-toggle");
+    const step = $("step-turn");
+    if (!button || !state.reading) return;
+    const done = state.playback.index >= (state.reading.turns || []).length;
+    button.disabled = done;
+    if (step) step.disabled = done;
+    button.textContent = !done && state.playback.paused ? "Resume" : "Pause";
+    button.setAttribute("aria-pressed", state.playback.paused ? "true" : "false");
+    document.querySelectorAll("#playback [data-speed]").forEach((speedButton) => {
+      speedButton.setAttribute("aria-pressed", speedButton.dataset.speed === state.playback.speed ? "true" : "false");
+    });
+  }
+
+  function finishPlayback() {
+    clearPlayTimer();
+    state.playback.paused = true;
+    if (state.reading && !$("close-panel")) $("turns").insertAdjacentHTML("afterend", closeFromTurns(state.reading));
+    const status = $("play-status");
+    if (status) status.textContent = "The sitting is complete.";
+    updatePlayButtons();
+  }
+
+  function scheduleNext() {
+    clearPlayTimer();
+    if (state.playback.paused || !state.reading) return;
+    if (state.playback.index >= state.reading.turns.length) {
+      finishPlayback();
+      return;
+    }
+    const token = state.playback.token;
+    state.playback.timer = window.setTimeout(() => {
+      if (token !== state.playback.token) return;
+      revealNext();
+    }, SPEEDS[state.playback.speed] || SPEEDS.normal);
+  }
+
+  function revealNext() {
+    const reading = state.reading;
+    if (!reading || !reading.turns || !$("turns")) return;
+    if (state.playback.index >= reading.turns.length) {
+      finishPlayback();
+      return;
+    }
+    const index = state.playback.index;
+    const turn = reading.turns[index];
+    $("turns").insertAdjacentHTML("beforeend", turnHtml(turn, index));
+    state.playback.index += 1;
+    if ((turn.kind === "chair" || turn.kind === "abstain") && turn.id) playSound(byId(turn.id));
+    const status = $("play-status");
+    if (status) {
+      status.textContent = turn.kind === "moderator"
+        ? "The moderator has asked."
+        : (turn.kind === "chair" ? `${turn.name} has spoken.` : "A chair sits out.");
+    }
+    const node = $("turns").lastElementChild;
+    if (node && node.scrollIntoView) node.scrollIntoView({ block: "nearest" });
+    if (state.playback.index >= reading.turns.length) finishPlayback();
+    else if (!state.playback.paused) scheduleNext();
+    updatePlayButtons();
+  }
+
+  function beginPlayback() {
+    stopPlaybackClock();
+    state.playback.paused = false;
+    state.playback.index = 0;
+    if ($("turns")) $("turns").innerHTML = "";
+    const close = $("close-panel");
+    if (close) close.remove();
+    revealNext();
+  }
+
+  function showFinished(reading) {
+    stopPlaybackClock();
+    state.playback.paused = true;
+    state.playback.index = (reading.turns || []).length;
+    if ($("turns")) $("turns").innerHTML = (reading.turns || []).map((turn, index) => turnHtml(turn, index)).join("");
+    if (!$("close-panel") && $("turns")) $("turns").insertAdjacentHTML("afterend", closeFromTurns(reading));
+    updatePlayButtons();
+    const status = $("play-status");
+    if (status) status.textContent = "Saved sitting. The full conversation is on the page.";
+  }
+
+  async function togglePlay() {
+    await unlockAudio();
+    if (!state.reading || !state.reading.panel) return;
+    if (state.playback.index >= state.reading.turns.length) return;
+    state.playback.paused = !state.playback.paused;
+    if (state.playback.paused) clearPlayTimer();
+    else scheduleNext();
+    updatePlayButtons();
+  }
+
+  async function stepTurn() {
+    await unlockAudio();
+    if (!state.reading || !state.reading.panel) return;
+    if (state.playback.index >= state.reading.turns.length) return;
+    const wasPaused = state.playback.paused;
+    clearPlayTimer();
+    state.playback.paused = true;
+    revealNext();
+    if (!wasPaused && state.playback.index < state.reading.turns.length) {
+      state.playback.paused = false;
+      scheduleNext();
+    }
+    updatePlayButtons();
+  }
+
+  function setSpeed(speed) {
+    if (!SPEEDS[speed]) return;
+    state.playback.speed = speed;
+    saveJson("athenaeum.playback", { speed });
+    updatePlayButtons();
+    if (!state.playback.paused && state.playback.timer) {
+      clearPlayTimer();
+      scheduleNext();
+    }
+  }
+
+  function bindTransport() {
+    const play = $("play-toggle");
+    const step = $("step-turn");
+    const form = $("moderator");
+    if (play) play.addEventListener("click", togglePlay);
+    if (step) step.addEventListener("click", stepTurn);
+    document.querySelectorAll("#playback [data-speed]").forEach((button) => {
+      button.addEventListener("click", () => setSpeed(button.dataset.speed));
+    });
+    if (form) form.addEventListener("submit", askFollow);
+  }
+
+  function panelShell(reading) {
+    const topics = (reading.topics || []).join(" and ") || "no named topic on this shelf";
+    const speeds = ["slow", "normal", "fast"].map((speed) => {
+      const label = speed.charAt(0).toUpperCase() + speed.slice(1);
+      return `<button type="button" data-speed="${speed}" aria-pressed="${state.playback.speed === speed ? "true" : "false"}">${label}</button>`;
+    }).join("");
+    const options = [`<option value="table">The whole table</option>`].concat((reading.seated || []).map((id) => {
+      const person = byId(id);
+      return `<option value="${esc(id)}">${esc(person ? person.name : id)}</option>`;
+    })).join("");
+    return `
+      <p class="kicker">The reading</p>
+      <h2>${esc(reading.topic)}</h2>
+      <p class="lede">Read against ${esc(topics)}. The first chair addresses the subject. Each later chair answers from a card that meets what was already raised, or sits out.</p>
+      <div class="playback" id="playback" role="group" aria-label="Playback">
+        <button type="button" id="play-toggle" aria-pressed="false" aria-keyshortcuts="p">Pause</button>
+        <button type="button" id="step-turn" aria-keyshortcuts="n">Next turn</button>
+        <div class="speed" role="radiogroup" aria-label="Speed">${speeds}</div>
+        <p id="play-status" class="hint" role="status"></p>
+      </div>
+      <p class="hint playback-keys">Keyboard, when you are not typing: P pauses, N steps to the next turn.</p>
+      <form id="moderator" class="moderator-form">
+        <label class="field" for="follow-up">Follow-up</label>
+        <textarea id="follow-up" maxlength="240" placeholder="A question for the table, or for one chair."></textarea>
+        <label class="field" for="follow-target">Ask</label>
+        <select id="follow-target">${options}</select>
+        <button type="submit" class="solid" id="ask-follow">Ask this</button>
+        <p id="follow-note" class="hint" role="status"></p>
+      </form>
+      <div class="session-tools">
+        <button type="button" id="copy-sitting">Copy the reading</button>
+        <button type="button" id="download-sitting">Download text</button>
+        <button type="button" id="download-pdf">Download PDF</button>
+        <button type="button" id="print-sitting">Print</button>
+      </div>
+      <div id="turns"></div>`;
+  }
+
+  function renderPanel(reading, opts) {
+    state.reading = reading;
+    state.revealToken += 1;
+    const host = $("session");
+    host.innerHTML = panelShell(reading);
+    $("copy-sitting").addEventListener("click", async () => {
+      const button = $("copy-sitting");
+      try {
+        await navigator.clipboard.writeText(sittingText(reading));
+        button.textContent = "Copied";
+      } catch (err) { button.textContent = "Copy failed"; }
+    });
+    $("download-sitting").addEventListener("click", () => downloadSitting(reading));
+    $("download-pdf").addEventListener("click", () => downloadPdf(reading));
+    $("print-sitting").addEventListener("click", () => window.print());
+    bindTransport();
+    if (opts && opts.play) beginPlayback();
+    else showFinished(reading);
+  }
+
+  async function askFollow(event) {
+    event.preventDefault();
+    const reading = state.reading;
+    const note = $("follow-note");
+    if (!reading || !reading.panel) return;
+    const question = $("follow-up").value.trim();
+    if (question.length < 8) {
+      if (note) note.textContent = "Give the follow-up a few more words.";
+      return;
+    }
+    await unlockAudio();
+    const target = $("follow-target").value;
+    const person = target === "table" ? null : byId(target);
+    if (target !== "table" && !person) {
+      if (note) note.textContent = "That chair is no longer on this shelf.";
+      return;
+    }
+    const interrupted = state.playback.index < (reading.turns || []).length;
+    const hold = interrupted && state.playback.paused;
+    stopPlaybackClock();
+    const close = $("close-panel");
+    if (close) close.remove();
+    reading.turns = (reading.turns || []).slice(0, state.playback.index);
+    const moderator = {
+      kind: "moderator",
+      id: "moderator",
+      name: "Moderator",
+      toId: person ? person.id : "",
+      toName: person ? person.name : "the table",
+      text: question,
+      editorial: person ? `The moderator asks ${person.name}.` : "The moderator asks the table.",
+      paragraphs: [],
+      cites: [],
+      replyTo: null,
+      cards: []
+    };
+    reading.turns.push(moderator);
+    const anchor = { id: "moderator", name: "Moderator", turnIndex: reading.turns.length - 1 };
+    const pool = person ? [person] : (reading.seated || []).map(byId).filter(Boolean);
+    const built = Panel.buildRound({
+      thinkers: pool,
+      text: question,
+      relevance: state.relevance,
+      scoreThinker: A.scoreThinker,
+      distinctive: A.distinctive,
+      opening: "moderator",
+      anchor
+    });
+    reading.turns.push(...built.turns);
+    $("follow-up").value = "";
+    if (note) note.textContent = person ? `Asked ${person.name}.` : "Asked the table.";
+    state.playback.paused = !!hold;
+    revealNext();
+    if (hold) clearPlayTimer();
+    updatePlayButtons();
+    persistReading(reading);
+  }
+
   function renderReading(reading, opts) {
+    if (reading && reading.panel && Array.isArray(reading.turns)) {
+      renderPanel(reading, opts);
+      return;
+    }
     const animate = opts && opts.animate;
     const sound = opts && opts.sound;
     state.revealToken += 1;
@@ -553,6 +829,22 @@
   }
 
   function sittingText(reading) {
+    if (reading.panel && reading.turns) {
+      const lines = [reading.topic, ""];
+      reading.turns.forEach((turn) => {
+        if (turn.kind === "moderator") {
+          lines.push(`Moderator, to ${turn.toName || "the table"}: ${turn.text}`, "");
+          return;
+        }
+        lines.push(turn.name || "The table");
+        if (turn.editorial) lines.push(`Note, not a chair's words: ${turn.editorial}`);
+        if (turn.replyTo) lines.push(`Answers ${turn.replyTo.name}.`);
+        (turn.paragraphs || []).forEach((paragraph) => lines.push(paragraph));
+        (turn.cites || []).forEach((cite) => lines.push(`  ${cite.work}, ${cite.loc}. ${cite.url}`));
+        lines.push("");
+      });
+      return lines.join("\n");
+    }
     const lines = [reading.topic, "", `Operative sentence: ${reading.operative}`, ""];
     (reading.chairs || []).forEach((c) => {
       lines.push(`${c.name} — ${c.lean}`);
@@ -606,13 +898,27 @@
     push("The Athenaeum", 18, 22);
     push(reading.topic, 14, 18);
     push(reading.operative, 11, 18);
-    (reading.chairs || []).forEach((c) => {
+    if (reading.panel && reading.turns) {
+      reading.turns.forEach((turn) => {
+        if (turn.kind === "moderator") {
+          push(`Moderator, to ${turn.toName || "the table"}: ${turn.text}`, 12, 16);
+          return;
+        }
+        push(turn.name || "The table", 13, 16);
+        if (turn.editorial) wrapPdf(`Note: ${turn.editorial}`, 88).forEach((text) => push(text, 10, 13));
+        if (turn.replyTo) push(`Answers ${turn.replyTo.name}.`, 10, 13);
+        (turn.paragraphs || []).forEach((paragraph) => wrapPdf(paragraph, 88).forEach((text) => push(text, 11, 14)));
+        (turn.cites || []).forEach((cite) => wrapPdf(`${cite.work}, ${cite.loc}. ${cite.url}`, 86).forEach((text) => push(text, 9, 12)));
+        push("", 11, 8);
+      });
+    }
+    (reading.panel ? [] : (reading.chairs || [])).forEach((c) => {
       push(`${c.name} — ${c.lean}`, 13, 16);
       (c.paragraphs || []).forEach((p) => wrapPdf(p, 88).forEach((t) => push(t, 11, 14)));
       (c.cites || []).forEach((cite) => wrapPdf(`${cite.work}, ${cite.loc}. ${cite.url}`, 86).forEach((t) => push(t, 9, 12)));
       push("", 11, 8);
     });
-    (reading.abstained || []).forEach((a) => push(`${a.name} sits out. ${a.reason}`, 11, 14));
+    (reading.panel ? [] : (reading.abstained || [])).forEach((a) => push(`${a.name} sits out. ${a.reason}`, 11, 14));
     const pages = [[]];
     let y = pageH - margin;
     lines.forEach((item) => {
@@ -681,42 +987,34 @@
     }
     err.textContent = "";
     const text = `${topic} ${brief}`.trim();
-    const scored = people.map((t) => ({ t, s: A.scoreThinker(t, text, state.relevance) }));
-    const speakers = scored.filter((x) => x.s.speaks).sort((a, b) => b.s.score - a.s.score || a.t.name.localeCompare(b.t.name));
-    const quiet = scored.filter((x) => !x.s.speaks);
-    const speeches = speakers.map((x) => ({ thinker: x.t, cover: x.s, speech: buildSpeech(x.t, topic, brief, x.s) })).filter((x) => x.speech);
-    const operative = (speeches[0] && speeches[0].speech.operative) || topic;
-    const session = speeches.map((x) => ({
-      id: x.thinker.id,
-      name: x.thinker.name,
-      lean: x.speech.lean,
-      hits: x.cover.hits,
-      paragraphs: x.speech.paragraphs,
-      cites: x.speech.cites
-    }));
+    const built = Panel.buildRound({
+      thinkers: people,
+      text,
+      relevance: state.relevance,
+      scoreThinker: A.scoreThinker,
+      distinctive: A.distinctive,
+      opening: "subject"
+    });
     const reading = {
       id: uid(),
       when: new Date().toISOString(),
       topic,
       brief,
       topics: A.subjectTopics(text, state.relevance),
-      operative,
-      exchanges: exchangesOf(session, operative),
+      operative: topic,
+      exchanges: [],
       seated: people.map((t) => t.id),
       tableId: table.id,
-      chairs: session,
-      abstained: quiet.map((x) => ({
-        id: x.t.id,
-        name: x.t.name,
-        reason: `${x.t.name} has not written on this, on the shelf we have, and sits out.`
-      }))
+      panel: true,
+      turns: built.turns,
+      chairs: [],
+      abstained: []
     };
+    projectReading(reading);
     state.minutes.unshift(reading);
-    Store.put("sittings", reading).catch(() => {
-      $("memory-note").textContent = "This sitting could not be saved in the browser.";
-    });
+    persistReading(reading);
     renderShelf();
-    renderReading(reading, { animate: true, sound: true });
+    renderReading(reading, { play: true });
     $("session").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -884,6 +1182,17 @@
       if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
         e.preventDefault();
         weigh();
+        return;
+      }
+      if (!state.reading || !state.reading.panel) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.target && e.target.closest && e.target.closest("input, textarea, select, button, a")) return;
+      if (e.key === "p" || e.key === "P") {
+        e.preventDefault();
+        togglePlay();
+      } else if (e.key === "n" || e.key === "N" || e.key === "ArrowRight") {
+        e.preventDefault();
+        stepTurn();
       }
     });
     document.addEventListener("pointerdown", () => { unlockAudio(); }, { passive: true });
@@ -950,16 +1259,23 @@
     renderTradition();
     setSeated(reading.seated || []);
     scheduleScore();
-    renderReading(reading, { animate: true, sound: true });
+    renderReading(reading, { play: false, animate: false, sound: false });
+  }
+
+  function turnRecord(reading, index) {
+    if (reading.turns && reading.turns.length) return reading.turns[index] || null;
+    const chair = (reading.chairs || [])[index];
+    if (chair) return Object.assign({ kind: "chair", editorial: "" }, chair);
+    const quiet = (reading.abstained || [])[index - (reading.chairs || []).length];
+    if (!quiet) return null;
+    return { kind: "abstain", id: quiet.id, name: quiet.name, editorial: quiet.reason || "", paragraphs: [], cites: [] };
   }
 
   function bookmarkTurn(index) {
     const reading = state.reading;
     if (!reading) return;
-    const chair = (reading.chairs || [])[index];
-    const quiet = !chair ? (reading.abstained || [])[index - (reading.chairs || []).length] : null;
-    const person = chair || quiet;
-    if (!person) return;
+    const turn = turnRecord(reading, index);
+    if (!turn) return;
     const row = {
       id: uid(),
       kind: "turn",
@@ -967,24 +1283,25 @@
       sittingId: reading.id || "",
       tableId: reading.tableId || state.tableFilter,
       topic: reading.topic,
-      thinkerId: person.id,
-      thinkerName: person.name,
-      excerpt: chair ? (chair.paragraphs || []).join(" ") : (quiet.reason || ""),
-      work: chair && chair.cites && chair.cites[0] ? chair.cites[0].work : "",
-      loc: chair && chair.cites && chair.cites[0] ? chair.cites[0].loc : "",
-      url: chair && chair.cites && chair.cites[0] ? chair.cites[0].url : ""
+      thinkerId: turn.id || "",
+      thinkerName: turn.kind === "moderator" ? "Moderator" : (turn.name || "Turn"),
+      excerpt: turn.kind === "moderator" ? (turn.text || "") : ((turn.paragraphs && turn.paragraphs.length) ? turn.paragraphs.join(" ") : (turn.editorial || turn.reason || "")),
+      work: turn.cites && turn.cites[0] ? turn.cites[0].work : "",
+      loc: turn.cites && turn.cites[0] ? turn.cites[0].loc : "",
+      url: turn.cites && turn.cites[0] ? turn.cites[0].url : "",
+      replyTo: turn.replyTo || null
     };
     state.bookmarks.unshift(row);
     Store.put("bookmarks", row).then(() => {
-      $("memory-note").textContent = `Bookmarked ${person.name}'s turn.`;
+      $("memory-note").textContent = `Bookmarked ${row.thinkerName}'s turn.`;
       renderBookmarks();
     });
   }
 
   function bookmarkCite(turnIndex, citeIndex) {
     const reading = state.reading;
-    const chair = reading && (reading.chairs || [])[turnIndex];
-    const cite = chair && (chair.cites || [])[citeIndex];
+    const turn = reading && turnRecord(reading, turnIndex);
+    const cite = turn && (turn.cites || [])[citeIndex];
     if (!cite) return;
     const row = {
       id: uid(),
@@ -993,8 +1310,8 @@
       sittingId: reading.id || "",
       tableId: reading.tableId || state.tableFilter,
       topic: reading.topic,
-      thinkerId: chair.id,
-      thinkerName: chair.name,
+      thinkerId: turn.id,
+      thinkerName: turn.name,
       excerpt: cite.bears || "",
       work: cite.work,
       loc: cite.loc,
@@ -1011,8 +1328,9 @@
     const counts = new Map();
     state.minutes.forEach((sitting) => {
       if (tableId && tableId !== "all" && sitting.tableId !== tableId) return;
-      (sitting.chairs || []).forEach((chair) => {
-        (chair.cites || []).forEach((cite) => {
+      const source = sitting.turns && sitting.turns.length ? sitting.turns : (sitting.chairs || []);
+      source.forEach((turn) => {
+        (turn.cites || []).forEach((cite) => {
           const key = `${cite.work}||${cite.loc || ""}`;
           const row = counts.get(key) || { work: cite.work, loc: cite.loc || "", url: cite.url || "", count: 0 };
           row.count += 1;
@@ -1122,6 +1440,8 @@
     state.seatings = await Store.all("seatings");
     state.bookmarks = await Store.all("bookmarks");
     sortMemory();
+    const playback = loadJson("athenaeum.playback", null);
+    if (playback && SPEEDS[playback.speed]) state.playback.speed = playback.speed;
     const sound = loadJson("athenaeum.sound", null);
     if (sound && typeof sound.muted === "boolean") state.sound.muted = sound.muted;
     if (sound && Number.isFinite(sound.volume)) state.sound.volume = sound.volume;

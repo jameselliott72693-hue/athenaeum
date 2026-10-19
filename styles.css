@@ -236,6 +236,25 @@ html[data-theme="dark"] .lean.against { background: #3a2623; color: #f0cfc9; }
 .close-panel { background: var(--wash); border-color: var(--brass-soft); }
 .close-panel ul { margin: 8px 0 0; padding-left: 18px; }
 .exchange { border-left: 3px solid var(--brass); padding: 8px 12px; margin: 8px 0; }
+.playback, .speed { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.playback { margin: 12px 0; }
+.playback-keys { margin-top: 0; }
+.editorial {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--brass);
+  background: var(--brass-soft);
+  border-left: 3px solid var(--brass);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.note-flag { display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
+.passage { font-family: var(--serif); font-size: 18px; line-height: 1.45; }
+.reply-to { color: var(--brass); font-size: 14px; margin: 8px 0; }
+.moderator-ask { font-family: var(--serif); font-size: 22px; margin: 0 0 12px; }
+.remark.moderator, .remark.notice { background: var(--wash); }
+.moderator-form { display: grid; gap: 8px; margin: 8px 0 16px; }
+.moderator-form textarea, .moderator-form select { width: 100%; }
 .shelf { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
 .shelf button { text-align: left; border-radius: 12px; position: relative; padding-right: 88px; }
 .shelf .drop { position: absolute; right: 8px; top: 8px; }
@@ -270,7 +289,9 @@ footer { color: var(--soft); font-size: 14px; }
   .header-tools, .sound-bar, .theme-btn { width: 100%; }
   .pane + .pane { margin-top: 14px; }
   h1 { font-size: 34px; }
-  .session-tools button, .random-actions button, .row-btns button { flex: 1 1 140px; }
+  .session-tools button, .random-actions button, .row-btns button, .playback > button { flex: 1 1 140px; }
+  .speed { width: 100%; }
+  .speed button { flex: 1 1 90px; }
   .roster { max-height: none; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -278,7 +299,7 @@ footer { color: var(--soft); font-size: 14px; }
   html { scroll-behavior: auto; }
 }
 @media print {
-  header, .grid, footer, .session-tools, dialog { display: none !important; }
+  header, .grid, footer, .session-tools, .playback, .moderator-form, .playback-keys, dialog { display: none !important; }
   body, .remark, .close-panel, h1, h2, h3, p, li, a { color: #111 !important; background: #fff !important; }
   .remark, .close-panel { break-inside: avoid; border-color: #ccc; }
 }
