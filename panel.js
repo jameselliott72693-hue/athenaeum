@@ -4,28 +4,40 @@
   else root.AthenaeumPanel = api;
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   function passageLine(entry) {
+    if (entry.fromText) {
+      const work = String(entry.work || "");
+      const loc = String(entry.loc || "");
+      const place = work && loc.indexOf(work) === 0 ? loc : `${work}, ${loc}`;
+      return `From the full text of ${place}: “${entry.claim}”`;
+    }
     if (entry.verbatim) return `From ${entry.work}, ${entry.loc}: “${entry.claim}”`;
     return `Summary of ${entry.work}, ${entry.loc}, not a quotation: ${entry.claim}`;
   }
 
   function citeOf(entry) {
-    return {
+    const cite = {
       work: entry.work,
       loc: entry.loc,
       url: entry.url,
       bears: entry.bears,
       verbatim: !!entry.verbatim
     };
+    if (entry.fromText) cite.fromText = true;
+    if (entry.passageId) cite.passageId = entry.passageId;
+    return cite;
   }
 
   function cardSnap(entry) {
-    return {
+    const snap = {
       topics: (entry.topics || []).slice(),
       claim: entry.claim || "",
       bears: entry.bears || "",
       work: entry.work || "",
       loc: entry.loc || ""
     };
+    if (entry.fromText) snap.fromText = true;
+    if (entry.passageId) snap.passageId = entry.passageId;
+    return snap;
   }
 
   function blob(entry) {
@@ -87,9 +99,18 @@
     };
   }
 
-  function pickConnecting(thinker, raised, subjectMatches, distinctive) {
+  function poolOf(thinker, subjectMatches) {
+    const list = (thinker.entries || []).slice();
+    (subjectMatches || []).forEach((match) => {
+      if (match.entry && match.entry.fromText) list.push(match.entry);
+    });
+    return list;
+  }
+
+  function pickConnecting(thinker, raised, subjectMatches, distinctive, used) {
     let best = null;
-    (thinker.entries || []).forEach((entry) => {
+    poolOf(thinker, subjectMatches).forEach((entry) => {
+      if (entry.passageId && used && used.has(entry.passageId)) return;
       const hit = overlap(entry, raised, distinctive);
       if (hit.score <= 0) return;
       const known = (subjectMatches || []).find((match) => match.entry === entry);
@@ -97,16 +118,31 @@
         entry,
         hit,
         onSubject: known ? known.score : 0,
-        verbatim: entry.verbatim ? 1 : 0
+        verbatim: entry.verbatim ? 1 : 0,
+        fromText: entry.fromText ? 1 : 0
       };
       if (!best
         || candidate.hit.score > best.hit.score
         || (candidate.hit.score === best.hit.score && candidate.onSubject > best.onSubject)
-        || (candidate.hit.score === best.hit.score && candidate.onSubject === best.onSubject && candidate.verbatim > best.verbatim)) {
+        || (candidate.hit.score === best.hit.score && candidate.onSubject === best.onSubject && candidate.fromText < best.fromText)
+        || (candidate.hit.score === best.hit.score && candidate.onSubject === best.onSubject && candidate.fromText === best.fromText && candidate.verbatim > best.verbatim)) {
         best = candidate;
       }
     });
     return best;
+  }
+
+  function takeMatches(matches, used, count) {
+    const chosen = [];
+    (matches || []).forEach((match) => {
+      if (chosen.length >= count) return;
+      const entry = match.entry;
+      if (!entry) return;
+      if (entry.passageId && used && used.has(entry.passageId)) return;
+      if (chosen.some((item) => item === entry || (item.passageId && item.passageId === entry.passageId))) return;
+      chosen.push(entry);
+    });
+    return chosen;
   }
 
   function buildRound(opts) {
@@ -117,6 +153,7 @@
     const distinctive = opts.distinctive;
     const opening = opts.opening === "moderator" ? "moderator" : "subject";
     const anchor = opts.anchor || null;
+    const used = opts.usedPassageIds instanceof Set ? opts.usedPassageIds : new Set(opts.usedPassageIds || []);
     const scored = thinkers.map((thinker) => ({ thinker, score: scoreThinker(thinker, text, relevance) }));
     const speakers = scored
       .filter((row) => row.score.speaks)
@@ -128,15 +165,32 @@
     const raised = { topics: new Set(), terms: new Set(), speakers: [] };
     speakers.forEach((row, index) => {
       if (index === 0) {
-        const primary = row.score.matches[0].entry;
-        const secondary = row.score.matches[1] && row.score.matches[1].score > 0 ? row.score.matches[1].entry : null;
-        const entries = [primary, secondary].filter(Boolean);
-        entries.forEach((entry) => addRaised(raised, entry, row.thinker, distinctive));
+        const entries = takeMatches(row.score.matches, used, 2);
+        if (!entries.length) {
+          const editorial = `${row.thinker.name} sits out this turn. Nothing on this shelf meets what has already been raised.`;
+          turns.push({
+            kind: "abstain",
+            id: row.thinker.id,
+            name: row.thinker.name,
+            lean: "abstain",
+            editorial,
+            paragraphs: [],
+            cites: [],
+            replyTo: null,
+            cards: [],
+            reason: editorial
+          });
+          return;
+        }
+        entries.forEach((entry) => {
+          addRaised(raised, entry, row.thinker, distinctive);
+          if (entry.passageId) used.add(entry.passageId);
+        });
         turns.push({
           kind: "chair",
           id: row.thinker.id,
           name: row.thinker.name,
-          lean: primary.press || "qualifies",
+          lean: entries[0].press || "qualifies",
           editorial: opening === "moderator" ? "Answering the moderator." : "Addressing the subject.",
           paragraphs: entries.map(passageLine),
           cites: entries.map(citeOf),
@@ -146,7 +200,7 @@
         });
         return;
       }
-      const chosen = pickConnecting(row.thinker, raised, row.score.matches, distinctive);
+      const chosen = pickConnecting(row.thinker, raised, row.score.matches, distinctive, used);
       if (!chosen) {
         const editorial = `${row.thinker.name} sits out this turn. Nothing on this shelf meets what has already been raised.`;
         turns.push({
@@ -167,6 +221,7 @@
       const who = addressed ? addressed.speaker : raised.speakers[raised.speakers.length - 1];
       const prior = [...turns].reverse().find((turn) => turn.kind === "chair" && turn.id === who.id);
       addRaised(raised, chosen.entry, row.thinker, distinctive);
+      if (chosen.entry.passageId) used.add(chosen.entry.passageId);
       turns.push({
         kind: "chair",
         id: row.thinker.id,

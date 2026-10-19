@@ -99,7 +99,8 @@
       if (String(opts.subject || "").trim().length < 3) {
         return { ok: false, message: "Enter a subject before limiting the draw to chairs who have written on it." };
       }
-      pool = pool.filter((t) => scoreThinker(t, opts.subject, rel).speaks);
+      const judge = opts.scoreThinker || scoreThinker;
+      pool = pool.filter((t) => judge(t, opts.subject, rel).speaks);
     }
     if (pool.length < limits.min) {
       return {

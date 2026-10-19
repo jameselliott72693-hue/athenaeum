@@ -4,6 +4,14 @@ Seat a table, paste a subject, and read what the chairs can actually support fro
 
 The shelf lives in `data/`: one file for the tables, and one file per thinker. Choose a table first. A sitting stays inside that tradition. The present shelf is still there. Three political tables sit beside it, and so do a classical Christian table, an ancient philosophy table, and a Victorian critics table. A roster is the `thinkers` list on that table in `data/tables.json`, and the page seats from that list. A new chair also needs a file in `data/thinkers/` and an id in the top-level `thinkers` list.
 
-A line in quotation marks is taken from a public-domain text. Every other card is a summary. Chairs with nothing relevant sit out. A later chair speaks only from a card that shares a topic or a term with what was already said. Brass notes are the room’s framing, not a quotation. Sound is on until you mute it. Pause, step, and speed stay in this browser. A follow-up can go to the whole table or to one chair. Bookmarks, seatings, and full sittings are kept in this browser and can be exported as JSON.
+A line in quotation marks is taken from a public-domain text. Every other card is a summary. Chairs with nothing relevant sit out. A later chair speaks only from a card, or a searched passage, that shares a topic or a term with what was already said. A searched passage is quoted whole, marked “from the full text,” and cited to its book and place. Curated cards win a tie. Brass notes are the room’s framing, not a quotation. Sound is on until you mute it. Pause, step, and speed stay in this browser. A follow-up can go to the whole table or to one chair. Bookmarks, seatings, and full sittings are kept in this browser and can be exported as JSON. Search the books looks across the current table, or every table. A search result is not a citation until a chair speaks it.
+
+Thinkers whose books are still in copyright stay on their cards. The list is in `data/books/manifest.json`. To rebuild the corpus and the search index from the raw files named in that script:
+
+```
+node scripts/build-books.js
+```
+
+The script reads plain text from `BOOK_RAW` (default `/tmp/pg`), strips the Project Gutenberg boilerplate, writes cleaned passages to `data/books/text/`, and writes one BM25 index per thinker to `data/books/index/`. The page loads an index only when a search or a sitting needs that thinker.
 
 Open the folder through a local server, or through the hosted site. A file opened directly cannot load the shelf.
