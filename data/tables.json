@@ -1,0 +1,140 @@
+{
+  "thinkers": [
+    "aristotle",
+    "aquinas",
+    "burke",
+    "chesterton",
+    "lewis",
+    "plato",
+    "augustine",
+    "cicero",
+    "locke",
+    "smith",
+    "mill",
+    "tocqueville"
+  ],
+  "relevance": {
+    "debounceMs": 240,
+    "topicWeight": 4,
+    "lexicalWeight": 2,
+    "highMin": 28,
+    "lowMax": 2,
+    "speakMin": 4,
+    "lexicon": {
+      "moral": [
+        "moral",
+        "morality",
+        "virtue",
+        "virtues",
+        "ethic",
+        "ethics",
+        "conscience",
+        "duty",
+        "compass",
+        "righteous"
+      ],
+      "society": [
+        "society",
+        "social",
+        "community",
+        "civic",
+        "mores",
+        "manners",
+        "fellowship"
+      ],
+      "liberty": [
+        "freedom",
+        "liberty",
+        "liberties",
+        "speech",
+        "censor",
+        "censorship",
+        "anonymous",
+        "anonymity",
+        "privacy",
+        "toleration",
+        "tolerance"
+      ],
+      "justice": [
+        "justice",
+        "injustice",
+        "unjust",
+        "punishment",
+        "punish",
+        "crime",
+        "fairness"
+      ],
+      "knowledge": [
+        "school",
+        "schools",
+        "teach",
+        "teaching",
+        "education",
+        "curriculum",
+        "university",
+        "truth",
+        "science"
+      ],
+      "custom": [
+        "tradition",
+        "traditions",
+        "custom",
+        "customs",
+        "inheritance",
+        "revolution",
+        "prejudice",
+        "ancestors",
+        "heritage",
+        "constitution"
+      ],
+      "power": [
+        "government",
+        "state",
+        "congress",
+        "ministry",
+        "mandate",
+        "regulation",
+        "police",
+        "outlaw",
+        "ban"
+      ],
+      "war": [
+        "war",
+        "military",
+        "soldier",
+        "soldiers",
+        "army",
+        "peace",
+        "invasion"
+      ],
+      "property": [
+        "property",
+        "ownership",
+        "wealth",
+        "tax",
+        "taxes"
+      ]
+    }
+  },
+  "tables": [
+    {
+      "id": "letters",
+      "name": "The present shelf",
+      "tradition": "Letters",
+      "blurb": "The five chairs this room opened with, and seven more whose books are free to read. Political traditions, kept one to a table, come later.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "aristotle",
+        "aquinas",
+        "burke",
+        "chesterton",
+        "lewis"
+      ]
+    }
+  ]
+}

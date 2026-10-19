@@ -1,0 +1,93 @@
+{
+  "id": "locke",
+  "name": "John Locke",
+  "years": "1632–1704",
+  "place": "Somerset",
+  "epithet": "The theorist of trust",
+  "dossier": "English physician and philosopher. The Second Treatise of Government derives political power from consent and limits it by a natural law that forbids harm to the life, health, liberty, or possessions of another.",
+  "voice": "I ask first what the law of nature already forbids, before I ask what a majority has voted.",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      370,
+      466,
+      554
+    ]
+  },
+  "works": [
+    {
+      "title": "Second Treatise of Government",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "note": "Project Gutenberg"
+    }
+  ],
+  "entries": [
+    {
+      "domains": [
+        "liberty",
+        "justice"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "liberty",
+        "justice"
+      ],
+      "work": "Second Treatise of Government",
+      "loc": "Chapter II, §4–6",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "claim": "The state of nature has a law of nature to govern it. No one ought to harm another in his life, health, liberty, or possessions.",
+      "bears": "Political power is not the invention of morality. It is already under a moral limit."
+    },
+    {
+      "domains": [
+        "property"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "property",
+        "justice"
+      ],
+      "work": "Second Treatise of Government",
+      "loc": "Chapter V, §27",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "claim": "Every person has a property in his own person. The labor of his body, mixed with what he takes from the common, makes it his.",
+      "bears": "Ownership begins in labor, and it is bounded by what can be used without spoiling."
+    },
+    {
+      "domains": [
+        "power",
+        "liberty"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "power",
+        "liberty",
+        "society"
+      ],
+      "work": "Second Treatise of Government",
+      "loc": "Chapters VIII–IX",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "claim": "Political society begins by consent. Men give up the executive power they had under the law of nature so that a known authority may settle disputes.",
+      "bears": "Government is a trust for the preservation of rights, not a blank commission."
+    },
+    {
+      "domains": [
+        "power",
+        "liberty"
+      ],
+      "press": "against",
+      "topics": [
+        "power",
+        "liberty"
+      ],
+      "work": "Second Treatise of Government",
+      "loc": "Chapter XIX, §221–222",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "claim": "When the legislative or the prince acts contrary to the trust, the government is dissolved, and power returns to the society that gave it.",
+      "bears": "A law that breaks the trust does not become lawful by being passed."
+    }
+  ],
+  "tableId": "letters",
+  "portrait": "images/locke.svg"
+}
