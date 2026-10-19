@@ -1,0 +1,118 @@
+{
+  "id": "oakeshott",
+  "name": "Michael Oakeshott",
+  "years": "1901\u20131990",
+  "place": "Chelsfield, Kent",
+  "epithet": "Politics is not a technique",
+  "dossier": "English political philosopher, professor at the London School of Economics. Rationalism in Politics and Other Essays distinguishes practical knowledge, learned by doing, from a technique that claims to replace it. The essays are in copyright. These cards summarize them and link a library catalog record. They are not quotations.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/oakeshott.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      277,
+      349,
+      415
+    ]
+  },
+  "voice": "I ask whether this is a habit of conduct, or only a bright technique.",
+  "works": [
+    {
+      "title": "Rationalism in Politics and Other Essays",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "note": "In copyright. Library catalog record. Not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "knowledge",
+        "custom",
+        "power"
+      ],
+      "domains": [
+        "knowledge",
+        "custom",
+        "power"
+      ],
+      "claim": "In the title essay, Oakeshott argues that a rationalist wants to replace a tradition of behavior with a technique that can be written down and applied from outside.",
+      "press": "against",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "Rationalism in Politics",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Technical knowledge is not a substitute for practical knowledge.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "custom",
+        "society"
+      ],
+      "domains": [
+        "custom",
+        "society"
+      ],
+      "claim": "On Being Conservative describes a disposition to prefer the familiar, to enjoy what is present, and to change it in order to keep it, not in order to reach a distant perfect state.",
+      "press": "qualifies",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "On Being Conservative",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Conservatism, here, is a temperament about change, not a list of policies.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "society"
+      ],
+      "claim": "He treats political activity as attending to the arrangements of a people, not as the implementation of a single doctrine about how they ought to live.",
+      "press": "against",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "Political education and the pursuit of intimations",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Politics follows the intimations of an existing tradition of behavior.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "knowledge"
+      ],
+      "claim": "A moral life, on this account, is learned as a language is learned, by living among people who already speak it, not by applying a crib of rules.",
+      "press": "for",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "The tower of Babel",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Morality is a practice before it is a code.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "liberty",
+        "custom"
+      ],
+      "claim": "He is suspicious of a politics that begins by wiping the slate, because the knowledge needed to live together is already in the practices a rationalist proposes to discard.",
+      "press": "against",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "Rationalism in Politics",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. A clean slate throws away the knowledge that was never fully written down.",
+      "verbatim": false
+    }
+  ]
+}

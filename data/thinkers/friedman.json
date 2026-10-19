@@ -1,0 +1,120 @@
+{
+  "id": "friedman",
+  "name": "Milton Friedman",
+  "years": "1912\u20132006",
+  "place": "Brooklyn",
+  "epithet": "Rules, vouchers, and a limited state",
+  "dossier": "American economist at the University of Chicago, and a Nobel laureate. Capitalism and Freedom argues that economic freedom is a condition of political freedom, and it proposes a state that sets rules rather than directing outcomes. The book is in copyright. These cards summarize it and link a library record. They are not quotations.",
+  "tableId": "classical",
+  "tables": [
+    "classical"
+  ],
+  "portrait": "images/friedman.svg",
+  "sound": {
+    "wave": "square",
+    "notes": [
+      330,
+      415,
+      523
+    ]
+  },
+  "voice": "I ask whether a rule would do this better than a discretion.",
+  "works": [
+    {
+      "title": "Capitalism and Freedom",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "note": "1962. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "liberty",
+        "property",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "property",
+        "society"
+      ],
+      "claim": "The opening argument is that economic freedom is both a freedom in its own right and a means to political freedom.",
+      "press": "for",
+      "work": "Capitalism and Freedom",
+      "loc": "Chapter 1, The relation between economic freedom and political freedom",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. The two freedoms are not, for him, separate subjects.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "power",
+        "justice"
+      ],
+      "claim": "He describes the proper government as rule-maker and umpire, protecting property and enforcing contracts, rather than as the director of who should win.",
+      "press": "qualifies",
+      "work": "Capitalism and Freedom",
+      "loc": "Chapter 2, The role of government in a free society",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. A limited state is part of the theory, not an afterthought.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "liberty"
+      ],
+      "domains": [
+        "knowledge",
+        "liberty"
+      ],
+      "claim": "The chapter on education proposes that parents, helped by public money if need be, should be able to choose a school, against a government monopoly of schooling.",
+      "press": "for",
+      "work": "Capitalism and Freedom",
+      "loc": "The chapter on the role of government in education",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. The state's interest in schooling does not, for him, require the state to run every school.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "power"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "power"
+      ],
+      "claim": "On money, he prefers a public rule that keeps the stock of money predictable to a discretion that tries to steer each turn of the economy.",
+      "press": "against",
+      "work": "Capitalism and Freedom",
+      "loc": "The chapter on monetary policy",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. Instability, in this chapter, comes from the managers as well as from the market.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "He argues that a free society rests on the belief that a person may pursue his own goals, and that cooperation through a market does not require agreement on one hierarchy of ends.",
+      "press": "for",
+      "work": "Capitalism and Freedom",
+      "loc": "On the moral case for a market order",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. Diversity of ends is a reason for the market, not an embarrassment.",
+      "verbatim": false
+    }
+  ]
+}

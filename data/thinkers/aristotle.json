@@ -1,10 +1,10 @@
 {
   "id": "aristotle",
   "name": "Aristotle",
-  "years": "384–322 BCE",
+  "years": "384\u2013322 BCE",
   "place": "Stagira",
   "epithet": "The practical philosopher",
-  "dossier": "Born in Stagira and trained in Plato’s Academy, Aristotle taught Alexander and later founded the Lyceum in Athens. The Nicomachean Ethics and the Politics are two halves of one inquiry into the human good. Happiness is activity of the soul in accordance with virtue over a complete life. Moral virtue is a habit of choosing the mean, as the person of practical wisdom would determine it. The city exists not merely so that people may live, but so that they may live well.",
+  "dossier": "Born in Stagira and trained in Plato\u2019s Academy, Aristotle taught Alexander and later founded the Lyceum in Athens. The Nicomachean Ethics and the Politics are two halves of one inquiry into the human good. Happiness is activity of the soul in accordance with virtue over a complete life. Moral virtue is a habit of choosing the mean, as the person of practical wisdom would determine it. The city exists not merely so that people may live, but so that they may live well.",
   "tableId": "letters",
   "portrait": "images/aristotle.jpg",
   "sound": {
@@ -49,10 +49,10 @@
         "power",
         "custom"
       ],
-      "claim": "The city exists for living well, not merely for living, and a correct regime aims at the common advantage rather than the rulers’.",
+      "claim": "The city exists for living well, not merely for living, and a correct regime aims at the common advantage rather than the rulers\u2019.",
       "press": "qualifies",
       "work": "Politics",
-      "loc": "I.1–2 and III.6–7",
+      "loc": "I.1\u20132 and III.6\u20137",
       "url": "https://www.gutenberg.org/ebooks/6762",
       "bears": "Every community aims at some good; the political community aims at the highest. Correct constitutions seek the common advantage."
     },
@@ -68,7 +68,7 @@
       "claim": "Virtue is a settled disposition to choose the mean relative to us, as the person of practical wisdom would determine it.",
       "press": "qualifies",
       "work": "Nicomachean Ethics",
-      "loc": "II.6, 1106b–1107a",
+      "loc": "II.6, 1106b\u20131107a",
       "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=2",
       "bears": "Moral virtue is produced by habit and consists in observing the mean determined by right principle."
     },
@@ -101,7 +101,7 @@
       "claim": "Justice toward others is complete virtue in relation to another, and distributive justice gives equals equal shares and unequals unequal shares.",
       "press": "qualifies",
       "work": "Nicomachean Ethics",
-      "loc": "V.1–3",
+      "loc": "V.1\u20133",
       "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=5",
       "bears": "Justice is a mean concerned with proportion between persons and shares."
     },
@@ -186,7 +186,7 @@
       "work": "Politics",
       "loc": "II.3 and II.5",
       "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0058:book=2",
-      "bears": "He rejects Plato’s community of property and of women, and keeps ownership private."
+      "bears": "He rejects Plato\u2019s community of property and of women, and keeps ownership private."
     },
     {
       "topics": [
@@ -254,5 +254,8 @@
       "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0058:book=8",
       "bears": "Education is a public concern, not a private one, because the city has one end."
     }
+  ],
+  "tables": [
+    "letters"
   ]
 }

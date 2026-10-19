@@ -1,0 +1,125 @@
+{
+  "id": "mises",
+  "name": "Ludwig von Mises",
+  "years": "1881\u20131973",
+  "place": "Lviv",
+  "epithet": "Calculation, and human action",
+  "dossier": "Austrian economist. Human Action is his treatise on economics as the logic of purposeful action. The book is in copyright, so nothing here is quoted. The link is a library catalog record. Liberalism, in the older European sense, is the political companion.",
+  "tableId": "classical",
+  "tables": [
+    "classical"
+  ],
+  "portrait": "images/mises.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      233,
+      294,
+      349
+    ]
+  },
+  "voice": "I ask whether this can be calculated, and by whom.",
+  "works": [
+    {
+      "title": "Human Action",
+      "url": "https://archive.org/details/humanactiontreat00vonm",
+      "note": "1949. In copyright. Posted by the Mises Institute with permission. Not quoted."
+    },
+    {
+      "title": "Liberalism: The Classical Tradition",
+      "url": "https://archive.org/details/liberalismclassi00vonm",
+      "note": "In copyright. Library catalog record. Not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "property",
+        "knowledge"
+      ],
+      "domains": [
+        "property",
+        "knowledge"
+      ],
+      "claim": "Human Action treats economics as the study of purposeful choice under scarcity, not as a technique for imposing a planner's goals.",
+      "press": "qualifies",
+      "work": "Human Action",
+      "loc": "Introduction, and the opening on action",
+      "url": "https://archive.org/details/humanactiontreat00vonm",
+      "bears": "A summary, not a quotation. The unit is a person acting, not a quota.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "property",
+        "power",
+        "society"
+      ],
+      "claim": "He argues that a socialist commonwealth cannot calculate, because without market prices for the means of production the planner cannot tell which project wastes less.",
+      "press": "against",
+      "work": "Human Action",
+      "loc": "The analysis of calculation under socialism",
+      "url": "https://archive.org/details/humanactiontreat00vonm",
+      "bears": "A summary, not a quotation. This is his case against an economy without private prices.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "moral",
+        "society"
+      ],
+      "claim": "In Liberalism he defends private property, peace, and tolerance as one political program, not as three optional tastes.",
+      "press": "for",
+      "work": "Liberalism: The Classical Tradition",
+      "loc": "The argument of the book",
+      "url": "https://archive.org/details/liberalismclassi00vonm",
+      "bears": "A summary, not a quotation. A free society, on this account, is a moral program as well as an economic one.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "property"
+      ],
+      "domains": [
+        "power",
+        "property"
+      ],
+      "claim": "Intervention that sets prices or picks industries, he argues, does not stay put: each control creates a problem that invites the next control.",
+      "press": "against",
+      "work": "Human Action",
+      "loc": "On interventionism",
+      "url": "https://archive.org/details/humanactiontreat00vonm",
+      "bears": "A summary, not a quotation. The middle way, as he describes it, is unstable.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "society"
+      ],
+      "claim": "He treats inflation and privileged credit as ways a government shifts wealth without an open tax, and therefore as a kind of fraud on the public.",
+      "press": "against",
+      "work": "Human Action",
+      "loc": "On money and credit",
+      "url": "https://archive.org/details/humanactiontreat00vonm",
+      "bears": "A summary, not a quotation. Money is a moral subject because it changes who owns what.",
+      "verbatim": false
+    }
+  ]
+}

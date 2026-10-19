@@ -1,0 +1,88 @@
+{
+  "id": "green",
+  "name": "T. H. Green",
+  "years": "1836\u20131882",
+  "place": "Birkin, Yorkshire",
+  "epithet": "Rights in a common good",
+  "dossier": "Whyte's Professor of Moral Philosophy at Oxford, and a Liberal in city politics. The Lectures on the Principles of Political Obligation, published from his papers, argue that rights exist among persons who recognise a common good, and that will, not mere force, is the basis of the state.",
+  "tableId": "modern",
+  "tables": [
+    "modern"
+  ],
+  "portrait": "images/green.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      349,
+      440,
+      523
+    ]
+  },
+  "voice": "I ask whether this recognises persons in a common good.",
+  "works": [
+    {
+      "title": "Lectures on the Principles of Political Obligation",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "note": "From the Philosophical Works, volume II. Public domain."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "power",
+        "custom"
+      ],
+      "claim": "They make no inquiry into the development of society and of man through society.",
+      "press": "against",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "G. Will, not force, is the basis of the state",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "He faults contract theories for ignoring how persons and society develop together.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "moral",
+        "society"
+      ],
+      "claim": "A right is a power claimed and recognised as contributory to a common good.",
+      "press": "for",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "A. The grounds of political obligation",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "A right, on this account, is a recognised power that serves a common good.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "society",
+        "moral"
+      ],
+      "claim": "A right against society, in distinction from a right to be treated as a member of society, is a contradiction in terms.",
+      "press": "against",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "A. The grounds of political obligation",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "He will not separate a right from membership in the society that recognises it.",
+      "verbatim": true
+    }
+  ]
+}

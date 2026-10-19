@@ -1,0 +1,91 @@
+{
+  "id": "spencer",
+  "name": "Herbert Spencer",
+  "years": "1820\u20131903",
+  "place": "Derby",
+  "epithet": "Equal freedom, and a small state",
+  "dossier": "English philosopher of evolution and sociology. Social Statics stated a law of equal freedom. The Right to Ignore the State, later dropped from that book, argued that a citizen may withdraw from political combination. Education argued that schooling should prepare a person for complete living. The Man versus the State, not quoted here, came later.",
+  "tableId": "classical",
+  "tables": [
+    "classical"
+  ],
+  "portrait": "images/spencer.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      294,
+      370,
+      440
+    ]
+  },
+  "voice": "I ask whether this leaves each person as free as every other.",
+  "works": [
+    {
+      "title": "The Right to Ignore the State",
+      "url": "https://www.gutenberg.org/ebooks/34649",
+      "note": "From Social Statics. Public domain."
+    },
+    {
+      "title": "Essays on Education and Kindred Subjects",
+      "url": "https://www.gutenberg.org/ebooks/16510",
+      "note": "Includes \u201cWhat Knowledge Is of Most Worth?\u201d Public domain."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "liberty",
+        "power",
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "moral"
+      ],
+      "claim": "If every man has freedom to do all that he wills, provided he infringes not the equal freedom of any other man, then he is free to drop connection with the State,--to relinquish its protection and to refuse paying towards its support.",
+      "press": "against",
+      "work": "The Right to Ignore the State",
+      "loc": "Section 1",
+      "url": "https://www.gutenberg.org/ebooks/34649",
+      "bears": "Equal freedom, as he states it here, includes leaving the state and its taxes.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "liberty",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "liberty",
+        "society"
+      ],
+      "claim": "Government being simply an agent employed in common by a number of individuals to secure to them certain advantages, the very nature of the connection implies that it is for each to say whether he will employ such an agent or not.",
+      "press": "against",
+      "work": "The Right to Ignore the State",
+      "loc": "Section 1",
+      "url": "https://www.gutenberg.org/ebooks/34649",
+      "bears": "He treats government as a hired agent, which each principal may dismiss.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "society"
+      ],
+      "claim": "To prepare us for complete living is the function which education has to discharge;",
+      "press": "qualifies",
+      "work": "Essays on Education and Kindred Subjects",
+      "loc": "What Knowledge Is of Most Worth?",
+      "url": "https://www.gutenberg.org/ebooks/16510",
+      "bears": "Education is judged by whether it prepares a person for a complete life.",
+      "verbatim": true
+    }
+  ]
+}

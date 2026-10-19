@@ -11,7 +11,26 @@
     "locke",
     "smith",
     "mill",
-    "tocqueville"
+    "tocqueville",
+    "spencer",
+    "green",
+    "dewey",
+    "keynes",
+    "kirk",
+    "buckley",
+    "oakeshott",
+    "scruton",
+    "weaver",
+    "chambers",
+    "strauss",
+    "mises",
+    "hayek",
+    "friedman",
+    "rothbard",
+    "rand",
+    "rawls",
+    "berlin",
+    "sen"
   ],
   "relevance": {
     "debounceMs": 240,
@@ -113,6 +132,54 @@
         "wealth",
         "tax",
         "taxes"
+      ],
+      "economy": [
+        "economy",
+        "economic",
+        "market",
+        "markets",
+        "money",
+        "price",
+        "prices",
+        "inflation",
+        "employment",
+        "wage",
+        "wages",
+        "trade",
+        "currency"
+      ],
+      "equality": [
+        "equality",
+        "equal",
+        "inequality",
+        "poverty",
+        "poor"
+      ],
+      "welfare": [
+        "welfare",
+        "charity",
+        "relief"
+      ],
+      "religion": [
+        "religion",
+        "religious",
+        "church",
+        "faith",
+        "god"
+      ],
+      "culture": [
+        "culture",
+        "cultural",
+        "beauty",
+        "art"
+      ],
+      "democracy": [
+        "democracy",
+        "democratic",
+        "election",
+        "elections",
+        "voting",
+        "majority"
       ]
     }
   },
@@ -121,7 +188,7 @@
       "id": "letters",
       "name": "The present shelf",
       "tradition": "Letters",
-      "blurb": "The five chairs this room opened with, and seven more whose books are free to read. Political traditions, kept one to a table, come later.",
+      "blurb": "The shelf this room opened with: letters, philosophy, and public-domain books, kept as its own table.",
       "limits": {
         "min": 2,
         "hardMax": 12,
@@ -134,6 +201,107 @@
         "burke",
         "chesterton",
         "lewis"
+      ],
+      "thinkers": [
+        "aristotle",
+        "aquinas",
+        "burke",
+        "chesterton",
+        "lewis",
+        "plato",
+        "augustine",
+        "cicero",
+        "locke",
+        "smith",
+        "mill",
+        "tocqueville"
+      ]
+    },
+    {
+      "id": "traditionalist",
+      "name": "Traditionalist and conservative",
+      "tradition": "Traditionalist and conservative",
+      "blurb": "Burke through the American traditionalists. One tradition. It does not sit with the other political tables.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "burke",
+        "kirk",
+        "oakeshott",
+        "tocqueville",
+        "scruton"
+      ],
+      "thinkers": [
+        "burke",
+        "kirk",
+        "buckley",
+        "oakeshott",
+        "scruton",
+        "tocqueville",
+        "weaver",
+        "chambers",
+        "strauss"
+      ]
+    },
+    {
+      "id": "classical",
+      "name": "Classical liberal and libertarian",
+      "tradition": "Classical liberal and libertarian",
+      "blurb": "From Locke and Smith to the twentieth-century case for markets and a small state. One tradition.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "locke",
+        "smith",
+        "mill",
+        "hayek",
+        "mises"
+      ],
+      "thinkers": [
+        "locke",
+        "mises",
+        "hayek",
+        "friedman",
+        "rothbard",
+        "rand",
+        "smith",
+        "spencer",
+        "mill"
+      ]
+    },
+    {
+      "id": "modern",
+      "name": "Modern and social liberal",
+      "tradition": "Modern and social liberal",
+      "blurb": "From Green and Dewey to Rawls, Keynes, Berlin, and Sen. One tradition.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "dewey",
+        "rawls",
+        "green",
+        "keynes",
+        "berlin"
+      ],
+      "thinkers": [
+        "dewey",
+        "rawls",
+        "green",
+        "keynes",
+        "berlin",
+        "sen"
       ]
     }
   ]

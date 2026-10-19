@@ -1,0 +1,118 @@
+{
+  "id": "buckley",
+  "name": "William F. Buckley Jr.",
+  "years": "1925\u20132008",
+  "place": "New York",
+  "epithet": "A university is not a blank slate",
+  "dossier": "Editor of National Review and a leading voice of postwar American conservatism. God and Man at Yale, his first book, charged his university with teaching against the religious and economic beliefs of the alumni who sustained it. The book is in copyright. These cards summarize it and link a library record. They are not quotations.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/buckley.svg",
+  "sound": {
+    "wave": "square",
+    "notes": [
+      440,
+      554,
+      659
+    ]
+  },
+  "voice": "I ask who is teaching this, and at whose expense.",
+  "works": [
+    {
+      "title": "God and Man at Yale",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "note": "1951. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "knowledge",
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "religion",
+        "moral"
+      ],
+      "claim": "Buckley argues that Yale's teaching in religion did not match the Christian commitment he believed the college still officially held.",
+      "press": "against",
+      "work": "God and Man at Yale",
+      "loc": "The chapters on religion",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. The quarrel is about what a college founded in a faith owes that faith.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "liberty"
+      ],
+      "domains": [
+        "knowledge",
+        "liberty"
+      ],
+      "claim": "He argues that academic freedom does not require a university to be neutral about the convictions it was founded to teach, or to ignore the trustees who are responsible for it.",
+      "press": "qualifies",
+      "work": "God and Man at Yale",
+      "loc": "The chapters on academic freedom",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. Freedom of teaching, on his account, sits inside the purpose of the institution.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "knowledge"
+      ],
+      "domains": [
+        "property",
+        "knowledge"
+      ],
+      "claim": "He contends that the economics taught at Yale undercut the competitive order the alumni thought they were supporting.",
+      "press": "against",
+      "work": "God and Man at Yale",
+      "loc": "The chapters on economics",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. The classroom, he says, was forming students against private enterprise.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "The book is a demand that the people who pay for a college may insist that it not evangelize against their basic beliefs.",
+      "press": "for",
+      "work": "God and Man at Yale",
+      "loc": "The argument of the book",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. Responsibility for a school's doctrine does not stop at the faculty.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "power",
+        "custom"
+      ],
+      "claim": "Buckley treats a college as a particular community with a history, not as a public podium that must host every doctrine on equal terms.",
+      "press": "against",
+      "work": "God and Man at Yale",
+      "loc": "On the college as a community",
+      "url": "https://archive.org/details/godmanatyale0000will",
+      "bears": "A summary, not a quotation. Institutional purpose limits what neutrality can mean.",
+      "verbatim": false
+    }
+  ]
+}

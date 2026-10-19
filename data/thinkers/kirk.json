@@ -1,0 +1,122 @@
+{
+  "id": "kirk",
+  "name": "Russell Kirk",
+  "years": "1918\u20131994",
+  "place": "Plymouth, Michigan",
+  "epithet": "Prescription, not a clean theory",
+  "dossier": "American man of letters. The Conservative Mind traces a tradition from Burke through the twentieth century. His books remain in copyright. The cards below are summaries of arguments in that book, with a link to a library record, and they are not quotations.",
+  "tableId": "traditionalist",
+  "tables": [
+    "traditionalist"
+  ],
+  "portrait": "images/kirk.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      311,
+      392,
+      466
+    ]
+  },
+  "voice": "I ask whether this keeps faith with what has already been found to work.",
+  "works": [
+    {
+      "title": "The Conservative Mind",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "note": "1953 and later revisions. In copyright. Library record."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "custom",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "custom",
+        "society"
+      ],
+      "claim": "Kirk describes a conservatism that trusts prescription, an enduring moral order, and voluntary community more than a plan drawn up by one generation.",
+      "press": "for",
+      "work": "The Conservative Mind",
+      "loc": "Chapter 1, The idea of conservatism",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. The opening chapter sets out the beliefs he thinks the tradition shares.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "custom",
+        "society",
+        "power"
+      ],
+      "domains": [
+        "custom",
+        "society",
+        "power"
+      ],
+      "claim": "Reading Burke, Kirk treats reform as something that has to carry an inheritance with it, and he treats a politics of abstract rights as a solvent of loyalty.",
+      "press": "against",
+      "work": "The Conservative Mind",
+      "loc": "Chapter 2, Burke and the politics of prescription",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Burke is his model of change that does not clear the ground.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge",
+        "custom"
+      ],
+      "domains": [
+        "moral",
+        "knowledge",
+        "custom"
+      ],
+      "claim": "Kirk argues that when a people drops its religious and literary inheritance, it loses the standard by which it could judge a proposed reform.",
+      "press": "against",
+      "work": "The Conservative Mind",
+      "loc": "On the loss of a normative order",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Culture and belief are, for him, part of political judgment.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "society"
+      ],
+      "claim": "He is wary of leveling for its own sake, and he thinks ordered liberty needs distinction, property, and local affection.",
+      "press": "qualifies",
+      "work": "The Conservative Mind",
+      "loc": "On order and liberty",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Equality is not his measure of a just society.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "power",
+        "custom"
+      ],
+      "claim": "Kirk prefers restraints that have grown up \u2014 constitution, church, family, and the habits of a neighborhood \u2014 to a central plan for improving people.",
+      "press": "against",
+      "work": "The Conservative Mind",
+      "loc": "On the institutions that restrain power",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Power is to be checked by inherited institutions, not only by a paper scheme.",
+      "verbatim": false
+    }
+  ]
+}

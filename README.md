@@ -2,8 +2,8 @@
 
 Seat a table, paste a subject, and read what the chairs can actually support from their books.
 
-The shelf lives in `data/`: one file for the tables, and one file per thinker. The page reads those files, so another tradition can be added later without folding it into the HTML. A sitting stays inside one tradition. The present shelf is a single tradition, the one this site opened with, extended far enough that a panel of twelve can be tried.
+The shelf lives in `data/`: one file for the tables, and one file per thinker. Choose a table first. A sitting stays inside that tradition. The present shelf is still there, and three political tables sit beside it.
 
-Chairs with nothing relevant sit out, in that order of relevance. Sound is on until you mute it. Each chime is made in the browser.
+A line in quotation marks is taken from a public-domain text. Every other card is a summary. Chairs with nothing relevant sit out. Sound is on until you mute it. Bookmarks, seatings, and full sittings are kept in this browser and can be exported as JSON.
 
 Open the folder through a local server, or through the hosted site. A file opened directly cannot load the shelf.
