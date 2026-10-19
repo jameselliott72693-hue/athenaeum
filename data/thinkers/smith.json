@@ -4,7 +4,7 @@
   "years": "1723\u20131790",
   "place": "Kirkcaldy",
   "epithet": "The moral philosopher",
-  "dossier": "Scottish moral philosopher and political economist. The Theory of Moral Sentiments, which this shelf uses, explains approval and disapproval by sympathy and by the impartial spectator. The Wealth of Nations comes later.",
+  "dossier": "Scottish moral philosopher and political economist. The Theory of Moral Sentiments explains approval and disapproval by sympathy and by the impartial spectator. The Wealth of Nations, quoted here on markets, defence, and the education of ordinary people, comes in Book V to parish schools.",
   "voice": "I ask how a spectator who is not a party to the case would enter into this, and where sympathy would stop.",
   "sound": {
     "wave": "sine",
@@ -19,6 +19,11 @@
       "title": "The Theory of Moral Sentiments",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "note": "In The Essays of Adam Smith, Project Gutenberg"
+    },
+    {
+      "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "note": "1776. Project Gutenberg. Book V is quoted on schooling, defence, and markets."
     }
   ],
   "entries": [
@@ -154,6 +159,80 @@
       "loc": "Part I, opening",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "bears": "The book opens by denying that selfishness is the whole of human nature.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "power",
+        "society"
+      ],
+      "claim": "The education of the common people requires, perhaps, in a civilized and commercial society, the attention of the public, more than that of people of some rank and fortune.",
+      "press": "for",
+      "work": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "loc": "Book V, Chapter I, Article II, Of the Expense of the Institutions for the Education of Youth",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "bears": "He does not leave the schooling of ordinary people as a private afterthought.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "society"
+      ],
+      "claim": "In Scotland, the establishment of such parish schools has taught almost the whole common people to read, and a very great proportion of them to write and account.",
+      "press": "for",
+      "work": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "loc": "Book V, Chapter I, Article II, Of the Expense of the Institutions for the Education of Youth",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "bears": "A parish school, partly public, is his working example.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "economy",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "economy",
+        "moral"
+      ],
+      "claim": "The man whose whole life is spent in performing a few simple operations, of which the effects, too, are perhaps always the same, or very nearly the same, has no occasion to exert his understanding, or to exercise his invention, in finding out expedients for removing difficulties which never occur.",
+      "press": "qualifies",
+      "work": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "loc": "Book V, Chapter I, Article II, on the division of labour and the mind",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "bears": "The same division of labour that makes a country rich can narrow the people who do the work, which is why he turns to education.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "war",
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "war",
+        "power",
+        "justice"
+      ],
+      "claim": "The first duty of the sovereign, therefore, that of defending the society from the violence and injustice of other independent societies, grows gradually more and more expensive, as the society advances in civilization.",
+      "press": "qualifies",
+      "work": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+      "loc": "Book V, Chapter I, Of the Expense of Defence",
+      "url": "https://www.gutenberg.org/ebooks/3300",
+      "bears": "Defence is a public duty, and a commercial society makes it dearer.",
       "verbatim": true
     }
   ],

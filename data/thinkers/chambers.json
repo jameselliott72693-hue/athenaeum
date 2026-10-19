@@ -4,7 +4,7 @@
   "years": "1901\u20131961",
   "place": "Philadelphia",
   "epithet": "A witness against a faith",
-  "dossier": "American journalist and a former underground Communist. Witness is his account of that life, of the Hiss case, and of his conversion. It is in copyright. These cards summarize the book and link a library record. They are not quotations. He wrote little here on the technical questions of money, schooling, or administration.",
+  "dossier": "American journalist and a former underground Communist. Witness is his account of that life, of the Hiss case, and of his conversion. It is in copyright. These cards summarize the book and link a library record. They are not quotations. He is not a monetary theorist. The card on prices and relief says only what the book does say: that a material answer is the wrong kind of answer.",
   "tableId": "traditionalist",
   "tables": [
     "traditionalist"
@@ -30,11 +30,13 @@
     {
       "topics": [
         "moral",
-        "religion"
+        "religion",
+        "war"
       ],
       "domains": [
         "moral",
-        "religion"
+        "religion",
+        "war"
       ],
       "claim": "The foreword, addressed to his children, presents the Cold War as a choice about whether man belongs to God or to the state.",
       "press": "for",
@@ -112,6 +114,63 @@
       "loc": "On the stakes of the struggle",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. Comfort and procedure are not, for him, a match for a total faith.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "welfare",
+        "religion"
+      ],
+      "domains": [
+        "economy",
+        "welfare",
+        "religion"
+      ],
+      "claim": "Witness treats the crisis of the West as a question of faith, whether man belongs to God or to the state, and it treats a politics that answers only with production, prices, and relief as already standing on the materialist ground it claims to oppose.",
+      "press": "against",
+      "work": "Witness",
+      "loc": "Foreword, and the argument about faith",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. He is thin on the technique of money. The point he does make is that technique is not the quarrel.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "war",
+        "power",
+        "moral"
+      ],
+      "domains": [
+        "war",
+        "power",
+        "moral"
+      ],
+      "claim": "He presents the Cold War as a war between two faiths about the nature of man, not as a border dispute or a disagreement about administration.",
+      "press": "against",
+      "work": "Witness",
+      "loc": "Foreword, Letter to my children",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. The conflict, as he names it to his children, is total because the faiths are total.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "knowledge",
+        "society",
+        "custom"
+      ],
+      "claim": "The chapters on the underground and on the intellectuals describe educated people lending their minds to a party that required them to deny what they could see.",
+      "press": "against",
+      "work": "Witness",
+      "loc": "The underground and the intellectuals",
+      "url": "https://archive.org/details/witnesscha00cham",
+      "bears": "A summary, not a quotation. Education is not, in this story, a protection against a false faith.",
       "verbatim": false
     }
   ]

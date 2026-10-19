@@ -40,11 +40,13 @@
     {
       "topics": [
         "power",
-        "liberty"
+        "liberty",
+        "economy"
       ],
       "domains": [
         "power",
-        "liberty"
+        "liberty",
+        "economy"
       ],
       "claim": "The Road to Serfdom argues that a plan which directs the economy has to concentrate power, and that the rule of law is what that concentration wears away.",
       "press": "against",
@@ -124,6 +126,63 @@
       "loc": "On the grown order of rules",
       "url": "https://archive.org/details/constitutionofli00frie",
       "bears": "A summary, not a quotation. Reason is not a license to redesign every inherited rule.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "welfare",
+        "liberty"
+      ],
+      "domains": [
+        "economy",
+        "welfare",
+        "liberty"
+      ],
+      "claim": "The Constitution of Liberty distinguishes a limited provision against severe destitution from a plan that assigns incomes, and it argues that the second cannot be carried through without coercion that spreads.",
+      "press": "qualifies",
+      "work": "The Constitution of Liberty",
+      "loc": "On social security and coercion",
+      "url": "https://archive.org/details/constitutionofli00frie",
+      "bears": "A summary, not a quotation. He is not describing every public relief as the road to serfdom. He is marking a line.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "democracy",
+        "power",
+        "justice"
+      ],
+      "claim": "The Road to Serfdom argues that democracy is not the same thing as unlimited power, and that a democracy which plans the economy in detail ceases to be able to limit what officials may do.",
+      "press": "against",
+      "work": "The Road to Serfdom",
+      "loc": "Planning and democracy",
+      "url": "https://archive.org/details/roadtoserfdom0000frie_b9p8",
+      "bears": "A summary, not a quotation. A majority is not, for him, a sufficient rule of law.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "justice",
+        "economy"
+      ],
+      "domains": [
+        "equality",
+        "justice",
+        "economy"
+      ],
+      "claim": "He argues that a government aiming at a particular pattern of material equality has to treat people unequally in the law, because only unequal coercion can force unequal situations into one pattern.",
+      "press": "against",
+      "work": "The Constitution of Liberty",
+      "loc": "On equality and the rule of law",
+      "url": "https://archive.org/details/constitutionofli00frie",
+      "bears": "A summary, not a quotation. Equality before general rules and equality of outcome pull apart, on this account.",
       "verbatim": false
     }
   ]

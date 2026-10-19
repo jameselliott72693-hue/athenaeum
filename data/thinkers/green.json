@@ -83,6 +83,120 @@
       "url": "https://www.gutenberg.org/ebooks/61889",
       "bears": "He will not separate a right from membership in the society that recognises it.",
       "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "society",
+        "liberty"
+      ],
+      "domains": [
+        "justice",
+        "society",
+        "liberty"
+      ],
+      "claim": "No one therefore can have a right except (1) as a member of a society, and (2) of a society in which some common good is recognised by the members of the society as their own ideal good, as that which should be for each of them.",
+      "press": "qualifies",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "A. The grounds of political obligation",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "A right, on this account, is not a claim one person holds against every society.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "justice",
+        "society"
+      ],
+      "claim": "Conversely, everyone capable of being determined by the conception of a common good as his own ideal good, as that which unconditionally should be (of being in that sense an end to himself), in other words, every moral person, is capable of rights; i.e. of bearing his part in a society in which the free exercise of his powers is secured to each member through the recognition by each of the others as entitled to the same freedom with himself.",
+      "press": "for",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "A. The grounds of political obligation",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "Freedom here is a freedom people secure for one another by recognition.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "justice"
+      ],
+      "claim": "Laws of this kind have often been objected to on the strength of a one-sided view of the function of laws; the view, viz., that its only business is to prevent interference with the liberty of the individual.",
+      "press": "qualifies",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "On the function of law",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "He thinks a law can do more than stand out of the way.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "knowledge",
+        "power",
+        "justice"
+      ],
+      "claim": "He regards the state (\u03c0\u03cc\u03bb\u03b9\u03c2) as a society of which the life is maintained by what its members do for the sake of maintaining it, by functions consciously fulfilled with reference to that end, and which in that sense imposes duties; and at the same time as a society from which its members derive the ability, through education and protection, to fulfil their several functions, and which in that sense confers rights.",
+      "press": "for",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "On Aristotle's polis",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "Education and protection are, in the account he is following, how a state confers the ability to do one's part.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "war",
+        "justice",
+        "liberty"
+      ],
+      "domains": [
+        "war",
+        "justice",
+        "liberty"
+      ],
+      "claim": "E.g. in the American war of secession, though it would be difficult to say that a man had not as much a right to fight for his seceding state as for the Union, yet as the special interest of the seceding states was that of maintaining slavery, there was reason for holding that the side of the Union, not that of the seceding states, was the one which ought to be taken.",
+      "press": "qualifies",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "On war and the common good",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "He will judge a war by the good it serves, and he names slavery as deciding this one.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "family",
+        "justice",
+        "custom"
+      ],
+      "domains": [
+        "family",
+        "justice",
+        "custom"
+      ],
+      "claim": "A son, when by the death of his father according to Roman law he was delivered from 'patria potestas' and became in turn head of a family, acquired a 'persona' which he had not before, the 'persona' which had previously belonged to the father.",
+      "press": "qualifies",
+      "work": "Lectures on the Principles of Political Obligation",
+      "loc": "On personality and the household",
+      "url": "https://www.gutenberg.org/ebooks/61889",
+      "bears": "Legal personality, in the example he uses, can be something a household confers rather than something one simply has.",
+      "verbatim": true
     }
   ]
 }

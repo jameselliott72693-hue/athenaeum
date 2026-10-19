@@ -184,6 +184,44 @@
       "url": "https://www.gutenberg.org/ebooks/816",
       "bears": "Henry Reeve's translation. A mild, minute power can keep citizens in a kind of permanent childhood.",
       "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "liberty",
+        "moral",
+        "religion"
+      ],
+      "claim": "they must know that liberty cannot be established without morality, nor morality without faith",
+      "press": "for",
+      "work": "Democracy in America, volume 1",
+      "loc": "On liberty, morality, and faith",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "bears": "He will not separate a free society from the faith that, on his account, supports its morals.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "equality",
+        "society",
+        "democracy"
+      ],
+      "domains": [
+        "equality",
+        "society",
+        "democracy"
+      ],
+      "claim": "my only object is to show in what respects the principle of equality has modified both the former and the latter.",
+      "press": "qualifies",
+      "work": "Democracy in America, volume 2",
+      "loc": "Author's preface, or the opening on equality of conditions",
+      "url": "https://www.gutenberg.org/ebooks/816",
+      "bears": "Equality of conditions is the cause he has chosen to follow through opinions and feelings.",
+      "verbatim": true
     }
   ],
   "tableId": "letters",

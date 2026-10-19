@@ -65,12 +65,16 @@
       "topics": [
         "justice",
         "equality",
-        "society"
+        "society",
+        "economy",
+        "welfare"
       ],
       "domains": [
         "justice",
         "equality",
-        "society"
+        "society",
+        "economy",
+        "welfare"
       ],
       "claim": "A second principle allows social and economic inequalities only when they are attached to offices open to all, and when they work to the benefit of the least advantaged.",
       "press": "qualifies",
@@ -114,6 +118,63 @@
       "loc": "On the worth of liberty and background institutions",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. The principles reach schools and the background rules of the economy.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "justice"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "justice"
+      ],
+      "claim": "A Theory of Justice treats the specification of property, including what may be held as personal goods and what forms of productive ownership a just basic structure may allow, as a question the principles of justice answer rather than as a right fixed before politics.",
+      "press": "qualifies",
+      "work": "A Theory of Justice",
+      "loc": "On property and the basic structure",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. Property is part of the institutions justice is choosing, not a premise those institutions may not touch.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "justice",
+        "liberty"
+      ],
+      "domains": [
+        "religion",
+        "justice",
+        "liberty"
+      ],
+      "claim": "Political Liberalism asks how people who hold incompatible religious and moral doctrines can still affirm one political conception of justice, and it looks for reasons that do not depend on settling which doctrine is true.",
+      "press": "qualifies",
+      "work": "A Theory of Justice",
+      "loc": "The later problem of stability, as the theory developed it",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. The card stays with the archive record already used for the theory. The point is the problem of religious disagreement inside a just regime, which that theory was revised to face.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "power",
+        "welfare"
+      ],
+      "domains": [
+        "democracy",
+        "power",
+        "welfare"
+      ],
+      "claim": "He argues that a constitutional democracy owes citizens the worth of their liberties, including education and a social minimum, because a liberty one cannot use is not the equal liberty the first principle names.",
+      "press": "for",
+      "work": "A Theory of Justice",
+      "loc": "On the worth of liberty and background institutions",
+      "url": "https://archive.org/details/theoryofjustice00rawlrich",
+      "bears": "A summary, not a quotation. Welfare, here, is a condition of equal citizenship and not a separate kindness.",
       "verbatim": false
     }
   ]

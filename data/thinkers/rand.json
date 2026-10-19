@@ -24,6 +24,11 @@
       "title": "The Virtue of Selfishness",
       "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
       "note": "1964. In copyright. Ayn Rand Institute record. Not quoted."
+    },
+    {
+      "title": "Philosophy: Who Needs It",
+      "url": "https://archive.org/details/philosophywhonee00rand",
+      "note": "1982. In copyright. Library record. The inflation essay is summarized, not quoted."
     }
   ],
   "entries": [
@@ -114,6 +119,63 @@
       "loc": "On altruism as a political ethic",
       "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
       "bears": "A summary, not a quotation. Need, in her argument, is not a claim on another person's life.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "property",
+        "justice"
+      ],
+      "domains": [
+        "economy",
+        "property",
+        "justice"
+      ],
+      "claim": "In the essay Egalitarianism and Inflation she treats inflation as a government expansion of the money supply that consumes savings, and she ties that expansion to policies that promise equal shares without equal production.",
+      "press": "against",
+      "work": "Philosophy: Who Needs It",
+      "loc": "Egalitarianism and Inflation",
+      "url": "https://archive.org/details/philosophywhonee00rand",
+      "bears": "A summary, not a quotation. The essay is in copyright. Nothing from it is copied here.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "justice",
+        "liberty"
+      ],
+      "domains": [
+        "equality",
+        "justice",
+        "liberty"
+      ],
+      "claim": "She rejects equality of results, and she treats a right to another person's product as the abolition of rights.",
+      "press": "against",
+      "work": "The Virtue of Selfishness",
+      "loc": "Man's Rights, and the critique of altruism as politics",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. Equal freedom to act is not, for her, an equal claim on what others make.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "knowledge"
+      ],
+      "claim": "She argues that a moral standard grounded in faith asks a person to surrender the judgment she thinks is the only means of knowledge.",
+      "press": "against",
+      "work": "The Virtue of Selfishness",
+      "loc": "The Objectivist ethics",
+      "url": "https://aynrand.org/novels/the-virtue-of-selfishness/",
+      "bears": "A summary, not a quotation. The compass she defends is reason, and she says so against religious duty.",
       "verbatim": false
     }
   ]

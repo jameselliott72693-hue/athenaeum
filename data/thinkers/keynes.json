@@ -131,6 +131,63 @@
       "url": "https://archive.org/details/in.ernet.dli.2015.115101",
       "bears": "A summary, not a quotation. The 1936 book remains in copyright.",
       "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "justice",
+        "welfare"
+      ],
+      "domains": [
+        "economy",
+        "justice",
+        "welfare"
+      ],
+      "claim": "Thus Inflation is unjust and Deflation is inexpedient.",
+      "press": "against",
+      "work": "A Tract on Monetary Reform",
+      "loc": "Chapter 1, The consequences to society of changes in the value of money",
+      "url": "https://www.gutenberg.org/ebooks/65278",
+      "bears": "A change in the value of money is not a neutral bookkeeping fact.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "welfare",
+        "equality"
+      ],
+      "domains": [
+        "economy",
+        "welfare",
+        "equality"
+      ],
+      "claim": "The period of depression has exacted its penalty from the working classes more in the form of unemployment than by a lowering of real wages, and State assistance to the unemployed has greatly moderated even this penalty.",
+      "press": "qualifies",
+      "work": "A Tract on Monetary Reform",
+      "loc": "On unemployment and wages after the war",
+      "url": "https://www.gutenberg.org/ebooks/65278",
+      "bears": "He is watching who pays for a fall in prices, and what public relief changes.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "economy",
+        "society",
+        "justice"
+      ],
+      "claim": "Unemployment, the precarious life of the worker, the disappointment of expectation, the sudden loss of savings, the excessive windfalls to individuals, the speculator, the profiteer--all proceed, in large measure, from the instability of the standard of value.",
+      "press": "against",
+      "work": "A Tract on Monetary Reform",
+      "loc": "Chapter 1, The consequences to society of changes in the value of money",
+      "url": "https://www.gutenberg.org/ebooks/65278",
+      "bears": "Instability of money shows up as lost work, lost savings, and unearned gains.",
+      "verbatim": true
     }
   ]
 }

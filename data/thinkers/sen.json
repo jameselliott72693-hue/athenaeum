@@ -36,12 +36,16 @@
       "topics": [
         "liberty",
         "society",
-        "property"
+        "property",
+        "economy",
+        "welfare"
       ],
       "domains": [
         "liberty",
         "society",
-        "property"
+        "property",
+        "economy",
+        "welfare"
       ],
       "claim": "Development as Freedom treats development as the expansion of the freedoms people actually have \u2014 to live, to read, to take part, to buy and sell \u2014 and not as income alone.",
       "press": "for",
@@ -55,12 +59,14 @@
       "topics": [
         "power",
         "society",
-        "justice"
+        "justice",
+        "democracy"
       ],
       "domains": [
         "power",
         "society",
-        "justice"
+        "justice",
+        "democracy"
       ],
       "claim": "He argues from the historical record that famines do not occur in functioning democracies with a free press, because the people who would starve have a way to punish the government.",
       "press": "for",
@@ -123,6 +129,63 @@
       "loc": "On capabilities",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. Two people with the same income may not have the same freedom.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "welfare",
+        "equality"
+      ],
+      "domains": [
+        "economy",
+        "welfare",
+        "equality"
+      ],
+      "claim": "Development as Freedom treats poverty as a deprivation of capabilities, of the real freedoms to live, to be healthy, and to appear in public without shame, and not only as a low income.",
+      "press": "for",
+      "work": "Development as Freedom",
+      "loc": "On capabilities and poverty",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. Welfare, on this account, is what a person can do and be.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "custom",
+        "culture",
+        "justice"
+      ],
+      "domains": [
+        "custom",
+        "culture",
+        "justice"
+      ],
+      "claim": "He argues that culture and tradition are real, and that they are not a reason to refuse criticism when a custom leaves some people, often women, with fewer freedoms than others.",
+      "press": "qualifies",
+      "work": "Development as Freedom",
+      "loc": "On culture, tradition, and freedom",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. A tradition can be loved and still be unjust, on this argument.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "welfare",
+        "power"
+      ],
+      "domains": [
+        "democracy",
+        "welfare",
+        "power"
+      ],
+      "claim": "He treats public discussion and democratic pressure as part of how a society prevents famine and neglect, not as a luxury that waits until incomes rise.",
+      "press": "for",
+      "work": "Development as Freedom",
+      "loc": "On democracy, public action, and deprivation",
+      "url": "https://openlibrary.org/works/OL116534W",
+      "bears": "A summary, not a quotation. The vote and the press are, for him, instruments of welfare as well as of liberty.",
       "verbatim": false
     }
   ]

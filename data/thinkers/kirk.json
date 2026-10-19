@@ -104,11 +104,13 @@
     {
       "topics": [
         "power",
-        "custom"
+        "custom",
+        "family"
       ],
       "domains": [
         "power",
-        "custom"
+        "custom",
+        "family"
       ],
       "claim": "Kirk prefers restraints that have grown up \u2014 constitution, church, family, and the habits of a neighborhood \u2014 to a central plan for improving people.",
       "press": "against",
@@ -116,6 +118,63 @@
       "loc": "On the institutions that restrain power",
       "url": "https://archive.org/details/conservativemind0000unse",
       "bears": "A summary, not a quotation. Power is to be checked by inherited institutions, not only by a paper scheme.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "custom"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "custom"
+      ],
+      "claim": "The opening canons of The Conservative Mind put a transcendent moral order, and the religious cultivation of that order, ahead of any program of reform.",
+      "press": "for",
+      "work": "The Conservative Mind",
+      "loc": "Chapter 1, The idea of conservatism",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Religion is not an optional ornament on the list he gives.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "economy",
+        "family"
+      ],
+      "domains": [
+        "property",
+        "economy",
+        "family"
+      ],
+      "claim": "Kirk treats private property as bound up with family continuity and personal freedom, not as a technique that planners may redesign whenever a distribution looks untidy.",
+      "press": "for",
+      "work": "The Conservative Mind",
+      "loc": "On property and the private order",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Property, in this telling, is part of how a household stays free of the state.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "democracy",
+        "justice"
+      ],
+      "domains": [
+        "equality",
+        "democracy",
+        "justice"
+      ],
+      "claim": "He is wary of a democratic passion for equality that would level the distinctions a society needs in order to educate and to govern itself.",
+      "press": "qualifies",
+      "work": "The Conservative Mind",
+      "loc": "On order, equality, and democracy",
+      "url": "https://archive.org/details/conservativemind0000unse",
+      "bears": "A summary, not a quotation. Equality before a standard is not, for him, the same as erasing standards.",
       "verbatim": false
     }
   ]

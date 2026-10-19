@@ -72,7 +72,8 @@
         "anonymity",
         "privacy",
         "toleration",
-        "tolerance"
+        "tolerance",
+        "rights"
       ],
       "justice": [
         "justice",
@@ -180,6 +181,14 @@
         "elections",
         "voting",
         "majority"
+      ],
+      "family": [
+        "family",
+        "families",
+        "marriage",
+        "parent",
+        "parents",
+        "household"
       ]
     }
   },

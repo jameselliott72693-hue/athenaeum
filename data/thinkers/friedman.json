@@ -115,6 +115,63 @@
       "url": "https://archive.org/details/capitalismfreedo0000frie",
       "bears": "A summary, not a quotation. Diversity of ends is a reason for the market, not an embarrassment.",
       "verbatim": false
+    },
+    {
+      "topics": [
+        "welfare",
+        "equality",
+        "economy"
+      ],
+      "domains": [
+        "welfare",
+        "equality",
+        "economy"
+      ],
+      "claim": "Capitalism and Freedom proposes that cash help to the poor, on a known rule, is preferable to a patchwork of directed welfare programs that give officials power over how the poor may live.",
+      "press": "qualifies",
+      "work": "Capitalism and Freedom",
+      "loc": "The chapter on social welfare",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. The negative income tax, as he argues it, is relief without a supervised way of life.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "justice",
+        "liberty"
+      ],
+      "domains": [
+        "equality",
+        "justice",
+        "liberty"
+      ],
+      "claim": "He distinguishes equality before the law and equality of opportunity from equality of outcome, and he treats the last as a goal that cannot be pursued without a large coercive state.",
+      "press": "against",
+      "work": "Capitalism and Freedom",
+      "loc": "On equality",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. A free society, on this page, will not have equal results.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "economy",
+        "power"
+      ],
+      "domains": [
+        "democracy",
+        "economy",
+        "power"
+      ],
+      "claim": "He argues that economic freedom is a check on political power, because a person who can earn a living outside the state can refuse a government he disapproves of.",
+      "press": "for",
+      "work": "Capitalism and Freedom",
+      "loc": "Chapter 1, The relation between economic freedom and political freedom",
+      "url": "https://archive.org/details/capitalismfreedo0000frie",
+      "bears": "A summary, not a quotation. Markets, here, are part of how a democracy stays limited.",
+      "verbatim": false
     }
   ]
 }

@@ -113,6 +113,63 @@
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. A clean slate throws away the knowledge that was never fully written down.",
       "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "economy",
+        "liberty",
+        "custom"
+      ],
+      "claim": "The essay on the political economy of freedom treats a free economy as a manner of living under non-instrumental rules, not as a plan to be imposed on producers.",
+      "press": "qualifies",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "The political economy of freedom",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Markets, here, belong to a tradition of rules rather than to a blueprint.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "justice",
+        "power",
+        "custom"
+      ],
+      "claim": "He distinguishes the rule of law, a settled way of attending to arrangements, from a rationalist politics that tries to deliver substantive justice by continual intervention.",
+      "press": "qualifies",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "On the rule of law and rationalism",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Justice, in this mood, is not a result the state manufactures case by case.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "property",
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "property",
+        "society",
+        "custom"
+      ],
+      "claim": "On Being Conservative includes enjoyment of one's present property and present arrangements among the things a conservative disposition is reluctant to hazard for a paper improvement.",
+      "press": "for",
+      "work": "Rationalism in Politics and Other Essays",
+      "loc": "On Being Conservative",
+      "url": "https://archive.org/details/rationalisminpol00oake",
+      "bears": "A summary, not a quotation. Property is part of the familiar life he thinks politics should not lightly disturb.",
+      "verbatim": false
     }
   ]
 }

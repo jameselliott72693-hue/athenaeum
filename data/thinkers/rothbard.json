@@ -100,11 +100,13 @@
     {
       "topics": [
         "society",
-        "moral"
+        "moral",
+        "welfare"
       ],
       "domains": [
         "society",
-        "moral"
+        "moral",
+        "welfare"
       ],
       "claim": "He argues that defense, courts, and the poor can be provided by agreement and charity, and that a moral society does not begin by licensing a coercer.",
       "press": "qualifies",
@@ -112,6 +114,63 @@
       "loc": "On defense and welfare",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. The hard cases are answered by denying the state an exemption.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "economy",
+        "property",
+        "justice"
+      ],
+      "domains": [
+        "economy",
+        "property",
+        "justice"
+      ],
+      "claim": "For a New Liberty treats inflation as an expansion of the money supply that shifts wealth toward those who receive the new money first, and he calls that shift a hidden tax.",
+      "press": "against",
+      "work": "For a New Liberty",
+      "loc": "Inflation and the Business Cycle",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. A rise in prices is, on this account, a consequence of how the new money is injected.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "justice",
+        "liberty"
+      ],
+      "domains": [
+        "equality",
+        "justice",
+        "liberty"
+      ],
+      "claim": "He rejects equality of condition as a political end, and he treats the attempt to enforce it as aggression against people who have produced or exchanged peacefully.",
+      "press": "against",
+      "work": "For a New Liberty",
+      "loc": "On equality and property",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. Equal rights, in this book, are rights against aggression, not rights to equal shares.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "war",
+        "power",
+        "moral"
+      ],
+      "domains": [
+        "war",
+        "power",
+        "moral"
+      ],
+      "claim": "He treats aggressive war as mass murder conducted by the state, and defensive force as legitimate only in answer to an attack on persons or property.",
+      "press": "against",
+      "work": "For a New Liberty",
+      "loc": "On war and defense",
+      "url": "https://archive.org/details/fornewlibertyl00roth",
+      "bears": "A summary, not a quotation. The nonaggression rule is meant to bind armies as well as neighbors.",
       "verbatim": false
     }
   ]

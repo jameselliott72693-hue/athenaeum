@@ -113,6 +113,63 @@
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. Paternal knowledge is not a title to coerce.",
       "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "liberty",
+        "justice"
+      ],
+      "domains": [
+        "equality",
+        "liberty",
+        "justice"
+      ],
+      "claim": "Two Concepts of Liberty and the essays around it argue that liberty and equality are both real goods and that they conflict, so a politics that defines one as the true form of the other is hiding a loss.",
+      "press": "qualifies",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "On conflicting goods",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. He will not let a theory dissolve the quarrel by a definition.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "power",
+        "liberty"
+      ],
+      "domains": [
+        "democracy",
+        "power",
+        "liberty"
+      ],
+      "claim": "He argues that democracy can itself become a form of coercion when a people, or those who speak for it, claim that the only free act is the act that obeys the collective will.",
+      "press": "against",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "Two Concepts of Liberty, on self-mastery and the collective",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. A democratic procedure does not, for him, guarantee negative liberty.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "culture"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "culture"
+      ],
+      "claim": "His pluralism includes religious and cultural ways of life among the ends that can be pursued seriously and that cannot all be ranked on one scale.",
+      "press": "qualifies",
+      "work": "Liberty, incorporating Four Essays on Liberty",
+      "loc": "On value pluralism",
+      "url": "https://archive.org/details/libertyincorpora0000berl",
+      "bears": "A summary, not a quotation. Faith is one of the human ends he thinks a single moral system will mutilate if it tries to absorb it.",
+      "verbatim": false
     }
   ]
 }
