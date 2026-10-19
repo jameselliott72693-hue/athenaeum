@@ -110,6 +110,20 @@
           <p id="random-note" class="hint" role="status"></p>
         </div>
 
+        <div class="book-search">
+          <p class="kicker">Search the books</p>
+          <p class="hint">Search the public-domain books on this table. A passage counts in the citation tally only when a chair speaks it.</p>
+          <label class="field" for="book-query">Phrase or topic</label>
+          <input id="book-query" type="search" placeholder="virtue, liberty, a shared moral compass" autocomplete="off" />
+          <label class="check">
+            <input id="book-all" type="checkbox" />
+            <span>All tables</span>
+          </label>
+          <button type="button" class="solid" id="book-go">Search the books</button>
+          <p id="book-note" class="hint" role="status"></p>
+          <div id="book-results"></div>
+        </div>
+
         <label class="field" for="topic">Subject</label>
         <input id="topic" maxlength="180" placeholder="The importance of a shared moral compass in a society" />
         <label class="field" for="brief">Article or brief, if you have one</label>
@@ -143,9 +157,11 @@
     </div>
   </dialog>
   <footer>
-    <p>A line in quotation marks is the book’s own words, and only from a text in the public domain. Every other card is a summary, not a quotation. A brass note is the room’s framing, not a chair’s words. Copyrighted books are linked, not copied. A chair with nothing relevant on this shelf sits out, in view. Each chair’s chime is generated in the browser. You can pause, step, change speed, and ask a follow-up. Bookmarks, seatings, and full sittings stay in this browser until you export them.</p>
+    <p>A line in quotation marks is the book’s own words, and only from a text in the public domain. A line marked from the full text is a whole passage found in that book. Every other card is a summary, not a quotation. A brass note is the room’s framing, not a chair’s words. Copyrighted books are linked, not copied. A chair with nothing relevant on this shelf sits out, in view. Each chair’s chime is generated in the browser. You can pause, step, change speed, and ask a follow-up. Bookmarks, seatings, and full sittings stay in this browser until you export them.</p>
   </footer>
+  <script src="stem.js"></script>
   <script src="score.js"></script>
+  <script src="books.js"></script>
   <script src="panel.js"></script>
   <script src="store.js"></script>
   <script src="app.js"></script>

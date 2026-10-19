@@ -192,11 +192,24 @@ button.danger-text { color: var(--low-ink); }
   margin: 10px 0;
 }
 .note.gentle { border: 1px solid var(--brass-soft); }
-.random-box, .lineup {
+.random-box, .lineup, .book-search {
   margin-top: 14px;
   padding-top: 12px;
   border-top: 1px solid var(--line);
 }
+.book-hit {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--wash);
+}
+.book-hit p { margin: 0 0 8px; }
+.book-hit .passage { font-size: 16px; }
+.book-hit mark { background: var(--high); color: inherit; padding: 0 2px; }
+.passage.from-text { border-left: 2px solid var(--brass-soft); padding-left: 10px; }
+.book-context { margin: 8px 0; padding-left: 10px; border-left: 2px solid var(--line); }
+.book-context .current { color: var(--ink); }
 .check { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0; }
 .check input { width: auto; margin-top: 4px; }
 .size-row { display: flex; align-items: center; gap: 10px; }

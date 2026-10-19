@@ -1,6 +1,7 @@
 (function () {
   const A = window.Athenaeum;
   const Panel = window.AthenaeumPanel;
+  const Books = window.AthenaeumBooks;
   const Store = window.AthenaeumStore;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
@@ -14,6 +15,7 @@
     reading: null,
     tableFilter: "letters",
     query: "",
+    bookHits: [],
     scoring: false,
     undo: null,
     undoTable: null,
@@ -74,8 +76,28 @@
     return `id-${Date.now()}-${Math.random().toString(16).slice(2)}`;
   }
 
+  function judge(thinker, text, rel) {
+    const card = A.scoreThinker(thinker, text, rel);
+    if (!Books || !Books.ready(thinker.id)) return card;
+    return Books.mergeScore(card, Books.rankedEntries(thinker.id, text, rel, 8), rel);
+  }
+
   function scoreOf(thinker) {
-    return A.scoreThinker(thinker, subjectText(), state.relevance);
+    return judge(thinker, subjectText(), state.relevance);
+  }
+
+  function thinkerIdsFor(tableId) {
+    if (!tableId || tableId === "any") return state.thinkers.map((thinker) => thinker.id);
+    return state.thinkers.filter((thinker) => onTable(thinker, tableId)).map((thinker) => thinker.id);
+  }
+
+  function usedFromReading(reading) {
+    const used = new Set(reading && reading.usedPassages || []);
+    (reading && reading.turns || []).forEach((turn) => {
+      (turn.cards || []).forEach((card) => { if (card.passageId) used.add(card.passageId); });
+      (turn.cites || []).forEach((cite) => { if (cite.passageId) used.add(cite.passageId); });
+    });
+    return used;
   }
 
   function tierLabel(tier) {
@@ -94,7 +116,7 @@
   function worksList(score) {
     if (!score || score.idle || state.scoring) return "";
     const items = (score.matches || []).slice(0, 4).map((m) => {
-      const kind = m.entry.verbatim ? "Quotation" : "Summary";
+      const kind = m.entry.fromText ? "From the full text" : (m.entry.verbatim ? "Quotation" : "Summary");
       return `<li><span class="meta">${kind}.</span> ${esc(m.entry.work)}, ${esc(m.entry.loc)}</li>`;
     }).join("");
     const body = items || "<li>No passage on this shelf matches.</li>";
@@ -250,7 +272,11 @@
     renderRoster();
     renderTable();
     window.clearTimeout(scheduleScore.timer);
-    scheduleScore.timer = window.setTimeout(() => {
+    scheduleScore.timer = window.setTimeout(async () => {
+      const text = subjectText();
+      if (Books && text.length >= 3) {
+        try { await Books.ensure(thinkerIdsFor(state.tableFilter)); } catch (err) { /* shelf still works from the cards */ }
+      }
       state.scoring = false;
       renderRoster();
       renderTable();
@@ -303,16 +329,20 @@
     $("err").textContent = "";
   }
 
-  function randomSeat(reroll) {
-    const table = activeTable();
+  async function randomSeat(reroll) {
+    const onlyRelevant = $("only-relevant").checked && !$("only-wrap").hidden;
+    if (onlyRelevant && Books) {
+      try { await Books.ensure(thinkerIdsFor(state.tableFilter)); } catch (err) { /* draw from the cards */ }
+    }
     const drawn = A.chooseRandom({
       tables: state.tables,
       thinkers: state.thinkers,
       traditionId: state.tableFilter,
       size: Number($("panel-size").value),
-      onlyRelevant: $("only-relevant").checked && !$("only-wrap").hidden,
+      onlyRelevant,
       subject: subjectText(),
-      relevance: state.relevance
+      relevance: state.relevance,
+      scoreThinker: judge
     });
     const note = $("random-note");
     if (!drawn.ok) {
@@ -472,7 +502,10 @@
     }
     const person = byId(turn.id) || { name: turn.name, years: "", portrait: "" };
     const reply = turn.replyTo ? `<p class="reply-to">Answers ${esc(turn.replyTo.name)}.</p>` : "";
-    const passages = (turn.paragraphs || []).map((paragraph) => `<p class="passage">${esc(paragraph)}</p>`).join("");
+    const passages = (turn.paragraphs || []).map((paragraph) => {
+      const full = String(paragraph || "").indexOf("From the full text") === 0;
+      return `<p class="passage${full ? " from-text" : ""}">${esc(paragraph)}</p>`;
+    }).join("");
     const meta = turn.kind === "abstain" ? "Sits out" : (turn.hits ? `${turn.hits} passage${turn.hits === 1 ? "" : "s"}` : "");
     return `<article class="remark${turn.kind === "abstain" ? " abstain" : ""}" data-turn="${index}">
       <div class="remark-head">
@@ -651,7 +684,7 @@
     return `
       <p class="kicker">The reading</p>
       <h2>${esc(reading.topic)}</h2>
-      <p class="lede">Read against ${esc(topics)}. The first chair addresses the subject. Each later chair answers from a card that meets what was already raised, or sits out.</p>
+      <p class="lede">Read against ${esc(topics)}. The first chair addresses the subject. Each later chair answers from a card or a passage that meets what was already raised, or sits out.</p>
       <div class="playback" id="playback" role="group" aria-label="Playback">
         <button type="button" id="play-toggle" aria-pressed="false" aria-keyshortcuts="p">Pause</button>
         <button type="button" id="step-turn" aria-keyshortcuts="n">Next turn</button>
@@ -735,15 +768,21 @@
     reading.turns.push(moderator);
     const anchor = { id: "moderator", name: "Moderator", turnIndex: reading.turns.length - 1 };
     const pool = person ? [person] : (reading.seated || []).map(byId).filter(Boolean);
+    if (Books) {
+      try { await Books.ensure(pool.map((thinker) => thinker.id)); } catch (err) { /* answer from the cards */ }
+    }
+    const used = usedFromReading(reading);
     const built = Panel.buildRound({
       thinkers: pool,
       text: question,
       relevance: state.relevance,
-      scoreThinker: A.scoreThinker,
+      scoreThinker: judge,
       distinctive: A.distinctive,
       opening: "moderator",
-      anchor
+      anchor,
+      usedPassageIds: used
     });
+    reading.usedPassages = [...used];
     reading.turns.push(...built.turns);
     $("follow-up").value = "";
     if (note) note.textContent = person ? `Asked ${person.name}.` : "Asked the table.";
@@ -827,7 +866,7 @@
   function citeHtml(cites, turnIndex) {
     if (!cites || !cites.length) return "";
     return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${cites.map((c, i) =>
-      `<li><a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.work)}</a><span class="loc">, ${esc(c.loc)}</span><p class="bears">${esc(c.bears)}</p><button type="button" class="text-btn" data-save-cite="${turnIndex}:${i}">Bookmark this citation</button></li>`).join("")}</ol></div>`;
+      `<li>${c.fromText ? `<span class="meta">From the full text. </span>` : ""}<a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.work)}</a><span class="loc">, ${esc(c.loc)}</span>${c.bears ? `<p class="bears">${esc(c.bears)}</p>` : ""}<button type="button" class="text-btn" data-save-cite="${turnIndex}:${i}">Bookmark this citation</button></li>`).join("")}</ol></div>`;
   }
 
   function sittingText(reading) {
@@ -989,13 +1028,18 @@
     }
     err.textContent = "";
     const text = `${topic} ${brief}`.trim();
+    if (Books) {
+      try { await Books.ensure(people.map((thinker) => thinker.id)); } catch (err) { /* the cards still answer */ }
+    }
+    const used = new Set();
     const built = Panel.buildRound({
       thinkers: people,
       text,
       relevance: state.relevance,
-      scoreThinker: A.scoreThinker,
+      scoreThinker: judge,
       distinctive: A.distinctive,
-      opening: "subject"
+      opening: "subject",
+      usedPassageIds: used
     });
     const reading = {
       id: uid(),
@@ -1008,6 +1052,7 @@
       seated: people.map((t) => t.id),
       tableId: table.id,
       panel: true,
+      usedPassages: [...used],
       turns: built.turns,
       chairs: [],
       abstained: []
@@ -1059,6 +1104,161 @@
     try { localStorage.setItem("athenaeum.theme", dark ? "dark" : "light"); } catch (err) { /* ignore */ }
   }
 
+  function markQuery(text, query) {
+    const words = [...new Set(String(query || "").toLowerCase().match(/[a-z]{4,}/g) || [])];
+    let html = esc(text);
+    words.forEach((word) => {
+      const re = new RegExp("\\b(" + word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")\\b", "ig");
+      html = html.replace(re, "<mark>$1</mark>");
+    });
+    return html;
+  }
+
+  function renderBookHits(query) {
+    const host = $("book-results");
+    if (!host) return;
+    if (!state.bookHits.length) {
+      host.innerHTML = "";
+      return;
+    }
+    host.innerHTML = state.bookHits.map((hit, i) => {
+      const person = byId(hit.thinkerId);
+      const entry = hit.entry;
+      return `<article class="book-hit">
+        <p class="meta">${esc(person ? person.name : hit.thinkerId)} · ${esc(entry.work)}</p>
+        <p class="loc">${esc(entry.loc)}</p>
+        <p class="passage from-text">${markQuery(entry.claim, query)}</p>
+        <p class="meta">From the full text</p>
+        <div class="row-btns">
+          <button type="button" data-book-context="${i}">Context</button>
+          <button type="button" data-book-mark="${i}">Bookmark</button>
+          <button type="button" data-book-seat="${i}">Seat ${esc(person ? person.name.split(" ").slice(-1)[0] : "this chair")}</button>
+          <button type="button" data-book-ask="${i}">Ask the table</button>
+        </div>
+        <div class="book-context" id="book-context-${i}" hidden></div>
+      </article>`;
+    }).join("");
+  }
+
+  async function searchBooks() {
+    const query = $("book-query").value.trim();
+    const note = $("book-note");
+    if (query.length < 3) {
+      if (note) note.textContent = "Give the search a few more words.";
+      return;
+    }
+    const all = $("book-all").checked;
+    const ids = thinkerIdsFor(all ? "any" : state.tableFilter);
+    if (note) note.textContent = "Searching the books…";
+    try {
+      await Books.ensure(ids);
+    } catch (err) {
+      if (note) note.textContent = "The book index could not be loaded.";
+      return;
+    }
+    const rows = [];
+    ids.forEach((id) => {
+      Books.rankedEntries(id, query, state.relevance, 6).forEach((row) => {
+        rows.push({ thinkerId: id, score: row.score, entry: row.entry });
+      });
+    });
+    rows.sort((a, b) => b.score - a.score || a.entry.passageId.localeCompare(b.entry.passageId));
+    state.bookHits = rows.slice(0, 12);
+    if (note) {
+      note.textContent = state.bookHits.length
+        ? `${state.bookHits.length} passage${state.bookHits.length === 1 ? "" : "s"}. These are not citations until a chair speaks one.`
+        : "No passage in these books matches.";
+    }
+    renderBookHits(query);
+  }
+
+  function showBookContext(index) {
+    const hit = state.bookHits[index];
+    const host = document.getElementById(`book-context-${index}`);
+    if (!hit || !host) return;
+    if (!host.hidden && host.innerHTML) {
+      host.hidden = true;
+      return;
+    }
+    const rows = Books.contextOf(hit.thinkerId, hit.entry.passageId);
+    host.innerHTML = rows.map((row) => `<p class="${row.current ? "current" : "meta"}"><span class="meta">${esc(row.loc)}</span> ${esc(row.text)}</p>`).join("");
+    host.hidden = false;
+  }
+
+  function bookmarkPassage(index) {
+    const hit = state.bookHits[index];
+    if (!hit) return;
+    const person = byId(hit.thinkerId);
+    const row = {
+      id: uid(),
+      kind: "passage",
+      at: new Date().toISOString(),
+      sittingId: "",
+      tableId: state.tableFilter,
+      topic: $("book-query").value.trim(),
+      thinkerId: hit.thinkerId,
+      thinkerName: person ? person.name : hit.thinkerId,
+      excerpt: hit.entry.claim,
+      work: hit.entry.work,
+      loc: hit.entry.loc,
+      url: hit.entry.url,
+      passageId: hit.entry.passageId
+    };
+    state.bookmarks.unshift(row);
+    Store.put("bookmarks", row).then(() => {
+      $("memory-note").textContent = `Bookmarked a passage from ${row.work}. It is not a citation until a chair speaks it.`;
+      renderBookmarks();
+    });
+  }
+
+  function homeTable(person) {
+    return state.tables.find((table) => onTable(person, table.id)) || null;
+  }
+
+  function seatFromBooks(thinkerId) {
+    const person = byId(thinkerId);
+    if (!person) return false;
+    if (state.tableFilter !== "any" && onTable(person, state.tableFilter)) {
+      if (!state.seated.includes(person.id)) trySeat(person.id);
+      return state.seated.includes(person.id);
+    }
+    if (state.seated.length) {
+      $("err").textContent = "A sitting stays inside one tradition. Clear the table before seating someone from another.";
+      return false;
+    }
+    const home = homeTable(person);
+    if (!home) return false;
+    if (state.tableFilter !== home.id) {
+      state.tableFilter = home.id;
+      renderHub();
+      renderTradition();
+    }
+    if (!state.seated.includes(person.id)) trySeat(person.id);
+    return state.seated.includes(person.id);
+  }
+
+  async function askFromBooks(index) {
+    const hit = state.bookHits[index];
+    if (!hit) return;
+    const query = $("book-query").value.trim();
+    if (query.length >= 8) {
+      $("topic").value = query.slice(0, 180);
+      saveJson("athenaeum.draft", { topic: $("topic").value, brief: $("brief").value });
+    }
+    const seated = seatFromBooks(hit.thinkerId);
+    if (!seated) return;
+    scheduleScore();
+    if ($("topic").value.trim().length < 8) {
+      $("book-note").textContent = "Seated. Give the table a longer subject before asking.";
+      return;
+    }
+    if (state.seated.length < activeTable().limits.min) {
+      $("book-note").textContent = `Seated. The table needs at least ${activeTable().limits.min} chairs.`;
+      return;
+    }
+    await weigh();
+  }
+
   function bind() {
     $("search").addEventListener("input", () => { state.query = $("search").value; renderRoster(); });
     $("tradition").addEventListener("change", () => {
@@ -1092,6 +1292,24 @@
     $("reroll").addEventListener("click", () => randomSeat(true));
     $("undo-random").addEventListener("click", undoRandom);
     $("weigh").addEventListener("click", weigh);
+    $("book-go").addEventListener("click", searchBooks);
+    $("book-query").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { e.preventDefault(); searchBooks(); }
+    });
+    $("book-results").addEventListener("click", (e) => {
+      const context = e.target.closest("[data-book-context]");
+      if (context) { showBookContext(Number(context.dataset.bookContext)); return; }
+      const mark = e.target.closest("[data-book-mark]");
+      if (mark) { bookmarkPassage(Number(mark.dataset.bookMark)); return; }
+      const seat = e.target.closest("[data-book-seat]");
+      if (seat) {
+        const hit = state.bookHits[Number(seat.dataset.bookSeat)];
+        if (hit && seatFromBooks(hit.thinkerId)) $("book-note").textContent = `Seated ${byId(hit.thinkerId).name}.`;
+        return;
+      }
+      const ask = e.target.closest("[data-book-ask]");
+      if (ask) askFromBooks(Number(ask.dataset.bookAsk));
+    });
     ["topic", "brief"].forEach((id) => {
       $(id).addEventListener("input", () => {
         saveJson("athenaeum.draft", { topic: $("topic").value, brief: $("brief").value });
@@ -1212,9 +1430,10 @@
     if (!host) return;
     host.innerHTML = state.bookmarks.length
       ? state.bookmarks.map((row, i) => {
-        const title = row.kind === "citation" ? (row.work || "Citation") : (row.thinkerName || "Turn");
-        const detail = row.kind === "citation"
-          ? `${row.thinkerName || "Citation"} · ${row.loc || ""}`
+        const titled = row.kind === "citation" || row.kind === "passage";
+        const title = titled ? (row.work || "Passage") : (row.thinkerName || "Turn");
+        const detail = titled
+          ? `${row.kind === "passage" ? "Full text · " : ""}${row.thinkerName || ""} · ${row.loc || ""}`
           : (row.topic || "");
         return `<button type="button" data-bookmark="${i}"><strong>${esc(title)}</strong><span class="when">${esc(detail)}</span><span class="drop" data-drop-bookmark="${i}">Discard</span></button>`;
       }).join("")
