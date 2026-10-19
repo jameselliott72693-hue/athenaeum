@@ -255,6 +255,7 @@
     }
   ],
   "tables": [
-    "letters"
+    "letters",
+    "christian"
   ]
 }

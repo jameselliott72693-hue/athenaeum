@@ -1,0 +1,147 @@
+{
+  "id": "arnold",
+  "name": "Matthew Arnold",
+  "years": "1822\u20131888",
+  "place": "Laleham",
+  "epithet": "Sweetness and light",
+  "dossier": "Poet, inspector of schools, and critic. Culture and Anarchy (1869) is quoted from the public-domain text. Culture, for him, is the study of perfection, turned against anarchy and against doing merely as one likes.",
+  "tableId": "victorian",
+  "tables": [
+    "victorian"
+  ],
+  "portrait": "images/arnold.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      392,
+      494,
+      587
+    ]
+  },
+  "voice": "I ask whether this makes for our best self, or only for our ordinary self.",
+  "works": [
+    {
+      "title": "Culture and Anarchy",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "note": "1869. Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "culture",
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "culture",
+        "knowledge",
+        "moral"
+      ],
+      "claim": "Culture is then properly described not as having its origin in curiosity, but as having its origin in the love of perfection; it is a study of perfection.",
+      "press": "for",
+      "work": "Culture and Anarchy",
+      "loc": "Sweetness and Light",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "bears": "Culture begins in a love of perfection, not in a hobby of knowing things.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "society",
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "culture",
+        "society",
+        "moral",
+        "knowledge"
+      ],
+      "claim": "Culture, which is the study of perfection, leads us, as we in the following pages have shown, to conceive of true human perfection as a harmonious perfection, developing all sides of our humanity; and as a general perfection, developing all parts of our society.",
+      "press": "for",
+      "work": "Culture and Anarchy",
+      "loc": "Sweetness and Light",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "bears": "Perfection is of the whole person and of the whole society, not of one faculty.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "equality",
+        "culture",
+        "society"
+      ],
+      "domains": [
+        "equality",
+        "culture",
+        "society"
+      ],
+      "claim": "This is the social idea; and the men of culture are the true apostles of equality.",
+      "press": "for",
+      "work": "Culture and Anarchy",
+      "loc": "On equality",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "bears": "Equality, here, is the spreading of the best, not the leveling of it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "claim": "But by our best self we are united, impersonal, at harmony.",
+      "press": "for",
+      "work": "Culture and Anarchy",
+      "loc": "Doing as One Likes",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "bears": "The authority he will trust is the best self, where people are actually united.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society",
+        "liberty"
+      ],
+      "domains": [
+        "power",
+        "society",
+        "liberty"
+      ],
+      "claim": "We say, what is very true, that this notion is often made instrumental to tyranny; we say that a State is in reality made up of the individuals who compose it, and that every individual is the best judge of his own interests.",
+      "press": "qualifies",
+      "work": "Culture and Anarchy",
+      "loc": "On the State",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "bears": "He states the liberal picture of the state, and the book is written against stopping there.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "culture",
+        "knowledge"
+      ],
+      "domains": [
+        "religion",
+        "culture",
+        "knowledge"
+      ],
+      "claim": "And to give these forces names from the two races of men who have supplied the most signal and splendid manifestations of them, we may call them respectively the forces of Hebraism and Hellenism.",
+      "press": "qualifies",
+      "work": "Culture and Anarchy",
+      "loc": "Hebraism and Hellenism",
+      "url": "https://www.gutenberg.org/ebooks/4212",
+      "bears": "He sets a strictness of conscience beside a spontaneity of consciousness, and he wants both.",
+      "verbatim": true
+    }
+  ]
+}

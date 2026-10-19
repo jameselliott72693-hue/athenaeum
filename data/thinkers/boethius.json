@@ -1,0 +1,137 @@
+{
+  "id": "boethius",
+  "name": "Boethius",
+  "years": "c. 480\u2013524",
+  "place": "Rome",
+  "epithet": "Happiness that fortune cannot keep",
+  "dossier": "Roman senator and Christian philosopher. The Consolation of Philosophy, written in prison and quoted here from a public-domain English translation, sets Philosophy to answer him on fortune, evil, and the happy life.",
+  "tableId": "christian",
+  "tables": [
+    "christian"
+  ],
+  "portrait": "images/boethius.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      294,
+      370,
+      440
+    ]
+  },
+  "voice": "I ask whether this would still be a good if fortune took the prizes back.",
+  "works": [
+    {
+      "title": "The Consolation of Philosophy",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "note": "Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "religion",
+        "moral"
+      ],
+      "claim": "Nay, God is very happiness, and in a manner, therefore, the happy man partakes also of the Divine nature.",
+      "press": "for",
+      "work": "The Consolation of Philosophy",
+      "loc": "On happiness and God",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "bears": "Happiness, on this account, is a share in God rather than a run of luck.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "power"
+      ],
+      "claim": "Thou didst maintain, also, that God rules the universe by the governance of goodness, that all things obey Him willingly, and that evil has no existence in nature.",
+      "press": "for",
+      "work": "The Consolation of Philosophy",
+      "loc": "Philosophy restates the argument",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "bears": "Rule, here, is the rule of goodness, and evil is not a second nature.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "custom"
+      ],
+      "domains": [
+        "moral",
+        "custom"
+      ],
+      "claim": "Again I ask, Is Fortune's presence dear to thee if she cannot be trusted to stay, and though she will bring sorrow when she is gone?",
+      "press": "against",
+      "work": "The Consolation of Philosophy",
+      "loc": "On Fortune",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "bears": "A good that leaves when fortune leaves was never a secure good.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "property",
+        "justice"
+      ],
+      "domains": [
+        "property",
+        "justice"
+      ],
+      "claim": "Thou hast reason to thank me for the use of what was not thine own; thou hast no right to complain, as if thou hadst lost what was wholly thine.",
+      "press": "qualifies",
+      "work": "The Consolation of Philosophy",
+      "loc": "Fortune speaks",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "bears": "What fortune gave was a use, not a possession the loser can call his by right.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "religion",
+        "moral"
+      ],
+      "claim": "But as by the acquisition of justice men become just, and wise by the acquisition of wisdom, so by parity of reasoning by acquiring Godship they must of necessity become gods.",
+      "press": "qualifies",
+      "work": "The Consolation of Philosophy",
+      "loc": "On participation",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "bears": "Justice is not a label. It is what a person becomes by acquiring it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "If the fruition of any earthly success has weight in the scale of happiness, can the memory of that splendour be swept away by any rising flood of troubles?",
+      "press": "qualifies",
+      "work": "The Consolation of Philosophy",
+      "loc": "On whether success is happiness",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "bears": "He is testing whether a public success still counts once trouble arrives.",
+      "verbatim": true
+    }
+  ]
+}

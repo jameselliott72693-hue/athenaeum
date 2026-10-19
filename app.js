@@ -58,6 +58,8 @@
 
   function onTable(person, tableId) {
     if (!person) return false;
+    const table = tableById(tableId);
+    if (table && Array.isArray(table.thinkers)) return table.thinkers.includes(person.id);
     if (Array.isArray(person.tables) && person.tables.length) return person.tables.includes(tableId);
     return person.tableId === tableId;
   }

@@ -1,0 +1,137 @@
+{
+  "id": "marcus",
+  "name": "Marcus Aurelius",
+  "years": "121\u2013180",
+  "place": "Rome",
+  "epithet": "Born for society",
+  "dossier": "Roman emperor and Stoic. The Meditations, quoted from the public-domain English text on Project Gutenberg, are notes to himself on reason, justice, the gods, and a life fit for a creature born into society.",
+  "tableId": "ancient",
+  "tables": [
+    "ancient"
+  ],
+  "portrait": "images/marcus.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      220,
+      277,
+      330
+    ]
+  },
+  "voice": "I ask whether a good man could do this, and whether it serves the whole.",
+  "works": [
+    {
+      "title": "Meditations",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "note": "Public-domain English translation. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "knowledge"
+      ],
+      "claim": "Certainly there is nothing better, than for a man to confine himself to necessary actions; to such and so many only, as reason in a creature that knows itself born for society, will command and enjoin.",
+      "press": "for",
+      "work": "Meditations",
+      "loc": "On necessary action",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "bears": "Reason commands a social creature, and the command is to do what is necessary.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "moral"
+      ],
+      "claim": "I say not only in right order by a series of inevitable consequences, but according to justice and as it were by way of equal distribution, according to the true worth of everything.",
+      "press": "for",
+      "work": "Meditations",
+      "loc": "On order and justice",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "bears": "Order is not enough. He adds justice and the true worth of each thing.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "religion",
+        "moral"
+      ],
+      "claim": "But thy duty towards the Gods also, it is time thou shouldst acquit thyself of it with more goodness and simplicity.",
+      "press": "for",
+      "work": "Meditations",
+      "loc": "On duty to the gods",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "bears": "Duty is not only civic. It includes the gods, and he wants it simpler.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "And as for death, if there be any gods, it is no grievous thing to leave the society of men.",
+      "press": "qualifies",
+      "work": "Meditations",
+      "loc": "On death",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "bears": "Leaving the society of men is not, if there are gods, the worst thing that can happen.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "justice"
+      ],
+      "claim": "Continue then to take notice of it, as thou hast begun, and whatsoever thou dost, do it not without this proviso, that it be a thing of that nature that a good man (as the word good is properly taken) may do it.",
+      "press": "for",
+      "work": "Meditations",
+      "loc": "The proviso of the good man",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "bears": "The test he sets himself is whether a good man could do the thing.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "economy",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "economy",
+        "society"
+      ],
+      "claim": "For it is not lawful, that anything that is of another and inferior kind and nature, be it what it will, as either popular applause, or honour, or riches, or pleasures; should be suffered to confront and contest as it were, with that which is rational, and operatively good.",
+      "press": "against",
+      "work": "Meditations",
+      "loc": "On inferior goods",
+      "url": "https://www.gutenberg.org/ebooks/2680",
+      "bears": "Applause, honour, riches, and pleasure do not get to overrule what is rationally good.",
+      "verbatim": true
+    }
+  ]
+}

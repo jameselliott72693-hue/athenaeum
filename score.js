@@ -94,7 +94,7 @@
     if (size < limits.min || size > limits.hardMax) {
       return { ok: false, message: `Choose a panel from ${limits.min} to ${limits.hardMax}.` };
     }
-    let pool = thinkers.filter((t) => memberOf(t, table.id));
+    let pool = thinkers.filter((t) => (Array.isArray(table.thinkers) ? table.thinkers.includes(t.id) : memberOf(t, table.id)));
     if (opts.onlyRelevant) {
       if (String(opts.subject || "").trim().length < 3) {
         return { ok: false, message: "Enter a subject before limiting the draw to chairs who have written on it." };

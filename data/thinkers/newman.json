@@ -1,0 +1,141 @@
+{
+  "id": "newman",
+  "name": "John Henry Newman",
+  "years": "1801\u20131890",
+  "place": "London",
+  "epithet": "Knowledge is not virtue",
+  "dossier": "Anglican priest, later a cardinal. The Idea of a University, quoted from the public-domain text of the Dublin discourses, separates knowledge from virtue and asks what a university owes to religion.",
+  "tableId": "victorian",
+  "tables": [
+    "victorian"
+  ],
+  "portrait": "images/newman.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      415,
+      494
+    ]
+  },
+  "voice": "I ask whether this cultivates the intellect, and whether it has mistaken that for a conscience.",
+  "works": [
+    {
+      "title": "The Idea of a University",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "note": "Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "knowledge",
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "knowledge",
+        "moral",
+        "religion"
+      ],
+      "claim": "Knowledge is one thing, virtue is another; good sense is not conscience, refinement is not humility, nor is largeness and justness of view faith.",
+      "press": "qualifies",
+      "work": "The Idea of a University",
+      "loc": "Knowledge Its Own End",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "bears": "An educated mind is not yet a conscience, and it is not yet a faith.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "society",
+        "culture"
+      ],
+      "domains": [
+        "knowledge",
+        "society",
+        "culture"
+      ],
+      "claim": "Certainly a liberal education does manifest itself in a courtesy, propriety, and polish of word and action, which is beautiful in itself, and acceptable to others; but it does much more.",
+      "press": "qualifies",
+      "work": "The Idea of a University",
+      "loc": "Preface",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "bears": "Courtesy is a sign of a liberal education, and he says it is not the whole of it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "religion"
+      ],
+      "domains": [
+        "culture",
+        "religion"
+      ],
+      "claim": "I have been pointing out how the Fine Arts may prejudice Religion, by laying down the law in cases where they should be subservient.",
+      "press": "qualifies",
+      "work": "The Idea of a University",
+      "loc": "Bearing of Other Branches of Knowledge on Theology",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "bears": "Art that starts to legislate for religion has left its place.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "religion"
+      ],
+      "domains": [
+        "knowledge",
+        "religion"
+      ],
+      "claim": "The evidence of History, I say, is invaluable in its place; but, if it assumes to be the sole means of gaining Religious Truth, it goes beyond its place.",
+      "press": "qualifies",
+      "work": "The Idea of a University",
+      "loc": "Bearing of Other Branches of Knowledge on Theology",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "bears": "History serves religious truth and does not replace it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "economy",
+        "power"
+      ],
+      "domains": [
+        "knowledge",
+        "economy",
+        "power"
+      ],
+      "claim": "I say, if there be a place where Political Economy would be kept in order, and would not be suffered to leave the high road and ride across the pastures and the gardens dedicated to other studies, it is the University of Oxford.",
+      "press": "qualifies",
+      "work": "The Idea of a University",
+      "loc": "Bearing of Other Branches of Knowledge on Theology",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "bears": "He names Oxford as the place where political economy would most likely be kept to its own road, and then shows that even there it claims an ethical rank it does not have.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "welfare",
+        "moral",
+        "economy"
+      ],
+      "domains": [
+        "welfare",
+        "moral",
+        "economy"
+      ],
+      "claim": "I grant, then, that, ordinarily, beggary is not the means of moral improvement; and that the orderly habits which attend upon the hot pursuit of gain, not only may effect an external decency, but may at least shelter the soul from the temptations of vice.",
+      "press": "qualifies",
+      "work": "The Idea of a University",
+      "loc": "Bearing of Other Branches of Knowledge on Theology",
+      "url": "https://www.gutenberg.org/ebooks/24526",
+      "bears": "He grants that the chase of gain can produce decent habits, and he does not call beggary a school of virtue.",
+      "verbatim": true
+    }
+  ]
+}

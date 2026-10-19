@@ -79,7 +79,7 @@ h2 { font-size: 28px; }
   padding: 4px 10px 4px 4px;
 }
 .hub { margin-bottom: 18px; }
-.hub-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.hub-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
 .hub-card {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,141 @@
+{
+  "id": "carlyle",
+  "name": "Thomas Carlyle",
+  "years": "1795\u20131881",
+  "place": "Ecclefechan",
+  "epithet": "Find your work",
+  "dossier": "Scottish essayist and historian. Past and Present, quoted from the public-domain text, sets a gospel of work against a society whose only bond is cash payment.",
+  "tableId": "victorian",
+  "tables": [
+    "victorian"
+  ],
+  "portrait": "images/carlyle.svg",
+  "sound": {
+    "wave": "sawtooth",
+    "notes": [
+      196,
+      247,
+      294
+    ]
+  },
+  "voice": "I ask whether this is work, or only a wage handed through a door.",
+  "works": [
+    {
+      "title": "Past and Present",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "note": "Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "knowledge",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "knowledge",
+        "society"
+      ],
+      "claim": "Blessed is he who has found his work; let him ask no other blessedness.",
+      "press": "for",
+      "work": "Past and Present",
+      "loc": "Labour",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "bears": "Work found and followed is the blessedness he will recognize.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "economy",
+        "society",
+        "justice"
+      ],
+      "claim": "That 'Laissez-faire,' 'Supply-and-demand,' 'Cash-payment for the sole nexus,' and so forth, were not, are not and will never be, a practicable Law of Union for a Society of Men.",
+      "press": "against",
+      "work": "Past and Present",
+      "loc": "Gospel of Mammonism",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "bears": "A society cannot be held together by cash payment alone.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "economy",
+        "society",
+        "moral"
+      ],
+      "claim": "Which, testified or not, remembered by all men or forgotten by all men, does verily remain the fact, even in Arkwright Joe-Manton ages! But it is incalculable, when litanies have grown obsolete; when _fodercorns_, _avragiums_, and all human dues and reciprocities have been fully changed into one great due of _cash payment_; and man's duty to man reduces itself to handing him certain metal coins, or covenanted money-wages, and then shoving him out of doors; and man's duty to God becomes a cant, a doubt, a dim inanity, a 'pleasure of virtue' or suchlike;",
+      "press": "against",
+      "work": "Past and Present",
+      "loc": "Gospel of Mammonism",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "bears": "When every duty has become a wage, duty to God becomes a cant.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "knowledge"
+      ],
+      "domains": [
+        "society",
+        "knowledge"
+      ],
+      "claim": "Out of old Books, new Writings, and much Meditation not of yesterday, he will endeavour to select a thing or two; and from the Past, in a circuitous way, illustrate the Present and the Future.",
+      "press": "qualifies",
+      "work": "Past and Present",
+      "loc": "The opening",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "bears": "The present is to be read by way of the past, not instead of it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "custom",
+        "society"
+      ],
+      "domains": [
+        "justice",
+        "custom",
+        "society"
+      ],
+      "claim": "For the gowns of learned-serjeants are good: parchment records, fixed forms, and poor terrestrial Justice, with or without horse-hair, what sane man will not reverence these?",
+      "press": "for",
+      "work": "Past and Present",
+      "loc": "On earthly justice",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "bears": "The forms of earthly justice are, for him, something a sane person reverences.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "economy"
+      ],
+      "domains": [
+        "society",
+        "economy"
+      ],
+      "claim": "Twelve-hundred-thousand workers in England alone; their cunning right-hand lamed, lying idle in their sorrowful bosom; their hopes, outlooks, share of this fair world, shut-in by narrow walls.",
+      "press": "against",
+      "work": "Past and Present",
+      "loc": "On idle labour",
+      "url": "https://www.gutenberg.org/ebooks/26159",
+      "bears": "Idle hands are not a statistic. They are people shut out of a share of the world.",
+      "verbatim": true
+    }
+  ]
+}

@@ -30,7 +30,20 @@
     "rand",
     "rawls",
     "berlin",
-    "sen"
+    "sen",
+    "boethius",
+    "kempis",
+    "dante",
+    "pascal",
+    "epictetus",
+    "marcus",
+    "arnold",
+    "ruskin",
+    "carlyle",
+    "newman",
+    "morris",
+    "pater",
+    "lucretius"
   ],
   "relevance": {
     "debounceMs": 240,
@@ -311,6 +324,88 @@
         "keynes",
         "berlin",
         "sen"
+      ]
+    },
+    {
+      "id": "christian",
+      "name": "Classical Christian",
+      "tradition": "Classical Christian",
+      "blurb": "Augustine through Pascal: one Latin Christian line, fathers, schoolmen, and the devotional books that grew from them. Not a survey of every church.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "augustine",
+        "aquinas",
+        "boethius",
+        "pascal",
+        "kempis"
+      ],
+      "thinkers": [
+        "augustine",
+        "boethius",
+        "aquinas",
+        "dante",
+        "pascal",
+        "kempis"
+      ]
+    },
+    {
+      "id": "ancient",
+      "name": "Ancient philosophy",
+      "tradition": "Ancient Greek and Roman",
+      "blurb": "Plato, Aristotle, Cicero, the Stoics, and Lucretius. One ancient world. The schools disagree inside it. They do not sit with later traditions.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "plato",
+        "aristotle",
+        "cicero",
+        "epictetus",
+        "marcus",
+        "lucretius"
+      ],
+      "thinkers": [
+        "plato",
+        "aristotle",
+        "cicero",
+        "epictetus",
+        "marcus",
+        "lucretius"
+      ]
+    },
+    {
+      "id": "victorian",
+      "name": "Victorian critics",
+      "tradition": "Victorian cultural criticism",
+      "blurb": "Arnold, Ruskin, Carlyle, Newman, Morris, and Pater. One nineteenth-century argument about culture, work, and faith. Not a general shelf of novelists.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "arnold",
+        "ruskin",
+        "carlyle",
+        "newman",
+        "morris"
+      ],
+      "thinkers": [
+        "arnold",
+        "ruskin",
+        "carlyle",
+        "newman",
+        "morris",
+        "pater"
       ]
     }
   ]

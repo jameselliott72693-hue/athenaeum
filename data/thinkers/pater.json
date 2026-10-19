@@ -1,0 +1,135 @@
+{
+  "id": "pater",
+  "name": "Walter Pater",
+  "years": "1839\u20131894",
+  "place": "London",
+  "epithet": "The hard, gemlike flame",
+  "dossier": "Critic and Oxford don. The Renaissance: Studies in Art and Poetry is quoted from the public-domain text, including the conclusion on burning with a hard, gemlike flame, and his pages on medieval religion and the dignity of human nature.",
+  "tableId": "victorian",
+  "tables": [
+    "victorian"
+  ],
+  "portrait": "images/pater.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      370,
+      466,
+      554
+    ]
+  },
+  "voice": "I ask what this does to the quality of the moment, and whether it asks a person to be ashamed of his nature.",
+  "works": [
+    {
+      "title": "The Renaissance",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "note": "Studies in Art and Poetry. Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "culture",
+        "moral"
+      ],
+      "domains": [
+        "culture",
+        "moral"
+      ],
+      "claim": "To burn always with this hard, gemlike flame, to maintain this ecstasy, is success in life.",
+      "press": "for",
+      "work": "The Renaissance",
+      "loc": "Conclusion",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "bears": "Success, in the conclusion, is the intensity of a life, not a public rank.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "knowledge"
+      ],
+      "domains": [
+        "culture",
+        "knowledge"
+      ],
+      "claim": "Of this wisdom, the poetic passion, the desire of beauty, the love of art for art's sake, has most; for art comes to you professing frankly to give nothing but the highest quality to your moments as they pass, and simply for those moments' sake.",
+      "press": "for",
+      "work": "The Renaissance",
+      "loc": "Conclusion",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "bears": "Art, as he states it, offers the quality of a moment and does not pretend to offer more.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "culture",
+        "moral"
+      ],
+      "domains": [
+        "religion",
+        "culture",
+        "moral"
+      ],
+      "claim": "The proclamation of it was a counterpoise to the increasing tendency of medieval religion to depreciate man's nature, to sacrifice this or that element in it, to make it ashamed of itself, to keep the degrading or painful accidents of it always in view.",
+      "press": "against",
+      "work": "The Renaissance",
+      "loc": "On the dignity of man",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "bears": "He resists a religion that trains people to be ashamed of their nature.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "moral"
+      ],
+      "domains": [
+        "culture",
+        "moral"
+      ],
+      "claim": "In this way he combines the utmost amount of passion and intensity with the sense of a yielding and flexible life: he gets not vitality merely, but a wonderful force of expression.",
+      "press": "for",
+      "work": "The Renaissance",
+      "loc": "On intensity",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "bears": "Intensity that stays flexible is, for him, a force of expression and not a pose.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "religion"
+      ],
+      "domains": [
+        "culture",
+        "religion"
+      ],
+      "claim": "Perhaps you have sometimes wondered why those peevish-looking Madonnas, conformed to no acknowledged or obvious type of beauty, attract you more and more, and often come back to you when the Sistine Madonna and the Virgins of Fra Angelico are forgotten.",
+      "press": "qualifies",
+      "work": "The Renaissance",
+      "loc": "On the Madonnas",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "bears": "A religious image can hold a person without matching the official type of beauty.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "society"
+      ],
+      "domains": [
+        "culture",
+        "society"
+      ],
+      "claim": "From such a result the Florentine masters of the fifteenth century were saved by their high Italian dignity and culture, and still more by their tender pity for the thing itself.",
+      "press": "for",
+      "work": "The Renaissance",
+      "loc": "On the Florentine masters",
+      "url": "https://www.gutenberg.org/ebooks/2398",
+      "bears": "Culture, in this saving, includes pity for the thing itself, not only dignity.",
+      "verbatim": true
+    }
+  ]
+}

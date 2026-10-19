@@ -86,4 +86,19 @@ for (const id of ["traditionalist", "classical", "modern"]) {
   if (verbatimTied) assert.strictEqual(!!scored.matches[0].entry.verbatim, true, id + " should speak the public-domain sentence when it matches as well as a summary");
 });
 
+for (const id of ["christian", "ancient", "victorian"]) {
+  const table = catalog.tables.find((item) => item.id === id);
+  assert.ok(table.thinkers.length >= 6 && table.thinkers.length <= 9, id);
+  assert.ok(table.preset.every((thinkerId) => table.thinkers.includes(thinkerId)), id);
+  table.thinkers.forEach((thinkerId) => {
+    assert.ok(byId[thinkerId].tables.includes(id), thinkerId + " is not seated on " + id);
+    assert.ok(byId[thinkerId].entries.length >= 4, thinkerId);
+  });
+  const seated = table.preset.map((thinkerId) => byId[thinkerId]);
+  assert.ok(seated.filter((thinker) => scoreThinker(thinker, compass, rel).speaks).length >= 2, id + " preset should hold a conversation");
+}
+assert.ok(byId.dante.entries.some((entry) => entry.verbatim && /gloomy wood/.test(entry.claim)));
+assert.ok(byId.lucretius.entries.some((entry) => entry.verbatim && /Nothing from nothing/.test(entry.claim)));
+assert.ok(byId.arnold.entries.some((entry) => entry.verbatim && /study of perfection/.test(entry.claim)));
+
 console.log("score tests passed");

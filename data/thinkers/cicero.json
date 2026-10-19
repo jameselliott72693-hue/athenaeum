@@ -90,6 +90,7 @@
   "tableId": "letters",
   "portrait": "images/cicero.svg",
   "tables": [
-    "letters"
+    "letters",
+    "ancient"
   ]
 }

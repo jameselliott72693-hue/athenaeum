@@ -1,0 +1,135 @@
+{
+  "id": "lucretius",
+  "name": "Lucretius",
+  "years": "c. 99\u201355 BCE",
+  "place": "Rome",
+  "epithet": "Nothing from nothing",
+  "dossier": "Roman Epicurean poet. On the Nature of Things is quoted from William Ellery Leonard's public-domain translation. He argues that nothing comes from nothing, that the fear of the gods grows where causes are unknown, and that neighbours first leagued together so as not to wrong or be wronged.",
+  "tableId": "ancient",
+  "tables": [
+    "ancient"
+  ],
+  "portrait": "images/lucretius.svg",
+  "sound": {
+    "wave": "sawtooth",
+    "notes": [
+      196,
+      247,
+      330
+    ]
+  },
+  "voice": "I ask what cause is at work here, and whether fear has been asked to do the explaining.",
+  "works": [
+    {
+      "title": "On the Nature of Things",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "note": "William Ellery Leonard's translation. Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "justice"
+      ],
+      "claim": "Then, too, did neighbours 'gin to league as friends, Eager to wrong no more or suffer wrong, And urged for children and the womankind Mercy, of fathers, whilst with cries and gestures They stammered hints how meet it was that all Should have compassion on the weak.",
+      "press": "for",
+      "work": "On the Nature of Things",
+      "loc": "Book V, on the first leagues",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "bears": "The first leagues, on this account, were neighbours agreeing not to wrong one another, and to spare the weak.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "religion",
+        "moral"
+      ],
+      "claim": "But 'tis that same religion oftener far Hath bred the foul impieties of men: As once at Aulis, the elected chiefs, Foremost of heroes, Danaan counsellors, Defiled Diana's altar, virgin queen, With Agamemnon's daughter, foully slain.",
+      "press": "against",
+      "work": "On the Nature of Things",
+      "loc": "Book I, on the altar at Aulis",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "bears": "He names religion, not the lack of it, as the source of the sacrifice at Aulis.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge"
+      ],
+      "domains": [
+        "knowledge"
+      ],
+      "claim": "Nothing from nothing ever yet was born.",
+      "press": "for",
+      "work": "On the Nature of Things",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "bears": "The teaching starts from a limit: nothing comes into being out of nothing.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "knowledge"
+      ],
+      "domains": [
+        "religion",
+        "knowledge"
+      ],
+      "claim": "Fear holds dominion over mortality Only because, seeing in land and sky So much the cause whereof no wise they know, Men think Divinities are working there.",
+      "press": "against",
+      "work": "On the Nature of Things",
+      "loc": "Book I, on the fear of the gods",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "bears": "The fear of the gods, here, is what people reach for when they do not know the cause.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "knowledge"
+      ],
+      "claim": "Therefore death to us Is nothing, nor concerns us in the least, Since nature of mind is mortal evermore.",
+      "press": "qualifies",
+      "work": "On the Nature of Things",
+      "loc": "Book III, on the fear of death",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "bears": "Death is nothing to us, on this argument, because the mind does not outlive the body.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "knowledge",
+        "moral",
+        "religion"
+      ],
+      "claim": "This terror, then, this darkness of the mind, Not sunrise with its flaring spokes of light, Nor glittering arrows of morning can disperse, But only Nature's aspect and her law,",
+      "press": "for",
+      "work": "On the Nature of Things",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/785",
+      "bears": "What clears the terror is knowing nature's law, not a brighter morning.",
+      "verbatim": true
+    }
+  ]
+}
