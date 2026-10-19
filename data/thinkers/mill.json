@@ -1,0 +1,98 @@
+{
+  "id": "mill",
+  "name": "John Stuart Mill",
+  "years": "1806–1873",
+  "place": "London",
+  "epithet": "The defender of experiments in living",
+  "dossier": "English philosopher and Member of Parliament. On Liberty argues against the tyranny of the majority and against society enforcing one pattern of life. Utilitarianism states the greatest-happiness principle, including the distinction of higher and lower pleasures.",
+  "voice": "I ask whether this is the person himself choosing, or the crowd choosing for him.",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      415,
+      523,
+      622
+    ]
+  },
+  "works": [
+    {
+      "title": "On Liberty",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "note": "Project Gutenberg"
+    },
+    {
+      "title": "Utilitarianism",
+      "url": "https://www.gutenberg.org/ebooks/11224",
+      "note": "Project Gutenberg"
+    }
+  ],
+  "entries": [
+    {
+      "domains": [
+        "liberty",
+        "custom"
+      ],
+      "press": "against",
+      "topics": [
+        "liberty",
+        "society",
+        "moral"
+      ],
+      "work": "On Liberty",
+      "loc": "Chapter I",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "claim": "Society can practise a social tyranny more formidable than many kinds of political oppression, because it leaves fewer means of escape, and it penetrates more deeply into the details of life.",
+      "bears": "A shared moral pressure is not innocent merely because no statute carries it."
+    },
+    {
+      "domains": [
+        "liberty"
+      ],
+      "press": "against",
+      "topics": [
+        "liberty",
+        "moral"
+      ],
+      "work": "On Liberty",
+      "loc": "Chapter III",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "claim": "The despotism of custom is a standing hindrance to human advancement. There should be different experiments of living, and people should be free to carry them out.",
+      "bears": "He treats one compulsory pattern of life as a loss of human powers, not as their completion."
+    },
+    {
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "liberty",
+        "justice",
+        "power"
+      ],
+      "work": "On Liberty",
+      "loc": "Chapter IV",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "claim": "The only purpose for which power can be rightfully exercised over a member of a civilized community, against his will, is to prevent harm to others. His own good is not a sufficient warrant.",
+      "bears": "The line is harm to others, not the majority’s dislike of a life."
+    },
+    {
+      "domains": [
+        "justice",
+        "knowledge"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "work": "Utilitarianism",
+      "loc": "Chapter II",
+      "url": "https://www.gutenberg.org/ebooks/11224",
+      "claim": "The creed which accepts as the foundation of morals utility, or the greatest happiness principle, holds that actions are right in proportion as they tend to promote happiness.",
+      "bears": "He does have a moral standard. It is happiness, with a rank among pleasures, not the absence of any standard."
+    }
+  ],
+  "tableId": "letters",
+  "portrait": "images/mill.svg"
+}

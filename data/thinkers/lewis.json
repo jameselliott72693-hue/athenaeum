@@ -1,0 +1,238 @@
+{
+  "id": "lewis",
+  "name": "C. S. Lewis",
+  "years": "1898–1963",
+  "place": "Belfast",
+  "epithet": "The defender of the Tao",
+  "dossier": "Belfast-born scholar of medieval and Renaissance literature at Oxford and Cambridge. The Abolition of Man defends an objective moral order he calls the Tao, and warns that education which debunks all sentiment produces men without chests. Mere Christianity sets out a common Christian case. He holds that a tyranny exercised for the victim’s own good may be the most oppressive, because it has no limiting principle.",
+  "tableId": "letters",
+  "portrait": "images/lewis.jpg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      440,
+      554,
+      659
+    ]
+  },
+  "voice": "I ask whether this still treats a human being as answerable to something outside his impulses.",
+  "works": [
+    {
+      "title": "The Weight of Glory",
+      "url": "https://archive.org/details/weightofgloryoth00lewi",
+      "note": "1949. Includes “The Inner Ring” and “Learning in War-Time.” Copyrighted; bibliographic record"
+    },
+    {
+      "title": "The Abolition of Man",
+      "url": "https://archive.org/details/abolitionofman00csle",
+      "note": "1943. Copyrighted; Internet Archive lending record"
+    },
+    {
+      "title": "Mere Christianity",
+      "url": "https://archive.org/details/merechristianity00lewi",
+      "note": "1952. Copyrighted; bibliographic record"
+    },
+    {
+      "title": "The Screwtape Letters",
+      "url": "https://archive.org/details/screwtapeletters00lewi",
+      "note": "1942. Copyrighted; bibliographic record"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "knowledge",
+        "justice",
+        "custom"
+      ],
+      "claim": "The doctrine that value is merely subjective ends by abolishing man. If nothing is really better or worse, the conditioners have nothing left to condition by except their own impulses.",
+      "press": "against",
+      "work": "The Abolition of Man",
+      "loc": "Chapter 3, and the appendix “Illustrations of the Tao”",
+      "url": "https://archive.org/details/abolitionofman00csle",
+      "bears": "He calls the objective moral order the Tao, and treats the denial of it as the abolition of the human."
+    },
+    {
+      "topics": [
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "liberty",
+        "justice"
+      ],
+      "claim": "The head rules the belly through the chest. The chest — trained sentiment, magnanimity — is the liaison between cerebral man and visceral man. Sterilise that and you make men without chests.",
+      "press": "against",
+      "work": "The Abolition of Man",
+      "loc": "Chapter 1, “Men Without Chests”",
+      "url": "https://archive.org/details/abolitionofman00csle",
+      "bears": "Education that debunks all sentiment leaves the pupil at the mercy of propaganda."
+    },
+    {
+      "topics": [
+        "justice"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "justice"
+      ],
+      "claim": "Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive. Those who torment us for our own good will torment us without end.",
+      "press": "against",
+      "work": "God in the Dock",
+      "loc": "“The Humanitarian Theory of Punishment” (1949)",
+      "url": "https://archive.org/details/godindockessayso0000lewi",
+      "bears": "He prefers a desert theory of punishment to a purely therapeutic one, because the latter has no limiting principle."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "custom",
+        "knowledge",
+        "justice"
+      ],
+      "claim": "The Tao is not one among a series of possible value systems. It is the sole source of all value judgements. To reject it is to reject value itself.",
+      "press": "against",
+      "work": "The Abolition of Man",
+      "loc": "Chapter 2, “The Way”",
+      "url": "https://archive.org/details/abolitionofman00csle",
+      "bears": "Innovators in morals borrow from the Tao even while claiming to stand outside it."
+    },
+    {
+      "topics": [
+        "moral",
+        "custom",
+        "power"
+      ],
+      "domains": [
+        "knowledge",
+        "justice",
+        "custom"
+      ],
+      "claim": "Human beings, all over the earth, have this curious idea that they ought to behave in a certain way, and cannot really get rid of it. The moral law is not a mere social convention.",
+      "press": "against",
+      "work": "Mere Christianity",
+      "loc": "Book I, “Right and Wrong as a Clue to the Meaning of the Universe”",
+      "url": "https://archive.org/details/merechristianity00lewi",
+      "bears": "He treats the moral law as a clue, not as a local custom."
+    },
+    {
+      "topics": [
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "knowledge"
+      ],
+      "claim": "The power of Man to make himself what he pleases means the power of some men to make other men what they please. Each new power won by man is a power over man as well.",
+      "press": "against",
+      "work": "The Abolition of Man",
+      "loc": "Chapter 3",
+      "url": "https://archive.org/details/abolitionofman00csle",
+      "bears": "What is called the conquest of nature turns out to be the conquest of some men by others."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "knowledge",
+        "custom"
+      ],
+      "claim": "The Tao admits development from within. Those who understand it can modify it, but only in the spirit of the Tao itself, never by standing outside it.",
+      "press": "qualifies",
+      "work": "The Abolition of Man",
+      "loc": "Chapter 2, “The Way”",
+      "url": "https://archive.org/details/abolitionofman00csle",
+      "bears": "He allows reform that grows from the moral order, and refuses a reform that abolishes it."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "knowledge",
+        "custom"
+      ],
+      "claim": "Morality is concerned with three things. Fair play and harmony between individuals. Harmonising the things inside each individual. And the general purpose of human life as a whole.",
+      "press": "qualifies",
+      "work": "Mere Christianity",
+      "loc": "Book III, “Morality and Psychoanalysis”",
+      "url": "https://archive.org/details/merechristianity00lewi",
+      "bears": "A moral question is not settled by asking only what is fair between neighbours."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "power",
+        "liberty",
+        "custom"
+      ],
+      "claim": "The quest of the Inner Ring will break your heart unless you break it. Of all the passions, the passion for the Inner Ring is most skilful in making a man who is not yet a very bad man do very bad things.",
+      "press": "against",
+      "work": "The Inner Ring",
+      "loc": "Memorial Lecture at King’s College, London, 1944",
+      "url": "https://archive.org/details/weightofgloryoth00lewi",
+      "bears": "The desire to be inside the circle of the knowing is a moral danger, not a mark of maturity."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "knowledge"
+      ],
+      "claim": "There are no ordinary people. You have never talked to a mere mortal. Nations, cultures, arts, civilisations — these are mortal, and their life is to ours as the life of a gnat. It is immortals whom we joke with, work with, marry.",
+      "press": "qualifies",
+      "work": "The Weight of Glory",
+      "loc": "The sermon “The Weight of Glory” (1941)",
+      "url": "https://archive.org/details/weightofgloryoth00lewi",
+      "bears": "The neighbour is not material for a scheme. The policy has to reckon with that."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "power",
+        "knowledge"
+      ],
+      "claim": "The essential vice, the utmost evil, is Pride. It was through Pride that the devil became the devil. Pride is spiritual cancer: it eats up the very possibility of love, or contentment, or even common sense.",
+      "press": "against",
+      "work": "Mere Christianity",
+      "loc": "Book III, “The Great Sin”",
+      "url": "https://archive.org/details/merechristianity00lewi",
+      "bears": "A reform conducted in contempt of the people it reforms has already gone wrong."
+    },
+    {
+      "topics": [
+        "war"
+      ],
+      "domains": [
+        "war",
+        "knowledge",
+        "custom"
+      ],
+      "claim": "The war creates no absolutely new situation: it simply aggravates the permanent human situation so that we can no longer ignore it. Human life has always been lived on the edge of a precipice.",
+      "press": "qualifies",
+      "work": "Learning in War-Time",
+      "loc": "Sermon at Oxford, 22 October 1939",
+      "url": "https://archive.org/details/weightofgloryoth00lewi",
+      "bears": "A crisis does not abolish the learned life, or the ordinary duties. It only makes the old question sharper."
+    }
+  ]
+}

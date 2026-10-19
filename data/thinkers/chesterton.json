@@ -1,0 +1,233 @@
+{
+  "id": "chesterton",
+  "name": "G. K. Chesterton",
+  "years": "1874–1936",
+  "place": "London",
+  "epithet": "The defender of the ordinary",
+  "dossier": "London journalist, poet, and essayist. Heretics and Orthodoxy argue that modern thought has isolated virtues until they go mad, and that tradition is the democracy of the dead — a refusal to submit to the small oligarchy of those merely walking about. What’s Wrong with the World defends the ordinary home against schemes that treat people as material to be rearranged.",
+  "tableId": "letters",
+  "portrait": "images/chesterton.jpg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      294,
+      370,
+      440
+    ]
+  },
+  "voice": "Before I say what is wrong, I want to know what is supposed to be right.",
+  "works": [
+    {
+      "title": "Orthodoxy",
+      "url": "https://www.gutenberg.org/ebooks/16769",
+      "note": "Project Gutenberg"
+    },
+    {
+      "title": "Heretics",
+      "url": "https://www.gutenberg.org/ebooks/470",
+      "note": "Project Gutenberg"
+    },
+    {
+      "title": "What’s Wrong with the World",
+      "url": "https://www.gutenberg.org/ebooks/1717",
+      "note": "Project Gutenberg"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "knowledge"
+      ],
+      "domains": [
+        "knowledge",
+        "custom",
+        "justice"
+      ],
+      "claim": "A man ought to confess himself crazy before he confesses himself heretical. The modern boast of heresy is a sign that people care less whether they are right.",
+      "press": "qualifies",
+      "work": "Heretics",
+      "loc": "I. Introductory Remarks on the Importance of Orthodoxy",
+      "url": "https://www.gutenberg.org/ebooks/470",
+      "bears": "Orthodoxy has been turned into a term of abuse, and heresy into a compliment."
+    },
+    {
+      "topics": [
+        "custom"
+      ],
+      "domains": [
+        "custom",
+        "liberty",
+        "power"
+      ],
+      "claim": "Tradition is the democracy of the dead. It refuses to submit to the small and arrogant oligarchy of those who merely happen to be walking about.",
+      "press": "against",
+      "work": "Orthodoxy",
+      "loc": "IV. The Ethics of Elfland",
+      "url": "https://www.gutenberg.org/ebooks/16769",
+      "bears": "Tradition means giving votes to the most obscure of all classes, our ancestors."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "justice",
+        "custom"
+      ],
+      "claim": "The modern world is full of wild and wasted virtues. When a religious scheme is shattered, the vices run wild as well as the virtues.",
+      "press": "against",
+      "work": "Orthodoxy",
+      "loc": "III. The Suicide of Thought",
+      "url": "https://www.gutenberg.org/ebooks/16769",
+      "bears": "The virtues have gone mad because they have been isolated from each other."
+    },
+    {
+      "topics": [
+        "custom",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "justice"
+      ],
+      "claim": "Representative government, the one universal relic, is a very poor fragment of the full republican idea.",
+      "press": "qualifies",
+      "work": "What’s Wrong with the World",
+      "loc": "Part One, V. The Unfinished Temple",
+      "url": "https://www.gutenberg.org/ebooks/1717",
+      "bears": "A ballot without the public thing the revolution had actually willed is the shell of a republic."
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "power",
+        "custom"
+      ],
+      "claim": "The family is the only anarchist institution. It is older than law and stands outside the state. A reform that begins by rearranging the home has already mistaken the material.",
+      "press": "against",
+      "work": "What’s Wrong with the World",
+      "loc": "Part One, VII. The Free Family",
+      "url": "https://www.gutenberg.org/ebooks/1717",
+      "bears": "He treats the household as prior to the public scheme."
+    },
+    {
+      "topics": [
+        "knowledge"
+      ],
+      "domains": [
+        "knowledge",
+        "custom",
+        "justice"
+      ],
+      "claim": "The expert is more aristocratic than the aristocrat, because the aristocrat is only the man who lives well, while the expert is the man who knows better. A scientific civilization increases the specialist over the popular function.",
+      "press": "qualifies",
+      "work": "Heretics",
+      "loc": "16. On Mr. McCabe and a Divine Frivolity",
+      "url": "https://www.gutenberg.org/ebooks/470",
+      "bears": "He distrusts a reform conducted by men who know one thing and are then left in charge of the rest."
+    },
+    {
+      "topics": [
+        "custom"
+      ],
+      "domains": [
+        "custom",
+        "liberty"
+      ],
+      "claim": "Never was the past more venerated by men than it was by the French Revolutionists. They invoked the little republics of antiquity. Man can only find life among the dead.",
+      "press": "against",
+      "work": "What’s Wrong with the World",
+      "loc": "Part One, IV. The Fear of the Past",
+      "url": "https://www.gutenberg.org/ebooks/1717",
+      "bears": "Even a revolution plants itself in some earlier picture of a common life. A start from nothing is a myth."
+    },
+    {
+      "topics": [
+        "society"
+      ],
+      "domains": [
+        "custom",
+        "justice",
+        "power"
+      ],
+      "claim": "The world is not a lodging-house at Brighton, which we are to leave because it is miserable. It is the fortress of our family, with the flag flying on the turret. A man belongs to this world before he begins to ask if it is nice to belong to it.",
+      "press": "qualifies",
+      "work": "Orthodoxy",
+      "loc": "V. The Flag of the World",
+      "url": "https://www.gutenberg.org/ebooks/16769",
+      "bears": "Reform begins from loyalty. The pessimist and the mere optimist are both unfit to change anything."
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge",
+        "custom"
+      ],
+      "domains": [
+        "knowledge",
+        "custom"
+      ],
+      "claim": "There are two things, and two things only, for the human mind, a dogma and a prejudice. A doctrine is a definite point; a prejudice is a direction.",
+      "press": "qualifies",
+      "work": "What’s Wrong with the World",
+      "loc": "Part One, III. The New Hypocrite",
+      "url": "https://www.gutenberg.org/ebooks/1717",
+      "bears": "A school that will not name its creed has not escaped doctrine. It has only refused to say which point the mind is being given."
+    },
+    {
+      "topics": [
+        "property"
+      ],
+      "domains": [
+        "justice",
+        "liberty",
+        "custom",
+        "property"
+      ],
+      "claim": "Property is merely the art of the democracy. It means that every man should have something that he can shape in his own image, as he is shaped in the image of heaven.",
+      "press": "qualifies",
+      "work": "What’s Wrong with the World",
+      "loc": "Part One, VI. The Enemies of Property",
+      "url": "https://www.gutenberg.org/ebooks/1717",
+      "bears": "He wants property widely held, not abolished and not concentrated."
+    },
+    {
+      "topics": [
+        "custom"
+      ],
+      "domains": [
+        "custom",
+        "power"
+      ],
+      "claim": "Progress should mean that we are always changing the world to suit the vision. Progress does mean, just now, that we are always changing the vision.",
+      "press": "against",
+      "work": "Orthodoxy",
+      "loc": "VII. The Eternal Revolution",
+      "url": "https://www.gutenberg.org/ebooks/16769",
+      "bears": "A reform that keeps revising its own end is not a reform. It is a drift."
+    },
+    {
+      "topics": [
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "justice"
+      ],
+      "claim": "The madman is not the man who has lost his reason. The madman is the man who has lost everything except his reason. He is in the clean and well-lit prison of one idea.",
+      "press": "qualifies",
+      "work": "Orthodoxy",
+      "loc": "II. The Maniac",
+      "url": "https://www.gutenberg.org/ebooks/16769",
+      "bears": "A single explanation, pressed past its measure, is a kind of insanity."
+    }
+  ]
+}

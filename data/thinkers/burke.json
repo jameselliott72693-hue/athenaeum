@@ -1,0 +1,237 @@
+{
+  "id": "burke",
+  "name": "Edmund Burke",
+  "years": "1729–1797",
+  "place": "Dublin",
+  "epithet": "The reformer who feared a clean slate",
+  "dossier": "Irish-born Whig, member for Bristol and later Malton. He defended the American colonies against coercion, conducted the impeachment of Warren Hastings, and opposed the French Revolution as a destruction of inherited liberties. For Burke, society is a partnership of the living, the dead, and those yet to be born. Liberties are claimed as an entailed inheritance, not invented yesterday from abstract speculation.",
+  "tableId": "letters",
+  "portrait": "images/burke.jpg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      415,
+      494
+    ]
+  },
+  "voice": "I will not judge this by a theory invented this morning.",
+  "works": [
+    {
+      "title": "Speech to the Electors of Bristol",
+      "url": "https://www.econlib.org/book-chapters/chapter-vol-4-miscellaneous-writings-speech-to-the-electors-of-bristol/",
+      "note": "3 November 1774"
+    },
+    {
+      "title": "Reflections on the Revolution in France",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "note": "In Works, vol. 3, Project Gutenberg"
+    },
+    {
+      "title": "Thoughts on the Present Discontents",
+      "url": "https://www.gutenberg.org/ebooks/2173",
+      "note": "Project Gutenberg"
+    },
+    {
+      "title": "Speech on Conciliation with the Colonies",
+      "url": "https://www.gutenberg.org/ebooks/5655",
+      "note": "In Works collections; also widely reprinted"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "custom",
+        "power",
+        "liberty"
+      ],
+      "claim": "Liberties are claimed as an entailed inheritance, derived from forefathers and to be transmitted, not as a right invented yesterday from abstract speculation.",
+      "press": "against",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On the English constitution as an inheritance",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "From Magna Carta to the Declaration of Right, liberty is claimed as an entailed inheritance."
+    },
+    {
+      "topics": [
+        "moral",
+        "custom",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "custom",
+        "justice",
+        "power"
+      ],
+      "claim": "A state that casts away its old opinions and old ways of life will find that men need those prejudices — the bank and capital of nations — more than they need a theory.",
+      "press": "against",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On prejudice and the wisdom of ages",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "Prejudice renders a man’s virtue his habit. Through just prejudice his duty becomes part of his nature."
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "power",
+        "liberty",
+        "justice"
+      ],
+      "claim": "Government is a contrivance of human wisdom to provide for human wants. Among those wants is a sufficient restraint upon the passions.",
+      "press": "qualifies",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On society as a contract across generations",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "Society is a partnership not only between the living, but between the living, the dead, and those yet to be born."
+    },
+    {
+      "topics": [
+        "liberty"
+      ],
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "claim": "Abstract liberty, like other mere abstractions, is not to be found. Liberty inheres in some sensible object.",
+      "press": "qualifies",
+      "work": "Speech on Conciliation with the Colonies",
+      "loc": "22 March 1775",
+      "url": "https://www.gutenberg.org/ebooks/5655",
+      "bears": "He refuses a liberty that is only a name, and asks what concrete good it secures."
+    },
+    {
+      "topics": [],
+      "domains": [
+        "custom",
+        "power",
+        "liberty"
+      ],
+      "claim": "A disposition to preserve, and an ability to improve, taken together, would be my standard of a statesman. Change is a means, not an end.",
+      "press": "qualifies",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On reform and conservation",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "He is for reform that repairs, not for a clean slate."
+    },
+    {
+      "topics": [
+        "custom",
+        "power",
+        "property"
+      ],
+      "domains": [
+        "custom",
+        "justice",
+        "power"
+      ],
+      "claim": "Prescription is the most solid of all titles, not only to property, but to government. It is a presumption in favour of any settled scheme against any untried project.",
+      "press": "against",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On prescription",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "Long possession is itself a reason, not a mere accident."
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "claim": "The people of the colonies are descendants of Englishmen. They are therefore not only devoted to liberty, but to liberty according to English ideas and on English principles.",
+      "press": "against",
+      "work": "Speech on Conciliation with the Colonies",
+      "loc": "22 March 1775",
+      "url": "https://www.gutenberg.org/ebooks/5655",
+      "bears": "He argues for conciliation by recognising an inherited liberty, not by inventing a new one."
+    },
+    {
+      "topics": [
+        "power"
+      ],
+      "domains": [
+        "power",
+        "liberty",
+        "justice"
+      ],
+      "claim": "Your representative owes you, not his industry only, but his judgment; and he betrays, instead of serving you, if he sacrifices it to your opinion. Parliament is a deliberative assembly of one nation, with one interest, that of the whole.",
+      "press": "against",
+      "work": "Speech to the Electors of Bristol",
+      "loc": "3 November 1774",
+      "url": "https://www.econlib.org/book-chapters/chapter-vol-4-miscellaneous-writings-speech-to-the-electors-of-bristol/",
+      "bears": "He refuses the imperative mandate. A member is not an agent bound to obey instructions."
+    },
+    {
+      "topics": [
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "custom",
+        "justice"
+      ],
+      "claim": "The age of chivalry is gone. That of sophisters, economists, and calculators has succeeded; and the glory of Europe is extinguished for ever.",
+      "press": "against",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On the march to Versailles",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "He treats manners and the old loyalty as a real part of political order, not as ornament."
+    },
+    {
+      "topics": [
+        "liberty"
+      ],
+      "domains": [
+        "liberty",
+        "justice",
+        "custom"
+      ],
+      "claim": "The rights of men are in a sort of middle, incapable of definition, but not impossible to be discerned. Their abstract perfection is their practical defect.",
+      "press": "qualifies",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On the real rights of men",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "He grants civil rights, and denies that they can be stated as a simple catalogue of abstractions."
+    },
+    {
+      "topics": [],
+      "domains": [
+        "power",
+        "custom"
+      ],
+      "claim": "Party is a body of men united for promoting by their joint endeavours the national interest upon some particular principle in which they are all agreed. When bad men combine, the good must associate.",
+      "press": "qualifies",
+      "work": "Thoughts on the Cause of the Present Discontents",
+      "loc": "On party",
+      "url": "https://www.gutenberg.org/ebooks/2173",
+      "bears": "He defends party connection against the charge that it is mere faction."
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "custom",
+        "power",
+        "liberty"
+      ],
+      "claim": "Society is indeed a contract. It is a partnership in all science, in all art, in every virtue, and in all perfection. As the ends of such a partnership cannot be obtained in many generations, it becomes a partnership between those who are living, those who are dead, and those who are to be born.",
+      "press": "against",
+      "work": "Reflections on the Revolution in France",
+      "loc": "On the social contract",
+      "url": "https://www.gutenberg.org/ebooks/15679",
+      "bears": "The contract is not a bargain of the living alone, and it is not dissolvable at pleasure."
+    }
+  ]
+}

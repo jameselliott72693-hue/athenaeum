@@ -1,0 +1,100 @@
+{
+  "id": "tocqueville",
+  "name": "Alexis de Tocqueville",
+  "years": "1805–1859",
+  "place": "Paris",
+  "epithet": "The observer of mores",
+  "dossier": "French magistrate and author of Democracy in America. The Reeve translation, which this shelf uses, is in the public domain. He argues that mores, more than laws, sustain a free republic, and he warns against the tyranny of the majority.",
+  "voice": "I look first at the mores, because the laws will not hold what the habits have already given up.",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      247,
+      311,
+      392
+    ]
+  },
+  "works": [
+    {
+      "title": "Democracy in America, volume 1",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "note": "Project Gutenberg, Reeve translation"
+    },
+    {
+      "title": "Democracy in America, volume 2",
+      "url": "https://www.gutenberg.org/ebooks/816",
+      "note": "Project Gutenberg, Reeve translation"
+    }
+  ],
+  "entries": [
+    {
+      "domains": [
+        "custom",
+        "power"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society",
+        "moral",
+        "custom"
+      ],
+      "work": "Democracy in America",
+      "loc": "Volume 1, part 2, chapter 9",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "claim": "Mores are more important than laws to the maintenance of a democratic republic. Laws are more important than physical circumstances.",
+      "bears": "A free society stands on habits of the heart, not only on a paper arrangement."
+    },
+    {
+      "domains": [
+        "custom",
+        "knowledge"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society",
+        "moral",
+        "custom"
+      ],
+      "work": "Democracy in America",
+      "loc": "Volume 1, part 2, chapter 9",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "claim": "Religion in the United States does not take a direct part in government, and it is the first of political institutions, because it directs mores and regulates the domestic life.",
+      "bears": "He treats a shared moral discipline as politically decisive even when it is not a law."
+    },
+    {
+      "domains": [
+        "liberty",
+        "power"
+      ],
+      "press": "against",
+      "topics": [
+        "liberty",
+        "power",
+        "society"
+      ],
+      "work": "Democracy in America",
+      "loc": "Volume 1, part 2, chapter 7",
+      "url": "https://www.gutenberg.org/ebooks/815",
+      "claim": "The tyranny of the majority is a moral tyranny as well as a political one. It leaves the body alone and goes straight to the soul.",
+      "bears": "A majority that dictates opinion has not thereby become a moral authority."
+    },
+    {
+      "domains": [
+        "custom",
+        "liberty"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society",
+        "custom"
+      ],
+      "work": "Democracy in America",
+      "loc": "Volume 2, part 2, chapter 2",
+      "url": "https://www.gutenberg.org/ebooks/816",
+      "claim": "Individualism disposes each member of the community to sever himself from the mass, and to draw apart with his family and friends.",
+      "bears": "A democracy can lose the common life without anyone passing a law against it."
+    }
+  ],
+  "tableId": "letters",
+  "portrait": "images/tocqueville.svg"
+}

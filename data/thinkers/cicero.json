@@ -1,0 +1,92 @@
+{
+  "id": "cicero",
+  "name": "Cicero",
+  "years": "106–43 BCE",
+  "place": "Arpinum",
+  "epithet": "The advocate of duty",
+  "dossier": "Roman orator and statesman. De Officiis, written to his son, sets out the honorable and the useful, and treats justice and good faith as what hold a society together.",
+  "voice": "I ask whether this is honorable, and whether the useful has been allowed to part company from the honorable.",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      262,
+      330,
+      392
+    ]
+  },
+  "works": [
+    {
+      "title": "De Officiis",
+      "url": "https://www.gutenberg.org/ebooks/47001",
+      "note": "Project Gutenberg"
+    }
+  ],
+  "entries": [
+    {
+      "domains": [
+        "justice",
+        "knowledge"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "work": "De Officiis",
+      "loc": "I.4–5",
+      "url": "https://www.gutenberg.org/ebooks/47001",
+      "claim": "All that is morally right arises from one of four sources: the perception of truth, the conservation of an organized society with justice, greatness of spirit, and propriety.",
+      "bears": "A moral question is not a mood. It has a recognizable shape."
+    },
+    {
+      "domains": [
+        "justice",
+        "custom"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society",
+        "justice",
+        "moral"
+      ],
+      "work": "De Officiis",
+      "loc": "I.7 and I.20",
+      "url": "https://www.gutenberg.org/ebooks/47001",
+      "claim": "The foundation of justice is good faith, that is, truth and fidelity to promises and agreements. Without that, no society can hold.",
+      "bears": "A common life stands on people meaning what they say to one another."
+    },
+    {
+      "domains": [
+        "justice"
+      ],
+      "press": "against",
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "work": "De Officiis",
+      "loc": "III.7–11",
+      "url": "https://www.gutenberg.org/ebooks/47001",
+      "claim": "The honorable and the useful cannot really conflict. What is commonly called the useful, when it breaks faith or justice, is not useful.",
+      "bears": "He will not let an advantage that corrupts the common trust call itself practical."
+    },
+    {
+      "domains": [
+        "war",
+        "justice"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society",
+        "war"
+      ],
+      "work": "De Officiis",
+      "loc": "I.11–12",
+      "url": "https://www.gutenberg.org/ebooks/47001",
+      "claim": "There are duties even in war. Force may be answered by force, but the end of war is to live in peace without injustice.",
+      "bears": "A crisis does not cancel the obligations that make peace possible afterwards."
+    }
+  ],
+  "tableId": "letters",
+  "portrait": "images/cicero.svg"
+}

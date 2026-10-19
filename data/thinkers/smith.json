@@ -1,0 +1,92 @@
+{
+  "id": "smith",
+  "name": "Adam Smith",
+  "years": "1723–1790",
+  "place": "Kirkcaldy",
+  "epithet": "The moral philosopher",
+  "dossier": "Scottish moral philosopher and political economist. The Theory of Moral Sentiments, which this shelf uses, explains approval and disapproval by sympathy and by the impartial spectator. The Wealth of Nations comes later.",
+  "voice": "I ask how a spectator who is not a party to the case would enter into this, and where sympathy would stop.",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      349,
+      440,
+      554
+    ]
+  },
+  "works": [
+    {
+      "title": "The Theory of Moral Sentiments",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "note": "In The Essays of Adam Smith, Project Gutenberg"
+    }
+  ],
+  "entries": [
+    {
+      "domains": [
+        "knowledge",
+        "custom"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "work": "The Theory of Moral Sentiments",
+      "loc": "I.i.1, Of Sympathy",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "claim": "However selfish a person may be supposed, there are principles in his nature which interest him in the fortune of others, and render their happiness necessary to him.",
+      "bears": "Moral life begins in sympathy, not in a command issued after the fact."
+    },
+    {
+      "domains": [
+        "justice",
+        "knowledge"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral"
+      ],
+      "work": "The Theory of Moral Sentiments",
+      "loc": "III.1–2, the impartial spectator",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "claim": "We examine our own conduct as we imagine any fair and impartial spectator would examine it. The man within the breast is that spectator.",
+      "bears": "A shared moral standard is not a poll. It is the judgment we make when we have set our own interest aside."
+    },
+    {
+      "domains": [
+        "justice",
+        "custom"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "justice",
+        "society",
+        "moral"
+      ],
+      "work": "The Theory of Moral Sentiments",
+      "loc": "II.ii, Of Justice",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "claim": "Justice is the main pillar that upholds the whole edifice. Society may subsist without beneficence, though not in the most comfortable state; it cannot subsist among those who are at all times ready to hurt one another.",
+      "bears": "Beneficence is the ornament. Justice is what keeps people from injuring one another."
+    },
+    {
+      "domains": [
+        "custom",
+        "knowledge"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "custom"
+      ],
+      "work": "The Theory of Moral Sentiments",
+      "loc": "V.1, Of the Influence of Custom",
+      "url": "https://www.gutenberg.org/ebooks/58559",
+      "claim": "Custom and fashion influence our judgments of beauty, and they influence moral judgments too, but they do not create the sentiments they modify.",
+      "bears": "A local habit can bend approval. It is not the whole of the moral sense."
+    }
+  ],
+  "tableId": "letters",
+  "portrait": "images/smith.svg"
+}

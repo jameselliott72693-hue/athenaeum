@@ -1,0 +1,91 @@
+{
+  "id": "augustine",
+  "name": "Augustine",
+  "years": "354–430",
+  "place": "Hippo",
+  "epithet": "The bishop of two cities",
+  "dossier": "North African bishop and author of the Confessions and The City of God. He describes two cities formed by two loves, and treats peace as the tranquillity of order.",
+  "voice": "I ask which love is forming this people, because a people is known by what it loves.",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      311,
+      392,
+      466
+    ]
+  },
+  "works": [
+    {
+      "title": "The City of God",
+      "url": "https://www.gutenberg.org/ebooks/45305",
+      "note": "Project Gutenberg, Dods translation, volume II"
+    }
+  ],
+  "entries": [
+    {
+      "domains": [
+        "custom",
+        "justice"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "work": "The City of God",
+      "loc": "XIV.28",
+      "url": "https://www.gutenberg.org/ebooks/45305",
+      "claim": "Two cities have been formed by two loves: the earthly by the love of self, even to the contempt of God; the heavenly by the love of God, even to the contempt of self.",
+      "bears": "A common life is already a moral fact. It is gathered by what the people love."
+    },
+    {
+      "domains": [
+        "justice",
+        "custom"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "work": "The City of God",
+      "loc": "XIX.13",
+      "url": "https://www.gutenberg.org/ebooks/45305",
+      "claim": "Peace is the tranquillity of order. The peace of a city is the ordered agreement of citizens.",
+      "bears": "Order is not mere quiet. It is a right arrangement."
+    },
+    {
+      "domains": [
+        "power",
+        "war"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "society"
+      ],
+      "work": "The City of God",
+      "loc": "XIX.17",
+      "url": "https://www.gutenberg.org/ebooks/45305",
+      "claim": "The earthly city desires earthly peace for the sake of enjoying earthly goods, and it makes war in order to attain that peace.",
+      "bears": "Even a worldly peace is an agreement about goods, not the absence of a moral question."
+    },
+    {
+      "domains": [
+        "custom",
+        "justice"
+      ],
+      "press": "qualifies",
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "work": "The City of God",
+      "loc": "XIX.24",
+      "url": "https://www.gutenberg.org/ebooks/45305",
+      "claim": "A people is a multitude of reasonable beings bound together by a common agreement as to the objects of their love. To know a people, observe what it loves.",
+      "bears": "Where there is no shared love, there is not yet a people, only a crowd."
+    }
+  ],
+  "tableId": "letters",
+  "portrait": "images/augustine.svg"
+}

@@ -1,0 +1,258 @@
+{
+  "id": "aristotle",
+  "name": "Aristotle",
+  "years": "384–322 BCE",
+  "place": "Stagira",
+  "epithet": "The practical philosopher",
+  "dossier": "Born in Stagira and trained in Plato’s Academy, Aristotle taught Alexander and later founded the Lyceum in Athens. The Nicomachean Ethics and the Politics are two halves of one inquiry into the human good. Happiness is activity of the soul in accordance with virtue over a complete life. Moral virtue is a habit of choosing the mean, as the person of practical wisdom would determine it. The city exists not merely so that people may live, but so that they may live well.",
+  "tableId": "letters",
+  "portrait": "images/aristotle.jpg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      392,
+      494,
+      587
+    ]
+  },
+  "voice": "The question is what the good life requires here, not what the headline rewards.",
+  "works": [
+    {
+      "title": "Rhetoric",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0060",
+      "note": "Perseus, Roberts translation"
+    },
+    {
+      "title": "Nicomachean Ethics",
+      "url": "https://www.gutenberg.org/ebooks/8438",
+      "note": "Project Gutenberg, Chase translation"
+    },
+    {
+      "title": "Nicomachean Ethics (Greek and English)",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054",
+      "note": "Perseus Digital Library"
+    },
+    {
+      "title": "Politics",
+      "url": "https://www.gutenberg.org/ebooks/6762",
+      "note": "Project Gutenberg, Ellis translation"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "justice",
+        "power",
+        "custom"
+      ],
+      "claim": "The city exists for living well, not merely for living, and a correct regime aims at the common advantage rather than the rulers’.",
+      "press": "qualifies",
+      "work": "Politics",
+      "loc": "I.1–2 and III.6–7",
+      "url": "https://www.gutenberg.org/ebooks/6762",
+      "bears": "Every community aims at some good; the political community aims at the highest. Correct constitutions seek the common advantage."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "justice",
+        "knowledge"
+      ],
+      "claim": "Virtue is a settled disposition to choose the mean relative to us, as the person of practical wisdom would determine it.",
+      "press": "qualifies",
+      "work": "Nicomachean Ethics",
+      "loc": "II.6, 1106b–1107a",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=2",
+      "bears": "Moral virtue is produced by habit and consists in observing the mean determined by right principle."
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "knowledge",
+        "custom",
+        "power"
+      ],
+      "claim": "Happiness is activity of the soul in accordance with virtue over a complete life, and the good of the city is greater and more complete than the good of one person.",
+      "press": "qualifies",
+      "work": "Nicomachean Ethics",
+      "loc": "I.2 and I.7",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=1",
+      "bears": "The end of politics is the human good; one swallow does not make a spring."
+    },
+    {
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "liberty",
+        "justice"
+      ],
+      "claim": "Justice toward others is complete virtue in relation to another, and distributive justice gives equals equal shares and unequals unequal shares.",
+      "press": "qualifies",
+      "work": "Nicomachean Ethics",
+      "loc": "V.1–3",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=5",
+      "bears": "Justice is a mean concerned with proportion between persons and shares."
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "custom",
+        "power",
+        "justice"
+      ],
+      "claim": "A mixed regime is more stable than a pure one, because it gives a share to more than one part of the city and so has more who wish it to endure.",
+      "press": "qualifies",
+      "work": "Politics",
+      "loc": "IV.9 and IV.11",
+      "url": "https://www.gutenberg.org/ebooks/6762",
+      "bears": "The best practicable constitution mixes oligarchic and democratic devices."
+    },
+    {
+      "topics": [
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "custom",
+        "justice",
+        "liberty"
+      ],
+      "claim": "Friendship seems to hold cities together, and lawgivers care more for it than for justice. When men are friends they have no need of justice.",
+      "press": "qualifies",
+      "work": "Nicomachean Ethics",
+      "loc": "VIII.1, 1155a",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=8",
+      "bears": "Civic friendship is a condition of a city that can live well."
+    },
+    {
+      "topics": [
+        "power"
+      ],
+      "domains": [
+        "power",
+        "custom"
+      ],
+      "claim": "The law should rule rather than any one citizen, and the ruler should be a guardian of the law. He who bids the law rule bids God and reason rule.",
+      "press": "against",
+      "work": "Politics",
+      "loc": "III.16",
+      "url": "https://www.gutenberg.org/ebooks/6762",
+      "bears": "Passion perverts rulers, even the best of them, when they are not under law."
+    },
+    {
+      "topics": [
+        "society"
+      ],
+      "domains": [
+        "custom",
+        "power",
+        "justice"
+      ],
+      "claim": "Man is by nature a political animal. He who is unable to live in society, or who has no need because he is sufficient for himself, must be either a beast or a god.",
+      "press": "qualifies",
+      "work": "Politics",
+      "loc": "I.2, 1253a",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0058:book=1:section=1253a",
+      "bears": "The city is prior to the individual, because the whole is prior to the part."
+    },
+    {
+      "topics": [
+        "society",
+        "property"
+      ],
+      "domains": [
+        "justice",
+        "liberty",
+        "custom",
+        "property"
+      ],
+      "claim": "Property should be private in ownership and common in use. What is held in common by the greatest number has the least care bestowed on it.",
+      "press": "qualifies",
+      "work": "Politics",
+      "loc": "II.3 and II.5",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0058:book=2",
+      "bears": "He rejects Plato’s community of property and of women, and keeps ownership private."
+    },
+    {
+      "topics": [
+        "knowledge"
+      ],
+      "domains": [
+        "knowledge",
+        "custom"
+      ],
+      "claim": "The activity of contemplation is the highest, because intellect is the best thing in us, and the objects of intellect are the best of knowable objects.",
+      "press": "qualifies",
+      "work": "Nicomachean Ethics",
+      "loc": "X.7, 1177a",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=10",
+      "bears": "Complete happiness is a contemplative activity, pursued for its own sake."
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "liberty"
+      ],
+      "claim": "Praise and blame attach to the voluntary. What is done by force or by ignorance is involuntary, and a man is responsible for what he chooses.",
+      "press": "qualifies",
+      "work": "Nicomachean Ethics",
+      "loc": "III.1 and III.5",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:book=3",
+      "bears": "We are in a sense responsible for our states of character, because we are responsible for the acts that form them."
+    },
+    {
+      "topics": [
+        "liberty",
+        "justice",
+        "knowledge"
+      ],
+      "domains": [
+        "knowledge",
+        "justice",
+        "liberty"
+      ],
+      "claim": "Truth and justice are by nature stronger than their opposites, so that if decisions are made as they ought to be, truth and justice are easy to prove.",
+      "press": "for",
+      "work": "Rhetoric",
+      "loc": "I.1, 1355a",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0060:book=1",
+      "bears": "Speech that argues both sides is useful, because we must be able to refute an opponent."
+    },
+    {
+      "topics": [
+        "society",
+        "knowledge",
+        "power"
+      ],
+      "domains": [
+        "knowledge",
+        "power",
+        "custom"
+      ],
+      "claim": "No one will doubt that the legislator should direct his attention above all to the education of youth. The citizen should be moulded to suit the form of government under which he lives.",
+      "press": "qualifies",
+      "work": "Politics",
+      "loc": "VIII.1, 1337a",
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0058:book=8",
+      "bears": "Education is a public concern, not a private one, because the city has one end."
+    }
+  ]
+}

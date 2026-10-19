@@ -1,0 +1,60 @@
+const assert = require("assert");
+const fs = require("fs");
+const path = require("path");
+const { scoreThinker, chooseRandom } = require("../score.js");
+
+const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/tables.json"), "utf8"));
+const thinkers = catalog.thinkers.map((id) => JSON.parse(fs.readFileSync(path.join(__dirname, "../data/thinkers", id + ".json"), "utf8")));
+const rel = catalog.relevance;
+const byId = Object.fromEntries(thinkers.map((t) => [t.id, t]));
+
+const compass = "The importance of a shared moral compass in a society";
+const ranked = thinkers
+  .map((t) => ({ id: t.id, ...scoreThinker(t, compass, rel) }))
+  .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id));
+
+ranked.forEach((r) => console.log(r.tier, r.score, r.hits, r.speaks ? "speaks" : "sits out", r.id));
+
+["lewis", "aristotle", "aquinas", "burke", "smith", "augustine"].forEach((id) => {
+  assert.ok(scoreThinker(byId[id], compass, rel).speaks, id + " should speak on a moral compass");
+});
+assert.strictEqual(scoreThinker(byId.lewis, compass, rel).tier, "high");
+assert.ok(ranked.filter((r) => r.tier === "high").length < ranked.length);
+assert.strictEqual(scoreThinker(byId.locke, compass, rel).tier, "mid");
+assert.ok(scoreThinker(byId.aquinas, compass, rel).score > 0);
+
+const mars = thinkers.map((t) => scoreThinker(t, "Should we colonize Mars?", rel));
+assert.ok(mars.every((s) => !s.speaks), "Mars should not produce speeches");
+assert.ok(mars.every((s) => s.tier === "low"));
+
+const chesterton = scoreThinker(byId.chesterton, compass, rel);
+assert.ok(!chesterton.matches.some((m) => /importance of orthodoxy/i.test(m.entry.loc) && m.lexical.includes("importance")));
+
+const anonymous = scoreThinker(byId.chesterton, "Should anonymous speech be outlawed? A bill would verify every user on the ground that unnamed speech is a danger.", rel);
+assert.ok(!anonymous.matches.some((m) => /Fear of the Past/.test(m.entry.loc)), "the word ground must not pull the revolution card");
+
+const seq = [0.1, 0.9];
+let i = 0;
+const rng = () => seq[i++] ?? 0.2;
+const twoTables = [
+  { id: "a", name: "Alpha", limits: { min: 2, hardMax: 12, recommendedMax: 6, defaultCount: 5 } },
+  { id: "b", name: "Beta", limits: { min: 2, hardMax: 12, recommendedMax: 6, defaultCount: 5 } }
+];
+const fake = [
+  { id: "a1", tableId: "a" }, { id: "a2", tableId: "a" }, { id: "a3", tableId: "a" },
+  { id: "b1", tableId: "b" }, { id: "b2", tableId: "b" }, { id: "b3", tableId: "b" }
+];
+const draw = chooseRandom({ tables: twoTables, thinkers: fake, traditionId: "any", size: 3, onlyRelevant: false, relevance: rel, rng });
+assert.strictEqual(draw.ok, true);
+assert.ok(draw.ids.every((id) => id.startsWith(draw.table.id === "a" ? "a" : "b")));
+assert.strictEqual(new Set(draw.ids.map((id) => id[0])).size, 1);
+
+const tooBig = chooseRandom({ tables: catalog.tables, thinkers, traditionId: "letters", size: 13, relevance: rel, rng: () => 0 });
+assert.strictEqual(tooBig.ok, false);
+
+const full = chooseRandom({ tables: catalog.tables, thinkers, traditionId: "letters", size: 12, relevance: rel, rng: () => 0.3 });
+assert.strictEqual(full.ok, true);
+assert.strictEqual(full.ids.length, 12);
+assert.strictEqual(new Set(full.ids).size, 12);
+
+console.log("score tests passed");
