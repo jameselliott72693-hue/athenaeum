@@ -1,0 +1,139 @@
+{
+  "id": "morris",
+  "name": "William Morris",
+  "years": "1834\u20131896",
+  "place": "Walthamstow",
+  "epithet": "Fellowship, not mastery",
+  "dossier": "Designer, poet, and socialist. News from Nowhere, quoted from the public-domain text, is a story of a future in which mastery has given way to fellowship and necessary work is done in the open.",
+  "tableId": "victorian",
+  "tables": [
+    "victorian"
+  ],
+  "portrait": "images/morris.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      220,
+      277,
+      349
+    ]
+  },
+  "voice": "I ask whether this is mastery over someone, or work a person would still choose.",
+  "works": [
+    {
+      "title": "News from Nowhere",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "note": "1890. Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "claim": "Go back again, now you have seen us, and your outward eyes have learned that in spite of all the infallible maxims of your day there is yet a time of rest in store for the world, when mastery has changed into fellowship--but not before.",
+      "press": "for",
+      "work": "News from Nowhere",
+      "loc": "On fellowship",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "bears": "The rest he hopes for arrives when mastery has become fellowship, and not before.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "society",
+        "knowledge"
+      ],
+      "domains": [
+        "economy",
+        "society",
+        "knowledge"
+      ],
+      "claim": "No; folk collect in these Banded-workshops to do hand-work in which working together is necessary or convenient; such work is often very pleasant.",
+      "press": "for",
+      "work": "News from Nowhere",
+      "loc": "On the workshops",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "bears": "Shared work, in this picture, is pleasant when the work itself calls for company.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "economy"
+      ],
+      "domains": [
+        "society",
+        "economy"
+      ],
+      "claim": "We came just here on a gang of men road-mending which delayed us a little; but I was not sorry for it; for all I had seen hitherto seemed a mere part of a summer holiday; and I wanted to see how this folk would set to on a piece of real necessary work.",
+      "press": "qualifies",
+      "work": "News from Nowhere",
+      "loc": "On necessary work",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "bears": "A pleasant future still has necessary work, and he wants to see it done.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "society"
+      ],
+      "domains": [
+        "culture",
+        "society"
+      ],
+      "claim": "You must remember, also, that we are long-lived, and that therefore beauty both in man and woman is not so fleeting as it was in the days when we were burdened so heavily by self-inflicted diseases.",
+      "press": "qualifies",
+      "work": "News from Nowhere",
+      "loc": "On beauty and health",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "bears": "Beauty, here, is tied to a life no longer worn down by avoidable disease.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "justice",
+        "society"
+      ],
+      "domains": [
+        "economy",
+        "justice",
+        "society"
+      ],
+      "claim": "Such people are thoroughly happy in their business, all the more as they are dealing with actual facts, and not merely passing counters round to see what share they shall have in the privileged taxation of useful people, which was the business of the commercial folk in past days.",
+      "press": "against",
+      "work": "News from Nowhere",
+      "loc": "On the old commerce",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "bears": "The commerce he rejects lived by taking a privileged share of other people's useful work.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "They may indeed turn out better or worse; they may disappoint her highest hopes; such anxieties as these are a part of the mingled pleasure and pain which goes to make up the life of mankind.",
+      "press": "qualifies",
+      "work": "News from Nowhere",
+      "loc": "On hopes for the young",
+      "url": "https://www.gutenberg.org/ebooks/3261",
+      "bears": "A common life still includes the pain of hopes that fail.",
+      "verbatim": true
+    }
+  ]
+}

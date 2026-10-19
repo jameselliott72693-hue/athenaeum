@@ -1,0 +1,143 @@
+{
+  "id": "ruskin",
+  "name": "John Ruskin",
+  "years": "1819\u20131900",
+  "place": "London",
+  "epithet": "There is no wealth but life",
+  "dossier": "Critic of art and of political economy. Unto This Last, quoted from the public-domain text, argues that wealth is life, that labour is the matter of economy, and that a merchant's honour is not the same as a soldier's.",
+  "tableId": "victorian",
+  "tables": [
+    "victorian"
+  ],
+  "portrait": "images/ruskin.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      247,
+      311,
+      370
+    ]
+  },
+  "voice": "I ask whether this feeds life, or only the habit of gain.",
+  "works": [
+    {
+      "title": "Unto This Last",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "note": "Public domain. Project Gutenberg, with the other essays on political economy in that volume."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "economy",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "economy",
+        "moral",
+        "society"
+      ],
+      "claim": "THERE IS NO WEALTH BUT LIFE. Life, including all its powers of love, of joy, and of admiration.",
+      "press": "for",
+      "work": "Unto This Last",
+      "loc": "Ad Valorem",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "bears": "Wealth is not a pile. It is the life that pile is supposed to serve.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "economy",
+        "society",
+        "power"
+      ],
+      "domains": [
+        "economy",
+        "society",
+        "power"
+      ],
+      "claim": "To begin, then, with one of these necessary truisms: all economy, whether of states, households, or individuals, may be defined to be the art of managing labour.",
+      "press": "qualifies",
+      "work": "Unto This Last",
+      "loc": "The Roots of Honour",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "bears": "Economy, at every scale, is the management of labour.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "war",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "war",
+        "power",
+        "society"
+      ],
+      "claim": "A bravo's trade is slaying; but the world has never respected bravos more than merchants: the reason it honours the soldier is, because he holds his life at the service of the State.",
+      "press": "qualifies",
+      "work": "Unto This Last",
+      "loc": "The Roots of Honour",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "bears": "Honour, in the comparison, belongs to a life held for the state, not to killing or to trade as such.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "economy",
+        "property"
+      ],
+      "domains": [
+        "justice",
+        "economy",
+        "property"
+      ],
+      "claim": "The labour which you have paid for, does indeed become, by the act of purchase, your own labour: you have bought the hands and the time of those workers; they are, by right and justice, your own hands, your own time.",
+      "press": "qualifies",
+      "work": "Unto This Last",
+      "loc": "On purchased labour",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "bears": "He grants that paid labour becomes the buyer's own, and then asks whether that buyer may spend other people's lives only for himself.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "culture",
+        "economy",
+        "justice"
+      ],
+      "domains": [
+        "culture",
+        "economy",
+        "justice"
+      ],
+      "claim": "You may consider every pound that you spend above the just price of a work of art, as an investment in a cargo of mental quick-lime or guano, which, being laid on the fields of human nature, is to grow a harvest of pride.",
+      "press": "against",
+      "work": "Unto This Last",
+      "loc": "On the price of art",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "bears": "Paying above a just price for art grows pride, not a richer common life.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "It will be done only when the motive force, that is to say, the will or spirit of the creature, is brought to its greatest strength by its own proper fuel; namely, by the affections.",
+      "press": "for",
+      "work": "Unto This Last",
+      "loc": "On motive",
+      "url": "https://www.gutenberg.org/ebooks/36541",
+      "bears": "The strength of a life, here, is fed by affection, not by a further dose of want.",
+      "verbatim": true
+    }
+  ]
+}

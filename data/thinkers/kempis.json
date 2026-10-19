@@ -1,0 +1,139 @@
+{
+  "id": "kempis",
+  "name": "Thomas \u00e0 Kempis",
+  "years": "1380\u20131471",
+  "place": "Kempen",
+  "epithet": "The life, not the library",
+  "dossier": "Augustinian canon at Mount St. Agnes. The Imitation of Christ, quoted from William Benham's public-domain translation, is a book of the interior life: humility, obedience, and the love of God set against reputation.",
+  "tableId": "christian",
+  "tables": [
+    "christian"
+  ],
+  "portrait": "images/kempis.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      330,
+      392,
+      494
+    ]
+  },
+  "voice": "I ask what this does to the soul when the talking stops.",
+  "works": [
+    {
+      "title": "The Imitation of Christ",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "note": "William Benham's translation. Public domain. Project Gutenberg."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "knowledge",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "knowledge",
+        "religion"
+      ],
+      "claim": "Of a surety, at the Day of Judgment it will be demanded of us, not what we have read, but what we have done; not how well we have spoken, but how holily we have lived.",
+      "press": "for",
+      "work": "The Imitation of Christ",
+      "loc": "Book I, Of the imitation of Christ",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "bears": "A moral life is weighed by conduct, not by the shelf one can recite.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "religion",
+        "moral"
+      ],
+      "claim": "Vanity of vanities, all is vanity, save to love God, and Him only to serve.",
+      "press": "for",
+      "work": "The Imitation of Christ",
+      "loc": "Book I, Of the knowledge of truth",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "bears": "The compass he names is the love and service of God.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "justice",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "justice",
+        "moral"
+      ],
+      "claim": "Therefore be zealous first over thyself, and then mayest thou righteously be zealous concerning thy neighbour.",
+      "press": "qualifies",
+      "work": "The Imitation of Christ",
+      "loc": "On zeal",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "bears": "Care for a neighbour starts, on this page, with care for one's own life.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "religion"
+      ],
+      "claim": "If thou beginnest to grow cold, it shall begin to go ill with thee, but if thou givest thyself unto zeal thou shalt find much peace, and shalt find thy labour the lighter because of the grace of God and the love of virtue.",
+      "press": "for",
+      "work": "The Imitation of Christ",
+      "loc": "On zeal and peace",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "bears": "Peace is tied to zeal for virtue, not to being left alone.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "moral"
+      ],
+      "domains": [
+        "religion",
+        "moral"
+      ],
+      "claim": "And in truth, unless thou be prevented and drawn on by His grace, thou wilt not attain to this, that having cast out and dismissed all else, thou alone art united to God.",
+      "press": "qualifies",
+      "work": "The Imitation of Christ",
+      "loc": "On grace",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "bears": "The union he describes is not a feat of unaided effort.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Nevertheless they advance above all others in virtue who strive manfully to conquer those things which are most grievous and contrary to them, for there a man profiteth most and meriteth greater grace where he most overcometh himself and mortifieth himself in spirit.",
+      "press": "for",
+      "work": "The Imitation of Christ",
+      "loc": "On self-conquest",
+      "url": "https://www.gutenberg.org/ebooks/1653",
+      "bears": "The hardest contrary thing is, for him, the place where a moral life actually grows.",
+      "verbatim": true
+    }
+  ]
+}

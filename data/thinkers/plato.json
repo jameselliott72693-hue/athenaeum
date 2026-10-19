@@ -104,6 +104,7 @@
   "tableId": "letters",
   "portrait": "images/plato.svg",
   "tables": [
-    "letters"
+    "letters",
+    "ancient"
   ]
 }

@@ -141,4 +141,24 @@ const asked = panel.buildRound({
 assert.strictEqual(asked.turns[0].editorial, "Answering the moderator.");
 assert.deepStrictEqual(asked.turns[0].replyTo, { id: "moderator", name: "Moderator", turnIndex: 2 });
 
+["christian", "ancient", "victorian"].forEach((tableId) => {
+  const table = catalog.tables.find((item) => item.id === tableId);
+  assert.ok(table.thinkers.length >= 6 && table.thinkers.length <= 9, tableId);
+  const built = roundFor(tableId, compass);
+  const first = built.turns[0];
+  assert.strictEqual(first.kind, "chair", tableId);
+  assert.strictEqual(first.editorial, "Addressing the subject.");
+  assert.ok(first.paragraphs.length > 0, tableId);
+  const replies = built.turns.filter((turn, index) => index > 0 && turn.kind === "chair");
+  assert.ok(replies.length > 0, `${tableId} has no reply`);
+  replies.forEach((turn) => {
+    assert.ok(/^Responding to .+ on .+\.$/.test(turn.editorial), turn.editorial);
+    assert.ok(table.preset.includes(turn.id), `${turn.name} is outside ${tableId}`);
+    const owner = byId[turn.id];
+    const claim = [...claimsOf(owner)].find((item) => turn.paragraphs[0].includes(item));
+    assert.ok(claim, `${turn.name} reply is not a card`);
+  });
+  console.log(tableId, built.turns.map((turn) => `${turn.kind}:${turn.name}:${turn.editorial}`).join(" | "));
+});
+
 console.log("panel tests passed");

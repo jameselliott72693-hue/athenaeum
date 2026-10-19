@@ -19,6 +19,11 @@
       "title": "The City of God",
       "url": "https://www.gutenberg.org/ebooks/45305",
       "note": "Project Gutenberg, Dods translation, volume II"
+    },
+    {
+      "title": "The Confessions of St. Augustine",
+      "url": "https://www.gutenberg.org/ebooks/3296",
+      "note": "Public domain. Project Gutenberg."
     }
   ],
   "entries": [
@@ -84,11 +89,69 @@
       "url": "https://www.gutenberg.org/ebooks/45305",
       "claim": "A people is a multitude of reasonable beings bound together by a common agreement as to the objects of their love. To know a people, observe what it loves.",
       "bears": "Where there is no shared love, there is not yet a people, only a crowd."
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "society"
+      ],
+      "claim": "Thou madest us for Thyself, and our heart is restless, until it repose in Thee.",
+      "press": "for",
+      "work": "The Confessions of St. Augustine",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/3296",
+      "bears": "A shared restlessness, in this opening, is already aimed at God.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "moral",
+        "culture"
+      ],
+      "domains": [
+        "religion",
+        "moral",
+        "culture"
+      ],
+      "claim": "If bodies please thee, praise God on occasion of them, and turn back thy love upon their Maker; lest in these things which please thee, thou displease.",
+      "press": "qualifies",
+      "work": "The Confessions of St. Augustine",
+      "loc": "On the love of created things",
+      "url": "https://www.gutenberg.org/ebooks/3296",
+      "bears": "What is beautiful is not refused. The love is sent on to the maker.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "knowledge",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "knowledge",
+        "religion"
+      ],
+      "claim": "For I had not known or learned that neither was evil a substance, nor our soul that chief and unchangeable good.",
+      "press": "qualifies",
+      "work": "The Confessions of St. Augustine",
+      "loc": "On evil and the soul",
+      "url": "https://www.gutenberg.org/ebooks/3296",
+      "bears": "He refuses both a substance called evil and a soul that would be the highest good.",
+      "verbatim": true
     }
   ],
   "tableId": "letters",
   "portrait": "images/augustine.svg",
   "tables": [
-    "letters"
+    "letters",
+    "christian"
   ]
 }

@@ -1,0 +1,141 @@
+{
+  "id": "pascal",
+  "name": "Blaise Pascal",
+  "years": "1623\u20131662",
+  "place": "Clermont-Ferrand",
+  "epithet": "The heart and the wager",
+  "dossier": "French mathematician and Jansenist. The Pens\u00e9es, quoted from the public-domain English text on Project Gutenberg, are fragments on wretchedness, custom, justice, and the reasons of the heart. T. S. Eliot's later introduction to one printing is not quoted.",
+  "tableId": "christian",
+  "tables": [
+    "christian"
+  ],
+  "portrait": "images/pascal.svg",
+  "sound": {
+    "wave": "triangle",
+    "notes": [
+      349,
+      440,
+      554
+    ]
+  },
+  "voice": "I ask what the heart already knows, and what custom has been passing off as a proof.",
+  "works": [
+    {
+      "title": "Pens\u00e9es",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "note": "Public-domain English translation. Project Gutenberg. The introduction by T. S. Eliot is not quoted."
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "knowledge",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "knowledge",
+        "religion"
+      ],
+      "claim": "The heart has its reasons, which reason does not know.",
+      "press": "qualifies",
+      "work": "Pens\u00e9es",
+      "loc": "Fragment 277",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "bears": "He will not let a calculation be the whole of a moral life.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "custom",
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "custom",
+        "knowledge",
+        "moral"
+      ],
+      "claim": "Custom is the source of our strongest and most believed proofs.",
+      "press": "qualifies",
+      "work": "Pens\u00e9es",
+      "loc": "On custom",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "bears": "What a people calls a proof may be the custom they grew up inside.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "power"
+      ],
+      "domains": [
+        "justice",
+        "power"
+      ],
+      "claim": "Justice without might is helpless; might without justice is tyrannical.",
+      "press": "qualifies",
+      "work": "Pens\u00e9es",
+      "loc": "On justice and force",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "bears": "A moral claim that cannot be enforced, and a force that is not just, both fail.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "knowledge",
+        "moral"
+      ],
+      "domains": [
+        "knowledge",
+        "moral"
+      ],
+      "claim": "Man is but a reed, the most feeble thing in nature; but he is a thinking reed.",
+      "press": "qualifies",
+      "work": "Pens\u00e9es",
+      "loc": "Fragment 347",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "bears": "The dignity he allows is thought, not strength.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "religion",
+        "knowledge",
+        "custom"
+      ],
+      "domains": [
+        "religion",
+        "knowledge",
+        "custom"
+      ],
+      "claim": "There are three sources of belief: reason, custom, inspiration.",
+      "press": "qualifies",
+      "work": "Pens\u00e9es",
+      "loc": "On the sources of belief",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "bears": "Faith is not reduced to one of the three.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "claim": "Let us make the trial; let us leave a king all alone to reflect on himself quite at leisure, without any gratification of the senses, without any care in his mind, without society; and we will see that a king without diversion is a man full of wretchedness.",
+      "press": "qualifies",
+      "work": "Pens\u00e9es",
+      "loc": "On diversion",
+      "url": "https://www.gutenberg.org/ebooks/18269",
+      "bears": "Rank does not cure the misery that shows up when the diversions stop.",
+      "verbatim": true
+    }
+  ]
+}
