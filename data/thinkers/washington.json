@@ -1,0 +1,175 @@
+{
+  "id": "washington",
+  "name": "George Washington",
+  "years": "1732–1799",
+  "place": "Virginia",
+  "epithet": "Duty, morality, and the Union",
+  "dossier": "The Farewell Address of 17 September 1796 is quoted from Richardson's compilation of the messages of the presidents. The biographical sketch and the earlier messages in that volume are not searched.",
+  "tableId": "founding",
+  "tables": [
+    "founding"
+  ],
+  "portrait": "images/washington.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      262,
+      330,
+      392
+    ]
+  },
+  "voice": "I would rather the people obey a constitution they are free to amend.",
+  "works": [
+    {
+      "title": "Farewell Address",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "note": "Project Gutenberg ebook 11314, in Messages and Papers of the Presidents, volume 1, part 1, edited by James D. Richardson"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "power"
+      ],
+      "claim": "The acceptance of and continuance hitherto in the office to which your suffrages have twice called me have been a uniform sacrifice of inclination to the opinion of duty and to a deference for what appeared to be your desire.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "FAREWELL ADDRESS., paragraph 3",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "He calls his staying in office a sacrifice of inclination to duty and to the desire of the people.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom",
+        "power"
+      ],
+      "domains": [
+        "liberty",
+        "custom",
+        "power"
+      ],
+      "claim": "The basis of our political systems is the right of the people to make and to alter their constitutions of government.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "FAREWELL ADDRESS., paragraph 39",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "The right to make and alter constitutions is called the basis of the political system.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "power",
+        "society"
+      ],
+      "claim": "The very idea of the power and the right of the people to establish government presupposes the duty of every individual to obey the established government.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "FAREWELL ADDRESS., paragraph 41",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "The people's right to establish government is said to presuppose each person's duty to obey it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "religion",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "religion",
+        "society"
+      ],
+      "claim": "Of all the dispositions and habits which lead to political prosperity, religion and morality are indispensable supports.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "FAREWELL ADDRESS., paragraph 63",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "Religion and morality are called indispensable supports of political prosperity.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "religion"
+      ],
+      "claim": "And let us with caution indulge the supposition that morality can be maintained without religion.",
+      "press": "qualifies",
+      "work": "Farewell Address",
+      "loc": "FAREWELL ADDRESS., paragraph 68",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "He asks that the supposition of morality without religion be indulged only with caution.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "power"
+      ],
+      "claim": "He calls his years in office a sacrifice of inclination to duty, and he says the people's right to found a government presupposes each person's duty to obey it.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "Opening and on the duty to obey",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "A summary, not a quotation. Duty runs both to the office and to the constituted government.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "custom"
+      ],
+      "domains": [
+        "liberty",
+        "custom"
+      ],
+      "claim": "The basis of the political system is the people's right to make and to alter their constitutions.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "On the basis of the political system",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "A summary, not a quotation. Obedience is tied to a constitution the people may change.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "religion",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "religion",
+        "society"
+      ],
+      "claim": "Religion and morality are called indispensable supports of political prosperity, and he asks that morality without religion be supposed only with caution.",
+      "press": "for",
+      "work": "Farewell Address",
+      "loc": "On religion and morality",
+      "url": "https://www.gutenberg.org/ebooks/11314",
+      "bears": "A summary, not a quotation. A shared moral support is part of the farewell, and he does not separate it from religion.",
+      "verbatim": false
+    }
+  ]
+}

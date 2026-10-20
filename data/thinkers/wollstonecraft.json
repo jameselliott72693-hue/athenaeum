@@ -1,0 +1,167 @@
+{
+  "id": "wollstonecraft",
+  "name": "Mary Wollstonecraft",
+  "years": "1759–1797",
+  "place": "London",
+  "epithet": "The rights of woman",
+  "dossier": "A Vindication of the Rights of Woman, 1792, is her own English. The biographical sketch in this ebook is not in the searched text.",
+  "tableId": "enlightenment",
+  "tables": [
+    "enlightenment"
+  ],
+  "portrait": "images/wollstonecraft.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      349,
+      440,
+      554
+    ]
+  },
+  "voice": "I ask whether reason is allowed to be the rule of duty.",
+  "works": [
+    {
+      "title": "A Vindication of the Rights of Woman",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "note": "Project Gutenberg ebook 3420"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "moral",
+        "family"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "family"
+      ],
+      "claim": "But not content with this natural pre-eminence, men endeavour to sink us still lower, merely to render us alluring objects for a moment; and women, intoxicated by the adoration which men, under the influence of their senses, pay them, do not seek to obtain a durable interest in their hearts, or to become the friends of the fellow creatures who find amusement in their society.",
+      "press": "against",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "Introduction, paragraph 9",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "Wollstonecraft says women are trained to be alluring for a moment rather than friends of the people around them.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Pleasure prepares the fading wreath, and mixes the intoxicating cup; but the fruit which virtue gives, is the recompence of toil: and, gradually seen as it ripens, only affords calm satisfaction; nay, appearing to be the result of the natural tendency of things, it is scarcely observed.",
+      "press": "for",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "OBSERVATIONS ON THE STATE OF DEGRADATION TO WHICH WOMAN IS REDUCED BY VARIOUS CAUSES., paragraph 187",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "Virtue's fruit is set against the wreath and the cup that pleasure prepares.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power",
+        "liberty"
+      ],
+      "domains": [
+        "moral",
+        "power",
+        "liberty"
+      ],
+      "claim": "Tyrants would have cause to tremble if reason were to become the rule of duty in any of the relations of life, for the light might spread till perfect day appeared.",
+      "press": "for",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "PARENTAL AFFECTION., paragraph 7",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "Reason as the rule of duty is said to be something tyrants would have to fear.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "But, till more understanding preponderate in society, there will ever be a want of heart and taste, and the harlot's rouge will supply the place of that celestial suffusion which only virtuous affections can give to the face.",
+      "press": "qualifies",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "ON NATIONAL EDUCATION., paragraph 60",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "Until understanding weighs more in society, she says, heart and taste will stay wanting.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Let people but watch their own hearts, and act rightly as far as they can judge, and they may patiently wait till the opinion of the world comes round.",
+      "press": "for",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "SECTION 5.4., paragraph 32",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "Watching one's own heart and acting rightly is put ahead of waiting on the world's opinion.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "family",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "family",
+        "moral"
+      ],
+      "claim": "She argues that women are trained to please for a moment, and that this training keeps them from a durable friendship with the people around them.",
+      "press": "against",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "The prevailing opinion of a sexual character",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "A summary, not a quotation. The complaint is about the education, not about a natural less.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Virtue is described as the fruit of toil, calmer than the wreath pleasure prepares, and reason as the rule of duty is something tyrants would have reason to fear.",
+      "press": "for",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "On virtue and duty",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "A summary, not a quotation. The moral life is work, and it is not a decoration.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society"
+      ],
+      "domains": [
+        "society"
+      ],
+      "claim": "Until understanding weighs more in society, she says, taste and heart stay thin, and people who watch their own hearts may have to wait for the world's opinion to come round.",
+      "press": "qualifies",
+      "work": "A Vindication of the Rights of Woman",
+      "loc": "On society and reputation",
+      "url": "https://www.gutenberg.org/ebooks/3420",
+      "bears": "A summary, not a quotation. A shared opinion can lag behind a private duty.",
+      "verbatim": false
+    }
+  ]
+}

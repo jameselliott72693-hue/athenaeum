@@ -1,0 +1,157 @@
+{
+  "id": "buddha",
+  "name": "The Buddha",
+  "years": "5th century BC",
+  "place": "The Ganges plain",
+  "epithet": "Thought, virtue, and the path",
+  "dossier": "The Dhammapada is quoted from F. Max Müller's translation in the Sacred Books of the East. These are verses, not a later life of the Buddha. This chair does not speak for the Confucian or Daoist books.",
+  "tableId": "eastern",
+  "tables": [
+    "eastern"
+  ],
+  "portrait": "images/buddha.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      262,
+      330,
+      392
+    ]
+  },
+  "voice": "I ask what the thought was, because the wheel follows the ox.",
+  "works": [
+    {
+      "title": "The Dhammapada",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "note": "Project Gutenberg ebook 2017, from The Sacred Books of the East, volume X"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of the ox that draws the carriage.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapter I. The Twin-Verses, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "The opening verse ties pain to an evil thought and happiness, in the next verse, to a pure one.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Sandal-wood or Tagara, a lotus-flower, or a Vassiki, among these sorts of perfumes, the perfume of virtue is unsurpassed.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapter IV. Flowers, paragraph 12",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "Among the perfumes named, the perfume of virtue is set above them.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Do not have evil-doers for friends, do not have low people for friends: have virtuous people for friends, have for friends the best of men.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapter VI. The Wise Man (Pandita), paragraph 3",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "The verse tells the hearer to keep virtuous people for friends.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Follow the law of virtue; do not follow that of sin.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapter XIII. The World, paragraph 3",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "Virtue is the law to follow, and the virtuous person is said to rest in bliss.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Good people shine from afar, like the snowy mountains; bad people are not seen, like arrows shot by night.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapter XXI. Miscellaneous, paragraph 15",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "Good people are compared to snowy mountains seen from far off.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "The twin verses make pain follow an evil thought and, in the next verse, happiness follow a pure one, as the wheel follows the ox.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapter I",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "A summary, not a quotation. The thought is the start of the consequence.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Virtue is called a perfume above sandal and flower, and the hearer is told to take virtuous people, not evil-doers, for friends.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapters on flowers and the wise",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "A summary, not a quotation. Company is part of the practice.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Later verses say to follow the law of virtue rather than sin, and that good people are seen from far away.",
+      "press": "for",
+      "work": "The Dhammapada",
+      "loc": "Chapters on the world and the path",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "bears": "A summary, not a quotation. The law is something a person follows, not a mood.",
+      "verbatim": false
+    }
+  ]
+}

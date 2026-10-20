@@ -1,0 +1,165 @@
+{
+  "id": "mencius",
+  "name": "Mencius",
+  "years": "372–289 BC",
+  "place": "Zou",
+  "epithet": "Benevolence, righteousness, and the people",
+  "dossier": "The Sayings of Mencius are quoted from James Legge, as printed in Epiphanius Wilson's Chinese Literature of 1900. This file has Book I, King Hui of Liang. The contents mention Book V, and Books II, III, and IV are marked omitted. The Shi King in the same ebook is not his.",
+  "tableId": "eastern",
+  "tables": [
+    "eastern"
+  ],
+  "portrait": "images/mencius.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      349,
+      415,
+      494
+    ]
+  },
+  "voice": "I will not begin with profit. Ask what becomes of the people.",
+  "works": [
+    {
+      "title": "The Sayings of Mencius",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "note": "Project Gutenberg ebook 10056, in Epiphanius Wilson's Chinese Literature, 1900"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "power"
+      ],
+      "claim": "What I am likewise provided with are counsels to benevolence and righteousness; and these are my only topics.",
+      "press": "against",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "Mencius refuses to open with profit and offers benevolence and righteousness instead.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "family"
+      ],
+      "domains": [
+        "moral",
+        "family"
+      ],
+      "claim": "\"There never was a man trained to benevolence who neglected his parents.",
+      "press": "for",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I, paragraph 3",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "Training in benevolence is said to reach parents, and training in righteousness to reach the ruler.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "claim": "\" Mencius said, \"If he loves and protects the people, it is impossible to prevent him from attaining it.\"",
+      "press": "for",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I, paragraph 28",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "Love and protection of the people are the virtue Mencius ties to royal sway.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "So is the superior man affected towards animals, that, having seen them alive, he cannot bear to see them die, and, having heard their dying cries, he cannot bear to eat their flesh.",
+      "press": "qualifies",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I, paragraph 33",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "The superior man, having seen the animals alive, keeps away from the kitchen.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "The ancients caused their people to have pleasure as well as themselves, and therefore they could enjoy it.",
+      "press": "for",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I, paragraph 7",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "The old kings are praised for sharing pleasure with the people who built for them.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "power"
+      ],
+      "claim": "The first interview turns the king from profit toward benevolence and righteousness, and says a man trained in those will not neglect parents or ruler.",
+      "press": "against",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I, King Hui of Liang",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "A summary, not a quotation. Profit is the wrong opening word.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "Royal sway, in these chapters, follows loving and protecting the people, and sharing pleasure with them rather than keeping towers and ponds for oneself.",
+      "press": "for",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "A summary, not a quotation. The people's protection is the virtue that spreads.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "The story of the bull and the sheep is used to show a king who cannot bear to see an animal die, and a superior man who therefore stays away from the kitchen.",
+      "press": "qualifies",
+      "work": "The Sayings of Mencius",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/10056",
+      "bears": "A summary, not a quotation. Pity for the animal is acknowledged, and it is not the whole of ruling.",
+      "verbatim": false
+    }
+  ]
+}

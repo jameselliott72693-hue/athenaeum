@@ -1,0 +1,173 @@
+{
+  "id": "rousseau",
+  "name": "Jean-Jacques Rousseau",
+  "years": "1712–1778",
+  "place": "Geneva",
+  "epithet": "The social compact",
+  "dossier": "The Social Contract and the Discourses are quoted from G. D. H. Cole's translation, the 1920 reprint of the 1913 Everyman edition. Cole's introduction is not in the searched text.",
+  "tableId": "enlightenment",
+  "tables": [
+    "enlightenment"
+  ],
+  "portrait": "images/rousseau.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      415,
+      523
+    ]
+  },
+  "voice": "I ask who authored the law that the people must obey.",
+  "works": [
+    {
+      "title": "The Social Contract & Discourses",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "note": "Project Gutenberg ebook 46333, Everyman's Library, the 1920 reprint of the 1913 translation"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "liberty",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "society"
+      ],
+      "claim": "Man is born free; and everywhere he is in chains.",
+      "press": "against",
+      "work": "The Social Contract & Discourses",
+      "loc": "SUBJECT OF THE FIRST BOOK, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "The first chapter opens on freedom and on the chains of the civil order.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice",
+        "moral"
+      ],
+      "domains": [
+        "justice",
+        "moral"
+      ],
+      "claim": "In this inquiry I shall endeavour always to unite what right sanctions with what is prescribed by interest, in order that justice and utility may in no case be divided.",
+      "press": "for",
+      "work": "The Social Contract & Discourses",
+      "loc": "BOOK I, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "The inquiry promises to keep what right sanctions together with what interest prescribes.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "power",
+        "liberty"
+      ],
+      "domains": [
+        "society",
+        "power",
+        "liberty"
+      ],
+      "claim": "The people, being subject to the laws, ought to be their author: the conditions of the society ought to be regulated solely by those who come together to form it.",
+      "press": "for",
+      "work": "The Social Contract & Discourses",
+      "loc": "LAW, paragraph 16",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "The conditions of society are to be regulated by those who come together to form it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "power"
+      ],
+      "claim": "When legislation grows weak, morality degenerates; but in such cases the judgment of the censors will not do what the force of the laws has failed to effect.",
+      "press": "for",
+      "work": "The Social Contract & Discourses",
+      "loc": "THE CENSORSHIP, paragraph 4",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "Rousseau says the law does not regulate morality, and yet legislation gives it birth.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "In reality, the source, of all these differences is, that the savage lives within himself, while social man lives constantly outside himself, and only knows how to live in the opinion of others, so that he seems to receive the consciousness of his own existence merely from the judgment of others concerning him.",
+      "press": "qualifies",
+      "work": "The Social Contract & Discourses",
+      "loc": "THE SECOND PART, paragraph 217",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "Social man, in the Discourse on Inequality, is said to live in the opinion of others.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "society"
+      ],
+      "domains": [
+        "liberty",
+        "society"
+      ],
+      "claim": "The Social Contract opens by saying man is born free and is everywhere in chains, and then asks what could make that change legitimate.",
+      "press": "against",
+      "work": "The Social Contract & Discourses",
+      "loc": "Book I, chapter 1",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "A summary, not a quotation. The chain is the problem the book is written to examine.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "society",
+        "power"
+      ],
+      "domains": [
+        "justice",
+        "society",
+        "power"
+      ],
+      "claim": "Justice and utility are not to be divided, and the people who are subject to the laws are to be the authors of them.",
+      "press": "for",
+      "work": "The Social Contract & Discourses",
+      "loc": "Book I",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "A summary, not a quotation. The compact is legitimate only if the subjects made it.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Legislation is said to give morality birth even though law does not regulate it, and social man is said to live in the opinion of others.",
+      "press": "qualifies",
+      "work": "The Social Contract & Discourses",
+      "loc": "The Social Contract and the Discourse on Inequality",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "bears": "A summary, not a quotation. Morals weaken when legislation weakens, and opinion takes their place.",
+      "verbatim": false
+    }
+  ]
+}

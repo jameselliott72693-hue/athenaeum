@@ -45,7 +45,7 @@
     <section class="hub" aria-labelledby="hub-heading">
       <p class="kicker">Choose a table</p>
       <h2 id="hub-heading">One tradition at a time</h2>
-      <p class="lede">A sitting stays inside the table you open. The present shelf remains. The political tables do not mix.</p>
+      <p class="lede">A sitting stays inside the table you open. The present shelf remains. Each other table is one tradition.</p>
       <div id="hub" class="hub-row"></div>
     </section>
     <div class="grid">
@@ -124,6 +124,17 @@
           <div id="book-results"></div>
         </div>
 
+        <div class="compare-box">
+          <p class="kicker">Compare two tables</p>
+          <p class="hint">Ask the same subject at each table’s usual chairs. What they share, and what only one side cited, is taken only from the cards and passages those chairs spoke.</p>
+          <label class="field" for="compare-a">First table</label>
+          <select id="compare-a"></select>
+          <label class="field" for="compare-b">Second table</label>
+          <select id="compare-b"></select>
+          <button type="button" class="solid" id="compare-go">Compare</button>
+          <p id="compare-note" class="hint" role="status"></p>
+        </div>
+
         <label class="field" for="topic">Subject</label>
         <input id="topic" maxlength="180" placeholder="The importance of a shared moral compass in a society" />
         <label class="field" for="brief">Article or brief, if you have one</label>
@@ -141,6 +152,7 @@
       </section>
     </div>
     <div id="session" class="session" aria-live="polite"></div>
+    <div id="compare" class="compare" hidden></div>
   </main>
 
   <dialog id="dossier" class="dossier">
@@ -163,6 +175,7 @@
   <script src="score.js"></script>
   <script src="books.js"></script>
   <script src="panel.js"></script>
+  <script src="compare.js"></script>
   <script src="store.js"></script>
   <script src="share.js"></script>
   <script src="app.js"></script>
