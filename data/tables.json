@@ -43,7 +43,25 @@
     "newman",
     "morris",
     "pater",
-    "lucretius"
+    "lucretius",
+    "confucius",
+    "mencius",
+    "zengzi",
+    "laozi",
+    "zhuangzi",
+    "buddha",
+    "hume",
+    "rousseau",
+    "kant",
+    "wollstonecraft",
+    "beccaria",
+    "voltaire",
+    "franklin",
+    "paine",
+    "jefferson",
+    "hamilton",
+    "madison",
+    "washington"
   ],
   "relevance": {
     "debounceMs": 240,
@@ -406,6 +424,87 @@
         "newman",
         "morris",
         "pater"
+      ]
+    },
+    {
+      "id": "eastern",
+      "name": "Classical Chinese and the Dhammapada",
+      "tradition": "Eastern",
+      "blurb": "Confucius, Mencius, the Classic of Filial Piety, Laozi, Zhuangzi, and the Dhammapada. One Eastern table. The schools disagree inside it. They do not sit with the Western tables.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "confucius",
+        "mencius",
+        "laozi",
+        "zhuangzi",
+        "buddha"
+      ],
+      "thinkers": [
+        "confucius",
+        "mencius",
+        "zengzi",
+        "laozi",
+        "zhuangzi",
+        "buddha"
+      ]
+    },
+    {
+      "id": "enlightenment",
+      "name": "Enlightenment",
+      "tradition": "Enlightenment",
+      "blurb": "Hume, Rousseau, Kant, Wollstonecraft, Beccaria, and Voltaire. One eighteenth-century table. It does not sit with the political tables or the churches.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "hume",
+        "rousseau",
+        "kant",
+        "wollstonecraft",
+        "voltaire"
+      ],
+      "thinkers": [
+        "hume",
+        "rousseau",
+        "kant",
+        "wollstonecraft",
+        "beccaria",
+        "voltaire"
+      ]
+    },
+    {
+      "id": "founding",
+      "name": "American founding",
+      "tradition": "American founding",
+      "blurb": "Franklin, Paine, Jefferson, Hamilton, Madison, and Washington. One founding generation. It does not sit with the later transcendentalists or the European tables.",
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [
+        "franklin",
+        "paine",
+        "jefferson",
+        "hamilton",
+        "washington"
+      ],
+      "thinkers": [
+        "franklin",
+        "paine",
+        "jefferson",
+        "hamilton",
+        "madison",
+        "washington"
       ]
     }
   ]

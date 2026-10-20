@@ -56,7 +56,27 @@ const BOOKS = [
   book("carlyle", "carlyle", "Past and Present", "Thomas Carlyle", null, "Project Gutenberg ebook 26159", "Published 1843. Public domain.", "https://www.gutenberg.org/ebooks/26159", "26159", "The condition of England, on which many pamphlets"),
   book("newman", "newman", "The Idea of a University", "John Henry Newman", null, "Project Gutenberg ebook 24526", "The Dublin discourses are nineteenth-century and public domain. Indexing begins at Newman's preface.", "https://www.gutenberg.org/ebooks/24526", "24526", "The view taken of a University"),
   book("morris", "morris", "News from Nowhere", "William Morris", null, "Project Gutenberg ebook 3261", "Published 1890. Public domain.", "https://www.gutenberg.org/ebooks/3261", "3261", "CHAPTER I: DISCUSSION AND BED"),
-  book("pater", "pater", "The Renaissance", "Walter Pater", null, "Project Gutenberg ebook 2398", "Studies in Art and Poetry. Nineteenth century. Public domain.", "https://www.gutenberg.org/ebooks/2398", "2398", "Many attempts have been made by writers on art")
+  book("pater", "pater", "The Renaissance", "Walter Pater", null, "Project Gutenberg ebook 2398", "Studies in Art and Poetry. Nineteenth century. Public domain.", "https://www.gutenberg.org/ebooks/2398", "2398", "Many attempts have been made by writers on art"),
+  book("confucius", "confucius-analects", "Confucian Analects", "Confucius", "James Legge", "Project Gutenberg ebook 4094, Chinese Classics, volume 1", "Legge's nineteenth-century translation is public domain. The digitizer's note before Book I is not indexed.", "https://www.gutenberg.org/ebooks/4094", "4094", "BOOK I"),
+  book("mencius", "mencius-sayings", "The Sayings of Mencius", "Mencius", "James Legge", "Project Gutenberg ebook 10056, in Epiphanius Wilson's Chinese Literature, 1900", "Legge's translation is public domain. This file keeps Book I and Book V only. Wilson's contents mark Books II, III, and IV as omitted, and they are not in the file. The Shi King and the other works in the same ebook are not indexed.", "https://www.gutenberg.org/ebooks/10056", "10056", "Mencius went to see King Hwuy", "gutenberg", "[_Metrical translation by James Legge_]"),
+  book("zengzi", "zengzi-filial", "The Book of Filial Duty", "Zengzi", "Ivan Chên", "Project Gutenberg ebook 75878, the same 1908 translation, cited for the disciple in the dialogue", "The same 1908 Chên translation. Public domain. Indexed from the classic itself. The chair is the disciple Tsêng in that dialogue; sentences that name Confucius are the classic's wording.", "https://www.gutenberg.org/ebooks/75878", "75878", "Once upon a time Confucius was sitting"),
+  book("laozi", "laozi-tao", "The Tao Teh King", "Laozi", "James Legge", "Project Gutenberg ebook 216", "Legge's translation is public domain.", "https://www.gutenberg.org/ebooks/216", "216", "The Tao that can be trodden"),
+  book("zhuangzi", "zhuangzi", "Chuang Tzu", "Zhuangzi", "Herbert A. Giles", "Project Gutenberg ebook 59709, Bernard Quaritch, London, 1889", "Giles's 1889 translation is public domain. His introduction, Canon Moore's note, the italic argument at the head of each chapter, chapter XXXIII, and the subject index are not indexed.", "https://www.gutenberg.org/ebooks/59709", "59709", "In the northern ocean there is a fish", "gutenberg", "CHAPTER XXXIII."),
+  book("buddha", "buddha-dhammapada", "The Dhammapada", "The Buddha", "F. Max Müller", "Project Gutenberg ebook 2017, from The Sacred Books of the East, volume X", "Müller's translation in the Sacred Books of the East is public domain. The file already omits his introduction, notes, and index.", "https://www.gutenberg.org/ebooks/2017", "2017", "Chapter I. The Twin-Verses"),
+  book("hume", "hume-essays", "Essays", "David Hume", null, "Project Gutenberg ebook 36120", "Hume's eighteenth-century essays are public domain. Hannaford Bennett's biographical introduction is not indexed.", "https://www.gutenberg.org/ebooks/36120", "36120", "Some people are subject to a certain"),
+  book("rousseau", "rousseau-contract", "The Social Contract & Discourses", "Jean-Jacques Rousseau", "G. D. H. Cole", "Project Gutenberg ebook 46333, Everyman's Library, the 1920 reprint of the 1913 translation", "Cole's translation was first issued in 1913 and reprinted in 1920. Public domain in the United States. Cole's introduction is not indexed.", "https://www.gutenberg.org/ebooks/46333", "46333", "This little treatise is part of a longer work"),
+  book("kant", "kant-practical", "The Critique of Practical Reason", "Immanuel Kant", "Thomas Kingsmill Abbott", "Project Gutenberg ebook 5683", "The 1788 work in Abbott's nineteenth-century translation. Public domain.", "https://www.gutenberg.org/ebooks/5683", "5683", "This work is called the Critique of Practical Reason"),
+  book("wollstonecraft", "wollstonecraft-rights", "A Vindication of the Rights of Woman", "Mary Wollstonecraft", null, "Project Gutenberg ebook 3420", "Published 1792. Wollstonecraft's own English. Public domain. The biographical sketch before her introduction is not indexed.", "https://www.gutenberg.org/ebooks/3420", "3420", "After considering the historic page"),
+  book("beccaria", "beccaria-crimes", "Of Crimes and Punishments", "Cesare Beccaria", "James Anson Farrer", "Project Gutenberg ebook 58700", "Farrer's translation was published in 1880. Public domain. Farrer's own chapters on Beccaria's life and influence are not indexed.", "https://www.gutenberg.org/ebooks/58700", "58700", "Men for the most part"),
+  book("voltaire", "voltaire-dictionary", "A Philosophical Dictionary, volume 1", "Voltaire", "William F. Fleming", "Project Gutenberg ebook 35621, from The Works of Voltaire, E. R. DuMont, 1901", "Fleming's translation in the 1901 Works of Voltaire is public domain. This index is volume 1 only, the articles from A through Apparition. The critique and biography before the articles are not indexed.", "https://www.gutenberg.org/ebooks/35621", "35621", "The letter A has been accounted sacred"),
+  book("franklin", "franklin-auto", "Autobiography of Benjamin Franklin", "Benjamin Franklin", null, "Project Gutenberg ebook 20203", "Franklin's own English. Public domain. The editor's illustrations and notes before the autobiography are not indexed.", "https://www.gutenberg.org/ebooks/20203", "20203", "Dear son: I have ever had pleasure"),
+  book("franklin", "franklin-wealth", "The Way to Wealth", "Benjamin Franklin", null, "Project Gutenberg ebook 43855, the 1810 Darton edition of Poor Richard Improved", "Franklin's 1758 preface, printed in 1810. Public domain. The publisher's advertisements are not indexed.", "https://www.gutenberg.org/ebooks/43855", "43855", "It would be thought a hard government"),
+  book("paine", "paine-sense", "Common Sense", "Thomas Paine", null, "Project Gutenberg ebook 147", "Published 1776. Public domain.", "https://www.gutenberg.org/ebooks/147", "147", "Some writers have so confounded society"),
+  book("paine", "paine-rights", "Rights of Man", "Thomas Paine", null, "Project Gutenberg ebook 3742, Writings, volume 2, edited by Moncure Daniel Conway", "Published 1791–1792. Public domain. Conway's introduction before Part the First is not indexed.", "https://www.gutenberg.org/ebooks/3742", "3742", "Among the incivilities by which nations"),
+  book("jefferson", "jefferson-memoir", "Memoir, Correspondence, and Miscellanies, volume 1", "Thomas Jefferson", null, "Project Gutenberg ebook 16781, the 1829 Randolph edition", "Jefferson's papers, published 1829. Public domain. Indexing begins at his memoir of 6 January 1821. The editor's preface is not indexed.", "https://www.gutenberg.org/ebooks/16781", "16781", "January 6, 1821"),
+  book("hamilton", "hamilton-federalist", "The Federalist Papers", "Alexander Hamilton", null, "Project Gutenberg ebook 1404, papers this edition attributes to Hamilton alone", "The papers were published in 1787–1788. Public domain. This index keeps only the papers the Gutenberg text labels HAMILTON. Papers labeled JAY, MADISON, or MADISON, with HAMILTON are not included.", "https://www.gutenberg.org/ebooks/1404", "1404", "FEDERALIST No."),
+  book("madison", "madison-federalist", "The Federalist Papers", "James Madison", null, "Project Gutenberg ebook 1404, papers this edition attributes to Madison alone", "The papers were published in 1787–1788. Public domain. This index keeps only the papers the Gutenberg text labels MADISON. The three papers labeled MADISON, with HAMILTON are not included, and neither are Hamilton's or Jay's.", "https://www.gutenberg.org/ebooks/1404", "1404", "FEDERALIST No."),
+  book("washington", "washington-farewell", "Farewell Address", "George Washington", null, "Project Gutenberg ebook 11314, in Messages and Papers of the Presidents, volume 1, part 1, edited by James D. Richardson", "The address is dated 17 September 1796. Public domain. Richardson's biographical sketch and the earlier messages in that volume are not indexed.", "https://www.gutenberg.org/ebooks/11314", "11314", "FAREWELL ADDRESS")
 ];
 
 const EXCLUDED = [
@@ -111,11 +131,31 @@ const SEED = {
   "aquinas-summa-12": "Prologue",
   "dewey-democracy": "Chapter I. Education as a Necessity of Life",
   "carlyle": "Chapter I. Midas",
-  "pater": "Preface"
+  "pater": "Preface",
+  "confucius-analects": "Book I",
+  "mencius-sayings": "Book I",
+  "zengzi-filial": "Chapter I",
+  "laozi-tao": "Part 1",
+  "zhuangzi": "Chapter I",
+  "buddha-dhammapada": "Chapter I",
+  "hume-essays": "Of the Delicacy of Taste and Passion",
+  "rousseau-contract": "Foreword",
+  "kant-practical": "Preface",
+  "wollstonecraft-rights": "Introduction",
+  "beccaria-crimes": "Introduction",
+  "voltaire-dictionary": "A",
+  "franklin-auto": "Ancestry and early youth in Boston",
+  "franklin-wealth": "The Way to Wealth",
+  "paine-sense": "Of the origin and design of government",
+  "paine-rights": "Rights of Man",
+  "jefferson-memoir": "Memoir",
+  "hamilton-federalist": "Federalist No. 1",
+  "madison-federalist": "Federalist",
+  "washington-farewell": "Farewell Address"
 };
 
-function book(thinkerId, id, title, author, translator, edition, pdBasis, sourceUrl, gutenbergId, start, kind) {
-  return { thinkerId, id, title, author, translator, edition, pdBasis, sourceUrl, gutenbergId, start: start || null, kind: kind || "gutenberg" };
+function book(thinkerId, id, title, author, translator, edition, pdBasis, sourceUrl, gutenbergId, start, kind, end) {
+  return { thinkerId, id, title, author, translator, edition, pdBasis, sourceUrl, gutenbergId, start: start || null, kind: kind || "gutenberg", end: end || null };
 }
 
 function extractBody(raw, kind) {
@@ -148,7 +188,7 @@ function isHeading(text) {
   return /^(book|chapter|canto|section|part|discourse|article|question|of the|first book|second book|third book|fourth book|lecture|introduction|preface|proem)\b/i.test(t);
 }
 
-function paragraphsOf(body, startMarker) {
+function paragraphsOf(body, startMarker, endMarker) {
   let text = body.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
   if (startMarker) {
     let at = -1;
@@ -162,6 +202,11 @@ function paragraphsOf(body, startMarker) {
     }
     if (at < 0) throw new Error("start marker missing: " + startMarker);
     text = text.slice(at);
+  }
+  if (endMarker) {
+    const end = text.indexOf(endMarker);
+    if (end < 0) throw new Error("end marker missing: " + endMarker);
+    text = text.slice(0, end);
   }
   text = text.replace(/_([^_\n]{1,80})_/g, "$1");
   const blocks = [];
@@ -219,7 +264,7 @@ function buildOne(meta) {
   const rawPath = path.join(RAW, meta.id + (meta.kind === "wiki" ? ".wiki" : ".txt"));
   if (!fs.existsSync(rawPath)) throw new Error("missing raw " + rawPath);
   const raw = fs.readFileSync(rawPath, "utf8");
-  const blocks = paragraphsOf(extractBody(raw, meta.kind), meta.start);
+  const blocks = paragraphsOf(extractBody(raw, meta.kind), meta.start, meta.end);
   const passages = passagesFrom(blocks, SEED[meta.id]);
   if (passages.length < 8) throw new Error(meta.id + " produced only " + passages.length + " passages");
   const cleaned = passages.map((p) => p.text).join("\n\n");
@@ -239,9 +284,11 @@ function buildOne(meta) {
 function main() {
   fs.mkdirSync(TEXT, { recursive: true });
   fs.mkdirSync(INDEX, { recursive: true });
+  const only = process.env.BOOK_ONLY ? new Set(process.env.BOOK_ONLY.split(",").map((id) => id.trim()).filter(Boolean)) : null;
+  const selected = only ? BOOKS.filter((meta) => only.has(meta.thinkerId)) : BOOKS;
   const byThinker = new Map();
   const manifestBooks = [];
-  BOOKS.forEach((meta) => {
+  selected.forEach((meta) => {
     const built = buildOne(meta);
     const record = {
       id: meta.id,
@@ -309,13 +356,21 @@ function main() {
     sizes.push({ thinkerId, bytes: fs.statSync(file).size, passages: passages.length, books: books.length });
   });
 
+  const manifestPath = path.join(ROOT, "data", "books", "manifest.json");
+  let booksOut = manifestBooks;
+  let excludedOut = EXCLUDED.map(([id, name, reason]) => ({ id, name, reason }));
+  if (only) {
+    const prev = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+    booksOut = prev.books.filter((book) => !only.has(book.thinkerId)).concat(manifestBooks);
+    excludedOut = prev.excluded;
+  }
   const manifest = {
     builtBy: "node scripts/build-books.js",
     note: "Cleaned texts drop the Project Gutenberg license and editorial front matter named in each book's basis. Passages are whole sentences or whole paragraphs. In-copyright thinkers stay on their cards.",
-    books: manifestBooks,
-    excluded: EXCLUDED.map(([id, name, reason]) => ({ id, name, reason }))
+    books: booksOut,
+    excluded: excludedOut
   };
-  fs.writeFileSync(path.join(ROOT, "data", "books", "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   const textBytes = manifestBooks.reduce((n, b) => n + b.characters, 0);
   const indexBytes = sizes.reduce((n, s) => n + s.bytes, 0);
   console.log("\nBOOKS", manifestBooks.length, "TEXT CHARS", textBytes);

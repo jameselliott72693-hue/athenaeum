@@ -1,0 +1,173 @@
+{
+  "id": "zengzi",
+  "name": "Zengzi",
+  "years": "505–436 BC",
+  "place": "Lu",
+  "epithet": "The Classic of Filial Piety",
+  "dossier": "This chair holds the Classic of Filial Piety, the Hsiao Ching, in Ivan Chên's 1908 translation. It is a dialogue in which Confucius instructs his disciple Zengzi. A sentence that names Confucius is the classic's wording. The editors' introduction is not part of the book that is searched.",
+  "tableId": "eastern",
+  "tables": [
+    "eastern"
+  ],
+  "portrait": "images/zengzi.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      392,
+      466
+    ]
+  },
+  "voice": "I ask what a son owes, and what a ruler owes the people who call him parent.",
+  "works": [
+    {
+      "title": "The Book of Filial Duty",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "note": "Project Gutenberg ebook 75878, the same 1908 translation, cited for the disciple in the dialogue"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "religion",
+        "family"
+      ],
+      "domains": [
+        "moral",
+        "religion",
+        "family"
+      ],
+      "claim": "Here Confucius continued: “Filial duty is the constant doctrine of Heaven, the natural righteousness of Earth, and the practical duty of man.",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "THE THREE POWERS, paragraph 2",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "In this dialogue Confucius calls filial duty the constant doctrine of Heaven and the practical duty of man.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "family"
+      ],
+      "domains": [
+        "moral",
+        "family"
+      ],
+      "claim": "“To live an upright life and to spread the great doctrines of humanity must win good reputation after death, and reflect great honour upon our parents.",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "Chapter I, paragraph 2",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "The last duty of a son, in this chapter, is an upright life that honors his parents.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "family",
+        "economy"
+      ],
+      "domains": [
+        "society",
+        "family",
+        "economy"
+      ],
+      "claim": "To do the necessary in every season (such as growing crops in spring and reaping harvest in autumn), to do the utmost to make lands as fertile as possible, and to be frugal in their expense, in order to keep their parents in comfort, is the filial duty of the common people.",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "THE FILIAL DUTY OF COMMON PEOPLE, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "The common people's filial duty is named as seasonal work, fertile land, and thrift that keeps parents in comfort.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "They behaved themselves respectfully and humbly, so that the people might not quarrel with one another.",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "THE THREE POWERS, paragraph 7",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "Respectful and humble conduct is given as a way to keep the people from quarreling.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "moral",
+        "power"
+      ],
+      "claim": "“The Shih Ching says, ‘The behaviour of the ruler is so good that he is loved by the people as their parent.’",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "AMPLIFICATION OF THE HIGHEST VIRTUE, paragraph 2",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "The classic says a ruler is loved as a parent only if he has the highest virtue.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "family",
+        "moral"
+      ],
+      "domains": [
+        "family",
+        "moral"
+      ],
+      "claim": "Filial duty in this classic runs from an upright life that honors parents, through seasonal work and thrift, up to a doctrine Confucius calls the duty of Heaven, Earth, and man.",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "Chapter I and the chapters on the son",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "A summary, not a quotation. The duty is practical and is also called constant.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Rulers in these chapters are told to be respectful so the people do not quarrel, and a ruler loved as a parent is said to have needed the highest virtue.",
+      "press": "for",
+      "work": "The Book of Filial Duty",
+      "loc": "On the ruler",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "A summary, not a quotation. Example is part of the duty.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "family",
+        "religion"
+      ],
+      "domains": [
+        "family",
+        "religion"
+      ],
+      "claim": "Venerating a parent extends, in this book, to sacrifice, and the son is not described as finished when the parent is merely fed.",
+      "press": "qualifies",
+      "work": "The Book of Filial Duty",
+      "loc": "On sacrifice",
+      "url": "https://www.gutenberg.org/ebooks/75878",
+      "bears": "A summary, not a quotation. Care of parents is more than maintenance.",
+      "verbatim": false
+    }
+  ]
+}

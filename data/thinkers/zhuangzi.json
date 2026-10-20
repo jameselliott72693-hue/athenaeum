@@ -1,0 +1,165 @@
+{
+  "id": "zhuangzi",
+  "name": "Zhuangzi",
+  "years": "4th century BC",
+  "place": "Song",
+  "epithet": "Leaving the horses their hoofs",
+  "dossier": "Chuang Tzu is quoted from Herbert A. Giles's 1889 translation. His introduction, the italic argument before each chapter, chapter XXXIII, and the index are not in the searched text. A one-line gloss of Giles's that is shorter than a passage is not a card.",
+  "tableId": "eastern",
+  "tables": [
+    "eastern"
+  ],
+  "portrait": "images/zhuangzi.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      294,
+      370,
+      440
+    ]
+  },
+  "voice": "I would take the bridle off before I praise the groom.",
+  "works": [
+    {
+      "title": "Chuang Tzu",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "note": "Project Gutenberg ebook 59709, Bernard Quaritch, London, 1889"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Horses have hoofs to carry them over frost and snow; hair, to protect them from wind and cold.",
+      "press": "against",
+      "work": "Chuang Tzu",
+      "loc": "HORSES' HOOFS., paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "The chapter opens on the horse's own nature, before any talk of governing it.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Restrain the actions of Tsêng and Shih, stop the mouths of Yang and Mih, get rid of charity and duty to one's neighbour,--and the virtue of the people will become one with God.",
+      "press": "against",
+      "work": "Chuang Tzu",
+      "loc": "OPENING TRUNKS., paragraph 32",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "Getting rid of charity and duty-talk is said to return the people's virtue to one course.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "Preaching of charity and duty to one's neighbour, of loyalty and truth, of respect, of economy, and of humility,--this is but moral culture, affected by would-be pacificators and teachers of mankind, and by scholars at home or abroad.",
+      "press": "against",
+      "work": "Chuang Tzu",
+      "loc": "SELF-CONCEIT., paragraph 2",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "Preaching charity and duty is called moral culture put on by teachers, not the thing itself.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "\"Love and profit are born of charity and duty to one's neighbour.",
+      "press": "qualifies",
+      "work": "Chuang Tzu",
+      "loc": "HS WU KUEI., paragraph 84",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "The line says few ignore charity and duty, and many make capital out of them.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "custom"
+      ],
+      "claim": "\"Of old, the people did not know how to make clothes.",
+      "press": "qualifies",
+      "work": "Chuang Tzu",
+      "loc": "Sc. TAO., paragraph 12",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "The passage begins from a time before clothes, when people stored fuel and warmed themselves by fire.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "society"
+      ],
+      "claim": "The horse's hoofs and hair are treated as already fitted to the world, before anyone improves them.",
+      "press": "against",
+      "work": "Chuang Tzu",
+      "loc": "Horses' Hoofs",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "A summary, not a quotation. Nature is the standard the groom arrives too late to set.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Charity and duty to one's neighbour are treated as preaching, and as something people make capital from, not as the virtue of the people left alone.",
+      "press": "against",
+      "work": "Chuang Tzu",
+      "loc": "Opening Trunks and Self-conceit",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "A summary, not a quotation. The moral slogan is not the same as the virtue.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "custom"
+      ],
+      "claim": "An early time is pictured in which people did not yet know how to make clothes and warmed themselves by stored fuel.",
+      "press": "qualifies",
+      "work": "Chuang Tzu",
+      "loc": "Sc. Tao",
+      "url": "https://www.gutenberg.org/ebooks/59709",
+      "bears": "A summary, not a quotation. Custom is later than the need it answers.",
+      "verbatim": false
+    }
+  ]
+}

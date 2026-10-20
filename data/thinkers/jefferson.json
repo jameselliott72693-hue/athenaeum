@@ -1,0 +1,173 @@
+{
+  "id": "jefferson",
+  "name": "Thomas Jefferson",
+  "years": "1743–1826",
+  "place": "Virginia",
+  "epithet": "Rights, country, and the people",
+  "dossier": "The memoir and the letters in volume 1 of the 1829 Randolph edition are his papers. Indexing begins at the memoir of 6 January 1821. The editor's preface is not searched.",
+  "tableId": "founding",
+  "tables": [
+    "founding"
+  ],
+  "portrait": "images/jefferson.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      311,
+      392,
+      466
+    ]
+  },
+  "voice": "I ask which rights were already known, and who is bound to declare them.",
+  "works": [
+    {
+      "title": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "note": "Project Gutenberg ebook 16781, the 1829 Randolph edition"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral",
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "moral",
+        "power",
+        "custom"
+      ],
+      "claim": "Our minds were circumscribed within narrow limits, by an habitual belief that it was our duty to be subordinate to the mother country in all matters of government, to direct all our labors in subservience to her interests, and even to observe a bigoted intolerance for all religions but hers.",
+      "press": "against",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "Memoir, paragraph 26",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "He describes a habitual belief that duty required subordination to the mother country in all government.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "liberty",
+        "justice",
+        "moral"
+      ],
+      "domains": [
+        "liberty",
+        "justice",
+        "moral"
+      ],
+      "claim": "To declare, as their duty required, the known rights of their country, to oppose the usurpation of every foreign judicature, to disregard the imperious mandates of a Minister or Governor, have been the avowed causes of dissolving Houses of Representatives in America.",
+      "press": "for",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "APPENDIX TO THE MEMOIR., paragraph 204",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "Declaring the known rights of the country is named as the duty for which houses of representatives were dissolved.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "liberty",
+        "equality"
+      ],
+      "domains": [
+        "society",
+        "liberty",
+        "equality"
+      ],
+      "claim": "It will make you adore your own country, its soil, its climate, its equality, liberty, laws, people, and manners.",
+      "press": "for",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "TO COLONEL MONROE., paragraph 84",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "The sentence lists equality, liberty, laws, people, and manners among the reasons to love one's country.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "society",
+        "justice"
+      ],
+      "claim": "With respect to the plan of a Prison, requested at the same time, I had heard of a benevolent society, in England, which had been indulged by the government, in an experiment of the effect of labor, in solitary confinement, on some of their criminals; which experiment had succeeded beyond expectation.",
+      "press": "qualifies",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "Memoir, paragraph 336",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "He recalls an English experiment in labor and solitary confinement while discussing a plan for a prison.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "economy"
+      ],
+      "domains": [
+        "society",
+        "economy"
+      ],
+      "claim": "In this worst state of things, their situation was seen by many and disseminated through the country, so as to occasion a general dissatisfaction, which even seized the minds of reasonable men, who, if not infected with the contagion, must have foreseen that the prospect must brighten, and that great advantages to the people must necessarily arise.",
+      "press": "qualifies",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "TO HIS EXCELLENCY PATRICK HENRY., paragraph 86",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "He says reasonable men should have seen that the prospect would brighten and that advantages to the people would follow.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "power"
+      ],
+      "claim": "The memoir describes a habitual belief that duty meant subordination to the mother country in every matter of government, and he treats that belief as a narrow limit.",
+      "press": "against",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "The memoir",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "A summary, not a quotation. A taught duty can be a mistake.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "liberty",
+        "justice"
+      ],
+      "domains": [
+        "liberty",
+        "justice"
+      ],
+      "claim": "Dissolved assemblies, he says, had as their duty the declaration of the known rights of the country and opposition to foreign judicature.",
+      "press": "for",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "On the dissolution of assemblies",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "A summary, not a quotation. Declaring known rights is the duty he names.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "equality"
+      ],
+      "domains": [
+        "society",
+        "equality"
+      ],
+      "claim": "He expects travel to make a reader love his country's equality, liberty, laws, people, and manners, and he looks for advantages that must come to the people.",
+      "press": "for",
+      "work": "Memoir, Correspondence, and Miscellanies, volume 1",
+      "loc": "Letters in volume 1",
+      "url": "https://www.gutenberg.org/ebooks/16781",
+      "bears": "A summary, not a quotation. The country is praised for its people and its laws together.",
+      "verbatim": false
+    }
+  ]
+}

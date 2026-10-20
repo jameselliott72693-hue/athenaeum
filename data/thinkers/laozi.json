@@ -1,0 +1,169 @@
+{
+  "id": "laozi",
+  "name": "Laozi",
+  "years": "6th century BC",
+  "place": "Zhou",
+  "epithet": "The Tao Te Ching",
+  "dossier": "The Tao Teh King is quoted from James Legge's public-domain translation. The chair is the book tradition calls Laozi. It does not sit with the Confucian chairs except on this Eastern table.",
+  "tableId": "eastern",
+  "tables": [
+    "eastern"
+  ],
+  "portrait": "images/laozi.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      311,
+      349,
+      415
+    ]
+  },
+  "voice": "I would rather the people not be stirred up.",
+  "works": [
+    {
+      "title": "The Tao Teh King",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "note": "Project Gutenberg ebook 216"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Not to value and employ men of superior ability is the way to keep the people from rivalry among themselves; not to prize articles which are difficult to procure is the way to keep them from becoming thieves; not to show them what is likely to excite their desires is the way to keep their minds from disorder.",
+      "press": "qualifies",
+      "work": "The Tao Teh King",
+      "loc": "Part 1, paragraph 10",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "This chapter treats displayed excellence, rare goods, and stirred desire as the start of rivalry and theft.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "knowledge"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "knowledge"
+      ],
+      "claim": "If we could renounce our sageness and discard our wisdom, it would be better for the people a hundredfold.",
+      "press": "against",
+      "work": "The Tao Teh King",
+      "loc": "Part 1, paragraph 48",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "Laozi says dropping sageness, benevolence, and scheming would return people to filial kindness.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "religion"
+      ],
+      "claim": "Thus it was that when the Tao was lost, its attributes appeared; when its attributes were lost, benevolence appeared; when benevolence was lost, righteousness appeared; and when righteousness was lost, the proprieties appeared.",
+      "press": "qualifies",
+      "work": "The Tao Teh King",
+      "loc": "PART II., paragraph 5",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "Benevolence and righteousness appear here only after the Tao and its attributes have been lost.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "moral"
+      ],
+      "domains": [
+        "society",
+        "moral"
+      ],
+      "claim": "The sage has no invariable mind of his own; he makes the mind of the people his mind.",
+      "press": "qualifies",
+      "work": "The Tao Teh King",
+      "loc": "PART II., paragraph 33",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "The sage's mind, in this chapter, is the mind of the people.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "justice"
+      ],
+      "domains": [
+        "power",
+        "justice"
+      ],
+      "claim": "The people do not fear death; to what purpose is it to (try to) frighten them with death?",
+      "press": "against",
+      "work": "The Tao Teh King",
+      "loc": "PART II., paragraph 114",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "Frightening people with death is called useless where they do not fear death.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "power"
+      ],
+      "domains": [
+        "society",
+        "power"
+      ],
+      "claim": "Several chapters prefer a ruler the people barely notice, and they treat prizes, rare goods, and displayed wisdom as the beginning of rivalry and theft.",
+      "press": "qualifies",
+      "work": "The Tao Teh King",
+      "loc": "Chapters 3, 17, and 19",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "A summary, not a quotation. Stirring the people is the danger.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "religion"
+      ],
+      "claim": "Benevolence and righteousness are placed after the loss of the Tao, not ahead of it, and the sage is said to take the people's mind as his mind.",
+      "press": "qualifies",
+      "work": "The Tao Teh King",
+      "loc": "Chapters 38 and 49",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "A summary, not a quotation. The moral vocabulary arrives late.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "justice",
+        "power"
+      ],
+      "domains": [
+        "justice",
+        "power"
+      ],
+      "claim": "Death is a poor threat where the people do not fear it, and the meddling government is said to work ill.",
+      "press": "against",
+      "work": "The Tao Teh King",
+      "loc": "Chapters 58 and 74",
+      "url": "https://www.gutenberg.org/ebooks/216",
+      "bears": "A summary, not a quotation. Punishment is not the first tool.",
+      "verbatim": false
+    }
+  ]
+}
