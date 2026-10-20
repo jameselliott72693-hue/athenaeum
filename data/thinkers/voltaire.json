@@ -1,0 +1,173 @@
+{
+  "id": "voltaire",
+  "name": "Voltaire",
+  "years": "1694–1778",
+  "place": "Paris",
+  "epithet": "The philosophical dictionary",
+  "dossier": "A Philosophical Dictionary, volume 1, is quoted from William F. Fleming's translation in the 1901 Works of Voltaire. Only the articles from A through Apparition are searched. Later volumes are not in this index.",
+  "tableId": "enlightenment",
+  "tables": [
+    "enlightenment"
+  ],
+  "portrait": "images/voltaire.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      392,
+      466,
+      554
+    ]
+  },
+  "voice": "I ask who is harmed, and who is paying the executioner.",
+  "works": [
+    {
+      "title": "A Philosophical Dictionary, volume 1",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "note": "Project Gutenberg ebook 35621, from The Works of Voltaire, E. R. DuMont, 1901"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "economy"
+      ],
+      "domains": [
+        "society",
+        "economy"
+      ],
+      "claim": "It was most probably by mutual traffic which administered to their wants, that society was first established among men; and it is necessary that those between whom commerce is carried on should understand one another.",
+      "press": "qualifies",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "A, B, C, OR ALPHABET., paragraph 7",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "This article guesses that society began in traffic that served people's wants.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "justice"
+      ],
+      "claim": "A true Epicurean was mild, moderate, just, amiable--a man of whom no society had to complain--one who did not pay executioners to assassinate in public those who thought differently from himself.",
+      "press": "for",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "ANTI-LUCRETIUS., paragraph 13",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "The true Epicurean is described as mild and just, and as someone who does not hire executioners for opinions.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "justice"
+      ],
+      "domains": [
+        "justice"
+      ],
+      "claim": "\"The worthy administrators of justice,\" said he, \"are like a cat set to take care of a cheese, lest it should be gnawed by the mice.",
+      "press": "against",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "ALLEGORIES., paragraph 16",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "A speaker in the article compares administrators of justice to a cat set to guard a cheese.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "religion",
+        "power"
+      ],
+      "domains": [
+        "moral",
+        "religion",
+        "power"
+      ],
+      "claim": "It is but too true that one fanatic is sufficient for the commission of a parricide, without any accomplice.",
+      "press": "against",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "ANECDOTES., paragraph 55",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "One fanatic, he says, is enough for a parricide, with no accomplice required.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "religion"
+      ],
+      "claim": "In short, he knows little of the human mind who does not know that fanaticism renders the populace capable of anything.",
+      "press": "against",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "ANECDOTES., paragraph 61",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "Fanaticism is said to make a populace capable of anything.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "economy"
+      ],
+      "domains": [
+        "society",
+        "economy"
+      ],
+      "claim": "The alphabet article guesses that society began when people traded to meet their wants and so had to understand one another.",
+      "press": "qualifies",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "A, B, C, or the Alphabet",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "A summary, not a quotation. Society is tied to mutual traffic, not to a single doctrine.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "justice"
+      ],
+      "domains": [
+        "moral",
+        "justice"
+      ],
+      "claim": "A true Epicurean is described as mild, moderate, and just, and as a man who does not pay executioners to kill people for a different opinion.",
+      "press": "for",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "Anti-Lucretius",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "A summary, not a quotation. The moral praise is for mildness and for refusing public killing over opinions.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral",
+        "society",
+        "religion"
+      ],
+      "domains": [
+        "moral",
+        "society",
+        "religion"
+      ],
+      "claim": "The anecdotes say that one fanatic is enough to commit a parricide, and that fanaticism makes a populace capable of anything.",
+      "press": "against",
+      "work": "A Philosophical Dictionary, volume 1",
+      "loc": "Anecdotes",
+      "url": "https://www.gutenberg.org/ebooks/35621",
+      "bears": "A summary, not a quotation. The dictionary treats fanaticism as a public danger, not as a private taste.",
+      "verbatim": false
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "id": "madison",
+  "name": "James Madison",
+  "years": "1751–1836",
+  "place": "Virginia",
+  "epithet": "Faction, and the people as principals",
+  "dossier": "Only the Federalist papers that this Gutenberg text labels MADISON are searched. The three papers labeled MADISON, with HAMILTON are in neither index.",
+  "tableId": "founding",
+  "tables": [
+    "founding"
+  ],
+  "portrait": "images/madison.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      330,
+      415,
+      494
+    ]
+  },
+  "voice": "I ask how a society of different interests can govern itself.",
+  "works": [
+    {
+      "title": "The Federalist Papers",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "note": "Project Gutenberg ebook 1404, papers this edition attributes to Madison alone"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "society",
+        "property"
+      ],
+      "domains": [
+        "society",
+        "property"
+      ],
+      "claim": "From the protection of different and unequal faculties of acquiring property, the possession of different degrees and kinds of property immediately results; and from the influence of these on the sentiments and views of the respective proprietors, ensues a division of the society into different interests and parties.",
+      "press": "qualifies",
+      "work": "The Federalist Papers",
+      "loc": "FEDERALIST No. 10, paragraph 17",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "Federalist 10 traces parties to unequal faculties and to the different property those faculties acquire.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "democracy",
+        "society"
+      ],
+      "domains": [
+        "democracy",
+        "society"
+      ],
+      "claim": "The House of Representatives, like that of one branch at least of all the State legislatures, is elected immediately by the great body of the people.",
+      "press": "for",
+      "work": "The Federalist Papers",
+      "loc": "FEDERALIST No. 39, paragraph 17",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "The House is said to be elected immediately by the great body of the people.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "power",
+        "society"
+      ],
+      "domains": [
+        "power",
+        "society"
+      ],
+      "claim": "The federal and State governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes.",
+      "press": "for",
+      "work": "The Federalist Papers",
+      "loc": "FEDERALIST No. 46, paragraph 4",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "Federal and state governments are called different agents and trustees of the people.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "equality",
+        "liberty",
+        "religion"
+      ],
+      "domains": [
+        "equality",
+        "liberty",
+        "religion"
+      ],
+      "claim": "No qualification of wealth, of birth, of religious faith, or of civil profession is permitted to fetter the judgement or disappoint the inclination of the people.",
+      "press": "for",
+      "work": "The Federalist Papers",
+      "loc": "FEDERALIST No. 57, paragraph 7",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "Wealth, birth, religious faith, and civil profession are not to fetter the people's choice.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "democracy",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "democracy",
+        "power",
+        "society"
+      ],
+      "claim": "No law or resolution can now be passed without the concurrence, first, of a majority of the people, and then, of a majority of the States.",
+      "press": "for",
+      "work": "The Federalist Papers",
+      "loc": "FEDERALIST No. 62, paragraph 17",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "No law, he says, can pass without a majority of the people and then a majority of the states.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "society",
+        "property"
+      ],
+      "domains": [
+        "society",
+        "property"
+      ],
+      "claim": "Federalist 10 derives parties from different and unequal faculties of acquiring property, and from the interests that follow.",
+      "press": "qualifies",
+      "work": "The Federalist Papers",
+      "loc": "Federalist No. 10",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "A summary, not a quotation. A society of one interest is not the society he is describing.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "democracy",
+        "power"
+      ],
+      "domains": [
+        "democracy",
+        "power"
+      ],
+      "claim": "The House is elected by the great body of the people, and the federal and state governments are called different agents and trustees of those people.",
+      "press": "for",
+      "work": "The Federalist Papers",
+      "loc": "On the House and on federalism",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "A summary, not a quotation. The people are the principals of more than one government.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "equality",
+        "religion",
+        "democracy"
+      ],
+      "domains": [
+        "equality",
+        "religion",
+        "democracy"
+      ],
+      "claim": "Wealth, birth, religious faith, and profession are not qualifications for being chosen, and a law needs a majority of the people and then a majority of the states.",
+      "press": "for",
+      "work": "The Federalist Papers",
+      "loc": "On qualifications and on the compound republic",
+      "url": "https://www.gutenberg.org/ebooks/1404",
+      "bears": "A summary, not a quotation. The people choose, and the states concur.",
+      "verbatim": false
+    }
+  ]
+}

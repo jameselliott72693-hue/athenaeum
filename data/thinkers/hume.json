@@ -1,0 +1,163 @@
+{
+  "id": "hume",
+  "name": "David Hume",
+  "years": "1711–1776",
+  "place": "Edinburgh",
+  "epithet": "Passion, custom, and government",
+  "dossier": "The essays are Hume's own eighteenth-century English. Hannaford Bennett's biographical introduction is not in the searched text. This chair is the Enlightenment table only.",
+  "tableId": "enlightenment",
+  "tables": [
+    "enlightenment"
+  ],
+  "portrait": "images/hume.svg",
+  "sound": {
+    "wave": "sine",
+    "notes": [
+      349,
+      415,
+      494
+    ]
+  },
+  "voice": "I ask what people in fact praise, and what government in fact keeps in order.",
+  "works": [
+    {
+      "title": "Essays",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "note": "Project Gutenberg ebook 36120"
+    }
+  ],
+  "entries": [
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Some people are subject to a certain delicacy of passion, which makes them extremely sensible to all the accidents of life, and gives them a lively joy upon every prosperous event, as well as a piercing grief when they meet with misfortune and adversity.",
+      "press": "qualifies",
+      "work": "Essays",
+      "loc": "Of the Delicacy of Taste and Passion, paragraph 1",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "The essay begins from a delicacy of passion that heightens both joy and grief.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "custom",
+        "justice"
+      ],
+      "domains": [
+        "custom",
+        "justice"
+      ],
+      "claim": "Antiquity always begets the opinion of right; and whatever disadvantageous sentiments we may entertain of mankind, they are always found to be prodigal both of blood and treasure in the maintenance of public justice.",
+      "press": "qualifies",
+      "work": "Essays",
+      "loc": "OF THE FIRST PRINCIPLES OF GOVERNMENT, paragraph 4",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "Long possession, Hume says, breeds the opinion of right, and people spend blood and treasure to keep public justice.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "society"
+      ],
+      "claim": "The ages of greatest public spirit are not always most eminent for private virtue.",
+      "press": "qualifies",
+      "work": "Essays",
+      "loc": "THAT POLITICS MAY BE REDUCED TO A SCIENCE, paragraph 65",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "Public spirit and private virtue are not treated as the same height of a people.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "That there is a natural difference between merit and demerit, virtue and vice, wisdom and folly, no reasonable man will deny, yet it is evident that, in affixing the term, which denotes either our approbation or blame, we are commonly more influenced by comparison than by any fixed unalterable standard in the nature of things.",
+      "press": "qualifies",
+      "work": "Essays",
+      "loc": "OF THE DIGNITY OR MEANNESS OF HUMAN NATURE, paragraph 12",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "Hume grants a natural difference between virtue and vice, and then says our praise is steered by comparison.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral",
+        "power",
+        "society"
+      ],
+      "domains": [
+        "moral",
+        "power",
+        "society"
+      ],
+      "claim": "Order in society, we find, is much better maintained by means of government; and our duty to the magistrate is more strictly guarded by the principles of human nature, than our duty to our fellow-citizens.",
+      "press": "for",
+      "work": "Essays",
+      "loc": "OF THE ORIGIN OF GOVERNMENT, paragraph 5",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "Duty to the magistrate is said to be guarded more strictly by human nature than duty to fellow citizens.",
+      "verbatim": true
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "Delicacy of passion is presented as a temperament that feels both prosperity and misfortune more sharply, not as a rule for everyone.",
+      "press": "qualifies",
+      "work": "Essays",
+      "loc": "Of the Delicacy of Taste and Passion",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "A summary, not a quotation. Temperament is not yet a moral law.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "society",
+        "power",
+        "custom"
+      ],
+      "domains": [
+        "society",
+        "power",
+        "custom"
+      ],
+      "claim": "Order in society is said to be kept better by government than by duty to fellow citizens alone, and antiquity is said to breed the opinion of right.",
+      "press": "for",
+      "work": "Essays",
+      "loc": "Of the Origin of Government and Of the First Principles of Government",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "A summary, not a quotation. Justice and government are habits as well as arguments.",
+      "verbatim": false
+    },
+    {
+      "topics": [
+        "moral"
+      ],
+      "domains": [
+        "moral"
+      ],
+      "claim": "He grants a real difference between virtue and vice, and adds that praise and blame are steered by comparison rather than by one fixed mark.",
+      "press": "qualifies",
+      "work": "Essays",
+      "loc": "Of the Dignity or Meanness of Human Nature",
+      "url": "https://www.gutenberg.org/ebooks/36120",
+      "bears": "A summary, not a quotation. A standard exists, and comparison still moves the name we use.",
+      "verbatim": false
+    }
+  ]
+}
