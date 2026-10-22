@@ -321,6 +321,14 @@ footer { color: var(--soft); font-size: 14px; }
 .line-when, .line-edges { margin: 8px 0 0; padding-left: 18px; }
 .line-when li, .line-edges li { margin: 4px 0; }
 .line-when span, .line-edges { color: var(--soft); }
+.path-box { margin: 18px 0; padding-top: 8px; border-top: 1px solid var(--line); }
+.path-box h3 { font-size: 22px; margin: 4px 0; }
+.path-stops { list-style: none; margin: 10px 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.path-stops button { text-align: left; width: 100%; }
+.path-stops button[aria-current="true"] { border-color: var(--brass); background: var(--brass-soft); }
+.path-passage { font-family: var(--serif); font-size: 18px; line-height: 1.45; }
+#path-read { border: 1px solid var(--line); border-radius: 14px; padding: 12px; background: var(--paper); margin-top: 8px; }
+#path-read .meta { overflow-wrap: anywhere; }
 .compare-box { margin: 18px 0; padding-top: 8px; border-top: 1px solid var(--line); }
 .compare-box select, .compare-box .field { display: block; width: 100%; margin-top: 8px; }
 .compare { margin-top: 8px; }
