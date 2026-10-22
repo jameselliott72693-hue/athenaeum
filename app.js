@@ -5,6 +5,7 @@
   const Books = window.AthenaeumBooks;
   const Store = window.AthenaeumStore;
   const Share = window.AthenaeumShare;
+  const Paths = window.AthenaeumPaths;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
     thinkers: [],
@@ -14,6 +15,10 @@
     minutes: [],
     seatings: [],
     bookmarks: [],
+    pathCatalog: { paths: [] },
+    pathProgress: { read: {}, current: {} },
+    pathTexts: {},
+    pathOpen: null,
     reading: null,
     tableFilter: "letters",
     query: "",
@@ -171,6 +176,112 @@
     if (!size.value) size.value = String(table.limits.defaultCount);
     const preset = table.preset || [];
     $("seat-preset").textContent = `Seat the usual ${preset.length}`;
+    renderPaths();
+  }
+
+  function renderPaths() {
+    const box = $("path-box");
+    if (!box || !Paths) return;
+    const path = Paths.pathForTable(state.pathCatalog, state.tableFilter);
+    if (!path) {
+      box.hidden = true;
+      state.pathOpen = null;
+      return;
+    }
+    box.hidden = false;
+    $("path-title").textContent = path.title;
+    $("path-blurb").textContent = path.blurb;
+    const open = state.pathOpen && state.pathOpen.pathId === path.id ? state.pathOpen : null;
+    $("path-stops").innerHTML = path.stops.map((stop, index) => {
+      const person = byId(stop.thinkerId);
+      const read = Paths.isRead(state.pathProgress, path.id, stop.id);
+      const current = open && open.stopId === stop.id;
+      return `<li><button type="button" data-path-stop="${esc(stop.id)}" aria-current="${current ? "true" : "false"}">${index + 1}. ${esc(person ? person.name : stop.thinkerId)}${read ? " · read" : ""}</button></li>`;
+    }).join("");
+    const readHost = $("path-read");
+    if (!open) {
+      readHost.hidden = true;
+      readHost.innerHTML = "";
+      return;
+    }
+    const stop = path.stops.find((item) => item.id === open.stopId);
+    readHost.hidden = false;
+    readHost.innerHTML = `
+      <p class="editorial"><span class="note-flag">Note, not a quotation.</span> ${esc(stop.guide)}</p>
+      <p class="path-passage">${esc(open.paragraph)}</p>
+      <p class="meta"><a href="${esc(safeUrl(stop.url))}" target="_blank" rel="noopener">${esc(stop.work)}</a>, ${esc(stop.loc)}</p>
+      <div class="row-btns">
+        <button type="button" id="path-read-btn">${Paths.isRead(state.pathProgress, path.id, stop.id) ? "Read" : "Mark this stop read"}</button>
+        <button type="button" class="solid" id="path-put">Put this passage to the table</button>
+      </div>`;
+  }
+
+  async function textOfStop(stop) {
+    if (state.pathTexts[stop.textFile] != null) return state.pathTexts[stop.textFile];
+    const res = await fetch(stop.textFile);
+    if (!res.ok) throw new Error("missing book");
+    const text = await res.text();
+    state.pathTexts[stop.textFile] = text;
+    return text;
+  }
+
+  async function openPathStop(stopId) {
+    const path = Paths.pathForTable(state.pathCatalog, state.tableFilter);
+    const stop = path && path.stops.find((item) => item.id === stopId);
+    const note = $("path-note");
+    if (!stop) return;
+    if (note) note.textContent = "Opening the book…";
+    let paragraph = null;
+    try {
+      paragraph = Paths.paragraphContaining(await textOfStop(stop), stop.needle);
+    } catch (err) {
+      paragraph = null;
+    }
+    if (!paragraph) {
+      if (note) note.textContent = "That sentence is not in the book file on this shelf.";
+      return;
+    }
+    state.pathProgress = Paths.setCurrent(state.pathProgress, path.id, stop.id);
+    Paths.saveProgress(localStorage, state.pathProgress);
+    state.pathOpen = { pathId: path.id, stopId: stop.id, paragraph };
+    if (note) note.textContent = "";
+    renderPaths();
+  }
+
+  function markPathRead() {
+    const path = Paths.pathForTable(state.pathCatalog, state.tableFilter);
+    const open = state.pathOpen;
+    if (!path || !open || open.pathId !== path.id) return;
+    state.pathProgress = Paths.markRead(state.pathProgress, path.id, open.stopId);
+    Paths.saveProgress(localStorage, state.pathProgress);
+    const note = $("path-note");
+    const done = path.stops.filter((stop) => Paths.isRead(state.pathProgress, path.id, stop.id)).length;
+    if (note) note.textContent = `${done} of ${path.stops.length} stops read. Kept in this browser.`;
+    renderPaths();
+  }
+
+  async function putPathPassage() {
+    const path = Paths.pathForTable(state.pathCatalog, state.tableFilter);
+    const open = state.pathOpen;
+    const note = $("path-note");
+    const stop = path && open && path.stops.find((item) => item.id === open.stopId);
+    if (!stop || !open.paragraph) return;
+    if (!state.seated.includes(stop.thinkerId)) {
+      trySeat(stop.thinkerId);
+      if (!state.seated.includes(stop.thinkerId)) return;
+    }
+    $("topic").value = stop.ask;
+    $("brief").value = open.paragraph;
+    saveJson("athenaeum.draft", { topic: stop.ask, brief: open.paragraph });
+    scheduleScore();
+    const table = activeTable();
+    const person = byId(stop.thinkerId);
+    if (state.seated.length < table.limits.min) {
+      if (note) note.textContent = `Seated ${person.name} and put the passage in the brief. Seat at least ${table.limits.min} chairs, then ask the table.`;
+      return;
+    }
+    if (note) note.textContent = `The passage is the brief. Asking ${person.name}’s table.`;
+    await weigh();
   }
 
   function fillCompare() {
@@ -1406,6 +1517,13 @@
     $("undo-random").addEventListener("click", undoRandom);
     $("weigh").addEventListener("click", weigh);
     $("compare-go").addEventListener("click", compareTables);
+    const pathBox = $("path-box");
+    if (pathBox) pathBox.addEventListener("click", (e) => {
+      const stop = e.target.closest("[data-path-stop]");
+      if (stop) { openPathStop(stop.dataset.pathStop); return; }
+      if (e.target.closest("#path-read-btn")) { markPathRead(); return; }
+      if (e.target.closest("#path-put")) putPathPassage();
+    });
     $("book-go").addEventListener("click", searchBooks);
     $("book-query").addEventListener("keydown", (e) => {
       if (e.key === "Enter") { e.preventDefault(); searchBooks(); }
@@ -1765,6 +1883,8 @@
     state.tables = catalog.tables;
     state.relevance = catalog.relevance;
     state.thinkers = await Promise.all(catalog.thinkers.map((id) => fetch(`data/thinkers/${id}.json`).then((r) => r.json())));
+    state.pathCatalog = await fetch("data/paths.json").then((r) => r.ok ? r.json() : { paths: [] }).catch(() => ({ paths: [] }));
+    state.pathProgress = Paths ? Paths.loadProgress(localStorage) : { read: {}, current: {} };
     const savedSeats = loadJson("athenaeum.seated", null);
     const legacy = loadJson("athenaeum.five", null);
     const initial = Array.isArray(savedSeats) ? savedSeats : (Array.isArray(legacy) ? legacy : []);

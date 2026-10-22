@@ -1,0 +1,287 @@
+{
+  "note": "Each stop names a sentence that is already in a cleaned public-domain book on this shelf. The page shows the whole passage that contains that sentence. The guide is a note from the room, not a quotation.",
+  "paths": [
+    {
+      "id": "ancient-city",
+      "tableId": "ancient",
+      "title": "A city, and the person in it",
+      "blurb": "Five stops in the books already on the ancient table: justice, the city, duty, what is in our power, and the society of other people.",
+      "stops": [
+        {
+          "id": "plato-justice",
+          "thinkerId": "plato",
+          "textFile": "data/books/text/plato-republic.txt",
+          "needle": "But then, I said, speaking the truth and paying your debts is not a correct definition of justice.",
+          "work": "The Republic",
+          "loc": "Book I, paragraph 33",
+          "url": "https://www.gutenberg.org/ebooks/1497",
+          "ask": "Is paying what you owe a sufficient account of justice in a city?",
+          "guide": "The Republic’s first book tries a definition of justice and sets it aside. The path starts at that refusal."
+        },
+        {
+          "id": "aristotle-city",
+          "thinkerId": "aristotle",
+          "textFile": "data/books/text/aristotle-politics.txt",
+          "needle": "What is a city?",
+          "work": "Politics",
+          "loc": "CHAPTER I, paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/6762",
+          "ask": "What makes a city a city, rather than a crowd living under a government?",
+          "guide": "Aristotle’s Politics asks what a city is before it sorts the forms of government."
+        },
+        {
+          "id": "cicero-duty",
+          "thinkerId": "cicero",
+          "textFile": "data/books/text/cicero-offices.txt",
+          "needle": "I should like at the outset to define what duty is",
+          "work": "De Officiis",
+          "loc": "Book I, paragraph 22",
+          "url": "https://www.gutenberg.org/ebooks/47001",
+          "ask": "Can a rule of duty stand if moral goodness is not worth seeking for its own sake?",
+          "guide": "Cicero tells his son that a discussion of duty has to begin by saying what duty is."
+        },
+        {
+          "id": "epictetus-events",
+          "thinkerId": "epictetus",
+          "textFile": "data/books/text/epictetus.txt",
+          "needle": "Demand not that events should happen as you wish",
+          "work": "The Enchiridion",
+          "loc": "VIII, paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/45109",
+          "ask": "Should a person demand that events happen as he wishes?",
+          "guide": "The Enchiridion separates what is in a person’s power from what is not."
+        },
+        {
+          "id": "marcus-society",
+          "thinkerId": "marcus",
+          "textFile": "data/books/text/marcus.txt",
+          "needle": "if there be any gods, it is no grievous thing to leave the society of men",
+          "work": "Meditations",
+          "loc": "THE SECOND BOOK, paragraph 8",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "ask": "What does a person owe other people, if death ends that society?",
+          "guide": "Marcus writes to himself about death and the society of men in the same breath."
+        }
+      ]
+    },
+    {
+      "id": "christian-heart",
+      "tableId": "christian",
+      "title": "Rest, imitation, and the heart",
+      "blurb": "Four stops in the Christian books on this shelf: the Confessions, the Imitation, the Consolation, and the Pensées.",
+      "stops": [
+        {
+          "id": "augustine-rest",
+          "thinkerId": "augustine",
+          "textFile": "data/books/text/augustine-confessions.txt",
+          "needle": "our heart is restless, until it repose in Thee",
+          "work": "The Confessions of St. Augustine",
+          "loc": "BOOK I, paragraph 3",
+          "url": "https://www.gutenberg.org/ebooks/3296",
+          "ask": "What is a heart for, if it is restless until it rests in God?",
+          "guide": "The Confessions open on praise and on a heart that does not sit still."
+        },
+        {
+          "id": "kempis-life",
+          "thinkerId": "kempis",
+          "textFile": "data/books/text/kempis.txt",
+          "needle": "What doth it profit thee to enter into deep discussion concerning the Holy Trinity",
+          "work": "The Imitation of Christ",
+          "loc": "Chapter I, paragraph 3",
+          "url": "https://www.gutenberg.org/ebooks/1653",
+          "ask": "Does knowing the arguments matter if the life does not follow?",
+          "guide": "The Imitation sets a holy life beside skill in definitions."
+        },
+        {
+          "id": "boethius-public",
+          "thinkerId": "boethius",
+          "textFile": "data/books/text/boethius.txt",
+          "needle": "I brought to my duties no aim but zeal for the public good",
+          "work": "The Consolation of Philosophy",
+          "loc": "NOTHING CAN SUBDUE VIRTUE., paragraph 9",
+          "url": "https://www.gutenberg.org/ebooks/14328",
+          "ask": "Is public office justified by zeal for the public good?",
+          "guide": "In the Consolation, Boethius answers the charge against his public life."
+        },
+        {
+          "id": "pascal-heart",
+          "thinkerId": "pascal",
+          "textFile": "data/books/text/pascal.txt",
+          "needle": "The heart has its reasons, which reason does not know",
+          "work": "Pensées",
+          "loc": "Preface to the second part.--To speak of those who have treated of this matter., paragraph 48",
+          "url": "https://www.gutenberg.org/ebooks/18269",
+          "ask": "What can people share if the heart has reasons that argument does not reach?",
+          "guide": "Pascal distinguishes the heart’s order from the order of demonstration."
+        }
+      ]
+    },
+    {
+      "id": "eastern-way",
+      "tableId": "eastern",
+      "title": "Learning, profit, and the way",
+      "blurb": "Five stops, one in each school’s book on this table. The schools are not collapsed into one doctrine.",
+      "stops": [
+        {
+          "id": "confucius-learn",
+          "thinkerId": "confucius",
+          "textFile": "data/books/text/confucius-analects.txt",
+          "needle": "Is it not pleasant to learn with a constant perseverance and application?",
+          "work": "Confucian Analects",
+          "loc": "BOOK I. HSIO R., paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/4094",
+          "ask": "What does learning ask of a person who may go unnoticed?",
+          "guide": "The Analects begin with learning, friends, and the person who is not thrown off when others take no notice."
+        },
+        {
+          "id": "mencius-profit",
+          "thinkerId": "mencius",
+          "textFile": "data/books/text/mencius-sayings.txt",
+          "needle": "Why must your Majesty used that word 'profit'?",
+          "work": "The Sayings of Mencius",
+          "loc": "Book I, paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/10056",
+          "ask": "Should a ruler ask first how to profit the kingdom?",
+          "guide": "Mencius’s first exchange with King Hui is about profit, benevolence, and righteousness. The English is Legge’s, including his wording."
+        },
+        {
+          "id": "laozi-tao",
+          "thinkerId": "laozi",
+          "textFile": "data/books/text/laozi-tao.txt",
+          "needle": "The Tao that can be trodden is not the enduring and unchanging Tao",
+          "work": "The Tao Teh King",
+          "loc": "Part 1, paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "ask": "Can the way a people walk be named and still be the enduring way?",
+          "guide": "The Tao Teh King opens by distinguishing the way that can be walked and named from the enduring way."
+        },
+        {
+          "id": "zhuangzi-fish",
+          "thinkerId": "zhuangzi",
+          "textFile": "data/books/text/zhuangzi.txt",
+          "needle": "In the northern ocean there is a fish, called the Leviathan",
+          "work": "Chuang Tzu",
+          "loc": "Chapter I, paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/59709",
+          "ask": "What is the use of a greatness that does not fit an ordinary measure?",
+          "guide": "Giles’s Chuang Tzu opens on a fish that becomes a bird too large for an ordinary sky."
+        },
+        {
+          "id": "buddha-hatred",
+          "thinkerId": "buddha",
+          "textFile": "data/books/text/buddha-dhammapada.txt",
+          "needle": "in those who harbour such thoughts hatred will never cease",
+          "work": "The Dhammapada",
+          "loc": "Chapter I. The Twin-Verses, paragraph 3",
+          "url": "https://www.gutenberg.org/ebooks/2017",
+          "ask": "Does holding an injury keep hatred alive among people?",
+          "guide": "The Twin-Verses of the Dhammapada set harbouring an injury next to letting it go."
+        }
+      ]
+    },
+    {
+      "id": "enlightenment-law",
+      "tableId": "enlightenment",
+      "title": "Law, liberty, and the moral law",
+      "blurb": "Four stops in the Enlightenment books on this shelf: Hume, Rousseau, Wollstonecraft, and Kant.",
+      "stops": [
+        {
+          "id": "hume-laws",
+          "thinkerId": "hume",
+          "textFile": "data/books/text/hume-essays.txt",
+          "needle": "Good laws may beget order and moderation in the government",
+          "work": "Essays",
+          "loc": "THAT POLITICS MAY BE REDUCED TO A SCIENCE, paragraph 66",
+          "url": "https://www.gutenberg.org/ebooks/36120",
+          "ask": "Can good laws produce moderation where manners have not?",
+          "guide": "Hume’s essay on politics as a science weighs laws against manners."
+        },
+        {
+          "id": "rousseau-free",
+          "thinkerId": "rousseau",
+          "textFile": "data/books/text/rousseau-contract.txt",
+          "needle": "all, being born free and equal, alienate their liberty only for their own advantage",
+          "work": "The Social Contract & Discourses",
+          "loc": "THE FIRST SOCIETIES, paragraph 3",
+          "url": "https://www.gutenberg.org/ebooks/46333",
+          "ask": "If people are born free and equal, why would they give liberty up?",
+          "guide": "The Social Contract’s chapter on first societies compares the family with the state."
+        },
+        {
+          "id": "wollstonecraft-education",
+          "thinkerId": "wollstonecraft",
+          "textFile": "data/books/text/wollstonecraft-rights.txt",
+          "needle": "considering females rather as women than human creatures",
+          "work": "A Vindication of the Rights of Woman",
+          "loc": "Introduction, paragraph 4",
+          "url": "https://www.gutenberg.org/ebooks/3420",
+          "ask": "What education is owed to women if they are rational creatures?",
+          "guide": "Wollstonecraft’s introduction objects to an education that aims at allurement rather than reason."
+        },
+        {
+          "id": "kant-freedom",
+          "thinkerId": "kant",
+          "textFile": "data/books/text/kant-practical.txt",
+          "needle": "the moral law is the condition under which we can first become conscious of freedom",
+          "work": "The Critique of Practical Reason",
+          "loc": "Preface, paragraph 12",
+          "url": "https://www.gutenberg.org/ebooks/5683",
+          "ask": "Is the moral law the way a person becomes aware of freedom?",
+          "guide": "Kant’s preface ties the moral law to the awareness of freedom."
+        }
+      ]
+    },
+    {
+      "id": "founding-union",
+      "tableId": "founding",
+      "title": "Society, faction, and union",
+      "blurb": "Four stops in the founding books on this shelf: Common Sense, Federalist 10, The Way to Wealth, and the Farewell Address.",
+      "stops": [
+        {
+          "id": "paine-society",
+          "thinkerId": "paine",
+          "textFile": "data/books/text/paine-sense.txt",
+          "needle": "Some writers have so confounded society with government",
+          "work": "Common Sense",
+          "loc": "Of the origin and design of government, paragraph 1",
+          "url": "https://www.gutenberg.org/ebooks/147",
+          "ask": "Are society and government the same thing, or do they begin from different needs?",
+          "guide": "Common Sense opens by separating society from government."
+        },
+        {
+          "id": "madison-faction",
+          "thinkerId": "madison",
+          "textFile": "data/books/text/madison-federalist.txt",
+          "needle": "By a faction, I understand a number of citizens",
+          "work": "The Federalist Papers",
+          "loc": "FEDERALIST No. 10, paragraph 10",
+          "url": "https://www.gutenberg.org/ebooks/1404",
+          "ask": "How should a republic deal with a faction that shares a passion?",
+          "guide": "This edition labels Federalist 10 as Madison’s. The path uses that paper’s definition of faction."
+        },
+        {
+          "id": "franklin-thrift",
+          "thinkerId": "franklin",
+          "textFile": "data/books/text/franklin-wealth.txt",
+          "needle": "early to bed, and early to rise, makes a man healthy, wealthy, and wise",
+          "work": "The Way to Wealth",
+          "loc": "The Way to Wealth, paragraph 3",
+          "url": "https://www.gutenberg.org/ebooks/43855",
+          "ask": "Does a shared counsel of work and thrift hold a people together?",
+          "guide": "The Way to Wealth is Father Abraham repeating Poor Richard. The sentence is inside that speech."
+        },
+        {
+          "id": "washington-union",
+          "thinkerId": "washington",
+          "textFile": "data/books/text/washington-farewell.txt",
+          "needle": "exhibit the continuance of the union as a primary object of patriotic desire",
+          "work": "Farewell Address",
+          "loc": "FAREWELL ADDRESS., paragraph 26",
+          "url": "https://www.gutenberg.org/ebooks/11314",
+          "ask": "Why would a union be the first object of a patriot’s care?",
+          "guide": "The Farewell Address treats the continuance of the union as a primary public object."
+        }
+      ]
+    }
+  ]
+}
