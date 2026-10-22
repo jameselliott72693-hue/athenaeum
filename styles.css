@@ -53,6 +53,7 @@ body {
   font-family: var(--sans);
   font-weight: 380;
   line-height: 1.45;
+  overflow-x: clip;
 }
 header, main, footer { max-width: 1120px; margin: 0 auto; padding: 28px 22px; }
 header { display: flex; justify-content: space-between; gap: 28px; align-items: flex-end; }
@@ -78,6 +79,7 @@ h2 { font-size: 28px; }
   border-radius: 999px;
   padding: 4px 10px 4px 4px;
 }
+.sound-bar input[type="range"] { flex: 1; min-width: 0; width: auto; }
 .hub { margin-bottom: 18px; }
 .hub-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
 .hub-card {
@@ -90,7 +92,7 @@ h2 { font-size: 28px; }
   min-height: 88px;
 }
 .hub-card[aria-pressed="true"] { border-color: var(--brass); background: var(--brass-soft); }
-.hub-card strong { font-family: var(--serif); font-size: 18px; line-height: 1.2; }
+.hub-card strong { font-family: var(--serif); font-size: 18px; line-height: 1.2; overflow-wrap: anywhere; }
 .grid { display: grid; grid-template-columns: minmax(300px, 420px) 1fr; gap: 18px; align-items: start; }
 .pane {
   background: var(--card);
@@ -181,6 +183,7 @@ button.danger-text { color: var(--low-ink); }
   border-radius: 999px;
   padding: 4px 4px 4px 4px;
   background: var(--wash);
+  max-width: 100%;
 }
 .chip .avatar { width: 36px; height: 36px; }
 .chip-body { display: flex; flex-direction: column; min-width: 0; }
@@ -307,6 +310,20 @@ footer { color: var(--soft); font-size: 14px; }
   .speed { width: 100%; }
   .speed button { flex: 1 1 90px; }
   .roster { max-height: none; }
+}
+@media (max-width: 560px) {
+  .hub-row { grid-template-columns: 1fr; }
+  h1 { font-size: 30px; }
+  .lede { max-width: none; }
+  input, textarea, select { font-size: 16px; }
+  .remark, .close-panel { padding: 14px 12px; }
+  .remark p { max-width: none; }
+  .passage { font-size: 17px; }
+  .moderator-ask { font-size: 20px; }
+  .dossier-head { align-items: flex-start; }
+  .dossier-head img { width: 64px; height: 64px; }
+  .shelf button { padding-right: 76px; }
+  .name { overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) {
   .reveal { animation: none; }
