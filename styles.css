@@ -312,6 +312,15 @@ footer { color: var(--soft); font-size: 14px; }
   .reveal { animation: none; }
   html { scroll-behavior: auto; }
 }
+.line-box { margin: 18px 0; padding-top: 8px; border-top: 1px solid var(--line); }
+.line-box h3 { font-size: 22px; margin: 4px 0; }
+.line-map svg { width: 100%; height: auto; display: block; }
+.line-map line { stroke: var(--brass); stroke-width: 1.25; }
+.line-map circle { fill: var(--brass); }
+.line-map text { font-size: 13px; fill: currentColor; font-family: var(--sans); }
+.line-when, .line-edges { margin: 8px 0 0; padding-left: 18px; }
+.line-when li, .line-edges li { margin: 4px 0; }
+.line-when span, .line-edges { color: var(--soft); }
 .path-box { margin: 18px 0; padding-top: 8px; border-top: 1px solid var(--line); }
 .path-box h3 { font-size: 22px; margin: 4px 0; }
 .path-stops { list-style: none; margin: 10px 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }

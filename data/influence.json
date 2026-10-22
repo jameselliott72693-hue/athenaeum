@@ -1,0 +1,236 @@
+{
+  "note": "Each line is a plain historical fact about chairs on the same table. A missing line is not a claim that nobody read anybody. Nothing here is a quotation.",
+  "edges": [
+    {
+      "tableId": "ancient",
+      "from": "plato",
+      "to": "aristotle",
+      "label": "taught",
+      "basis": "Aristotle studied at Plato's Academy in Athens for many years. That is the ordinary ancient biographical tradition."
+    },
+    {
+      "tableId": "ancient",
+      "from": "epictetus",
+      "to": "marcus",
+      "label": "was read by",
+      "basis": "In the Meditations, Marcus thanks Rusticus for giving him Epictetus."
+    },
+    {
+      "tableId": "christian",
+      "from": "augustine",
+      "to": "aquinas",
+      "label": "was read by",
+      "basis": "Aquinas cites Augustine throughout the Summa Theologica."
+    },
+    {
+      "tableId": "christian",
+      "from": "boethius",
+      "to": "aquinas",
+      "label": "was read by",
+      "basis": "Aquinas wrote a commentary on Boethius's De Trinitate."
+    },
+    {
+      "tableId": "christian",
+      "from": "boethius",
+      "to": "dante",
+      "label": "was read by",
+      "basis": "Dante places Boethius among the wise in Paradiso and names the Consolation."
+    },
+    {
+      "tableId": "christian",
+      "from": "aquinas",
+      "to": "dante",
+      "label": "was read by",
+      "basis": "Dante knew Aquinas's scholastic work, and the Comedy's theology is shaped by that reading."
+    },
+    {
+      "tableId": "christian",
+      "from": "augustine",
+      "to": "pascal",
+      "label": "was read by",
+      "basis": "Pascal wrote from the Augustinian Christianity of Port-Royal."
+    },
+    {
+      "tableId": "eastern",
+      "from": "confucius",
+      "to": "zengzi",
+      "label": "taught",
+      "basis": "The Analects record Zengzi among Confucius's disciples, and the Book of Filial Duty is a dialogue in which Confucius instructs him."
+    },
+    {
+      "tableId": "eastern",
+      "from": "confucius",
+      "to": "mencius",
+      "label": "was read by",
+      "basis": "Mencius argues as a defender of Confucius."
+    },
+    {
+      "tableId": "eastern",
+      "from": "laozi",
+      "to": "zhuangzi",
+      "label": "was read by",
+      "basis": "The Zhuangzi, as received, belongs to the Daoist line of the Tao Teh King. A personal meeting is not claimed here."
+    },
+    {
+      "tableId": "enlightenment",
+      "from": "hume",
+      "to": "kant",
+      "label": "was read by",
+      "basis": "Kant wrote in the Prolegomena of 1783 that Hume had interrupted his dogmatic slumber."
+    },
+    {
+      "tableId": "enlightenment",
+      "from": "rousseau",
+      "to": "kant",
+      "label": "was read by",
+      "basis": "Kant's handwritten notes on Rousseau, especially Emile, record that reading."
+    },
+    {
+      "tableId": "enlightenment",
+      "from": "rousseau",
+      "to": "wollstonecraft",
+      "label": "was answered by",
+      "basis": "Wollstonecraft argues with Rousseau by name throughout the Vindication."
+    },
+    {
+      "tableId": "enlightenment",
+      "from": "beccaria",
+      "to": "voltaire",
+      "label": "was read by",
+      "basis": "Voltaire published a commentary on Beccaria's Of Crimes and Punishments in 1766."
+    },
+    {
+      "tableId": "founding",
+      "from": "franklin",
+      "to": "paine",
+      "label": "encouraged",
+      "basis": "Franklin met Paine in London and gave him letters of introduction to America in 1774."
+    },
+    {
+      "tableId": "founding",
+      "from": "hamilton",
+      "to": "madison",
+      "label": "wrote with",
+      "basis": "Hamilton and Madison wrote The Federalist with John Jay. This shelf follows the edition's own labels for who wrote which paper."
+    },
+    {
+      "tableId": "founding",
+      "from": "jefferson",
+      "to": "madison",
+      "label": "worked with",
+      "basis": "Jefferson drafted the Virginia Statute for Religious Freedom, and Madison carried it through the Virginia legislature. They remained political partners."
+    },
+    {
+      "tableId": "founding",
+      "from": "washington",
+      "to": "hamilton",
+      "label": "asked a draft from",
+      "basis": "Washington asked Hamilton to prepare a draft of the Farewell Address. The address remains Washington's."
+    },
+    {
+      "tableId": "letters",
+      "from": "plato",
+      "to": "aristotle",
+      "label": "taught",
+      "basis": "Aristotle studied at Plato's Academy in Athens for many years."
+    },
+    {
+      "tableId": "letters",
+      "from": "aristotle",
+      "to": "aquinas",
+      "label": "was read by",
+      "basis": "Aquinas wrote commentaries on Aristotle and cites him throughout the Summa."
+    },
+    {
+      "tableId": "letters",
+      "from": "augustine",
+      "to": "aquinas",
+      "label": "was read by",
+      "basis": "Aquinas cites Augustine throughout the Summa Theologica."
+    },
+    {
+      "tableId": "letters",
+      "from": "tocqueville",
+      "to": "mill",
+      "label": "was read by",
+      "basis": "Mill reviewed Democracy in America and corresponded with Tocqueville."
+    },
+    {
+      "tableId": "letters",
+      "from": "chesterton",
+      "to": "lewis",
+      "label": "was read by",
+      "basis": "C. S. Lewis later wrote that Chesterton's The Everlasting Man was among the books that moved him toward Christianity."
+    },
+    {
+      "tableId": "traditionalist",
+      "from": "burke",
+      "to": "kirk",
+      "label": "was read by",
+      "basis": "Russell Kirk's The Conservative Mind gives Burke a founding place in the tradition Kirk describes."
+    },
+    {
+      "tableId": "traditionalist",
+      "from": "tocqueville",
+      "to": "kirk",
+      "label": "was read by",
+      "basis": "Kirk also treats Tocqueville as one of the figures of that same book."
+    },
+    {
+      "tableId": "traditionalist",
+      "from": "burke",
+      "to": "scruton",
+      "label": "was read by",
+      "basis": "Roger Scruton wrote about Burke as a central figure of the conservatism he defended."
+    },
+    {
+      "tableId": "classical",
+      "from": "smith",
+      "to": "mill",
+      "label": "was read by",
+      "basis": "Mill's Principles of Political Economy works in the line of Smith's Wealth of Nations."
+    },
+    {
+      "tableId": "classical",
+      "from": "mises",
+      "to": "hayek",
+      "label": "taught",
+      "basis": "Hayek took part in Mises's private seminar in Vienna."
+    },
+    {
+      "tableId": "classical",
+      "from": "mises",
+      "to": "rothbard",
+      "label": "taught",
+      "basis": "Rothbard studied in Mises's seminar in New York."
+    },
+    {
+      "tableId": "modern",
+      "from": "rawls",
+      "to": "sen",
+      "label": "was answered by",
+      "basis": "Amartya Sen's The Idea of Justice argues with John Rawls's theory of justice."
+    },
+    {
+      "tableId": "victorian",
+      "from": "carlyle",
+      "to": "ruskin",
+      "label": "was read by",
+      "basis": "Ruskin took Carlyle as a master and said so in his own later writing."
+    },
+    {
+      "tableId": "victorian",
+      "from": "ruskin",
+      "to": "morris",
+      "label": "was read by",
+      "basis": "Morris said Ruskin's Unto This Last changed the direction of his work."
+    },
+    {
+      "tableId": "victorian",
+      "from": "carlyle",
+      "to": "morris",
+      "label": "was read by",
+      "basis": "Morris also named Carlyle, with Ruskin, among the writers who formed him."
+    }
+  ]
+}
