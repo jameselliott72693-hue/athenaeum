@@ -5,6 +5,7 @@
   const Books = window.AthenaeumBooks;
   const Store = window.AthenaeumStore;
   const Share = window.AthenaeumShare;
+  const Lines = window.AthenaeumLines;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
     thinkers: [],
@@ -14,6 +15,7 @@
     minutes: [],
     seatings: [],
     bookmarks: [],
+    lines: { edges: [] },
     reading: null,
     tableFilter: "letters",
     query: "",
@@ -171,6 +173,43 @@
     if (!size.value) size.value = String(table.limits.defaultCount);
     const preset = table.preset || [];
     $("seat-preset").textContent = `Seat the usual ${preset.length}`;
+    renderLines();
+  }
+
+  function renderLines() {
+    const box = $("line-box");
+    if (!box || !Lines) return;
+    const table = activeTable();
+    const people = state.thinkers.filter((person) => table && onTable(person, table.id));
+    if (!table || !people.length) {
+      box.hidden = true;
+      return;
+    }
+    box.hidden = false;
+    const ordered = Lines.order(people);
+    const edges = Lines.edgesFor(state.lines, table.id);
+    const points = Lines.layout(ordered.map((person) => person.id));
+    const at = {};
+    points.forEach((point) => { at[point.id] = point; });
+    const boxSize = Lines.frame(points);
+    const strokes = edges.map((edge) => {
+      const from = at[edge.from];
+      const to = at[edge.to];
+      if (!from || !to) return "";
+      return `<line x1="${from.x}" y1="${from.y}" x2="${to.x}" y2="${to.y}"><title>${esc(edge.basis)}</title></line>`;
+    }).join("");
+    const nodes = ordered.map((person) => {
+      const point = at[person.id];
+      const short = person.name.split(" ").slice(-1)[0];
+      return `<g><circle cx="${point.x}" cy="${point.y}" r="4"></circle><text x="${point.x + 8}" y="${point.y + 4}">${esc(short)}</text></g>`;
+    }).join("");
+    $("line-map").innerHTML = `<svg viewBox="0 0 ${boxSize.width} ${boxSize.height}" role="img" aria-label="Who taught, read, or answered whom on this table">${strokes}${nodes}</svg>`;
+    $("line-when").innerHTML = ordered.map((person) => `<li><strong>${esc(person.name)}</strong> <span>${esc(person.years)} · ${esc(person.place)}</span></li>`).join("");
+    $("line-edges").innerHTML = edges.map((edge) => {
+      const from = byId(edge.from);
+      const to = byId(edge.to);
+      return `<li><strong>${esc(from ? from.name : edge.from)}</strong> ${esc(edge.label)} <strong>${esc(to ? to.name : edge.to)}</strong>. ${esc(edge.basis)}</li>`;
+    }).join("");
   }
 
   function fillCompare() {
@@ -1765,6 +1804,7 @@
     state.tables = catalog.tables;
     state.relevance = catalog.relevance;
     state.thinkers = await Promise.all(catalog.thinkers.map((id) => fetch(`data/thinkers/${id}.json`).then((r) => r.json())));
+    state.lines = await fetch("data/influence.json").then((r) => r.ok ? r.json() : { edges: [] }).catch(() => ({ edges: [] }));
     const savedSeats = loadJson("athenaeum.seated", null);
     const legacy = loadJson("athenaeum.five", null);
     const initial = Array.isArray(savedSeats) ? savedSeats : (Array.isArray(legacy) ? legacy : []);
