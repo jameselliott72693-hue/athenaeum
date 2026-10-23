@@ -25,6 +25,18 @@
     return ((catalog && catalog.edges) || []).filter((edge) => edge.tableId === tableId);
   }
 
+  function edgesAmong(catalog, ids) {
+    const have = new Set(ids || []);
+    const seen = new Set();
+    return ((catalog && catalog.edges) || []).filter((edge) => {
+      if (!have.has(edge.from) || !have.has(edge.to)) return false;
+      const key = `${edge.from}>${edge.to}:${edge.label}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   function layout(ids) {
     const cols = ids.length > 6 ? 3 : 2;
     const colW = 160;
@@ -45,5 +57,5 @@
     };
   }
 
-  return { startYear, order, edgesFor, layout, frame };
+  return { startYear, order, edgesFor, edgesAmong, layout, frame };
 });
