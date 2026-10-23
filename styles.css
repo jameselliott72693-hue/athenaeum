@@ -188,6 +188,7 @@ button.danger-text { color: var(--low-ink); }
 .chip .avatar { width: 36px; height: 36px; }
 .chip-body { display: flex; flex-direction: column; min-width: 0; }
 .chip strong { font-size: 14px; }
+.tradition { display: block; color: var(--soft); font-size: 12px; line-height: 1.3; }
 .icon-btn { min-width: 44px; padding: 8px 10px; }
 .note {
   background: var(--wash);

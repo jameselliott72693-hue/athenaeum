@@ -506,6 +506,21 @@
         "madison",
         "washington"
       ]
+    },
+    {
+      "id": "mixed",
+      "name": "Open table",
+      "tradition": "Any tradition",
+      "blurb": "Seat chairs from any tradition. The named tables stay as they are. Nothing here claims these writers belonged to one school.",
+      "open": true,
+      "limits": {
+        "min": 2,
+        "hardMax": 12,
+        "recommendedMax": 6,
+        "defaultCount": 5
+      },
+      "preset": [],
+      "thinkers": []
     }
   ]
 }
