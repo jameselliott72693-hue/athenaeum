@@ -79,12 +79,72 @@
     return thinker.tableId === tableId;
   }
 
+  function traditionName(person, tables) {
+    const list = tables || [];
+    const byTable = {};
+    list.forEach((table) => { byTable[table.id] = table; });
+    const ids = (person && (person.tables || [person.tableId]) || []).filter((id) => {
+      if (!id || id === "letters" || id === "mixed") return false;
+      return !(byTable[id] && byTable[id].open);
+    });
+    const names = [];
+    ids.forEach((id) => {
+      const table = byTable[id];
+      const name = table && table.tradition;
+      if (name && !names.includes(name)) names.push(name);
+    });
+    if (names.length) return names.join(", ");
+    const home = person && byTable[person.tableId];
+    return home && home.tradition ? home.tradition : "";
+  }
+
+  function panelSize(limits, requested) {
+    let size = Number(requested);
+    if (!Number.isFinite(size)) size = limits.defaultCount;
+    size = Math.round(size);
+    if (size < limits.min || size > limits.hardMax) {
+      return { ok: false, message: `Choose a panel from ${limits.min} to ${limits.hardMax}.` };
+    }
+    return { ok: true, size };
+  }
+
   function chooseRandom(opts) {
     const tables = opts.tables || [];
     const thinkers = opts.thinkers || [];
     const rng = opts.rng || Math.random;
     const rel = opts.relevance;
-    const poolTables = opts.traditionId === "any" ? tables.slice() : tables.filter((t) => t.id === opts.traditionId);
+    const closed = tables.filter((table) => !table.open);
+    if (opts.mix) {
+      const table = tables.find((item) => item.open);
+      if (!table) return { ok: false, message: "There is no open table on this shelf." };
+      const sized = panelSize(table.limits, opts.size);
+      if (!sized.ok) return sized;
+      let pool = thinkers.slice();
+      if (opts.onlyRelevant) {
+        if (String(opts.subject || "").trim().length < 3) {
+          return { ok: false, message: "Enter a subject before limiting the draw to chairs who have written on it." };
+        }
+        const judge = opts.scoreThinker || scoreThinker;
+        pool = pool.filter((thinker) => judge(thinker, opts.subject, rel).speaks);
+      }
+      if (pool.length < table.limits.min) {
+        return {
+          ok: false,
+          message: opts.onlyRelevant
+            ? `Fewer than ${table.limits.min} chairs on the shelf have written on this. Leave the limit off, or change the subject.`
+            : "The shelf does not have enough chairs."
+        };
+      }
+      const count = Math.min(sized.size, pool.length);
+      const ids = shuffle(pool.map((thinker) => thinker.id), rng).slice(0, count);
+      const homes = new Set(ids.map((id) => traditionName(thinkers.find((thinker) => thinker.id === id), tables)));
+      let note = homes.size > 1 ? "The draw crosses traditions." : "This draw happened to land inside one tradition.";
+      if (count < sized.size) note = `${note} The panel is ${count}, not ${sized.size}.`;
+      return { ok: true, ids, table, note };
+    }
+    const poolTables = opts.traditionId === "any" || opts.traditionId === "mixed"
+      ? closed.slice()
+      : closed.filter((t) => t.id === opts.traditionId);
     if (!poolTables.length) return { ok: false, message: "Choose a tradition." };
     const table = poolTables[Math.floor(rng() * poolTables.length)];
     const limits = table.limits;
@@ -118,5 +178,5 @@
     return { ok: true, ids, table, note };
   }
 
-  return { wordsOf, distinctive, subjectTopics, scoreEntry, scoreThinker, tierOf, chooseRandom, shuffle, memberOf };
+  return { wordsOf, distinctive, subjectTopics, scoreEntry, scoreThinker, tierOf, chooseRandom, traditionName, shuffle, memberOf };
 });

@@ -33,6 +33,7 @@ influence.edges.forEach((edge) => {
 });
 
 tables.tables.forEach((table) => {
+  if (table.open) return;
   const edges = lines.edgesFor(influence, table.id);
   assert.ok(edges.length >= 1, table.id + " has no line");
   const points = lines.layout(table.thinkers);

@@ -70,6 +70,7 @@
   function onTable(person, tableId) {
     if (!person) return false;
     const table = tableById(tableId);
+    if (table && table.open) return true;
     if (table && Array.isArray(table.thinkers)) return table.thinkers.includes(person.id);
     if (Array.isArray(person.tables) && person.tables.length) return person.tables.includes(tableId);
     return person.tableId === tableId;
@@ -177,7 +178,9 @@
     size.max = String(table.limits.hardMax);
     if (!size.value) size.value = String(table.limits.defaultCount);
     const preset = table.preset || [];
-    $("seat-preset").textContent = `Seat the usual ${preset.length}`;
+    const presetBtn = $("seat-preset");
+    presetBtn.hidden = !preset.length;
+    presetBtn.textContent = `Seat the usual ${preset.length}`;
     renderLines();
     renderPaths();
   }
@@ -186,14 +189,25 @@
     const box = $("line-box");
     if (!box || !Lines) return;
     const table = activeTable();
-    const people = state.thinkers.filter((person) => table && onTable(person, table.id));
+    const people = table && table.open
+      ? state.seated.map(byId).filter(Boolean)
+      : state.thinkers.filter((person) => table && onTable(person, table.id));
     if (!table || !people.length) {
+      if (table && table.open) {
+        box.hidden = false;
+        $("line-map").innerHTML = "";
+        $("line-when").innerHTML = "";
+        $("line-edges").innerHTML = "<li>Seat chairs to see the years already recorded, and any line that already joins two of them.</li>";
+        return;
+      }
       box.hidden = true;
       return;
     }
     box.hidden = false;
     const ordered = Lines.order(people);
-    const edges = Lines.edgesFor(state.lines, table.id);
+    const edges = table.open
+      ? Lines.edgesAmong(state.lines, ordered.map((person) => person.id))
+      : Lines.edgesFor(state.lines, table.id);
     const points = Lines.layout(ordered.map((person) => person.id));
     const at = {};
     points.forEach((point) => { at[point.id] = point; });
@@ -210,7 +224,10 @@
       return `<g><circle cx="${point.x}" cy="${point.y}" r="4"></circle><text x="${point.x + 8}" y="${point.y + 4}">${esc(short)}</text></g>`;
     }).join("");
     $("line-map").innerHTML = `<svg viewBox="0 0 ${boxSize.width} ${boxSize.height}" role="img" aria-label="Who taught, read, or answered whom on this table">${strokes}${nodes}</svg>`;
-    $("line-when").innerHTML = ordered.map((person) => `<li><strong>${esc(person.name)}</strong> <span>${esc(person.years)} · ${esc(person.place)}</span></li>`).join("");
+    $("line-when").innerHTML = ordered.map((person) => {
+      const tradition = table.open ? `${A.traditionName(person, state.tables)} · ` : "";
+      return `<li><strong>${esc(person.name)}</strong> <span>${esc(tradition)}${esc(person.years)} · ${esc(person.place)}</span></li>`;
+    }).join("");
     $("line-edges").innerHTML = edges.map((edge) => {
       const from = byId(edge.from);
       const to = byId(edge.to);
@@ -329,7 +346,7 @@
     if (!first || !second) return;
     const keepFirst = first.value;
     const keepSecond = second.value;
-    const options = state.tables.map((table) => `<option value="${esc(table.id)}">${esc(table.name)}</option>`).join("");
+    const options = state.tables.filter((table) => !table.open).map((table) => `<option value="${esc(table.id)}">${esc(table.name)}</option>`).join("");
     first.innerHTML = options;
     second.innerHTML = options;
     const ids = state.tables.map((table) => table.id);
@@ -446,6 +463,7 @@
         <div class="card-main">
           <button type="button" class="name-btn" data-dossier="${esc(t.id)}"><span class="name">${esc(t.name)}</span></button>
           <span class="meta">${esc(t.years)} · ${esc(t.epithet)}</span>
+          <span class="tradition">${esc(A.traditionName(t, state.tables))}</span>
           <div class="card-actions">
             ${badge(score)}
             <button type="button" data-toggle="${esc(t.id)}" aria-pressed="${on ? "true" : "false"}">${on ? "Unseat" : "Seat"}</button>
@@ -468,7 +486,7 @@
       const rel = !state.scoring && score.tier ? ` rel-${score.tier}` : "";
       return `<span class="chip${rel}">
         <img class="avatar" src="${esc(safeUrl(t.portrait))}" alt="" />
-        <span class="chip-body"><strong>${esc(t.name)}</strong>${badge(score)}</span>
+        <span class="chip-body"><strong>${esc(t.name)}</strong><span class="tradition">${esc(A.traditionName(t, state.tables))}</span>${badge(score)}</span>
         <button type="button" class="icon-btn" data-remove="${esc(t.id)}" aria-label="Remove ${esc(t.name)}">Remove</button>
       </span>`;
     }).join("") : `<p class="empty">No one seated. Seat a chair from the pool, or draw a random table.</p>`;
@@ -527,8 +545,10 @@
   function setSeated(ids) {
     state.seated = ids.slice();
     saveJson("athenaeum.seated", state.seated);
+    saveJson("athenaeum.table", state.tableFilter);
     renderRoster();
     renderTable();
+    renderLines();
   }
 
   function trySeat(id) {
@@ -571,13 +591,16 @@
 
   async function randomSeat(reroll) {
     const onlyRelevant = $("only-relevant").checked && !$("only-wrap").hidden;
+    const mix = !!($("mix-traditions") && $("mix-traditions").checked);
     if (onlyRelevant && Books) {
-      try { await Books.ensure(thinkerIdsFor(state.tableFilter)); } catch (err) { /* draw from the cards */ }
+      const ids = mix ? state.thinkers.map((thinker) => thinker.id) : thinkerIdsFor(state.tableFilter);
+      try { await Books.ensure(ids); } catch (err) { /* draw from the cards */ }
     }
     const drawn = A.chooseRandom({
       tables: state.tables,
       thinkers: state.thinkers,
       traditionId: state.tableFilter,
+      mix,
       size: Number($("panel-size").value),
       onlyRelevant,
       subject: subjectText(),
@@ -751,7 +774,7 @@
       <div class="remark-head">
         <img class="avatar" src="${person.portrait ? esc(safeUrl(person.portrait)) : ""}" alt="" />
         <div>
-          <p class="kicker">${esc(person.years || "")}</p>
+          <p class="kicker">${esc([A.traditionName(person, state.tables), person.years || ""].filter(Boolean).join(" · "))}</p>
           <h3>${esc(turn.name)}</h3>
           ${turn.lean ? `<span class="lean ${esc(turn.lean)}">${esc(turn.lean)}</span>` : ""}
           ${meta ? `<span class="meta"> ${esc(meta)}</span>` : ""}
@@ -1475,7 +1498,7 @@
   }
 
   function homeTable(person) {
-    return state.tables.find((table) => onTable(person, table.id)) || null;
+    return state.tables.find((table) => !table.open && onTable(person, table.id)) || null;
   }
 
   function seatFromBooks(thinkerId) {
@@ -1524,6 +1547,11 @@
 
   function bind() {
     $("search").addEventListener("input", () => { state.query = $("search").value; renderRoster(); });
+    if ($("mix-traditions")) {
+      $("mix-traditions").addEventListener("change", () => {
+        try { localStorage.setItem("athenaeum.mix", $("mix-traditions").checked ? "1" : "0"); } catch (err) { /* ignore */ }
+      });
+    }
     $("tradition").addEventListener("change", () => {
       const next = $("tradition").value;
       if (!selectTable(next)) $("tradition").value = state.tableFilter;
@@ -1890,7 +1918,7 @@
   }
 
   function inferTable(ids) {
-    const matches = state.tables.filter((t) => ids.length && ids.every((id) => onTable(byId(id), t.id)));
+    const matches = state.tables.filter((t) => !t.open && ids.length && ids.every((id) => onTable(byId(id), t.id)));
     if (matches.length === 1) return matches[0].id;
     const letters = matches.find((t) => t.id === "letters");
     return (letters || matches[0] || state.tables[0]).id;
@@ -1929,7 +1957,10 @@
     const legacy = loadJson("athenaeum.five", null);
     const initial = Array.isArray(savedSeats) ? savedSeats : (Array.isArray(legacy) ? legacy : []);
     state.seated = initial.filter((id) => byId(id));
-    if (state.seated.length) state.tableFilter = inferTable(state.seated);
+    const savedTable = loadJson("athenaeum.table", null);
+    if (typeof savedTable === "string" && tableById(savedTable) && state.seated.every((id) => onTable(byId(id), savedTable))) {
+      state.tableFilter = savedTable;
+    } else if (state.seated.length) state.tableFilter = inferTable(state.seated);
     await migrateLocalHistory();
     state.minutes = (await Store.all("sittings")).filter((m) => m && m.topic);
     state.seatings = await Store.all("seatings");
@@ -1945,6 +1976,9 @@
     const prefer = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     applyTheme(theme === "dark" || theme === "light" ? theme : prefer);
     applySoundControls();
+    if ($("mix-traditions")) {
+      try { $("mix-traditions").checked = localStorage.getItem("athenaeum.mix") === "1"; } catch (err) { /* ignore */ }
+    }
     renderTradition();
     if (draft.topic) $("topic").value = draft.topic;
     if (draft.brief) $("brief").value = draft.brief;
