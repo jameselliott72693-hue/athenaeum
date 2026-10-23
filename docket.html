@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1c1712" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Athenaeum" />
+  <title>Tonight's docket · The Athenaeum</title>
+  <script>
+    try {
+      var t = localStorage.getItem("athenaeum.theme");
+      if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+      if (t === "dark") document.documentElement.dataset.theme = "dark";
+    } catch (e) {}
+  </script>
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@380;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="mark" src="images/mark.png" alt="" />
+      <div>
+        <p class="kicker">A reading room</p>
+        <h1>The Athenaeum</h1>
+        <p class="lede">Each night's sittings, taken from that night's Discourse Report. The chairs speak from the record that was kept.</p>
+      </div>
+    </div>
+    <div class="header-tools">
+      <button type="button" id="theme" class="theme-btn" aria-pressed="false">Dark</button>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">The room</a>
+      <a href="docket.html" aria-current="page">Tonight's docket</a>
+    </nav>
+  </header>
+  <main>
+    <div id="docket" class="docket" aria-live="polite"></div>
+  </main>
+  <footer>
+    <p>A line in quotation marks is a verified verbatim passage, cited to its work and place. A Modern read is a paraphrase of that chair's turn, labeled as such. Everything else on this page is the night's own wording. Guest chairs who are not on the shelf have no thinker page.</p>
+  </footer>
+  <script src="docket.js"></script>
+  <script src="docket-page.js"></script>
+</body>
+</html>
