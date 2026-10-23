@@ -47,7 +47,8 @@
       "loc": "Of the origin and design of government, paragraph 2",
       "url": "https://www.gutenberg.org/ebooks/147",
       "bears": "Common Sense separates society, which meets wants, from government, which restrains wickedness.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Society in every state is a blessing, but government even in its best state is but a necessary evil; in its worst state an intolerable one; for when we suffer, or are exposed to the same miseries by a government, which we might expect in a country without government, our calamity is heightened by reflecting that we furnish the means by which we suffer. Common Sense separates society, which meets wants, from government, which restrains wickedness."
     },
     {
       "topics": [
@@ -66,7 +67,8 @@
       "loc": "Rights of Man, paragraph 19",
       "url": "https://www.gutenberg.org/ebooks/3742",
       "bears": "No earlier parliament, he says, can bind the people who are alive now.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The Parliament or the people of 1688, or of any other period, had no more right to dispose of the people of the present day, or to bind or to control them in any shape whatever, than the parliament or the people of the present day have to dispose of, bind or control those who are to live a hundred or a thousand years hence. No earlier parliament, he says, can bind the people who are alive now."
     },
     {
       "topics": [
@@ -85,7 +87,8 @@
       "loc": "Rights of Man, paragraph 343",
       "url": "https://www.gutenberg.org/ebooks/3742",
       "bears": "Both toleration and intolerance are called despotisms over conscience.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Toleration is not the opposite of Intolerance, but is the counterfeit of it. Both toleration and intolerance are called despotisms over conscience."
     },
     {
       "topics": [
@@ -104,7 +107,8 @@
       "loc": "INTERSPERSED WITH MISCELLANEOUS OBSERVATIONS, paragraph 18",
       "url": "https://www.gutenberg.org/ebooks/3742",
       "bears": "Revolutions are described as a change in the moral condition of governments, and then in the weight of taxes.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Revolutions, then, have for their object a change in the moral condition of governments, and with this change the burthen of public taxes will lessen, and civilisation will be left to the enjoyment of that abundance, of which it is now deprived. Revolutions are described as a change in the moral condition of governments, and then in the weight of taxes."
     },
     {
       "topics": [
@@ -121,7 +125,8 @@
       "loc": "CHAPTER III. OF THE OLD AND NEW SYSTEMS OF GOVERNMENT, paragraph 10",
       "url": "https://www.gutenberg.org/ebooks/3742",
       "bears": "He objects to a scheme that puts vice and virtue on the same level.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Vice and virtue, ignorance and wisdom, in short, every quality good or bad, is put on the same level. He objects to a scheme that puts vice and virtue on the same level."
     },
     {
       "topics": [
@@ -138,7 +143,8 @@
       "loc": "Of the origin and design of government",
       "url": "https://www.gutenberg.org/ebooks/147",
       "bears": "A summary, not a quotation. The two are not the same thing.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Common Sense calls society a blessing and government, even at its best, a necessary evil, because one springs from wants and the other from wickedness. The two are not the same thing."
     },
     {
       "topics": [
@@ -155,7 +161,8 @@
       "loc": "Rights of Man, part 1",
       "url": "https://www.gutenberg.org/ebooks/3742",
       "bears": "A summary, not a quotation. The dead do not govern the living.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Rights of Man denies that the parliament of 1688 can bind the people of a later day. The dead do not govern the living."
     },
     {
       "topics": [
@@ -174,7 +181,8 @@
       "loc": "Rights of Man",
       "url": "https://www.gutenberg.org/ebooks/3742",
       "bears": "A summary, not a quotation. Conscience is not a grant, and a revolution is judged by the morals of the government it leaves.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Toleration is called a counterfeit of intolerance, both of them despotisms over conscience, and a revolution is described as a change in the moral condition of governments. Conscience is not a grant, and a revolution is judged by the morals of the government it leaves."
     }
   ]
 }

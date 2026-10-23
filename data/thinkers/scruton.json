@@ -47,7 +47,8 @@
       "loc": "The opening argument",
       "url": "https://archive.org/details/meaningofconserv00scru",
       "bears": "A summary, not a quotation. Home, nation, and settlement come before a universal plan.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "In The Meaning of Conservatism, Scruton argues that conservatism starts from attachment to an existing form of life, not from a doctrine that could be applied anywhere. Home, nation, and settlement come before a universal plan."
     },
     {
       "topics": [
@@ -70,7 +71,8 @@
       "loc": "On liberty and establishment",
       "url": "https://archive.org/details/meaningofconserv00scru",
       "bears": "A summary, not a quotation. Liberty without a settlement is not the good he is defending.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats freedom as something that grows inside institutions, law, property, family, and a shared culture, rather than as the absence of every authority. Liberty without a settlement is not the good he is defending."
     },
     {
       "topics": [
@@ -89,7 +91,8 @@
       "loc": "On culture and the sacred",
       "url": "https://openlibrary.org/works/OL36033048W",
       "bears": "A summary, not a quotation. Beauty and worship are part of the political argument, not hobbies beside it.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "How to Be a Conservative defends the high culture, the religious inheritance, and the ordinary decencies of a nation as goods a politics ought to look after. Beauty and worship are part of the political argument, not hobbies beside it."
     },
     {
       "topics": [
@@ -106,7 +109,8 @@
       "loc": "On education",
       "url": "https://openlibrary.org/works/OL36033048W",
       "bears": "A summary, not a quotation. Teaching is inheritance, not only a skill.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that a common education initiates the young into a civilization, and that a school which refuses that task leaves them with nowhere to stand. Teaching is inheritance, not only a skill."
     },
     {
       "topics": [
@@ -123,7 +127,8 @@
       "loc": "On the state and the nation",
       "url": "https://archive.org/details/meaningofconserv00scru",
       "bears": "A summary, not a quotation. Authority, for him, should be the authority of a home, not of a plan.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He is hostile to a managerial state that treats a country as a problem to be solved by experts who need not belong to it. Authority, for him, should be the authority of a home, not of a plan."
     },
     {
       "topics": [
@@ -142,7 +147,8 @@
       "loc": "On religion",
       "url": "https://openlibrary.org/works/OL36033048W",
       "bears": "A summary, not a quotation. Faith is one of the attachments he thinks a conservative has a reason to keep.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "How to Be a Conservative defends the religious inheritance of a country as part of the settlement that teaches people their duties, not as a private hobby beside politics. Faith is one of the attachments he thinks a conservative has a reason to keep."
     },
     {
       "topics": [
@@ -161,7 +167,8 @@
       "loc": "On the market and the settlement",
       "url": "https://archive.org/details/meaningofconserv00scru",
       "bears": "A summary, not a quotation. An economy is not, for him, a full account of a society.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He defends the market as one part of a civil settlement, useful because it coordinates strangers, and dangerous when it is asked to replace loyalty, law, and home. An economy is not, for him, a full account of a society."
     },
     {
       "topics": [
@@ -180,7 +187,8 @@
       "loc": "On justice and leveling",
       "url": "https://archive.org/details/meaningofconserv00scru",
       "bears": "A summary, not a quotation. Equality that abolishes the institutions people love is not the justice he is defending.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He distinguishes justice from the envy that calls every inherited advantage an injury, and he resists a politics whose remedy is to level attachments until nothing is held in common but the state. Equality that abolishes the institutions people love is not the justice he is defending."
     }
   ]
 }

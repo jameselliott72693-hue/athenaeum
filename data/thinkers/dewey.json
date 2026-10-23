@@ -54,7 +54,8 @@
       "loc": "Chapter 7, The democratic conception in education",
       "url": "https://www.gutenberg.org/ebooks/852",
       "bears": "Democracy, here, is a way of living and communicating, not only a ballot.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "A democracy is more than a form of government; it is primarily a mode of associated living, of conjoint communicated experience. Democracy, here, is a way of living and communicating, not only a ballot."
     },
     {
       "topics": [
@@ -73,7 +74,8 @@
       "loc": "Chapter 1, Education as a necessity of life",
       "url": "https://www.gutenberg.org/ebooks/852",
       "bears": "A society continues by passing on habits, ideas, and standards.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Society exists through a process of transmission quite as much as biological life. A society continues by passing on habits, ideas, and standards."
     },
     {
       "topics": [
@@ -90,7 +92,8 @@
       "loc": "Chapter 1, Education as a necessity of life",
       "url": "https://www.gutenberg.org/ebooks/852",
       "bears": "What people hold in common, and how they communicate it, is what makes a community.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Men live in a community in virtue of the things which they have in common; and communication is the way in which they come to possess things in common. What people hold in common, and how they communicate it, is what makes a community."
     },
     {
       "topics": [
@@ -107,7 +110,8 @@
       "loc": "Chapter 26, Theories of morals",
       "url": "https://www.gutenberg.org/ebooks/852",
       "bears": "He measures morality by conduct and results, not by a named intuition.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Results, conduct, are what counts; they afford the sole measure of morality. He measures morality by conduct and results, not by a named intuition."
     },
     {
       "topics": [
@@ -126,7 +130,8 @@
       "loc": "Chapter 1, Search for the Public",
       "url": "https://www.gutenberg.org/ebooks/71000",
       "bears": "The state is not, for him, a thing apart from a public and its officials.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The only statement which can be made is a purely formal one: the state is the organization of the public effected through officials for the protection of the interests shared by its members. The state is not, for him, a thing apart from a public and its officials."
     },
     {
       "topics": [
@@ -145,7 +150,8 @@
       "loc": "Chapter 6, The problem of method",
       "url": "https://www.gutenberg.org/ebooks/71000",
       "bears": "Expertise does not replace a public that can tell the experts what it needs.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "No government by experts in which the masses do not have the chance to inform the experts as to their needs can be anything but an oligarchy managed in the interests of the few. Expertise does not replace a public that can tell the experts what it needs."
     },
     {
       "topics": [
@@ -164,7 +170,8 @@
       "loc": "The democratic state",
       "url": "https://www.gutenberg.org/ebooks/71000",
       "bears": "He refuses to treat democracy as one simple machine.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Viewed as a historical tendency exhibited in a chain of movements which have affected the forms of government over almost the entire globe during the last century and a half, democracy is a complex affair. He refuses to treat democracy as one simple machine."
     },
     {
       "topics": [
@@ -183,7 +190,8 @@
       "loc": "Custom and morality",
       "url": "https://www.gutenberg.org/ebooks/41386",
       "bears": "A moral standard, here, is a custom that demands a way of acting, not a rule delivered from outside the habits people already share.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Customs in any case constitute moral standards. For they are active demands for certain ways of acting. A moral standard, here, is a custom that demands a way of acting, not a rule delivered from outside the habits people already share."
     }
   ]
 }

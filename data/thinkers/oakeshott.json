@@ -44,7 +44,8 @@
       "loc": "Rationalism in Politics",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Technical knowledge is not a substitute for practical knowledge.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "In the title essay, Oakeshott argues that a rationalist wants to replace a tradition of behavior with a technique that can be written down and applied from outside. Technical knowledge is not a substitute for practical knowledge."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "On Being Conservative",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Conservatism, here, is a temperament about change, not a list of policies.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "On Being Conservative describes a disposition to prefer the familiar, to enjoy what is present, and to change it in order to keep it, not in order to reach a distant perfect state. Conservatism, here, is a temperament about change, not a list of policies."
     },
     {
       "topics": [
@@ -78,7 +80,8 @@
       "loc": "Political education and the pursuit of intimations",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Politics follows the intimations of an existing tradition of behavior.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats political activity as attending to the arrangements of a people, not as the implementation of a single doctrine about how they ought to live. Politics follows the intimations of an existing tradition of behavior."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "The tower of Babel",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Morality is a practice before it is a code.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A moral life, on this account, is learned as a language is learned, by living among people who already speak it, not by applying a crib of rules. Morality is a practice before it is a code."
     },
     {
       "topics": [
@@ -112,7 +116,8 @@
       "loc": "Rationalism in Politics",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. A clean slate throws away the knowledge that was never fully written down.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He is suspicious of a politics that begins by wiping the slate, because the knowledge needed to live together is already in the practices a rationalist proposes to discard. A clean slate throws away the knowledge that was never fully written down."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "The political economy of freedom",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Markets, here, belong to a tradition of rules rather than to a blueprint.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The essay on the political economy of freedom treats a free economy as a manner of living under non-instrumental rules, not as a plan to be imposed on producers. Markets, here, belong to a tradition of rules rather than to a blueprint."
     },
     {
       "topics": [
@@ -150,7 +156,8 @@
       "loc": "On the rule of law and rationalism",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Justice, in this mood, is not a result the state manufactures case by case.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He distinguishes the rule of law, a settled way of attending to arrangements, from a rationalist politics that tries to deliver substantive justice by continual intervention. Justice, in this mood, is not a result the state manufactures case by case."
     },
     {
       "topics": [
@@ -169,7 +176,8 @@
       "loc": "On Being Conservative",
       "url": "https://archive.org/details/rationalisminpol00oake",
       "bears": "A summary, not a quotation. Property is part of the familiar life he thinks politics should not lightly disturb.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "On Being Conservative includes enjoyment of one's present property and present arrangements among the things a conservative disposition is reluctant to hazard for a paper improvement. Property is part of the familiar life he thinks politics should not lightly disturb."
     }
   ]
 }

@@ -47,7 +47,8 @@
       "loc": "Introduction, and the opening on action",
       "url": "https://archive.org/details/humanactiontreat00vonm",
       "bears": "A summary, not a quotation. The unit is a person acting, not a quota.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Human Action treats economics as the study of purposeful choice under scarcity, not as a technique for imposing a planner's goals. The unit is a person acting, not a quota."
     },
     {
       "topics": [
@@ -66,7 +67,8 @@
       "loc": "The analysis of calculation under socialism",
       "url": "https://archive.org/details/humanactiontreat00vonm",
       "bears": "A summary, not a quotation. This is his case against an economy without private prices.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that a socialist commonwealth cannot calculate, because without market prices for the means of production the planner cannot tell which project wastes less. This is his case against an economy without private prices."
     },
     {
       "topics": [
@@ -85,7 +87,8 @@
       "loc": "The argument of the book",
       "url": "https://archive.org/details/liberalismclassi00vonm",
       "bears": "A summary, not a quotation. A free society, on this account, is a moral program as well as an economic one.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "In Liberalism he defends private property, peace, and tolerance as one political program, not as three optional tastes. A free society, on this account, is a moral program as well as an economic one."
     },
     {
       "topics": [
@@ -102,7 +105,8 @@
       "loc": "On interventionism",
       "url": "https://archive.org/details/humanactiontreat00vonm",
       "bears": "A summary, not a quotation. The middle way, as he describes it, is unstable.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Intervention that sets prices or picks industries, he argues, does not stay put: each control creates a problem that invites the next control. The middle way, as he describes it, is unstable."
     },
     {
       "topics": [
@@ -123,7 +127,8 @@
       "loc": "On money and credit",
       "url": "https://archive.org/details/humanactiontreat00vonm",
       "bears": "A summary, not a quotation. Money is a moral subject because it changes who owns what.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats inflation and privileged credit as ways a government shifts wealth without an open tax, and therefore as a kind of fraud on the public. Money is a moral subject because it changes who owns what."
     },
     {
       "topics": [
@@ -142,7 +147,8 @@
       "loc": "On peace and war",
       "url": "https://archive.org/details/liberalismclassi00vonm",
       "bears": "A summary, not a quotation. A market order, on this argument, cannot be a permanent war economy.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Liberalism treats peace as a requirement of a free society, and war as the destruction of the division of labor on which that society lives. A market order, on this argument, cannot be a permanent war economy."
     },
     {
       "topics": [
@@ -161,7 +167,8 @@
       "loc": "On equality and property",
       "url": "https://archive.org/details/liberalismclassi00vonm",
       "bears": "A summary, not a quotation. Equal freedom under law is not, for him, equal shares.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He rejects equality of wealth as a political goal, and he treats an attempt to impose it as a destruction of the property and the prices a society uses to calculate. Equal freedom under law is not, for him, equal shares."
     },
     {
       "topics": [
@@ -180,7 +187,8 @@
       "loc": "On democracy and liberalism",
       "url": "https://archive.org/details/liberalismclassi00vonm",
       "bears": "A summary, not a quotation. The vote does not, in this book, authorize every use of the state.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that a democracy which can abolish property by vote has traded the liberal limit on power for a new absolutism with more voters. The vote does not, in this book, authorize every use of the state."
     }
   ]
 }

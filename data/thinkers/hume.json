@@ -40,7 +40,8 @@
       "loc": "Of the Delicacy of Taste and Passion, paragraph 1",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "The essay begins from a delicacy of passion that heightens both joy and grief.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Some people are subject to a certain delicacy of passion, which makes them extremely sensible to all the accidents of life, and gives them a lively joy upon every prosperous event, as well as a piercing grief when they meet with misfortune and adversity. The essay begins from a delicacy of passion that heightens both joy and grief."
     },
     {
       "topics": [
@@ -57,7 +58,8 @@
       "loc": "OF THE FIRST PRINCIPLES OF GOVERNMENT, paragraph 4",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "Long possession, Hume says, breeds the opinion of right, and people spend blood and treasure to keep public justice.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Antiquity always begets the opinion of right; and whatever disadvantageous sentiments we may entertain of mankind, they are always found to be prodigal both of blood and treasure in the maintenance of public justice. Long possession, Hume says, breeds the opinion of right, and people spend blood and treasure to keep public justice."
     },
     {
       "topics": [
@@ -74,7 +76,8 @@
       "loc": "THAT POLITICS MAY BE REDUCED TO A SCIENCE, paragraph 65",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "Public spirit and private virtue are not treated as the same height of a people.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The ages of greatest public spirit are not always most eminent for private virtue. Public spirit and private virtue are not treated as the same height of a people."
     },
     {
       "topics": [
@@ -89,7 +92,8 @@
       "loc": "OF THE DIGNITY OR MEANNESS OF HUMAN NATURE, paragraph 12",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "Hume grants a natural difference between virtue and vice, and then says our praise is steered by comparison.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "That there is a natural difference between merit and demerit, virtue and vice, wisdom and folly, no reasonable man will deny, yet it is evident that, in affixing the term, which denotes either our approbation or blame, we are commonly more influenced by comparison than by any fixed unalterable standard in the nature of things. Hume grants a natural difference between virtue and vice, and then says our praise is steered by comparison."
     },
     {
       "topics": [
@@ -108,7 +112,8 @@
       "loc": "OF THE ORIGIN OF GOVERNMENT, paragraph 5",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "Duty to the magistrate is said to be guarded more strictly by human nature than duty to fellow citizens.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Order in society, we find, is much better maintained by means of government; and our duty to the magistrate is more strictly guarded by the principles of human nature, than our duty to our fellow-citizens. Duty to the magistrate is said to be guarded more strictly by human nature than duty to fellow citizens."
     },
     {
       "topics": [
@@ -123,7 +128,8 @@
       "loc": "Of the Delicacy of Taste and Passion",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "A summary, not a quotation. Temperament is not yet a moral law.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Delicacy of passion is presented as a temperament that feels both prosperity and misfortune more sharply, not as a rule for everyone. Temperament is not yet a moral law."
     },
     {
       "topics": [
@@ -142,7 +148,8 @@
       "loc": "Of the Origin of Government and Of the First Principles of Government",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "A summary, not a quotation. Justice and government are habits as well as arguments.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Order in society is said to be kept better by government than by duty to fellow citizens alone, and antiquity is said to breed the opinion of right. Justice and government are habits as well as arguments."
     },
     {
       "topics": [
@@ -157,7 +164,8 @@
       "loc": "Of the Dignity or Meanness of Human Nature",
       "url": "https://www.gutenberg.org/ebooks/36120",
       "bears": "A summary, not a quotation. A standard exists, and comparison still moves the name we use.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He grants a real difference between virtue and vice, and adds that praise and blame are steered by comparison rather than by one fixed mark. A standard exists, and comparison still moves the name we use."
     }
   ]
 }

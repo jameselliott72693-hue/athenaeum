@@ -44,7 +44,8 @@
       "loc": "Fragment 277",
       "url": "https://www.gutenberg.org/ebooks/18269",
       "bears": "He will not let a calculation be the whole of a moral life.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The heart has its reasons, which reason does not know. He will not let a calculation be the whole of a moral life."
     },
     {
       "topics": [
@@ -63,7 +64,8 @@
       "loc": "On custom",
       "url": "https://www.gutenberg.org/ebooks/18269",
       "bears": "What a people calls a proof may be the custom they grew up inside.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Custom is the source of our strongest and most believed proofs. What a people calls a proof may be the custom they grew up inside."
     },
     {
       "topics": [
@@ -80,7 +82,8 @@
       "loc": "On justice and force",
       "url": "https://www.gutenberg.org/ebooks/18269",
       "bears": "A moral claim that cannot be enforced, and a force that is not just, both fail.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Justice without might is helpless; might without justice is tyrannical. A moral claim that cannot be enforced, and a force that is not just, both fail."
     },
     {
       "topics": [
@@ -97,7 +100,8 @@
       "loc": "Fragment 347",
       "url": "https://www.gutenberg.org/ebooks/18269",
       "bears": "The dignity he allows is thought, not strength.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Man is but a reed, the most feeble thing in nature; but he is a thinking reed. The dignity he allows is thought, not strength."
     },
     {
       "topics": [
@@ -116,7 +120,8 @@
       "loc": "On the sources of belief",
       "url": "https://www.gutenberg.org/ebooks/18269",
       "bears": "Faith is not reduced to one of the three.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "There are three sources of belief: reason, custom, inspiration. Faith is not reduced to one of the three."
     },
     {
       "topics": [
@@ -135,7 +140,8 @@
       "loc": "On diversion",
       "url": "https://www.gutenberg.org/ebooks/18269",
       "bears": "Rank does not cure the misery that shows up when the diversions stop.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Let us make the trial; let us leave a king all alone to reflect on himself quite at leisure, without any gratification of the senses, without any care in his mind, without society; and we will see that a king without diversion is a man full of wretchedness. Rank does not cure the misery that shows up when the diversions stop."
     }
   ]
 }

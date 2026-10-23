@@ -44,7 +44,8 @@
       "loc": "THE THREE POWERS, paragraph 2",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "In this dialogue Confucius calls filial duty the constant doctrine of Heaven and the practical duty of man.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Here Confucius continued: Filial duty is the constant doctrine of Heaven, the natural righteousness of Earth, and the practical duty of man. In this dialogue Confucius calls filial duty the constant doctrine of Heaven and the practical duty of man."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "Chapter I, paragraph 2",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "The last duty of a son, in this chapter, is an upright life that honors his parents.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "To live an upright life and to spread the great doctrines of humanity must win good reputation after death, and reflect great honour upon our parents. The last duty of a son, in this chapter, is an upright life that honors his parents."
     },
     {
       "topics": [
@@ -80,7 +82,8 @@
       "loc": "THE FILIAL DUTY OF COMMON PEOPLE, paragraph 1",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "The common people's filial duty is named as seasonal work, fertile land, and thrift that keeps parents in comfort.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "To do the necessary in every season (such as growing crops in spring and reaping harvest in autumn), to do the utmost to make lands as fertile as possible, and to be frugal in their expense, in order to keep their parents in comfort, is the filial duty of the common people. The common people's filial duty is named as seasonal work, fertile land, and thrift that keeps parents in comfort."
     },
     {
       "topics": [
@@ -97,7 +100,8 @@
       "loc": "THE THREE POWERS, paragraph 7",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "Respectful and humble conduct is given as a way to keep the people from quarreling.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "They behaved themselves respectfully and humbly, so that the people might not quarrel with one another. Respectful and humble conduct is given as a way to keep the people from quarreling."
     },
     {
       "topics": [
@@ -116,7 +120,8 @@
       "loc": "AMPLIFICATION OF THE HIGHEST VIRTUE, paragraph 2",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "The classic says a ruler is loved as a parent only if he has the highest virtue.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The Shih Ching says, The behaviour of the ruler is so good that he is loved by the people as their parent. The classic says a ruler is loved as a parent only if he has the highest virtue."
     },
     {
       "topics": [
@@ -133,7 +138,8 @@
       "loc": "Chapter I and the chapters on the son",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "A summary, not a quotation. The duty is practical and is also called constant.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Filial duty in this classic runs from an upright life that honors parents, through seasonal work and thrift, up to a doctrine Confucius calls the duty of Heaven, Earth, and man. The duty is practical and is also called constant."
     },
     {
       "topics": [
@@ -150,7 +156,8 @@
       "loc": "On the ruler",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "A summary, not a quotation. Example is part of the duty.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Rulers in these chapters are told to be respectful so the people do not quarrel, and a ruler loved as a parent is said to have needed the highest virtue. Example is part of the duty."
     },
     {
       "topics": [
@@ -167,7 +174,8 @@
       "loc": "On sacrifice",
       "url": "https://www.gutenberg.org/ebooks/75878",
       "bears": "A summary, not a quotation. Care of parents is more than maintenance.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Venerating a parent extends, in this book, to sacrifice, and the son is not described as finished when the parent is merely fed. Care of parents is more than maintenance."
     }
   ]
 }

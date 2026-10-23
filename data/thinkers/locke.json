@@ -42,7 +42,8 @@
       "loc": "Chapter II, \u00a74\u20136",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "claim": "The state of nature has a law of nature to govern it. No one ought to harm another in his life, health, liberty, or possessions.",
-      "bears": "Political power is not the invention of morality. It is already under a moral limit."
+      "bears": "Political power is not the invention of morality. It is already under a moral limit.",
+      "modern": "The state of nature has a law of nature to govern it. No one ought to harm another in his life, health, liberty, or possessions. Political power is not the invention of morality."
     },
     {
       "domains": [
@@ -57,7 +58,8 @@
       "loc": "Chapter V, \u00a727",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "claim": "Every person has a property in his own person. The labor of his body, mixed with what he takes from the common, makes it his.",
-      "bears": "Ownership begins in labor, and it is bounded by what can be used without spoiling."
+      "bears": "Ownership begins in labor, and it is bounded by what can be used without spoiling.",
+      "modern": "Every person has a property in his own person. The labor of his body, mixed with what he takes from the common, makes it his. Ownership begins in labor, and it is bounded by what can be used without spoiling."
     },
     {
       "domains": [
@@ -74,7 +76,8 @@
       "loc": "Chapters VIII\u2013IX",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "claim": "Political society begins by consent. Men give up the executive power they had under the law of nature so that a known authority may settle disputes.",
-      "bears": "Government is a trust for the preservation of rights, not a blank commission."
+      "bears": "Government is a trust for the preservation of rights, not a blank commission.",
+      "modern": "Political society begins by consent. Men give up the executive power they had under the law of nature so that a known authority may settle disputes. Government is a trust for the preservation of rights, not a blank commission."
     },
     {
       "domains": [
@@ -90,7 +93,8 @@
       "loc": "Chapter XIX, \u00a7221\u2013222",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "claim": "When the legislative or the prince acts contrary to the trust, the government is dissolved, and power returns to the society that gave it.",
-      "bears": "A law that breaks the trust does not become lawful by being passed."
+      "bears": "A law that breaks the trust does not become lawful by being passed.",
+      "modern": "When the legislative or the prince acts contrary to the trust, the government is dissolved, and power returns to the society that gave it. A law that breaks the trust does not become lawful by being passed."
     },
     {
       "topics": [
@@ -109,7 +113,8 @@
       "loc": "Chapter II, Of the state of nature, section 6",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "bears": "A person is bound to preserve himself and, where his own life is not at stake, the rest of mankind.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Every one, as he is bound to preserve himself, and not to quit his station wilfully, so by the like reason, when his own preservation comes not in competition, ought he, as much as he can, to preserve the rest of mankind, and may not, unless it be to do justice on an offender, take away, or impair the life, or what tends to the preservation of the life, the liberty, health, limb, or goods of another. A person is bound to preserve himself and, where his own life is not at stake, the rest of mankind."
     },
     {
       "topics": [
@@ -126,7 +131,8 @@
       "loc": "Chapter V, Of property",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "bears": "Labour is the beginning of a person's property.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The labour of his body, and the work of his hands, we may say, are properly his. Labour is the beginning of a person's property."
     },
     {
       "topics": [
@@ -147,7 +153,8 @@
       "loc": "Chapter VIII, Of the beginning of political societies",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "bears": "Political power over a free person requires that person's consent.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "MEN being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent. Political power over a free person requires that person's consent."
     },
     {
       "topics": [
@@ -166,7 +173,8 @@
       "loc": "Chapter XIX, Of the dissolution of government",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "bears": "A legislature that takes absolute power over lives, liberties, and estates forfeits its trust.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Whensoever therefore the legislative shall transgress this fundamental rule of society; and either by ambition, fear, folly or corruption, endeavour to grasp themselves, or put into the hands of any other, an absolute power over the lives, liberties, and estates of the people; by this breach of trust they forfeit the power the people had put into their hands for quite contrary ends, and it devolves to the people, who have a right to resume their original liberty, and, by the establishment of a new legislative, (such as they shall think fit) provide for their own safety and security, which is the end for which they are in society. A legislature that takes absolute power over lives, liberties, and estates forfeits its trust."
     },
     {
       "topics": [
@@ -183,7 +191,8 @@
       "loc": "Opening",
       "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
       "bears": "Toleration, not force, is the mark he looks for in a church.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "I esteem that toleration to be the chief characteristic mark of the true Church. Toleration, not force, is the mark he looks for in a church."
     },
     {
       "topics": [
@@ -202,7 +211,8 @@
       "loc": "The magistrate and the care of souls",
       "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
       "bears": "The state is not given the cure of souls.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "First, because the care of souls is not committed to the civil magistrate, any more than to other men. The state is not given the cure of souls."
     },
     {
       "topics": [
@@ -221,7 +231,8 @@
       "loc": "Force and inward persuasion",
       "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
       "bears": "Punishment can reach the body. It cannot make a belief.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "In the second place, the care of souls cannot belong to the civil magistrate, because his power consists only in outward force; but true and saving religion consists in the inward persuasion of the mind, without which nothing can be acceptable to God. Punishment can reach the body. It cannot make a belief."
     },
     {
       "topics": [
@@ -240,7 +251,8 @@
       "loc": "Chapter XVI, Of conquest",
       "url": "https://www.gutenberg.org/ebooks/7370",
       "bears": "Victory is not consent, and it does not found a government.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "But conquest is as far from setting up any government, as demolishing an house is from building a new one in the place. Victory is not consent, and it does not found a government."
     }
   ],
   "tableId": "letters",

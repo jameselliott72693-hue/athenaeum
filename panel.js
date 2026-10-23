@@ -37,6 +37,7 @@
     };
     if (entry.fromText) snap.fromText = true;
     if (entry.passageId) snap.passageId = entry.passageId;
+    if (entry.modern) snap.modern = String(entry.modern);
     return snap;
   }
 

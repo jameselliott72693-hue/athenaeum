@@ -42,7 +42,8 @@
       "loc": "REMARK II., paragraph 24",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "Punishment is called a physical evil that moral legislation ought to connect with moral evil.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Punishment, then, is a physical evil, which, though it be not connected with moral evil as a natural consequence, ought to be connected with it as a consequence by the principles of a moral legislation. Punishment is called a physical evil that moral legislation ought to connect with moral evil."
     },
     {
       "topics": [
@@ -57,7 +58,8 @@
       "loc": "CHAPTER III. Of the Motives of Pure Practical Reason., paragraph 122",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "The upright man in distress is sustained, Kant says, by having kept humanity's dignity in his own person.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "When an upright man is in the greatest distress, which he might have avoided if he could only have disregarded duty, is he not sustained by the consciousness that he has maintained humanity in its proper dignity in his own person and honoured it, that he has no reason to be ashamed of himself in his own sight, or to dread the inward glance of self-examination? The upright man in distress is sustained, Kant says, by having kept humanity's dignity in his own person."
     },
     {
       "topics": [
@@ -72,7 +74,8 @@
       "loc": "CHAPTER II. Of the Concept of an Object of Pure Practical Reason., paragraph 48",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "Heteronomy of practical reason is said never to yield a moral law of universal commands.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It shows itself, nevertheless, in their systems, as it always produces heteronomy of practical reason; and from this can never be derived a moral law giving universal commands. Heteronomy of practical reason is said never to yield a moral law of universal commands."
     },
     {
       "topics": [
@@ -89,7 +92,8 @@
       "loc": "SECOND PART., paragraph 12",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "Kant notes how readily company argues the moral worth of an action in order to read a character.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Now of all argument there is none in which persons are more ready to join who find any other subtle discussion tedious, none that brings more liveliness into the company, than that which concerns the moral worth of this or that action by which the character of some person is to be made out. Kant notes how readily company argues the moral worth of an action in order to read a character."
     },
     {
       "topics": [
@@ -104,7 +108,8 @@
       "loc": "CHAPTER III. Of the Motives of Pure Practical Reason., paragraph 57",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "The moral law's first effect on feeling is described as humiliation, where worth depended on inclination.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Since it is so far only a negative effect which, arising from the influence of pure practical reason, checks the activity of the subject, so far as it is determined by inclinations, and hence checks the opinion of his personal worth (which, in the absence of agreement with the moral law, is reduced to nothing); hence, the effect of this law on feeling is merely humiliation. The moral law's first effect on feeling is described as humiliation, where worth depended on inclination."
     },
     {
       "topics": [
@@ -121,7 +126,8 @@
       "loc": "Of the principles of pure practical reason",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "A summary, not a quotation. The tie is a moral one.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Punishment is described as a physical evil that ought to be tied to moral evil by moral legislation, not as a mere natural consequence. The tie is a moral one."
     },
     {
       "topics": [
@@ -136,7 +142,8 @@
       "loc": "The incentives of pure practical reason",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "A summary, not a quotation. Duty is not cashed out as advantage.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "An upright person who could have escaped distress only by ignoring duty is said to be sustained by having kept the dignity of humanity in his own person. Duty is not cashed out as advantage."
     },
     {
       "topics": [
@@ -151,7 +158,8 @@
       "loc": "The analytic of pure practical reason",
       "url": "https://www.gutenberg.org/ebooks/5683",
       "bears": "A summary, not a quotation. A private maxim is not yet a law.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A practical reason ruled by inclination is said to yield heteronomy, and from that no moral law of universal commands can be drawn. A private maxim is not yet a law."
     }
   ]
 }

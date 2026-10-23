@@ -42,7 +42,8 @@
       "loc": "A, B, C, OR ALPHABET., paragraph 7",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "This article guesses that society began in traffic that served people's wants.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It was most probably by mutual traffic which administered to their wants, that society was first established among men; and it is necessary that those between whom commerce is carried on should understand one another. This article guesses that society began in traffic that served people's wants."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "ANTI-LUCRETIUS., paragraph 13",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "The true Epicurean is described as mild and just, and as someone who does not hire executioners for opinions.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "A true Epicurean was mild, moderate, just, amiable, a man of whom no society had to complain, one who did not pay executioners to assassinate in public those who thought differently from himself. The true Epicurean is described as mild and just, and as someone who does not hire executioners for opinions."
     },
     {
       "topics": [
@@ -76,7 +78,8 @@
       "loc": "ALLEGORIES., paragraph 16",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "A speaker in the article compares administrators of justice to a cat set to guard a cheese.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The worthy administrators of justice, said he, are like a cat set to take care of a cheese, lest it should be gnawed by the mice. A speaker in the article compares administrators of justice to a cat set to guard a cheese."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "ANECDOTES., paragraph 55",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "One fanatic, he says, is enough for a parricide, with no accomplice required.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It is but too true that one fanatic is sufficient for the commission of a parricide, without any accomplice. One fanatic, he says, is enough for a parricide, with no accomplice required."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "ANECDOTES., paragraph 61",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "Fanaticism is said to make a populace capable of anything.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "In short, he knows little of the human mind who does not know that fanaticism renders the populace capable of anything. Fanaticism is said to make a populace capable of anything."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "A, B, C, or the Alphabet",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "A summary, not a quotation. Society is tied to mutual traffic, not to a single doctrine.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The alphabet article guesses that society began when people traded to meet their wants and so had to understand one another. Society is tied to mutual traffic, not to a single doctrine."
     },
     {
       "topics": [
@@ -148,7 +154,8 @@
       "loc": "Anti-Lucretius",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "A summary, not a quotation. The moral praise is for mildness and for refusing public killing over opinions.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A true Epicurean is described as mild, moderate, and just, and as a man who does not pay executioners to kill people for a different opinion. The moral praise is for mildness and for refusing public killing over opinions."
     },
     {
       "topics": [
@@ -167,7 +174,8 @@
       "loc": "Anecdotes",
       "url": "https://www.gutenberg.org/ebooks/35621",
       "bears": "A summary, not a quotation. The dictionary treats fanaticism as a public danger, not as a private taste.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The anecdotes say that one fanatic is enough to commit a parricide, and that fanaticism makes a populace capable of anything. The dictionary treats fanaticism as a public danger, not as a private taste."
     }
   ]
 }

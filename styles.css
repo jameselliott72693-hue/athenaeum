@@ -268,6 +268,17 @@ html[data-theme="dark"] .lean.against { background: #3a2623; color: #f0cfc9; }
 }
 .note-flag { display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
 .passage { font-family: var(--serif); font-size: 18px; line-height: 1.45; }
+.header-tools .check { margin: 0; min-height: 44px; align-items: center; }
+.modern-toggle { margin: 0 0 8px; }
+.modern-read {
+  font-family: var(--sans);
+  background: var(--wash);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+}
+.modern-read p { font-family: var(--sans); font-size: 16px; line-height: 1.45; margin: 0; }
+.modern-read[hidden] { display: none; }
 .reply-to { color: var(--brass); font-size: 14px; margin: 8px 0; }
 .moderator-ask { font-family: var(--serif); font-size: 22px; margin: 0 0 12px; }
 .remark.moderator, .remark.notice { background: var(--wash); }
@@ -318,7 +329,7 @@ footer { color: var(--soft); font-size: 14px; }
   .lede { max-width: none; }
   input, textarea, select { font-size: 16px; }
   .remark, .close-panel { padding: 14px 12px; }
-  .remark p { max-width: none; }
+  .remark p, .modern-read, .modern-read p { max-width: none; }
   .passage { font-size: 17px; }
   .moderator-ask { font-size: 20px; }
   .dossier-head { align-items: flex-start; }

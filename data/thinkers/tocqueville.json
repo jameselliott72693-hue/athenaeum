@@ -42,7 +42,8 @@
       "loc": "Volume 1, part 2, chapter 9",
       "url": "https://www.gutenberg.org/ebooks/815",
       "claim": "Mores are more important than laws to the maintenance of a democratic republic. Laws are more important than physical circumstances.",
-      "bears": "A free society stands on habits of the heart, not only on a paper arrangement."
+      "bears": "A free society stands on habits of the heart, not only on a paper arrangement.",
+      "modern": "Mores are more important than laws to the maintenance of a democratic republic. Laws are more important than physical circumstances. A free society stands on habits of the heart, not only on a paper arrangement."
     },
     {
       "domains": [
@@ -59,7 +60,8 @@
       "loc": "Volume 1, part 2, chapter 9",
       "url": "https://www.gutenberg.org/ebooks/815",
       "claim": "Religion in the United States does not take a direct part in government, and it is the first of political institutions, because it directs mores and regulates the domestic life.",
-      "bears": "He treats a shared moral discipline as politically decisive even when it is not a law."
+      "bears": "He treats a shared moral discipline as politically decisive even when it is not a law.",
+      "modern": "Religion in the United States does not take a direct part in government, and it is the first of political institutions, because it directs mores and regulates the domestic life. He treats a shared moral discipline as politically decisive even when it is not a law."
     },
     {
       "domains": [
@@ -76,7 +78,8 @@
       "loc": "Volume 1, part 2, chapter 7",
       "url": "https://www.gutenberg.org/ebooks/815",
       "claim": "The tyranny of the majority is a moral tyranny as well as a political one. It leaves the body alone and goes straight to the soul.",
-      "bears": "A majority that dictates opinion has not thereby become a moral authority."
+      "bears": "A majority that dictates opinion has not thereby become a moral authority.",
+      "modern": "The tyranny of the majority is a moral tyranny as well as a political one. It leaves the body alone and goes straight to the soul. A majority that dictates opinion has not thereby become a moral authority."
     },
     {
       "domains": [
@@ -92,7 +95,8 @@
       "loc": "Volume 2, part 2, chapter 2",
       "url": "https://www.gutenberg.org/ebooks/816",
       "claim": "Individualism disposes each member of the community to sever himself from the mass, and to draw apart with his family and friends.",
-      "bears": "A democracy can lose the common life without anyone passing a law against it."
+      "bears": "A democracy can lose the common life without anyone passing a law against it.",
+      "modern": "Individualism disposes each member of the community to sever himself from the mass, and to draw apart with his family and friends. A democracy can lose the common life without anyone passing a law against it."
     },
     {
       "topics": [
@@ -111,7 +115,8 @@
       "loc": "Volume 1, on association and the majority",
       "url": "https://www.gutenberg.org/ebooks/815",
       "bears": "Henry Reeve's translation. Association is a check on a majority that holds the administration.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "At the present time the liberty of association is become a necessary guarantee against the tyranny of the majority. Henry Reeve's translation. Association is a check on a majority that holds the administration."
     },
     {
       "topics": [
@@ -128,7 +133,8 @@
       "loc": "Volume 1, on the omnipotence of the majority",
       "url": "https://www.gutenberg.org/ebooks/815",
       "bears": "Henry Reeve's translation. An unchecked majority is the danger he is willing to meet with a risky remedy.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The omnipotence of the majority appears to me to present such extreme perils to the American Republics that the dangerous measure which is used to repress it seems to be more advantageous than prejudicial. Henry Reeve's translation. An unchecked majority is the danger he is willing to meet with a risky remedy."
     },
     {
       "topics": [
@@ -147,7 +153,8 @@
       "loc": "Volume 1, on mores",
       "url": "https://www.gutenberg.org/ebooks/815",
       "bears": "Henry Reeve's translation. He uses mores for the moral and intellectual condition that keeps a republic.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "I comprise, therefore, under this term the whole moral and intellectual condition of a people. Henry Reeve's translation. He uses mores for the moral and intellectual condition that keeps a republic."
     },
     {
       "topics": [
@@ -164,7 +171,8 @@
       "loc": "Volume 2, chapter 2, Of individualism in democratic countries",
       "url": "https://www.gutenberg.org/ebooks/816",
       "bears": "Henry Reeve's translation. Individualism, as he defines it, is newer than plain selfishness.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Our fathers were only acquainted with egotism. Henry Reeve's translation. Individualism, as he defines it, is newer than plain selfishness."
     },
     {
       "topics": [
@@ -183,7 +191,8 @@
       "loc": "Volume 2, on the immense tutelary power",
       "url": "https://www.gutenberg.org/ebooks/816",
       "bears": "Henry Reeve's translation. A mild, minute power can keep citizens in a kind of permanent childhood.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Above this race of men stands an immense and tutelary power, which takes upon itself alone to secure their gratifications, and to watch over their fate. Henry Reeve's translation. A mild, minute power can keep citizens in a kind of permanent childhood."
     },
     {
       "topics": [
@@ -202,7 +211,8 @@
       "loc": "On liberty, morality, and faith",
       "url": "https://www.gutenberg.org/ebooks/815",
       "bears": "He will not separate a free society from the faith that, on his account, supports its morals.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "They must know that liberty cannot be established without morality, nor morality without faith. He will not separate a free society from the faith that, on his account, supports its morals."
     },
     {
       "topics": [
@@ -221,7 +231,8 @@
       "loc": "Author's preface, or the opening on equality of conditions",
       "url": "https://www.gutenberg.org/ebooks/816",
       "bears": "Equality of conditions is the cause he has chosen to follow through opinions and feelings.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "My only object is to show in what respects the principle of equality has modified both the former and the latter. Equality of conditions is the cause he has chosen to follow through opinions and feelings."
     }
   ],
   "tableId": "letters",

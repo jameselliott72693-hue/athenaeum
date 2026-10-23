@@ -42,7 +42,8 @@
       "loc": "Book I, paragraph 1",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "Mencius refuses to open with profit and offers benevolence and righteousness instead.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "What I am likewise provided with are counsels to benevolence and righteousness; and these are my only topics. Mencius refuses to open with profit and offers benevolence and righteousness instead."
     },
     {
       "topics": [
@@ -59,7 +60,8 @@
       "loc": "Book I, paragraph 3",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "Training in benevolence is said to reach parents, and training in righteousness to reach the ruler.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "There never was a man trained to benevolence who neglected his parents. Training in benevolence is said to reach parents, and training in righteousness to reach the ruler."
     },
     {
       "topics": [
@@ -78,7 +80,8 @@
       "loc": "Book I, paragraph 28",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "Love and protection of the people are the virtue Mencius ties to royal sway.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Mencius said, If he loves and protects the people, it is impossible to prevent him from attaining it. Love and protection of the people are the virtue Mencius ties to royal sway."
     },
     {
       "topics": [
@@ -93,7 +96,8 @@
       "loc": "Book I, paragraph 33",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "The superior man, having seen the animals alive, keeps away from the kitchen.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "So is the superior man affected towards animals, that, having seen them alive, he cannot bear to see them die, and, having heard their dying cries, he cannot bear to eat their flesh. The superior man, having seen the animals alive, keeps away from the kitchen."
     },
     {
       "topics": [
@@ -110,7 +114,8 @@
       "loc": "Book I, paragraph 7",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "The old kings are praised for sharing pleasure with the people who built for them.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The ancients caused their people to have pleasure as well as themselves, and therefore they could enjoy it. The old kings are praised for sharing pleasure with the people who built for them."
     },
     {
       "topics": [
@@ -127,7 +132,8 @@
       "loc": "Book I, King Hui of Liang",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "A summary, not a quotation. Profit is the wrong opening word.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The first interview turns the king from profit toward benevolence and righteousness, and says a man trained in those will not neglect parents or ruler. Profit is the wrong opening word."
     },
     {
       "topics": [
@@ -144,7 +150,8 @@
       "loc": "Book I",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "A summary, not a quotation. The people's protection is the virtue that spreads.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Royal sway, in these chapters, follows loving and protecting the people, and sharing pleasure with them rather than keeping towers and ponds for oneself. The people's protection is the virtue that spreads."
     },
     {
       "topics": [
@@ -159,7 +166,8 @@
       "loc": "Book I",
       "url": "https://www.gutenberg.org/ebooks/10056",
       "bears": "A summary, not a quotation. Pity for the animal is acknowledged, and it is not the whole of ruling.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The story of the bull and the sheep is used to show a king who cannot bear to see an animal die, and a superior man who therefore stays away from the kitchen. Pity for the animal is acknowledged, and it is not the whole of ruling."
     }
   ]
 }

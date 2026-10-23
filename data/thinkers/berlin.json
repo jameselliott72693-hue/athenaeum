@@ -42,7 +42,8 @@
       "loc": "Two Concepts of Liberty, on negative freedom",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. Freedom here is measured by the absence of coercion.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Negative liberty, in the essay, is the area in which a person is not interfered with by others. The political question is how wide that area is. Freedom here is measured by the absence of coercion."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "Two Concepts of Liberty, on positive freedom",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. A doctrine of self-mastery can become a doctrine of coercion.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Positive liberty begins as the wish to be one's own master. Berlin argues that a government can twist that wish into a claim to force people toward their supposed real freedom. A doctrine of self-mastery can become a doctrine of coercion."
     },
     {
       "topics": [
@@ -78,7 +80,8 @@
       "loc": "On value pluralism, in and around the essay",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. A shared moral life still contains real collisions.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that genuine human goods can conflict, so a politics that promises one final harmony is promising something the world does not offer. A shared moral life still contains real collisions."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "On recognition and belonging",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. Home matters, and so does the person who will not fit it.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Belonging to a nation or a culture is, he grants, a real human need, but he refuses to let that need swallow the freedom of the person who dissents. Home matters, and so does the person who will not fit it."
     },
     {
       "topics": [
@@ -112,7 +116,8 @@
       "loc": "Two Concepts of Liberty, on the abuse of the higher self",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. Paternal knowledge is not a title to coerce.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He is hostile to the claim that a statesman or a party knows a person's true end better than the person does, and may therefore override him. Paternal knowledge is not a title to coerce."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "On conflicting goods",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. He will not let a theory dissolve the quarrel by a definition.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Two Concepts of Liberty and the essays around it argue that liberty and equality are both real goods and that they conflict, so a politics that defines one as the true form of the other is hiding a loss. He will not let a theory dissolve the quarrel by a definition."
     },
     {
       "topics": [
@@ -150,7 +156,8 @@
       "loc": "Two Concepts of Liberty, on self-mastery and the collective",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. A democratic procedure does not, for him, guarantee negative liberty.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that democracy can itself become a form of coercion when a people, or those who speak for it, claim that the only free act is the act that obeys the collective will. A democratic procedure does not, for him, guarantee negative liberty."
     },
     {
       "topics": [
@@ -169,7 +176,8 @@
       "loc": "On value pluralism",
       "url": "https://archive.org/details/libertyincorpora0000berl",
       "bears": "A summary, not a quotation. Faith is one of the human ends he thinks a single moral system will mutilate if it tries to absorb it.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "His pluralism includes religious and cultural ways of life among the ends that can be pursued seriously and that cannot all be ranked on one scale. Faith is one of the human ends he thinks a single moral system will mutilate if it tries to absorb it."
     }
   ]
 }

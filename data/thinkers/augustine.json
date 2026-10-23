@@ -41,7 +41,8 @@
       "loc": "XIV.28",
       "url": "https://www.gutenberg.org/ebooks/45305",
       "claim": "Two cities have been formed by two loves: the earthly by the love of self, even to the contempt of God; the heavenly by the love of God, even to the contempt of self.",
-      "bears": "A common life is already a moral fact. It is gathered by what the people love."
+      "bears": "A common life is already a moral fact. It is gathered by what the people love.",
+      "modern": "Two cities have been formed by two loves: the earthly by the love of self, even to the contempt of God; the heavenly by the love of God, even to the contempt of self. A common life is already a moral fact. It is gathered by what the people love."
     },
     {
       "domains": [
@@ -57,7 +58,8 @@
       "loc": "XIX.13",
       "url": "https://www.gutenberg.org/ebooks/45305",
       "claim": "Peace is the tranquillity of order. The peace of a city is the ordered agreement of citizens.",
-      "bears": "Order is not mere quiet. It is a right arrangement."
+      "bears": "Order is not mere quiet. It is a right arrangement.",
+      "modern": "Peace is the tranquillity of order. The peace of a city is the ordered agreement of citizens. Order is not mere quiet."
     },
     {
       "domains": [
@@ -72,7 +74,8 @@
       "loc": "XIX.17",
       "url": "https://www.gutenberg.org/ebooks/45305",
       "claim": "The earthly city desires earthly peace for the sake of enjoying earthly goods, and it makes war in order to attain that peace.",
-      "bears": "Even a worldly peace is an agreement about goods, not the absence of a moral question."
+      "bears": "Even a worldly peace is an agreement about goods, not the absence of a moral question.",
+      "modern": "The earthly city desires earthly peace for the sake of enjoying earthly goods, and it makes war in order to attain that peace. Even a worldly peace is an agreement about goods, not the absence of a moral question."
     },
     {
       "domains": [
@@ -88,7 +91,8 @@
       "loc": "XIX.24",
       "url": "https://www.gutenberg.org/ebooks/45305",
       "claim": "A people is a multitude of reasonable beings bound together by a common agreement as to the objects of their love. To know a people, observe what it loves.",
-      "bears": "Where there is no shared love, there is not yet a people, only a crowd."
+      "bears": "Where there is no shared love, there is not yet a people, only a crowd.",
+      "modern": "A people is a multitude of reasonable beings bound together by a common agreement as to the objects of their love. To know a people, observe what it loves. Where there is no shared love, there is not yet a people, only a crowd."
     },
     {
       "topics": [
@@ -107,7 +111,8 @@
       "loc": "Book I",
       "url": "https://www.gutenberg.org/ebooks/3296",
       "bears": "A shared restlessness, in this opening, is already aimed at God.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "You madest us for Thyself, and our heart is restless, until it repose in You. A shared restlessness, in this opening, is already aimed at God."
     },
     {
       "topics": [
@@ -126,7 +131,8 @@
       "loc": "On the love of created things",
       "url": "https://www.gutenberg.org/ebooks/3296",
       "bears": "What is beautiful is not refused. The love is sent on to the maker.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "If bodies please you, praise God on occasion of them, and turn back your love upon their Maker; lest in these things which please you, you displease. What is beautiful is not refused. The love is sent on to the maker."
     },
     {
       "topics": [
@@ -145,7 +151,8 @@
       "loc": "On evil and the soul",
       "url": "https://www.gutenberg.org/ebooks/3296",
       "bears": "He refuses both a substance called evil and a soul that would be the highest good.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "For I had not known or learned that neither was evil a substance, nor our soul that chief and unchangeable good. He refuses both a substance called evil and a soul that would be the highest good."
     }
   ],
   "tableId": "letters",

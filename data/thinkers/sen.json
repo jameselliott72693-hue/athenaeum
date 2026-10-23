@@ -53,7 +53,8 @@
       "loc": "The argument of the book",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. Income is a means. The subject is capability.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Development as Freedom treats development as the expansion of the freedoms people actually have, to live, to read, to take part, to buy and sell, and not as income alone. Income is a means. The subject is capability."
     },
     {
       "topics": [
@@ -74,7 +75,8 @@
       "loc": "On famines and democracy",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. Democracy is a protection against a particular disaster, not only a procedure.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues from the historical record that famines do not occur in functioning democracies with a free press, because the people who would starve have a way to punish the government. Democracy is a protection against a particular disaster, not only a procedure."
     },
     {
       "topics": [
@@ -91,7 +93,8 @@
       "loc": "The approach of the book",
       "url": "https://archive.org/details/ideaofjustice0000sena",
       "bears": "A summary, not a quotation. A moral compass, here, is comparative.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The Idea of Justice compares actual injustices and asks what would reduce them, rather than beginning from one complete picture of a perfectly just society. A moral compass, here, is comparative."
     },
     {
       "topics": [
@@ -110,7 +113,8 @@
       "loc": "On participation and transparency",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. Voice is a capability, and a safeguard.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Education, public discussion, and a free press are, in his account, parts of freedom themselves, and also the way a society notices misery. Voice is a capability, and a safeguard."
     },
     {
       "topics": [
@@ -129,7 +133,8 @@
       "loc": "On capabilities",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. Two people with the same income may not have the same freedom.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The capability approach asks what each person is able to do and be, so that equality is not only equality of income or of formal rights. Two people with the same income may not have the same freedom."
     },
     {
       "topics": [
@@ -148,7 +153,8 @@
       "loc": "On capabilities and poverty",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. Welfare, on this account, is what a person can do and be.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Development as Freedom treats poverty as a deprivation of capabilities, of the real freedoms to live, to be healthy, and to appear in public without shame, and not only as a low income. Welfare, on this account, is what a person can do and be."
     },
     {
       "topics": [
@@ -167,7 +173,8 @@
       "loc": "On culture, tradition, and freedom",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. A tradition can be loved and still be unjust, on this argument.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that culture and tradition are real, and that they are not a reason to refuse criticism when a custom leaves some people, often women, with fewer freedoms than others. A tradition can be loved and still be unjust, on this argument."
     },
     {
       "topics": [
@@ -186,7 +193,8 @@
       "loc": "On democracy, public action, and deprivation",
       "url": "https://openlibrary.org/works/OL116534W",
       "bears": "A summary, not a quotation. The vote and the press are, for him, instruments of welfare as well as of liberty.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats public discussion and democratic pressure as part of how a society prevents famine and neglect, not as a luxury that waits until incomes rise. The vote and the press are, for him, instruments of welfare as well as of liberty."
     }
   ]
 }
