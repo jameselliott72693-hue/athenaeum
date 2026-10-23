@@ -37,6 +37,10 @@
         <label for="volume">Volume</label>
         <input id="volume" type="range" min="0" max="100" value="70" />
       </div>
+      <label class="check header-check" id="modern-wrap" title="Open a short paraphrase under each response. The book’s words stay beside it.">
+        <input id="modern-default" type="checkbox" />
+        <span>Show modern reads</span>
+      </label>
       <button type="button" id="theme" class="theme-btn" aria-pressed="false">Dark</button>
     </div>
   </header>
@@ -187,12 +191,13 @@
     </div>
   </dialog>
   <footer>
-    <p>A line in quotation marks is the book’s own words, and only from a text in the public domain. A line marked from the full text is a whole passage found in that book. Every other card is a summary, not a quotation. A brass note is the room’s framing, not a chair’s words. Copyrighted books are linked, not copied. A chair with nothing relevant on this shelf sits out, in view. Each chair’s chime is generated in the browser. You can pause, step, change speed, and ask a follow-up. Bookmarks, seatings, and full sittings stay in this browser until you export them.</p>
+    <p>A line in quotation marks is the book’s own words, and only from a text in the public domain. A line marked from the full text is a whole passage found in that book. Every other card is a summary, not a quotation. A Modern read is a paraphrase of that response, labeled as such, and it is not a quotation. A brass note is the room’s framing, not a chair’s words. Copyrighted books are linked, not copied. A chair with nothing relevant on this shelf sits out, in view. Each chair’s chime is generated in the browser. You can pause, step, change speed, and ask a follow-up. Bookmarks, seatings, and full sittings stay in this browser until you export them.</p>
   </footer>
   <script src="stem.js"></script>
   <script src="score.js"></script>
   <script src="books.js"></script>
   <script src="panel.js"></script>
+  <script src="modern.js"></script>
   <script src="compare.js"></script>
   <script src="lines.js"></script>
   <script src="paths.js"></script>

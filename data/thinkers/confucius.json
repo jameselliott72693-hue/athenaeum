@@ -42,7 +42,8 @@
       "loc": "BOOK I. HSIO R., paragraph 1",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "The Analects open on learning that is practiced, and on the person who is not thrown off when others take no notice.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The Master said, Is it not pleasant to learn with a constant perseverance and application? The Analects open on learning that is practiced, and on the person who is not thrown off when others take no notice."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "BOOK I. HSIO R., paragraph 5",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "Rule, in this saying, is attention, sincerity, thrift, and employing people in season.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The Master said, To rule a country of a thousand chariots, there must be reverent attention to business, and sincerity; economy in expenditure, and love for men; and the employment of the people at the proper seasons. Rule, in this saying, is attention, sincerity, thrift, and employing people in season."
     },
     {
       "topics": [
@@ -80,7 +82,8 @@
       "loc": "BOOK XII. YEN YUAN., paragraph 11",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "Food, arms, and the people's confidence are named together as what government requires.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The Master said, The requisites of government are that there be sufficiency of food, sufficiency of military equipment, and the confidence of the people in their ruler. Food, arms, and the people's confidence are named together as what government requires."
     },
     {
       "topics": [
@@ -97,7 +100,8 @@
       "loc": "BOOK XV. WEI LING KUNG., paragraph 20",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "A day of talk that never turns to righteousness is called a hard case.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The Master said, When a number of people are together, for a whole day, without their conversation turning on righteousness, and when they are fond of carrying out the suggestions of a small shrewdness, theirs is indeed a hard case. A day of talk that never turns to righteousness is called a hard case."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "BOOK XVI. KE SHE., paragraph 20",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "When the right principles hold, the great officers do not take the government into their own hands.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "When right principles prevail in the kingdom, government will not be in the hands of the Great officers. When the right principles hold, the great officers do not take the government into their own hands."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "Book I",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "A summary, not a quotation. Practice and company belong with learning.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Learning in the opening of the Analects is something practiced, shared with friends who come from far away, and finished in a person who is not upset when he goes unnoticed. Practice and company belong with learning."
     },
     {
       "topics": [
@@ -148,7 +154,8 @@
       "loc": "Book I and Book XII",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "A summary, not a quotation. Confidence is named with food and arms.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Government, in the sayings used here, depends on the people's confidence as well as on food and arms, and on employing them at the proper seasons. Confidence is named with food and arms."
     },
     {
       "topics": [
@@ -165,7 +172,8 @@
       "loc": "Book XV and Book XVI",
       "url": "https://www.gutenberg.org/ebooks/4094",
       "bears": "A summary, not a quotation. Righteousness is a public concern, not a private hobby.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A company whose talk never turns to righteousness is treated as a failure, and a kingdom where right principles prevail is one the great officers do not capture. Righteousness is a public concern, not a private hobby."
     }
   ]
 }

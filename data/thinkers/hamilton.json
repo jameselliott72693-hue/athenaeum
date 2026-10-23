@@ -42,7 +42,8 @@
       "loc": "FEDERALIST No. 1, paragraph 3",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "Federalist 1 asks whether societies can choose a constitution by reflection, or must take one from accident and force.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It has been frequently remarked that it seems to have been reserved to the people of this country, by their conduct and example, to decide the important question, whether societies of men are really capable or not of establishing good government from reflection and choice, or whether they are forever destined to depend for their political constitutions on accident and force. Federalist 1 asks whether societies can choose a constitution by reflection, or must take one from accident and force."
     },
     {
       "topics": [
@@ -59,7 +60,8 @@
       "loc": "FEDERALIST No. 27, paragraph 13",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A distant government, he says, can hardly interest the sensations of the people.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "A government continually at a distance and out of sight can hardly be expected to interest the sensations of the people. A distant government, he says, can hardly interest the sensations of the people."
     },
     {
       "topics": [
@@ -76,7 +78,8 @@
       "loc": "FEDERALIST No. 72, paragraph 20",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "He asks whether former presidents wandering among the people would help the peace of the community.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Would it promote the peace of the community, or the stability of the government to have half a dozen men who had had credit enough to be raised to the seat of the supreme magistracy, wandering among the people like discontented ghosts, and sighing for a place which they were destined never more to possess? He asks whether former presidents wandering among the people would help the peace of the community."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "FEDERALIST No. 78, paragraph 22",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "He denies that the Constitution lets representatives replace the will of their constituents with their own.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It is not otherwise to be supposed, that the Constitution could intend to enable the representatives of the people to substitute their will to that of their constituents. He denies that the Constitution lets representatives replace the will of their constituents with their own."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "FEDERALIST No. 15, paragraph 46",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "Sentences for violated duty, he says, can be carried out only by the sword.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Sentences may be denounced against them for violations of their duty; but these sentences can only be carried into execution by the sword. Sentences for violated duty, he says, can be carried out only by the sword."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "Federalist No. 1",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A summary, not a quotation. The choice of a constitution is the question.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Federalist 1 asks whether this society can establish good government by reflection and choice rather than by accident and force. The choice of a constitution is the question."
     },
     {
       "topics": [
@@ -148,7 +154,8 @@
       "loc": "On distance and on the executive",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A summary, not a quotation. The people's sensations are part of the argument.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A government always distant is said to have trouble interesting the people, and former chief magistrates wandering among them are asked whether they would help the peace. The people's sensations are part of the argument."
     },
     {
       "topics": [
@@ -165,7 +172,8 @@
       "loc": "On representation and on sanctions",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A summary, not a quotation. A paper duty without a means of execution is not yet a government.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Representatives are not, he says, authorized to substitute their will for their constituents, and a sentence for violated duty still needs the sword to be carried out. A paper duty without a means of execution is not yet a government."
     }
   ]
 }

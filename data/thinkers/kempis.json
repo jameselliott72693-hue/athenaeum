@@ -44,7 +44,8 @@
       "loc": "Book I, Of the imitation of Christ",
       "url": "https://www.gutenberg.org/ebooks/1653",
       "bears": "A moral life is weighed by conduct, not by the shelf one can recite.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Of a surety, at the Day of Judgment it will be demanded of us, not what we have read, but what we have done; not how well we have spoken, but how holily we have lived. A moral life is weighed by conduct, not by the shelf one can recite."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "Book I, Of the knowledge of truth",
       "url": "https://www.gutenberg.org/ebooks/1653",
       "bears": "The compass he names is the love and service of God.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Vanity of vanities, all is vanity, save to love God, and Him only to serve. The compass he names is the love and service of God."
     },
     {
       "topics": [
@@ -80,7 +82,8 @@
       "loc": "On zeal",
       "url": "https://www.gutenberg.org/ebooks/1653",
       "bears": "Care for a neighbour starts, on this page, with care for one's own life.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Therefore be zealous first over thyself, and then mayest you righteously be zealous concerning your neighbour. Care for a neighbour starts, on this page, with care for one's own life."
     },
     {
       "topics": [
@@ -99,7 +102,8 @@
       "loc": "On zeal and peace",
       "url": "https://www.gutenberg.org/ebooks/1653",
       "bears": "Peace is tied to zeal for virtue, not to being left alone.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "If you beginnest to grow cold, it shall begin to go ill with you, but if you givest thyself to zeal you shalt find much peace, and shalt find your labour the lighter because of the grace of God and the love of virtue. Peace is tied to zeal for virtue, not to being left alone."
     },
     {
       "topics": [
@@ -116,7 +120,8 @@
       "loc": "On grace",
       "url": "https://www.gutenberg.org/ebooks/1653",
       "bears": "The union he describes is not a feat of unaided effort.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "And in truth, unless you be prevented and drawn on by His grace, you wilt not attain to this, that having cast out and dismissed all else, you alone art united to God. The union he describes is not a feat of unaided effort."
     },
     {
       "topics": [
@@ -133,7 +138,8 @@
       "loc": "On self-conquest",
       "url": "https://www.gutenberg.org/ebooks/1653",
       "bears": "The hardest contrary thing is, for him, the place where a moral life actually grows.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Nevertheless they advance above all others in virtue who strive manfully to conquer those things which are most grievous and contrary to them, for there a man profiteth most and meriteth greater grace where he most overcometh himself and mortifieth himself in spirit. The hardest contrary thing is, for him, the place where a moral life actually grows."
     }
   ]
 }

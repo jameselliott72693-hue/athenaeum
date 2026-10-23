@@ -40,7 +40,8 @@
       "loc": "Chapter I. The Twin-Verses, paragraph 1",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "The opening verse ties pain to an evil thought and happiness, in the next verse, to a pure one.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of the ox that draws the carriage. The opening verse ties pain to an evil thought and happiness, in the next verse, to a pure one."
     },
     {
       "topics": [
@@ -55,7 +56,8 @@
       "loc": "Chapter IV. Flowers, paragraph 12",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "Among the perfumes named, the perfume of virtue is set above them.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Sandal-wood or Tagara, a lotus-flower, or a Vassiki, among these sorts of perfumes, the perfume of virtue is unsurpassed. Among the perfumes named, the perfume of virtue is set above them."
     },
     {
       "topics": [
@@ -72,7 +74,8 @@
       "loc": "Chapter VI. The Wise Man (Pandita), paragraph 3",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "The verse tells the hearer to keep virtuous people for friends.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Do not have evil-doers for friends, do not have low people for friends: have virtuous people for friends, have for friends the best of men. The verse tells the hearer to keep virtuous people for friends."
     },
     {
       "topics": [
@@ -87,7 +90,8 @@
       "loc": "Chapter XIII. The World, paragraph 3",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "Virtue is the law to follow, and the virtuous person is said to rest in bliss.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Follow the law of virtue; do not follow that of sin. Virtue is the law to follow, and the virtuous person is said to rest in bliss."
     },
     {
       "topics": [
@@ -104,7 +108,8 @@
       "loc": "Chapter XXI. Miscellaneous, paragraph 15",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "Good people are compared to snowy mountains seen from far off.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Good people shine from afar, like the snowy mountains; bad people are not seen, like arrows shot by night. Good people are compared to snowy mountains seen from far off."
     },
     {
       "topics": [
@@ -119,7 +124,8 @@
       "loc": "Chapter I",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "A summary, not a quotation. The thought is the start of the consequence.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The twin verses make pain follow an evil thought and, in the next verse, happiness follow a pure one, as the wheel follows the ox. The thought is the start of the consequence."
     },
     {
       "topics": [
@@ -136,7 +142,8 @@
       "loc": "Chapters on flowers and the wise",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "A summary, not a quotation. Company is part of the practice.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Virtue is called a perfume above sandal and flower, and the hearer is told to take virtuous people, not evil-doers, for friends. Company is part of the practice."
     },
     {
       "topics": [
@@ -151,7 +158,8 @@
       "loc": "Chapters on the world and the path",
       "url": "https://www.gutenberg.org/ebooks/2017",
       "bears": "A summary, not a quotation. The law is something a person follows, not a mood.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Later verses say to follow the law of virtue rather than sin, and that good people are seen from far away. The law is something a person follows, not a mood."
     }
   ]
 }

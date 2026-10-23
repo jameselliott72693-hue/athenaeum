@@ -42,7 +42,8 @@
       "loc": "FEDERALIST No. 10, paragraph 17",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "Federalist 10 traces parties to unequal faculties and to the different property those faculties acquire.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "From the protection of different and unequal faculties of acquiring property, the possession of different degrees and kinds of property immediately results; and from the influence of these on the sentiments and views of the respective proprietors, ensues a division of the society into different interests and parties. Federalist 10 traces parties to unequal faculties and to the different property those faculties acquire."
     },
     {
       "topics": [
@@ -59,7 +60,8 @@
       "loc": "FEDERALIST No. 39, paragraph 17",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "The House is said to be elected immediately by the great body of the people.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The House of Representatives, like that of one branch at least of all the State legislatures, is elected immediately by the great body of the people. The House is said to be elected immediately by the great body of the people."
     },
     {
       "topics": [
@@ -76,7 +78,8 @@
       "loc": "FEDERALIST No. 46, paragraph 4",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "Federal and state governments are called different agents and trustees of the people.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The federal and State governments are in fact but different agents and trustees of the people, constituted with different powers, and designed for different purposes. Federal and state governments are called different agents and trustees of the people."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "FEDERALIST No. 57, paragraph 7",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "Wealth, birth, religious faith, and civil profession are not to fetter the people's choice.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "No qualification of wealth, of birth, of religious faith, or of civil profession is permitted to fetter the judgement or disappoint the inclination of the people. Wealth, birth, religious faith, and civil profession are not to fetter the people's choice."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "FEDERALIST No. 62, paragraph 17",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "No law, he says, can pass without a majority of the people and then a majority of the states.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "No law or resolution can now be passed without the concurrence, first, of a majority of the people, and then, of a majority of the States. No law, he says, can pass without a majority of the people and then a majority of the states."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "Federalist No. 10",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A summary, not a quotation. A society of one interest is not the society he is describing.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Federalist 10 derives parties from different and unequal faculties of acquiring property, and from the interests that follow. A society of one interest is not the society he is describing."
     },
     {
       "topics": [
@@ -148,7 +154,8 @@
       "loc": "On the House and on federalism",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A summary, not a quotation. The people are the principals of more than one government.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The House is elected by the great body of the people, and the federal and state governments are called different agents and trustees of those people. The people are the principals of more than one government."
     },
     {
       "topics": [
@@ -167,7 +174,8 @@
       "loc": "On qualifications and on the compound republic",
       "url": "https://www.gutenberg.org/ebooks/1404",
       "bears": "A summary, not a quotation. The people choose, and the states concur.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Wealth, birth, religious faith, and profession are not qualifications for being chosen, and a law needs a majority of the people and then a majority of the states. The people choose, and the states concur."
     }
   ]
 }

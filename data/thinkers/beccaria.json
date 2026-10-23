@@ -42,7 +42,8 @@
       "loc": "Introduction, paragraph 11",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "Beccaria asks whether death is useful and necessary for the security and good order of society.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Is death a penalty really useful and necessary for the security and good order of society? Beccaria asks whether death is useful and necessary for the security and good order of society."
     },
     {
       "topics": [
@@ -59,7 +60,8 @@
       "loc": "CAPITAL PUNISHMENT., paragraph 13",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "The lasting example of lost liberty and repaid toil is preferred to the brief sight of a death.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It is not the terrible yet brief sight of a criminal's death, but the long and painful example of a man deprived of his liberty, who, having become as it were a beast of burthen, repays with his toil the society he has offended, which is the strongest restraint from crimes. The lasting example of lost liberty and repaid toil is preferred to the brief sight of a death."
     },
     {
       "topics": [
@@ -76,7 +78,8 @@
       "loc": "OF PROSCRIPTION., paragraph 9",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "Ages of ignorance are said to bend public morality toward private morality, and to instruct later ages.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The very ages of ignorance, in which public morality inclines men to obey the dictates of private morality, serve as instruction and experience for the ages of enlightenment. Ages of ignorance are said to bend public morality toward private morality, and to instruct later ages."
     },
     {
       "topics": [
@@ -93,7 +96,8 @@
       "loc": "OF INJURIES AND OF HONOUR., paragraph 6",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "He suspects that so much moral machinery may not be required to make people happy and secure.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "And the wonder will vanish altogether from the impartial student of human affairs, who will suspect that so great a moral machinery and so many restraints are perchance not needed, in order to render men happy and secure. He suspects that so much moral machinery may not be required to make people happy and secure."
     },
     {
       "topics": [
@@ -112,7 +116,8 @@
       "loc": "OF FAMILY SPIRIT., paragraph 3",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "In the second case, the republican spirit is said to reach the household as well as the market.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "In the first case there will be a republic, formed of 20, 000 little sovereignties; in the second the republican spirit will breathe, not only in the market-places and meetings of the people, but also within the domestic walls, wherein lies so great a part of human happiness or misery. In the second case, the republican spirit is said to reach the household as well as the market."
     },
     {
       "topics": [
@@ -129,7 +134,8 @@
       "loc": "On the mildness of punishments and on capital punishment",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "A summary, not a quotation. The test is usefulness to the society that was harmed.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He asks whether death is useful and necessary for the good order of society, and prefers the long example of a person who repays that society with toil. The test is usefulness to the society that was harmed."
     },
     {
       "topics": [
@@ -146,7 +152,8 @@
       "loc": "On the origin of punishments and on moral machinery",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "A summary, not a quotation. More restraints are not automatically more order.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Public morality in ignorant ages is said to lean on private morality, and he doubts that so much moral machinery is required for people to be happy and secure. More restraints are not automatically more order."
     },
     {
       "topics": [
@@ -165,7 +172,8 @@
       "loc": "Of family spirit",
       "url": "https://www.gutenberg.org/ebooks/58700",
       "bears": "A summary, not a quotation. The household is part of the public spirit he describes.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A republican spirit, in the chapter on family spirit, is pictured not only in the market and the meeting of the people but also inside the house. The household is part of the public spirit he describes."
     }
   ]
 }

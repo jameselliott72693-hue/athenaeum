@@ -47,7 +47,8 @@
       "loc": "Chapter I",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "claim": "Society can practise a social tyranny more formidable than many kinds of political oppression, because it leaves fewer means of escape, and it penetrates more deeply into the details of life.",
-      "bears": "A shared moral pressure is not innocent merely because no statute carries it."
+      "bears": "A shared moral pressure is not innocent merely because no statute carries it.",
+      "modern": "Society can practise a social tyranny more formidable than many kinds of political oppression, because it leaves fewer means of escape, and it penetrates more deeply into the details of life. A shared moral pressure is not innocent merely because no statute carries it."
     },
     {
       "domains": [
@@ -62,7 +63,8 @@
       "loc": "Chapter III",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "claim": "The despotism of custom is a standing hindrance to human advancement. There should be different experiments of living, and people should be free to carry them out.",
-      "bears": "He treats one compulsory pattern of life as a loss of human powers, not as their completion."
+      "bears": "He treats one compulsory pattern of life as a loss of human powers, not as their completion.",
+      "modern": "The despotism of custom is a standing hindrance to human advancement. There should be different experiments of living, and people should be free to carry them out. He treats one compulsory pattern of life as a loss of human powers, not as their completion."
     },
     {
       "domains": [
@@ -79,7 +81,8 @@
       "loc": "Chapter IV",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "claim": "The only purpose for which power can be rightfully exercised over a member of a civilized community, against his will, is to prevent harm to others. His own good is not a sufficient warrant.",
-      "bears": "The line is harm to others, not the majority\u2019s dislike of a life."
+      "bears": "The line is harm to others, not the majority\u2019s dislike of a life.",
+      "modern": "The only purpose for which power can be rightfully exercised over a member of a civilized community, against his will, is to prevent harm to others. His own good is not a sufficient warrant. The line is harm to others, not the majority's dislike of a life."
     },
     {
       "domains": [
@@ -95,7 +98,8 @@
       "loc": "Chapter II",
       "url": "https://www.gutenberg.org/ebooks/11224",
       "claim": "The creed which accepts as the foundation of morals utility, or the greatest happiness principle, holds that actions are right in proportion as they tend to promote happiness.",
-      "bears": "He does have a moral standard. It is happiness, with a rank among pleasures, not the absence of any standard."
+      "bears": "He does have a moral standard. It is happiness, with a rank among pleasures, not the absence of any standard.",
+      "modern": "The creed which accepts as the foundation of morals utility, or the greatest happiness principle, holds that actions are right in proportion as they tend to promote happiness. He does have a moral standard. It is happiness, with a rank among pleasures, not the absence of any standard."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "Chapter I, Introductory",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "bears": "Coercion of a competent adult needs the prevention of harm to other people.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others. Coercion of a competent adult needs the prevention of harm to other people."
     },
     {
       "topics": [
@@ -131,7 +136,8 @@
       "loc": "Chapter I, Introductory",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "bears": "A person's own good does not by itself justify forcing him.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "His own good, either physical or moral, is not a sufficient warrant. A person's own good does not by itself justify forcing him."
     },
     {
       "topics": [
@@ -150,7 +156,8 @@
       "loc": "Chapter III, Of individuality",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "bears": "Different ways of living are how an imperfect society learns, so long as others are not injured.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "As it is useful that while mankind are imperfect there should be different opinions, so is it that there should be different experiments of living; that free scope should be given to varieties of character, short of injury to others; and that the worth of different modes of life should be proved practically, when any one thinks fit to try them. Different ways of living are how an imperfect society learns, so long as others are not injured."
     },
     {
       "topics": [
@@ -169,7 +176,8 @@
       "loc": "Chapter III, Of individuality",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "bears": "Custom, when it is despotic, blocks the attempt to live better than the usual way.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The despotism of custom is everywhere the standing hindrance to human advancement, being in unceasing antagonism to that disposition to aim at something better than customary, which is called, according to circumstances, the spirit of liberty, or that of progress or improvement. Custom, when it is despotic, blocks the attempt to live better than the usual way."
     },
     {
       "topics": [
@@ -186,7 +194,8 @@
       "loc": "Chapter II, What utilitarianism is",
       "url": "https://www.gutenberg.org/ebooks/11224",
       "bears": "Rightness, on this creed, tracks the tendency to happiness.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The creed which accepts as the foundation of morals, Utility, or the Greatest Happiness Principle, holds that actions are right in proportion as they tend to promote happiness, wrong as they tend to produce the reverse of happiness. Rightness, on this creed, tracks the tendency to happiness."
     },
     {
       "topics": [
@@ -203,7 +212,8 @@
       "loc": "Chapter III",
       "url": "https://www.gutenberg.org/ebooks/5669",
       "bears": "Representative government means the people hold the ultimate controlling power through elected deputies.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The meaning of representative government is, that the whole people, or some numerous portion of them, exercise through deputies periodically elected by themselves the ultimate controlling power, which, in every constitution, must reside somewhere. Representative government means the people hold the ultimate controlling power through elected deputies."
     },
     {
       "topics": [
@@ -222,7 +232,8 @@
       "loc": "Chapter I, Introductory",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "bears": "The limit he draws is around the mature person, not around children.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Over himself, over his own body and mind, the individual is sovereign. The limit he draws is around the mature person, not around children."
     },
     {
       "topics": [
@@ -241,7 +252,8 @@
       "loc": "Chapter I, Introductory",
       "url": "https://www.gutenberg.org/ebooks/34901",
       "bears": "The sovereignty he gives a person does not yet belong to a child.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "We are not speaking of children, or of young persons below the age which the law may fix as that of manhood or womanhood. The sovereignty he gives a person does not yet belong to a child."
     },
     {
       "topics": [
@@ -260,7 +272,8 @@
       "loc": "Book II, Chapter I, Of Property",
       "url": "https://www.gutenberg.org/ebooks/30107",
       "bears": "He defends property as a principle and says the laws on the books have not matched it.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The laws of property have never yet conformed to the principles on which the justification of private property rests. He defends property as a principle and says the laws on the books have not matched it."
     },
     {
       "topics": [
@@ -279,7 +292,8 @@
       "loc": "Book II, Chapter I, Of Property",
       "url": "https://www.gutenberg.org/ebooks/30107",
       "bears": "The justification he repeats is that a person keeps what his labor and abstinence produced.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Private property, in every defense made of it, is supposed to mean the guarantee to individuals of the fruits of their own labor and abstinence. The justification he repeats is that a person keeps what his labor and abstinence produced."
     }
   ],
   "tableId": "letters",

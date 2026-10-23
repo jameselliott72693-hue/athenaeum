@@ -44,7 +44,8 @@
       "loc": "I",
       "url": "https://www.gutenberg.org/ebooks/45109",
       "bears": "The first cut is between what a person governs and what he only meets.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "There are things which are within our power, and there are things which are beyond our power. The first cut is between what a person governs and what he only meets."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "I",
       "url": "https://www.gutenberg.org/ebooks/45109",
       "bears": "Freedom, here, is the freedom of what is actually in one's power.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Now the things within our power are by nature free, unrestricted, unhindered; but those beyond our power are weak, dependent, restricted, alien. Freedom, here, is the freedom of what is actually in one's power."
     },
     {
       "topics": [
@@ -78,7 +80,8 @@
       "loc": "V",
       "url": "https://www.gutenberg.org/ebooks/45109",
       "bears": "The disturbance is in the judgment, not in the event alone.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Men are disturbed not by things, but by the views which they take of things. The disturbance is in the judgment, not in the event alone."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "II",
       "url": "https://www.gutenberg.org/ebooks/45109",
       "bears": "Misery follows wanting what one does not control.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Remember that desire demands the attainment of that of which you are desirous; and aversion demands the avoidance of that to which you are averse; that he who fails of the object of his desires is disappointed; and he who incurs the object of his aversion is wretched. Misery follows wanting what one does not control."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "On what to shun",
       "url": "https://www.gutenberg.org/ebooks/45109",
       "bears": "A moral life does not consist in refusing sickness, death, and poverty.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "If, then, you shun only those undesirable things which you can control, you will never incur anything which you shun; but if you shun sickness, or death, or poverty, you will run the risk of wretchedness. A moral life does not consist in refusing sickness, death, and poverty."
     },
     {
       "topics": [
@@ -133,7 +138,8 @@
       "loc": "On duty to friend and country",
       "url": "https://www.gutenberg.org/ebooks/45109",
       "bears": "Danger shared with a friend or a country is a duty, not a question for a sign.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "When, therefore, it is our duty to share the danger of a friend or of our country, we ought not to consult the oracle as to whether we shall share it with them or not. Danger shared with a friend or a country is a duty, not a question for a sign."
     }
   ]
 }

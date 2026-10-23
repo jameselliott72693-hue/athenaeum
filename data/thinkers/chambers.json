@@ -44,7 +44,8 @@
       "loc": "Foreword, Letter to my children",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. The political conflict is, for him, first a religious one.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The foreword, addressed to his children, presents the Cold War as a choice about whether man belongs to God or to the state. The political conflict is, for him, first a religious one."
     },
     {
       "topics": [
@@ -63,7 +64,8 @@
       "loc": "On communism as a faith",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. A policy argument misses the book if it ignores that claim.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He describes communism as a faith with its own vision of man, not merely as a set of economic measures. A policy argument misses the book if it ignores that claim."
     },
     {
       "topics": [
@@ -80,7 +82,8 @@
       "loc": "The Hiss case",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. Informing, as he tells it, is a moral ordeal, not a tactic.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The Hiss chapters are about the cost of telling the truth against a cause one has served, and about whether a court can hear that kind of truth. Informing, as he tells it, is a moral ordeal, not a tactic."
     },
     {
       "topics": [
@@ -97,7 +100,8 @@
       "loc": "The break",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. The moral compass he defends is explicitly religious.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Leaving the party, in his telling, was a conversion: he could not keep a politics that required him to deny the soul. The moral compass he defends is explicitly religious."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "On the stakes of the struggle",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. Comfort and procedure are not, for him, a match for a total faith.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He warns that a free society can lose to a disciplined faith if it thinks the quarrel is only about administration. Comfort and procedure are not, for him, a match for a total faith."
     },
     {
       "topics": [
@@ -133,7 +138,8 @@
       "loc": "Foreword, and the argument about faith",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. He is thin on the technique of money. The point he does make is that technique is not the quarrel.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Witness treats the crisis of the West as a question of faith, whether man belongs to God or to the state, and it treats a politics that answers only with production, prices, and relief as already standing on the materialist ground it claims to oppose. He is thin on the technique of money. The point he does make is that technique is not the quarrel."
     },
     {
       "topics": [
@@ -152,7 +158,8 @@
       "loc": "Foreword, Letter to my children",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. The conflict, as he names it to his children, is total because the faiths are total.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He presents the Cold War as a war between two faiths about the nature of man, not as a border dispute or a disagreement about administration. The conflict, as he names it to his children, is total because the faiths are total."
     },
     {
       "topics": [
@@ -171,7 +178,8 @@
       "loc": "The underground and the intellectuals",
       "url": "https://archive.org/details/witnesscha00cham",
       "bears": "A summary, not a quotation. Education is not, in this story, a protection against a false faith.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The chapters on the underground and on the intellectuals describe educated people lending their minds to a party that required them to deny what they could see. Education is not, in this story, a protection against a false faith."
     }
   ]
 }

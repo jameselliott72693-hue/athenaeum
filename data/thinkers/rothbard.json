@@ -44,7 +44,8 @@
       "loc": "The nonaggression axiom",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. The moral rule is stated as a ban, not as a goal for a planner.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The book takes as its political ethic a ban on aggression: no person, and no group calling itself the state, may initiate force against another. The moral rule is stated as a ban, not as a goal for a planner."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "The state",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. A legal name does not, on this account, create a right to coerce.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats the state as a monopoly of force over a territory, funded by compulsion, and he denies that the monopoly changes the morality of the force. A legal name does not, on this account, create a right to coerce."
     },
     {
       "topics": [
@@ -78,7 +80,8 @@
       "loc": "On property",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. Property is the rule that tells people whose permission is required.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Scarce goods, he argues, need an owner, and the owner is the person who first used what was unowned, or who received it from such a person. Property is the rule that tells people whose permission is required."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "On education",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. Education is not, for him, a necessary state service.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Schools, in his sketch, would be as private as bakeries, and a parent would not be taxed to support a doctrine he rejects. Education is not, for him, a necessary state service."
     },
     {
       "topics": [
@@ -114,7 +118,8 @@
       "loc": "On defense and welfare",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. The hard cases are answered by denying the state an exemption.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that defense, courts, and the poor can be provided by agreement and charity, and that a moral society does not begin by licensing a coercer. The hard cases are answered by denying the state an exemption."
     },
     {
       "topics": [
@@ -133,7 +138,8 @@
       "loc": "Inflation and the Business Cycle",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. A rise in prices is, on this account, a consequence of how the new money is injected.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "For a New Liberty treats inflation as an expansion of the money supply that shifts wealth toward those who receive the new money first, and he calls that shift a hidden tax. A rise in prices is, on this account, a consequence of how the new money is injected."
     },
     {
       "topics": [
@@ -152,7 +158,8 @@
       "loc": "On equality and property",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. Equal rights, in this book, are rights against aggression, not rights to equal shares.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He rejects equality of condition as a political end, and he treats the attempt to enforce it as aggression against people who have produced or exchanged peacefully. Equal rights, in this book, are rights against aggression, not rights to equal shares."
     },
     {
       "topics": [
@@ -171,7 +178,8 @@
       "loc": "On war and defense",
       "url": "https://archive.org/details/fornewlibertyl00roth",
       "bears": "A summary, not a quotation. The nonaggression rule is meant to bind armies as well as neighbors.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats aggressive war as mass murder conducted by the state, and defensive force as legitimate only in answer to an attack on persons or property. The nonaggression rule is meant to bind armies as well as neighbors."
     }
   ]
 }

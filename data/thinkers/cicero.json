@@ -36,7 +36,8 @@
       "loc": "I.4\u20135",
       "url": "https://www.gutenberg.org/ebooks/47001",
       "claim": "All that is morally right arises from one of four sources: the perception of truth, the conservation of an organized society with justice, greatness of spirit, and propriety.",
-      "bears": "A moral question is not a mood. It has a recognizable shape."
+      "bears": "A moral question is not a mood. It has a recognizable shape.",
+      "modern": "All that is morally right arises from one of four sources: the perception of truth, the conservation of an organized society with justice, greatness of spirit, and propriety. A moral question is not a mood. It has a recognizable shape."
     },
     {
       "domains": [
@@ -53,7 +54,8 @@
       "loc": "I.7 and I.20",
       "url": "https://www.gutenberg.org/ebooks/47001",
       "claim": "The foundation of justice is good faith, that is, truth and fidelity to promises and agreements. Without that, no society can hold.",
-      "bears": "A common life stands on people meaning what they say to one another."
+      "bears": "A common life stands on people meaning what they say to one another.",
+      "modern": "The foundation of justice is good faith, that is, truth and fidelity to promises and agreements. Without that, no society can hold. A common life stands on people meaning what they say to one another."
     },
     {
       "domains": [
@@ -68,7 +70,8 @@
       "loc": "III.7\u201311",
       "url": "https://www.gutenberg.org/ebooks/47001",
       "claim": "The honorable and the useful cannot really conflict. What is commonly called the useful, when it breaks faith or justice, is not useful.",
-      "bears": "He will not let an advantage that corrupts the common trust call itself practical."
+      "bears": "He will not let an advantage that corrupts the common trust call itself practical.",
+      "modern": "The honorable and the useful cannot really conflict. What is commonly called the useful, when it breaks faith or justice, is not useful. He will not let an advantage that corrupts the common trust call itself practical."
     },
     {
       "domains": [
@@ -84,7 +87,8 @@
       "loc": "I.11\u201312",
       "url": "https://www.gutenberg.org/ebooks/47001",
       "claim": "There are duties even in war. Force may be answered by force, but the end of war is to live in peace without injustice.",
-      "bears": "A crisis does not cancel the obligations that make peace possible afterwards."
+      "bears": "A crisis does not cancel the obligations that make peace possible afterwards.",
+      "modern": "There are duties even in war. Force may be answered by force, but the end of war is to live in peace without injustice. A crisis does not cancel the obligations that make peace possible afterwards."
     }
   ],
   "tableId": "letters",

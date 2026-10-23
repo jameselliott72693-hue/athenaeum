@@ -42,7 +42,8 @@
       "loc": "The original position and the veil of ignorance",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. The device is a way of reasoning about fairness, not a historical meeting.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A Theory of Justice asks which principles people would choose for a society if they did not know their own talents, class, or conception of the good. The device is a way of reasoning about fairness, not a historical meeting."
     },
     {
       "topics": [
@@ -59,7 +60,8 @@
       "loc": "The first principle, equal basic liberties",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. Liberty has a priority over gains in income.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "One principle he defends gives each person an equal scheme of basic liberties, and it is not to be traded away for wealth. Liberty has a priority over gains in income."
     },
     {
       "topics": [
@@ -82,7 +84,8 @@
       "loc": "The difference principle",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. Inequality is not forbidden, but it has to justify itself to the worst off.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A second principle allows social and economic inequalities only when they are attached to offices open to all, and when they work to the benefit of the least advantaged. Inequality is not forbidden, but it has to justify itself to the worst off."
     },
     {
       "topics": [
@@ -101,7 +104,8 @@
       "loc": "The later problem of stability, carried in the theory of justice as fairness",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. A moral compass for the society is political, not a single comprehensive faith.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Political Liberalism, summarized from the direction of the theory, asks how citizens who disagree deeply about religion and the good can still affirm one political conception of justice. A moral compass for the society is political, not a single comprehensive faith."
     },
     {
       "topics": [
@@ -118,7 +122,8 @@
       "loc": "On the worth of liberty and background institutions",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. The principles reach schools and the background rules of the economy.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He treats education and the fair value of political liberty as conditions without which the equal liberties are only formal. The principles reach schools and the background rules of the economy."
     },
     {
       "topics": [
@@ -137,7 +142,8 @@
       "loc": "On property and the basic structure",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. Property is part of the institutions justice is choosing, not a premise those institutions may not touch.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A Theory of Justice treats the specification of property, including what may be held as personal goods and what forms of productive ownership a just basic structure may allow, as a question the principles of justice answer rather than as a right fixed before politics. Property is part of the institutions justice is choosing, not a premise those institutions may not touch."
     },
     {
       "topics": [
@@ -156,7 +162,8 @@
       "loc": "The later problem of stability, as the theory developed it",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. The card stays with the archive record already used for the theory. The point is the problem of religious disagreement inside a just regime, which that theory was revised to face.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Political Liberalism asks how people who hold incompatible religious and moral doctrines can still affirm one political conception of justice, and it looks for reasons that do not depend on settling which doctrine is true. The card stays with the archive record already used for the theory. The point is the problem of religious disagreement inside a just regime, which that theory was revised to face."
     },
     {
       "topics": [
@@ -175,7 +182,8 @@
       "loc": "On the worth of liberty and background institutions",
       "url": "https://archive.org/details/theoryofjustice00rawlrich",
       "bears": "A summary, not a quotation. Welfare, here, is a condition of equal citizenship and not a separate kindness.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that a constitutional democracy owes citizens the worth of their liberties, including education and a social minimum, because a liberty one cannot use is not the equal liberty the first principle names. Welfare, here, is a condition of equal citizenship and not a separate kindness."
     }
   ]
 }

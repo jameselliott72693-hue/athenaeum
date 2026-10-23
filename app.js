@@ -7,6 +7,7 @@
   const Share = window.AthenaeumShare;
   const Lines = window.AthenaeumLines;
   const Paths = window.AthenaeumPaths;
+  const Modern = window.AthenaeumModern;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
     thinkers: [],
@@ -31,7 +32,8 @@
     audio: null,
     sound: { muted: false, volume: 70 },
     revealToken: 0,
-    playback: { speed: "normal", paused: true, index: 0, timer: null, token: 0 }
+    playback: { speed: "normal", paused: true, index: 0, timer: null, token: 0 },
+    modernDefault: false
   };
 
   const $ = (id) => document.getElementById(id);
@@ -760,6 +762,7 @@
       <p class="editorial"><span class="note-flag">Note, not a chair’s words.</span> ${esc(turn.editorial || "")}</p>
       ${reply}
       ${passages}
+      ${modernHtml(turn, index)}
       ${citeHtml(turn.cites, index)}
       ${save}
     </article>`;
@@ -1042,6 +1045,7 @@
       anchor,
       usedPassageIds: used
     });
+    attachModern(built.turns);
     reading.usedPassages = [...used];
     reading.turns.push(...built.turns);
     $("follow-up").value = "";
@@ -1126,6 +1130,36 @@
     if (!steps.length) turns.insertAdjacentHTML("beforeend", closeHtml(reading));
   }
 
+  function modernHtml(turn, index) {
+    if (!Modern || turn.kind !== "chair") return "";
+    const text = Modern.forTurn(turn);
+    if (!text) return "";
+    const open = !!state.modernDefault;
+    return `<button type="button" class="text-btn modern-toggle" data-modern="${index}" aria-expanded="${open ? "true" : "false"}" aria-controls="modern-read-${index}">${open ? "Hide modern read" : "Modern read"}</button>
+      <div class="modern-read" id="modern-read-${index}"${open ? "" : " hidden"}><p><span class="note-flag">Paraphrase, not a quotation.</span> ${esc(text)}</p></div>`;
+  }
+
+  function applyModernDefault(on) {
+    state.modernDefault = !!on;
+    try { localStorage.setItem("athenaeum.modern", on ? "1" : "0"); } catch (err) { /* ignore */ }
+    document.querySelectorAll("#turns [data-modern]").forEach((button) => {
+      const block = document.getElementById(button.getAttribute("aria-controls"));
+      if (!block) return;
+      block.hidden = !on;
+      button.setAttribute("aria-expanded", on ? "true" : "false");
+      button.textContent = on ? "Hide modern read" : "Modern read";
+    });
+  }
+
+  function attachModern(turns) {
+    if (!Modern) return;
+    (turns || []).forEach((turn) => {
+      if (turn.modern && String(turn.modern).trim()) return;
+      const text = Modern.forTurn(turn);
+      if (text) turn.modern = text;
+    });
+  }
+
   function citeHtml(cites, turnIndex) {
     if (!cites || !cites.length) return "";
     return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${cites.map((c, i) =>
@@ -1144,6 +1178,7 @@
         if (turn.editorial) lines.push(`Note, not a chair's words: ${turn.editorial}`);
         if (turn.replyTo) lines.push(`Answers ${turn.replyTo.name}.`);
         (turn.paragraphs || []).forEach((paragraph) => lines.push(paragraph));
+        if (turn.kind === "chair" && turn.modern) lines.push(`Paraphrase, not a quotation: ${turn.modern}`);
         (turn.cites || []).forEach((cite) => lines.push(`  ${cite.work}, ${cite.loc}. ${cite.url}`));
         lines.push("");
       });
@@ -1212,6 +1247,7 @@
         if (turn.editorial) wrapPdf(`Note: ${turn.editorial}`, 88).forEach((text) => push(text, 10, 13));
         if (turn.replyTo) push(`Answers ${turn.replyTo.name}.`, 10, 13);
         (turn.paragraphs || []).forEach((paragraph) => wrapPdf(paragraph, 88).forEach((text) => push(text, 11, 14)));
+        if (turn.kind === "chair" && turn.modern) wrapPdf(`Paraphrase, not a quotation: ${turn.modern}`, 88).forEach((text) => push(text, 10, 13));
         (turn.cites || []).forEach((cite) => wrapPdf(`${cite.work}, ${cite.loc}. ${cite.url}`, 86).forEach((text) => push(text, 9, 12)));
         push("", 11, 8);
       });
@@ -1304,6 +1340,7 @@
       opening: "subject",
       usedPassageIds: used
     });
+    attachModern(built.turns);
     const reading = {
       id: uid(),
       when: new Date().toISOString(),
@@ -1644,6 +1681,16 @@
     $("import-memory").addEventListener("click", () => $("import-file").click());
     $("import-file").addEventListener("change", importMemory);
     $("session").addEventListener("click", (e) => {
+      const modern = e.target.closest("[data-modern]");
+      if (modern) {
+        const block = document.getElementById(modern.getAttribute("aria-controls"));
+        if (!block) return;
+        const open = block.hidden;
+        block.hidden = !open;
+        modern.setAttribute("aria-expanded", open ? "true" : "false");
+        modern.textContent = open ? "Hide modern read" : "Modern read";
+        return;
+      }
       const turn = e.target.closest("[data-save-turn]");
       if (turn) { bookmarkTurn(Number(turn.dataset.saveTurn)); return; }
       const cite = e.target.closest("[data-save-cite]");
@@ -1669,6 +1716,11 @@
     $("theme").addEventListener("click", () => {
       applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
     });
+    const modernBox = $("modern-default");
+    if (modernBox) {
+      modernBox.checked = !!state.modernDefault;
+      modernBox.addEventListener("change", () => applyModernDefault(modernBox.checked));
+    }
     document.addEventListener("keydown", (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
         e.preventDefault();
@@ -1941,6 +1993,7 @@
     if (sound && typeof sound.muted === "boolean") state.sound.muted = sound.muted;
     if (sound && Number.isFinite(sound.volume)) state.sound.volume = sound.volume;
     const draft = loadJson("athenaeum.draft", {});
+    try { state.modernDefault = localStorage.getItem("athenaeum.modern") === "1"; } catch (err) { state.modernDefault = false; }
     const theme = (() => { try { return localStorage.getItem("athenaeum.theme"); } catch (err) { return null; } })();
     const prefer = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     applyTheme(theme === "dark" || theme === "light" ? theme : prefer);

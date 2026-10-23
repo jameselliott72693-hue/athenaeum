@@ -41,7 +41,8 @@
       "loc": "I.i.1, Of Sympathy",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "claim": "However selfish a person may be supposed, there are principles in his nature which interest him in the fortune of others, and render their happiness necessary to him.",
-      "bears": "Moral life begins in sympathy, not in a command issued after the fact."
+      "bears": "Moral life begins in sympathy, not in a command issued after the fact.",
+      "modern": "However selfish a person may be supposed, there are principles in his nature which interest him in the fortune of others, and render their happiness necessary to him. Moral life begins in sympathy, not in a command issued after the fact."
     },
     {
       "domains": [
@@ -56,7 +57,8 @@
       "loc": "III.1\u20132, the impartial spectator",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "claim": "We examine our own conduct as we imagine any fair and impartial spectator would examine it. The man within the breast is that spectator.",
-      "bears": "A shared moral standard is not a poll. It is the judgment we make when we have set our own interest aside."
+      "bears": "A shared moral standard is not a poll. It is the judgment we make when we have set our own interest aside.",
+      "modern": "We examine our own conduct as we imagine any fair and impartial spectator would examine it. The man within the breast is that spectator. A shared moral standard is not a poll."
     },
     {
       "domains": [
@@ -73,7 +75,8 @@
       "loc": "II.ii, Of Justice",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "claim": "Justice is the main pillar that upholds the whole edifice. Society may subsist without beneficence, though not in the most comfortable state; it cannot subsist among those who are at all times ready to hurt one another.",
-      "bears": "Beneficence is the ornament. Justice is what keeps people from injuring one another."
+      "bears": "Beneficence is the ornament. Justice is what keeps people from injuring one another.",
+      "modern": "Justice is the main pillar that upholds the whole edifice. Society may subsist without beneficence, though not in the most comfortable state; it cannot subsist among those who are at all times ready to hurt one another. Beneficence is the ornament."
     },
     {
       "domains": [
@@ -89,7 +92,8 @@
       "loc": "V.1, Of the Influence of Custom",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "claim": "Custom and fashion influence our judgments of beauty, and they influence moral judgments too, but they do not create the sentiments they modify.",
-      "bears": "A local habit can bend approval. It is not the whole of the moral sense."
+      "bears": "A local habit can bend approval. It is not the whole of the moral sense.",
+      "modern": "Custom and fashion influence our judgments of beauty, and they influence moral judgments too, but they do not create the sentiments they modify. A local habit can bend approval. It is not the whole of the moral sense."
     },
     {
       "topics": [
@@ -106,7 +110,8 @@
       "loc": "Book I, Chapter II",
       "url": "https://www.gutenberg.org/ebooks/3300",
       "bears": "Ordinary provision comes from each person's attention to his own interest.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest. Ordinary provision comes from each person's attention to his own interest."
     },
     {
       "topics": [
@@ -123,7 +128,8 @@
       "loc": "Book IV, Chapter II",
       "url": "https://www.gutenberg.org/ebooks/3300",
       "bears": "A person seeking his own gain can serve a social end he did not intend.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "By preferring the support of domestic to that of foreign industry, he intends only his own security; and by directing that industry in such a manner as its produce may be of the greatest value, he intends only his own gain; and he is in this, as in many other cases, led by an invisible hand to promote an end which was no part of his intention. A person seeking his own gain can serve a social end he did not intend."
     },
     {
       "topics": [
@@ -142,7 +148,8 @@
       "loc": "Part II, Section II, on justice",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "bears": "In the Essays of Adam Smith, which contain the Theory. Justice holds the social building up; benevolence alone does not.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Justice, on the contrary, is the main pillar that upholds the whole edifice. In the Essays of Adam Smith, which contain the Theory. Justice holds the social building up; benevolence alone does not."
     },
     {
       "topics": [
@@ -159,7 +166,8 @@
       "loc": "Part I, opening",
       "url": "https://www.gutenberg.org/ebooks/58559",
       "bears": "The book opens by denying that selfishness is the whole of human nature.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "HOW selfish soever man may be supposed, there are evidently some principles in his nature, which interest him in the fortune of others, and render their happiness necessary to him, though he derives nothing from it except the pleasure of seeing it. The book opens by denying that selfishness is the whole of human nature."
     },
     {
       "topics": [
@@ -178,7 +186,8 @@
       "loc": "Book V, Chapter I, Article II, Of the Expense of the Institutions for the Education of Youth",
       "url": "https://www.gutenberg.org/ebooks/3300",
       "bears": "He does not leave the schooling of ordinary people as a private afterthought.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The education of the common people requires, perhaps, in a civilized and commercial society, the attention of the public, more than that of people of some rank and fortune. He does not leave the schooling of ordinary people as a private afterthought."
     },
     {
       "topics": [
@@ -195,7 +204,8 @@
       "loc": "Book V, Chapter I, Article II, Of the Expense of the Institutions for the Education of Youth",
       "url": "https://www.gutenberg.org/ebooks/3300",
       "bears": "A parish school, partly public, is his working example.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "In Scotland, the establishment of such parish schools has taught almost the whole common people to read, and a very great proportion of them to write and account. A parish school, partly public, is his working example."
     },
     {
       "topics": [
@@ -214,7 +224,8 @@
       "loc": "Book V, Chapter I, Article II, on the division of labour and the mind",
       "url": "https://www.gutenberg.org/ebooks/3300",
       "bears": "The same division of labour that makes a country rich can narrow the people who do the work, which is why he turns to education.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The man whose whole life is spent in performing a few simple operations, of which the effects, too, are perhaps always the same, or very nearly the same, has no occasion to exert his understanding, or to exercise his invention, in finding out expedients for removing difficulties which never occur. The same division of labour that makes a country rich can narrow the people who do the work, which is why he turns to education."
     },
     {
       "topics": [
@@ -233,7 +244,8 @@
       "loc": "Book V, Chapter I, Of the Expense of Defence",
       "url": "https://www.gutenberg.org/ebooks/3300",
       "bears": "Defence is a public duty, and a commercial society makes it dearer.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The first duty of the sovereign, therefore, that of defending the society from the violence and injustice of other independent societies, grows gradually more and more expensive, as the society advances in civilization. Defence is a public duty, and a commercial society makes it dearer."
     }
   ],
   "tableId": "letters",

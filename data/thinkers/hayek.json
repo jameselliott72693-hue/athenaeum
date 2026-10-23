@@ -54,7 +54,8 @@
       "loc": "The argument of the book, especially on planning and the rule of law",
       "url": "https://archive.org/details/roadtoserfdom0000frie_b9p8",
       "bears": "A summary, not a quotation. Planning on his account is not a neutral tool added to a free constitution.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The Road to Serfdom argues that a plan which directs the economy has to concentrate power, and that the rule of law is what that concentration wears away. Planning on his account is not a neutral tool added to a free constitution."
     },
     {
       "topics": [
@@ -71,7 +72,8 @@
       "loc": "Why the worst get on top",
       "url": "https://archive.org/details/roadtoserfdom0000frie_b9p8",
       "bears": "A summary, not a quotation. The moral character of rulers is not independent of the kind of power on offer.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "A chapter of that book argues that a politics which promises to organize the whole of life selects for leaders willing to use any means. The moral character of rulers is not independent of the kind of power on offer."
     },
     {
       "topics": [
@@ -90,7 +92,8 @@
       "loc": "The whole essay",
       "url": "https://openlibrary.org/works/OL37313166W",
       "bears": "A summary, not a quotation. A summary of the essay's case for prices as signals.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The essay on the use of knowledge argues that the facts a economy needs are dispersed among people on the spot, and that prices are a way of passing them on without collecting them in one office. A summary of the essay's case for prices as signals."
     },
     {
       "topics": [
@@ -107,7 +110,8 @@
       "loc": "On liberty and coercion",
       "url": "https://archive.org/details/constitutionofli00frie",
       "bears": "A summary, not a quotation. Freedom is a condition under rules, not a gift of good outcomes.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The Constitution of Liberty defines liberty as the absence of coercion by the arbitrary will of another, and it looks to general rules rather than to orders aimed at a result. Freedom is a condition under rules, not a gift of good outcomes."
     },
     {
       "topics": [
@@ -126,7 +130,8 @@
       "loc": "On the grown order of rules",
       "url": "https://archive.org/details/constitutionofli00frie",
       "bears": "A summary, not a quotation. Reason is not a license to redesign every inherited rule.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that many useful rules were not designed: a society lives by traditions it did not invent and cannot fully justify in advance. Reason is not a license to redesign every inherited rule."
     },
     {
       "topics": [
@@ -145,7 +150,8 @@
       "loc": "On social security and coercion",
       "url": "https://archive.org/details/constitutionofli00frie",
       "bears": "A summary, not a quotation. He is not describing every public relief as the road to serfdom. He is marking a line.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The Constitution of Liberty distinguishes a limited provision against severe destitution from a plan that assigns incomes, and it argues that the second cannot be carried through without coercion that spreads. He is not describing every public relief as the road to serfdom. He is marking a line."
     },
     {
       "topics": [
@@ -164,7 +170,8 @@
       "loc": "Planning and democracy",
       "url": "https://archive.org/details/roadtoserfdom0000frie_b9p8",
       "bears": "A summary, not a quotation. A majority is not, for him, a sufficient rule of law.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The Road to Serfdom argues that democracy is not the same thing as unlimited power, and that a democracy which plans the economy in detail ceases to be able to limit what officials may do. A majority is not, for him, a sufficient rule of law."
     },
     {
       "topics": [
@@ -183,7 +190,8 @@
       "loc": "On equality and the rule of law",
       "url": "https://archive.org/details/constitutionofli00frie",
       "bears": "A summary, not a quotation. Equality before general rules and equality of outcome pull apart, on this account.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "He argues that a government aiming at a particular pattern of material equality has to treat people unequally in the law, because only unequal coercion can force unequal situations into one pattern. Equality before general rules and equality of outcome pull apart, on this account."
     }
   ]
 }

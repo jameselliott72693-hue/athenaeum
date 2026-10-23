@@ -42,7 +42,8 @@
       "loc": "Part 1, paragraph 10",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "This chapter treats displayed excellence, rare goods, and stirred desire as the start of rivalry and theft.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Not to value and employ men of superior ability is the way to keep the people from rivalry among themselves; not to prize articles which are difficult to procure is the way to keep them from becoming thieves; not to show them what is likely to excite their desires is the way to keep their minds from disorder. This chapter treats displayed excellence, rare goods, and stirred desire as the start of rivalry and theft."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "Part 1, paragraph 48",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "Laozi says dropping sageness, benevolence, and scheming would return people to filial kindness.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "If we could renounce our sageness and discard our wisdom, it would be better for the people a hundredfold. Laozi says dropping sageness, benevolence, and scheming would return people to filial kindness."
     },
     {
       "topics": [
@@ -78,7 +80,8 @@
       "loc": "PART II., paragraph 5",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "Benevolence and righteousness appear here only after the Tao and its attributes have been lost.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Thus it was that when the Tao was lost, its attributes appeared; when its attributes were lost, benevolence appeared; when benevolence was lost, righteousness appeared; and when righteousness was lost, the proprieties appeared. Benevolence and righteousness appear here only after the Tao and its attributes have been lost."
     },
     {
       "topics": [
@@ -95,7 +98,8 @@
       "loc": "PART II., paragraph 33",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "The sage's mind, in this chapter, is the mind of the people.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The sage has no invariable mind of his own; he makes the mind of the people his mind. The sage's mind, in this chapter, is the mind of the people."
     },
     {
       "topics": [
@@ -112,7 +116,8 @@
       "loc": "PART II., paragraph 114",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "Frightening people with death is called useless where they do not fear death.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "The people do not fear death; to what purpose is it to (try to) frighten them with death? Frightening people with death is called useless where they do not fear death."
     },
     {
       "topics": [
@@ -129,7 +134,8 @@
       "loc": "Chapters 3, 17, and 19",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "A summary, not a quotation. Stirring the people is the danger.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Several chapters prefer a ruler the people barely notice, and they treat prizes, rare goods, and displayed wisdom as the beginning of rivalry and theft. Stirring the people is the danger."
     },
     {
       "topics": [
@@ -146,7 +152,8 @@
       "loc": "Chapters 38 and 49",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "A summary, not a quotation. The moral vocabulary arrives late.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Benevolence and righteousness are placed after the loss of the Tao, not ahead of it, and the sage is said to take the people's mind as his mind. The moral vocabulary arrives late."
     },
     {
       "topics": [
@@ -163,7 +170,8 @@
       "loc": "Chapters 58 and 74",
       "url": "https://www.gutenberg.org/ebooks/216",
       "bears": "A summary, not a quotation. Punishment is not the first tool.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Death is a poor threat where the people do not fear it, and the meddling government is said to work ill. Punishment is not the first tool."
     }
   ]
 }

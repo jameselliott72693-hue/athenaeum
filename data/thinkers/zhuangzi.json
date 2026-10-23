@@ -42,7 +42,8 @@
       "loc": "HORSES' HOOFS., paragraph 1",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "The chapter opens on the horse's own nature, before any talk of governing it.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Horses have hoofs to carry them over frost and snow; hair, to protect them from wind and cold. The chapter opens on the horse's own nature, before any talk of governing it."
     },
     {
       "topics": [
@@ -59,7 +60,8 @@
       "loc": "OPENING TRUNKS., paragraph 32",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "Getting rid of charity and duty-talk is said to return the people's virtue to one course.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Restrain the actions of Tsêng and Shih, stop the mouths of Yang and Mih, get rid of charity and duty to one's neighbour, , and the virtue of the people will become one with God. Getting rid of charity and duty-talk is said to return the people's virtue to one course."
     },
     {
       "topics": [
@@ -76,7 +78,8 @@
       "loc": "SELF-CONCEIT., paragraph 2",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "Preaching charity and duty is called moral culture put on by teachers, not the thing itself.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Preaching of charity and duty to one's neighbour, of loyalty and truth, of respect, of economy, and of humility, , this is but moral culture, affected by would-be pacificators and teachers of mankind, and by scholars at home or abroad. Preaching charity and duty is called moral culture put on by teachers, not the thing itself."
     },
     {
       "topics": [
@@ -93,7 +96,8 @@
       "loc": "HS WU KUEI., paragraph 84",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "The line says few ignore charity and duty, and many make capital out of them.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Love and profit are born of charity and duty to one's neighbour. The line says few ignore charity and duty, and many make capital out of them."
     },
     {
       "topics": [
@@ -110,7 +114,8 @@
       "loc": "Sc. TAO., paragraph 12",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "The passage begins from a time before clothes, when people stored fuel and warmed themselves by fire.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Of old, the people did not know how to make clothes. The passage begins from a time before clothes, when people stored fuel and warmed themselves by fire."
     },
     {
       "topics": [
@@ -127,7 +132,8 @@
       "loc": "Horses' Hoofs",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "A summary, not a quotation. Nature is the standard the groom arrives too late to set.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "The horse's hoofs and hair are treated as already fitted to the world, before anyone improves them. Nature is the standard the groom arrives too late to set."
     },
     {
       "topics": [
@@ -142,7 +148,8 @@
       "loc": "Opening Trunks and Self-conceit",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "A summary, not a quotation. The moral slogan is not the same as the virtue.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "Charity and duty to one's neighbour are treated as preaching, and as something people make capital from, not as the virtue of the people left alone. The moral slogan is not the same as the virtue."
     },
     {
       "topics": [
@@ -159,7 +166,8 @@
       "loc": "Sc. Tao",
       "url": "https://www.gutenberg.org/ebooks/59709",
       "bears": "A summary, not a quotation. Custom is later than the need it answers.",
-      "verbatim": false
+      "verbatim": false,
+      "modern": "An early time is pictured in which people did not yet know how to make clothes and warmed themselves by stored fuel. Custom is later than the need it answers."
     }
   ]
 }

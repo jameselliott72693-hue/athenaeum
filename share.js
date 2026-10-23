@@ -17,7 +17,7 @@
   }
 
   function slimCard(card) {
-    return {
+    const slimmed = {
       topics: (card.topics || []).slice(),
       claim: card.claim || "",
       work: card.work || "",
@@ -26,10 +26,12 @@
       verbatim: !!card.verbatim,
       fromText: !!card.fromText
     };
+    if (card.modern && String(card.modern).trim()) slimmed.modern = String(card.modern).trim();
+    return slimmed;
   }
 
   function slimTurn(turn) {
-    return {
+    const slimmed = {
       kind: turn.kind || "chair",
       id: turn.id || "",
       name: turn.name || "",
@@ -41,6 +43,8 @@
       cards: (turn.cards || []).map(slimCard),
       replyTo: turn.replyTo || null
     };
+    if (turn.modern && String(turn.modern).trim()) slimmed.modern = String(turn.modern).trim();
+    return slimmed;
   }
 
   function slim(reading) {

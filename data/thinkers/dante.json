@@ -42,7 +42,8 @@
       "loc": "Hell, Canto I",
       "url": "https://www.gutenberg.org/ebooks/8800",
       "bears": "The poem opens with a life that has lost the path.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "In the midway of this our mortal life, I found me in a gloomy wood, astray Gone from the path direct: and e'en to tell It were no easy task, how savage wild That forest, how robust and rough its growth, Which to remember only, my dismay Renews, in bitterness not far from death. The poem opens with a life that has lost the path."
     },
     {
       "topics": [
@@ -61,7 +62,8 @@
       "loc": "Hell, Canto III, the inscription",
       "url": "https://www.gutenberg.org/ebooks/8800",
       "bears": "The gate is a judgment, not a welcome.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "All hope abandon you who enter here. The gate is a judgment, not a welcome."
     },
     {
       "topics": [
@@ -82,7 +84,8 @@
       "loc": "Hell, Canto III, the inscription",
       "url": "https://www.gutenberg.org/ebooks/8800",
       "bears": "The same gate says it was built by justice, divine power, wisdom, and the first love.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Justice the founder of my fabric mov'd: To rear me was the task of power divine, Supremest wisdom, and primeval love. The same gate says it was built by justice, divine power, wisdom, and the first love."
     },
     {
       "topics": [
@@ -101,7 +104,8 @@
       "loc": "Hell, on avarice",
       "url": "https://www.gutenberg.org/ebooks/8800",
       "bears": "Money taken as a god is idolatry with more idols, not a neutral economy.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Of gold and silver you have made your god, Diff'ring wherein from the idolater, But he that worships one, a hundred you? Money taken as a god is idolatry with more idols, not a neutral economy."
     },
     {
       "topics": [
@@ -120,7 +124,8 @@
       "loc": "Hell, on fraud",
       "url": "https://www.gutenberg.org/ebooks/8800",
       "bears": "Fraud is punished as an offense against a justice that searches.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "Then my sight Was livelier to explore the depth, wherein The minister of the most mighty Lord, All-searching Justice, dooms to punishment The forgers noted on her dread record. Fraud is punished as an offense against a justice that searches."
     },
     {
       "topics": [
@@ -137,7 +142,8 @@
       "loc": "Hell, Canto IV",
       "url": "https://www.gutenberg.org/ebooks/8800",
       "bears": "Freedom from the judge of the dead is granted, not seized.",
-      "verbatim": true
+      "verbatim": true,
+      "modern": "For us the eternal edicts are unmov'd: He breathes, and I am free of Minos power, Abiding in that circle where the eyes Of your chaste Marcia beam, who still in look Prays you, O hallow'd spirit! To own her shine. Freedom from the judge of the dead is granted, not seized."
     }
   ]
 }
