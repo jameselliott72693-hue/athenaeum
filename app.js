@@ -2050,6 +2050,8 @@
     }
     if (shared && shared.topic) openReading(shared, { books: false });
     else if (state.minutes[0]) renderReading(state.minutes[0], { animate: false, sound: false });
+    const thinkerLink = /^#thinker=([a-z0-9-]+)$/.exec(location.hash || "");
+    if (thinkerLink && byId(thinkerLink[1]) && !(shared && shared.topic)) openDossier(thinkerLink[1]);
   }
 
   document.addEventListener("DOMContentLoaded", () => {
