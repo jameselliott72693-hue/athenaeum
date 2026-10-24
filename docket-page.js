@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, portraits: {}, timers: {} };
+  const state = { nights: [], night: null, report: null, entry: null, portraits: {}, timers: {} };
 
   function esc(text) {
     return D.escapeText(text);
@@ -98,8 +98,12 @@
 
   function sittingHtml(sitting) {
     const steps = stepsOf(sitting);
+    const storyId = D.storyIdForSitting(state.report, sitting.id);
+    const back = storyId
+      ? ` · <a class="report-back" href="#story-${D.escapeAttr(storyId)}">The news report</a>`
+      : "";
     return `<section class="docket-sitting" id="sitting-${esc(sitting.id)}" data-sitting="${esc(sitting.id)}">
-      <p class="kicker">${esc(sitting.section)} · ${esc(sitting.number)}</p>
+      <p class="kicker">${esc(sitting.section)} · ${esc(sitting.number)}${back}</p>
       <h3>${esc(sitting.headline)}</h3>
       <div class="docket-setup">${paragraphs([sitting.setup], sitting.quotes)}</div>
       <p class="docket-question">${esc(sitting.question)}</p>
@@ -133,35 +137,59 @@
     </section>`;
   }
 
+  function shownDate() {
+    return (state.night && state.night.date) || (state.report && state.report.date) || (state.entry && state.entry.date) || "";
+  }
+
   function renderNight() {
+    Object.keys(state.timers).forEach((id) => {
+      window.clearInterval(state.timers[id]);
+      delete state.timers[id];
+    });
     const night = state.night;
+    const report = state.report;
     const host = $("docket");
-    if (!night) {
+    if (!night && !report) {
       host.innerHTML = `<p class="err">This night is not on the docket.</p>`;
       return;
     }
-    document.title = `${night.date_long || night.date} · Tonight's docket`;
+    const date = shownDate();
+    const dateLong = (night && (night.date_long || night.date)) || (report && (report.date_long || report.date)) || date;
+    document.title = `${dateLong} · Tonight's docket`;
+    const sittingIds = night ? (night.sittings || []).map((sitting) => sitting.id) : [];
+    const jumps = report && night
+      ? `<nav class="docket-jumps" aria-label="On this night"><a href="#news-report">The news report</a><a href="#the-sittings">The sittings</a></nav>`
+      : "";
+    const pending = night ? "" : `<p class="hint docket-pending">The sittings for this night are coming.</p>`;
+    const lede = night && night.subtitle ? `<p class="lede">${esc(night.subtitle)}</p>` : "";
+    const policy = night && night.integrity && night.integrity.quotation_policy
+      ? `<p class="integrity"><span class="note-flag">How quotation marks are used</span> ${esc(night.integrity.quotation_policy)}</p>`
+      : "";
+    const sittings = night ? `<section id="the-sittings">
+        <p class="kicker">At a glance</p>
+        <h2 id="briefing-heading">The night's briefing</h2>
+        <div class="briefing-list">${briefingHtml(night)}</div>
+        <div class="docket-sittings">${(night.sittings || []).map(sittingHtml).join("")}</div>
+        ${tallyHtml(night)}
+      </section>` : "";
     host.innerHTML = `
       <p class="kicker">Tonight's docket</p>
-      <h2>${esc(night.date_long || night.date)}</h2>
-      <p class="lede">${esc(night.subtitle || "")}</p>
-      <p class="integrity"><span class="note-flag">How quotation marks are used</span> ${esc(night.integrity && night.integrity.quotation_policy)}</p>
+      <h2>${esc(dateLong)}</h2>
+      ${lede}
+      ${policy}
       <div class="docket-tools">
         <label class="field" for="docket-night">Night</label>
-        <select id="docket-night">${state.nights.map((item) => `<option value="${esc(item.date)}"${item.date === night.date ? " selected" : ""}>${esc(item.label || item.date)}</option>`).join("")}</select>
+        <select id="docket-night">${state.nights.map((item) => `<option value="${esc(item.date)}"${item.date === date ? " selected" : ""}>${esc(item.label || item.date)}</option>`).join("")}</select>
         <div class="row-btns">
           <button type="button" id="docket-share">Share this night</button>
           <button type="button" id="docket-print">Print</button>
         </div>
         <p id="docket-share-note" class="hint" role="status"></p>
       </div>
-      <section aria-labelledby="briefing-heading">
-        <p class="kicker">At a glance</p>
-        <h2 id="briefing-heading">The night's briefing</h2>
-        <div class="briefing-list">${briefingHtml(night)}</div>
-      </section>
-      <div class="docket-sittings">${(night.sittings || []).map(sittingHtml).join("")}</div>
-      ${tallyHtml(night)}`;
+      ${jumps}
+      ${pending}
+      ${D.reportHtml(report, sittingIds)}
+      ${sittings}`;
     const select = $("docket-night");
     if (select) select.addEventListener("change", () => showNight(select.value, true));
     $("docket-share").addEventListener("click", shareNight);
@@ -247,20 +275,34 @@
     }));
   }
 
+  async function loadDocketFile(file) {
+    if (!file) return null;
+    const response = await fetch(`docket/${file}`);
+    if (!response.ok) throw new Error("missing night");
+    return response.json();
+  }
+
   async function showNight(date, push) {
     const entry = state.nights.find((night) => night.date === date) || state.nights[0];
     if (!entry) {
+      state.entry = null;
       state.night = null;
+      state.report = null;
       renderNight();
       return;
     }
-    const response = await fetch(`docket/${entry.file}`);
-    if (!response.ok) throw new Error("missing night");
-    state.night = await response.json();
-    await loadPortraits(state.night);
-    const url = D.nightUrl(state.night.date);
-    if (push) history.pushState({ night: state.night.date }, "", url);
-    else history.replaceState({ night: state.night.date }, "", url);
+    const [night, report] = await Promise.all([
+      loadDocketFile(entry.file),
+      loadDocketFile(entry.report)
+    ]);
+    state.entry = entry;
+    state.night = night;
+    state.report = report;
+    if (night) await loadPortraits(night);
+    const shown = shownDate();
+    const url = D.nightUrl(shown);
+    if (push) history.pushState({ night: shown }, "", url);
+    else history.replaceState({ night: shown }, "", url);
     renderNight();
   }
 
