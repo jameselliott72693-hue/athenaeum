@@ -63,6 +63,12 @@
     return `docket.html?night=${encodeURIComponent(date)}`;
   }
 
+  function placeUrl(date, hash) {
+    const fragment = String(hash || "");
+    if (fragment.indexOf("#") !== 0 || fragment.indexOf("#night=") === 0) return nightUrl(date);
+    return nightUrl(date) + fragment;
+  }
+
   function escapeAttr(text) {
     return escapeText(text).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   }
@@ -173,7 +179,7 @@
   }
 
   return {
-    decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightFromLocation, nightUrl,
+    decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightFromLocation, nightUrl, placeUrl,
     httpUrl, sideLabel, noteParts, reportStoryHtml, reportHtml, storyIdForSitting
   };
 });

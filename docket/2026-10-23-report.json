@@ -45,8 +45,8 @@
      "side_b_label": null,
      "question_underneath": "Procedural justice versus substantive justice: is a fair election defined by following the agreed rules, or by guaranteeing that the outcome reflects what voters actually intended?",
      "thinkers_note": "Supporters draw on the classical idea that fraud vitiates consent (a choice obtained by deception isn’t truly free) and on the state’s protective duty in cases like Bullock v. Carter. Opponents lean on rule-of-law formalism and the Madisonian fear of faction, as in Federalist 10, a referee who sides with one team; there’s also a slippery-slope argument about future preemptive challenges.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "p1",
+     "sitting_match": "headline"
     },
     {
      "id": "political-2",
@@ -73,8 +73,8 @@
      "side_b_label": null,
      "question_underneath": "Equal justice versus the politicization of justice: can a state punish its own past agents without the punishment itself becoming a political weapon?",
      "thinkers_note": "One side invokes the rule of law and equality before it (“no one is above the law”), and Locke’s point that legislative inquiry depends on truthful testimony. The other draws on the ancient worry of “victor’s justice” and Juvenal’s question, who guards the guardians, plus a slippery slope in which each administration prosecutes the last one’s officials.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "p2",
+     "sitting_match": "headline"
     },
     {
      "id": "political-3",
@@ -97,8 +97,8 @@
      "side_b_label": null,
      "question_underneath": "Liberty versus order in the franchise: how much friction is the price of a trustworthy vote, and who should bear it?",
      "thinkers_note": "Federalism and the Purcell principle (don’t change rules near an election) on one side, rooted in Burkean caution about disruption; on the other, a rights-based argument for broad suffrage in the line of the Fifteenth, Nineteenth, and Twenty-sixth Amendments, and a Rawlsian concern for how burdens fall on the least advantaged.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "p3",
+     "sitting_match": "headline"
     },
     {
      "id": "political-4",
@@ -121,8 +121,8 @@
      "side_b_label": null,
      "question_underneath": "When is force a just means to peace? The old question of the just war and of prudence in statecraft.",
      "thinkers_note": "Deterrence and “peace through strength” draw on Vegetius (“if you want peace, prepare for war”) and Hobbesian realism. Critics draw on just-war criteria from Augustine and Aquinas (last resort, proportionality, reasonable chance of success) and on utilitarian accounting of costs to civilians and the global economy.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "p4",
+     "sitting_match": "headline"
     }
    ]
   },
@@ -150,8 +150,8 @@
      "side_b_label": null,
      "question_underneath": "What do we owe creators for their work, and is human creativity something different in kind from machine generation?",
      "thinkers_note": "The pro-training side draws on the Constitution’s purpose clause (“to promote the Progress of Science and useful Arts”) and the idea that copyright is a limited, utilitarian bargain. The creators’ side draws on Lockean labor theory (mixing your labor makes it yours) and Hegel’s view of art as an extension of the personality.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "c1",
+     "sitting_match": "headline"
     },
     {
      "id": "cultural-2",
@@ -174,8 +174,8 @@
      "side_b_label": null,
      "question_underneath": "What is art for: should it reflect its makers’ moral vision, or serve the audience that pays for it?",
      "thinkers_note": "One side appeals to tradition and genre integrity, a Burkean respect for inherited forms, plus market reasoning. The other draws on the long view of art as moral argument (from Greek tragedy to Dickens) and treats the backlash as a culture-war scapegoat for economic forces.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "c2",
+     "sitting_match": "headline"
     },
     {
      "id": "cultural-3",
@@ -194,8 +194,8 @@
      "side_b_label": null,
      "question_underneath": "Can people who disagree about matters of life and death still share a common life and work together?",
      "thinkers_note": "The case touches civic friendship in Aristotle and Mill’s defense of open disagreement in On Liberty; also universal human dignity versus particular loyalty to one’s people, an old tension between cosmopolitan and communal ethics.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "c3",
+     "sitting_match": "headline"
     },
     {
      "id": "cultural-4",
@@ -214,8 +214,8 @@
      "side_b_label": null,
      "question_underneath": "Is reason a shared ground that can bridge deep moral disagreement, or does argument depend on first principles people may not share?",
      "thinkers_note": "Echoes of Carl Schmitt’s friend–enemy view of politics and MacIntyre’s point in After Virtue that rival moral traditions lack common standards, set against the Enlightenment and Socratic faith in dialogue and Lincoln’s appeal to “the better angels of our nature.” (This one is X-centered; treat it as a read on online mood, not a news event.)",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "c4",
+     "sitting_match": "headline"
     }
    ]
   },
@@ -243,8 +243,8 @@
      "side_b_label": null,
      "question_underneath": "Sanctuary and the law: where does the authority of the church end and the authority of the state begin?",
      "thinkers_note": "The church’s side echoes the medieval right of sanctuary, Augustine’s two cities, and biblical hospitality to the stranger (Leviticus 19:34; Matthew 25). The other echoes Romans 13 on the governing authorities and the classical principle that law must apply equally everywhere.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "r1",
+     "sitting_match": "headline"
     },
     {
      "id": "religious-2",
@@ -267,8 +267,8 @@
      "side_b_label": null,
      "question_underneath": "Is faith first a relationship or first a body of truth, and how do the two depend on each other?",
      "thinkers_note": "This is the classic distinction between fides qua (the act of believing) and fides quae (what is believed). One side echoes Pascal’s “heart has its reasons” and Augustine’s restless heart; the other echoes Newman on the development and firmness of doctrine and the Vincentian canon of what has been believed everywhere, always, by all.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "r2",
+     "sitting_match": "headline"
     },
     {
      "id": "religious-3",
@@ -287,8 +287,8 @@
      "side_b_label": null,
      "question_underneath": "When does devotion to tradition become a threat, and who gets to decide what counts as extremism?",
      "thinkers_note": "Free-conscience arguments run from Locke’s Letter Concerning Toleration to Mill; a slippery-slope concern about the state defining heterodoxy. The security side relies on the Hobbesian duty to prevent violence before it happens and the precautionary principle.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "r3",
+     "sitting_match": "headline"
     },
     {
      "id": "religious-4",
@@ -307,8 +307,8 @@
      "side_b_label": null,
      "question_underneath": "What makes a people a people: blood, belief, or shared loyalty?",
      "thinkers_note": "Kruger’s view echoes Augustine’s definition of a people as united by the things they love (City of God XIX) and Burke’s inherited order. His right-wing critics draw on older ideas of the nation as kin, and the secular critique draws on liberal neutrality from Locke to Rawls.",
-     "sitting_id": null,
-     "sitting_match": null
+     "sitting_id": "r4",
+     "sitting_match": "headline"
     }
    ]
   }

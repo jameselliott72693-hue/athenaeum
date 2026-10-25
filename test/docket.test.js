@@ -104,7 +104,8 @@ const kept = docket.sanitizeParagraph(
 assert.ok(kept.includes('<q class="vq">A real sentence.</q>'));
 
 assert.strictEqual(index.nights[0].date, "2026-10-23");
-assert.strictEqual(index.nights[0].file, undefined);
+assert.strictEqual(index.nights[0].file, "2026-10-23.json");
+assert.strictEqual(index.nights[0].report, "2026-10-23-report.json");
 assert.strictEqual(index.nights[1].file, "2026-10-22.json");
 assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, index.nights), "2026-10-22");
@@ -112,6 +113,10 @@ assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash:
 assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, index.nights), "2026-10-22");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightUrl("2026-10-22"), "docket.html?night=2026-10-22");
+assert.strictEqual(docket.placeUrl("2026-10-23", "#sitting-p1"), "docket.html?night=2026-10-23#sitting-p1");
+assert.strictEqual(docket.placeUrl("2026-10-23", "#story-political-1"), "docket.html?night=2026-10-23#story-political-1");
+assert.strictEqual(docket.placeUrl("2026-10-23", "#night=2026-10-22"), "docket.html?night=2026-10-23");
+assert.strictEqual(docket.placeUrl("2026-10-23", ""), "docket.html?night=2026-10-23");
 assert.strictEqual(docket.sideLabel(null, "One side"), "One side");
 assert.strictEqual(docket.sideLabel("  ", "The other side"), "The other side");
 assert.strictEqual(docket.sideLabel("Hawks", "One side"), "Hawks");
@@ -153,12 +158,14 @@ const october = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-
 assert.strictEqual(docket.storyIdForSitting(october, "p1"), "political-1");
 assert.strictEqual(docket.storyIdForSitting(october, "missing"), "");
 
-const night = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-22.json"), "utf8"));
 const thinkers = new Set(fs.readdirSync(path.join(__dirname, "../data/thinkers")).map((name) => name.replace(/\.json$/, "")));
-night.sittings.forEach((sitting) => {
-  sitting.chairs.forEach((chair) => {
-    if (chair.roster_id) assert.ok(thinkers.has(chair.roster_id), chair.name + " " + chair.roster_id);
+index.nights.filter((entry) => entry.file).forEach((entry) => {
+  const night = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket", entry.file), "utf8"));
+  night.sittings.forEach((sitting) => {
+    sitting.chairs.forEach((chair) => {
+      if (chair.roster_id) assert.ok(thinkers.has(chair.roster_id), chair.name + " " + chair.roster_id);
+    });
   });
 });
 
-console.log("docket tests passed", night.date, night.sittings.length);
+console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));

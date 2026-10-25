@@ -194,6 +194,9 @@
     if (select) select.addEventListener("change", () => showNight(select.value, true));
     $("docket-share").addEventListener("click", shareNight);
     $("docket-print").addEventListener("click", () => window.print());
+    const fragment = (window.location.hash || "").replace(/^#/, "");
+    const anchor = fragment && fragment.indexOf("night=") !== 0 ? document.getElementById(fragment) : null;
+    if (anchor && anchor.scrollIntoView) anchor.scrollIntoView();
   }
 
   function sectionOf(node) {
@@ -300,7 +303,7 @@
     state.report = report;
     if (night) await loadPortraits(night);
     const shown = shownDate();
-    const url = D.nightUrl(shown);
+    const url = push ? D.nightUrl(shown) : D.placeUrl(shown, window.location.hash);
     if (push) history.pushState({ night: shown }, "", url);
     else history.replaceState({ night: shown }, "", url);
     renderNight();
@@ -348,6 +351,7 @@
     document.body.addEventListener("click", onClick);
     window.addEventListener("popstate", () => {
       const next = D.nightFromLocation(window.location, state.nights);
+      if (next && next === shownDate()) return;
       showNight(next, false);
     });
     const theme = (() => { try { return localStorage.getItem("athenaeum.theme"); } catch (err) { return null; } })();
