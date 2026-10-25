@@ -103,15 +103,17 @@ const kept = docket.sanitizeParagraph(
 );
 assert.ok(kept.includes('<q class="vq">A real sentence.</q>'));
 
-assert.strictEqual(index.nights[0].date, "2026-10-23");
-assert.strictEqual(index.nights[0].file, "2026-10-23.json");
-assert.strictEqual(index.nights[0].report, "2026-10-23-report.json");
-assert.strictEqual(index.nights[1].file, "2026-10-22.json");
-assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-10-23");
+assert.strictEqual(index.nights[0].date, "2026-10-24");
+assert.strictEqual(index.nights[0].file, "2026-10-24.json");
+assert.strictEqual(index.nights[0].report, "2026-10-24-report.json");
+assert.strictEqual(index.nights[1].file, "2026-10-23.json");
+assert.strictEqual(index.nights[2].file, "2026-10-22.json");
+assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-10-24");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, index.nights), "2026-10-22");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, index.nights), "2026-10-22");
-assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "2026-10-23");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-24", hash: "" }, index.nights), "2026-10-24");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "2026-10-24");
 assert.strictEqual(docket.nightUrl("2026-10-22"), "docket.html?night=2026-10-22");
 assert.strictEqual(docket.placeUrl("2026-10-23", "#sitting-p1"), "docket.html?night=2026-10-23#sitting-p1");
 assert.strictEqual(docket.placeUrl("2026-10-23", "#story-political-1"), "docket.html?night=2026-10-23#story-political-1");
