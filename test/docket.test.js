@@ -170,4 +170,38 @@ index.nights.filter((entry) => entry.file).forEach((entry) => {
   });
 });
 
+assert.strictEqual(docket.READ_STORAGE_KEY, "athenaeum:docket:read");
+assert.deepStrictEqual(docket.parseReadState("not json"), {});
+assert.deepStrictEqual(docket.parseReadState("[]"), {});
+assert.deepStrictEqual(docket.parseReadState(JSON.stringify({
+  "2026-10-24": true,
+  "2026-10-23": "2026-10-25T00:00:00.000Z",
+  "2026-10-22": false,
+  "nope": true
+})), {
+  "2026-10-24": true,
+  "2026-10-23": "2026-10-25T00:00:00.000Z"
+});
+const nights = [
+  { date: "2026-10-24", label: "Saturday, October 24, 2026" },
+  { date: "2026-10-23", label: "Friday, October 23, 2026" }
+];
+assert.strictEqual(docket.isNightRead({ "2026-10-24": true }, "2026-10-24"), true);
+assert.strictEqual(docket.isNightRead({}, "2026-10-24"), false);
+assert.strictEqual(docket.unreadCount(nights, { "2026-10-24": true }), 1);
+assert.strictEqual(docket.unreadHint(nights, {}), "2 nights unread");
+assert.strictEqual(docket.unreadHint(nights, { "2026-10-24": true }), "1 night unread");
+assert.strictEqual(docket.unreadHint(nights, { "2026-10-24": true, "2026-10-23": true }), "All nights read");
+assert.strictEqual(docket.nightMenuLabel(nights[0], {}), "● Unread, Saturday, October 24, 2026");
+assert.strictEqual(docket.nightMenuLabel(nights[1], { "2026-10-23": true }), "✓ Read, Friday, October 23, 2026");
+const marked = docket.withNightRead({ "2026-10-22": true }, "2026-10-24", true, "2026-10-25T12:00:00.000Z");
+assert.strictEqual(marked["2026-10-24"], "2026-10-25T12:00:00.000Z");
+assert.strictEqual(docket.withNightRead(marked, "2026-10-24", false)["2026-10-24"], undefined);
+const memory = { store: {}, getItem(key) { return this.store[key] || null; }, setItem(key, value) { this.store[key] = value; } };
+assert.strictEqual(docket.saveReadMap(memory, marked), true);
+assert.deepStrictEqual(docket.loadReadMap(memory), marked);
+assert.deepStrictEqual(docket.loadReadMap({ getItem() { throw new Error("blocked"); } }), {});
+assert.strictEqual(docket.saveReadMap({ setItem() { throw new Error("blocked"); } }, marked), false);
+assert.deepStrictEqual(docket.loadReadMap(null), {});
+
 console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));

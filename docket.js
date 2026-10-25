@@ -166,6 +166,80 @@
     </section>`;
   }
 
+  const READ_STORAGE_KEY = "athenaeum:docket:read";
+
+  function readState(raw) {
+    if (!raw || typeof raw !== "object" || Array.isArray(raw)) return {};
+    const out = {};
+    Object.keys(raw).forEach((key) => {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(key)) return;
+      const value = raw[key];
+      if (value === true || (typeof value === "number" && Number.isFinite(value)) || (typeof value === "string" && value.trim())) {
+        out[key] = value;
+      }
+    });
+    return out;
+  }
+
+  function parseReadState(text) {
+    if (text == null || text === "") return {};
+    try {
+      return readState(JSON.parse(text));
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function isNightRead(map, date) {
+    if (!map || !date) return false;
+    const value = map[date];
+    return value === true || (typeof value === "number" && Number.isFinite(value)) || (typeof value === "string" && String(value).trim() !== "");
+  }
+
+  function withNightRead(map, date, read, now) {
+    const next = {};
+    Object.keys(map || {}).forEach((key) => { next[key] = map[key]; });
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date || ""))) return next;
+    if (read) next[date] = now || new Date().toISOString();
+    else delete next[date];
+    return next;
+  }
+
+  function unreadCount(nights, map) {
+    return (nights || []).filter((night) => night && night.date && !isNightRead(map, night.date)).length;
+  }
+
+  function unreadHint(nights, map) {
+    const count = unreadCount(nights, map);
+    if (count === 0) return "All nights read";
+    if (count === 1) return "1 night unread";
+    return count + " nights unread";
+  }
+
+  function nightMenuLabel(night, map) {
+    const name = (night && (night.label || night.date)) || "";
+    return (isNightRead(map, night && night.date) ? "✓ Read, " : "● Unread, ") + name;
+  }
+
+  function loadReadMap(storage) {
+    try {
+      if (!storage || typeof storage.getItem !== "function") return {};
+      return parseReadState(storage.getItem(READ_STORAGE_KEY));
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function saveReadMap(storage, map) {
+    try {
+      if (!storage || typeof storage.setItem !== "function") return false;
+      storage.setItem(READ_STORAGE_KEY, JSON.stringify(map || {}));
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+
   function storyIdForSitting(report, sittingId) {
     if (!report || sittingId == null) return "";
     const sections = report.sections || [];
@@ -180,6 +254,7 @@
 
   return {
     decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightFromLocation, nightUrl, placeUrl,
-    httpUrl, sideLabel, noteParts, reportStoryHtml, reportHtml, storyIdForSitting
+    httpUrl, sideLabel, noteParts, reportStoryHtml, reportHtml, storyIdForSitting,
+    READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap
   };
 });

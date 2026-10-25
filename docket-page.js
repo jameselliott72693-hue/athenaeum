@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, portraits: {}, timers: {} };
+  const state = { nights: [], night: null, report: null, entry: null, portraits: {}, timers: {}, read: {} };
 
   function esc(text) {
     return D.escapeText(text);
@@ -137,6 +137,63 @@
     </section>`;
   }
 
+  function nightLabel(item) {
+    return (item && (item.label || item.date)) || shownDate();
+  }
+
+  function nightOptions(selected) {
+    return state.nights.map((item) => `<option value="${esc(item.date)}"${item.date === selected ? " selected" : ""}>${esc(D.nightMenuLabel(item, state.read))}</option>`).join("");
+  }
+
+  function readControl(place) {
+    const date = shownDate();
+    const read = D.isNightRead(state.read, date);
+    const name = nightLabel(state.entry) || date;
+    const action = read ? `Mark ${name} as unread` : `Mark ${name} as read`;
+    const badge = read
+      ? `<p class="read-state" data-read-state${place === "top" ? ' role="status"' : ' aria-hidden="true"'}><span class="read-mark" aria-hidden="true">✓</span> <span class="read-word">Read</span></p>`
+      : `<p class="read-state is-unread" data-read-state${place === "top" ? ' role="status"' : ' aria-hidden="true"'}><span class="read-mark" aria-hidden="true">●</span> <span class="read-word">Unread</span></p>`;
+    return `<div class="read-bar read-bar-${place}">
+      ${badge}
+      <button type="button" class="read-toggle" data-docket-read aria-pressed="${read ? "true" : "false"}" aria-label="${D.escapeAttr(action)}">${read ? "Mark as unread" : "Mark as read"}</button>
+    </div>`;
+  }
+
+  function paintRead() {
+    const date = shownDate();
+    const read = D.isNightRead(state.read, date);
+    const name = nightLabel(state.entry) || date;
+    const action = read ? `Mark ${name} as unread` : `Mark ${name} as read`;
+    document.querySelectorAll("[data-docket-read]").forEach((button) => {
+      button.textContent = read ? "Mark as unread" : "Mark as read";
+      button.setAttribute("aria-pressed", read ? "true" : "false");
+      button.setAttribute("aria-label", action);
+    });
+    document.querySelectorAll("[data-read-state]").forEach((node) => {
+      node.classList.toggle("is-unread", !read);
+      const mark = node.querySelector(".read-mark");
+      if (mark) mark.textContent = read ? "✓" : "●";
+      const label = node.querySelector(".read-word");
+      if (label) label.textContent = read ? "Read" : "Unread";
+    });
+    const select = $("docket-night");
+    if (select) {
+      const selected = select.value || date;
+      select.innerHTML = nightOptions(selected);
+    }
+    const hint = $("docket-unread");
+    if (hint) hint.textContent = D.unreadHint(state.nights, state.read);
+  }
+
+  function toggleRead() {
+    const date = shownDate();
+    if (!date) return;
+    const read = !D.isNightRead(state.read, date);
+    state.read = D.withNightRead(state.read, date, read, new Date().toISOString());
+    D.saveReadMap(window.localStorage, state.read);
+    paintRead();
+  }
+
   function shownDate() {
     return (state.night && state.night.date) || (state.report && state.report.date) || (state.entry && state.entry.date) || "";
   }
@@ -175,11 +232,13 @@
     host.innerHTML = `
       <p class="kicker">Tonight's docket</p>
       <h2>${esc(dateLong)}</h2>
+      ${readControl("top")}
       ${lede}
       ${policy}
       <div class="docket-tools">
         <label class="field" for="docket-night">Night</label>
-        <select id="docket-night">${state.nights.map((item) => `<option value="${esc(item.date)}"${item.date === date ? " selected" : ""}>${esc(item.label || item.date)}</option>`).join("")}</select>
+        <select id="docket-night" aria-describedby="docket-unread">${nightOptions(date)}</select>
+        <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
         <div class="row-btns">
           <button type="button" id="docket-share">Share this night</button>
           <button type="button" id="docket-print">Print</button>
@@ -189,7 +248,8 @@
       ${jumps}
       ${pending}
       ${D.reportHtml(report, sittingIds)}
-      ${sittings}`;
+      ${sittings}
+      ${readControl("bottom")}`;
     const select = $("docket-night");
     if (select) select.addEventListener("change", () => showNight(select.value, true));
     $("docket-share").addEventListener("click", shareNight);
@@ -310,6 +370,10 @@
   }
 
   function onClick(event) {
+    if (event.target.closest("[data-docket-read]")) {
+      toggleRead();
+      return;
+    }
     const playButton = event.target.closest("[data-docket-play]");
     const nextButton = event.target.closest("[data-docket-next]");
     const allButton = event.target.closest("[data-docket-all]");
@@ -346,6 +410,7 @@
   async function boot() {
     const index = await fetch("docket/index.json").then((response) => response.json());
     state.nights = index.nights || [];
+    state.read = D.loadReadMap(window.localStorage);
     const date = D.nightFromLocation(window.location, state.nights);
     await showNight(date, false);
     document.body.addEventListener("click", onClick);

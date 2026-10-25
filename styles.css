@@ -388,6 +388,25 @@ footer { color: var(--soft); font-size: 14px; }
 .docket h2 { margin-top: 8px; }
 .docket-tools { margin: 16px 0 22px; }
 .docket-tools select, .docket-tools .field { display: block; width: 100%; max-width: 420px; }
+.read-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 12px 0 16px; }
+.read-bar-bottom { margin-top: 28px; }
+.read-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--brass);
+  background: var(--brass-soft);
+  color: var(--brass);
+  font-size: 14px;
+}
+.read-state.is-unread { border-color: var(--line); background: var(--card); color: var(--ink); }
+.read-mark { font-size: 16px; line-height: 1; }
+.read-toggle[aria-pressed="true"] { border-color: var(--brass); background: var(--brass-soft); color: var(--brass); }
+#docket-unread { margin: 8px 0 0; }
 .integrity, .why-chairs {
   font-family: var(--sans);
   font-size: 14px;
@@ -472,9 +491,10 @@ footer { color: var(--soft); font-size: 14px; }
 @media (max-width: 560px) {
   .tally-split, .report-sides { grid-template-columns: 1fr; }
   .docket-sitting .passage, .docket-question { max-width: none; }
+  .read-toggle { flex: 1 1 160px; }
 }
 @media print {
-  header, .grid, footer, .session-tools, .playback, .moderator-form, .playback-keys, .docket-tools, .docket-jumps, dialog { display: none !important; }
+  header, .grid, footer, .session-tools, .playback, .moderator-form, .playback-keys, .docket-tools, .docket-jumps, .read-bar, dialog { display: none !important; }
   .docket-turn[hidden] { display: block !important; }
   body, .remark, .close-panel, h1, h2, h3, h4, p, li, a { color: #111 !important; background: #fff !important; }
   .remark, .close-panel { break-inside: avoid; border-color: #ccc; }
