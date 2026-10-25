@@ -1,0 +1,295 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-10-22",
+ "date_long": "Thursday, October 22, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "html",
+  "file": "reports/discourse-2026-10-22.html",
+  "sha256": "07fcbec1364202c0273c63bc2d664f8efd801648f58e8b80bae4251e4657db65",
+  "question_split": "first_sentence"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "The US and Israel reportedly plan new Iran strikes after the midterms",
+     "summary": "The New York Times reports that the US and Israeli militaries have drafted plans for a short, intense campaign against Iran's energy, nuclear, and missile sites after Nov. 3. Trump hasn't approved it. The same night, Iran said seven tankers were hit or struck mines in the Strait of Hormuz.",
+     "sources": [
+      {
+       "name": "NYT",
+       "url": "https://www.nytimes.com/2026/10/21/us/politics/us-israel-renewed-iran-strikes.html"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/mideast-yemen-saudi-israel-october-22-2026-dde5b98a8bf961224514994b02babce9"
+      }
+     ],
+     "side_a": "Iran is attacking shipping and Gulf allies right now. A credible threat of force pushes Tehran toward a deal, and waiting only lets it rebuild.",
+     "side_a_label": "Hawks",
+     "side_b": "This is a widening war timed around an election that Congress hasn't authorized, with real risks of an oil shock and escalation.",
+     "side_b_label": "Skeptics",
+     "question_underneath": "When is force just, and who gets to decide?",
+     "thinkers_note": "Hawks draw on deterrence (\"if you want peace, prepare for war,\" from Vegetius) and on just-war arguments for defending allies. Skeptics use the just-war tests of last resort and proportionality, plus Madison's warning that the executive is \"the branch… most prone to war.\"",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "State Department reportedly asked diplomats how they voted",
+     "summary": "The Washington Sun, citing six current and former officials, reports that some Foreign Service officers up for promotion were asked how they voted in 2016, 2020, and 2024. The department calls this an \"absurd premise\" and says it rewards merit and \"fidelity\" to the president's agenda.",
+     "sources": [
+      {
+       "name": "Washington Sun",
+       "url": "https://www.washingtonsun.com/administration/state-foreign-service-officers-voting-history-interview-promotion"
+      },
+      {
+       "name": "The Hill",
+       "url": "https://thehill.com/homenews/administration/6166456-state-department-career-diplomats-voting-history/"
+      }
+     ],
+     "side_a": "Voters elected a president to carry out a foreign policy, and a permanent bureaucracy that resists him defeats democratic accountability.",
+     "side_a_label": "Defenders",
+     "side_b": "Federal law bars personnel decisions based on politics, and a nonpartisan corps protects the country from a spoils system no matter who's in power.",
+     "side_b_label": "Critics",
+     "question_underneath": "Should the state serve the people's elected will or neutral expertise?",
+     "thinkers_note": "This is the old fight between the spoils system and civil-service reform (the Pendleton Act), between Weber's impartial official and the populist complaint that unelected officials end up ruling.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Witkoff calls Putin a \"humanitarian\"",
+     "summary": "After Russia freed Stephen Hubbard, a wrongfully detained 74-year-old American, envoy Steve Witkoff told Putin, \"You are a humanitarian also, sir.\" That drew bipartisan pushback, including from Sens. Tillis, Cornyn, Ernst, and Collins.",
+     "sources": [
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/steve-witkoff-putin-humanitarian-backlash/"
+      }
+     ],
+     "side_a": "Flattery that gets results is diplomacy. An American came home and talks resume next month.",
+     "side_a_label": "Supporters",
+     "side_b": "Russia struck Kyiv that same night. Praising an aggressor rewards hostage-taking and blurs moral clarity (\"Appeasement won't end this war. Pressure will,\" in Ernst's words).",
+     "side_b_label": "Critics",
+     "question_underneath": "Can you do good by speaking falsely about evil?",
+     "thinkers_note": "This pits Machiavellian realpolitik against the moral-clarity tradition of Isaiah's \"woe to those who call evil good,\" and Munich 1938 comes up constantly.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Israel detains NY congressional nominee Brad Lander and US rabbis at an olive harvest",
+     "summary": "Israeli forces detained about 80 volunteers who were helping Palestinian farmers harvest olives in the West Bank, including Lander and a dozen American rabbis. All were released without charge, and some were barred from the West Bank. The military said the harvest needed prior coordination, but the Times of Israel reports that military maps showed none was required.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/brad-lander-west-bank-olive-harvest-idf-detentions-6bacbd38793482469c12cb9dad764cfa"
+      },
+      {
+       "name": "Times of Israel",
+       "url": "https://www.timesofisrael.com/liveblog_entry/four-american-activists-threatened-with-deportation-released-from-detention-with-ban-from-west-bank/"
+      }
+     ],
+     "side_a": "This was peaceful protection of farmers from settler violence, Jewish ethics in action.",
+     "side_a_label": "Activists",
+     "side_b": "This was a staged provocation in a security zone right before a US election. Foreign activists don't get to override a sovereign military's rules during a war.",
+     "side_b_label": "Critics",
+     "question_underneath": "Conscience or law, and who owns the land?",
+     "thinkers_note": "Civil disobedience (Thoreau, King's \"Letter from Birmingham Jail\") and the prophetic call to justice run up against arguments from order, sovereignty, and security.",
+     "sitting_id": "p4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Meta ordered to pay New Mexico $25 billion",
+     "summary": "A judge set the penalty after a jury found more than 43 million violations of state consumer law tied to privacy, Cambridge Analytica, and harmful content. Meta will appeal, and experts expect the amount could be cut.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/facebook-penalty-cambridge-analytica-new-mexico-b329f82c3d3db3758a159405acbd4d0e"
+      },
+      {
+       "name": "Reuters via Investing.com",
+       "url": "https://www.investing.com/news/stock-market-news/meta-has-strong-chance-of-getting-25-billion-new-mexico-penalty-slashed-on-appeal-experts-say-4965230"
+      }
+     ],
+     "side_a": "This is overdue accountability, big enough to change behavior, and states are right to act where Congress hasn't.",
+     "side_a_label": "Supporters",
+     "side_b": "The penalty is excessive and rests on counting every possible viewer as a violation with no proof anyone was misled. It turns lawsuits into a way for states to raise money.",
+     "side_b_label": "Critics",
+     "question_underneath": "What makes a punishment just?",
+     "thinkers_note": "Retributive proportionality (\"an eye for an eye\" read as a limit on penalties) runs against Bentham's deterrence reasoning, all under the older question of how a society restrains concentrated power.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Sacha Baron Cohen's Ali G revival faces boycott calls",
+     "summary": "A campaign is urging cinemas to boycott Ali G: Who Iz I? and calls the character a racial stereotype. Cohen answered in Time: \"the fact that Ali G is outdated and problematic is the very reason I resurrected him.\"",
+     "sources": [
+      {
+       "name": "The Independent",
+       "url": "https://www.independent.co.uk/arts-entertainment/films/news/sacha-baron-cohen-ali-g-controversy-b3071173.html"
+      }
+     ],
+     "side_a": "Satire plays the fool to expose the powerful, and judging it by its surface misses the target.",
+     "side_a_label": "Defenders",
+     "side_b": "Intent doesn't cancel impact, and a caricature borrowed from Black British culture still trades on stereotypes.",
+     "side_b_label": "Critics",
+     "question_underneath": "Does art's purpose excuse its means?",
+     "thinkers_note": "Satire's defense runs from Aristophanes and Swift's A Modest Proposal to the medieval fool's license. The critics echo Plato's worry in the Republic that imitation shapes souls.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Ireland pulls a consent ad showing grandparents hugging kids",
+     "summary": "The Dublin Rape Crisis Centre removed a video in which a granddaughter looks uneasy about a grandparent's hug, after Ireland's Justice Minister called it \"demeaning to grandparents.\"",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.com/news/articles/c83vqn6zwrx0o"
+      }
+     ],
+     "side_a": "It teaches children early that their bodies are their own, which protects them from abuse.",
+     "side_a_label": "Defenders",
+     "side_b": "It's state-funded overreach that pathologizes ordinary family affection, when Ireland's constitution treats the family as the primary educator.",
+     "side_b_label": "Critics",
+     "question_underneath": "Where does the family's authority end and the state's begin?",
+     "thinkers_note": "Subsidiarity in Catholic social teaching and Burke's \"little platoons\" run against Mill's individual autonomy and the state's duty to protect the vulnerable.",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-4",
+     "number": 4,
+     "headline": "Indigenous artists pull work over a campus \"debate\" on residential schools",
+     "summary": "Two First Nations artists removed their art from the University of Calgary's gallery to protest a table inviting students to debate whether Canada's residential schools were genocide. The university says it must allow lawful expression.",
+     "sources": [
+      {
+       "name": "CBC",
+       "url": "https://www.cbc.ca/news/canada/calgary/indigenous-artists-university-of-calgary-free-speech-debate-tom-flanagan-9.7390315"
+      }
+     ],
+     "side_a": "Universities exist to test contested claims, including whether the schools meet the legal definition of genocide.",
+     "side_a_label": "The organizers",
+     "side_b": "Some wounds aren't open questions, and for families whose children never came home, a staged \"debate\" is mockery, not inquiry.",
+     "side_b_label": "The artists",
+     "question_underneath": "Is any truth too sacred to debate?",
+     "thinkers_note": "This is Mill's On Liberty against arguments from dignity and memory, with Popper's \"paradox of tolerance\" invoked on both sides.",
+     "sitting_id": "c4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Can a faithful Christian vote Democrat?",
+     "summary": "A viral X argument pits John MacArthur's 2020 claim that true believers can't support Democrats against Tim Keller's case for liberty of conscience in voting. Meanwhile, clergy in swing states are training as \"poll chaplains\" to help keep Election Day calm.",
+     "sources": [
+      {
+       "name": "X's summary of the debate",
+       "url": "https://x.com/i/trending/2113372608947458371"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/10/22/nx-s1-6000549/clergy-in-swing-states-are-training-to-help-maintain-order-on-election-day"
+      }
+     ],
+     "side_a": "Some issues, abortion above all, are grave enough that Scripture binds the believer's vote.",
+     "side_a_label": null,
+     "side_b": "No party is the kingdom of God, and binding consciences where Scripture is silent is its own error.",
+     "side_b_label": null,
+     "question_underneath": "How do faith and politics relate?",
+     "thinkers_note": "This draws on Augustine's two cities, Christian liberty in Romans 14, Kuyper's sphere sovereignty, and the Catholic teaching on \"intrinsic evils.\"",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Russell Moore reconsiders the death penalty",
+     "summary": "In Christianity Today, Moore, a longtime supporter in principle, says he can no longer back the American system of capital punishment. He points to Tennessee's failed execution of Christa Pike and the floated (then cancelled) plan to livestream Nidal Hasan's execution.",
+     "sources": [
+      {
+       "name": "Christianity Today",
+       "url": "https://www.christianitytoday.com/2026/10/how-i-changed-my-mind-kind-of-on-the-death-penalty/"
+      }
+     ],
+     "side_a": "Genesis 9:6 and the \"sword\" of Romans 13 teach that murder, as an attack on the image of God, can deserve death.",
+     "side_a_label": "Supporters of capital punishment",
+     "side_b": "A system that botches executions, falls unequally on rich and poor, and invites spectacle isn't justice, and God spared Cain.",
+     "side_b_label": "Moore and abolitionists",
+     "question_underneath": "Justice versus mercy, and what punishment does to the society that carries it out.",
+     "thinkers_note": "Kant's retributivism stands against Augustine's pleas for clemency, and Moore's point that execution as entertainment is \"the way of the Roman gladiator, not the way of Christ crucified.\"",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Is Britain held together by Christianity?",
+     "summary": "Reform UK MP Danny Kruger argued that Britain is united by commitment to the nation and its Christian foundations, not by ethnicity. Some in his own party pushed back that ancestry matters. A Theos report finds that only a minority think being truly British requires being Christian.",
+     "sources": [
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.substack.com/p/religion-news-22-october-2026"
+      },
+      {
+       "name": "Theos report",
+       "url": "https://www.theosthinktank.co.uk/research/2026/10/10/beyond-christian-nationalism-measuring-attitudes-to-christianity-and-britishness-today"
+      }
+     ],
+     "side_a": "A nation needs a shared moral and spiritual inheritance, and Christianity gave Britain its ideas of law and human dignity.",
+     "side_a_label": "Kruger's side",
+     "side_b": "They come from two directions. Ethnic nationalists say his view ignores kinship, while pluralists and many Christians warn that faith used as an identity badge gets emptied of belief and singles out Muslims.",
+     "side_b_label": "Critics",
+     "question_underneath": "What makes a people one?",
+     "thinkers_note": "Burke's partnership between generations runs against the liberal civic nation of Locke and Rawls, with T.S. Eliot's The Idea of a Christian Society and \"render unto Caesar\" in the background.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-4",
+     "number": 4,
+     "headline": "The Vatican issues a guide on passing on the faith",
+     "summary": "Venite ad me, approved by Pope Leo XIV, says faith no longer passes down automatically in an \"epochal change.\" It calls for a return to the core proclamation of Christ's love, along with liturgy, witness, and evangelizing adults.",
+     "sources": [
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/vatican-city/news/2026-10/dicastery-doctrine-faith-venite-ad-me-transmission-change.html"
+      }
+     ],
+     "side_a": "Its focus on personal encounter, the beauty of the liturgy, and popular devotion is a fresh way to reach a secular age.",
+     "side_a_label": "Admirers",
+     "side_b": "They want more doctrine and more emphasis on the sacrificial nature of the Mass, and they worry about a \"feelings first\" approach to catechesis.",
+     "side_b_label": "Critics within the Church",
+     "question_underneath": "Is faith handed on by truth or by encounter?",
+     "thinkers_note": "This revives lex orandi, lex credendi (\"as we worship, so we believe\"), Augustine's restless heart, and Newman's development of doctrine.",
+     "sitting_id": "r4",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}

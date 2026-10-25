@@ -7,14 +7,24 @@ const index = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/index.j
 assert.ok(Array.isArray(index.nights) && index.nights.length);
 const dates = index.nights.map((night) => night.date);
 assert.deepStrictEqual(dates, dates.slice().sort().reverse());
+function assertPlain(value, label) {
+  if (value == null) return;
+  assert.strictEqual(typeof value, "string", label);
+  assert.ok(!/<[a-z!/]/i.test(value), label);
+}
+
 index.nights.forEach((night, i) => {
   assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(night.date));
   if (i) assert.ok(night.date < index.nights[i - 1].date);
+  assert.ok(night.file || night.report, night.date);
+  let sittingIds = null;
+  if (night.file) {
   const file = path.join(__dirname, "../docket", night.file);
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
   assert.strictEqual(data.date, night.date);
   assert.strictEqual(data.schema_version, "1.0");
   assert.strictEqual(data.integrity.reconstructions, true);
+  sittingIds = new Set(data.sittings.map((sitting) => sitting.id));
   data.sittings.forEach((sitting) => {
     const verified = new Set(sitting.quotes.filter((quote) => quote.verified === true).map((quote) => quote.text));
     const paragraphs = [sitting.setup, sitting.moderator.opening, sitting.moderator.closing]
@@ -36,6 +46,46 @@ index.nights.forEach((night, i) => {
       assert.ok(!/[“”"]/.test(modern), chair.name);
     });
   });
+  }
+  if (night.report) {
+    const report = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket", night.report), "utf8"));
+    assert.strictEqual(report.date, night.date);
+    assert.strictEqual(report.schema_version, "1.0");
+    assert.ok(report.title && report.date_long);
+    assert.ok(Array.isArray(report.sections) && report.sections.length);
+    const linked = new Set();
+    report.sections.forEach((section) => {
+      assert.ok(section.name);
+      assertPlain(section.name, section.name);
+      section.stories.forEach((story) => {
+        assert.ok(/^[a-z]+-\d+$/.test(story.id), story.id);
+        ["headline", "summary", "side_a", "side_b", "question_underneath"].forEach((key) => {
+          assert.ok(story[key], story.id + " " + key);
+          assertPlain(story[key], story.id + " " + key);
+        });
+        assertPlain(story.thinkers_note, story.id);
+        assertPlain(story.side_a_label, story.id);
+        assertPlain(story.side_b_label, story.id);
+        if (story.sitting_id != null) linked.add(story.sitting_id);
+        if (sittingIds) {
+          if (story.sitting_id != null) assert.ok(sittingIds.has(story.sitting_id), story.sitting_id);
+        } else {
+          assert.strictEqual(story.sitting_id, null, story.id);
+        }
+        (story.sources || []).forEach((source) => {
+          assert.ok(source.name);
+          assert.strictEqual(docket.httpUrl(source.url), source.url, source.url);
+        });
+        (report.note_links || []).forEach((link) => assert.strictEqual(docket.httpUrl(link.url), link.url));
+      });
+    });
+    if (sittingIds) sittingIds.forEach((id) => assert.ok(linked.has(id), id));
+    const html = docket.reportHtml(report, sittingIds ? [...sittingIds] : []);
+    assert.ok(html.includes('id="news-report"'), night.date);
+    assert.ok(!/<script/i.test(html), night.date);
+    if (sittingIds) assert.ok(html.includes('href="#sitting-p1"'));
+    else assert.ok(!html.includes("The sitting"));
+  }
 });
 
 const poisoned = docket.sanitizeParagraph(
@@ -53,17 +103,69 @@ const kept = docket.sanitizeParagraph(
 );
 assert.ok(kept.includes('<q class="vq">A real sentence.</q>'));
 
+assert.strictEqual(index.nights[0].date, "2026-10-23");
+assert.strictEqual(index.nights[0].file, "2026-10-23.json");
+assert.strictEqual(index.nights[0].report, "2026-10-23-report.json");
+assert.strictEqual(index.nights[1].file, "2026-10-22.json");
+assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, index.nights), "2026-10-22");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, index.nights), "2026-10-22");
-assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), index.nights[0].date);
+assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightUrl("2026-10-22"), "docket.html?night=2026-10-22");
+assert.strictEqual(docket.placeUrl("2026-10-23", "#sitting-p1"), "docket.html?night=2026-10-23#sitting-p1");
+assert.strictEqual(docket.placeUrl("2026-10-23", "#story-political-1"), "docket.html?night=2026-10-23#story-political-1");
+assert.strictEqual(docket.placeUrl("2026-10-23", "#night=2026-10-22"), "docket.html?night=2026-10-23");
+assert.strictEqual(docket.placeUrl("2026-10-23", ""), "docket.html?night=2026-10-23");
+assert.strictEqual(docket.sideLabel(null, "One side"), "One side");
+assert.strictEqual(docket.sideLabel("  ", "The other side"), "The other side");
+assert.strictEqual(docket.sideLabel("Hawks", "One side"), "Hawks");
+assert.strictEqual(docket.httpUrl("javascript:alert(1)"), "");
+assert.strictEqual(docket.httpUrl("https://example.com/a?b=1&c=2"), "https://example.com/a?b=1&c=2");
+assert.deepStrictEqual(
+  docket.noteParts("Also noted (Al Jazeera); done.", [{ name: "Al Jazeera", url: "https://www.aljazeera.com/news/x" }]),
+  [
+    { text: "Also noted (" },
+    { text: "Al Jazeera", url: "https://www.aljazeera.com/news/x" },
+    { text: "); done." }
+  ]
+);
+const poisonedStory = docket.reportStoryHtml({
+  id: "political-1",
+  number: 1,
+  headline: "<script>alert(1)</script>",
+  summary: "A summary",
+  sources: [{ name: "Bad <b>", url: "javascript:alert(1)" }, { name: "NYT", url: "https://example.com/a?b=1&c=2" }],
+  side_a: "Left",
+  side_a_label: null,
+  side_b: "Right",
+  side_b_label: null,
+  question_underneath: "A question",
+  thinkers_note: "<img src=x>",
+  sitting_id: null
+}, "Political", false);
+assert.ok(!/<script/i.test(poisonedStory));
+assert.ok(!/javascript:/i.test(poisonedStory));
+assert.ok(poisonedStory.includes("&lt;script&gt;alert(1)&lt;/script&gt;"));
+assert.ok(poisonedStory.includes("&lt;img src=x&gt;"));
+assert.ok(poisonedStory.includes("One side"));
+assert.ok(poisonedStory.includes("The other side"));
+assert.ok(poisonedStory.includes('href="https://example.com/a?b=1&amp;c=2"'));
+assert.ok(poisonedStory.includes('target="_blank"'));
+assert.ok(poisonedStory.includes('rel="noopener"'));
+assert.ok(!poisonedStory.includes("The sitting"));
+const october = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-22-report.json"), "utf8"));
+assert.strictEqual(docket.storyIdForSitting(october, "p1"), "political-1");
+assert.strictEqual(docket.storyIdForSitting(october, "missing"), "");
 
-const night = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-22.json"), "utf8"));
 const thinkers = new Set(fs.readdirSync(path.join(__dirname, "../data/thinkers")).map((name) => name.replace(/\.json$/, "")));
-night.sittings.forEach((sitting) => {
-  sitting.chairs.forEach((chair) => {
-    if (chair.roster_id) assert.ok(thinkers.has(chair.roster_id), chair.name + " " + chair.roster_id);
+index.nights.filter((entry) => entry.file).forEach((entry) => {
+  const night = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket", entry.file), "utf8"));
+  night.sittings.forEach((sitting) => {
+    sitting.chairs.forEach((chair) => {
+      if (chair.roster_id) assert.ok(thinkers.has(chair.roster_id), chair.name + " " + chair.roster_id);
+    });
   });
 });
 
-console.log("docket tests passed", night.date, night.sittings.length);
+console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));
