@@ -1,0 +1,335 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-10-25",
+ "date_long": "Sunday, October 25, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "html",
+  "file": "reports/Discourse-Report-2026-10-25.html",
+  "sha256": "8e4f54d2a1f072c9c5625db6d9ef53135fa3aef9c082c4c6d6169979a1bea25d",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Appeals court appears skeptical of DOJ bid to set aside 20,000 California mail ballots",
+     "summary": "The Justice Department sued California on Oct. 15 to stop it counting mail ballots from about 20,000 registered voters the government calls “likely” noncitizens until citizenship is verified. In a rare Sunday argument, two of three 9th Circuit judges (including Trump appointee Mark Bennett) pressed DOJ’s lawyer, and Bennett said the request could not be squared with the Constitution’s Elections Clause. A district hearing is set for Tuesday. This is a separate case from the Alaska certification suit covered Oct. 22–24.",
+     "sources": [
+      {
+       "name": "NBC/Reuters",
+       "url": "https://www.nbcnews.com/politics/2026-election/us-appeals-court-appears-skeptical-trump-dojs-lawsuit-california-voter-rcna605625"
+      },
+      {
+       "name": "DOJ press release",
+       "url": "https://www.justice.gov/opa/pr/justice-department-sues-state-california-over-voter-list"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/california-justice-department-voting-noncitizens-lawsuit-12c62cf12a7db6480c60975b6dea49b8"
+      },
+      {
+       "name": "NYT on the wider strategy",
+       "url": "https://www.nytimes.com/2026/10/25/us/politics/trumps-election-alaska.html"
+      }
+     ],
+     "side_a": "Supporters say only citizens may lawfully vote, California mails a ballot to every registered voter, and a counted illegal ballot cannot be un-counted, so verification has to come before tabulation. They see it as protecting public confidence in the result.",
+     "side_a_label": null,
+     "side_b": "California and its allies say the list rests on suspect data DOJ did not share, that setting aside ballots mid-election risks disenfranchising eligible citizens, and that the Constitution gives states control of election mechanics. Reuters notes that noncitizen voting is exceedingly rare (129 federal charges found this year), and critics, including some Republican election officials, call the effort federal overreach.",
+     "side_b_label": null,
+     "question_underneath": "Which error is worse: counting a vote that should not count, or refusing one that should? And who holds final authority over how elections are run, the nation or the states?",
+     "thinkers_note": "Hamilton in Federalist No. 59 argues that a government must hold “the means of its own preservation,” including some power over elections; the federalist and Madisonian tradition (Federalist No. 45) holds that the states keep the everyday machinery of voting. Underneath runs the old tension between Blackstone’s ratio (better to err toward the innocent) and the republican worry that an illegitimate vote dilutes a lawful one.",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Lula wins fourth term; Flávio Bolsonaro refuses to concede, citing a last-minute voting extension",
+     "summary": "Brazil’s electoral court certified Lula at 51.79% to 48.21% (about 4.4 million votes). Flávio Bolsonaro, backed by Trump and Rubio, called the result unacceptable and said he will seek annulment, targeting a two-hour nationwide extension of voting ordered by Supreme Court Justice Cristiano Zanin after Lula said buses had been pulled off roads. Viral X posts claim the extension favored left-leaning areas; DW reports the extension was nationwide, and those claims are unverified.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/brazil-election-lula-bolsonaro-latest-b68d2e2e315644e62de8f6839e8ddcff"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.com/news/articles/cmvg7p001qj9o"
+      },
+      {
+       "name": "DW live",
+       "url": "https://www.dw.com/en/brazilian-leftist-president-lula-wins-reelection-against-conservative-challenger-flavio-bolsonaro/live-79755630"
+      },
+      {
+       "name": "TSE results (CSV)",
+       "url": "https://www.sesest.org/eleicao2026/br/presidente/resultado.csv?turno=2"
+      }
+     ],
+     "side_a": "Bolsonaro’s camp argues that changing the rules on election day, by a single judge’s order and affecting states unequally, undermined equal treatment of voters and the predictability that makes a result legitimate.",
+     "side_a_label": null,
+     "side_b": "Lula’s supporters and the electoral authorities answer that the extension let voters stranded by transport failures cast ballots, that the margin far exceeds any plausible effect, and that refusing to concede echoes the 2022 attempt to overturn a lost election.",
+     "side_b_label": null,
+     "question_underneath": "What makes a result legitimate: strict adherence to the rules as written, or the widest possible participation? When may an authority bend a rule to save the purpose of the rule?",
+     "thinkers_note": "Cicero’s “we are all servants of the law so that we may be free” (Pro Cluentio) backs strict, predictable rules; Aristotle’s epieikeia (Nicomachean Ethics V.10), the equitable correction of law where a universal rule fails, backs the extension. Both sides also lean on Locke: government rests on consent, and consent must be both free and fairly counted.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Serbia’s student movement wins in a landslide; Vučić concedes",
+     "summary": "After 14 years of dominance, Aleksandar Vučić conceded Sunday night as the leaderless, student-born Student List was projected at roughly 135–141 of 250 seats against about 103–105 for his Serbian Progressive Party, on near-record turnout. European Commission President Ursula von der Leyen offered support for rule-of-law and anti-corruption reforms; final official results are pending.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/serbia-election-students-vucic-fdf5def8a20aebc8ae139fd719478775"
+      },
+      {
+       "name": "POLITICO Europe",
+       "url": "https://www.politico.eu/article/serbia-aleksandar-vucic-concedes-defeat-after-tense-parliamentary-elections/"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/oct/25/serbian-leader-aleksandar-vucic-concedes-defeat-in-fiercely-contested-parliamentary-election"
+      }
+     ],
+     "side_a": "Supporters see a peaceful, two-year citizen movement against alleged state corruption that finally converted street pressure into a ballot-box mandate, and a rare case of a strongman accepting defeat.",
+     "side_a_label": null,
+     "side_b": "Vučić’s camp had cast the movement as a foreign-backed attempt to unseat him (per AP), and skeptics ask whether a leaderless coalition of professionals with no long record can govern a polarized country or deliver the reforms it promises.",
+     "side_b_label": null,
+     "question_underneath": "Can a protest movement become a government without losing what made it trustworthy? Is legitimacy earned by popular outrage, by institutions, or by competence?",
+     "thinkers_note": "La Boétie’s Discourse on Voluntary Servitude holds that tyrants stand only while the people consent; Machiavelli (Discourses I.58) argues a people is wiser and steadier than a prince. The cautionary tradition runs from Plato’s Republic, Book VIII, on democracy’s slide into disorder, to Burke on the need for settled institutions and leaders who can actually rule.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Marine Le Pen launches her 2027 campaign on “rule of law” after a weekend of French protests",
+     "summary": "At a rally in Orléans before about 8,500 supporters, Le Pen promised to “restore the rule of law,” pointing to the Oct. 17 looting and clashes at the edge of cost-of-living protests. Euronews reports that the latest round brought 410,000–800,000 people into the streets, with 1,314 arrests; NBC counted more than 100,000 marchers in Paris Saturday, mostly peaceful, before tear gas and water cannon were used at the end.",
+     "sources": [
+      {
+       "name": "Euronews",
+       "url": "https://www.euronews.com/2026/10/25/marine-le-pen-launches-presidential-campaign-with-vow-to-restore-rule-of-law"
+      },
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-october-25-rcna605266"
+      },
+      {
+       "name": "AFP",
+       "url": "https://www.afp.com/en/frances-le-pen-launches-presidential-bid-vowing-restore-rule-law"
+      }
+     ],
+     "side_a": "Le Pen and RN president Jordan Bardella say a lax justice system and a government that has “abdicated” protection invite disorder, and that authority, certain sentences and expelling foreign offenders must come first. “The rule of law is not the law against the state,” she said.",
+     "side_a_label": null,
+     "side_b": "Protesters and the left, including LFI leader Jean-Luc Mélenchon, who backs the student movement, say the marches are about living costs, fuel prices and school funding, that most participants were peaceful, and that framing dissent as “insurrection” is a way to dismiss real grievances.",
+     "side_b_label": null,
+     "question_underneath": "Does justice require order first, or is order without justice only a pause in conflict? Is disorder a cause or a symptom?",
+     "thinkers_note": "Hobbes and Weber ground the state in its monopoly on legitimate force and the primacy of security; Burke warns that liberty without order decays. The other tradition is Martin Luther King’s Letter from Birmingham Jail, which distinguishes the “negative peace” of absent tension from the “positive peace” that comes with the presence of justice, and Locke’s right to resist when government fails its trust.",
+     "sitting_id": "p4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "DOJ reviews ejection of “Save Women’s Sports” fans from a Portland Thorns match",
+     "summary": "About 20 spectators in XX-XY Athletics shirts unfurled a “Save Women’s Sports” banner at Friday’s Thorns–Courage match at city-owned Providence Park, were confronted by other fans (some reportedly striking them with flagpoles), and were escorted out by security. The Thorns said fans were removed for distributing unapproved materials; a DOJ official said the matter “appears to raise viewpoint discrimination and First Amendment questions”; police logged reports of alleged harassment and vandalism, with no arrests. A similar September removal was reported by KATU. Fox/OutKick, which broke the story, is a sympathetic outlet for the removed group.",
+     "sources": [
+      {
+       "name": "OutKick/Fox News",
+       "url": "https://www.foxnews.com/outkick-sports/exclusive-doj-reviewing-portland-thorns-incident-showing-womens-sports-supporters-struck-forcibly-removed"
+      },
+      {
+       "name": "We Are Portland",
+       "url": "https://weportland.com/news/2026/10/24/spectators-ejected-portland-thorns-match"
+      },
+      {
+       "name": "KATU (September incident)",
+       "url": "https://katu.com/news/local/group-wearing-xx-xy-t-shirts-kicked-out-of-portland-thorns-match-sports-bar-athletics-womens-sports-nwsl-soccer-providence-park-oregon"
+      }
+     ],
+     "side_a": "Women’s-sports advocates say a city-owned stadium removed the people who were hit instead of those who hit them, while pro-trans flags stayed up, which looks like government-linked punishment of one viewpoint on a live ballot question (Washington’s Initiative 638 was covered Oct. 24).",
+     "side_a_label": null,
+     "side_b": "The club says it enforces its fan guidelines evenly; defenders of the removals note the NWSL fan code bars symbols seen as discriminatory on the basis of gender identity, that a venue may set conduct rules, and that trans-inclusive fans say the message makes them feel unsafe. A DOJ review is not a finding, and what “materials” were distributed is still unclear.",
+     "side_b_label": null,
+     "question_underneath": "Can a shared public space stay neutral on a moral question that one side experiences as a debate and the other as an attack on its dignity?",
+     "thinkers_note": "Mill’s On Liberty defends even unwelcome opinions against both law and social pressure; the American viewpoint-neutrality doctrine descends from that. The counter-tradition, Popper’s paradox of tolerance and the older idea of civility rules for a shared commons, holds that a community may limit expression it judges to demean members.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "BBC pulls Bitesize migration and Net Zero material after a Mail on Sunday exposé",
+     "summary": "The BBC replaced Bitesize pages, including an “Increasing Immigration” game for 11–14-year-olds and a page praising figures such as Greta Thunberg, with a notice that the content is “under review.” The Mail on Sunday (reporting from Oct. 19) said Bitesize reaches 1.7 million pupils weekly; Conservative shadow education secretary Laura Trott had written to BBC Director-General Matt Brittin urging suspension. The BBC says it is reviewing the examples against its editorial guidelines and has not conceded bias.",
+     "sources": [
+      {
+       "name": "Daily Mail",
+       "url": "https://www.dailymail.com/news/article-16235995/BBC-education-website-millions-Leftist-views-extreme-migration-Net-Zero.html"
+      },
+      {
+       "name": "The Telegraph (Oct. 19)",
+       "url": "https://www.telegraph.co.uk/news/2026/10/19/bbc-pro-migrant-game-undermines-impartiality-tories-say/"
+      }
+     ],
+     "side_a": "Critics say a licence-fee-funded broadcaster owes parents strict impartiality, and a game that scores open borders as “good” and deportation as “bad” teaches a policy position to children rather than how to weigh one.",
+     "side_a_label": null,
+     "side_b": "Defenders of the material (and wary observers of the campaign) say schools must handle contested topics, that curriculum games simplify, that “under review” is not an admission of bias, and that a partisan newspaper’s pressure may chill civic education.",
+     "side_b_label": null,
+     "question_underneath": "Can education about contested questions ever be neutral, and who decides where informing ends and persuading begins?",
+     "thinkers_note": "Aristotle (Politics VIII) says education should suit the regime and form citizens; Mill (On Liberty, ch. 5) warns that state-run education can mold everyone to one pattern. Socrates’ trial for “corrupting the youth” is the oldest case of the same dispute.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Kerala police open a case over a vlogger’s attack on a Gandhi–Jinnah artwork in Fort Kochi",
+     "summary": "North Indian influencer Amrit Singh Darren’s video questioned why Kashi Art Cafe displays Riyas Komu’s “Blood Brothers: Two Fathers from Gujarat,” which alternates reliefs of Gandhi and Jinnah, and made claims about the neighborhood’s Muslim population and food, warning “Kerala is in danger.” Kochi police registered a case for allegedly promoting communal enmity; local figures condemned the video as a false picture of a long-diverse neighborhood.",
+     "sources": [
+      {
+       "name": "Onmanorama",
+       "url": "https://www.onmanorama.com/news/kerala/2026/10/25/artwork-fort-kochi-shared-legacy-hate-video-row.html"
+      }
+     ],
+     "side_a": "Those backing the case say the video painted a neighborhood as religiously divided and urged people to “save” the state, and that speech which risks stoking communal hostility is exactly what the law against promoting enmity covers.",
+     "side_a_label": null,
+     "side_b": "Free-speech defenders say a criminal case over a video is heavy-handed, that Jinnah’s place in Indian memory is a legitimate subject of public argument, and that bad opinions are best answered with argument, not an FIR (X discussion also centers on this free-speech question).",
+     "side_b_label": null,
+     "question_underneath": "Where does the right to offend end and incitement begin, and how can a plural society tolerate those it believes corrode its pluralism?",
+     "thinkers_note": "Ashoka’s Rock Edict XII asks each person to honor others’ sects by restraining one’s own speech; Mill’s harm principle and Milton’s Areopagitica argue that truth wins in open encounter. The artwork itself belongs to a long tradition of using paired images to force a nation to look at a painful shared history.",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-4",
+     "number": 4,
+     "headline": "Myanmar fans demand credit as “Scarlet Heart Thailand” draws on Konbaung-era court dress",
+     "summary": "Myanmar viewers say costumes and an oil-lamp dance in the teaser of GMMTV’s Thai remake, which premieres Nov. 4, are Konbaung-dynasty Burmese court heritage presented as Thai or Lanna. On Oct. 23 GMMTV said its fictional city draws on Lanna, Tai, Chinese and Burmese traditions, said it does not present the elements as Thai culture, and apologized for the concern. It has not announced changes or an on-screen credit; fan clubs have paused promotion and a petition is circulating (X reports 34,000+ signatures, not independently confirmed).",
+     "sources": [
+      {
+       "name": "Thairath (GMMTV statement)",
+       "url": "https://en.thairath.co.th/entertain/series/2968136"
+      },
+      {
+       "name": "Khaosod English",
+       "url": "https://www.khaosodenglish.com/featured/2026/10/23/gmmtv-says-scarlet-heart-thailand-costumes-draw-from-multiple-cultures/"
+      },
+      {
+       "name": "Change.org petition",
+       "url": "https://www.change.org/p/stop-using-myanmar-court-dress-as-thai-costumes-in-scarlet-heart-thailand"
+      }
+     ],
+     "side_a": "Myanmar fans say borrowing heritage without attribution erases its source, especially when a people’s own dress and dance are rarely shown on a large stage, and that credit costs the producers nothing.",
+     "side_a_label": null,
+     "side_b": "GMMTV and defenders of creative borrowing say the show invents a blended fantasy kingdom, that courts in the region have exchanged styles for centuries, and that no culture owns every design; they point to the company’s stated admiration and apology.",
+     "side_b_label": null,
+     "question_underneath": "Who owns a culture, and when does inspiration become taking? Is credit a matter of courtesy or of justice?",
+     "thinkers_note": "Herder’s view of cultures as rooted wholes underlies the claim to recognition; Terence’s “I am human, nothing human is alien to me” and Goethe’s Weltliteratur favor free exchange. T. S. Eliot’s line that mature poets “steal” is the artists’ side; the question of credit descends from the ancient ethics of giving each their due.",
+     "sitting_id": "c4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Milwaukee archbishop apologizes for praying over Trump; second bishop says White House “exploited” the meeting",
+     "summary": "Archbishop Jeffrey Grob’s “Public Apology” says the Oct. 22 Oval Office prayer was “in no way an endorsement,” that the bishops did not consent to the White House posting the video and photos, and that prayer was “manipulated” into “a political photo opportunity.” Des Moines Bishop William Joensen said the White House “exploited” the gathering; Denver Archbishop James Golka had said it was not an endorsement. The White House told NCR there has “never been a greater president for Catholic Americans.” (This is a major update to the story covered Oct. 24.)",
+     "sources": [
+      {
+       "name": "Grob statement (Archdiocese of Milwaukee)",
+       "url": "https://www.archmil.org/posts/a-public-apology-archbishop-jeffrey-grob"
+      },
+      {
+       "name": "National Catholic Reporter",
+       "url": "https://www.ncronline.org/news/milwaukee-archbishop-who-prayed-trump-apologizes-says-bishops-were-manipulated-white-house"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/donald-trump-catholic-bishops-photos-prayer-midterms-7ee124ae0462cf2fb550ffa41f296ab8"
+      }
+     ],
+     "side_a": "The bishops and those defending the visit say pastors should meet rulers, press concerns on immigration enforcement, religious-worker visas and human dignity, and pray with them, and that the fault lies with the staging, not the prayer.",
+     "side_a_label": null,
+     "side_b": "Critics say bishops should have foreseen a photo op less than two weeks before an election, that the sacred act lent a religious blessing to one side, and that people harmed by administration policies felt wounded; Grob acknowledged hearing exactly that and said he wished he had heeded his own reservations.",
+     "side_b_label": null,
+     "question_underneath": "Can the Church draw near to power without being used by it? Is the pastor’s role to counsel the ruler in private or to testify against him in public?",
+     "thinkers_note": "1 Timothy 2:1–2 and Romans 13 command prayer for, and honor toward, rulers; the prophetic tradition (Nathan before David, Ambrose confronting Theodosius) insists the Church’s independence is its witness. Augustine’s two cities warns that every earthly alliance is provisional.",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Brazilian bishops told Catholics not to vote for Flávio Bolsonaro; he lost",
+     "summary": "On Oct. 22, 35 bishops (later 47), writing “in communion with” the national bishops’ conference but not as the conference, released a letter urging Catholics not to vote for Flávio Bolsonaro, whom it does not name, saying his candidacy threatens democracy, national sovereignty and the common good. It cites Pope Leo XIV’s encyclical Magnifica Humanitas on subjugating nations. Lula won Sunday, 51.79% to 48.21%, and Bolsonaro is contesting the result.",
+     "sources": [
+      {
+       "name": "National Catholic Reporter",
+       "url": "https://www.ncronline.org/news/brazilian-bishops-release-letter-opposing-trump-backed-candidate-fl-vio-bolsonaro"
+      },
+      {
+       "name": "AP (result)",
+       "url": "https://apnews.com/article/brazil-election-lula-bolsonaro-latest-b68d2e2e315644e62de8f6839e8ddcff"
+      },
+      {
+       "name": "Brasil de Fato (Portuguese)",
+       "url": "https://www.brasildefato.com.br/2026/10/23/em-carta-bispos-dizem-que-flavio-bolsonaro-representa-ameaca-a-democracia-e-contraria-ensinamentos-da-igreja-catolica/"
+      }
+     ],
+     "side_a": "The signatories say they “cannot remain neutral,” that silence before 20th-century totalitarian threats left “a shameful legacy,” and that a coup risk, defense of the dictatorship’s torture, gun loosening, labor rollbacks and subordination to the U.S. contradict Catholic social teaching.",
+     "side_a_label": null,
+     "side_b": "Critics, including the 48% who voted for Bolsonaro, would say tariffs, gun policy and foreign alliances are prudential questions on which faithful Catholics may differ, and that condemning one candidate without naming him is still taking a side that bishops should leave to the laity.",
+     "side_b_label": null,
+     "question_underneath": "When does a pastor’s duty to speak about justice become telling people how to vote? Who may judge which political questions are moral absolutes and which are prudential?",
+     "thinkers_note": "Gaudium et Spes §76 says the Church may pass moral judgment on politics when fundamental rights or salvation require it, while §43 reminds lay people that pastors do not always hold concrete political solutions. Behind it: Romero’s and the liberation tradition’s “preferential option for the poor” versus the classical doctrine of lay autonomy in temporal affairs.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Vatican stops traditional Latin Mass pilgrims at St. Peter’s Square",
+     "summary": "The Vatican Secretariat of State barred the annual Ad Petri Sedem (Summorum Pontificum) pilgrimage from processing into St. Peter’s Basilica Saturday, after earlier refusing a Traditional Latin Mass there “this year”; organizers say no explanation was given and the group was halted in the square. Their Mass was held at St. Mary Major, according to accounts on X. All details here come from organizers’ and traditionalist outlets; I found no public Vatican explanation.",
+     "sources": [
+      {
+       "name": "AdVaticanum",
+       "url": "https://advaticanum.com/article/vatican-bars-traditional-latin-mass-pilgrims-from-entering-st-peters-basilica-in-procession-organisers-say"
+      },
+      {
+       "name": "Infovaticana",
+       "url": "https://infovaticana.com/en/2026/10/23/vatican-bans-traditional-mass-pilgrims-from-entering-st-peters-this-saturday/"
+      },
+      {
+       "name": "LifeSiteNews video",
+       "url": "https://www.lifesitenews.com/news/watch-latin-mass-pilgrimage-physically-prevented-from-visiting-st-peters-basilica/"
+      }
+     ],
+     "side_a": "Organizers say they are loyal “sub Petro et cum Petro,” have a right to pray at Peter’s tomb with their ancestral liturgy, find the ban “inexplicable,” and note that other groups were allowed in; they hope the pope was not involved.",
+     "side_a_label": null,
+     "side_b": "Supporters of the restrictions, following Pope Francis’s 2021 Traditionis Custodes, hold that the reformed liturgy is the one expression of the Roman Rite and that large public events can become demonstrations against it; an organizer says there were accusations that last year’s Mass was “instrumentalized.” I found no public Vatican statement of its reasons.",
+     "side_b_label": null,
+     "question_underneath": "How much diversity in worship can one communion bear before unity becomes uniformity, or diversity becomes division?",
+     "thinkers_note": "Vincent of Lérins’s rule of what has been believed “always, everywhere, by all” anchors the traditionalist claim, though he also allowed growth “in the same sense”; Ignatius of Antioch’s “do nothing without the bishop” and Cyprian on unity anchor the other.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
