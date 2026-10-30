@@ -36,6 +36,13 @@ index.nights.forEach((night, i) => {
       found.forEach((text) => assert.ok(verified.has(text), `${sitting.id} marked a quote that is not verified`));
     });
     sitting.chairs.forEach((chair) => {
+      if (chair.portrait == null) assert.strictEqual(docket.portraitPath(chair.portrait), "", sitting.id);
+      else {
+        const mapped = docket.portraitPath(chair.portrait);
+        assert.ok(mapped.indexOf("images/") === 0, chair.portrait);
+        assert.ok(!mapped.includes("assets/"), chair.portrait);
+        assert.ok(fs.existsSync(path.join(__dirname, "..", mapped)), mapped);
+      }
       const quotes = chair.paraphrase_only ? [] : chair.quotes;
       chair.turn.forEach((paragraph) => {
         const safe = docket.sanitizeParagraph(paragraph.html, quotes);
@@ -128,7 +135,19 @@ assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-24", hash: "" }, index.nights), "2026-10-24");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-25", hash: "" }, index.nights), "2026-10-25");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-26", hash: "" }, index.nights), "2026-10-26");
-assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "2026-10-26");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=garbage", hash: "" }, index.nights), "");
+assert.strictEqual(docket.nightQuery({ search: "?night=1999-01-01", hash: "" }), "1999-01-01");
+assert.strictEqual(docket.nightQuery({ search: "?night=garbage", hash: "#night=2026-10-22" }), "garbage");
+assert.strictEqual(docket.nightQuery({ search: "", hash: "#night=2026-10-22" }), "2026-10-22");
+assert.strictEqual(docket.nightQuery({ search: "", hash: "#sitting-p1" }), "");
+assert.strictEqual(docket.nightQuery({ search: "", hash: "" }), "");
+assert.strictEqual(docket.portraitPath("assets/madison.svg"), "images/madison.svg");
+assert.strictEqual(docket.portraitPath("images/locke.svg"), "images/locke.svg");
+assert.strictEqual(docket.portraitPath("assets/../madison.svg"), "");
+assert.strictEqual(docket.portraitPath("https://example.com/a.svg"), "");
+assert.strictEqual(docket.portraitPath(null), "");
+assert.strictEqual(docket.portraitPath(""), "");
 assert.strictEqual(docket.nightUrl("2026-10-22"), "docket.html?night=2026-10-22");
 assert.strictEqual(docket.placeUrl("2026-10-23", "#sitting-p1"), "docket.html?night=2026-10-23#sitting-p1");
 assert.strictEqual(docket.placeUrl("2026-10-23", "#story-political-1"), "docket.html?night=2026-10-23#story-political-1");
