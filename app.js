@@ -461,7 +461,7 @@
       const score = scoreOf(t);
       const rel = !state.scoring && score.tier ? ` rel-${score.tier}` : "";
       return `<article class="card${on ? " on" : ""}${rel}">
-        <img class="avatar" src="${esc(safeUrl(t.portrait))}" alt="" />
+        <img class="avatar" src="${esc(safeUrl(t.portrait))}" alt="" width="48" height="48" loading="lazy" decoding="async" />
         <div class="card-main">
           <button type="button" class="name-btn" data-dossier="${esc(t.id)}"><span class="name">${esc(t.name)}</span></button>
           <span class="meta">${esc(t.years)} · ${esc(t.epithet)}</span>
@@ -487,7 +487,7 @@
       const score = scoreOf(t);
       const rel = !state.scoring && score.tier ? ` rel-${score.tier}` : "";
       return `<span class="chip${rel}">
-        <img class="avatar" src="${esc(safeUrl(t.portrait))}" alt="" />
+        <img class="avatar" src="${esc(safeUrl(t.portrait))}" alt="" width="36" height="36" loading="lazy" decoding="async" />
         <span class="chip-body"><strong>${esc(t.name)}</strong><span class="tradition">${esc(A.traditionName(t, state.tables))}</span>${badge(score)}</span>
         <button type="button" class="icon-btn" data-remove="${esc(t.id)}" aria-label="Remove ${esc(t.name)}">Remove</button>
       </span>`;
@@ -719,7 +719,7 @@
     const save = turnIndex == null ? "" : `<button type="button" class="text-btn" data-save-turn="${turnIndex}">Bookmark this turn</button>`;
     return `<article class="remark${lean === "abstain" ? " abstain" : ""} reveal">
       <div class="remark-head">
-        <img class="avatar" src="${esc(safeUrl(person.portrait))}" alt="" />
+        <img class="avatar" src="${esc(safeUrl(person.portrait))}" alt="" width="48" height="48" loading="lazy" decoding="async" />
         <div>
           <p class="kicker">${esc(person.years)}</p>
           <h3>${esc(person.name)}</h3>
@@ -774,7 +774,7 @@
     const meta = turn.kind === "abstain" ? "Sits out" : (turn.hits ? `${turn.hits} passage${turn.hits === 1 ? "" : "s"}` : "");
     return `<article class="remark${turn.kind === "abstain" ? " abstain" : ""}" data-turn="${index}">
       <div class="remark-head">
-        <img class="avatar" src="${person.portrait ? esc(safeUrl(person.portrait)) : ""}" alt="" />
+        <img class="avatar" src="${person.portrait ? esc(safeUrl(person.portrait)) : ""}" alt="" width="48" height="48" loading="lazy" decoding="async" />
         <div>
           <p class="kicker">${esc([A.traditionName(person, state.tables), person.years || ""].filter(Boolean).join(" · "))}</p>
           <h3>${esc(turn.name)}</h3>
@@ -1393,7 +1393,7 @@
     if (!t) return;
     $("dossier-body").innerHTML = `
       <div class="dossier-head">
-        <img src="${esc(safeUrl(t.portrait))}" alt="" />
+        <img src="${esc(safeUrl(t.portrait))}" alt="" width="84" height="84" decoding="async" />
         <div>
           <p class="kicker">${esc(t.years)} · ${esc(t.place)}</p>
           <h2>${esc(t.name)}</h2>
@@ -1997,13 +1997,31 @@
     localStorage.setItem("athenaeum.memoryMigrated", "1");
   }
 
+  async function readJson(url, required) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Could not load " + url);
+      return await response.json();
+    } catch (err) {
+      if (required) throw err;
+      return null;
+    }
+  }
+
   async function boot() {
-    const catalog = await fetch("data/tables.json").then((r) => r.json());
-    state.tables = catalog.tables;
+    const [catalog, lines, pathCatalog] = await Promise.all([
+      readJson("data/tables.json", true),
+      readJson("data/influence.json", false),
+      readJson("data/paths.json", false)
+    ]);
+    state.tables = catalog.tables || [];
     state.relevance = catalog.relevance;
-    state.thinkers = await Promise.all(catalog.thinkers.map((id) => fetch(`data/thinkers/${id}.json`).then((r) => r.json())));
-    state.lines = await fetch("data/influence.json").then((r) => r.ok ? r.json() : { edges: [] }).catch(() => ({ edges: [] }));
-    state.pathCatalog = await fetch("data/paths.json").then((r) => r.ok ? r.json() : { paths: [] }).catch(() => ({ paths: [] }));
+    const ids = Array.isArray(catalog.thinkers) ? catalog.thinkers : [];
+    const loaded = await Promise.all(ids.map((id) => readJson(`data/thinkers/${id}.json`, false)));
+    state.thinkers = loaded.filter((row) => row && row.id);
+    state.lines = lines && typeof lines === "object" ? lines : { edges: [] };
+    state.pathCatalog = pathCatalog && typeof pathCatalog === "object" ? pathCatalog : { paths: [] };
+    const skipped = ids.length - state.thinkers.length;
     state.pathProgress = Paths ? Paths.loadProgress(localStorage) : { read: {}, current: {} };
     const savedSeats = loadJson("athenaeum.seated", null);
     const legacy = loadJson("athenaeum.five", null);
@@ -2043,6 +2061,11 @@
     renderShelf();
     renderSeatings();
     renderBookmarks();
+    if (skipped > 0) {
+      const main = document.querySelector("main");
+      const noun = skipped === 1 ? "One chair could not be loaded. The rest of the shelf is here." : `${skipped} chairs could not be loaded. The rest of the shelf is here.`;
+      if (main) main.insertAdjacentHTML("afterbegin", `<p class="err" role="alert">${esc(noun)}</p>`);
+    }
     if (state.bookmarks.length) $("memory-note").textContent = `${state.bookmarks.length} bookmark${state.bookmarks.length === 1 ? "" : "s"} saved.`;
     let shared = null;
     if (Share && location.hash) {

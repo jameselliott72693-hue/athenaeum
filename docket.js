@@ -48,15 +48,29 @@
     return String(text || "").replace(/[“”"]/g, "").trim();
   }
 
-  function nightFromLocation(location, nights) {
-    const list = nights || [];
+  function nightQuery(location) {
     const params = new URLSearchParams(location.search || "");
     const query = params.get("night");
+    if (query) return query;
     const hash = String(location.hash || "").replace(/^#/, "");
-    const hashed = hash.indexOf("night=") === 0 ? decodeURIComponent(hash.slice(6)) : "";
-    const wanted = query || hashed;
+    if (hash.indexOf("night=") === 0) return decodeURIComponent(hash.slice(6));
+    return "";
+  }
+
+  function nightFromLocation(location, nights) {
+    const list = nights || [];
+    const wanted = nightQuery(location);
     if (wanted && list.some((night) => night.date === wanted)) return wanted;
+    if (wanted) return "";
     return list[0] ? list[0].date : "";
+  }
+
+  function portraitPath(portrait) {
+    const text = String(portrait == null ? "" : portrait).trim();
+    const fromAssets = /^assets\/([A-Za-z0-9._-]+)$/.exec(text);
+    if (fromAssets) return "images/" + fromAssets[1];
+    if (/^images\/[A-Za-z0-9._-]+$/.test(text)) return text;
+    return "";
   }
 
   function nightUrl(date) {
@@ -253,7 +267,7 @@
   }
 
   return {
-    decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightFromLocation, nightUrl, placeUrl,
+    decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightQuery, nightFromLocation, portraitPath, nightUrl, placeUrl,
     httpUrl, sideLabel, noteParts, reportStoryHtml, reportHtml, storyIdForSitting,
     READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap
   };
