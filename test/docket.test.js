@@ -110,14 +110,23 @@ const kept = docket.sanitizeParagraph(
 );
 assert.ok(kept.includes('<q class="vq">A real sentence.</q>'));
 
-assert.strictEqual(index.nights[0].date, "2026-10-29");
-assert.strictEqual(index.nights[0].file, "2026-10-29.json");
-assert.strictEqual(index.nights[0].report, "2026-10-29-report.json");
-assert.strictEqual(index.nights[1].file, "2026-10-26.json");
-assert.strictEqual(index.nights[2].file, "2026-10-25.json");
-assert.strictEqual(index.nights[3].file, "2026-10-24.json");
-assert.strictEqual(index.nights[4].file, "2026-10-23.json");
-assert.strictEqual(index.nights[5].file, "2026-10-22.json");
+assert.strictEqual(index.nights[0].date, "2026-10-30");
+assert.strictEqual(index.nights[0].file, "2026-10-30.json");
+assert.strictEqual(index.nights[0].report, "2026-10-30-report.json");
+assert.strictEqual(index.nights[1].file, "2026-10-29.json");
+assert.strictEqual(index.nights[2].file, "2026-10-26.json");
+assert.strictEqual(index.nights[3].file, "2026-10-25.json");
+assert.strictEqual(index.nights[4].file, "2026-10-24.json");
+assert.strictEqual(index.nights[5].file, "2026-10-23.json");
+assert.strictEqual(index.nights[6].file, "2026-10-22.json");
+const friday = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-30.json"), "utf8"));
+assert.strictEqual(friday.sittings.length, 11);
+assert.strictEqual(friday.integrity.quotes_verified, 114);
+const fridaySections = friday.sittings.reduce((counts, sitting) => {
+  counts[sitting.section] = (counts[sitting.section] || 0) + 1;
+  return counts;
+}, {});
+assert.deepStrictEqual(fridaySections, { Political: 4, Cultural: 3, Religious: 4 });
 const thursday = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-29.json"), "utf8"));
 assert.strictEqual(thursday.sittings.length, 12);
 assert.strictEqual(thursday.integrity.quotes_verified, 94);
@@ -137,7 +146,7 @@ assert.deepStrictEqual(mondaySections, { Political: 3, Cultural: 3, Religious: 4
 const sunday = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-25.json"), "utf8"));
 assert.strictEqual(sunday.sittings.length, 11);
 assert.ok(!sunday.sittings.some((sitting) => sitting.id === "r4"));
-assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-10-29");
+assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-10-30");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, index.nights), "2026-10-22");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash: "" }, index.nights), "2026-10-23");
 assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, index.nights), "2026-10-22");
@@ -145,6 +154,7 @@ assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-24", hash:
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-25", hash: "" }, index.nights), "2026-10-25");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-26", hash: "" }, index.nights), "2026-10-26");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-29", hash: "" }, index.nights), "2026-10-29");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-30", hash: "" }, index.nights), "2026-10-30");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=1999-01-01", hash: "" }, index.nights), "");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=garbage", hash: "" }, index.nights), "");
 assert.strictEqual(docket.nightQuery({ search: "?night=1999-01-01", hash: "" }), "1999-01-01");
