@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "" };
+  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {} };
   let requestSeq = 0;
 
   function esc(text) {
@@ -94,8 +94,18 @@
       <h3><a href="#sitting-${esc(item.sitting_id)}">${esc(item.question)}</a></h3>
       <p class="meta">${(item.chairs || []).map(esc).join(", ")}</p>
       <p><strong>Agreed.</strong> ${esc(item.agreed)}</p>
+      ${agreementHtml(item.sitting_id)}
       <p><strong>Split.</strong> ${esc(item.split)}</p>
     </article>`).join("");
+  }
+
+  function agreementHtml(sittingId) {
+    const date = (state.night && state.night.date) || "";
+    const row = date && state.agreements ? state.agreements[`${date}/${sittingId}`] : null;
+    if (!row || !D.agreementLabel) return "";
+    const label = D.agreementLabel(row);
+    if (!label) return "";
+    return `<p class="agree-tally"><strong class="agree-count">${esc(row.count)}</strong> <span>${esc(label)}</span></p>`;
   }
 
   function sittingHtml(sitting) {
@@ -109,10 +119,11 @@
       <h3>${esc(sitting.headline)}</h3>
       <div class="docket-setup">${paragraphs([sitting.setup], sitting.quotes)}</div>
       <p class="docket-question">${esc(sitting.question)}</p>
+      ${agreementHtml(sitting.id)}
       <p class="why-chairs"><span class="note-flag">Why these chairs</span> ${esc(sitting.why_these_chairs)}</p>
       <div class="playback docket-play" role="group" aria-label="Turns in this sitting">
         <button type="button" data-docket-play aria-pressed="false">Play</button>
-        <button type="button" data-docket-next>Next turn</button>
+        <button type="button" data-docket-next${state.spaceTurn ? ' aria-keyshortcuts="Space"' : ""}>Next turn</button>
         <button type="button" data-docket-all>Show the sitting</button>
       </div>
       <p class="hint docket-status" role="status">The moderator has opened. The chairs speak one at a time.</p>
@@ -440,6 +451,55 @@
     }
   }
 
+  function applySpaceTurn(on) {
+    const Keys = window.AthenaeumKeys;
+    state.spaceTurn = !!on;
+    if (Keys) Keys.writeSpaceTurn(localStorage, state.spaceTurn);
+    document.querySelectorAll("[data-docket-next]").forEach((button) => {
+      if (state.spaceTurn) button.setAttribute("aria-keyshortcuts", "Space");
+      else button.removeAttribute("aria-keyshortcuts");
+    });
+  }
+
+  function onSpaceTurn(event) {
+    const Keys = window.AthenaeumKeys;
+    if (!Keys || !Keys.spaceShouldAdvance(event, {
+      enabled: !!state.spaceTurn,
+      dialogOpen: Keys.overlayOpen(document)
+    })) return;
+    const sections = [...document.querySelectorAll("[data-sitting]")];
+    const viewTop = window.scrollY || document.documentElement.scrollTop || 0;
+    const active = document.activeElement;
+    const chosen = Keys.chooseSitting(sections.map((section) => {
+      const rect = section.getBoundingClientRect();
+      const top = rect.top + viewTop;
+      return {
+        id: section.dataset.sitting,
+        top,
+        bottom: top + rect.height,
+        hiddenCount: hiddenTurns(section).length,
+        focused: !!(active && active !== document.body && active !== document.documentElement && section.contains(active))
+      };
+    }), { top: viewTop, bottom: viewTop + (window.innerHeight || 0) });
+    if (!chosen || !chosen.advance) return;
+    const section = sections.find((item) => item.dataset.sitting === chosen.id);
+    if (!section) return;
+    event.preventDefault();
+    stopPlay(section);
+    revealNext(section);
+  }
+
+  function bindSpaceTurn() {
+    const Keys = window.AthenaeumKeys;
+    state.spaceTurn = Keys ? Keys.readSpaceTurn(localStorage) : false;
+    const spaceBox = $("space-turn");
+    if (spaceBox) {
+      spaceBox.checked = !!state.spaceTurn;
+      spaceBox.addEventListener("change", () => applySpaceTurn(spaceBox.checked));
+    }
+    document.addEventListener("keydown", onSpaceTurn);
+  }
+
   function applyTheme(theme) {
     const dark = theme === "dark";
     document.documentElement.dataset.theme = dark ? "dark" : "light";
@@ -456,10 +516,30 @@
     paintRead();
   }
 
+  async function loadAgreements() {
+    try {
+      const response = await fetch("docket/agreements.json");
+      if (!response.ok) return {};
+      const data = await response.json();
+      const map = {};
+      (data.discussions || []).forEach((row) => {
+        if (row && row.id) map[row.id] = row;
+      });
+      return map;
+    } catch (err) {
+      return {};
+    }
+  }
+
   async function boot() {
-    const response = await fetch("docket/index.json");
+    bindSpaceTurn();
+    const [response, agreements] = await Promise.all([
+      fetch("docket/index.json"),
+      loadAgreements()
+    ]);
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
+    state.agreements = agreements;
     state.nights = index.nights || [];
     state.read = D.loadReadMap(window.localStorage);
     const asked = D.nightQuery(window.location);
