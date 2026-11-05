@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "" };
+  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false };
   let requestSeq = 0;
 
   function esc(text) {
@@ -112,7 +112,7 @@
       <p class="why-chairs"><span class="note-flag">Why these chairs</span> ${esc(sitting.why_these_chairs)}</p>
       <div class="playback docket-play" role="group" aria-label="Turns in this sitting">
         <button type="button" data-docket-play aria-pressed="false">Play</button>
-        <button type="button" data-docket-next>Next turn</button>
+        <button type="button" data-docket-next${state.spaceTurn ? ' aria-keyshortcuts="Space"' : ""}>Next turn</button>
         <button type="button" data-docket-all>Show the sitting</button>
       </div>
       <p class="hint docket-status" role="status">The moderator has opened. The chairs speak one at a time.</p>
@@ -440,6 +440,55 @@
     }
   }
 
+  function applySpaceTurn(on) {
+    const Keys = window.AthenaeumKeys;
+    state.spaceTurn = !!on;
+    if (Keys) Keys.writeSpaceTurn(localStorage, state.spaceTurn);
+    document.querySelectorAll("[data-docket-next]").forEach((button) => {
+      if (state.spaceTurn) button.setAttribute("aria-keyshortcuts", "Space");
+      else button.removeAttribute("aria-keyshortcuts");
+    });
+  }
+
+  function onSpaceTurn(event) {
+    const Keys = window.AthenaeumKeys;
+    if (!Keys || !Keys.spaceShouldAdvance(event, {
+      enabled: !!state.spaceTurn,
+      dialogOpen: Keys.overlayOpen(document)
+    })) return;
+    const sections = [...document.querySelectorAll("[data-sitting]")];
+    const viewTop = window.scrollY || document.documentElement.scrollTop || 0;
+    const active = document.activeElement;
+    const chosen = Keys.chooseSitting(sections.map((section) => {
+      const rect = section.getBoundingClientRect();
+      const top = rect.top + viewTop;
+      return {
+        id: section.dataset.sitting,
+        top,
+        bottom: top + rect.height,
+        hiddenCount: hiddenTurns(section).length,
+        focused: !!(active && active !== document.body && active !== document.documentElement && section.contains(active))
+      };
+    }), { top: viewTop, bottom: viewTop + (window.innerHeight || 0) });
+    if (!chosen || !chosen.advance) return;
+    const section = sections.find((item) => item.dataset.sitting === chosen.id);
+    if (!section) return;
+    event.preventDefault();
+    stopPlay(section);
+    revealNext(section);
+  }
+
+  function bindSpaceTurn() {
+    const Keys = window.AthenaeumKeys;
+    state.spaceTurn = Keys ? Keys.readSpaceTurn(localStorage) : false;
+    const spaceBox = $("space-turn");
+    if (spaceBox) {
+      spaceBox.checked = !!state.spaceTurn;
+      spaceBox.addEventListener("change", () => applySpaceTurn(spaceBox.checked));
+    }
+    document.addEventListener("keydown", onSpaceTurn);
+  }
+
   function applyTheme(theme) {
     const dark = theme === "dark";
     document.documentElement.dataset.theme = dark ? "dark" : "light";
@@ -457,6 +506,7 @@
   }
 
   async function boot() {
+    bindSpaceTurn();
     const response = await fetch("docket/index.json");
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();

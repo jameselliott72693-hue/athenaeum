@@ -282,6 +282,7 @@ html[data-theme="dark"] .lean.against { background: #3a2623; color: #f0cfc9; }
 .note-flag { display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
 .passage { font-family: var(--serif); font-size: 18px; line-height: 1.45; }
 .header-tools .check { margin: 0; min-height: 44px; align-items: center; }
+.header-tools .space-turn { max-width: 18rem; text-align: left; line-height: 1.3; }
 .modern-toggle { margin: 0 0 8px; }
 .modern-read {
   font-family: var(--sans);

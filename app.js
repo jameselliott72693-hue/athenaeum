@@ -8,6 +8,7 @@
   const Lines = window.AthenaeumLines;
   const Paths = window.AthenaeumPaths;
   const Modern = window.AthenaeumModern;
+  const Keys = window.AthenaeumKeys;
   const SPEEDS = { slow: 7000, normal: 3600, fast: 1300 };
   const state = {
     thinkers: [],
@@ -33,7 +34,8 @@
     sound: { muted: false, volume: 70 },
     revealToken: 0,
     playback: { speed: "normal", paused: true, index: 0, timer: null, token: 0 },
-    modernDefault: false
+    modernDefault: false,
+    spaceTurn: false
   };
 
   const $ = (id) => document.getElementById(id);
@@ -953,11 +955,11 @@
       <p class="lede">Read against ${esc(topics)}. The first chair addresses the subject. Each later chair answers from a card or a passage that meets what was already raised, or sits out.</p>
       <div class="playback" id="playback" role="group" aria-label="Playback">
         <button type="button" id="play-toggle" aria-pressed="false" aria-keyshortcuts="p">Pause</button>
-        <button type="button" id="step-turn" aria-keyshortcuts="n">Next turn</button>
+        <button type="button" id="step-turn" aria-keyshortcuts="${state.spaceTurn ? "n Space" : "n"}">Next turn</button>
         <div class="speed" role="radiogroup" aria-label="Speed">${speeds}</div>
         <p id="play-status" class="hint" role="status"></p>
       </div>
-      <p class="hint playback-keys">Keyboard, when you are not typing: P pauses, N steps to the next turn.</p>
+      <p class="hint playback-keys">${esc(playbackKeysText())}</p>
       <form id="moderator" class="moderator-form">
         <label class="field" for="follow-up">Follow-up</label>
         <textarea id="follow-up" maxlength="240" placeholder="A question for the table, or for one chair."></textarea>
@@ -1160,6 +1162,28 @@
     const open = !!state.modernDefault;
     return `<button type="button" class="text-btn modern-toggle" data-modern="${index}" aria-expanded="${open ? "true" : "false"}" aria-controls="modern-read-${index}">${open ? "Hide modern read" : "Modern read"}</button>
       <div class="modern-read" id="modern-read-${index}"${open ? "" : " hidden"}><p><span class="note-flag">Paraphrase, not a quotation.</span> ${esc(text)}</p></div>`;
+  }
+
+  function playbackKeysText() {
+    return state.spaceTurn
+      ? "Keyboard, when you are not typing: P pauses, N or Space steps to the next turn."
+      : "Keyboard, when you are not typing: P pauses, N steps to the next turn.";
+  }
+
+  function syncSpaceTurnControls() {
+    const hint = document.querySelector("#session .playback-keys");
+    if (hint) hint.textContent = playbackKeysText();
+    const step = $("step-turn");
+    if (step) step.setAttribute("aria-keyshortcuts", state.spaceTurn ? "n Space" : "n");
+  }
+
+  function applySpaceTurn(on) {
+    state.spaceTurn = !!on;
+    if (Keys) Keys.writeSpaceTurn(localStorage, state.spaceTurn);
+    else {
+      try { localStorage.setItem("athenaeum.spaceTurn", state.spaceTurn ? "1" : "0"); } catch (err) { /* ignore */ }
+    }
+    syncSpaceTurnControls();
   }
 
   function applyModernDefault(on) {
@@ -1749,6 +1773,11 @@
       modernBox.checked = !!state.modernDefault;
       modernBox.addEventListener("change", () => applyModernDefault(modernBox.checked));
     }
+    const spaceBox = $("space-turn");
+    if (spaceBox) {
+      spaceBox.checked = !!state.spaceTurn;
+      spaceBox.addEventListener("change", () => applySpaceTurn(spaceBox.checked));
+    }
     document.addEventListener("keydown", (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
         e.preventDefault();
@@ -1762,6 +1791,13 @@
         e.preventDefault();
         togglePlay();
       } else if (e.key === "n" || e.key === "N" || e.key === "ArrowRight") {
+        e.preventDefault();
+        stepTurn();
+      } else if (Keys && Keys.spaceShouldAdvance(e, {
+        enabled: !!state.spaceTurn,
+        dialogOpen: Keys.overlayOpen(document)
+      })) {
+        if (state.playback.index >= (state.reading.turns || []).length) return;
         e.preventDefault();
         stepTurn();
       }
@@ -2043,6 +2079,7 @@
     if (sound && Number.isFinite(sound.volume)) state.sound.volume = sound.volume;
     const draft = loadJson("athenaeum.draft", {});
     try { state.modernDefault = localStorage.getItem("athenaeum.modern") === "1"; } catch (err) { state.modernDefault = false; }
+    state.spaceTurn = Keys ? Keys.readSpaceTurn(localStorage) : false;
     const theme = (() => { try { return localStorage.getItem("athenaeum.theme"); } catch (err) { return null; } })();
     const prefer = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     applyTheme(theme === "dark" || theme === "light" ? theme : prefer);

@@ -41,6 +41,10 @@
         <input id="modern-default" type="checkbox" />
         <span>Show modern reads</span>
       </label>
+      <label class="check header-check space-turn" id="space-turn-wrap" title="When this is on, the space bar steps to the next turn in a sitting. It does not while you are typing, or while a dialog is open.">
+        <input id="space-turn" type="checkbox" />
+        <span>Space advances to the next turn</span>
+      </label>
       <button type="button" id="theme" class="theme-btn" aria-pressed="false">Dark</button>
     </div>
     <nav class="site-nav" aria-label="Site">
@@ -179,7 +183,7 @@
         <div id="lineup" class="lineup" hidden></div>
         <p id="err" class="err" role="alert"></p>
         <button type="button" class="solid wide" id="weigh">Ask the table</button>
-        <p class="hint">⌘/Ctrl + Enter asks. Chairs then speak in turn. P pauses and N steps ahead, when you are not typing. Bookmarks, seatings, and full sittings stay in this browser, and you can export them.</p>
+        <p class="hint">⌘/Ctrl + Enter asks. Chairs then speak in turn. P pauses and N steps ahead, when you are not typing. Space does that too when “Space advances to the next turn” is on. Bookmarks, seatings, and full sittings stay in this browser, and you can export them.</p>
       </section>
     </div>
     <div id="session" class="session" aria-live="polite"></div>
@@ -212,6 +216,7 @@
   <script src="paths.js"></script>
   <script src="store.js"></script>
   <script src="share.js"></script>
+  <script src="keys.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
