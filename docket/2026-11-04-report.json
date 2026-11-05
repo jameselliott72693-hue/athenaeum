@@ -1,0 +1,319 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-04",
+ "date_long": "Wednesday, November 4, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-04.json",
+  "sha256": "e90f44c27770798a4542f93311f72d7822df9308c90632a5319f73795571cd44",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Democrats take both the House and the Senate; Alaska and Mississippi still counting",
+     "summary": "By Wednesday the networks projected Democrats would control both chambers in January: a Senate majority of at least 54-44 after flipping seven Republican seats (North Carolina, Maine, Ohio, Iowa, Texas, Kansas and South Carolina), with Alaska (Peltola vs. Sullivan) and Mississippi (Colom vs. Hyde-Smith) too close to call, and a House gain of at least 30 seats, per Reuters. Hakeem Jeffries is set to become the first Black speaker; Speaker Mike Johnson said he won't stay on as Republican leader, and Steve Scalise and Jim Jordan launched bids. Trump spent his first post-election appearance touring his White House ballroom construction, saying he'd \"get along probably with the Democrats, unless they want to be destructive, but I have the power of the veto.\"",
+     "sources": [
+      {
+       "name": "Reuters",
+       "url": "https://www.reuters.com/5f374b32b07b/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+      },
+      {
+       "name": "CBS Senate results",
+       "url": "https://www.cbsnews.com/live-updates/senate-election-results-2026/"
+      },
+      {
+       "name": "Ballotpedia",
+       "url": "https://news.ballotpedia.org/2026/11/04/democrats-win-u-s-house-and-senate-majorities/"
+      },
+      {
+       "name": "NBC on Johnson",
+       "url": "https://www.nbcnews.com/politics/congress/house-speaker-mike-johnson-republican-leader-gop-losses-rcna607434"
+      }
+     ],
+     "side_a": "Democrats call it a mandate for affordability and accountability. \"We don't work for Donald Trump,\" Jeffries said; \"the days of the House of Representatives functioning like a wholly owned subsidiary of the Trump administration are over.\" Schumer promised to \"entangle him in legislative razor wire,\" and they point to Reuters' count that Republicans lost ground in 99% of counties tallied as evidence the whole country, not just the coasts, wants a check.",
+     "side_a_label": null,
+     "side_b": "Republicans say the president's party nearly always loses midterms (Scalise: \"we were unable to defy history\"), that Trump still holds the veto, and that a Congress that runs on investigations and \"razor wire\" will look like revenge rather than relief. Conservatives such as Rep. Greg Steube argue the lesson is that leadership was too timid, not too conservative, and Republicans still control the lame-duck session through December.",
+     "side_b_label": null,
+     "question_underneath": "What does a wave obligate the winners to do: govern, or check the other side? And how should a defeated majority hand over power without contempt for the voters?",
+     "thinkers_note": "Madison's Federalist 51: \"ambition must be made to counteract ambition\"; divided government as the Constitution working as designed, not failing. Aristotle's Politics, Book III: the good citizen knows how both \"to rule and to be ruled\" in turn; rotation in office as a civic virtue. Tocqueville's warning in Democracy in America about the \"tyranny of the majority,\" which applies to a new majority as much as an old one.",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "\"The reason we lost is the war\": Vance breaks with Trump's defense of the Iran conflict",
+     "summary": "In a long post on X, Vice President JD Vance said Republicans lost both chambers because of the Iran war, adding, \"If you'd like to argue it was worth it, that losing the Senate for the next 6 years was worth it, then do so.\" Trump called Vance's view \"largely true\" but said, \"If I had it to do again, I'd have to do it again... You can't let Iran have a nuclear weapon.\" ABC's voter poll found 34% of House voters called the war crucial to their vote, versus 49% for cost of living and 55% for government corruption.",
+     "sources": [
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/jd-vance-2026-midterms-iran/"
+      },
+      {
+       "name": "ABC News",
+       "url": "https://abcnews.com/Politics/vance-blames-iran-war-republicans-midterms-defeat-trump/story?id=137849295"
+      },
+      {
+       "name": "X news summary",
+       "url": "https://x.com/i/trending/2118403339389968843"
+      }
+     ],
+     "side_a": "Vance and the party's restraint wing say the war, now in its eighth month with 23 U.S. service members killed, broke Trump's no-new-wars promise and drove the gas prices that sank Republicans, and that honesty about it is the first step back. Former Secretary of State Antony Blinken, from the other party, likewise called for a diplomatic end to what he called a war of choice.",
+     "side_a_label": null,
+     "side_b": "Trump, Lara Trump and hawks such as Laura Loomer say stopping a nuclear Iran is worth a political price and that leaders shouldn't govern by polls; Loomer urged Trump to \"finish the job.\" Others note the polls put cost of living and corruption ahead of the war, so blaming one issue is too simple, and loyalists on X accused Vance of disloyalty and positioning for 2028.",
+     "side_b_label": null,
+     "question_underneath": "Should a statesman do what he believes is right even when the people punish him for it? Is a war ever worth losing an election, and who gets to judge?",
+     "thinkers_note": "Max Weber's Politics as a Vocation: the \"ethic of conviction\" versus the \"ethic of responsibility\" for consequences. Burke's Speech to the Electors of Bristol: a representative owes the people \"his judgment,\" and betrays them if he sacrifices it to their opinion. Thucydides' account of Pericles urging Athens to persevere in a war that had turned unpopular, and of the city's later turn against him.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Democrats argue over what to do with their new power",
+     "summary": "Within hours of the wave, Democrats began debating direction: Minnesota Senator-elect Peggy Flanagan thanked Chuck Schumer but called for new Senate leadership, and New York City Mayor Zohran Mamdani said in a video, \"It is not enough to simply win power. We must use it.\" Jeffries stressed affordability, while progressives pushed Medicare for All and higher minimum wages.",
+     "sources": [
+      {
+       "name": "Reuters",
+       "url": "https://www.reuters.com/5f374b32b07b/legal/government/democrats-seize-congress-sweeping-midterm-repudiation-trump-2026-11-04/"
+      },
+      {
+       "name": "X news summary",
+       "url": "https://x.com/i/trending/2118050905589457112"
+      },
+      {
+       "name": "CBS (Schumer)",
+       "url": "https://www.cbsnews.com/live-updates/senate-election-results-2026/"
+      }
+     ],
+     "side_a": "Progressives say the results show that bold economic populism wins, citing Abdul El-Sayed's Medicare-for-All campaign in Michigan and Talarico's message against billionaires, and that voters chose change, so the party should pick new leaders and pass an ambitious agenda.",
+     "side_a_label": null,
+     "side_b": "Moderates say the seats that decided the majority were won in red states by candidates like Adam Hamilton, who ran as an \"independent-minded Democrat,\" and by anger at the war and prices rather than a leftward shift. They warn that reading a vote against Trump as a mandate for the left's wish list, with Trump still holding the veto, would waste the majority and hand Republicans 2028.",
+     "side_b_label": null,
+     "question_underneath": "Is a victory a mandate for the winner's program, or mainly a rejection of the loser? What does prudence ask of a party that suddenly has power?",
+     "thinkers_note": "Burke's Reflections: \"A state without the means of some change is without the means of its conservation,\" and reform should still be measured. Michael Oakeshott's \"politics of faith\" versus the \"politics of skepticism\" (The Politics of Faith and the Politics of Scepticism). Aristotle's Nicomachean Ethics on prudence (phronesis): doing the right thing at the right time, in the right measure.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Abortion on the ballot: Missouri and Nevada keep or add rights, Idaho keeps its ban",
+     "summary": "With counting nearly complete, Missouri voters rejected Amendment 3, which would have repealed the abortion-rights amendment they passed in 2024 (55.5% no to 44.5% yes), and Nevada approved Question 6, putting a right to abortion until viability in its constitution. Idaho voters rejected Proposition 1, which would have created a right to abortion until viability (about 56% no), keeping the state's ban; the AP called it at 12:35 a.m. Mountain time Wednesday. Virginia's amendment passed Tuesday night.",
+     "sources": [
+      {
+       "name": "Ballotpedia",
+       "url": "https://news.ballotpedia.org/2026/11/04/voters-approved-abortion-rights-measures-in-two-states-nevada-and-virginia-rejected-a-rights-measure-in-idaho-and-a-repeal-in-missouri/"
+      },
+      {
+       "name": "Kansas City Star",
+       "url": "https://www.kansascity.com/news/politics-government/election/article317926094.html"
+      },
+      {
+       "name": "Idaho Press",
+       "url": "https://www.idahopress.com/elections/idahoans-say-no-to-proposition-1-in-abortion-law-referendum/article_aadc431f-70cc-4a94-9825-b65befced1e2.html"
+      },
+      {
+       "name": "Missouri results",
+       "url": "https://www.newstribune.com/news/2026/nov/04/nov-3-election-results-missouri-amendments-and-propositions/"
+      }
+     ],
+     "side_a": "Abortion-rights supporters say Missouri voters have now answered the question twice and lawmakers should stop relitigating it, that these are private medical decisions for women and doctors, and that Idaho's ban, with its narrow exceptions, puts women's health at risk.",
+     "side_a_label": null,
+     "side_b": "Pro-life voters say Idaho shows a state can choose to protect unborn children; opponents of Prop 1 argued it went beyond what Roe allowed and would have overridden parental consent. They add that a majority vote can't make killing an unborn child right, and that a state-by-state map is what returning the question to the people after Dobbs was always going to look like.",
+     "side_b_label": null,
+     "question_underneath": "Is federalism a real answer to a deep moral disagreement, or only a way of postponing it? Can a people vote on who counts as a person?",
+     "thinkers_note": "Lincoln's \"House Divided\" speech: a nation cannot \"endure permanently half slave and half free,\" set against Justice Brandeis's \"laboratories of democracy\" (New State Ice Co. v. Liebmann). Aquinas on human law: a law that departs from natural law \"is no longer a law but a perversion of law\" (Summa Theologiae I-II, q. 95). John Stuart Mill's On Liberty: \"over his own body and mind, the individual is sovereign,\" and the dispute over whether a second body is present.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Voters back sex-based school sports rules even amid a blue wave",
+     "summary": "As of Wednesday afternoon, Nebraska's Initiative 442 and Arizona's Proposition 318, which limit girls' sports teams (and in Arizona, restrooms and locker rooms) by sex, had passed, per Ballotpedia. Colorado's Proposition 134 (sports by biological sex) and 135 (banning gender surgeries for minors) each led about 52-48 but were not yet called, and Washington's I-638 led 57-43. Missouri's Amendment 3, which bundled a ban on gender-transition care for minors with an abortion repeal, failed.",
+     "sources": [
+      {
+       "name": "Ballotpedia",
+       "url": "https://news.ballotpedia.org/2026/11/04/voters-approved-two-sex-based-school-sports-measures-defeated-one-measure-on-medical-procedures-for-transgender-minors-three-remain-uncalled/"
+      },
+      {
+       "name": "Colorado Public Radio",
+       "url": "https://www.cpr.org/2026/11/03/colorado-election-results-prop-134-prop-135-transgender-youth/"
+      },
+      {
+       "name": "Westword",
+       "url": "https://www.westword.com/news/colorado-trans-activists-regroup-props-134-135-results-40957798/"
+      }
+     ],
+     "side_a": "Supporters say fairness and safety for female athletes and protecting minors from irreversible procedures are common-sense positions that cross party lines, which is why they appear to be winning even in Colorado on a night Democrats swept, and that the Missouri result says more about abortion than about sports or medicine.",
+     "side_a_label": null,
+     "side_b": "Opponents say these measures single out a very small and vulnerable group of children, that medical decisions belong to families and doctors rather than ballot campaigns, and that the narrow margins in Colorado show many voters are uneasy about writing such rules into law; activists there said they are regrouping.",
+     "side_b_label": null,
+     "question_underneath": "What does fairness require when sex and identity diverge, and who should decide for children: parents, doctors, or the public?",
+     "thinkers_note": "Aristotle's justice as treating equals equally and unequals unequally (Politics III; Nicomachean Ethics V), and the question of which differences matter. The Hippocratic principle \"first, do no harm,\" claimed by both sides about acting and about not acting. Parental authority (Locke's Second Treatise; Pierce v. Society of Sisters) versus the state's duty as parens patriae to protect children.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Elon Musk's record $446 million midterm bet comes up empty",
+     "summary": "Musk gave at least $446 million to Republican-aligned super PACs, a record, the Guardian reported, but Democrats won all five Senate races where his America PAC spent most, including Texas, where it spent at least $28 million against James Talarico. \"We just proved that all the money in the world is no match for the people of Texas,\" Talarico said in his victory speech.",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/technology/2026/nov/04/elon-musk-midterm-spending-analysis"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/musk-midterm-texas-talarico-2bae8618952e9688a5f33ce422a063a2"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.com/news/articles/cv8ez3p3ge5ko"
+      }
+     ],
+     "side_a": "Critics of big money say the result is welcome but shouldn't comfort anyone: one man funded several of the most expensive races in history and set a precedent for 2028, his companies depend on government contracts and regulators, and a republic shouldn't depend on voters overcoming a billionaire's ad budget.",
+     "side_a_label": null,
+     "side_b": "Defenders of open political spending say money is a means of speech the First Amendment protects, that Democrats also raised record sums (Talarico and Hamilton broke fundraising records with many small donors), and that Tuesday proved voters can't be bought, which is the best argument against new limits on speech.",
+     "side_b_label": null,
+     "question_underneath": "In a republic, is spending on elections a form of speech, or a thumb on the scale? Can the rich and the many share one politics?",
+     "thinkers_note": "Aristotle's Politics: oligarchy is rule by the wealthy for their own sake, and the stable polity mixes the claims of the few and the many. Buckley v. Valeo (1976) and Citizens United (2010): spending as protected speech, versus the dissenters' concern about corruption and its appearance. Plato's Republic, Book VIII: the oligarchic city is really two cities, one rich and one poor, \"always plotting against one another.\"",
+     "sitting_id": "c3",
+     "sitting_match": "question"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "A Methodist pastor and a seminarian win Senate seats in Kansas and Texas",
+     "summary": "Following up Tuesday's open races: Adam Hamilton, pastor of the largest United Methodist church in the country, beat Sen. Roger Marshall about 51% to 46%, becoming Kansas's first Democratic senator since 1932, and seminarian James Talarico beat Ken Paxton about 55% to 43% in Texas, the first Democratic Senate win there since 1988. Paxton said in conceding, \"I will be praying for him.\" CNN exit polls cited by RNS found Hamilton lost Protestants and Catholics in Kansas but won 82% of religious \"nones.\"",
+     "sources": [
+      {
+       "name": "AP (Kansas)",
+       "url": "https://apnews.com/article/senate-kansas-election-roger-marshall-adam-hamilton-7f09e5cc69e0ac8e618376e60ef311d8"
+      },
+      {
+       "name": "Texas Tribune",
+       "url": "https://www.texastribune.org/2026/11/03/texas-ken-paxton-james-talarico-us-senate-elections-2026/"
+      },
+      {
+       "name": "NPR (Kansas)",
+       "url": "https://www.npr.org/2026/11/03/g-s1-151587/kansas-senate-race-hamilton-marshall"
+      },
+      {
+       "name": "RNS via NCR",
+       "url": "https://www.ncronline.org/news/catholics-and-nones-played-key-role-democrats-historic-victory-exit-polls-show"
+      }
+     ],
+     "side_a": "Supporters say the wins show that a faith centered on the poor, the stranger and honesty in public life can speak to red-state voters, and that both men proved Christian language doesn't belong to one party.",
+     "side_a_label": null,
+     "side_b": "Skeptics say they won a wave driven by prices and the war, not a religious revival. Kansas's swing came mostly from Republican voters who didn't come back (Marshall got about 31% fewer votes than in 2020), the exit polls show nonreligious voters carried them, and their progressive positions on abortion and sexuality remain at odds with most churchgoing voters.",
+     "side_b_label": null,
+     "question_underneath": "Does winning vindicate a public witness? Can a Christian represent a whole state without either hiding his faith or turning it into a party platform?",
+     "thinkers_note": "Jesus before Pilate: \"My kingdom is not of this world\" (John 18:36), alongside Micah 6:8, \"do justly, love mercy, and walk humbly.\" H. Richard Niebuhr's Christ and Culture: the different ways Christians have related faith to public life, from \"against\" to \"transforming.\" Augustine's City of God: Christians seek the peace of the earthly city without mistaking any party for the City of God.",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Abdul El-Sayed becomes the first Muslim elected to the U.S. Senate",
+     "summary": "Democrat Abdul El-Sayed won Michigan's open Senate seat over Trump-backed Republican Mike Rogers after a campaign in which he was attacked over his faith and his stance on Israel. Rogers portrayed him as a communist, and his primary rival, Rep. Haley Stevens, endorsed Rogers days before the vote. \"They wanted an America that is too small for some of us,\" El-Sayed said; \"this is an America that is big enough for all of us.\"",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.com/news/articles/c893z55pxrewo"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/el-sayed-michigan-muslim-db04935081795f4f00525c09eed95374"
+      },
+      {
+       "name": "ABC12 (Flint)",
+       "url": "https://www.abc12.com/news/politics/flint-jewish-leader-weighs-in-on-el-sayed-senate-victory/article_3d5c0e48-dd29-447b-9dda-a914165605c4.html"
+      }
+     ],
+     "side_a": "Supporters, including many Muslim and Arab Americans, call it a milestone after a campaign that baselessly tied him to terrorism, and say Michigan voters rejected the idea that a man's name or faith disqualifies him from office.",
+     "side_a_label": null,
+     "side_b": "Critics say their objections are to his politics, not his religion: he called Israel's actions in Gaza genocide and wants to end U.S. aid to Israel, and he backs a wealth tax and Medicare for All. Some Jewish community leaders voiced worry about his Israel positions, and Stevens's endorsement showed the doubts crossed party lines.",
+     "side_b_label": null,
+     "question_underneath": "Where is the line between scrutinizing a candidate's beliefs and applying a religious test? Can a pluralist nation take faith seriously without fearing it?",
+     "thinkers_note": "Article VI of the Constitution: \"no religious Test shall ever be required as a Qualification to any Office or public Trust.\" George Washington's 1790 letter to the Touro Synagogue: a government that \"gives to bigotry no sanction, to persecution no assistance.\" Locke's Letter Concerning Toleration, and the question of how far toleration extends to those whose views a majority finds threatening.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Catholics split evenly as the religious map shifts",
+     "summary": "Catholic voters, who leaned Republican in 2024, split almost evenly in exit polls, 50% Democratic to 49% Republican, with Hispanic Catholics 65% Democratic and white Catholics 56% Republican, America magazine reported. White evangelicals stayed around 82% Republican but fell to 17% of voters, from 23% in 2024, and religious \"nones\" grew to 27% of the electorate. \"This is about the economy being bad,\" said analyst Ryan Burge.",
+     "sources": [
+      {
+       "name": "America magazine",
+       "url": "https://www.americamagazine.org/news/2026/11/04/catholic-vote-midterm-election-democrat-republican/"
+      },
+      {
+       "name": "RNS via NCR",
+       "url": "https://www.ncronline.org/news/catholics-and-nones-played-key-role-democrats-historic-victory-exit-polls-show"
+      },
+      {
+       "name": "NBC exit polls",
+       "url": "https://www.nbcnews.com/politics/2026-elections/exit-polls"
+      }
+     ],
+     "side_a": "Some Catholic scholars say the bishops' broader emphasis on immigration, workers and peace alongside abortion gave Catholic voters permission to weigh the war, deportations and prices, and that Latino Catholics voted from direct experience of immigration enforcement in their communities.",
+     "side_a_label": null,
+     "side_b": "Others, including Burge, say this wasn't a religious election at all but an inflation and war election. They note white Catholics and Catholic men still voted Republican, and evangelical leaders such as Ed Stetzer read the evangelical drop-off as an enthusiasm gap and a call for Republicans to \"return to principled conservatism and to issues of character,\" not a theological shift.",
+     "side_b_label": null,
+     "question_underneath": "Is there still a \"Catholic vote,\" or only Catholics who vote? Should faith form a voting bloc, or form consciences that vote in different ways?",
+     "thinkers_note": "Leo XIII's Rerum Novarum (1891): the Church's social teaching on labor and capital belongs to neither party's platform whole. John F. Kennedy's 1960 Houston speech on a church that does not tell its members how to vote, versus the bishops' tradition of forming \"faithful citizenship.\" Newman on conscience as \"the aboriginal Vicar of Christ,\" and the duty to form it rightly before following it.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-4",
+     "number": 4,
+     "headline": "Pope Leo: \"Politics that tends to the wounds of peoples\" gives hope",
+     "summary": "At his general audience on Wednesday, Pope Leo XIV continued a series on Vatican II's Gaudium et Spes, saying, \"Politics that tends to the wounds of peoples and of those who suffer injustice offers grounds for hope.\" He quoted Pope Francis that \"war is a failure of politics and of humanity,\" called for ending discrimination against migrants and the vulnerable, and said the political community \"exists for the sake of the common good.\" He didn't mention the U.S. election.",
+     "sources": [
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-general-audience-social-economic-life-social-doctrine.html"
+      },
+      {
+       "name": "Holy See Press Office",
+       "url": "https://press.vatican.va/content/salastampa/en/bollettino/pubblico/2026/11/04/261104e.html"
+      }
+     ],
+     "side_a": "Many Catholics heard a timely word the day after an election shaped by war and prices: that the Church's social teaching on peace, workers and migrants should guide believers' public lives, and that young Catholics should go into politics as a vocation of service.",
+     "side_a_label": null,
+     "side_b": "Other Catholics stress that the same document says governments \"cannot be denied the right to lawful self-defense, once every means of peaceful settlement has been exhausted\" (Gaudium et Spes 79), and that specific judgments on war and immigration belong to lay statesmen, so the Pope's words shouldn't be read as taking sides in American politics.",
+     "side_b_label": null,
+     "question_underneath": "What can the Church say to politics without becoming a party? Where does moral teaching end and prudential judgment begin?",
+     "thinkers_note": "Gaudium et Spes 76: the Church and the political community are \"autonomous and independent from each other\" yet serve the same people. Aquinas on prudence as the virtue of rulers, applying general principles to particular cases. Pius XI's Quadragesimo Anno (1931) on subsidiarity: higher authorities shouldn't absorb what lower communities can do for themselves.",
+     "sitting_id": "r4",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
