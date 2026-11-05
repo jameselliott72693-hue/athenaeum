@@ -421,6 +421,26 @@ footer { color: var(--soft); font-size: 14px; }
   padding: 8px 12px;
   border-radius: 8px;
 }
+.agree-tally {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--wash);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.35;
+}
+.agree-count {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 560;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
 .briefing-list, .docket-sittings { display: grid; gap: 12px; margin-top: 12px; }
 .briefing-card, .docket-sitting, .docket-tally {
   border: 1px solid var(--line);

@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false };
+  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {} };
   let requestSeq = 0;
 
   function esc(text) {
@@ -94,8 +94,18 @@
       <h3><a href="#sitting-${esc(item.sitting_id)}">${esc(item.question)}</a></h3>
       <p class="meta">${(item.chairs || []).map(esc).join(", ")}</p>
       <p><strong>Agreed.</strong> ${esc(item.agreed)}</p>
+      ${agreementHtml(item.sitting_id)}
       <p><strong>Split.</strong> ${esc(item.split)}</p>
     </article>`).join("");
+  }
+
+  function agreementHtml(sittingId) {
+    const date = (state.night && state.night.date) || "";
+    const row = date && state.agreements ? state.agreements[`${date}/${sittingId}`] : null;
+    if (!row || !D.agreementLabel) return "";
+    const label = D.agreementLabel(row);
+    if (!label) return "";
+    return `<p class="agree-tally"><strong class="agree-count">${esc(row.count)}</strong> <span>${esc(label)}</span></p>`;
   }
 
   function sittingHtml(sitting) {
@@ -109,6 +119,7 @@
       <h3>${esc(sitting.headline)}</h3>
       <div class="docket-setup">${paragraphs([sitting.setup], sitting.quotes)}</div>
       <p class="docket-question">${esc(sitting.question)}</p>
+      ${agreementHtml(sitting.id)}
       <p class="why-chairs"><span class="note-flag">Why these chairs</span> ${esc(sitting.why_these_chairs)}</p>
       <div class="playback docket-play" role="group" aria-label="Turns in this sitting">
         <button type="button" data-docket-play aria-pressed="false">Play</button>
@@ -505,11 +516,30 @@
     paintRead();
   }
 
+  async function loadAgreements() {
+    try {
+      const response = await fetch("docket/agreements.json");
+      if (!response.ok) return {};
+      const data = await response.json();
+      const map = {};
+      (data.discussions || []).forEach((row) => {
+        if (row && row.id) map[row.id] = row;
+      });
+      return map;
+    } catch (err) {
+      return {};
+    }
+  }
+
   async function boot() {
     bindSpaceTurn();
-    const response = await fetch("docket/index.json");
+    const [response, agreements] = await Promise.all([
+      fetch("docket/index.json"),
+      loadAgreements()
+    ]);
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
+    state.agreements = agreements;
     state.nights = index.nights || [];
     state.read = D.loadReadMap(window.localStorage);
     const asked = D.nightQuery(window.location);

@@ -254,6 +254,71 @@
     }
   }
 
+  function distinctChairs(chairs) {
+    const seen = new Set();
+    const names = [];
+    (chairs || []).forEach((name) => {
+      const clean = String(name || "").trim();
+      const key = clean.toLowerCase();
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      names.push(clean);
+    });
+    return names;
+  }
+
+  function discussionsFromNight(date, night) {
+    return ((night && night.sittings) || []).map((sitting) => ({
+      id: `${date}/${sitting && sitting.id}`,
+      agreed: (sitting && sitting.briefing && sitting.briefing.agreed) || "",
+      question: (sitting && sitting.question) || "",
+      chairs: ((sitting && sitting.chairs) || []).map((chair) => chair && chair.name)
+    }));
+  }
+
+  function agreementTallies(discussions, topicsOf) {
+    const list = [];
+    const seen = new Set();
+    (discussions || []).forEach((item) => {
+      if (!item || item.id == null || String(item.id) === "") return;
+      const id = String(item.id);
+      if (seen.has(id)) return;
+      const agreed = String(item.agreed || "").trim();
+      if (!agreed || distinctChairs(item.chairs).length < 2) return;
+      seen.add(id);
+      const raw = typeof topicsOf === "function" ? topicsOf(`${item.question || ""} ${agreed}`) : [];
+      const topics = [...new Set((raw || []).map((topic) => String(topic || "")).filter(Boolean))];
+      list.push({ id, topics });
+    });
+    const counts = {};
+    list.forEach((row) => {
+      row.topics.forEach((topic) => { counts[topic] = (counts[topic] || 0) + 1; });
+    });
+    return list.map((row) => {
+      let subject = "";
+      row.topics.forEach((topic) => {
+        if (!subject) {
+          subject = topic;
+          return;
+        }
+        const best = counts[subject];
+        const next = counts[topic];
+        if (next < best || (next === best && topic < subject)) subject = topic;
+      });
+      return { id: row.id, subject, count: subject ? counts[subject] : 1 };
+    });
+  }
+
+  function agreementLabel(row) {
+    if (!row) return "";
+    const count = Number(row.count);
+    const n = Number.isFinite(count) ? count : 0;
+    const subject = String(row.subject || "").trim();
+    if (subject) return `${n === 1 ? "discussion" : "discussions"} where thinkers agreed on ${subject}`;
+    const opening = n === 1 ? "discussion records this agreement" : "discussions record this agreement";
+    return `${opening}. No listed subject ties it to another`;
+  }
+
   function storyIdForSitting(report, sittingId) {
     if (!report || sittingId == null) return "";
     const sections = report.sections || [];
@@ -269,6 +334,7 @@
   return {
     decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightQuery, nightFromLocation, portraitPath, nightUrl, placeUrl,
     httpUrl, sideLabel, noteParts, reportStoryHtml, reportHtml, storyIdForSitting,
-    READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap
+    READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap,
+    distinctChairs, discussionsFromNight, agreementTallies, agreementLabel
   };
 });
