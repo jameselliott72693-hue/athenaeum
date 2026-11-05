@@ -3,17 +3,17 @@
     {
       "id": "2026-11-04/p1",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-11-04/p2",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-11-04/p3",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-11-04/c1",
@@ -23,32 +23,77 @@
     {
       "id": "2026-11-04/c2",
       "subject": "family",
-      "count": 6
+      "count": 7
     },
     {
       "id": "2026-11-04/c3",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-11-04/r1",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-11-04/r2",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-11-04/r3",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-11-04/r4",
-      "subject": "knowledge",
+      "subject": "moral",
       "count": 15
+    },
+    {
+      "id": "2026-11-03/p1",
+      "subject": "democracy",
+      "count": 11
+    },
+    {
+      "id": "2026-11-03/p2",
+      "subject": "war",
+      "count": 9
+    },
+    {
+      "id": "2026-11-03/p3",
+      "subject": "",
+      "count": 1
+    },
+    {
+      "id": "2026-11-03/c1",
+      "subject": "family",
+      "count": 7
+    },
+    {
+      "id": "2026-11-03/c2",
+      "subject": "",
+      "count": 1
+    },
+    {
+      "id": "2026-11-03/c3",
+      "subject": "knowledge",
+      "count": 16
+    },
+    {
+      "id": "2026-11-03/r1",
+      "subject": "",
+      "count": 1
+    },
+    {
+      "id": "2026-11-03/r2",
+      "subject": "religion",
+      "count": 35
+    },
+    {
+      "id": "2026-11-03/r3",
+      "subject": "religion",
+      "count": 35
     },
     {
       "id": "2026-11-02/p1",
@@ -78,7 +123,7 @@
     {
       "id": "2026-11-02/c3",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     },
     {
       "id": "2026-11-02/c4",
@@ -93,12 +138,12 @@
     {
       "id": "2026-11-02/r2",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     },
     {
       "id": "2026-11-02/r3",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-11-02/r4",
@@ -113,7 +158,7 @@
     {
       "id": "2026-11-01/p2",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-11-01/p3",
@@ -143,7 +188,7 @@
     {
       "id": "2026-11-01/r2",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-11-01/r3",
@@ -153,7 +198,7 @@
     {
       "id": "2026-11-01/r4",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-10-31/p1",
@@ -168,7 +213,7 @@
     {
       "id": "2026-10-31/p3",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-10-31/p4",
@@ -203,7 +248,7 @@
     {
       "id": "2026-10-31/r3",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     },
     {
       "id": "2026-10-30/p1",
@@ -213,7 +258,7 @@
     {
       "id": "2026-10-30/p2",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-10-30/p3",
@@ -223,12 +268,12 @@
     {
       "id": "2026-10-30/p4",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-10-30/c1",
       "subject": "family",
-      "count": 6
+      "count": 7
     },
     {
       "id": "2026-10-30/c2",
@@ -243,7 +288,7 @@
     {
       "id": "2026-10-30/r1",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-30/r2",
@@ -263,7 +308,7 @@
     {
       "id": "2026-10-29/p1",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-10-29/p2",
@@ -277,7 +322,7 @@
     },
     {
       "id": "2026-10-29/c1",
-      "subject": "knowledge",
+      "subject": "liberty",
       "count": 15
     },
     {
@@ -303,7 +348,7 @@
     {
       "id": "2026-10-29/r2",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-29/r3",
@@ -313,12 +358,12 @@
     {
       "id": "2026-10-29/r4",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-29/r5",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-26/p1",
@@ -328,12 +373,12 @@
     {
       "id": "2026-10-26/p2",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-26/p3",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-10-26/c1",
@@ -353,12 +398,12 @@
     {
       "id": "2026-10-26/r1",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-26/r2",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-10-26/r3",
@@ -368,12 +413,12 @@
     {
       "id": "2026-10-26/r4",
       "subject": "family",
-      "count": 6
+      "count": 7
     },
     {
       "id": "2026-10-25/p1",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-10-25/p2",
@@ -383,7 +428,7 @@
     {
       "id": "2026-10-25/p3",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-10-25/p4",
@@ -398,7 +443,7 @@
     {
       "id": "2026-10-25/c2",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     },
     {
       "id": "2026-10-25/c3",
@@ -413,7 +458,7 @@
     {
       "id": "2026-10-25/r1",
       "subject": "religion",
-      "count": 33
+      "count": 35
     },
     {
       "id": "2026-10-25/r2",
@@ -428,7 +473,7 @@
     {
       "id": "2026-10-24/p1",
       "subject": "democracy",
-      "count": 9
+      "count": 11
     },
     {
       "id": "2026-10-24/p2",
@@ -448,7 +493,7 @@
     {
       "id": "2026-10-24/c2",
       "subject": "family",
-      "count": 6
+      "count": 7
     },
     {
       "id": "2026-10-24/c3",
@@ -478,7 +523,7 @@
     {
       "id": "2026-10-24/r4",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-10-23/p1",
@@ -498,7 +543,7 @@
     {
       "id": "2026-10-23/p4",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-10-23/c1",
@@ -523,12 +568,12 @@
     {
       "id": "2026-10-23/r1",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-10-23/r2",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     },
     {
       "id": "2026-10-23/r3",
@@ -543,12 +588,12 @@
     {
       "id": "2026-10-22/p1",
       "subject": "war",
-      "count": 8
+      "count": 9
     },
     {
       "id": "2026-10-22/p2",
       "subject": "power",
-      "count": 20
+      "count": 21
     },
     {
       "id": "2026-10-22/p3",
@@ -573,16 +618,16 @@
     {
       "id": "2026-10-22/c3",
       "subject": "family",
-      "count": 6
+      "count": 7
     },
     {
       "id": "2026-10-22/c4",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     },
     {
       "id": "2026-10-22/r1",
-      "subject": "knowledge",
+      "subject": "moral",
       "count": 15
     },
     {
@@ -598,7 +643,7 @@
     {
       "id": "2026-10-22/r4",
       "subject": "knowledge",
-      "count": 15
+      "count": 16
     }
   ]
 }
