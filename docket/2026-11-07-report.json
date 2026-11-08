@@ -1,0 +1,303 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-07",
+ "date_long": "Saturday, November 7, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "html",
+  "file": "reports/Discourse-Report-2026-11-07.html",
+  "sha256": "8603a6cbe4bef1459dde5e5b83906f9bc51638ba61dd2b86dd19d2bcbb9dcf77",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Trump orders the Justice Department to investigate Democrats for “extortion”",
+     "summary": "A day after Democrats locked in control of both chambers, President Trump wrote on Truth Social that Democratic leaders were threatening officials — including Attorney General Todd Blanche — with impeachment and donors with punishment, called it “extortion at the highest level,” and said he was ordering the Justice Department to investigate immediately. He singled out Sen. Elissa Slotkin of Michigan over October remarks wanting young people to think twice before joining his administration; Slotkin, previously investigated over a 2025 video urging service members to refuse illegal orders (a grand jury declined to indict), replied that if you didn’t break the law, “it’s all good.” House Democrats, including North Carolina’s Deborah Ross, have said they would support impeaching Blanche.",
+     "sources": [
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html"
+      },
+      {
+       "name": "The Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/"
+      },
+      {
+       "name": "POLITICO",
+       "url": "https://www.politico.com/news/2026/11/07/trump-calls-for-doj-investigation-into-democratic-oversight-01155242"
+      },
+      {
+       "name": "Fox News",
+       "url": "https://www.foxnews.com/politics/trump-orders-doj-probe-democrats-over-alleged-threats-against-admin-officials"
+      }
+     ],
+     "side_a": "Critics say a president who just lost Congress is trying to criminalize the ordinary tools of legislative power — hearings, document requests, impeachment, and public warnings to would-be appointees. On X, the line that landed was that “oversight is extortion now,” and that using his own Justice Department against the opposition after an election is the very “lawfare” he condemns. They note he named no letters and offered no public evidence of a crime.",
+     "side_a_label": null,
+     "side_b": "Trump’s supporters say the threat of impeachment “even though they admit they have no reason to do so,” of prison for donors, and of ruining the careers of young conservatives is not oversight but intimidation meant to paralyze the executive branch. They argue that a Justice Department that already investigated Slotkin’s earlier video has a duty to look at a coordinated campaign of threats, and that the people who should face prison are the “extortionists,” not the officials and donors being targeted.",
+     "side_b_label": null,
+     "question_underneath": "Where does democratic accountability end and political persecution begin? May the winner of an election use the courts against the opposition, or the loser use Congress to ruin the winner’s allies?",
+     "thinkers_note": null,
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Gunman kills six in Kraków’s market square; three more bodies found at his home",
+     "summary": "A 24-year-old Polish man drove onto Kraków’s Main Market Square on Saturday afternoon and opened fire, killing six people — four women and two men, including a British citizen — and injuring 16, among them two police officers and visitors from Britain, Austria, Germany, Portugal, and Russia. Officers wounded and detained him within minutes; Prime Minister Donald Tusk said three more bodies, likely family members, were found at the suspect’s home, called the attack terrorism, and declared national mourning for November 8 and 9. Interior Minister Marcin Kierwiński said the attacker wore military-style clothing, had several weapons including a rifle similar to an AR-15, and that “everything suggests” he was “fascinated by far-right ideologies,” a reading he said still needed to be verified.",
+     "sources": [
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.com/news/articles/c6n9r01d2709o"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman"
+      },
+      {
+       "name": "Polish Prime Minister’s Office",
+       "url": "https://www.gov.pl/web/premier/premier-w-obliczu-tragedii-w-krakowie-zobaczylismy-to-co-w-ludziach-najlepsze--odwage-policjantow-poswiecenie-ratownikow-i-bezinteresowna-pomoc-ludzi"
+      },
+      {
+       "name": "CNA / AFP",
+       "url": "https://www.channelnewsasia.com/world/gunman-fascinated-far-right-kills-six-in-krakow-poland-6533446"
+      }
+     ],
+     "side_a": "For many in Poland and across Europe, the attack is further proof that far-right radicalization and military-style weapons can turn a public square into a killing ground. They hear Tusk’s vow to find supporters as the least a government can do after an act it has named terrorism, and they want the ideology named plainly rather than blurred into mental illness or a private family tragedy.",
+     "side_a_label": null,
+     "side_b": "Others urge caution before a political camp is blamed for one man’s crime. The interior minister himself said the far-right reading still had to be verified; the three bodies at the family home raise the possibility of a private collapse as well as an ideological one. They worry that a “terrorism” label and a hunt for “supporters” can become a tool against ordinary nationalists, and that Poland’s relatively rare gun violence should not be made to fit an American or Western European script before the facts are in.",
+     "side_b_label": null,
+     "question_underneath": "How should a free country confront political violence without turning suspicion into a weapon against a whole side of its politics?",
+     "thinkers_note": null,
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Israel’s president tasks Gadi Eisenkot with forming a government, passing over Netanyahu",
+     "summary": "President Isaac Herzog announced Saturday that he would task former military chief Gadi Eisenkot, leader of the Yashar party, with forming Israel’s next government after the deadlocked October 27 election. Eisenkot received 67 Knesset recommendations to Benjamin Netanyahu’s 46 and will have 28 days, plus a possible 14-day extension, after Sunday’s formal ceremony; Netanyahu’s bloc won 53 seats and Eisenkot’s alliance 48, with Arab-led parties at a record 19. Eisenkot has ruled out serving with Netanyahu and says he does not want a coalition with the Arab-led parties, while a deal with the ultra-Orthodox could reach exactly 61 seats. Netanyahu, still caretaker prime minister, called for a “national unity government” including his far-right allies and warned that a government “dependent on Islamists” would “dismantle the state of Israel from within.”",
+     "sources": [
+      {
+       "name": "The Times of Israel",
+       "url": "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/"
+      },
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/07/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government"
+      }
+     ],
+     "side_a": "Eisenkot’s backers say a democratic majority of lawmakers has asked to close the Netanyahu era after October 7, the long war, and a campaign fought on “anyone but Bibi.” They argue that Arab citizens who recommend a prime minister are exercising the ordinary rights of a parliamentary people, and that a “national emergency government” built around service for all and the Declaration of Independence is how a Jewish and democratic state renews itself.",
+     "side_a_label": null,
+     "side_b": "Netanyahu and his allies say the largest bloc in the election was theirs, that a government leaning on Arab-led parties — some of which they accuse of hostility to the state’s Jewish character — would be a minority imposing itself on the Jewish majority, and that “unity” should mean bringing the right-wing and religious partners back in rather than sending them out. For them the question is not manners toward the president’s choice but whether Israel remains, in practice, a Jewish state.",
+     "side_b_label": null,
+     "question_underneath": "Who counts as a full partner in a nation’s self-government? Can a people still at war share power with fellow citizens they do not fully trust?",
+     "thinkers_note": null,
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Qatar presses a Hormuz-and-inspectors plan as Trump weighs another strike on Iran",
+     "summary": "Qatar is trying to arrange a sequence in which the United States would lift its naval blockade in the Strait of Hormuz and release a portion of Iran’s frozen assets — about $8 billion in the outline reported Saturday — Iran would admit IAEA inspectors to bombed nuclear sites, and the strait would reopen the next day along a route discussed with Oman. Iran says it will negotiate only after demands that officials have described as including an end to hostilities (including in Lebanon), sanctions and blockade relief, unfrozen assets, a smaller U.S. military footprint, reparations, and no further attacks on its territory. President Trump is still considering strikes on remaining nuclear sites, even as Vice President JD Vance said the war itself helped sink Republicans in the midterms; Iran’s Revolutionary Guard said two tankers that tried an unauthorized route struck mines and caught fire.",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
+      },
+      {
+       "name": "Khaleej Times",
+       "url": "https://www.khaleejtimes.com/world/mena/seven-iran-conditions-for-ending-war-with-us"
+      }
+     ],
+     "side_a": "Diplomacy’s advocates say a wounded president has just been told by voters that they do not want another round of this war. Letting inspectors in, reopening the world’s most important oil chokepoint, and trading sanctions relief for verification is, on this view, the just-war requirement of last resort: more bombing after an electoral rebuke would be pride, not prudence. They note that Iran is offering a faster reopening of the strait than before.",
+     "side_a_label": null,
+     "side_b": "Hawks say Tehran is bargaining like a victor, demanding reparations, a thinner American presence, and an end to pressure before it even sits down, while its forces mine tankers and keep inspectors out because they fear the findings will become targeting data. For them, unfinished nuclear work and a blocked strait are not items for a memorandum; they are reasons to finish the job before Iran reconstitutes what the first strikes destroyed.",
+     "side_b_label": null,
+     "question_underneath": "After a war that satisfied neither side, is peace purchased by concession or by completing the fight? What does a nation owe the dead if it stops short, or the living if it goes on?",
+     "thinkers_note": null,
+     "sitting_id": "p4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Macklemore says nine U.S. arenas refused his Free Palestine benefit tour",
+     "summary": "Rapper Macklemore said Friday that after sold-out Free Palestine benefit shows in Dublin, Paris, and London, nine U.S. arenas that had offered dates by mid-September took them “off the table” once they learned the shows were Palestine benefits, including Madison Square Garden, Barclays Center, Crypto.com Arena, Chase Center, and Climate Pledge Arena. “In over 20 years of touring, I’ve never experienced anything like this,” he wrote, calling it “intimidation, manipulation and suppression.” MSG Entertainment told Variety it has “extremely limited availability and he’s not an arena level act.” In September Ed Sheeran dropped him from a U.S. tour after an onstage speech for Palestinians, saying venues had warned they would not host the show if he stayed; the other opening acts and Sheeran’s band then quit in solidarity.",
+     "sources": [
+      {
+       "name": "Variety",
+       "url": "https://variety.com/2026/music/news/macklemore-free-palestine-tour-banned-us-arenas-1236941564/"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour"
+      },
+      {
+       "name": "The Washington Post",
+       "url": "https://www.washingtonpost.com/entertainment/music/2026/11/07/macklemore-says-9-us-venues-turned-down-his-free-palestine-tour/"
+      }
+     ],
+     "side_a": "Macklemore and his supporters treat the cancellations as viewpoint discrimination in a public square that only looks public. They point to European arenas that sold out and ask how nine U.S. buildings could independently revoke holds the moment the word “Palestine” appeared. On X, the MSG line that he is “not an arena-level act” was mocked as a dodge. For this side, a country that “prides itself on freedom of speech” has let a handful of venue owners decide which lives may be named on a stage.",
+     "side_a_label": null,
+     "side_b": "Venue owners and skeptics say private halls have no duty to host a political benefit, that security and controversy have costs, and that a headliner whose last New York show was in a much smaller room is not suddenly owed the Garden because of a cause. Some also argue that a “Free Palestine” tour, after October 7 and a long war, is not neutral humanitarian speech but a one-sided campaign they are free to decline. Freedom of speech, on this view, does not include a right to someone else’s building.",
+     "side_b_label": null,
+     "question_underneath": "When the public square is privately owned, is turning down a show censorship or freedom of association? Who decides which causes may be heard at scale?",
+     "thinkers_note": null,
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "A Milan mural of October 7 hostages is painted into a blank white wall",
+     "summary": "The street artist aleXsandro Palombo’s mural “7 October,” unveiled on the third anniversary of Hamas’s 2023 attack on a wall beside Milan’s Galleria d’Arte Moderna on Via Palestro, has been completely painted over. The work showed former hostages Noa Argamani and Avinatan Or torn apart at the Nova music festival — her arm stretched toward him across an empty gap. The entire municipal wall, not only the painted figures, is now white. The Mosaic, the newspaper of Milan’s Jewish community, reported the erasure on November 6 and noted that no one has publicly claimed responsibility. The wall sits on city-managed property at Villa Reale. The removal comes amid a political fight at city hall over Milan’s sister-city tie with Tel Aviv, and after earlier attacks on Palombo’s work: last July his Holocaust memorial mural of Anne Frank and Primo Levi, titled “Memory Is No Longer Enough,” was defaced with the words “Coloni sionisti nazisti” (“Nazi Zionist settlers”).",
+     "sources": [
+      {
+       "name": "Mosaico (Milan Jewish community)",
+       "url": "https://www.mosaico-cem.it/attualita-e-news/italia/milano-rimosso-il-murale-del-7-ottobre-di-alexsandro-palombo-un-muro-bianco-al-posto-di-noa-e-avinatan/"
+      },
+      {
+       "name": "THEJ.CA",
+       "url": "https://thej.ca/2026/11/07/october-7-memorial-mural-erased-in-milan-raising-questions-over-removal-of-israeli-hostage-artwork/"
+      }
+     ],
+     "side_a": "For many Jews and their allies, a city wall going blank where two hostages had been reaching for each other is not routine maintenance. They see a pattern — vandalism of a Shoah mural, pressure to cut ties with Tel Aviv, and now the disappearance of an October 7 image — and call it the old refusal to let Jewish suffering remain visible in European streets. A white wall, on this view, is a statement: this memory is not welcome.",
+     "side_a_label": null,
+     "side_b": "Others note that no official has said the city ordered the paint, that unauthorized street art is often removed, and that a municipal museum wall is not a permanent memorial by default. Some who oppose public October 7 works in European cities treat them as political claims in a war they want their streets not to take sides in. Until someone takes responsibility, they argue, grief should not outrun the facts of who held the brush.",
+     "side_b_label": null,
+     "question_underneath": "What does a city owe to the memory of other people’s dead? Who has the right to write, or to erase, what the shared wall remembers?",
+     "thinkers_note": null,
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "In Gaza, 250 couples marry at a mass wedding organized by the UAE",
+     "summary": "Two hundred fifty Palestinian couples were married at a mass ceremony on the Gaza City seafront, organized by the United Arab Emirates’ Operation Gallant Knight 3. Many of the newlyweds had postponed their weddings because of the war, displacement, and the cost of a traditional celebration. Brides wore gowns and carried white and red bouquets; grooms wore dark suits, many with keffiyeh scarves. On Saturday, Anwar Gargash, diplomatic adviser to UAE President Sheikh Mohamed, said “Gaza and its people remain at the heart of the UAE’s humanitarian efforts” and that aid should also “bring back a smile and revive hope for a better tomorrow.” The UAE said the operation, launched in November 2023, has delivered more than 136,000 tonnes of aid worth $4.16 billion and accounts for about 46 percent of international humanitarian assistance reaching Gaza — figures presented by the organizers as they marked three years of the mission. The ceremony took place while Israeli military operations and a deep humanitarian crisis continue across the territory.",
+     "sources": [
+      {
+       "name": "The National",
+       "url": "https://www.thenationalnews.com/news/mena/2026/11/07/gazan-couples-tie-the-knot-in-mass-wedding-offering-brief-respite-from-war/"
+      },
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/video/a-joyful-day-for-250-couples-as-they-tie-the-knot-at-a-mass-wedding-ceremony-in-gaza-f04bce435d964e729e553e5385b55b24"
+      }
+     ],
+     "side_a": "Supporters see a stubborn insistence on ordinary life: marriage, family, and a feast when so much else has been taken. In Islamic and human terms alike, helping poor couples marry is a work of mercy, and a foreign government that pays for joy as well as flour is, on this view, doing more than managing a crisis. Hope itself becomes a form of endurance.",
+     "side_a_label": null,
+     "side_b": "Skeptics hear official language about smiles and “a better tomorrow” against a backdrop of ongoing war and displacement and wonder whether a staged mass wedding is humanitarian care or political theater — soft power in bridal white. They ask whether celebrating as if life were restarting risks normalizing a catastrophe that has not ended, and whether aid so tightly branded serves the giver’s story as much as the couples’.",
+     "side_b_label": null,
+     "question_underneath": "What does it mean to begin a family in the ruins? Is hope a form of resistance, or a way of making an unbearable present look complete?",
+     "thinkers_note": null,
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo, at his first Mass in Uruguay, asks a secular country to build bridges",
+     "summary": "Pope Leo XIV celebrated the first Mass of his Latin America trip on Saturday before some 40,000 people in Paysandú, Uruguay, and, pointing to the nearby General Artigas International Bridge, said it was “so important to be builders of bridges.” He asked the faithful to carry on evangelization “with enthusiasm,” praised the sharing of mate as a lesson in being together, then walked through Casavalle, a poor Montevideo neighborhood, hugged a mother who wept as she described raising a child while homeless, and said, “We cannot ignore the many people around us who are suffering.” The 71-year-old American pope, three weeks after lung-cancer surgery, is on the first papal visit to Uruguay in nearly four decades; on Sunday he goes on to Argentina.",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/7/pope-leo-hold-first-mass-in-uruguay-urges-crowd-to-be-bridge-builders"
+      },
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-in-uruguay-carry-forward-the-mission-of-evangelization.html"
+      },
+      {
+       "name": "Vatican: homily text",
+       "url": "https://www.vatican.va/content/leo-xiv/en/homilies/2026/documents/20261107-uruguay-messa-paysandu.html"
+      }
+     ],
+     "side_a": "Admirers see a recovering pope doing what the Gospel asks first: going to the poor, blessing a local custom, and speaking of bridges in a polarized region. After Friday’s call for health care from the womb to a natural death, Saturday’s Mass and the Casavalle visit complete a picture of a consistent ethic — life, solidarity, and evangelization offered without scolding a secular republic.",
+     "side_a_label": null,
+     "side_b": "Some secular Uruguayans still bristle at a foreign religious leader taking a pastoral tour through a country that has legalized abortion and, this year, euthanasia, and at the implication that the state has grown cold toward the poor. Some conservative Catholics, meanwhile, wanted harder public correction of those laws and worry that “bridge building” and mate can become a soft substitute for doctrine. Both doubts ask whether presence without confrontation changes anything.",
+     "side_b_label": null,
+     "question_underneath": "Is the Church’s first public task to comfort the poor or to correct the culture? What does a secular nation owe a visiting shepherd, and what does he owe it?",
+     "thinkers_note": null,
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Jerusalem’s mayor launches a forum against the harassment of Christians",
+     "summary": "Jerusalem City Hall and the Jewish People Policy Institute opened a Forum for Partnership with Christian Communities, chaired by Mayor Moshe Lion, after an inaugural meeting that included the heads of the city’s Christian churches, the Vatican’s ambassador to Israel, senior police, Justice Ministry officials, and civil-society groups. The Religious Freedom Data Center, founded by Yisca Harani, laid out hotline reports of harassment that range from spitting at Christians or Christian property and defacing signs that bear crosses to physical assaults; the center recorded 181 reported incidents last year and says many more go unfiled. Lion pledged “zero tolerance” for religiously motivated harassment. The meeting produced four steps: convene twice a year; open direct channels among the authorities when incidents occur; form a working group on legislation to make prosecution easier; and build educational programs about Jerusalem as a city of several faiths. Hundreds of Jewish-Israeli volunteers already wear yellow vests at Christian processions to deter and document abuse. Harani also flagged humiliation of clergy at airport security as a separate problem of how a needed search is carried out.",
+     "sources": [
+      {
+       "name": "All Israel News",
+       "url": "https://allisraelnews.com/jerusalem-launches-forum-to-address-harassment-of-christians-mayor-vows-zero-tolerance"
+      },
+      {
+       "name": "Terresainte.net",
+       "url": "https://www.terresainte.net/2026/11/jerusalem-un-forum-pour-mieux-proteger-les-communautes-chretiennes/"
+      }
+     ],
+     "side_a": "Church leaders and their Jewish partners call the forum a basic act of justice in a city holy to three faiths. Spitting on a pilgrim or a cross is not a prank but a way of saying a Christian does not belong; “minor” humiliations, they argue, are how a climate of contempt is built. Zero tolerance, education, and easier prosecution are how a Jewish majority shows that the city’s Christian remnant is not a guest on sufferance.",
+     "side_a_label": null,
+     "side_b": "Some religious nationalists see Christian processions and a growing infrastructure of church advocacy as a challenge to Jerusalem’s character as the Jewish capital, and they treat security checks and a hard public line as the price of a city that has been fought over for centuries. They may concede that assault is wrong while resisting any suggestion that Jewish presence itself is the problem, or that legislation should single out one class of offenders.",
+     "side_b_label": null,
+     "question_underneath": "Can a holy city belong to more than one people without someone feeling dispossessed? What does the stronger community owe the weaker one that prays beside it?",
+     "thinkers_note": null,
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Catholics split almost evenly in the midterms, and believers argue over what that means",
+     "summary": "NBC and CNN exit polls, still widely debated on Saturday, show Catholics — about one in five voters — moving from a clear Republican majority in 2024 (59 percent to 39 percent in the NBC poll) to a near tie, about 50 percent Democratic to 49 percent Republican. The religiously unaffiliated grew to 27 percent of the electorate and backed Democrats by about 77 percent; white evangelicals remained about 82 percent Republican, but their share of voters fell from 23 percent to 17 percent; Jewish voters stayed Democratic at about 68 percent, down from roughly three-quarters in 2024. Political scientist Ryan Burge called it “pretty much an economic election,” while Fr. Chris Alar of the Marian Fathers, in a homily that spread online, said Catholics must not follow party loyalty and named the dignity of unborn life, marriage, and religious liberty as non-negotiable.",
+     "sources": [
+      {
+       "name": "National Catholic Reporter / RNS",
+       "url": "https://www.ncronline.org/news/catholics-and-nones-played-key-role-democrats-historic-victory-exit-polls-show"
+      },
+      {
+       "name": "America Magazine",
+       "url": "https://www.americamagazine.org/news/2026/11/04/catholic-vote-midterm-election-democrat-republican/"
+      },
+      {
+       "name": "Il Foglio",
+       "url": "https://www.ilfoglio.it/en/religion/2026/11/07/news/the-news-that-isnt-there-catholics-did-not-vote-for-trump--413042"
+      }
+     ],
+     "side_a": "Voters and pastors on Alar’s side say a 20-point swing among Catholics is not prudence but a failure to put first things first. If the unborn, marriage, and the freedom of the Church are non-negotiable, then an election decided by gas prices and fatigue is a formation problem, not a mystery. They fear a Catholic vote that tracks the rest of the country has ceased to be Catholic in any public sense.",
+     "side_a_label": null,
+     "side_b": "The other side says a well-formed conscience may weigh war, the poor, the immigrant, and the household budget alongside abortion, and that the bishops themselves have asked Catholics to do so. For them the numbers show Catholics acting as citizens in a broad republic, not as a single-issue bloc, and they hear in Burge’s “economic election” a reminder that people vote the life they are actually living.",
+     "side_b_label": null,
+     "question_underneath": "Must a believer’s vote follow a fixed hierarchy of moral issues, or may prudence weigh many goods at once? What does faith require at the ballot box?",
+     "thinkers_note": null,
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
