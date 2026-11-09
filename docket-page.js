@@ -47,15 +47,9 @@
   }
 
   function quoteList(quotes) {
-    const rows = (quotes || []).filter((quote) => quote && quote.verified === true);
+    const rows = (quotes || []).map((quote) => D.quoteCitationHtml(quote)).filter(Boolean);
     if (!rows.length) return "";
-    return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${rows.map((quote) => {
-      const href = safeUrl(quote.source_url);
-      const work = href
-        ? `<a class="tap-target" href="${esc(href)}" target="_blank" rel="noopener">${esc(quote.work)}</a>`
-        : esc(quote.work);
-      return `<li>${work}<span class="loc">, ${esc(quote.location)}</span></li>`;
-    }).join("")}</ol></div>`;
+    return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${rows.join("")}</ol></div>`;
   }
 
   function modernBlock(chair) {

@@ -533,6 +533,21 @@ assert.ok(!docket.archiveListHtml([{ date: "2026-10-22", label: "<script>" }]).i
 const archiveFile = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/archive.json"), "utf8"));
 assert.deepStrictEqual(archiveFile.nights, []);
 assert.ok(!index.nights.some((night) => night.archived === true));
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897" }), "https://www.gutenberg.org/ebooks/17897");
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897", passage_url: "https://www.gutenberg.org/files/17897/17897-h/17897-h.htm#Q19" }), "https://www.gutenberg.org/files/17897/17897-h/17897-h.htm#Q19");
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897", passage_url: "javascript:alert(1)" }), "https://www.gutenberg.org/ebooks/17897");
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, text: "A line." }), "");
+assert.strictEqual(docket.quoteSourceUrl({ verified: false, source_url: "https://example.com/a" }), "");
+const linked = docket.quoteCitationHtml({ verified: true, work: "Summa", location: "Q. 19", source_url: "https://www.gutenberg.org/ebooks/17897" });
+assert.ok(linked.includes("Read in the original"));
+assert.ok(linked.includes('href="https://www.gutenberg.org/ebooks/17897"'));
+const unlinked = docket.quoteCitationHtml({ verified: true, work: "A book", location: "somewhere" });
+assert.ok(!unlinked.includes("href="));
+assert.ok(!unlinked.includes("Read in the original"));
+assert.ok(unlinked.includes("A book"));
+const realQuote = realAquinas.quotes.find((quote) => quote.source_url);
+assert.ok(realQuote);
+assert.ok(docket.quoteCitationHtml(realQuote).includes(realQuote.source_url));
 assert.ok(fs.readFileSync(path.join(__dirname, "../README.md"), "utf8").includes("archive it instead of deleting"));
 assert.ok(fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8").includes("archive.json"));
 

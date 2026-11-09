@@ -573,6 +573,18 @@ footer { color: var(--soft); font-size: 14px; }
   font-weight: 450;
   letter-spacing: 0.04em;
 }
+.original-link { color: var(--ink); font-weight: 500; text-decoration: none; }
+.original-label {
+  display: block;
+  margin-top: 2px;
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cite-work { text-decoration: underline; text-underline-offset: 2px; }
 .report-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0; }
 .report-side {
   border: 1px solid var(--line);
@@ -596,7 +608,7 @@ footer { color: var(--soft); font-size: 14px; }
   body, .remark, .close-panel, h1, h2, h3, h4, p, li, a { color: #111 !important; background: #fff !important; }
   .remark, .close-panel { break-inside: avoid; border-color: #ccc; }
   .cites, .report-sources { word-break: break-word; }
-  .cites a[href]::after, .report-sources a[href]::after, .report-note a[href]::after { content: " (" attr(href) ")"; }
+  .cites a[href]::after, .report-sources a[href]::after, .report-note a[href]::after, .original-link[href]::after, .source-archived[href]::after { content: " (" attr(href) ")"; }
 }
 
 /* vietnamese */

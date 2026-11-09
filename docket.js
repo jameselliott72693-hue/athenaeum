@@ -566,9 +566,23 @@
     }).slice(0, limit || 5);
   }
 
+  function quoteSourceUrl(quote) {
+    if (!quote || quote.verified !== true) return "";
+    const exact = httpUrl(quote.passage_url);
+    if (exact) return exact;
+    return httpUrl(quote.source_url);
+  }
+
   function quoteCitationHtml(quote) {
     if (!quote || quote.verified !== true) return "";
-    return `<li><span class="cite-work">${escapeText(quote.work)}</span><span class="loc">, ${escapeText(quote.location)}</span></li>`;
+    const body = `<span class="cite-work">${escapeText(quote.work)}</span><span class="loc">, ${escapeText(quote.location)}</span>`;
+    const href = quoteSourceUrl(quote);
+    const archived = httpUrl(quote && quote.archived);
+    const arch = archived
+      ? ` <a class="tap-target source-archived" href="${escapeAttr(archived)}" target="_blank" rel="noopener">archived</a>`
+      : "";
+    if (!href) return `<li>${body}${arch}</li>`;
+    return `<li><a class="tap-target original-link" href="${escapeAttr(href)}" target="_blank" rel="noopener">${body}<span class="original-label">Read in the original</span></a>${arch}</li>`;
   }
 
   function chairPage(name, records, agreementRows) {
@@ -697,7 +711,7 @@
     READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap,
     distinctChairs, discussionsFromNight, agreementTallies, agreementLabel,
     clipText, searchNights, searchResultHtml,
-    chairKey, splitGroups, chairUrl, chairQuery, chairRelations, topRelations, chairPage, chairPageHtml, quoteCitationHtml,
+    chairKey, splitGroups, chairUrl, chairQuery, chairRelations, topRelations, chairPage, chairPageHtml, quoteSourceUrl, quoteCitationHtml,
     isArchivedNight, liveNights, archivedNights, openableNights, archiveListHtml
   };
 });
