@@ -11,8 +11,19 @@ const topicsOf = (text) => score.subjectTopics(text, tables.relevance);
 
 function loadDiscussions() {
   const discussions = [];
-  index.nights.forEach((night) => {
-    const data = JSON.parse(fs.readFileSync(path.join(root, "docket", night.file), "utf8"));
+  const nights = index.nights.slice();
+  const archivePath = path.join(root, "docket/archive.json");
+  if (fs.existsSync(archivePath)) {
+    const archive = JSON.parse(fs.readFileSync(archivePath, "utf8"));
+    (archive.nights || []).forEach((night) => {
+      if (night && night.date && night.file && !nights.some((item) => item.date === night.date)) nights.push(night);
+    });
+  }
+  nights.forEach((night) => {
+    if (!night.file) return;
+    const file = path.join(root, "docket", night.file);
+    if (!fs.existsSync(file)) return;
+    const data = JSON.parse(fs.readFileSync(file, "utf8"));
     discussions.push(...docket.discussionsFromNight(night.date, data));
   });
   return discussions;

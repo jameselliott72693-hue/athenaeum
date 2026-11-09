@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, agreementRows: [], catalog: null, chair: "" };
+  const state = { nights: [], openable: [], archiveNights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, agreementRows: [], catalog: null, chair: "" };
   let searchTimer = 0;
   let requestSeq = 0;
 
@@ -153,7 +153,17 @@
   }
 
   function nightOptions(selected) {
-    return state.nights.map((item) => `<option value="${esc(item.date)}"${item.date === selected ? " selected" : ""}>${esc(D.nightMenuLabel(item, state.read))}</option>`).join("");
+    const list = state.nights.slice();
+    if (selected && !list.some((item) => item.date === selected)) {
+      const extra = (state.openable || []).find((item) => item.date === selected);
+      if (extra) list.push(extra);
+    }
+    return list.map((item) => `<option value="${esc(item.date)}"${item.date === selected ? " selected" : ""}>${esc(D.nightMenuLabel(item, state.read))}</option>`).join("");
+  }
+
+  function archivedBanner(date) {
+    if (!date || !(state.archiveNights || []).some((night) => night.date === date)) return "";
+    return `<p class="hint">This night is in the archive. <a class="tap-target" href="archive.html">Older nights</a></p>`;
   }
 
   function readControl(place) {
@@ -222,6 +232,7 @@
       <label class="field" for="docket-night">Night</label>
       <select id="docket-night" aria-describedby="docket-unread">${placeholder}${nightOptions(selected || "")}</select>
       <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
+      <p class="hint"><a class="tap-target" href="archive.html">Older nights</a></p>
     </div>`;
   }
 
@@ -344,6 +355,7 @@
     host.innerHTML = `
       <p class="kicker">Tonight's docket</p>
       <h2>${esc(dateLong)}</h2>
+      ${archivedBanner(date)}
       ${fileAlert}
       ${readControl("top")}
       ${lede}
@@ -353,6 +365,7 @@
         <label class="field" for="docket-night">Night</label>
         <select id="docket-night" aria-describedby="docket-unread">${nightOptions(date)}</select>
         <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
+        <p class="hint"><a class="tap-target" href="archive.html">Older nights</a></p>
         <div class="row-btns">
           <button type="button" id="docket-share">Share this night</button>
           <button type="button" id="docket-print">Print</button>
@@ -461,7 +474,7 @@
 
   async function showNight(date, push) {
     const seq = ++requestSeq;
-    const entry = state.nights.find((night) => night.date === date);
+    const entry = (state.openable || state.nights).find((night) => night.date === date);
     if (!entry) {
       if (seq !== requestSeq) return;
       state.entry = null;
@@ -620,15 +633,28 @@
 
   async function boot() {
     bindSpaceTurn();
-    const [response, agreements] = await Promise.all([
+    const [response, archiveRes, agreements] = await Promise.all([
       fetch("docket/index.json"),
+      fetch("docket/archive.json"),
       loadAgreements()
     ]);
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
+    let storedArchive = [];
+    if (archiveRes.ok) {
+      try {
+        const archive = await archiveRes.json();
+        storedArchive = (archive && archive.nights) || [];
+      } catch (err) {
+        storedArchive = [];
+      }
+    }
+    const indexNights = index.nights || [];
     state.agreements = agreements.map;
     state.agreementRows = agreements.rows;
-    state.nights = index.nights || [];
+    state.archiveNights = D.archivedNights(indexNights, storedArchive);
+    state.nights = D.liveNights(indexNights, storedArchive);
+    state.openable = D.openableNights(indexNights, storedArchive);
     state.read = D.loadReadMap(window.localStorage);
     const theme = (() => { try { return localStorage.getItem("athenaeum.theme"); } catch (err) { return null; } })();
     const prefer = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -640,7 +666,7 @@
     if (chair) await renderChair(chair);
     else {
       const asked = D.nightQuery(window.location);
-      const known = D.nightFromLocation(window.location, state.nights);
+      const known = D.nightFromLocation(window.location, state.openable);
       await showNight(asked && !known ? asked : known, false);
     }
     document.body.addEventListener("click", onClick);
@@ -653,7 +679,7 @@
       }
       state.chair = "";
       const nextAsked = D.nightQuery(window.location);
-      const nextKnown = D.nightFromLocation(window.location, state.nights);
+      const nextKnown = D.nightFromLocation(window.location, state.openable);
       const date = nextAsked && !nextKnown ? nextAsked : nextKnown;
       if (!state.unknown && date === shownDate()) return;
       showNight(date, false).catch(reportDocketError);

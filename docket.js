@@ -412,6 +412,48 @@
     return results.slice(0, 40);
   }
 
+  function isArchivedNight(entry) {
+    return !!(entry && entry.archived === true);
+  }
+
+  function liveNights(nights, archiveNights) {
+    const archived = new Set((archiveNights || []).map((night) => night && night.date).filter(Boolean));
+    return (nights || []).filter((night) => night && night.date && !isArchivedNight(night) && !archived.has(night.date));
+  }
+
+  function archivedNights(indexNights, archiveNights) {
+    const seen = new Set();
+    const out = [];
+    function add(night) {
+      if (!night || !night.date || seen.has(night.date)) return;
+      seen.add(night.date);
+      out.push(night);
+    }
+    (archiveNights || []).forEach(add);
+    (indexNights || []).filter(isArchivedNight).forEach(add);
+    out.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+    return out;
+  }
+
+  function openableNights(indexNights, archiveNights) {
+    const seen = new Set();
+    const out = [];
+    function add(night) {
+      if (!night || !night.date || seen.has(night.date)) return;
+      seen.add(night.date);
+      out.push(night);
+    }
+    liveNights(indexNights, archiveNights).forEach(add);
+    archivedNights(indexNights, archiveNights).forEach(add);
+    return out;
+  }
+
+  function archiveListHtml(nights) {
+    const rows = (nights || []).filter((night) => night && night.date);
+    if (!rows.length) return `<p class="hint">No nights are in the archive.</p>`;
+    return `<ul class="archive-list">${rows.map((night) => `<li><a class="tap-target" href="${escapeAttr(nightUrl(night.date))}">${escapeText(night.label || night.date)}</a></li>`).join("")}</ul>`;
+  }
+
   function chairKey(name) {
     return String(name || "").trim().toLowerCase().replace(/\s+/g, " ");
   }
@@ -655,6 +697,7 @@
     READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap,
     distinctChairs, discussionsFromNight, agreementTallies, agreementLabel,
     clipText, searchNights, searchResultHtml,
-    chairKey, splitGroups, chairUrl, chairQuery, chairRelations, topRelations, chairPage, chairPageHtml, quoteCitationHtml
+    chairKey, splitGroups, chairUrl, chairQuery, chairRelations, topRelations, chairPage, chairPageHtml, quoteCitationHtml,
+    isArchivedNight, liveNights, archivedNights, openableNights, archiveListHtml
   };
 });

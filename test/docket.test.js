@@ -515,4 +515,25 @@ realAquinas.quotes.forEach((quote) => {
 });
 assert.ok(realAquinas.agrees.length >= 1);
 
+const menu = [
+  { date: "2026-11-08", label: "Live", file: "2026-11-08.json" },
+  { date: "2026-11-01", label: "Flagged", file: "2026-11-01.json", archived: true }
+];
+const stored = [{ date: "2026-10-22", label: "Stored", file: "2026-10-22.json" }];
+assert.deepStrictEqual(docket.liveNights(menu, stored).map((night) => night.date), ["2026-11-08"]);
+assert.deepStrictEqual(docket.archivedNights(menu, stored).map((night) => night.date), ["2026-11-01", "2026-10-22"]);
+assert.strictEqual(docket.openableNights(menu, stored)[0].date, "2026-11-08");
+assert.ok(docket.openableNights(menu, stored).some((night) => night.date === "2026-10-22"));
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, docket.openableNights(menu, stored)), "2026-10-22");
+assert.ok(docket.archiveListHtml([]).includes("No nights are in the archive"));
+const archiveHtml = docket.archiveListHtml(stored);
+assert.ok(archiveHtml.includes('href="docket.html?night=2026-10-22"'));
+assert.ok(archiveHtml.includes("Stored"));
+assert.ok(!docket.archiveListHtml([{ date: "2026-10-22", label: "<script>" }]).includes("<script>"));
+const archiveFile = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/archive.json"), "utf8"));
+assert.deepStrictEqual(archiveFile.nights, []);
+assert.ok(!index.nights.some((night) => night.archived === true));
+assert.ok(fs.readFileSync(path.join(__dirname, "../README.md"), "utf8").includes("archive it instead of deleting"));
+assert.ok(fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8").includes("archive.json"));
+
 console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));
