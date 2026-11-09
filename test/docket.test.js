@@ -1,4 +1,5 @@
 const assert = require("assert");
+const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const docket = require("../docket.js");
@@ -564,7 +565,12 @@ assert.ok(player.includes('src="docket/audio/2026-11-08.mp3"'));
 assert.ok(player.includes("Audio edition"));
 assert.strictEqual(docket.audioHtml(""), "");
 assert.strictEqual(docket.audioHtml(null), "");
-assert.ok(!index.nights.some((night) => night.audio));
+assert.deepStrictEqual(
+  index.nights.filter((night) => night.audio).map((night) => [night.date, night.audio]),
+  [["2026-11-08", "audio/2026-11-08.mp3"]]
+);
+const novemberAudio = fs.readFileSync(path.join(__dirname, "../docket/audio/2026-11-08.mp3"));
+assert.strictEqual(crypto.createHash("md5").update(novemberAudio).digest("hex"), "ca410c7cfbfc4e87e80de0cded2094d9");
 assert.ok(fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8").includes("audioHtml"));
 assert.ok(fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8").includes("archive.json"));
 

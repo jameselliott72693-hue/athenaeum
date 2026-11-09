@@ -23,7 +23,8 @@
      "sources": [
       {
        "name": "AP live updates",
-       "url": "https://apnews.com/live/midterm-election-2026"
+       "url": "https://apnews.com/live/midterm-election-2026",
+       "archived": "http://web.archive.org/web/20261105231902/https://apnews.com/live/midterm-election-2026"
       },
       {
        "name": "Guardian live",
@@ -51,7 +52,8 @@
      "sources": [
       {
        "name": "Reuters",
-       "url": "https://www.reuters.com/5f374b32b07b/world/middle-east/us-struck-irans-qeshm-island-wall-street-journal-reports-2026-11-03/"
+       "url": "https://www.reuters.com/5f374b32b07b/world/middle-east/us-struck-irans-qeshm-island-wall-street-journal-reports-2026-11-03/",
+       "archived": "https://web.archive.org/web/20261109222911/https://www.reuters.com/5f374b32b07b/world/middle-east/us-struck-irans-qeshm-island-wall-street-journal-reports-2026-11-03/"
       },
       {
        "name": "New York Times",
@@ -59,7 +61,8 @@
       },
       {
        "name": "BBC",
-       "url": "https://www.bbc.com/news/articles/cx240mrm3g8vo"
+       "url": "https://www.bbc.com/news/articles/cx240mrm3g8vo",
+       "archived": "https://web.archive.org/web/20261109222956/https://www.bbc.com/news/articles/cx240mrm3g8vo"
       }
      ],
      "side_a": "Supporters say protecting American aircraft is the commander-in-chief's core duty, that a narrow, proportionate response isn't a war, and that showing resolve is what brings Tehran to the table; they point to oil falling below $100 on hopes of a deal.",
@@ -79,11 +82,13 @@
      "sources": [
       {
        "name": "DOJ release",
-       "url": "https://www.justice.gov/opa/pr/doj-monitor-elections-all-50-states-first-time"
+       "url": "https://www.justice.gov/opa/pr/doj-monitor-elections-all-50-states-first-time",
+       "archived": "http://web.archive.org/web/20261104195027/https://www.justice.gov/opa/pr/doj-monitor-elections-all-50-states-first-time"
       },
       {
        "name": "AP",
-       "url": "https://apnews.com/article/midterms-election-day-voting-polls-trump-ba3037eed7bd816cc084bb1c4a2e6ccf"
+       "url": "https://apnews.com/article/midterms-election-day-voting-polls-trump-ba3037eed7bd816cc084bb1c4a2e6ccf",
+       "archived": "http://web.archive.org/web/20261103174430/https://apnews.com/article/midterms-election-day-voting-polls-trump-ba3037eed7bd816cc084bb1c4a2e6ccf"
       },
       {
        "name": "Washington Post",
@@ -168,7 +173,8 @@
      "sources": [
       {
        "name": "AP",
-       "url": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a"
+       "url": "https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a",
+       "archived": "http://web.archive.org/web/20261104044038/https://apnews.com/article/ai-schools-classroom-students-google-7ba4219e505db1c11d672f6eefe7155a"
       },
       {
        "name": "Education Week",
@@ -176,7 +182,8 @@
       },
       {
        "name": "Chalkbeat",
-       "url": "https://www.chalkbeat.org/2026/11/03/google-pushes-gemini-guided-learning-amid-ai-backlash/"
+       "url": "https://www.chalkbeat.org/2026/11/03/google-pushes-gemini-guided-learning-amid-ai-backlash/",
+       "archived": "https://web.archive.org/web/20261109223248/https://www.chalkbeat.org/2026/11/03/google-pushes-gemini-guided-learning-amid-ai-backlash/"
       },
       {
        "name": "X news summary",
@@ -205,7 +212,8 @@
      "sources": [
       {
        "name": "Axios",
-       "url": "https://www.axios.com/2026/10/23/democrats-religious-left-texas-kansas-talarico-hamilton"
+       "url": "https://www.axios.com/2026/10/23/democrats-religious-left-texas-kansas-talarico-hamilton",
+       "archived": "http://web.archive.org/web/20261029002927/https://www.axios.com/2026/10/23/democrats-religious-left-texas-kansas-talarico-hamilton"
       },
       {
        "name": "Politico",
@@ -261,7 +269,8 @@
      "sources": [
       {
        "name": "UCA News / OSV News",
-       "url": "https://www.ucanews.com/news/bishops-plead-for-reconciliation-amid-polands-constitutional-crisis/116003"
+       "url": "https://www.ucanews.com/news/bishops-plead-for-reconciliation-amid-polands-constitutional-crisis/116003",
+       "archived": "https://web.archive.org/web/20261109223442/https://www.ucanews.com/news/bishops-plead-for-reconciliation-amid-polands-constitutional-crisis/116003"
       }
      ],
      "side_a": "Those backing the bishops' stance say a Church that blesses one camp ceases to be a home for all Poles, and that in a nation this divided the most useful thing pastors can offer is prayer, restraint and a call back to the common good.",
