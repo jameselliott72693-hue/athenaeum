@@ -258,6 +258,16 @@ html[data-theme="dark"] .err { color: #f0c2bc; }
 .cites ol { margin: 0; padding-left: 18px; }
 .cites li { margin: 10px 0; }
 .cites a { color: var(--ink); font-weight: 500; }
+a.tap-target {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 24px;
+  min-width: 24px;
+  max-width: 100%;
+  padding: 6px 4px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
 .bears { margin: 4px 0 0; color: var(--soft); }
 .lean.for { background: #e7efe4; color: #234028; }
 .lean.against { background: #f6e4e1; color: #6d2e28; }
@@ -500,6 +510,7 @@ footer { color: var(--soft); font-size: 14px; }
 .report-story h4 { font-family: var(--serif); font-weight: 560; letter-spacing: -0.03em; font-size: 22px; margin: 4px 0 8px; }
 .report-story p { margin: 8px 0; }
 .report-sources { margin: 8px 0; padding-left: 18px; }
+.report-sources li { margin: 2px 0; }
 .report-sources a, .report-note a { overflow-wrap: anywhere; color: var(--ink); font-weight: 500; }
 .report-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0; }
 .report-side {

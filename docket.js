@@ -119,10 +119,11 @@
     return parts;
   }
 
-  function externalLink(url, text) {
+  function externalLink(url, text, className) {
     const href = httpUrl(url);
     if (!href) return escapeText(text);
-    return `<a href="${escapeAttr(href)}" target="_blank" rel="noopener">${escapeText(text)}</a>`;
+    const cls = className ? ` class="${escapeAttr(className)}"` : "";
+    return `<a${cls} href="${escapeAttr(href)}" target="_blank" rel="noopener">${escapeText(text)}</a>`;
   }
 
   function noteHtml(note, links) {
@@ -138,7 +139,7 @@
     const anchor = /^[a-z]+-\d+$/.test(id) ? ` id="story-${escapeAttr(id)}"` : "";
     const sources = (item.sources || []).filter((source) => source && source.name && httpUrl(source.url));
     const sourceHtml = sources.length
-      ? `<p class="kicker">Sources</p><ul class="report-sources">${sources.map((source) => `<li>${externalLink(source.url, source.name)}</li>`).join("")}</ul>`
+      ? `<p class="kicker">Sources</p><ul class="report-sources">${sources.map((source) => `<li>${externalLink(source.url, source.name, "tap-target")}</li>`).join("")}</ul>`
       : "";
     const sittingId = sittingReady && item.sitting_id && /^[A-Za-z0-9-]+$/.test(String(item.sitting_id))
       ? String(item.sitting_id)

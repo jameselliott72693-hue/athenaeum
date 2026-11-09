@@ -50,7 +50,7 @@
     return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${rows.map((quote) => {
       const href = safeUrl(quote.source_url);
       const work = href
-        ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(quote.work)}</a>`
+        ? `<a class="tap-target" href="${esc(href)}" target="_blank" rel="noopener">${esc(quote.work)}</a>`
         : esc(quote.work);
       return `<li>${work}<span class="loc">, ${esc(quote.location)}</span></li>`;
     }).join("")}</ol></div>`;
