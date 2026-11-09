@@ -1,7 +1,8 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {} };
+  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, catalog: null };
+  let searchTimer = 0;
   let requestSeq = 0;
 
   function esc(text) {
@@ -204,13 +205,76 @@
     return (state.night && state.night.date) || (state.report && state.report.date) || (state.entry && state.entry.date) || "";
   }
 
+  function searchBox() {
+    return `<form class="docket-search" role="search" id="docket-search-form">
+      <label class="field" for="docket-search">Search nights</label>
+      <input id="docket-search" type="search" placeholder="Thinker, story, or quotation" autocomplete="off" enterkeyhint="search" />
+      <p id="docket-search-status" class="hint" role="status"></p>
+      <div id="docket-search-results"></div>
+    </form>`;
+  }
+
   function nightTools(selected) {
     const placeholder = state.unknown ? `<option value="">Choose a night</option>` : "";
     return `<div class="docket-tools">
+      ${searchBox()}
       <label class="field" for="docket-night">Night</label>
       <select id="docket-night" aria-describedby="docket-unread">${placeholder}${nightOptions(selected || "")}</select>
       <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
     </div>`;
+  }
+
+  async function loadCatalog() {
+    if (state.catalog) return state.catalog;
+    const rows = await Promise.all(state.nights.map(async (entry) => {
+      const [nightRes, reportRes] = await Promise.all([
+        loadDocketFile(entry.file),
+        loadDocketFile(entry.report)
+      ]);
+      return {
+        date: entry.date,
+        label: entry.label || (nightRes.data && nightRes.data.date_long) || entry.date,
+        night: nightRes.data,
+        report: reportRes.data
+      };
+    }));
+    state.catalog = rows;
+    return rows;
+  }
+
+  async function runSearch(value) {
+    const status = $("docket-search-status");
+    const host = $("docket-search-results");
+    const input = $("docket-search");
+    const query = String(value || "").trim();
+    if (query.length < 2) {
+      if (host) host.innerHTML = "";
+      if (status) status.textContent = query ? "Type at least two letters." : "";
+      return;
+    }
+    if (status) status.textContent = "Searching the live nights.";
+    const catalog = await loadCatalog();
+    if (!input || input.value.trim() !== query) return;
+    const results = D.searchNights(catalog, query);
+    if (host) host.innerHTML = D.searchResultHtml(results);
+    if (status) {
+      const count = results.length;
+      status.textContent = count ? `${count} match${count === 1 ? "" : "es"} on the live nights.` : "Nothing on the live nights matches.";
+    }
+  }
+
+  function bindSearch() {
+    const form = $("docket-search-form");
+    const input = $("docket-search");
+    if (!form || !input || form.dataset.bound === "true") return;
+    form.dataset.bound = "true";
+    form.addEventListener("submit", (event) => event.preventDefault());
+    input.addEventListener("input", () => {
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(() => {
+        runSearch(input.value).catch(reportDocketError);
+      }, 200);
+    });
   }
 
   function bindNightSelect() {
@@ -239,6 +303,7 @@
         <p class="hint">The address asked for ${esc(state.unknown)}. Choose a night that was kept.</p>
         ${nightTools("")}`;
       bindNightSelect();
+      bindSearch();
       return;
     }
     const night = state.night;
@@ -252,6 +317,7 @@
         <p class="err" role="alert">${esc(state.fileNote || (state.entry ? "This night's files could not be loaded." : "This night is not on the docket."))}</p>
         ${state.nights.length ? nightTools(state.entry && state.entry.date) : ""}`;
       bindNightSelect();
+      bindSearch();
       return;
     }
     const date = shownDate();
@@ -282,6 +348,7 @@
       ${lede}
       ${policy}
       <div class="docket-tools">
+        ${searchBox()}
         <label class="field" for="docket-night">Night</label>
         <select id="docket-night" aria-describedby="docket-unread">${nightOptions(date)}</select>
         <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
@@ -297,6 +364,7 @@
       ${sittings}
       ${readControl("bottom")}`;
     bindNightSelect();
+    bindSearch();
     $("docket-share").addEventListener("click", shareNight);
     $("docket-print").addEventListener("click", () => window.print());
     const fragment = (window.location.hash || "").replace(/^#/, "");

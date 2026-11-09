@@ -126,6 +126,17 @@
     return `<a${cls} href="${escapeAttr(href)}" target="_blank" rel="noopener">${escapeText(text)}</a>`;
   }
 
+  function sourceItemHtml(source) {
+    const item = source || {};
+    const name = item.name == null ? "" : String(item.name);
+    if (!name || !httpUrl(item.url)) return "";
+    const archived = httpUrl(item.archived);
+    const extra = archived
+      ? ` <a class="tap-target source-archived" href="${escapeAttr(archived)}" target="_blank" rel="noopener">archived</a>`
+      : "";
+    return `<li>${externalLink(item.url, name, "tap-target")}${extra}</li>`;
+  }
+
   function noteHtml(note, links) {
     const parts = noteParts(note, links);
     if (!parts.length) return "";
@@ -137,9 +148,9 @@
     const item = story || {};
     const id = String(item.id || "");
     const anchor = /^[a-z]+-\d+$/.test(id) ? ` id="story-${escapeAttr(id)}"` : "";
-    const sources = (item.sources || []).filter((source) => source && source.name && httpUrl(source.url));
-    const sourceHtml = sources.length
-      ? `<p class="kicker">Sources</p><ul class="report-sources">${sources.map((source) => `<li>${externalLink(source.url, source.name, "tap-target")}</li>`).join("")}</ul>`
+    const sourceItems = (item.sources || []).map(sourceItemHtml).filter(Boolean);
+    const sourceHtml = sourceItems.length
+      ? `<p class="kicker">Sources</p><ul class="report-sources">${sourceItems.join("")}</ul>`
       : "";
     const sittingId = sittingReady && item.sitting_id && /^[A-Za-z0-9-]+$/.test(String(item.sitting_id))
       ? String(item.sitting_id)
@@ -320,6 +331,99 @@
     return `${opening}. No listed subject ties it to another`;
   }
 
+  function clipText(text, max) {
+    const value = String(text == null ? "" : text).replace(/\s+/g, " ").trim();
+    const limit = max || 180;
+    if (value.length <= limit) return value;
+    return value.slice(0, limit - 1).trim() + "…";
+  }
+
+  function searchHay(value) {
+    return String(value == null ? "" : value).toLowerCase();
+  }
+
+  function searchNights(records, query) {
+    const q = searchHay(query).trim();
+    if (q.length < 2) return [];
+    const results = [];
+    const seen = new Set();
+    function push(row) {
+      const key = [row.kind, row.date, row.sittingId || "", row.storyId || "", row.title || "", row.excerpt || ""].join("\0");
+      if (seen.has(key)) return;
+      seen.add(key);
+      results.push(row);
+    }
+    (records || []).forEach((record) => {
+      if (!record || !record.date) return;
+      const date = String(record.date);
+      const label = record.label || date;
+      const night = record.night;
+      ((night && night.sittings) || []).forEach((sitting) => {
+        const sittingId = sitting && sitting.id && /^[A-Za-z0-9-]+$/.test(String(sitting.id)) ? String(sitting.id) : "";
+        const href = placeUrl(date, sittingId ? `#sitting-${sittingId}` : "");
+        (sitting.chairs || []).forEach((chair) => {
+          const name = chair && chair.name ? String(chair.name).trim() : "";
+          if (!name || !searchHay(name).includes(q)) return;
+          push({
+            kind: "thinker",
+            date,
+            label,
+            sittingId,
+            title: name,
+            excerpt: (sitting.headline || sitting.question || ""),
+            href
+          });
+        });
+        (sitting.quotes || []).forEach((quote) => {
+          if (!quote || quote.verified !== true) return;
+          const hay = searchHay(`${quote.text || ""} ${quote.work || ""}`);
+          if (!hay.includes(q)) return;
+          push({
+            kind: "quotation",
+            date,
+            label,
+            sittingId,
+            title: quote.work || "Quotation",
+            excerpt: quote.text || "",
+            href
+          });
+        });
+      });
+      (((record.report && record.report.sections) || [])).forEach((section) => {
+        ((section && section.stories) || []).forEach((story) => {
+          const hay = searchHay(`${story.headline || ""} ${story.summary || ""}`);
+          if (!hay.includes(q)) return;
+          const sittingId = story.sitting_id && /^[A-Za-z0-9-]+$/.test(String(story.sitting_id)) ? String(story.sitting_id) : "";
+          const storyId = /^[a-z]+-\d+$/.test(String(story.id || "")) ? String(story.id) : "";
+          const hash = sittingId ? `#sitting-${sittingId}` : (storyId ? `#story-${storyId}` : "");
+          push({
+            kind: "story",
+            date,
+            label,
+            sittingId,
+            storyId,
+            title: story.headline || "Story",
+            excerpt: story.summary || "",
+            href: placeUrl(date, hash)
+          });
+        });
+      });
+    });
+    return results.slice(0, 40);
+  }
+
+  function searchKindLabel(kind) {
+    if (kind === "thinker") return "Thinker";
+    if (kind === "story") return "Story";
+    return "Quotation";
+  }
+
+  function searchResultHtml(results) {
+    const rows = results || [];
+    if (!rows.length) return "";
+    return `<ul class="docket-search-results">${rows.map((row) => `<li><a href="${escapeAttr(row.href)}"><span class="kicker">${escapeText(searchKindLabel(row.kind))} · ${escapeText(row.label || row.date)}</span><strong>${escapeText(row.title)}</strong><span class="meta">${escapeText(clipText(row.excerpt, 180))}</span></a></li>`).join("")}</ul>`;
+  }
+
   function storyIdForSitting(report, sittingId) {
     if (!report || sittingId == null) return "";
     const sections = report.sections || [];
@@ -334,8 +438,9 @@
 
   return {
     decodeEntities, escapeText, escapeAttr, sanitizeParagraph, plainModern, nightQuery, nightFromLocation, portraitPath, nightUrl, placeUrl,
-    httpUrl, sideLabel, noteParts, reportStoryHtml, reportHtml, storyIdForSitting,
+    httpUrl, sideLabel, noteParts, externalLink, sourceItemHtml, reportStoryHtml, reportHtml, storyIdForSitting,
     READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap,
-    distinctChairs, discussionsFromNight, agreementTallies, agreementLabel
+    distinctChairs, discussionsFromNight, agreementTallies, agreementLabel,
+    clipText, searchNights, searchResultHtml
   };
 });

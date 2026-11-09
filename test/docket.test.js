@@ -82,6 +82,7 @@ index.nights.forEach((night, i) => {
         (story.sources || []).forEach((source) => {
           assert.ok(source.name);
           assert.strictEqual(docket.httpUrl(source.url), source.url, source.url);
+          if (source.archived != null) assert.strictEqual(docket.httpUrl(source.archived), source.archived, source.archived);
         });
         (report.note_links || []).forEach((link) => assert.strictEqual(docket.httpUrl(link.url), link.url));
       });
@@ -312,6 +313,30 @@ assert.ok(poisonedStory.includes("One side"));
 assert.ok(poisonedStory.includes("The other side"));
 assert.ok(poisonedStory.includes('href="https://example.com/a?b=1&amp;c=2"'));
 assert.ok(poisonedStory.includes('class="tap-target"'));
+assert.ok(!poisonedStory.includes(">archived<"));
+const archivedStory = docket.reportStoryHtml({
+  id: "political-3",
+  number: 3,
+  headline: "A court order",
+  summary: "The order is cited.",
+  sources: [
+    { name: "Ninth Circuit order", url: "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf", archived: "https://web.archive.org/web/20261031190939id_/https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf" },
+    { name: "Bad archive", url: "https://example.com/story", archived: "javascript:alert(1)" },
+    { name: "No archive", url: "https://example.com/plain" }
+  ],
+  side_a: "One",
+  side_b: "Two",
+  question_underneath: "A question"
+}, "Political", false);
+assert.ok(archivedStory.includes('class="tap-target source-archived"'));
+assert.ok(archivedStory.includes("https://web.archive.org/web/20261031190939id_/https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf"));
+assert.ok(!/javascript:/i.test(archivedStory));
+assert.strictEqual(archivedStory.split(">archived<").length - 1, 1);
+const novemberReport = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-11-01-report.json"), "utf8"));
+const circuit = novemberReport.sections.flatMap((section) => section.stories).flatMap((story) => story.sources || []).find((source) => source.url === "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf");
+assert.ok(circuit, "November 1 Ninth Circuit source");
+assert.ok(/^https:\/\/web\.archive\.org\/web\/\d+id_\/https:\/\/cdn\.ca9\.uscourts\.gov\/datastore\/opinions\/2026\/10\/30\/26-7231\.pdf$/.test(circuit.archived), circuit.archived);
+assert.strictEqual(docket.httpUrl(circuit.archived), circuit.archived);
 assert.ok(poisonedStory.includes('target="_blank"'));
 const tapCss = fs.readFileSync(path.join(__dirname, "../styles.css"), "utf8");
 assert.ok(/a\.tap-target\s*\{[^}]*min-height:\s*24px/.test(tapCss));
@@ -365,5 +390,59 @@ assert.deepStrictEqual(docket.loadReadMap(memory), marked);
 assert.deepStrictEqual(docket.loadReadMap({ getItem() { throw new Error("blocked"); } }), {});
 assert.strictEqual(docket.saveReadMap({ setItem() { throw new Error("blocked"); } }, marked), false);
 assert.deepStrictEqual(docket.loadReadMap(null), {});
+
+const found = docket.searchNights([
+  {
+    date: "2026-11-01",
+    label: "Sunday, November 1, 2026",
+    night: {
+      sittings: [{
+        id: "p1",
+        headline: "A pledge and a conscience",
+        question: "Loyalty versus conscience",
+        chairs: [{ name: "Thomas Aquinas" }, { name: "Immanuel Kant" }],
+        quotes: [
+          { text: "every will at variance with reason", work: "Summa Theologica", verified: true },
+          { text: "not verified", work: "Secret", verified: false }
+        ]
+      }]
+    },
+    report: {
+      sections: [{
+        stories: [{
+          id: "political-1",
+          headline: "A Democrat endorses the Republican",
+          summary: "A primary pledge broke.",
+          sitting_id: "p1"
+        }]
+      }]
+    }
+  }
+], "aquinas");
+assert.strictEqual(found.length, 1);
+assert.strictEqual(found[0].kind, "thinker");
+assert.strictEqual(found[0].href, "docket.html?night=2026-11-01#sitting-p1");
+const quoted = docket.searchNights([{
+  date: "2026-11-01",
+  label: "Sunday",
+  night: { sittings: [{ id: "p1", chairs: [], quotes: [{ text: "every will at variance with reason", work: "Summa", verified: true }] }] }
+}], "variance");
+assert.strictEqual(quoted[0].kind, "quotation");
+assert.strictEqual(quoted[0].sittingId, "p1");
+const stories = docket.searchNights([{
+  date: "2026-11-01",
+  label: "Sunday",
+  report: { sections: [{ stories: [{ id: "political-1", headline: "Mail ballots", summary: "A court order", sitting_id: "p3" }] }] }
+}], "ballots");
+assert.strictEqual(stories[0].kind, "story");
+assert.strictEqual(stories[0].href, "docket.html?night=2026-11-01#sitting-p3");
+assert.deepStrictEqual(docket.searchNights([{ date: "2026-11-01", night: { sittings: [] } }], "a"), []);
+const unsafe = docket.searchResultHtml([{ kind: "story", date: "2026-11-01", label: "<b>", title: "<script>", excerpt: "x", href: "docket.html?night=2026-11-01#sitting-p1" }]);
+assert.ok(!/<script/i.test(unsafe));
+assert.ok(unsafe.includes("&lt;script&gt;"));
+assert.ok(unsafe.includes('href="docket.html?night=2026-11-01#sitting-p1"'));
+const pageJs = fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8");
+assert.ok(pageJs.includes('id="docket-search"'));
+assert.ok(pageJs.includes("searchNights"));
 
 console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));
