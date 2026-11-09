@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Older nights from Tonight's docket. A night leaves the menu and stays here, and it still opens." />
+  <meta name="theme-color" content="#1c1712" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Athenaeum" />
+  <title>Older nights · The Athenaeum</title>
+  <script>
+    try {
+      var t = localStorage.getItem("athenaeum.theme");
+      if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+      if (t === "dark") document.documentElement.dataset.theme = "dark";
+    } catch (e) {}
+  </script>
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="mark" src="images/mark.png" alt="" width="48" height="48" decoding="async" />
+      <div>
+        <p class="kicker">A reading room</p>
+        <h1>The Athenaeum</h1>
+        <p class="lede">Nights older than 30 days leave the menu and stay here.</p>
+      </div>
+    </div>
+    <div class="header-tools">
+      <button type="button" id="theme" class="theme-btn" aria-pressed="false">Dark</button>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">The room</a>
+      <a href="docket.html">Tonight's docket</a>
+      <a href="archive.html" aria-current="page">Older nights</a>
+    </nav>
+  </header>
+  <main>
+    <div id="archive" class="docket" aria-live="polite" aria-busy="true">
+      <p class="kicker">Older nights</p>
+      <h2>Loading the archive</h2>
+    </div>
+  </main>
+  <footer>
+    <p>An archived night keeps its sitting and its report. The address that names it still opens it.</p>
+  </footer>
+  <script src="docket.js"></script>
+  <script src="archive-page.js"></script>
+</body>
+</html>

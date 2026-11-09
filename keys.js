@@ -4,7 +4,7 @@
   else root.AthenaeumKeys = api;
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   const SPACE_TURN_KEY = "athenaeum.spaceTurn";
-  const FIELD_TAGS = { input: 1, textarea: 1, select: 1, button: 1, a: 1, summary: 1 };
+  const FIELD_TAGS = { input: 1, textarea: 1, select: 1, button: 1, a: 1, summary: 1, audio: 1, video: 1 };
   const FIELD_ROLES = {
     textbox: 1,
     searchbox: 1,

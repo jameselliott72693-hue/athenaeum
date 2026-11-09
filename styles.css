@@ -258,6 +258,22 @@ html[data-theme="dark"] .err { color: #f0c2bc; }
 .cites ol { margin: 0; padding-left: 18px; }
 .cites li { margin: 10px 0; }
 .cites a { color: var(--ink); font-weight: 500; }
+a.tap-target {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 24px;
+  min-width: 24px;
+  max-width: 100%;
+  padding: 6px 4px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  vertical-align: baseline;
+}
+a.report-back.tap-target,
+.report-jump a.tap-target {
+  padding: 2px 2px;
+  min-height: 24px;
+}
 .bears { margin: 4px 0 0; color: var(--soft); }
 .lean.for { background: #e7efe4; color: #234028; }
 .lean.against { background: #f6e4e1; color: #6d2e28; }
@@ -392,7 +408,66 @@ footer { color: var(--soft); font-size: 14px; }
 .docket { min-height: calc(100vh - 220px); }
 .docket h2 { margin-top: 8px; }
 .docket-tools { margin: 16px 0 22px; }
-.docket-tools select, .docket-tools .field { display: block; width: 100%; max-width: 420px; }
+.docket-tools select, .docket-tools .field, .docket-search { display: block; width: 100%; max-width: 420px; }
+.docket-search { margin: 0 0 8px; }
+.docket-search-results { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.docket-search-results a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+}
+.docket-search-results strong { font-family: var(--serif); font-size: 18px; font-weight: 560; }
+.docket-search-results .meta { color: var(--soft); }
+.shelf-link { color: var(--brass); font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: 0; text-transform: none; }
+.chair-block { margin-top: 22px; }
+.chair-block h3 { font-size: 22px; margin: 0 0 8px; }
+.chair-sittings, .chair-relations { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.chair-sittings a, .chair-relations a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+}
+.chair-relations a { flex-direction: row; align-items: center; }
+.chair-sittings strong, .chair-quotes q { font-family: var(--serif); }
+.chair-sittings strong { font-size: 18px; font-weight: 560; }
+.chair-quotes { margin: 0; padding-left: 18px; }
+.chair-quote { margin: 0 0 16px; }
+.chair-quote q.vq { quotes: "“" "”" "‘" "’"; font-size: 18px; line-height: 1.45; }
+#docket a, #archive a, #docket a:visited, #archive a:visited { color: inherit; }
+#docket a.shelf-link, #archive a.shelf-link { color: var(--brass); }
+#docket a.source-archived, #archive a.source-archived { color: var(--soft); }
+.night-audio { margin: 8px 0 16px; max-width: 420px; }
+.night-audio audio { display: block; width: 100%; margin-top: 6px; }
+.archive-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.archive-list a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--serif);
+  font-size: 18px;
+}
 .read-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 12px 0 16px; }
 .read-bar-bottom { margin-top: 28px; }
 .read-state {
@@ -500,7 +575,27 @@ footer { color: var(--soft); font-size: 14px; }
 .report-story h4 { font-family: var(--serif); font-weight: 560; letter-spacing: -0.03em; font-size: 22px; margin: 4px 0 8px; }
 .report-story p { margin: 8px 0; }
 .report-sources { margin: 8px 0; padding-left: 18px; }
+.report-sources li { margin: 2px 0; }
 .report-sources a, .report-note a { overflow-wrap: anywhere; color: var(--ink); font-weight: 500; }
+.source-archived {
+  margin-left: 8px;
+  color: var(--soft);
+  font-size: 13px;
+  font-weight: 450;
+  letter-spacing: 0.04em;
+}
+.original-link { color: var(--ink); font-weight: 500; text-decoration: none; }
+.original-label {
+  display: block;
+  margin-top: 2px;
+  color: var(--soft);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.original-link .cite-work { text-decoration: underline; text-underline-offset: 2px; }
 .report-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0; }
 .report-side {
   border: 1px solid var(--line);
@@ -524,7 +619,7 @@ footer { color: var(--soft); font-size: 14px; }
   body, .remark, .close-panel, h1, h2, h3, h4, p, li, a { color: #111 !important; background: #fff !important; }
   .remark, .close-panel { break-inside: avoid; border-color: #ccc; }
   .cites, .report-sources { word-break: break-word; }
-  .cites a[href]::after, .report-sources a[href]::after, .report-note a[href]::after { content: " (" attr(href) ")"; }
+  .cites a[href]::after, .report-sources a[href]::after, .report-note a[href]::after, .original-link[href]::after, .source-archived[href]::after { content: " (" attr(href) ")"; }
 }
 
 /* vietnamese */

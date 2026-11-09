@@ -82,6 +82,7 @@ index.nights.forEach((night, i) => {
         (story.sources || []).forEach((source) => {
           assert.ok(source.name);
           assert.strictEqual(docket.httpUrl(source.url), source.url, source.url);
+          if (source.archived != null) assert.strictEqual(docket.httpUrl(source.archived), source.archived, source.archived);
         });
         (report.note_links || []).forEach((link) => assert.strictEqual(docket.httpUrl(link.url), link.url));
       });
@@ -90,7 +91,9 @@ index.nights.forEach((night, i) => {
     const html = docket.reportHtml(report, sittingIds ? [...sittingIds] : []);
     assert.ok(html.includes('id="news-report"'), night.date);
     assert.ok(!/<script/i.test(html), night.date);
-    if (sittingIds) assert.ok(html.includes('href="#sitting-p1"'));
+    if (sittingIds) {
+      assert.ok(html.includes('class="tap-target" href="#sitting-p1"'));
+    }
     else assert.ok(!html.includes("The sitting"));
   }
 });
@@ -311,7 +314,35 @@ assert.ok(poisonedStory.includes("&lt;img src=x&gt;"));
 assert.ok(poisonedStory.includes("One side"));
 assert.ok(poisonedStory.includes("The other side"));
 assert.ok(poisonedStory.includes('href="https://example.com/a?b=1&amp;c=2"'));
+assert.ok(poisonedStory.includes('class="tap-target"'));
+assert.ok(!poisonedStory.includes(">archived<"));
+const archivedStory = docket.reportStoryHtml({
+  id: "political-3",
+  number: 3,
+  headline: "A court order",
+  summary: "The order is cited.",
+  sources: [
+    { name: "Ninth Circuit order", url: "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf", archived: "https://web.archive.org/web/20261031190939id_/https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf" },
+    { name: "Bad archive", url: "https://example.com/story", archived: "javascript:alert(1)" },
+    { name: "No archive", url: "https://example.com/plain" }
+  ],
+  side_a: "One",
+  side_b: "Two",
+  question_underneath: "A question"
+}, "Political", false);
+assert.ok(archivedStory.includes('class="tap-target source-archived"'));
+assert.ok(archivedStory.includes("https://web.archive.org/web/20261031190939id_/https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf"));
+assert.ok(!/javascript:/i.test(archivedStory));
+assert.strictEqual(archivedStory.split(">archived<").length - 1, 1);
+const novemberReport = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-11-01-report.json"), "utf8"));
+const circuit = novemberReport.sections.flatMap((section) => section.stories).flatMap((story) => story.sources || []).find((source) => source.url === "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf");
+assert.ok(circuit, "November 1 Ninth Circuit source");
+assert.ok(/^https:\/\/web\.archive\.org\/web\/\d+id_\/https:\/\/cdn\.ca9\.uscourts\.gov\/datastore\/opinions\/2026\/10\/30\/26-7231\.pdf$/.test(circuit.archived), circuit.archived);
+assert.strictEqual(docket.httpUrl(circuit.archived), circuit.archived);
 assert.ok(poisonedStory.includes('target="_blank"'));
+const tapCss = fs.readFileSync(path.join(__dirname, "../styles.css"), "utf8");
+assert.ok(/a\.tap-target\s*\{[^}]*min-height:\s*24px/.test(tapCss));
+assert.ok(/a\.tap-target\s*\{[^}]*min-width:\s*24px/.test(tapCss));
 assert.ok(poisonedStory.includes('rel="noopener"'));
 assert.ok(!poisonedStory.includes("The sitting"));
 const october = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-22-report.json"), "utf8"));
@@ -361,5 +392,180 @@ assert.deepStrictEqual(docket.loadReadMap(memory), marked);
 assert.deepStrictEqual(docket.loadReadMap({ getItem() { throw new Error("blocked"); } }), {});
 assert.strictEqual(docket.saveReadMap({ setItem() { throw new Error("blocked"); } }, marked), false);
 assert.deepStrictEqual(docket.loadReadMap(null), {});
+
+const found = docket.searchNights([
+  {
+    date: "2026-11-01",
+    label: "Sunday, November 1, 2026",
+    night: {
+      sittings: [{
+        id: "p1",
+        headline: "A pledge and a conscience",
+        question: "Loyalty versus conscience",
+        chairs: [{ name: "Thomas Aquinas" }, { name: "Immanuel Kant" }],
+        quotes: [
+          { text: "every will at variance with reason", work: "Summa Theologica", verified: true },
+          { text: "not verified", work: "Secret", verified: false }
+        ]
+      }]
+    },
+    report: {
+      sections: [{
+        stories: [{
+          id: "political-1",
+          headline: "A Democrat endorses the Republican",
+          summary: "A primary pledge broke.",
+          sitting_id: "p1"
+        }]
+      }]
+    }
+  }
+], "aquinas");
+assert.strictEqual(found.length, 1);
+assert.strictEqual(found[0].kind, "thinker");
+assert.strictEqual(found[0].href, "docket.html?night=2026-11-01#sitting-p1");
+const quoted = docket.searchNights([{
+  date: "2026-11-01",
+  label: "Sunday",
+  night: { sittings: [{ id: "p1", chairs: [], quotes: [{ text: "every will at variance with reason", work: "Summa", verified: true }] }] }
+}], "variance");
+assert.strictEqual(quoted[0].kind, "quotation");
+assert.strictEqual(quoted[0].sittingId, "p1");
+const stories = docket.searchNights([{
+  date: "2026-11-01",
+  label: "Sunday",
+  report: { sections: [{ stories: [{ id: "political-1", headline: "Mail ballots", summary: "A court order", sitting_id: "p3" }] }] }
+}], "ballots");
+assert.strictEqual(stories[0].kind, "story");
+assert.strictEqual(stories[0].href, "docket.html?night=2026-11-01#sitting-p3");
+assert.deepStrictEqual(docket.searchNights([{ date: "2026-11-01", night: { sittings: [] } }], "a"), []);
+const unsafe = docket.searchResultHtml([{ kind: "story", date: "2026-11-01", label: "<b>", title: "<script>", excerpt: "x", href: "docket.html?night=2026-11-01#sitting-p1" }]);
+assert.ok(!/<script/i.test(unsafe));
+assert.ok(unsafe.includes("&lt;script&gt;"));
+assert.ok(unsafe.includes('href="docket.html?night=2026-11-01#sitting-p1"'));
+const pageJs = fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8");
+assert.ok(pageJs.includes('id="docket-search"'));
+assert.ok(pageJs.includes("searchNights"));
+assert.ok(pageJs.includes("chairUrl"));
+assert.ok(pageJs.includes("On the shelf"));
+
+const groups = docket.splitGroups(
+  "Aquinas, a formed conscience; Kant, Cicero, the pledge; Burke, fight within; Washington, Thoreau.",
+  ["Thomas Aquinas", "Immanuel Kant", "Edmund Burke", "George Washington", "Henry David Thoreau", "Cicero"]
+);
+assert.deepStrictEqual(groups.map((group) => group.slice().sort()), [
+  ["Thomas Aquinas"],
+  ["Cicero", "Immanuel Kant"],
+  ["Edmund Burke"],
+  ["George Washington", "Henry David Thoreau"]
+]);
+const chairRecords = [{
+  date: "2026-11-01",
+  label: "Sunday, November 1, 2026",
+  night: {
+    sittings: [{
+      id: "p1",
+      section: "Political",
+      headline: "A pledge",
+      briefing: { split: "Aquinas, a formed conscience; Kant, the pledge." },
+      chairs: [
+        {
+          name: "Thomas Aquinas",
+          roster_id: "aquinas",
+          years: "1225–1274",
+          tradition: "Classical Christian",
+          quotes: [{ text: "every will at variance with reason", work: "Summa Theologica", location: "I-II, Q. 19", verified: true, source_url: "https://www.gutenberg.org/ebooks/17897" }]
+        },
+        { name: "Immanuel Kant", quotes: [] }
+      ]
+    }]
+  }
+}];
+const chairRows = [{ id: "2026-11-01/p1", subject: "moral", count: 2 }];
+const aquinas = docket.chairPage("thomas aquinas", chairRecords, chairRows);
+assert.strictEqual(aquinas.name, "Thomas Aquinas");
+assert.strictEqual(aquinas.rosterId, "aquinas");
+assert.strictEqual(aquinas.sittings.length, 1);
+assert.strictEqual(aquinas.sittings[0].href, "docket.html?night=2026-11-01#sitting-p1");
+assert.strictEqual(aquinas.quotes.length, 1);
+assert.strictEqual(aquinas.quotes[0].work, "Summa Theologica");
+assert.strictEqual(aquinas.quotes[0].location, "I-II, Q. 19");
+assert.strictEqual(aquinas.agrees[0].name, "Immanuel Kant");
+assert.strictEqual(aquinas.agrees[0].count, 1);
+assert.strictEqual(aquinas.disagrees[0].name, "Immanuel Kant");
+assert.strictEqual(docket.chairPage("Nobody", chairRecords, chairRows), null);
+const chairHtml = docket.chairPageHtml(aquinas);
+assert.ok(chairHtml.includes("Summa Theologica"));
+assert.ok(chairHtml.includes("I-II, Q. 19"));
+assert.ok(chairHtml.includes("index.html#thinker=aquinas"));
+assert.ok(chairHtml.includes("Agrees most often with"));
+assert.ok(chairHtml.includes("Disagrees most often with"));
+assert.ok(!/<script/i.test(docket.chairPageHtml({ name: "<script>", rosterId: "", years: "", tradition: "", sittings: [], quotes: [], agrees: [], disagrees: [] })));
+assert.ok(docket.chairPageHtml(null).includes("no sitting"));
+assert.strictEqual(docket.chairUrl("Thomas Aquinas"), "docket.html?chair=Thomas%20Aquinas");
+assert.strictEqual(docket.chairQuery({ search: "?chair=Thomas%20Aquinas", hash: "" }), "Thomas Aquinas");
+const realAquinas = docket.chairPage("Thomas Aquinas", [{
+  date: "2026-11-01",
+  label: "Sunday, November 1, 2026",
+  night: JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-11-01.json"), "utf8"))
+}], JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/agreements.json"), "utf8")).discussions);
+assert.ok(realAquinas.sittings.length >= 1);
+assert.ok(realAquinas.quotes.length >= 1);
+realAquinas.quotes.forEach((quote) => {
+  assert.ok(quote.work, quote.text);
+  assert.ok(quote.location, quote.text);
+});
+assert.ok(realAquinas.agrees.length >= 1);
+
+const menu = [
+  { date: "2026-11-08", label: "Live", file: "2026-11-08.json" },
+  { date: "2026-11-01", label: "Flagged", file: "2026-11-01.json", archived: true }
+];
+const stored = [{ date: "2026-10-22", label: "Stored", file: "2026-10-22.json" }];
+assert.deepStrictEqual(docket.liveNights(menu, stored).map((night) => night.date), ["2026-11-08"]);
+assert.deepStrictEqual(docket.archivedNights(menu, stored).map((night) => night.date), ["2026-11-01", "2026-10-22"]);
+assert.strictEqual(docket.openableNights(menu, stored)[0].date, "2026-11-08");
+assert.ok(docket.openableNights(menu, stored).some((night) => night.date === "2026-10-22"));
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, docket.openableNights(menu, stored)), "2026-10-22");
+assert.ok(docket.archiveListHtml([]).includes("No nights are in the archive"));
+const archiveHtml = docket.archiveListHtml(stored);
+assert.ok(archiveHtml.includes('href="docket.html?night=2026-10-22"'));
+assert.ok(archiveHtml.includes("Stored"));
+assert.ok(!docket.archiveListHtml([{ date: "2026-10-22", label: "<script>" }]).includes("<script>"));
+const archiveFile = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/archive.json"), "utf8"));
+assert.deepStrictEqual(archiveFile.nights, []);
+assert.ok(!index.nights.some((night) => night.archived === true));
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897" }), "https://www.gutenberg.org/ebooks/17897");
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897", passage_url: "https://www.gutenberg.org/files/17897/17897-h/17897-h.htm#Q19" }), "https://www.gutenberg.org/files/17897/17897-h/17897-h.htm#Q19");
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897", passage_url: "javascript:alert(1)" }), "https://www.gutenberg.org/ebooks/17897");
+assert.strictEqual(docket.quoteSourceUrl({ verified: true, text: "A line." }), "");
+assert.strictEqual(docket.quoteSourceUrl({ verified: false, source_url: "https://example.com/a" }), "");
+const linked = docket.quoteCitationHtml({ verified: true, work: "Summa", location: "Q. 19", source_url: "https://www.gutenberg.org/ebooks/17897" });
+assert.ok(linked.includes("Read in the original"));
+assert.ok(linked.includes('href="https://www.gutenberg.org/ebooks/17897"'));
+const unlinked = docket.quoteCitationHtml({ verified: true, work: "A book", location: "somewhere" });
+assert.ok(!unlinked.includes("href="));
+assert.ok(!unlinked.includes("Read in the original"));
+assert.ok(unlinked.includes("A book"));
+const realQuote = realAquinas.quotes.find((quote) => quote.source_url);
+assert.ok(realQuote);
+assert.ok(docket.quoteCitationHtml(realQuote).includes(realQuote.source_url));
+assert.ok(fs.readFileSync(path.join(__dirname, "../README.md"), "utf8").includes("archive it instead of deleting"));
+assert.strictEqual(docket.audioSrc("audio/2026-11-08.mp3"), "docket/audio/2026-11-08.mp3");
+assert.strictEqual(docket.audioSrc("docket/audio/2026-11-08.mp3"), "docket/audio/2026-11-08.mp3");
+assert.strictEqual(docket.audioSrc("https://example.com/nights/2026-11-08.mp3"), "https://example.com/nights/2026-11-08.mp3");
+assert.strictEqual(docket.audioSrc("../secret.mp3"), "");
+assert.strictEqual(docket.audioSrc("javascript:alert(1)"), "");
+assert.strictEqual(docket.audioSrc(""), "");
+const player = docket.audioHtml("audio/2026-11-08.mp3");
+assert.ok(player.includes("<audio"));
+assert.ok(player.includes("controls"));
+assert.ok(player.includes('src="docket/audio/2026-11-08.mp3"'));
+assert.ok(player.includes("Audio edition"));
+assert.strictEqual(docket.audioHtml(""), "");
+assert.strictEqual(docket.audioHtml(null), "");
+assert.ok(!index.nights.some((night) => night.audio));
+assert.ok(fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8").includes("audioHtml"));
+assert.ok(fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8").includes("archive.json"));
 
 console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));

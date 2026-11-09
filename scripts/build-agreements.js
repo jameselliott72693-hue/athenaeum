@@ -4,12 +4,26 @@ const docket = require("../docket.js");
 const score = require("../score.js");
 
 const root = path.join(__dirname, "..");
-const index = JSON.parse(fs.readFileSync(path.join(root, "docket/index.json"), "utf8"));
 const tables = JSON.parse(fs.readFileSync(path.join(root, "data/tables.json"), "utf8"));
-const discussions = [];
-(index.nights || []).forEach((night) => {
-  const file = path.join(root, "docket", night.file);
+
+function nightsFrom(file) {
+  if (!fs.existsSync(file)) return [];
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  return data.nights || [];
+}
+
+const seen = new Set();
+const nights = [];
+nightsFrom(path.join(root, "docket/index.json")).concat(nightsFrom(path.join(root, "docket/archive.json"))).forEach((night) => {
+  if (!night || !night.date || !night.file || seen.has(night.date)) return;
+  const file = path.join(root, "docket", night.file);
+  if (!fs.existsSync(file)) return;
+  seen.add(night.date);
+  nights.push(night);
+});
+const discussions = [];
+nights.forEach((night) => {
+  const data = JSON.parse(fs.readFileSync(path.join(root, "docket", night.file), "utf8"));
   discussions.push(...docket.discussionsFromNight(night.date, data));
 });
 const payload = {

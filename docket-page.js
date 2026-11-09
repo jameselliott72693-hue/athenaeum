@@ -1,7 +1,8 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {} };
+  const state = { nights: [], openable: [], archiveNights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, agreementRows: [], catalog: null, chair: "" };
+  let searchTimer = 0;
   let requestSeq = 0;
 
   function esc(text) {
@@ -37,23 +38,18 @@
     const mark = src
       ? `<img class="avatar" src="${esc(src)}" alt="" width="48" height="48" loading="lazy" decoding="async" />`
       : `<span class="monogram" aria-hidden="true">${esc(initials(chair.name))}</span>`;
-    const name = chair.roster_id
-      ? `<a href="index.html#thinker=${esc(chair.roster_id)}">${esc(chair.name)}</a>`
-      : esc(chair.name);
+    const name = `<a href="${esc(D.chairUrl(chair.name))}">${esc(chair.name)}</a>`;
+    const shelf = chair.roster_id
+      ? `<a class="shelf-link tap-target" href="index.html#thinker=${esc(chair.roster_id)}">On the shelf</a>`
+      : "";
     const meta = [chair.tradition, chair.years].filter(Boolean).join(" · ");
-    return `<div class="remark-head">${mark}<div><p class="kicker">${esc(meta)}</p><h3>${name}</h3></div></div>`;
+    return `<div class="remark-head">${mark}<div><p class="kicker">${esc(meta)}</p><h3>${name}</h3>${shelf}</div></div>`;
   }
 
   function quoteList(quotes) {
-    const rows = (quotes || []).filter((quote) => quote && quote.verified === true);
+    const rows = (quotes || []).map((quote) => D.quoteCitationHtml(quote)).filter(Boolean);
     if (!rows.length) return "";
-    return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${rows.map((quote) => {
-      const href = safeUrl(quote.source_url);
-      const work = href
-        ? `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(quote.work)}</a>`
-        : esc(quote.work);
-      return `<li>${work}<span class="loc">, ${esc(quote.location)}</span></li>`;
-    }).join("")}</ol></div>`;
+    return `<div class="cites"><p class="kicker">Writings behind this response</p><ol>${rows.join("")}</ol></div>`;
   }
 
   function modernBlock(chair) {
@@ -112,7 +108,7 @@
     const steps = stepsOf(sitting);
     const storyId = D.storyIdForSitting(state.report, sitting.id);
     const back = storyId
-      ? ` · <a class="report-back" href="#story-${D.escapeAttr(storyId)}">The news report</a>`
+      ? ` · <a class="report-back tap-target" href="#story-${D.escapeAttr(storyId)}">The news report</a>`
       : "";
     return `<section class="docket-sitting" id="sitting-${esc(sitting.id)}" data-sitting="${esc(sitting.id)}">
       <p class="kicker">${esc(sitting.section)} · ${esc(sitting.number)}${back}</p>
@@ -151,7 +147,17 @@
   }
 
   function nightOptions(selected) {
-    return state.nights.map((item) => `<option value="${esc(item.date)}"${item.date === selected ? " selected" : ""}>${esc(D.nightMenuLabel(item, state.read))}</option>`).join("");
+    const list = state.nights.slice();
+    if (selected && !list.some((item) => item.date === selected)) {
+      const extra = (state.openable || []).find((item) => item.date === selected);
+      if (extra) list.push(extra);
+    }
+    return list.map((item) => `<option value="${esc(item.date)}"${item.date === selected ? " selected" : ""}>${esc(D.nightMenuLabel(item, state.read))}</option>`).join("");
+  }
+
+  function archivedBanner(date) {
+    if (!date || !(state.archiveNights || []).some((night) => night.date === date)) return "";
+    return `<p class="hint">This night is in the archive. <a class="tap-target" href="archive.html">Older nights</a></p>`;
   }
 
   function readControl(place) {
@@ -204,13 +210,77 @@
     return (state.night && state.night.date) || (state.report && state.report.date) || (state.entry && state.entry.date) || "";
   }
 
+  function searchBox() {
+    return `<form class="docket-search" role="search" id="docket-search-form">
+      <label class="field" for="docket-search">Search nights</label>
+      <input id="docket-search" type="search" placeholder="Thinker, story, or quotation" autocomplete="off" enterkeyhint="search" />
+      <p id="docket-search-status" class="hint" role="status"></p>
+      <div id="docket-search-results"></div>
+    </form>`;
+  }
+
   function nightTools(selected) {
     const placeholder = state.unknown ? `<option value="">Choose a night</option>` : "";
     return `<div class="docket-tools">
+      ${searchBox()}
       <label class="field" for="docket-night">Night</label>
       <select id="docket-night" aria-describedby="docket-unread">${placeholder}${nightOptions(selected || "")}</select>
       <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
+      <p class="hint"><a class="tap-target" href="archive.html">Older nights</a></p>
     </div>`;
+  }
+
+  async function loadCatalog() {
+    if (state.catalog) return state.catalog;
+    const rows = await Promise.all(state.nights.map(async (entry) => {
+      const [nightRes, reportRes] = await Promise.all([
+        loadDocketFile(entry.file),
+        loadDocketFile(entry.report)
+      ]);
+      return {
+        date: entry.date,
+        label: entry.label || (nightRes.data && nightRes.data.date_long) || entry.date,
+        night: nightRes.data,
+        report: reportRes.data
+      };
+    }));
+    state.catalog = rows;
+    return rows;
+  }
+
+  async function runSearch(value) {
+    const status = $("docket-search-status");
+    const host = $("docket-search-results");
+    const input = $("docket-search");
+    const query = String(value || "").trim();
+    if (query.length < 2) {
+      if (host) host.innerHTML = "";
+      if (status) status.textContent = query ? "Type at least two letters." : "";
+      return;
+    }
+    if (status) status.textContent = "Searching the live nights.";
+    const catalog = await loadCatalog();
+    if (!input || input.value.trim() !== query) return;
+    const results = D.searchNights(catalog, query);
+    if (host) host.innerHTML = D.searchResultHtml(results);
+    if (status) {
+      const count = results.length;
+      status.textContent = count ? `${count} match${count === 1 ? "" : "es"} on the live nights.` : "Nothing on the live nights matches.";
+    }
+  }
+
+  function bindSearch() {
+    const form = $("docket-search-form");
+    const input = $("docket-search");
+    if (!form || !input || form.dataset.bound === "true") return;
+    form.dataset.bound = "true";
+    form.addEventListener("submit", (event) => event.preventDefault());
+    input.addEventListener("input", () => {
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(() => {
+        runSearch(input.value).catch(reportDocketError);
+      }, 200);
+    });
   }
 
   function bindNightSelect() {
@@ -239,6 +309,7 @@
         <p class="hint">The address asked for ${esc(state.unknown)}. Choose a night that was kept.</p>
         ${nightTools("")}`;
       bindNightSelect();
+      bindSearch();
       return;
     }
     const night = state.night;
@@ -252,6 +323,7 @@
         <p class="err" role="alert">${esc(state.fileNote || (state.entry ? "This night's files could not be loaded." : "This night is not on the docket."))}</p>
         ${state.nights.length ? nightTools(state.entry && state.entry.date) : ""}`;
       bindNightSelect();
+      bindSearch();
       return;
     }
     const date = shownDate();
@@ -277,14 +349,18 @@
     host.innerHTML = `
       <p class="kicker">Tonight's docket</p>
       <h2>${esc(dateLong)}</h2>
+      ${archivedBanner(date)}
+      ${D.audioHtml(state.entry && state.entry.audio)}
       ${fileAlert}
       ${readControl("top")}
       ${lede}
       ${policy}
       <div class="docket-tools">
+        ${searchBox()}
         <label class="field" for="docket-night">Night</label>
         <select id="docket-night" aria-describedby="docket-unread">${nightOptions(date)}</select>
         <p id="docket-unread" class="hint">${esc(D.unreadHint(state.nights, state.read))}</p>
+        <p class="hint"><a class="tap-target" href="archive.html">Older nights</a></p>
         <div class="row-btns">
           <button type="button" id="docket-share">Share this night</button>
           <button type="button" id="docket-print">Print</button>
@@ -297,6 +373,7 @@
       ${sittings}
       ${readControl("bottom")}`;
     bindNightSelect();
+    bindSearch();
     $("docket-share").addEventListener("click", shareNight);
     $("docket-print").addEventListener("click", () => window.print());
     const fragment = (window.location.hash || "").replace(/^#/, "");
@@ -392,7 +469,7 @@
 
   async function showNight(date, push) {
     const seq = ++requestSeq;
-    const entry = state.nights.find((night) => night.date === date);
+    const entry = (state.openable || state.nights).find((night) => night.date === date);
     if (!entry) {
       if (seq !== requestSeq) return;
       state.entry = null;
@@ -519,46 +596,88 @@
   async function loadAgreements() {
     try {
       const response = await fetch("docket/agreements.json");
-      if (!response.ok) return {};
+      if (!response.ok) return { map: {}, rows: [] };
       const data = await response.json();
+      const rows = (data.discussions || []).filter((row) => row && row.id);
       const map = {};
-      (data.discussions || []).forEach((row) => {
-        if (row && row.id) map[row.id] = row;
-      });
-      return map;
+      rows.forEach((row) => { map[row.id] = row; });
+      return { map, rows };
     } catch (err) {
-      return {};
+      return { map: {}, rows: [] };
     }
+  }
+
+  async function renderChair(name) {
+    const host = $("docket");
+    if (!host) return;
+    Object.keys(state.timers).forEach((id) => {
+      window.clearInterval(state.timers[id]);
+      delete state.timers[id];
+    });
+    state.chair = name;
+    host.removeAttribute("aria-busy");
+    document.title = `${name} · Tonight's docket`;
+    host.innerHTML = `<p class="kicker">A chair</p><h2>${esc(name)}</h2><p class="hint">Gathering the live nights.</p>`;
+    const catalog = await loadCatalog();
+    if (D.chairQuery(window.location) !== name) return;
+    const page = D.chairPage(name, catalog, state.agreementRows);
+    document.title = `${(page && page.name) || name} · Tonight's docket`;
+    host.innerHTML = `<p class="kicker">A chair</p><p class="hint"><a class="tap-target" href="docket.html">Tonight's docket</a></p>${D.chairPageHtml(page)}${searchBox()}`;
+    bindSearch();
   }
 
   async function boot() {
     bindSpaceTurn();
-    const [response, agreements] = await Promise.all([
+    const [response, archiveRes, agreements] = await Promise.all([
       fetch("docket/index.json"),
+      fetch("docket/archive.json"),
       loadAgreements()
     ]);
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
-    state.agreements = agreements;
-    state.nights = index.nights || [];
+    let storedArchive = [];
+    if (archiveRes.ok) {
+      try {
+        const archive = await archiveRes.json();
+        storedArchive = (archive && archive.nights) || [];
+      } catch (err) {
+        storedArchive = [];
+      }
+    }
+    const indexNights = index.nights || [];
+    state.agreements = agreements.map;
+    state.agreementRows = agreements.rows;
+    state.archiveNights = D.archivedNights(indexNights, storedArchive);
+    state.nights = D.liveNights(indexNights, storedArchive);
+    state.openable = D.openableNights(indexNights, storedArchive);
     state.read = D.loadReadMap(window.localStorage);
-    const asked = D.nightQuery(window.location);
-    const known = D.nightFromLocation(window.location, state.nights);
-    await showNight(asked && !known ? asked : known, false);
-    document.body.addEventListener("click", onClick);
-    window.addEventListener("storage", syncReadFromStorage);
-    window.addEventListener("popstate", () => {
-      const nextAsked = D.nightQuery(window.location);
-      const nextKnown = D.nightFromLocation(window.location, state.nights);
-      const date = nextAsked && !nextKnown ? nextAsked : nextKnown;
-      if (!state.unknown && date === shownDate()) return;
-      showNight(date, false).catch(reportDocketError);
-    });
     const theme = (() => { try { return localStorage.getItem("athenaeum.theme"); } catch (err) { return null; } })();
     const prefer = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     applyTheme(theme === "dark" || theme === "light" ? theme : prefer);
     $("theme").addEventListener("click", () => {
       applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+    });
+    const chair = D.chairQuery(window.location);
+    if (chair) await renderChair(chair);
+    else {
+      const asked = D.nightQuery(window.location);
+      const known = D.nightFromLocation(window.location, state.openable);
+      await showNight(asked && !known ? asked : known, false);
+    }
+    document.body.addEventListener("click", onClick);
+    window.addEventListener("storage", syncReadFromStorage);
+    window.addEventListener("popstate", () => {
+      const nextChair = D.chairQuery(window.location);
+      if (nextChair) {
+        renderChair(nextChair).catch(reportDocketError);
+        return;
+      }
+      state.chair = "";
+      const nextAsked = D.nightQuery(window.location);
+      const nextKnown = D.nightFromLocation(window.location, state.openable);
+      const date = nextAsked && !nextKnown ? nextAsked : nextKnown;
+      if (!state.unknown && date === shownDate()) return;
+      showNight(date, false).catch(reportDocketError);
     });
   }
 
