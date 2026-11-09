@@ -1,0 +1,219 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-08",
+ "date_long": "November 8, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "html",
+  "file": "reports/Discourse-Report-2026-11-08.html",
+  "sha256": "08ccdf82afa1120cd267aa4fdd5a717bc28cfed6e353fb7770d2cbd76c1470bb",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "House Democrats back impeaching Defense Secretary Pete Hegseth",
+     "summary": "House Minority Leader Hakeem Jeffries said he is a “hard yes” on Rep. Thomas Massie’s impeachment resolution against Hegseth, which is expected to get a vote this week; the articles center on the Iran war and War Powers claims. Trump defended Hegseth as “guilty of winning two wars.”",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-november-8-rcna607990"
+      },
+      {
+       "name": "Guardian",
+       "url": "https://www.theguardian.com/us-news/2026/nov/08/all"
+      }
+     ],
+     "side_a": "Supporters of impeachment say Congress holds the war power and a secretary who pursues hostilities without authorization, after voters punished the war at the midterms, must answer for it.",
+     "side_a_label": null,
+     "side_b": "Defenders say Hegseth has rebuilt readiness and won quick victories, that impeachment is partisan “political theater,” and that war strategy is a matter for the elected commander in chief.",
+     "side_b_label": null,
+     "question_underneath": "Who may take a nation to war, and how a republic holds its servants accountable.",
+     "thinkers_note": "Separation of powers and Madison’s “ambition must counteract ambition” (Federalist 51) on one side; on the other, Hamilton’s argument in Federalist 70 for energy in the executive, and the old just-war question of legitimate authority and right intention.",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Israel’s president tasks Netanyahu rival Gadi Eisenkot with forming a government",
+     "summary": "After the Oct. 27 election produced no clear majority, President Herzog gave Eisenkot the first chance to build a coalition, a setback for Netanyahu, who called for a “national unity government.” Eisenkot has 28 days, extendable by up to 14.",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-november-8-rcna607990"
+      },
+      {
+       "name": "Anadolu",
+       "url": "https://www.aa.com.tr/en/world/morning-briefing-nov-8-2026/4115649"
+      }
+     ],
+     "side_a": "Eisenkot’s backers say the voters and most parties want a change of leadership and a government focused on security and repairing national divisions.",
+     "side_a_label": null,
+     "side_b": "Netanyahu’s camp says a broad unity government is the responsible course in wartime and objects to depending on parties it considers hostile to the state.",
+     "side_b_label": null,
+     "question_underneath": "Who counts as a legitimate partner in governing, and whether unity or mandate should rule after a split verdict.",
+     "thinkers_note": "Majority rule versus consensus government in the tradition of Mill and Madison’s worry about faction; arguments about loyalty and the “enemy within” that echo Schmitt’s friend/enemy distinction, and the social-contract idea that rulers need broad consent.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Poland mourns six killed in a Kraków shooting authorities link to far-right ideology",
+     "summary": "Poland declared two days of national mourning after a gunman killed six people in Kraków’s Main Market Square; the justice minister called it a terrorist offense and officials cited “ultranationalistic” beliefs. Sixteen others were wounded.",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/news/us-news/weekend-rundown-november-8-rcna607990"
+      }
+     ],
+     "side_a": "Many on the left and center argue that rising nationalist rhetoric and online radicalization feed such violence and that governments must name and confront it.",
+     "side_a_label": null,
+     "side_b": "Many on the right argue that the act is the work of one deranged individual, that it shouldn’t be used to smear mainstream nationalism or patriotism, and that political violence is condemned from every side.",
+     "side_b_label": null,
+     "question_underneath": "Where responsibility lies between the individual who acts and the ideas and climate that shape him.",
+     "thinkers_note": "Free-will and moral-agency arguments from Aristotle and Aquinas versus environmental or social explanations of evil; the slippery-slope argument over rhetoric and violence, and Mill’s harm principle in the limits on speech.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Dave Chappelle’s Kirk remark at Madison Square Garden draws backlash",
+     "summary": "At a Saturday show, Chappelle reportedly said he “feels better” since Charlie Kirk was killed; leaked clips spread online and Kirk’s widow, Erika Kirk, called jokes about political assassination a sign of “profound moral decay.”",
+     "sources": [
+      {
+       "name": "Los Angeles Times",
+       "url": "https://www.latimes.com/california/story/2026-11-08/dave-chappelle-comment-about-charlie-kirks-death-sparks-backlash"
+      }
+     ],
+     "side_a": "Critics say joking about a real murder of a father and activist crosses a moral line and normalizes political violence, especially when the target is a political opponent.",
+     "side_a_label": null,
+     "side_b": "Defenders say comedy’s job is to go to dark places, that the full context matters and clips are being stripped of it, and that policing jokes is itself a threat to free expression.",
+     "side_b_label": null,
+     "question_underneath": "The limits of free expression and whether any subject is off-limits to laughter.",
+     "thinkers_note": "Mill’s marketplace of ideas and the liberal case that offense isn’t harm; against it, the natural-law and virtue view that mockery of the dead wrongs persons and corrodes the community, and the old “is it a joke or an incitement” distinction.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Philadelphia’s “Boycott Ride” targets Jewish-owned restaurants and meets a larger counter-rally",
+     "summary": "A bike protest against six Center City restaurants whose owners support Israel drew about 300 protesters, while roughly 200 counterprotesters and hundreds of diners rallied behind the businesses. Officials from City Hall to Congress had denounced the ride as antisemitic.",
+     "sources": [
+      {
+       "name": "Philadelphia Inquirer",
+       "url": "https://www.inquirer.com/news/philadelphia/boycott-ride-philadelphia-jewish-owned-restaurants-protest-20261108.html"
+      }
+     ],
+     "side_a": "Critics, including many officials and Jewish groups, say targeting businesses because their owners are Jewish or Zionist, under a flyer reading “No business for Zionists,” is intimidation that echoes older boycotts of Jews.",
+     "side_a_label": null,
+     "side_b": "Organizers say they oppose antisemitism, that they target owners’ political support for Israel and not their religion, and that boycott is a legitimate nonviolent tool; the local DSA and nearly 20 groups backed them.",
+     "side_b_label": null,
+     "question_underneath": "Where political protest ends and collective blame of a people begins.",
+     "thinkers_note": "Rights-based arguments about peaceful boycott and conscience, as in the tradition of Gandhi and the civil rights movement; against it, the principle of individual rather than collective responsibility and the historical memory argument about how targeting a community begins.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Lisa Nandy defends linking Remembrance Sunday to the UK’s return to Erasmus+",
+     "summary": "The UK culture department tied the rejoining of the EU student exchange scheme to Remembrance Sunday; Conservatives said “veterans did not fight for a student exchange scheme.” Nandy said she was “horrified” by the response and was not politicising the day.",
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/articles/cmvg72p1zgvlo"
+      }
+     ],
+     "side_a": "Critics say a day for honoring the war dead should stay above government messaging, and that the post used sacrifice to sell a Brexit-reversal deal.",
+     "side_a_label": null,
+     "side_b": "The government says connection across Europe is a fitting way to honor those who fought for peace and that the scheme will help young Britons understand that sacrifice.",
+     "side_b_label": null,
+     "question_underneath": "Who owns the memory of the dead and what lessons it may be used to teach.",
+     "thinkers_note": "Appeals to tradition and the sacred in public ritual (Burke) against the argument that remembrance has a purpose, “never again,” that invites application; the question of whether commemoration should be apolitical.",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo XIV tells Argentina’s Milei that “the economy must serve the person”",
+     "summary": "On arriving in Buenos Aires, Leo gave a courteous but pointed speech contrasting his vision with Milei’s austerity and libertarian agenda, also touching on artificial intelligence; this is a 12-day tour through Uruguay, Argentina and Peru.",
+     "sources": [
+      {
+       "name": "PBS NewsHour/AP",
+       "url": "https://www.pbs.org/newshour/world/pope-arrives-in-argentina-and-tells-milei-that-people-not-the-economy-should-come-first"
+      }
+     ],
+     "side_a": "Supporters of the pope say Catholic social teaching has long put human dignity and the poor before markets and that the speech states that plainly.",
+     "side_a_label": null,
+     "side_b": "Milei’s defenders say free markets and property rights have lifted people out of poverty, that fiscal discipline ends the inflation that hurts the poor most, and that the church should not prescribe economic policy.",
+     "side_b_label": null,
+     "question_underneath": "Whether the economy exists for people or people for the economy, and the role of faith in public life.",
+     "thinkers_note": "Catholic social teaching from Rerum Novarum to the principle of the universal destination of goods, and Aquinas on just prices; on the other side, Hayek’s knowledge-problem argument, the utilitarian case for growth, and the subsidiarity principle.",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Calvary Chapel Costa Mesa announces it ordains women, and sister churches push back",
+     "summary": "The movement’s original flagship church said it practices ordaining men and women to pastoral ministry; the Calvary Chapel Association’s Heartland team and Calvary Chapel Liberty publicly rejected women as elders or pastors.",
+     "sources": [
+      {
+       "name": "BCNN1 digest (citing The Christian Post)",
+       "url": "https://blackchristiannews.com/the-bcnn1-torch-leader-news-brief-sunday-november-8-2026/"
+      }
+     ],
+     "side_a": "Those for ordination cite the priesthood of all believers, women who led and taught in the New Testament, and gifting by the Spirit.",
+     "side_a_label": null,
+     "side_b": "Those against cite passages such as 1 Timothy 2 and 3 and the historic practice of the church, and say fidelity to Scripture matters more than cultural pressure.",
+     "side_b_label": null,
+     "question_underneath": "How to read an authoritative text across time and who may exercise spiritual authority.",
+     "thinkers_note": "Sola scriptura and the plain-sense reading against the argument from the Spirit’s gifting and the priesthood of all believers; the appeal to tradition versus the argument that a tradition may reflect a culture rather than a command.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Buddhist monks stage a sit-in over Sri Lanka’s Anuradhapura redevelopment plan",
+     "summary": "Monks are demanding withdrawal of a gazette that would expand the sacred area from 28 to 38 square kilometres; they cite a proposed fence around the Ruwanweli stupa and claims of new Hindu structures, which the planning department denies.",
+     "sources": [
+      {
+       "name": "New Indian Express",
+       "url": "https://www.newindianexpress.com/world/2026/Nov/08/buddhist-monks-protest-proposed-redevelopment-of-sri-lankas-sacred-city-of-anuradhapura"
+      }
+     ],
+     "side_a": "The monks say a site sacred to Sri Lankan Buddhism must be protected from changes that restrict worship or alter its character.",
+     "side_a_label": null,
+     "side_b": "The planning department says the plan adds conservation, pilgrim facilities and infrastructure and neither restricts pilgrims nor builds new religious structures.",
+     "side_b_label": null,
+     "question_underneath": "How a state balances the heritage and rights of a majority faith, the rights of minorities, and development.",
+     "thinkers_note": "Arguments from sacred space and communal identity against the liberal principle of equal treatment of all religions; the stewardship argument for conservation, and the question of whether the state may regulate holy ground.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
