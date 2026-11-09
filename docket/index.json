@@ -1,6 +1,12 @@
 {
   "nights": [
     {
+      "date": "2026-11-08",
+      "label": "Sunday, November 8, 2026",
+      "file": "2026-11-08.json",
+      "report": "2026-11-08-report.json"
+    },
+    {
       "date": "2026-11-07",
       "label": "Saturday, November 7, 2026",
       "file": "2026-11-07.json",
