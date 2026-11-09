@@ -350,6 +350,7 @@
       <p class="kicker">Tonight's docket</p>
       <h2>${esc(dateLong)}</h2>
       ${archivedBanner(date)}
+      ${D.audioHtml(state.entry && state.entry.audio)}
       ${fileAlert}
       ${readControl("top")}
       ${lede}

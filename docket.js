@@ -448,6 +448,24 @@
     return out;
   }
 
+  function audioSrc(audio) {
+    const text = String(audio == null ? "" : audio).trim();
+    if (!text || text.includes("..") || text.includes("\\") || /[\s"'<>]/.test(text)) return "";
+    if (/^https?:\/\//i.test(text)) {
+      if (!httpUrl(text) || !/\.(mp3|m4a|ogg|wav)(\?[^#]*)?(#.*)?$/i.test(text)) return "";
+      return text;
+    }
+    if (!/^(?:docket\/)?audio\/[A-Za-z0-9._-]+\.(mp3|m4a|ogg|wav)$/i.test(text)) return "";
+    return text.indexOf("docket/") === 0 ? text : `docket/${text}`;
+  }
+
+  function audioHtml(audio) {
+    const src = audioSrc(audio);
+    if (!src) return "";
+    const href = escapeAttr(src);
+    return `<figure class="night-audio"><figcaption class="kicker">Audio edition</figcaption><audio controls preload="none" src="${href}" aria-label="Audio edition of this night"><a href="${href}">Listen to the audio edition</a></audio></figure>`;
+  }
+
   function archiveListHtml(nights) {
     const rows = (nights || []).filter((night) => night && night.date);
     if (!rows.length) return `<p class="hint">No nights are in the archive.</p>`;
@@ -712,6 +730,6 @@
     distinctChairs, discussionsFromNight, agreementTallies, agreementLabel,
     clipText, searchNights, searchResultHtml,
     chairKey, splitGroups, chairUrl, chairQuery, chairRelations, topRelations, chairPage, chairPageHtml, quoteSourceUrl, quoteCitationHtml,
-    isArchivedNight, liveNights, archivedNights, openableNights, archiveListHtml
+    isArchivedNight, liveNights, archivedNights, openableNights, archiveListHtml, audioSrc, audioHtml
   };
 });

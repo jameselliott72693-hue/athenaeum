@@ -26,6 +26,8 @@ A news source may name an archived copy. The optional `archived` field is an htt
 
 A verified quotation links to its public-domain text when the data has a URL. The optional `passage_url` field, when it is an http or https URL, is the exact place. Otherwise the link uses `source_url`. If neither field is a usable URL, the quotation has no link. Do not invent one.
 
+A night may name an audio edition. The optional `audio` field on its index entry is a path under the docket, such as `audio/YYYY-MM-DD.mp3`, and the file itself is `docket/audio/YYYY-MM-DD.mp3`. When the field is present the night shows a player. A night that omits the field needs no audio file.
+
 When a night is older than 30 days, archive it instead of deleting it. Take its entry out of the `nights` list in `docket/index.json` and put that same entry in `docket/archive.json` (newest first), or leave the entry in the index and set `"archived": true`. Leave `docket/YYYY-MM-DD.json` and `docket/YYYY-MM-DD-report.json` in place. The night drops off the night menu. The archive page lists it, and `docket.html?night=YYYY-MM-DD` still opens it. Then run `node scripts/build-agreements.js` so the agreement file still counts a night that moved to the archive. Do not delete the sitting file or the report file.
 
 Open the folder through a local server, or through the hosted site. A file opened directly cannot load the shelf.

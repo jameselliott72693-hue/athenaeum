@@ -443,6 +443,8 @@ footer { color: var(--soft); font-size: 14px; }
 .chair-quotes { margin: 0; padding-left: 18px; }
 .chair-quote { margin: 0 0 16px; }
 .chair-quote q.vq { quotes: "“" "”" "‘" "’"; font-size: 18px; line-height: 1.45; }
+.night-audio { margin: 8px 0 16px; max-width: 420px; }
+.night-audio audio { display: block; width: 100%; margin-top: 6px; }
 .archive-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
 .archive-list a {
   display: flex;
@@ -584,7 +586,7 @@ footer { color: var(--soft); font-size: 14px; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.cite-work { text-decoration: underline; text-underline-offset: 2px; }
+.original-link .cite-work { text-decoration: underline; text-underline-offset: 2px; }
 .report-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0; }
 .report-side {
   border: 1px solid var(--line);
