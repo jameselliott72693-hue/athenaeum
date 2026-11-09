@@ -267,6 +267,12 @@ a.tap-target {
   padding: 6px 4px;
   line-height: 1.35;
   overflow-wrap: anywhere;
+  vertical-align: baseline;
+}
+a.report-back.tap-target,
+.report-jump a.tap-target {
+  padding: 2px 2px;
+  min-height: 24px;
 }
 .bears { margin: 4px 0 0; color: var(--soft); }
 .lean.for { background: #e7efe4; color: #234028; }
@@ -443,6 +449,9 @@ footer { color: var(--soft); font-size: 14px; }
 .chair-quotes { margin: 0; padding-left: 18px; }
 .chair-quote { margin: 0 0 16px; }
 .chair-quote q.vq { quotes: "“" "”" "‘" "’"; font-size: 18px; line-height: 1.45; }
+#docket a, #archive a, #docket a:visited, #archive a:visited { color: inherit; }
+#docket a.shelf-link, #archive a.shelf-link { color: var(--brass); }
+#docket a.source-archived, #archive a.source-archived { color: var(--soft); }
 .night-audio { margin: 8px 0 16px; max-width: 420px; }
 .night-audio audio { display: block; width: 100%; margin-top: 6px; }
 .archive-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }

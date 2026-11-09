@@ -91,7 +91,9 @@ index.nights.forEach((night, i) => {
     const html = docket.reportHtml(report, sittingIds ? [...sittingIds] : []);
     assert.ok(html.includes('id="news-report"'), night.date);
     assert.ok(!/<script/i.test(html), night.date);
-    if (sittingIds) assert.ok(html.includes('href="#sitting-p1"'));
+    if (sittingIds) {
+      assert.ok(html.includes('class="tap-target" href="#sitting-p1"'));
+    }
     else assert.ok(!html.includes("The sitting"));
   }
 });

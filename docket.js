@@ -140,7 +140,7 @@
   function noteHtml(note, links) {
     const parts = noteParts(note, links);
     if (!parts.length) return "";
-    const body = parts.map((part) => (part.url ? externalLink(part.url, part.text) : escapeText(part.text))).join("");
+    const body = parts.map((part) => (part.url ? externalLink(part.url, part.text, "tap-target") : escapeText(part.text))).join("");
     return `<p class="report-note">${body}</p>`;
   }
 
@@ -156,7 +156,7 @@
       ? String(item.sitting_id)
       : "";
     const sittingLink = sittingId
-      ? `<p class="report-jump"><a href="#sitting-${escapeAttr(sittingId)}">The sitting</a></p>`
+      ? `<p class="report-jump"><a class="tap-target" href="#sitting-${escapeAttr(sittingId)}">The sitting</a></p>`
       : "";
     const thinkers = item.thinkers_note
       ? `<p class="why-chairs">${escapeText(item.thinkers_note)}</p>`

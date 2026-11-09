@@ -108,7 +108,7 @@
     const steps = stepsOf(sitting);
     const storyId = D.storyIdForSitting(state.report, sitting.id);
     const back = storyId
-      ? ` · <a class="report-back" href="#story-${D.escapeAttr(storyId)}">The news report</a>`
+      ? ` · <a class="report-back tap-target" href="#story-${D.escapeAttr(storyId)}">The news report</a>`
       : "";
     return `<section class="docket-sitting" id="sitting-${esc(sitting.id)}" data-sitting="${esc(sitting.id)}">
       <p class="kicker">${esc(sitting.section)} · ${esc(sitting.number)}${back}</p>
