@@ -412,6 +412,219 @@
     return results.slice(0, 40);
   }
 
+  function chairKey(name) {
+    return String(name || "").trim().toLowerCase().replace(/\s+/g, " ");
+  }
+
+  function escapeRegExp(text) {
+    return String(text).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function nameTokens(name) {
+    const full = String(name || "").trim().replace(/\s+/g, " ");
+    if (!full) return [];
+    const titles = new Set(["pope", "saint", "st", "dr"]);
+    const stop = new Set(["jr", "sr", "ii", "iii", "iv", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "of", "the", "de", "van", "von", "la"]);
+    const significant = full.split(" ").filter((part) => {
+      const key = part.toLowerCase().replace(/\./g, "");
+      return !stop.has(key) && !titles.has(key) && key.length >= 3;
+    });
+    const tokens = [full];
+    if (significant.length) tokens.push(significant[significant.length - 1]);
+    return tokens;
+  }
+
+  function splitGroups(split, names) {
+    const catalog = distinctChairs(names).map((name) => ({ name, tokens: nameTokens(name) }));
+    const tokenCounts = {};
+    catalog.forEach((entry) => {
+      entry.tokens.forEach((token) => {
+        const key = token.toLowerCase();
+        tokenCounts[key] = (tokenCounts[key] || 0) + 1;
+      });
+    });
+    const usable = catalog.map((entry) => ({
+      name: entry.name,
+      tokens: entry.tokens.filter((token, index) => index === 0 || tokenCounts[token.toLowerCase()] === 1)
+    }));
+    return String(split || "").split(";").map((clause) => {
+      const found = [];
+      usable.forEach((entry) => {
+        const hit = entry.tokens.some((token) => {
+          const re = new RegExp(`(?:^|[^A-Za-zÀ-ÿ])${escapeRegExp(token)}(?![A-Za-zÀ-ÿ])`, "i");
+          return re.test(clause);
+        });
+        if (hit) found.push(entry.name);
+      });
+      return found;
+    }).filter((group) => group.length);
+  }
+
+  function chairUrl(name) {
+    return `docket.html?chair=${encodeURIComponent(String(name || "").trim())}`;
+  }
+
+  function chairQuery(location) {
+    const params = new URLSearchParams((location && location.search) || "");
+    const value = params.get("chair");
+    return value ? value.trim() : "";
+  }
+
+  function bumpPair(table, aName, bName) {
+    const a = chairKey(aName);
+    const b = chairKey(bName);
+    if (!a || !b || a === b) return;
+    table[a] = table[a] || {};
+    if (!table[a][b]) table[a][b] = { name: bName, count: 0 };
+    table[a][b].count += 1;
+    table[a][b].name = bName;
+  }
+
+  function chairRelations(appearances, agreementRows) {
+    const agreedIds = new Set((agreementRows || []).map((row) => (row && row.id != null ? String(row.id) : "")).filter(Boolean));
+    const agree = {};
+    const disagree = {};
+    (appearances || []).forEach((item) => {
+      if (!item || !agreedIds.has(String(item.id))) return;
+      const names = distinctChairs(item.chairs);
+      for (let i = 0; i < names.length; i++) {
+        for (let j = i + 1; j < names.length; j++) {
+          bumpPair(agree, names[i], names[j]);
+          bumpPair(agree, names[j], names[i]);
+        }
+      }
+      const groups = splitGroups(item.split, names);
+      const seen = {};
+      groups.forEach((group) => {
+        group.forEach((name) => {
+          const key = chairKey(name);
+          seen[key] = (seen[key] || 0) + 1;
+        });
+      });
+      const clean = groups.map((group) => group.filter((name) => seen[chairKey(name)] === 1));
+      for (let i = 0; i < clean.length; i++) {
+        for (let j = i + 1; j < clean.length; j++) {
+          clean[i].forEach((left) => {
+            clean[j].forEach((right) => {
+              bumpPair(disagree, left, right);
+              bumpPair(disagree, right, left);
+            });
+          });
+        }
+      }
+    });
+    return { agree, disagree };
+  }
+
+  function topRelations(map, name, limit) {
+    const row = (map && map[chairKey(name)]) || {};
+    return Object.keys(row).map((key) => row[key]).sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      return String(a.name).localeCompare(String(b.name));
+    }).slice(0, limit || 5);
+  }
+
+  function quoteCitationHtml(quote) {
+    if (!quote || quote.verified !== true) return "";
+    return `<li><span class="cite-work">${escapeText(quote.work)}</span><span class="loc">, ${escapeText(quote.location)}</span></li>`;
+  }
+
+  function chairPage(name, records, agreementRows) {
+    const key = chairKey(name);
+    if (!key) return null;
+    const sittings = [];
+    const quotes = [];
+    const appearances = [];
+    const profile = { name: "", rosterId: "", years: "", tradition: "" };
+    (records || []).forEach((record) => {
+      const night = record && record.night;
+      if (!record || !record.date || !night) return;
+      (night.sittings || []).forEach((sitting) => {
+        const chairs = sitting.chairs || [];
+        appearances.push({
+          id: `${record.date}/${sitting.id}`,
+          chairs: chairs.map((chair) => chair && chair.name),
+          split: (sitting.briefing && sitting.briefing.split) || ""
+        });
+        const match = chairs.find((chair) => chairKey(chair && chair.name) === key);
+        if (!match) return;
+        if (!profile.name) profile.name = String(match.name).trim();
+        if (!profile.rosterId && match.roster_id) profile.rosterId = String(match.roster_id);
+        if (!profile.years && match.years) profile.years = String(match.years);
+        if (!profile.tradition && match.tradition) profile.tradition = String(match.tradition);
+        const sittingId = sitting.id && /^[A-Za-z0-9-]+$/.test(String(sitting.id)) ? String(sitting.id) : "";
+        const href = placeUrl(record.date, sittingId ? `#sitting-${sittingId}` : "");
+        sittings.push({
+          date: record.date,
+          label: record.label || night.date_long || record.date,
+          id: sittingId,
+          section: sitting.section || "",
+          headline: sitting.headline || sitting.question || "",
+          href
+        });
+        if (match.paraphrase_only) return;
+        (match.quotes || []).forEach((quote) => {
+          if (!quote || quote.verified !== true) return;
+          quotes.push(Object.assign({}, quote, {
+            label: record.label || night.date_long || record.date,
+            href
+          }));
+        });
+      });
+    });
+    if (!profile.name) return null;
+    const relations = chairRelations(appearances, agreementRows);
+    return {
+      name: profile.name,
+      rosterId: profile.rosterId,
+      years: profile.years,
+      tradition: profile.tradition,
+      sittings,
+      quotes,
+      agrees: topRelations(relations.agree, profile.name, 5),
+      disagrees: topRelations(relations.disagree, profile.name, 5)
+    };
+  }
+
+  function relationListHtml(rows, kind) {
+    if (!rows || !rows.length) return "";
+    return `<ul class="chair-relations">${rows.map((row) => {
+      const count = Number(row.count) || 0;
+      const label = kind === "agree"
+        ? `${count} shared agreement${count === 1 ? "" : "s"}`
+        : `${count} split${count === 1 ? "" : "s"}`;
+      return `<li><a class="tap-target" href="${escapeAttr(chairUrl(row.name))}">${escapeText(row.name)}</a> <span class="meta">${escapeText(label)}</span></li>`;
+    }).join("")}</ul>`;
+  }
+
+  function chairPageHtml(page) {
+    if (!page) {
+      return `<h2>Not on a live night</h2><p class="err" role="alert">This chair has no sitting on the live nights.</p>`;
+    }
+    const meta = [page.tradition, page.years].filter(Boolean).join(" · ");
+    const shelf = page.rosterId
+      ? `<p class="hint"><a class="shelf-link tap-target" href="index.html#thinker=${escapeAttr(page.rosterId)}">On the shelf</a></p>`
+      : "";
+    const sittingList = page.sittings.length
+      ? `<ul class="chair-sittings">${page.sittings.map((sitting) => `<li><a class="tap-target" href="${escapeAttr(sitting.href)}"><span class="kicker">${escapeText(sitting.label)}${sitting.section ? ` · ${escapeText(sitting.section)}` : ""}</span><strong>${escapeText(sitting.headline || sitting.id)}</strong></a></li>`).join("")}</ul>`
+      : `<p class="hint">No sittings on the live nights.</p>`;
+    const quoteList = page.quotes.length
+      ? `<ol class="chair-quotes">${page.quotes.map((quote) => {
+          const cite = quoteCitationHtml(quote);
+          return `<li class="chair-quote"><q class="vq">${escapeText(quote.text)}</q><p class="meta"><a class="tap-target" href="${escapeAttr(quote.href)}">${escapeText(quote.label || "")}</a></p>${cite ? `<ol class="cites">${cite}</ol>` : ""}</li>`;
+        }).join("")}</ol>`
+      : `<p class="hint">No verified quotation on the live nights.</p>`;
+    const agrees = relationListHtml(page.agrees, "agree") || `<p class="hint">No other chair shares a recorded agreement on the live nights.</p>`;
+    const disagrees = relationListHtml(page.disagrees, "disagree") || `<p class="hint">No recorded split on those agreements names another chair.</p>`;
+    return `<h2>${escapeText(page.name)}</h2>
+      ${meta ? `<p class="kicker">${escapeText(meta)}</p>` : ""}
+      ${shelf}
+      <section class="chair-block"><h3>Sittings</h3>${sittingList}</section>
+      <section class="chair-block"><h3>Verified quotations</h3>${quoteList}</section>
+      <section class="chair-block"><h3>Agrees most often with</h3>${agrees}</section>
+      <section class="chair-block"><h3>Disagrees most often with</h3>${disagrees}</section>`;
+  }
+
   function searchKindLabel(kind) {
     if (kind === "thinker") return "Thinker";
     if (kind === "story") return "Story";
@@ -441,6 +654,7 @@
     httpUrl, sideLabel, noteParts, externalLink, sourceItemHtml, reportStoryHtml, reportHtml, storyIdForSitting,
     READ_STORAGE_KEY, parseReadState, isNightRead, withNightRead, unreadCount, unreadHint, nightMenuLabel, loadReadMap, saveReadMap,
     distinctChairs, discussionsFromNight, agreementTallies, agreementLabel,
-    clipText, searchNights, searchResultHtml
+    clipText, searchNights, searchResultHtml,
+    chairKey, splitGroups, chairUrl, chairQuery, chairRelations, topRelations, chairPage, chairPageHtml, quoteCitationHtml
   };
 });

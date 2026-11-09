@@ -444,5 +444,75 @@ assert.ok(unsafe.includes('href="docket.html?night=2026-11-01#sitting-p1"'));
 const pageJs = fs.readFileSync(path.join(__dirname, "../docket-page.js"), "utf8");
 assert.ok(pageJs.includes('id="docket-search"'));
 assert.ok(pageJs.includes("searchNights"));
+assert.ok(pageJs.includes("chairUrl"));
+assert.ok(pageJs.includes("On the shelf"));
+
+const groups = docket.splitGroups(
+  "Aquinas, a formed conscience; Kant, Cicero, the pledge; Burke, fight within; Washington, Thoreau.",
+  ["Thomas Aquinas", "Immanuel Kant", "Edmund Burke", "George Washington", "Henry David Thoreau", "Cicero"]
+);
+assert.deepStrictEqual(groups.map((group) => group.slice().sort()), [
+  ["Thomas Aquinas"],
+  ["Cicero", "Immanuel Kant"],
+  ["Edmund Burke"],
+  ["George Washington", "Henry David Thoreau"]
+]);
+const chairRecords = [{
+  date: "2026-11-01",
+  label: "Sunday, November 1, 2026",
+  night: {
+    sittings: [{
+      id: "p1",
+      section: "Political",
+      headline: "A pledge",
+      briefing: { split: "Aquinas, a formed conscience; Kant, the pledge." },
+      chairs: [
+        {
+          name: "Thomas Aquinas",
+          roster_id: "aquinas",
+          years: "1225–1274",
+          tradition: "Classical Christian",
+          quotes: [{ text: "every will at variance with reason", work: "Summa Theologica", location: "I-II, Q. 19", verified: true, source_url: "https://www.gutenberg.org/ebooks/17897" }]
+        },
+        { name: "Immanuel Kant", quotes: [] }
+      ]
+    }]
+  }
+}];
+const chairRows = [{ id: "2026-11-01/p1", subject: "moral", count: 2 }];
+const aquinas = docket.chairPage("thomas aquinas", chairRecords, chairRows);
+assert.strictEqual(aquinas.name, "Thomas Aquinas");
+assert.strictEqual(aquinas.rosterId, "aquinas");
+assert.strictEqual(aquinas.sittings.length, 1);
+assert.strictEqual(aquinas.sittings[0].href, "docket.html?night=2026-11-01#sitting-p1");
+assert.strictEqual(aquinas.quotes.length, 1);
+assert.strictEqual(aquinas.quotes[0].work, "Summa Theologica");
+assert.strictEqual(aquinas.quotes[0].location, "I-II, Q. 19");
+assert.strictEqual(aquinas.agrees[0].name, "Immanuel Kant");
+assert.strictEqual(aquinas.agrees[0].count, 1);
+assert.strictEqual(aquinas.disagrees[0].name, "Immanuel Kant");
+assert.strictEqual(docket.chairPage("Nobody", chairRecords, chairRows), null);
+const chairHtml = docket.chairPageHtml(aquinas);
+assert.ok(chairHtml.includes("Summa Theologica"));
+assert.ok(chairHtml.includes("I-II, Q. 19"));
+assert.ok(chairHtml.includes("index.html#thinker=aquinas"));
+assert.ok(chairHtml.includes("Agrees most often with"));
+assert.ok(chairHtml.includes("Disagrees most often with"));
+assert.ok(!/<script/i.test(docket.chairPageHtml({ name: "<script>", rosterId: "", years: "", tradition: "", sittings: [], quotes: [], agrees: [], disagrees: [] })));
+assert.ok(docket.chairPageHtml(null).includes("no sitting"));
+assert.strictEqual(docket.chairUrl("Thomas Aquinas"), "docket.html?chair=Thomas%20Aquinas");
+assert.strictEqual(docket.chairQuery({ search: "?chair=Thomas%20Aquinas", hash: "" }), "Thomas Aquinas");
+const realAquinas = docket.chairPage("Thomas Aquinas", [{
+  date: "2026-11-01",
+  label: "Sunday, November 1, 2026",
+  night: JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-11-01.json"), "utf8"))
+}], JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/agreements.json"), "utf8")).discussions);
+assert.ok(realAquinas.sittings.length >= 1);
+assert.ok(realAquinas.quotes.length >= 1);
+realAquinas.quotes.forEach((quote) => {
+  assert.ok(quote.work, quote.text);
+  assert.ok(quote.location, quote.text);
+});
+assert.ok(realAquinas.agrees.length >= 1);
 
 console.log("docket tests passed", index.nights.map((entry) => entry.date).join(", "));

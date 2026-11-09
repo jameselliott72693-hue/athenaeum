@@ -1,7 +1,7 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, catalog: null };
+  const state = { nights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, agreementRows: [], catalog: null, chair: "" };
   let searchTimer = 0;
   let requestSeq = 0;
 
@@ -38,11 +38,12 @@
     const mark = src
       ? `<img class="avatar" src="${esc(src)}" alt="" width="48" height="48" loading="lazy" decoding="async" />`
       : `<span class="monogram" aria-hidden="true">${esc(initials(chair.name))}</span>`;
-    const name = chair.roster_id
-      ? `<a href="index.html#thinker=${esc(chair.roster_id)}">${esc(chair.name)}</a>`
-      : esc(chair.name);
+    const name = `<a href="${esc(D.chairUrl(chair.name))}">${esc(chair.name)}</a>`;
+    const shelf = chair.roster_id
+      ? `<a class="shelf-link tap-target" href="index.html#thinker=${esc(chair.roster_id)}">On the shelf</a>`
+      : "";
     const meta = [chair.tradition, chair.years].filter(Boolean).join(" · ");
-    return `<div class="remark-head">${mark}<div><p class="kicker">${esc(meta)}</p><h3>${name}</h3></div></div>`;
+    return `<div class="remark-head">${mark}<div><p class="kicker">${esc(meta)}</p><h3>${name}</h3>${shelf}</div></div>`;
   }
 
   function quoteList(quotes) {
@@ -587,16 +588,34 @@
   async function loadAgreements() {
     try {
       const response = await fetch("docket/agreements.json");
-      if (!response.ok) return {};
+      if (!response.ok) return { map: {}, rows: [] };
       const data = await response.json();
+      const rows = (data.discussions || []).filter((row) => row && row.id);
       const map = {};
-      (data.discussions || []).forEach((row) => {
-        if (row && row.id) map[row.id] = row;
-      });
-      return map;
+      rows.forEach((row) => { map[row.id] = row; });
+      return { map, rows };
     } catch (err) {
-      return {};
+      return { map: {}, rows: [] };
     }
+  }
+
+  async function renderChair(name) {
+    const host = $("docket");
+    if (!host) return;
+    Object.keys(state.timers).forEach((id) => {
+      window.clearInterval(state.timers[id]);
+      delete state.timers[id];
+    });
+    state.chair = name;
+    host.removeAttribute("aria-busy");
+    document.title = `${name} · Tonight's docket`;
+    host.innerHTML = `<p class="kicker">A chair</p><h2>${esc(name)}</h2><p class="hint">Gathering the live nights.</p>`;
+    const catalog = await loadCatalog();
+    if (D.chairQuery(window.location) !== name) return;
+    const page = D.chairPage(name, catalog, state.agreementRows);
+    document.title = `${(page && page.name) || name} · Tonight's docket`;
+    host.innerHTML = `<p class="kicker">A chair</p><p class="hint"><a class="tap-target" href="docket.html">Tonight's docket</a></p>${D.chairPageHtml(page)}${searchBox()}`;
+    bindSearch();
   }
 
   async function boot() {
@@ -607,26 +626,37 @@
     ]);
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
-    state.agreements = agreements;
+    state.agreements = agreements.map;
+    state.agreementRows = agreements.rows;
     state.nights = index.nights || [];
     state.read = D.loadReadMap(window.localStorage);
-    const asked = D.nightQuery(window.location);
-    const known = D.nightFromLocation(window.location, state.nights);
-    await showNight(asked && !known ? asked : known, false);
-    document.body.addEventListener("click", onClick);
-    window.addEventListener("storage", syncReadFromStorage);
-    window.addEventListener("popstate", () => {
-      const nextAsked = D.nightQuery(window.location);
-      const nextKnown = D.nightFromLocation(window.location, state.nights);
-      const date = nextAsked && !nextKnown ? nextAsked : nextKnown;
-      if (!state.unknown && date === shownDate()) return;
-      showNight(date, false).catch(reportDocketError);
-    });
     const theme = (() => { try { return localStorage.getItem("athenaeum.theme"); } catch (err) { return null; } })();
     const prefer = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     applyTheme(theme === "dark" || theme === "light" ? theme : prefer);
     $("theme").addEventListener("click", () => {
       applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+    });
+    const chair = D.chairQuery(window.location);
+    if (chair) await renderChair(chair);
+    else {
+      const asked = D.nightQuery(window.location);
+      const known = D.nightFromLocation(window.location, state.nights);
+      await showNight(asked && !known ? asked : known, false);
+    }
+    document.body.addEventListener("click", onClick);
+    window.addEventListener("storage", syncReadFromStorage);
+    window.addEventListener("popstate", () => {
+      const nextChair = D.chairQuery(window.location);
+      if (nextChair) {
+        renderChair(nextChair).catch(reportDocketError);
+        return;
+      }
+      state.chair = "";
+      const nextAsked = D.nightQuery(window.location);
+      const nextKnown = D.nightFromLocation(window.location, state.nights);
+      const date = nextAsked && !nextKnown ? nextAsked : nextKnown;
+      if (!state.unknown && date === shownDate()) return;
+      showNight(date, false).catch(reportDocketError);
     });
   }
 

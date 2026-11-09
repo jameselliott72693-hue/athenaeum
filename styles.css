@@ -420,6 +420,29 @@ footer { color: var(--soft); font-size: 14px; }
 }
 .docket-search-results strong { font-family: var(--serif); font-size: 18px; font-weight: 560; }
 .docket-search-results .meta { color: var(--soft); }
+.shelf-link { color: var(--brass); font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: 0; text-transform: none; }
+.chair-block { margin-top: 22px; }
+.chair-block h3 { font-size: 22px; margin: 0 0 8px; }
+.chair-sittings, .chair-relations { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.chair-sittings a, .chair-relations a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: inherit;
+  text-decoration: none;
+}
+.chair-relations a { flex-direction: row; align-items: center; }
+.chair-sittings strong, .chair-quotes q { font-family: var(--serif); }
+.chair-sittings strong { font-size: 18px; font-weight: 560; }
+.chair-quotes { margin: 0; padding-left: 18px; }
+.chair-quote { margin: 0 0 16px; }
+.chair-quote q.vq { quotes: "“" "”" "‘" "’"; font-size: 18px; line-height: 1.45; }
 .read-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 12px 0 16px; }
 .read-bar-bottom { margin-top: 28px; }
 .read-state {
