@@ -23,15 +23,18 @@
      "sources": [
       {
        "name": "CBS News live updates",
-       "url": "https://www.cbsnews.com/live-updates/2026-elections-monday-november-2/"
+       "url": "https://www.cbsnews.com/live-updates/2026-elections-monday-november-2/",
+       "archived": "http://web.archive.org/web/20261102124025/https://www.cbsnews.com/live-updates/2026-elections-monday-november-2/"
       },
       {
        "name": "ABC News",
-       "url": "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278"
+       "url": "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278",
+       "archived": "http://web.archive.org/web/20261030222410/https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278"
       },
       {
        "name": "AP",
-       "url": "https://apnews.com/live/midterm-elections-trump-house-senate-news-updates-11-2-2026"
+       "url": "https://apnews.com/live/midterm-elections-trump-house-senate-news-updates-11-2-2026",
+       "archived": "http://web.archive.org/web/20261103045209/https://apnews.com/live/midterm-elections-trump-house-senate-news-updates-11-2-2026"
       }
      ],
      "side_a": "Supporters of the DOJ push say only citizens may vote, the window to check is closing for good once envelopes are opened, and courts that won't even pause to verify are choosing speed over integrity. One widely shared reaction on X: the Court is \"against enforcing federal law and verifying that only American CITIZENS vote.\"",
@@ -108,11 +111,13 @@
      "sources": [
       {
        "name": "Gallup",
-       "url": "https://news.gallup.com/poll/714653/socialism-positive-rating-tops-first-time.aspx"
+       "url": "https://news.gallup.com/poll/714653/socialism-positive-rating-tops-first-time.aspx",
+       "archived": "http://web.archive.org/web/20261031045324/https://news.gallup.com/poll/714653/socialism-positive-rating-tops-first-time.aspx"
       },
       {
        "name": "Fortune",
-       "url": "https://fortune.com/2026/10/02/americans-view-socialism-favorably-trump-taxpayer-ads-jd-vance-affordability/"
+       "url": "https://fortune.com/2026/10/02/americans-view-socialism-favorably-trump-taxpayer-ads-jd-vance-affordability/",
+       "archived": "http://web.archive.org/web/20261007220654/https://fortune.com/2026/10/02/americans-view-socialism-favorably-trump-taxpayer-ads-jd-vance-affordability/"
       },
       {
        "name": "X news summary",
@@ -136,11 +141,13 @@
      "sources": [
       {
        "name": "OpenSecrets",
-       "url": "https://www.opensecrets.org/news/2026/10/opensecrets-predicts-record-12-billion-in-midterm-election-spending"
+       "url": "https://www.opensecrets.org/news/2026/10/opensecrets-predicts-record-12-billion-in-midterm-election-spending",
+       "archived": "http://web.archive.org/web/20261031183100/https://www.opensecrets.org/news/2026/10/opensecrets-predicts-record-12-billion-in-midterm-election-spending/"
       },
       {
        "name": "TPR on nonstop texting",
-       "url": "https://www.tpr.org/government-politics/2026-10-21/theres-no-way-to-stop-them-how-campaigns-and-pacs-get-away-with-nonstop-texting"
+       "url": "https://www.tpr.org/government-politics/2026-10-21/theres-no-way-to-stop-them-how-campaigns-and-pacs-get-away-with-nonstop-texting",
+       "archived": "http://web.archive.org/web/20261103151808/https://www.tpr.org/government-politics/2026-10-21/theres-no-way-to-stop-them-how-campaigns-and-pacs-get-away-with-nonstop-texting"
       },
       {
        "name": "X news summary",
@@ -213,7 +220,8 @@
       },
       {
        "name": "Homily (Italian)",
-       "url": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2026/11/02/0860/01593.html"
+       "url": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2026/11/02/0860/01593.html",
+       "archived": "https://web.archive.org/web/20261109222648/https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2026/11/02/0860/01593.html"
       },
       {
        "name": "X news summary on indulgences",
@@ -237,7 +245,8 @@
      "sources": [
       {
        "name": "Townhall",
-       "url": "https://townhall.com/news/kyleolson/2026/11/01/video-adam-hamiltons-church-conducts-queer-weddings-sent-money-to-protect-drag-queen-story-hour-n2685669"
+       "url": "https://townhall.com/news/kyleolson/2026/11/01/video-adam-hamiltons-church-conducts-queer-weddings-sent-money-to-protect-drag-queen-story-hour-n2685669",
+       "archived": "http://web.archive.org/web/20261101130244/https://townhall.com/news/kyleolson/2026/11/01/video-adam-hamiltons-church-conducts-queer-weddings-sent-money-to-protect-drag-queen-story-hour-n2685669"
       },
       {
        "name": "The Washington Stand",
@@ -245,7 +254,8 @@
       },
       {
        "name": "Kansas City Star on an earlier ad",
-       "url": "https://www.kansascity.com/news/politics-government/article316908841.html"
+       "url": "https://www.kansascity.com/news/politics-government/article316908841.html",
+       "archived": "http://web.archive.org/web/20260919133343/https://www.kansascity.com/news/politics-government/article316908841.html"
       }
      ],
      "side_a": "Marshall's side and conservative Christians say a pastor running as a moderate should be judged by the church he built, that its teaching departs from historic Christianity on marriage, and that Kansans deserve to see it before they vote.",

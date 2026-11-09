@@ -23,11 +23,13 @@
      "sources": [
       {
        "name": "CNBC",
-       "url": "https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html"
+       "url": "https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html",
+       "archived": "http://web.archive.org/web/20261108152147/https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html"
       },
       {
        "name": "The Washington Post",
-       "url": "https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/"
+       "url": "https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/",
+       "archived": "http://web.archive.org/web/20261108114730/https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/"
       },
       {
        "name": "POLITICO",
@@ -35,7 +37,8 @@
       },
       {
        "name": "Fox News",
-       "url": "https://www.foxnews.com/politics/trump-orders-doj-probe-democrats-over-alleged-threats-against-admin-officials"
+       "url": "https://www.foxnews.com/politics/trump-orders-doj-probe-democrats-over-alleged-threats-against-admin-officials",
+       "archived": "https://web.archive.org/web/20261109225655/https://www.foxnews.com/politics/trump-orders-doj-probe-democrats-over-alleged-threats-against-admin-officials"
       }
      ],
      "side_a": "Critics say a president who just lost Congress is trying to criminalize the ordinary tools of legislative power — hearings, document requests, impeachment, and public warnings to would-be appointees. On X, the line that landed was that “oversight is extortion now,” and that using his own Justice Department against the opposition after an election is the very “lawfare” he condemns. They note he named no letters and offered no public evidence of a crime.",
@@ -55,19 +58,23 @@
      "sources": [
       {
        "name": "BBC",
-       "url": "https://www.bbc.com/news/articles/c6n9r01d2709o"
+       "url": "https://www.bbc.com/news/articles/c6n9r01d2709o",
+       "archived": "http://web.archive.org/web/20261109125654/https://www.bbc.com/news/articles/c6n9r01d2709o"
       },
       {
        "name": "The Guardian",
-       "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman"
+       "url": "https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman",
+       "archived": "https://web.archive.org/web/20261109225720/https://www.theguardian.com/world/2026/nov/07/krakow-poland-shooting-market-square-deaths-gunman"
       },
       {
        "name": "Polish Prime Minister’s Office",
-       "url": "https://www.gov.pl/web/premier/premier-w-obliczu-tragedii-w-krakowie-zobaczylismy-to-co-w-ludziach-najlepsze--odwage-policjantow-poswiecenie-ratownikow-i-bezinteresowna-pomoc-ludzi"
+       "url": "https://www.gov.pl/web/premier/premier-w-obliczu-tragedii-w-krakowie-zobaczylismy-to-co-w-ludziach-najlepsze--odwage-policjantow-poswiecenie-ratownikow-i-bezinteresowna-pomoc-ludzi",
+       "archived": "http://web.archive.org/web/20261109040500/https://www.gov.pl/web/premier/premier-w-obliczu-tragedii-w-krakowie-zobaczylismy-to-co-w-ludziach-najlepsze--odwage-policjantow-poswiecenie-ratownikow-i-bezinteresowna-pomoc-ludzi"
       },
       {
        "name": "CNA / AFP",
-       "url": "https://www.channelnewsasia.com/world/gunman-fascinated-far-right-kills-six-in-krakow-poland-6533446"
+       "url": "https://www.channelnewsasia.com/world/gunman-fascinated-far-right-kills-six-in-krakow-poland-6533446",
+       "archived": "http://web.archive.org/web/20261108034019/https://www.channelnewsasia.com/world/gunman-fascinated-far-right-kills-six-in-krakow-poland-6533446"
       }
      ],
      "side_a": "For many in Poland and across Europe, the attack is further proof that far-right radicalization and military-style weapons can turn a public square into a killing ground. They hear Tusk’s vow to find supporters as the least a government can do after an act it has named terrorism, and they want the ideology named plainly rather than blurred into mental illness or a private family tragedy.",
@@ -91,7 +98,8 @@
       },
       {
        "name": "Axios",
-       "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog"
+       "url": "https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog",
+       "archived": "http://web.archive.org/web/20261108181352/https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog"
       },
       {
        "name": "Al Jazeera",
@@ -148,7 +156,8 @@
       },
       {
        "name": "The Guardian",
-       "url": "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour"
+       "url": "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour",
+       "archived": "https://web.archive.org/web/20261109225939/https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour"
       },
       {
        "name": "The Washington Post",
@@ -172,7 +181,8 @@
      "sources": [
       {
        "name": "Mosaico (Milan Jewish community)",
-       "url": "https://www.mosaico-cem.it/attualita-e-news/italia/milano-rimosso-il-murale-del-7-ottobre-di-alexsandro-palombo-un-muro-bianco-al-posto-di-noa-e-avinatan/"
+       "url": "https://www.mosaico-cem.it/attualita-e-news/italia/milano-rimosso-il-murale-del-7-ottobre-di-alexsandro-palombo-un-muro-bianco-al-posto-di-noa-e-avinatan/",
+       "archived": "https://web.archive.org/web/20261109230031/https://www.mosaico-cem.it/attualita-e-news/italia/milano-rimosso-il-murale-del-7-ottobre-di-alexsandro-palombo-un-muro-bianco-al-posto-di-noa-e-avinatan/"
       },
       {
        "name": "THEJ.CA",
@@ -225,7 +235,8 @@
      "sources": [
       {
        "name": "Al Jazeera",
-       "url": "https://www.aljazeera.com/news/2026/11/7/pope-leo-hold-first-mass-in-uruguay-urges-crowd-to-be-bridge-builders"
+       "url": "https://www.aljazeera.com/news/2026/11/7/pope-leo-hold-first-mass-in-uruguay-urges-crowd-to-be-bridge-builders",
+       "archived": "https://web.archive.org/web/20261109230209/https://www.aljazeera.com/news/2026/11/7/pope-leo-hold-first-mass-in-uruguay-urges-crowd-to-be-bridge-builders"
       },
       {
        "name": "Vatican News",
@@ -257,7 +268,8 @@
       },
       {
        "name": "Terresainte.net",
-       "url": "https://www.terresainte.net/2026/11/jerusalem-un-forum-pour-mieux-proteger-les-communautes-chretiennes/"
+       "url": "https://www.terresainte.net/2026/11/jerusalem-un-forum-pour-mieux-proteger-les-communautes-chretiennes/",
+       "archived": "https://web.archive.org/web/20261109230333/https://www.terresainte.net/2026/11/jerusalem-un-forum-pour-mieux-proteger-les-communautes-chretiennes/"
       }
      ],
      "side_a": "Church leaders and their Jewish partners call the forum a basic act of justice in a city holy to three faiths. Spitting on a pilgrim or a cross is not a prank but a way of saying a Christian does not belong; “minor” humiliations, they argue, are how a climate of contempt is built. Zero tolerance, education, and easier prosecution are how a Jewish majority shows that the city’s Christian remnant is not a guest on sufferance.",
@@ -277,11 +289,13 @@
      "sources": [
       {
        "name": "National Catholic Reporter / RNS",
-       "url": "https://www.ncronline.org/news/catholics-and-nones-played-key-role-democrats-historic-victory-exit-polls-show"
+       "url": "https://www.ncronline.org/news/catholics-and-nones-played-key-role-democrats-historic-victory-exit-polls-show",
+       "archived": "https://web.archive.org/web/20261109224124/https://www.ncronline.org/news/catholics-and-nones-played-key-role-democrats-historic-victory-exit-polls-show"
       },
       {
        "name": "America Magazine",
-       "url": "https://www.americamagazine.org/news/2026/11/04/catholic-vote-midterm-election-democrat-republican/"
+       "url": "https://www.americamagazine.org/news/2026/11/04/catholic-vote-midterm-election-democrat-republican/",
+       "archived": "https://web.archive.org/web/20261109224219/https://www.americamagazine.org/news/2026/11/04/catholic-vote-midterm-election-democrat-republican/"
       },
       {
        "name": "Il Foglio",
