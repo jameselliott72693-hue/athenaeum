@@ -1,0 +1,305 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-10",
+ "date_long": "Tuesday, November 10, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-10.json",
+  "sha256": "ad6d8905eb73fdf8f6c25514590bbbeb26473db86e8a5e253b126f1d6ef8635a",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "House Republicans send the Hegseth impeachment articles to committee, 211-204",
+     "summary": "Rep. Thomas Massie forced a floor vote on his eight articles of impeachment against Defense Secretary Pete Hegseth over the nine-month Iran war, but the House voted 211-204 Tuesday evening to refer them to the Judiciary Committee, which effectively shelves them. Massie was the only Republican voting no; all Democrats present opposed referral. At a Pentagon briefing Hegseth called the effort partisan, and Senate Democratic leader Chuck Schumer vowed a trial once Democrats take control in January.",
+     "sources": [
+      {
+       "name": "House Clerk roll call 317",
+       "url": "https://clerk.house.gov/votes/2026317",
+       "archived": "http://web.archive.org/web/20261110230505/https://clerk.house.gov/votes/2026317"
+      },
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/massie-hegseth-impeachment/",
+       "archived": "http://web.archive.org/web/20261111005145/https://www.cbsnews.com/news/massie-hegseth-impeachment/"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth",
+       "archived": "http://web.archive.org/web/20261110232815/https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth"
+      }
+     ],
+     "side_a": "Supporters of impeachment say the war ran far past the War Powers Resolution's 60-day limit without authorization from Congress, and that a Congress that won't even vote on it has given up its most basic check. Rep. Jason Crow said on Fox News that he'd drop impeachment if Trump replaced Hegseth, and Democrats promise to take it up in January.",
+     "side_a_label": null,
+     "side_b": "Most Republicans, including some frustrated with how the war has gone, say disagreement over a war's conduct isn't a \"high crime or misdemeanor.\" They say the effort is a partisan removal campaign led by a defeated lame-duck member, and that the strikes crippled Iran's nuclear and naval capacity. On X, supporters pointed to Hegseth's recruiting gains and his campaign against \"woke\" policies.",
+     "side_b_label": null,
+     "question_underneath": "When is impeachment the remedy for bad judgment rather than lawbreaking? Does a legislature that declines to use its war powers lose them?",
+     "thinkers_note": "Federalist No. 65 (Hamilton): impeachment concerns \"the abuse or violation of some public trust,\" and Hamilton warned it would always be swept up in faction. The War Powers Resolution of 1973 and the Framers' choice in Article I to give Congress the power to declare war (Madison: the executive is \"most prone to war\"). Prudence versus legality: Aristotle's phronesis (practical wisdom) asks whether a remedy fits the moment as well as whether it is permitted.",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Senate Republicans keep John Thune as leader after losing at least seven seats",
+     "summary": "After three tense closed-door meetings, Senate Republicans re-elected John Thune as leader by acclamation; the conference first voted 31-15 to go ahead rather than delay, and the rest of the leadership team was kept. Democrats are on track for 54 Senate seats and about 255 House seats in January. Conservatives including Sen. Ron Johnson and Mollie Hemingway faulted Thune for refusing to break the filibuster to pass the SAVE America Act voter-ID bill.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/john-thune-republican-leadership-elections-aee05eef5d85aafde6fbb27272977a14"
+      },
+      {
+       "name": "AP: races still uncalled",
+       "url": "https://apnews.com/article/midterm-elections-mississippi-alaska-congress-vote-count-90ce111a971a0f70ba938d27fe69f65d"
+      }
+     ],
+     "side_a": "Thune's defenders say the losses were about affordability and kitchen-table issues, not Senate procedure. They say the filibuster he protected is exactly what will shield Republicans' priorities now that they're in the minority, and that a steady, well-liked leader is what a shrunken conference needs.",
+     "side_a_label": null,
+     "side_b": "Critics on the right say leadership squandered two years of majority power by refusing to override the filibuster on election integrity, judges, and codifying Trump's orders, and that rubber-stamping the same leaders after a wipeout means no one learned anything. On X, activists called it \"ignoring the election's lessons.\"",
+     "side_b_label": null,
+     "question_underneath": "Are the rules of a deliberative body a neutral inheritance to protect, or tools to set aside when the cause is urgent? What does a defeated party owe its voters: new faces or the same principles?",
+     "thinkers_note": "Madison's Federalist No. 10 and No. 51: institutions that slow majorities guard against the \"tyranny of the majority.\" The \"Thomas More\" argument in Robert Bolt's A Man for All Seasons: cut down the laws to get at the devil, and nothing protects you when he turns round on you. Burke's case for prudent continuity versus the reformer's warning that institutions that never change after failure stop serving their purpose.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Trump says the FBI is looking into Jensen Huang's affair with an alleged Chinese spy, and that he believes Huang",
+     "summary": "Nvidia CEO Jensen Huang admitted an affair with Alice Huang (Huang Le), a former executive of Singapore's Megaspeed whom U.S. intelligence officials believe was a Chinese spy, according to The New York Times. Trump said Monday the FBI is \"looking into\" it but that Huang told him he \"had no idea she was a spy\" and \"I really believe him.\" Nvidia hired Wachtell, Lipton to investigate and says it has no reason to think secrets or national security were compromised; Beijing calls the claims \"groundless.\"",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8"
+      },
+      {
+       "name": "BBC",
+       "url": "https://www.bbc.com/news/articles/ck1wvwwl3x0go",
+       "archived": "http://web.archive.org/web/20261110235241/https://www.bbc.com/news/articles/ck1wvwwl3x0go"
+      },
+      {
+       "name": "BBC explainer",
+       "url": "https://www.bbc.com/news/articles/ckgel338xql3o",
+       "archived": "http://web.archive.org/web/20261109234011/https://www.bbc.com/news/articles/ckgel338xql3o"
+      }
+     ],
+     "side_a": "Those calling for a hard look say the head of America's most strategic AI company was close to a suspected intelligence officer tied to a firm accused of diverting chips to China, that officials were reportedly warned months ago, and that a president vouching for a friend in the middle of a counterintelligence probe undermines its independence. Many on X resurfaced Dwarkesh Patel's interview pressing Huang on chip sales to China.",
+     "side_a_label": null,
+     "side_b": "Huang's defenders, including Trump, say he was deceived rather than disloyal, that no evidence of leaked secrets has surfaced, and that turning a personal failing into a security panic hurts an American champion in the AI race. Some note that Nvidia says it was never told Megaspeed was an intelligence concern.",
+     "side_b_label": null,
+     "question_underneath": "Is private virtue a public matter for those who hold great power? Can a person be both a victim of deception and responsible for what it put at risk?",
+     "thinkers_note": "Plato's Republic and the guardians: those who guard the city must be guarded against their own appetites. \"Who will guard the guardians?\" (Juvenal) and the rule of law's demand that investigations stay free of a ruler's friendships. The biblical story of Samson and Delilah (Judges 16): strength undone through a trusted intimate.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Democrats' statehouse gains revive the National Popular Vote compact",
+     "summary": "AP reports that with so many state governments flipping to Democratic control in the midterms, enough states could join the National Popular Vote Interstate Compact, already signed by 18 Democratic-run states plus D.C., to bring it into force. The compact pledges a state's electoral votes to the national popular-vote winner once states holding 270 electoral votes join.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/midterms-democrats-electoral-college-popular-vote-ac5d917e582ee02e813615a91c6a1f5c"
+      }
+     ],
+     "side_a": "Supporters say every vote should count the same wherever it's cast, that presidents now campaign in a half-dozen swing states and ignore the rest, and that states have always had the constitutional power to choose how to award their electors.",
+     "side_a_label": null,
+     "side_b": "Opponents say the Electoral College was designed to make candidates build broad coalitions across states and regions, that an agreement among states to bypass it without a constitutional amendment is an end-run around the Framers, and that it would invite chaotic national recounts.",
+     "side_b_label": null,
+     "question_underneath": "Is a republic of states or a nation of individuals the basic unit of American self-government? Can a constitution be changed by agreement rather than amendment?",
+     "thinkers_note": "Federalist No. 68 (Hamilton) on the Electoral College as a deliberate filter, and No. 39 (Madison) on America as \"partly federal, partly national.\" Democratic equality (one person, one vote, as in Reynolds v. Sims) versus Tocqueville's praise of local and state life as the school of liberty. Classic fears of slippery slopes in rule changes, set against the argument that institutions must answer to the people they govern.",
+     "sitting_id": "p4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Todrick Hall defends \"Midnight,\" his slavery musical that flips the racial hierarchy",
+     "summary": "Todrick Hall's off-Broadway musical \"Midnight\" follows an enslaved Black man and, in its second act, depicts Black people enslaving white people. Facing accusations that it exploits Black trauma, plus racist abuse and death threats, Hall said in a video, \"I am not anti-Black,\" described how his grandmother had him pick cotton one day a year to learn the family's history, and announced the show's extension through Jan. 3, 2027.",
+     "sources": [
+      {
+       "name": "Complex",
+       "url": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/todrick-hall-grandma-pick-cotton"
+      }
+     ],
+     "side_a": "Critics say the show turns slavery into glossy spectacle and a provocative gimmick, that a role reversal trivializes a real historical atrocity, and that Black suffering shouldn't be raw material for shock value.",
+     "side_a_label": null,
+     "side_b": "Hall and his defenders say art has always confronted history by unsettling it, that a reversal forces audiences to feel what they might otherwise only know, and that no one voice speaks for all Black people \"as though we are a monolith.\" Audiences are free to reject the art, he says, but threats are not criticism.",
+     "side_b_label": null,
+     "question_underneath": "What do we owe the suffering of the past when we tell its story? Can art shock us toward truth, or does shock cheapen it?",
+     "thinkers_note": "Aristotle's Poetics on catharsis: tragedy purges pity and fear by making us feel them. Elie Wiesel and other witnesses on the duty of memory and the danger of making atrocity into entertainment. The golden rule's moral imagination (\"do unto others\"), which the role-reversal device tries to make literal.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Sponsors drop the \"I've Had It\" podcast after its hosts laughed at a Charlie Kirk death joke",
+     "summary": "Jennifer Welch and Angie Sullivan laughed on air while reading a post that said \"We're digging up Charlie Kirk and doing it again,\" then apologized, calling it \"an insensitive joke,\" and donated to Everytown for Gun Safety. Cash App and Chewy cut ties; TMZ reports Barnes & Noble will keep selling Welch's book. Coming days after Dave Chappelle's Kirk joke, Turning Point USA spokesman Andrew Kolvet called out both.",
+     "sources": [
+      {
+       "name": "Variety",
+       "url": "https://variety.com/2026/politics/news/jennifer-welch-angie-sullivan-apologize-charlie-kirk-joke-1236942607/",
+       "archived": "http://web.archive.org/web/20261109224438/https://variety.com/2026/politics/news/jennifer-welch-angie-sullivan-apologize-charlie-kirk-joke-1236942607/"
+      },
+      {
+       "name": "Newsweek",
+       "url": "https://www.newsweek.com/entertainment/ive-had-it-podcast-sponsors-charlie-kirk-backlash-12688869",
+       "archived": "https://web.archive.org/web/20261111043743/https://www.newsweek.com/entertainment/ive-had-it-podcast-sponsors-charlie-kirk-backlash-12688869"
+      },
+      {
+       "name": "TMZ",
+       "url": "https://www.tmz.com/2026/11/10/jennifer-welch-book-not-pulled-from-barnes-and-noble-after-charlie-kirk-comments/",
+       "archived": "https://web.archive.org/web/20261111043815/https://www.tmz.com/2026/11/10/jennifer-welch-book-not-pulled-from-barnes-and-noble-after-charlie-kirk-comments/"
+      }
+     ],
+     "side_a": "Critics say laughing at a murdered man's death, and at the idea of killing him again, shows how normalized political violence has become, and that advertisers walking away is ordinary accountability, the same consequences conservatives faced for years.",
+     "side_a_label": null,
+     "side_b": "Defenders and free-speech advocates say the hosts apologized right away, that a single laugh shouldn't destroy a livelihood, and that the right, which spent years denouncing \"cancel culture,\" is now practicing it.",
+     "side_b_label": null,
+     "question_underneath": "When does accountability become a mob? Is there a difference between punishing speech and declining to pay for it?",
+     "thinkers_note": "Mill's On Liberty: the \"tyranny of the majority\" through social penalties versus the freedom of others to withdraw their association. Aristotle on the virtue of wit and the vice of buffoonery: a joke's worth depends on its object. Christian and classical teaching on forgiveness after apology (Luke 17:3-4) versus the demand for consequences that make repentance real.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "CBC Kids pulls a poppy video that listed \"rainbow\" and other alternative poppies",
+     "summary": "Ahead of Remembrance Day (Veterans Day in the U.S.), a resurfaced 2021 CBC Kids video explaining the poppy was taken down Tuesday after online outrage. Alongside the Royal Canadian Legion's red poppy, it said some feel the red poppy \"can be perceived as glorifying war\" and described white, black, purple and rainbow poppies for peace, Black and Caribbean contributions, animals, and LGBTQ service members.",
+     "sources": [
+      {
+       "name": "Toronto Sun",
+       "url": "https://torontosun.com/news/national/resurfaced-cbc-kids-poppy-video-sparks-outrage"
+      }
+     ],
+     "side_a": "Critics say a taxpayer-funded children's channel should teach the poppy as the single symbol of remembrance for all the war dead, and that splitting it into identity categories divides a shared act of gratitude and suggests honoring soldiers means glorifying war.",
+     "side_a_label": null,
+     "side_b": "Defenders say the video simply described poppies that already exist, that remembering civilians, peace, and overlooked groups of service members widens remembrance rather than replacing it, and that pulling it rewards online pile-ons.",
+     "side_b_label": null,
+     "question_underneath": "Should national memory be one shared symbol or many? Does remembering everyone risk honoring no one in particular?",
+     "thinkers_note": "Burke's \"partnership\" between the dead, the living, and the unborn, kept alive by common rituals. Lincoln's Gettysburg Address: the living honor the dead by taking up the cause they died for. Pluralism versus civic unity: E pluribus unum and the old debate over whether a common culture needs common symbols.",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo XIV tells a million young Argentines not to \"bow down\" to idols",
+     "summary": "At a vigil Tuesday night in Córdoba, hometown of his predecessor Pope Francis, Pope Leo XIV urged about a million young people to reject the \"idols\" of money, drugs, and pornography and to model their lives on the saints, saying, \"Do not bow down before anything that cannot give you life. And if you have ever fallen, get back up.\" Earlier he met five survivors of clergy abuse for more than an hour in Buenos Aires.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/pope-argentina-saints-cordoba-dictatorship-d07891d04b6338e56dc6a7984b839cf8"
+      },
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-10-november-2026/"
+      }
+     ],
+     "side_a": "Admirers see a pope offering young people a demanding, hopeful moral vision against addiction, consumerism, and online pornography, and say the massive crowds show a hunger for exactly that.",
+     "side_a_label": null,
+     "side_b": "Skeptics, including survivors' advocates, say the Church's credibility to preach on sexual morality depends on concrete accountability, such as the global zero-tolerance policy survivors are demanding. Some progressive Catholics would rather he emphasize economic and social justice than personal vice, while others say the two can't be separated.",
+     "side_b_label": null,
+     "question_underneath": "What do people worship when they stop worshiping God? Can a call to personal holiness be heard from an institution still repairing its own failures?",
+     "thinkers_note": "The First Commandment and Psalm 115 (\"they that make them are like unto them\"): we become what we worship. Augustine's Confessions: \"our heart is restless until it rests in you,\" and sin as disordered love. Kierkegaard and later critics of mass society, and Max Weber on whether modern life has its own gods (\"the gods of old rise from their graves\").",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Under Maharashtra's new anti-conversion law, churches scale back children's Bible camps",
+     "summary": "Protestant and independent churches across Maharashtra, India, are canceling Vacation Bible School or limiting it to Christian children, adding registration, fees and CCTV, after Bajrang Dal and VHP activists disrupted prayer meetings and nine police cases were filed between April and July. The state's anti-conversion law, which took effect Aug. 28, makes whoever facilitates a conversion prove it was voluntary.",
+     "sources": [
+      {
+       "name": "Indian Express",
+       "url": "https://indianexpress.com/article/india/maharashtra-anti-conversion-law-churches-bible-camps-diwali-10957007/",
+       "archived": "http://web.archive.org/web/20261110121344/https://indianexpress.com/article/india/maharashtra-anti-conversion-law-churches-bible-camps-diwali-10957007/"
+      },
+      {
+       "name": "India Today",
+       "url": "https://www.indiatoday.in/india/maharashtra/story/maharashtra-anti-conversion-law-churches-restrict-vacation-bible-school-programmes-3036316-2026-11-10"
+      }
+     ],
+     "side_a": "Christians and religious-liberty advocates say the law reverses the burden of proof, chills ordinary worship and charity, and in practice gives vigilante groups a tool to intimidate a small minority. They see the freedom to share and change one's faith as a basic human right.",
+     "side_a_label": null,
+     "side_b": "Supporters say the law protects poor and vulnerable people, especially children, from conversions driven by inducement, pressure, or deception, and that a community has a right to preserve its religious and cultural heritage. Honest churches, they argue, have nothing to fear from a requirement to show consent.",
+     "side_b_label": null,
+     "question_underneath": "Is persuading someone to change their faith an act of love or an intrusion? Who protects the conscience: the state, the family, or the person alone?",
+     "thinkers_note": "Article 18 of the Universal Declaration of Human Rights: freedom to \"change his religion or belief\" and to manifest it in teaching. Locke's Letter Concerning Toleration: true belief cannot be compelled, so the magistrate should neither force nor forbid it. Gandhi's objections to missionary proselytism versus the Great Commission (Matthew 28:19) and the Christian tradition of evangelism.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Jacksonville school board meeting erupts over a member's post calling Islam a \"political cult\"",
+     "summary": "More than 100 people addressed the Duval County School Board on Monday after member Tony Ricardo shared a Facebook post calling Islam an \"invasive political cult\" and questioning whether it is a religion. Speakers were split between defending it as protected speech and saying he can't fairly represent Muslim families, students and teachers. The room was briefly cleared after inflammatory remarks; Ricardo did not respond to the speakers.",
+     "sources": [
+      {
+       "name": "Jacksonville Today",
+       "url": "https://jaxtoday.org/2026/11/10/duval-school-board-member-social-media-ignites-firestorm/",
+       "archived": "https://web.archive.org/web/20261111043945/https://jaxtoday.org/2026/11/10/duval-school-board-member-social-media-ignites-firestorm/"
+      },
+      {
+       "name": "News4Jax",
+       "url": "https://www.news4jax.com/news/local/2026/11/10/calls-to-resign-cries-of-hate-speech-public-comment-halted-during-dcps-meeting-after-anti-muslim-remarks-spark-outrage/"
+      },
+      {
+       "name": "Florida Times-Union",
+       "url": "https://www.jacksonville.com/story/news/education/2026/11/10/tempers-simmer-as-sides-face-duval-school-board-over-anti-islam-post/92700434007/"
+      }
+     ],
+     "side_a": "Critics, including Muslim families, say an elected official who calls a world religion a cult has shown he can't serve all the students in his district, that words from public officials lend license to harassment, and that he should resign.",
+     "side_a_label": null,
+     "side_b": "Ricardo's supporters say he has a First Amendment right to share political views on his own page, that criticizing a religion's ideas isn't the same as attacking its followers, and that public officials shouldn't be pushed out for opinions voters can judge at the ballot box.",
+     "side_b_label": null,
+     "question_underneath": "Can a public servant hold, and voice, a harsh judgment of a faith and still serve its believers justly? Where is the line between criticizing a belief and despising the believer?",
+     "thinkers_note": "Jefferson's Virginia Statute for Religious Freedom: a person's opinions about religion should not affect their civil standing, which cuts both ways here. Mill's harm principle versus the classical idea that rulers must cultivate the trust of all the governed (Aristotle on the common good). Free-speech tradition (Brandeis: \"more speech, not enforced silence\") versus the duty of impartiality in public office.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-4",
+     "number": 4,
+     "headline": "House of Lords debates ending the bar on Catholics and Jews advising on Church of England appointments",
+     "summary": "The Lords held a second reading Tuesday of the Church Appointments (Repeal of Discriminatory Provision) Bill, which would remove historic restrictions that keep Catholics and Jews from advising the monarch on senior appointments in the Church of England and Church of Scotland or making certain church appointments themselves. Greater Manchester mayor Andy Burnham has called the bar an \"antiquated and archaic anomaly.\"",
+     "sources": [
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-10-november-2026/"
+      }
+     ],
+     "side_a": "Reformers say no public office in a modern democracy should exclude people because of their faith, and that the provisions are relics of the Reformation-era anti-Catholic and anti-Jewish laws that have no place today.",
+     "side_a_label": null,
+     "side_b": "Some traditionalists say that as long as there is an established church, those who advise on its leadership should share its faith, and that piecemeal changes raise bigger questions about establishment itself that deserve open debate rather than quiet repeal.",
+     "side_b_label": null,
+     "question_underneath": "Can a nation keep an established church and still treat all faiths as equal citizens? What does a church owe the state, and the state the church?",
+     "thinkers_note": "Richard Hooker's Laws of Ecclesiastical Polity: church and commonwealth as one society, the classic case for establishment. Locke and Roger Williams on separating civil office from religious test. Article VI of the U.S. Constitution (\"no religious test\") as the contrasting American settlement.",
+     "sitting_id": "r4",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
