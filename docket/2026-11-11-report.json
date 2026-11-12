@@ -1,0 +1,321 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-11",
+ "date_long": "Wednesday, November 11, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-11.json",
+  "sha256": "33f63e43e7dbad8a5c3ac354a2887e64f5e27003080618ae390f5a8188e141cb",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Democrat Scott Colom unseats Sen. Cindy Hyde-Smith in Mississippi",
+     "summary": "After days of counting, Colom, a district attorney, defeated the Republican incumbent and becomes Mississippi's first Democratic senator elected since 1982 and its first Black U.S. senator since Reconstruction. Hyde-Smith conceded Wednesday evening (\"I respect the decision of Mississippi voters\"). Democrats will hold at least 55 Senate seats in January, with only Alaska uncalled.",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/politics/2026-election/scott-colom-mississippi-senate-election-win-democrat-hyde-smith-rcna605729"
+      },
+      {
+       "name": "AP live updates",
+       "url": "https://apnews.com/live/trump-congress-midterm-elections-politics-news-updates-11-11-2026"
+      },
+      {
+       "name": "Clarion Ledger",
+       "url": "https://www.clarionledger.com/story/news/politics/elections/2026/11/11/national-social-media-reaction-to-scott-colom-us-senate-victory-in-mississippi/92734564007/"
+      }
+     ],
+     "side_a": "Democrats and allies like NAACP President Derrick Johnson call it proof the Deep South is an \"opportunity state\" that was written off and underinvested in. Colom ran on prices, Medicaid cuts and the Iran war (\"Cindy High Prices\"), and NBC exit polls found most Mississippi voters disapproved of Trump and opposed the Iran strikes. On X, many celebrated a \"Blue Mississippi.\"",
+     "side_a_label": null,
+     "side_b": "Republicans and skeptics call it a wave-year result in a midterm with a deeply unpopular war and tariffs, not a realignment, and note Trump carried the state by 23 points in 2024. Hyde-Smith stressed her team made sure \"every legally cast vote was counted\" and pledged to keep serving the state, while conservatives argue the seat can come back once the national mood shifts.",
+     "side_b_label": null,
+     "question_underneath": "Is an election a verdict on a person, a party, or a moment? And what does representation mean when a state's identity and its votes suddenly seem to diverge?",
+     "thinkers_note": "Burke's Speech to the Electors of Bristol: is a senator a delegate of the voters' current mood or a trustee of their lasting interests? Colom's line \"we were never a lost cause, we were a betrayed cause\" echoes the classical idea of the social contract: rulers keep legitimacy only while they serve the governed (Locke). Forgiveness in public life: Colom said he had forgiven Hyde-Smith for blocking his judgeship, an old theme from Augustine to Lincoln's \"with malice toward none.\"",
+     "sitting_id": "p1",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Republicans turn on Commerce Secretary Lutnick as the Nvidia espionage scandal widens",
+     "summary": "Reports that the Commerce Department repeatedly failed to act against Megaspeed, the Singapore firm tied to the alleged Chinese agent Jensen Huang had an affair with, have more than half a dozen Republicans demanding answers from Howard Lutnick. Axios reports Trump approved crackdowns on chip diversion three times this year while Lutnick stalled; Commerce denies a reported Situation Room confrontation with Treasury Secretary Bessent. Nvidia shares fell after a report of a second Huang affair, and some lawmakers want Huang to resign.",
+     "sources": [
+      {
+       "name": "Politico",
+       "url": "https://www.politico.com/news/2026/11/11/answer-in-front-of-god-and-country-gop-turns-on-lutnick-over-chips-01161625"
+      },
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html",
+       "archived": "https://web.archive.org/web/20261112135548/https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html"
+      }
+     ],
+     "side_a": "China hawks in both parties, from Sen. John Kennedy (\"answer that in front of God and country\") to Sens. Warren and Banks, say this proves advanced chips were treated as a business deal instead of a national-security asset. They want testimony, a subpoena for Huang, and tougher export controls (the AI Overwatch, MATCH and Chip Security Acts) in the defense bill.",
+     "side_a_label": null,
+     "side_b": "Defenders of the looser approach, including Nvidia and, so far, the administration, argue that selling older chips like the H200 keeps China dependent on American technology and slows its own industry, and that one executive's private conduct shouldn't rewrite trade policy. Others warn against making Lutnick a scapegoat on anonymous sourcing; Commerce calls the reported confrontation \"false,\" and Rep. Jay Obernolte urged that the scandal not derail serious export talks.",
+     "side_b_label": null,
+     "question_underneath": "Can commerce and security be pursued together, or does a nation's safety sometimes require giving up profit? And how much should a leader's private life count as public business?",
+     "thinkers_note": "Hamilton's Report on Manufactures and the old \"strategic goods\" doctrine: some industries are matters of national power, not just markets. Liberal trade theory (Adam Smith, Montesquieu's doux commerce): commerce creates interdependence that softens rivals. The private-virtue/public-trust argument goes back to Plato's Republic and Cicero's De Officiis: a man unfaithful in private may be unfaithful in office.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Sanders and Slotkin refuse to back Schumer for majority leader",
+     "summary": "Sen. Bernie Sanders said \"the time is now for change\" and he will not support Chuck Schumer for another term as Democratic leader; Sen. Elissa Slotkin joined him in calling for a new generation without backing an alternative. Several senators-elect, including Peggy Flanagan, Abdul El-Sayed and Adam Hamilton, have said they won't back Schumer either, and Sen. Chris Van Hollen is weighing a challenge. The vote is next month.",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/politics/congress/bernie-sanders-wont-support-chuck-schumer-senate-democrats-leader-rcna608633",
+       "archived": "https://web.archive.org/web/20261112035323/https://www.nbcnews.com/politics/congress/bernie-sanders-wont-support-chuck-schumer-senate-democrats-leader-rcna608633"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/schumer-bernie-sanders-senate-democrats-leadership-election-c5a182727397e964b19ad0dec5aeca42"
+      },
+      {
+       "name": "Democracy Now!",
+       "url": "https://www.democracynow.org/2026/11/11/headlines/sanders_says_he_will_not_back_schumer_for_senate_majority_leader"
+      }
+     ],
+     "side_a": "Critics say voters asked for change and the party should show it heard them, with a leader who has a clear governing plan rather than a \"coronation\" (Van Hollen). Progressives on X frame it as a generational and anti-establishment moment.",
+     "side_a_label": null,
+     "side_b": "Schumer's backers say he just led Democrats to a net gain of at least seven seats. Sen. Ruben Gallego: \"When the manager takes you to the World Series, you give them another contract.\" They warn that a leadership fight would squander unity before Democrats take power. Schumer says the caucus is united on costs, corruption and ending the war.",
+     "side_b_label": null,
+     "question_underneath": "Should leaders be judged by results or by renewal? What does a winning coalition owe the people who built it versus the voters who want something new?",
+     "thinkers_note": "Machiavelli on fortune and virtù: a leader who wins under one set of conditions may not be suited to the next. Burke's prudence and the value of experience, versus Jefferson's \"the earth belongs to the living\" and the case for each generation governing itself. Sanders' own unresolved question about the filibuster is the old majority-rule versus minority-rights tension (Madison, Federalist No. 10; Tocqueville on the tyranny of the majority).",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "U.S. asks Russia to draft a new European security proposal as Ukraine talks resume",
+     "summary": "At the first Russia-Ukraine talks with U.S. mediators since February, held in Abu Dhabi, envoys Jared Kushner and Steve Witkoff asked Moscow to propose a future security arrangement with Europe that includes \"symmetrical steps\" to reassure its neighbors, and to let Europeans join future talks. The sides agreed to what could be the war's largest prisoner exchange; the envoys meet Putin in Moscow and Zelensky in Dublin on Thursday.",
+     "sources": [
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/11/11/russia-ukraine-europe-war-security-agreement"
+      },
+      {
+       "name": "Politico Europe",
+       "url": "https://www.politico.eu/article/europe-and-u-s-agree-to-review-post-war-continental-security-as-ukraine-peace-talks-begin/",
+       "archived": "http://web.archive.org/web/20261111074157/https://www.politico.eu/article/europe-and-u-s-agree-to-review-post-war-continental-security-as-ukraine-peace-talks-begin/"
+      },
+      {
+       "name": "EU Council statement",
+       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/pdf/"
+      }
+     ],
+     "side_a": "Supporters of the U.S. approach say no peace will hold unless Russia's security fears and Europe's are addressed together, that the talks have already produced a prisoner swap and a local ceasefire, and that the U.S. has said it won't sign anything Europe and Ukraine oppose or give Moscow a veto.",
+     "side_a_label": null,
+     "side_b": "Many European governments and Ukraine's supporters are deeply suspicious, saying any deal on NATO's posture rewards an invasion and repeats the logic of spheres of influence. Ursula von der Leyen said Europe would discuss new security arrangements only after the war ends, and Russian negotiator Vladimir Medinsky still dismissed European leaders as unworthy partners.",
+     "side_b_label": null,
+     "question_underneath": "Is peace achieved by accommodating a rival's fears or by refusing to reward force? When does compromise become appeasement?",
+     "thinkers_note": "Realism (Thucydides' Melian Dialogue, Kissinger's A World Restored): stable orders rest on a balance of interests that every great power can accept. Just-war tradition (Augustine, Aquinas): a just peace must not ratify the fruits of aggression. The Munich analogy and its critics, the most-used historical argument in modern diplomacy.",
+     "sitting_id": "p4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Netflix keeps Russell Brand's stand-up special after his rape conviction",
+     "summary": "Netflix will keep streaming the 2018 special Russell Brand: Re:Birth after Brand was sentenced Monday to 10 years and six months for rape and three counts of sexual assault, but it will no longer promote it or show it in searches for his name. A Netflix source cited members' \"choice and control.\"",
+     "sources": [
+      {
+       "name": "Deadline",
+       "url": "https://deadline.com/2026/11/netflix-refuses-to-remove-russell-brand-special-1237220159/"
+      }
+     ],
+     "side_a": "Netflix's defenders and free-expression advocates say a platform shouldn't erase finished work because of the creator's crimes, that adults can decide for themselves, and that the streamer has held the same high bar for removal with Dave Chappelle and Jimmy Carr.",
+     "side_a_label": null,
+     "side_b": "Critics say hosting the special still profits a convicted sex offender and tells survivors his fame matters more than their harm. They note the judge said Brand's celebrity protected him for years, and argue a quiet de-listing is a half-measure.",
+     "side_b_label": null,
+     "question_underneath": "Can we separate the art from the artist? Does continuing to show a work honor freedom or excuse the one who made it?",
+     "thinkers_note": "Aristotle's distinction between the maker and the thing made versus the Romantic idea that art expresses the artist's soul. Mill's On Liberty and the case for letting individuals judge what they consume. Restorative and retributive justice: whether public honor should be withdrawn as part of the penalty (Kant on desert).",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "UK ministers give the entertainment industry an ultimatum after the Walliams allegations",
+     "summary": "Culture Secretary Lisa Nandy is expected to meet TV, film and publishing leaders next week, and the government could legislate if voluntary protections for women and children prove insufficient, following sexual-harassment allegations against David Walliams and Brand's conviction. Separately, Walliams' cameo was cut from the Australian film Fing! and he was dropped from its publicity tour.",
+     "sources": [
+      {
+       "name": "The Guardian: ministers' warning",
+       "url": "https://www.theguardian.com/media/2026/nov/11/tv-entertainment-industry-protect-women-david-walliams-allegations-nandy"
+      },
+      {
+       "name": "The Guardian: Fing! cameo cut",
+       "url": "https://www.theguardian.com/tv-and-radio/2026/nov/11/david-walliams-australian-film-cameo-cut-sexual-harassment-allegations-ntwnfb",
+       "archived": "https://web.archive.org/web/20261112053326/https://www.theguardian.com/tv-and-radio/2026/nov/11/david-walliams-australian-film-cameo-cut-sexual-harassment-allegations-ntwnfb"
+      }
+     ],
+     "side_a": "Supporters say decades of scandals show the industry won't police itself: power imbalances, NDAs and star protection keep victims quiet, so the state should require whistleblowing routes and protections.",
+     "side_a_label": null,
+     "side_b": "Skeptics, including civil-liberties voices, warn against regulating an industry because of allegations that haven't been tested in court, and say existing employment and criminal law already apply. Others argue that cutting Walliams before any finding risks punishment by headline.",
+     "side_b_label": null,
+     "question_underneath": "When an institution fails to protect the vulnerable, is it the state's job to step in? And how do we balance a duty to believe victims with the presumption of innocence?",
+     "thinkers_note": "Hobbes and the case for the state as protector when private orders fail, against Burke's \"little platoons\" and self-governing institutions. The presumption of innocence (Blackstone's ratio: better ten guilty go free than one innocent suffer). Subsidiarity in Catholic social teaching: higher authorities should act only when lower ones cannot.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Tomb sentinel reprimands Hegseth's group on Veterans Day",
+     "summary": "After a Veterans Day wreath-laying at Arlington, a member of Defense Secretary Pete Hegseth's group laughed as they walked away from a photo, and an Army sentinel called out: \"All visitors will maintain an atmosphere of silence and respect at all times.\" It's unclear who laughed. The Pentagon said the soldier \"correctly and respectfully reminded everyone to maintain decorum.\"",
+     "sources": [
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/",
+       "archived": "http://web.archive.org/web/20261111225327/https://www.cbsnews.com/news/hegseth-tomb-of-the-unknown-soldier-arlington-cemetery/"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/hegseth-tomb-of-unknown-soldier-guard-arlington-4d4d5c96d3e0413a0e37742bf012b08e",
+       "archived": "http://web.archive.org/web/20261111230305/https://apnews.com/article/hegseth-tomb-of-unknown-soldier-guard-arlington-4d4d5c96d3e0413a0e37742bf012b08e"
+      },
+      {
+       "name": "Politico",
+       "url": "https://www.politico.com/news/2026/11/11/sentinel-scolds-hegseth-tomb-unknown-soldier-01161828"
+      }
+     ],
+     "side_a": "Critics, many of them veterans posting on X, call it a telling lapse by the head of the military on its most solemn day, coming a day after the impeachment vote, and some demanded his resignation.",
+     "side_a_label": null,
+     "side_b": "Defenders say it's unclear Hegseth made any noise, sentinels call out visitors two or three times a day, and the Pentagon itself praised the guard. They see a routine moment inflated into a scandal by people already opposed to him.",
+     "side_b_label": null,
+     "question_underneath": "What do the living owe the honored dead, and does rank give anyone a pass on reverence?",
+     "thinkers_note": "Pericles' Funeral Oration and Lincoln's Gettysburg Address: the duty of the living to honor the fallen. Confucian li (ritual propriety): outward forms train inward respect, which is why small breaches matter. The principle of charity in judgment versus the classical idea that leaders are held to a higher standard because they set the example (Plutarch's Lives).",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-4",
+     "number": 4,
+     "headline": "Jalisco cancels a play about Jesus and Judas after Catholic protests",
+     "summary": "Jalisco's state culture department suspended the remaining shows of \"Jesús lloró por última vez en un muro de concreto\" (Jesus Wept for the Last Time on a Concrete Wall) after people who saw it as an offense to the Catholic faith protested at a performance, citing the safety of artists and audiences. Director Cristian Bravo called the move unilateral censorship and said no security measures were ever proposed.",
+     "sources": [
+      {
+       "name": "El Debate (Spanish)",
+       "url": "https://www.debate.com.mx/guadalajara/cultura-jalisco-cancela-obra-de-teatro-tras-polemica-religiosa-director-acusa-censura-20261111-0088.html"
+      }
+     ],
+     "side_a": "The company and free-expression advocates say the play uses Jesus and Judas as an analogy for betrayal and political decay, that a public cultural body should protect artists rather than yield to protests, and that \"safety\" is being used to excuse a heckler's veto.",
+     "side_a_label": null,
+     "side_b": "Objectors and some officials say a publicly funded stage shouldn't be used to mock the faith of most of the community, and that the government acted responsibly to defuse tension and promote dialogue.",
+     "side_b_label": null,
+     "question_underneath": "Is there a duty not to wound what others hold sacred, and who decides when art crosses from provocation into desecration?",
+     "thinkers_note": "The heckler's veto in free-speech law versus older blasphemy traditions that treated attacks on the sacred as harm to the common good. Mill's harm principle versus Devlin's argument that a society may protect its shared morality. Art as prophetic critique: from the Hebrew prophets to Dostoevsky's \"Grand Inquisitor,\" religious figures have long been used to indict power.",
+     "sitting_id": "c4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "More than 30 UK Christian leaders call for a treaty on AI \"killer robots\"",
+     "summary": "Senior figures from the Church of England, Church of Scotland, Methodist, Baptist and other churches, including former Archbishop of Canterbury Rowan Williams, wrote to the Foreign Secretary urging the UK to back legally binding rules on autonomous weapons ahead of a UN meeting in Geneva Nov. 16-20 that will decide whether formal treaty talks begin. They cite growing military AI use in Ukraine, Gaza and Iran.",
+     "sources": [
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-11-november-2026/"
+      }
+     ],
+     "side_a": "The signatories argue that handing life-and-death decisions to machines removes human moral responsibility from killing, and that international law must catch up before the weapons spread.",
+     "side_a_label": null,
+     "side_b": "Skeptics, including many defense planners, say a treaty would bind democracies while adversaries keep building, that precise AI targeting can reduce civilian deaths, and that existing laws of war already govern any weapon.",
+     "side_b_label": null,
+     "question_underneath": "Can a machine ever bear moral responsibility for taking a life? What does it mean to keep a human in the loop of judgment?",
+     "thinkers_note": "Just-war principles of discrimination and proportionality (Aquinas, Grotius) and the conscience of the one who kills. Kantian dignity: a person must never be treated merely as a target or data point. Deterrence realism: the side that disarms first invites aggression (Vegetius, \"if you want peace, prepare for war\").",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Catholic archbishop urges MPs to drop the UK's draft conversion practices bill",
+     "summary": "Archbishop John Sherrington of Liverpool told Parliament's pre-legislative scrutiny that the draft Conversion Practices Bill is so broad it could threaten religious freedom and free expression, creating uncertainty about pastoral care, family life and conversations about sexuality and gender identity. He said the Church opposes all abuse and that existing laws already protect people.",
+     "sources": [
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-11-november-2026/"
+      }
+     ],
+     "side_a": "Supporters of a ban say so-called conversion practices harm LGBT people, often young ones, and that the law should clearly outlaw coercive efforts to change someone's sexuality or gender identity, whatever their religious framing.",
+     "side_a_label": null,
+     "side_b": "Church leaders and religious-liberty advocates say a vague law could criminalize prayer, parental guidance and ordinary pastoral conversations, and that real abuse is already illegal.",
+     "side_b_label": null,
+     "question_underneath": "Where does guidance end and coercion begin? Can a state protect people from harm without policing the content of belief and prayer?",
+     "thinkers_note": "Locke's Letter Concerning Toleration: the magistrate governs outward acts, not souls. Mill's harm principle, invoked by both sides to define what counts as harm. Natural-law accounts of the human person versus modern accounts of identity and self-determination.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "French bishops tell Catholic hospitals to prepare to refuse assisted dying",
+     "summary": "With France's assisted-dying law taking effect in January 2027, Catholic bishops urged Catholic healthcare institutions to update their statutes so they can use their legal right to refuse to provide assisted suicide and euthanasia, which the Constitutional Council confirmed in August. They cited Pope Leo XIV's recent reaffirmation of the Church's opposition.",
+     "sources": [
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-11-november-2026/"
+      }
+     ],
+     "side_a": "The bishops and conscience advocates say institutions founded to care for life cannot be made to end it, and that the law itself protects that freedom.",
+     "side_a_label": null,
+     "side_b": "Assisted-dying advocates say patients in Catholic facilities, sometimes the only option nearby, shouldn't have to move to exercise a legal right at the end of life, and that an institution's conscience shouldn't outweigh the patient's choice.",
+     "side_b_label": null,
+     "question_underneath": "Is it mercy or killing to help a suffering person die? Whose conscience should prevail, the patient's or the caregiver's?",
+     "thinkers_note": "The Hippocratic Oath (\"I will give no deadly drug\") and the Christian teaching that life is a gift, not a possession. Autonomy-based arguments (Mill, modern bioethics) for self-determination at the end of life. The slippery slope, common in assisted-dying debates, set against Aristotle's view of mercy (epieikeia) as justice adapted to the individual case.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-4",
+     "number": 4,
+     "headline": "Marjorie Taylor Greene says evangelical pastors treated Trump \"like Jesus\"",
+     "summary": "Former Rep. Marjorie Taylor Greene, once one of Trump's closest allies, said on The Tim Pool Show that some evangelical pastors treated the president \"like he's literally Jesus reincarnated\" and called the belief that God anointed him \"so disgusting.\" She repeated her view that Trump lacks authentic Christian faith.",
+     "sources": [
+      {
+       "name": "Christian Post",
+       "url": "https://www.christianpost.com/news/mtg-says-evangelical-pastors-treated-trump-like-jesus.html"
+      }
+     ],
+     "side_a": "Greene and other Christian critics say treating a politician as God's chosen one is idolatry that compromises the church's witness, and they point to Trump saying he hates his opponents, in contrast with Erika Kirk's forgiveness of her husband's killer.",
+     "side_a_label": null,
+     "side_b": "Trump's evangelical supporters say they never worshipped him; they backed him for what he did on abortion, judges and religious liberty, as believers have long backed flawed leaders. They see Greene as a bitter ex-ally and say judging another person's soul isn't her place.",
+     "side_b_label": null,
+     "question_underneath": "What do Christians owe a political leader, and where does gratitude turn into idolatry?",
+     "thinkers_note": "The \"Cyrus\" argument: God using an imperfect ruler for his purposes (Isaiah 45). Augustine's City of God: the earthly city is never to be confused with the heavenly one. Jesus' \"render unto Caesar\" and the prophetic tradition of confronting kings (Nathan and David).",
+     "sitting_id": "r4",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
