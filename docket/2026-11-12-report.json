@@ -1,0 +1,294 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-12",
+ "date_long": "Thursday, November 12, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-12.json",
+  "sha256": "efa3892db13c1411f7cebdd2ce4ce4922d1e70fc1762dce6fcc6c3461a8ded0c",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Trump pulls Vance off Iran talks: \"We don't need a deal with Iran\"",
+     "summary": "On Thursday President Trump publicly told Vice President JD Vance, who led the short-lived truce talks in the eight-month war, to give his \"complete and total attention\" to what Trump calls crime and corruption in Democratic-run cities and states instead. Vance has openly blamed the war and its economic fallout for last week's Republican midterm losses. Separately, Treasury Secretary Scott Bessent has moved to a military base after Iranian threats, and progressive Democrats want the Dec. 11 funding bill to bar money for combat against Iran.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/trump-iran-vance-negotiations-d9671cbf66e3c2e337f4fb3485ad07d0"
+      },
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/",
+       "archived": "http://web.archive.org/web/20261112211543/https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/"
+      },
+      {
+       "name": "Roll Call",
+       "url": "https://rollcall.com/2026/11/12/trump-vance-iran-deal-midterm-elections/"
+      },
+      {
+       "name": "Democracy Now!",
+       "url": "https://www.democracynow.org/2026/11/12/headlines",
+       "archived": "http://web.archive.org/web/20261112161314/https://www.democracynow.org/2026/11/12/headlines"
+      }
+     ],
+     "side_a": "Supporters say the U.S. holds the leverage: sanctions like Bessent's \"Operation Economic Outcast\" are squeezing Tehran, so chasing a deal only rewards the regime. In their view, a president who doesn't need a bargain shouldn't beg for one, and rooting out fraud at home is a real priority voters care about. Conservative accounts on X cheered the order as Vance taking on \"blue state corruption.\"",
+     "side_a_label": null,
+     "side_b": "Critics, including many voters who just punished the GOP over war costs, say walking away from diplomacy prolongs a war that is raising prices and putting officials under threat. They read the new assignment as aimed at Democrats just as Democrats prepare to take over congressional oversight (\"Just DEMOCRATIC ones??\" one X user asked). Progressives like Sen. Chris Van Hollen want to cut off war funding in the December spending bill, even if it risks a shutdown.",
+     "side_b_label": null,
+     "question_underneath": "When does strength mean refusing to negotiate, and when does it mean being willing to make peace? And can leaders fight corruption fairly if they only look at their opponents?",
+     "thinkers_note": "Just war tradition (Augustine, Aquinas): war is justified only if it aims at a just peace, so the question is whether refusing to bargain serves that goal. Realism (Thucydides' Melian Dialogue, Machiavelli): the strong negotiate only when it helps them, set against Kant's Perpetual Peace and the hope of diplomacy over force. Congress's power of the purse (Madison, Federalist No. 58) as the classic check on a president's wars.",
+     "sitting_id": "p1",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Jensen Huang resigns as Nvidia CEO; Trump says Tim Cook should replace him",
+     "summary": "Huang stepped down \"effective immediately\" after admitting an affair with a woman U.S. intelligence reportedly suspects is a Chinese asset, followed by reports of affairs with two Nvidia employees. CFO Colette Kress is interim CEO. Shares fell as much as 13% before closing down 4.3%. Trump, who had first defended Huang, posted that \"only one man\" should replace him: Apple's Tim Cook. Huang has agreed to brief Congress.",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns"
+      },
+      {
+       "name": "Nvidia newsroom",
+       "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+       "archived": "http://web.archive.org/web/20261112153211/https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+      },
+      {
+       "name": "NBC News live",
+       "url": "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-congress-2026-election-alaska-senate-colom-live-updates-rcna608929"
+      }
+     ],
+     "side_a": "Those who pushed for his exit, including The Economist (\"He must resign — or be fired\") and Sen. Kevin Cramer (\"As a matter of his own conscience, he should resign\"), say the head of America's most strategic chip company can't carry a possible foreign-intelligence compromise. Analyst Dan Ives said the board did what it had to: \"rip off the Band-Aid.\"",
+     "side_a_label": null,
+     "side_b": "Others, like Binance founder CZ, called letting Huang go a mistake: he built the company and his technical grasp is, as one analyst put it, \"impossible to replicate.\" Some on X point out the Justice Department hasn't confirmed any spying and ask why an affair alone should topple a founder. Others question whether a president should be naming a private company's CEO.",
+     "side_b_label": null,
+     "question_underneath": "How much does a leader's private character count in public trust? And does a great founder belong to his company, or does the company have to be able to outlive him?",
+     "thinkers_note": "Cicero's De Officiis and the old idea that private faithfulness signals public faithfulness: the man unfaithful in small things may be unfaithful in great (Luke 16:10). The opposite view, from Machiavelli to modern liberalism, judges rulers by results, not private virtue. Max Weber on charismatic authority and the problem of succession: what happens when the charisma has to be turned into an institution.",
+     "sitting_id": "p2",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Democrats meet in Denver as fights over their leaders grow",
+     "summary": "After their midterm wave, Democrats gathered in Denver for the two-day \"What's Next\" conference hosted by the new group Majority Democrats, where Texas Senator-elect James Talarico urged the party to act boldly and quickly. At the same time, House leader Hakeem Jeffries faces criticism after 11 Democrats missed Tuesday's vote, which Republicans won 211–204 to send a Hegseth impeachment resolution to committee. A petition urging Rep. Ayanna Pressley to run for speaker has passed 40,000 signatures.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/democrats-whats-next-midterms-13e0f1e2857d2377b54b4f191a6b52a8"
+      },
+      {
+       "name": "ABC News",
+       "url": "https://abcnews.com/Politics/democrats-missed-crucial-hegseth-impeachment-vote-blamed-traffic/story?id=138053963",
+       "archived": "http://web.archive.org/web/20261112200342/https://abcnews.com/Politics/democrats-missed-crucial-hegseth-impeachment-vote-blamed-traffic/story?id=138053963"
+      },
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/11/13/house-democrats-hegseth-impeachment-vote-jeffries"
+      },
+      {
+       "name": "Democracy Now!",
+       "url": "https://www.democracynow.org/2026/11/12/headlines",
+       "archived": "http://web.archive.org/web/20261112161314/https://www.democracynow.org/2026/11/12/headlines"
+      }
+     ],
+     "side_a": "Insurgents and progressives say voters asked for a fighting party: they point to the botched Hegseth vote, to members who missed it after a super PAC event, and to campaigns that ran against \"billionaire greed\" (researcher Eric Blanc counts 25 of 32 Senate candidates). They want new leaders and firm demands, like Rep.-elect Don Leonard's conditions on Citizens United and the Iran war.",
+     "side_a_label": null,
+     "side_b": "Party leaders and moderates say the wave came from mainstream, less ideological candidates. Jonathan Chait points to winners like Josh Turek in Iowa and Annie Andrews in South Carolina. They argue that turning on proven leaders over one procedural vote throws away hard-won unity before Democrats even take power. The absent members apologized and blamed traffic.",
+     "side_b_label": null,
+     "question_underneath": "After a victory, what does a movement owe the people who led it, and what does it owe the voters who want something new? Is a party's purpose to win the middle or to stand for something sharp?",
+     "thinkers_note": "Burke's prudence and respect for experienced leadership, against Jefferson's \"the earth belongs to the living\" and each generation's claim to govern itself. Robert Michels' \"iron law of oligarchy\": parties built to represent the many tend to be run by the few. Aristotle's golden mean and the case for moderation, against the populist tradition from the Gracchi to William Jennings Bryan.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "UK schools and libraries split over pulling David Walliams' books",
+     "summary": "After ITV News and The Guardian reported on Tuesday that several women accuse the best-selling children's author of sexual misconduct, some of it allegedly grooming when they were teenagers, some schools have removed his books and head teachers are asking for national guidance. Waterstones and other retailers have stopped selling them. Councils are divided: Telford and Wrekin and Camden pulled or stored them, while Kent and Surrey are keeping them. Walliams denies the claims, saying he is \"not a sexual predator\" and has not \"broken the law.\"",
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.com/news/articles/cvkg5jkpl2pno",
+       "archived": "http://web.archive.org/web/20261112163625/https://www.bbc.com/news/articles/cvkg5jkpl2pno"
+      },
+      {
+       "name": "The Independent",
+       "url": "https://www.independent.co.uk/arts-entertainment/books/news/david-walliams-books-school-libraries-b3083843.html"
+      }
+     ],
+     "side_a": "Those removing the books say it's about children, not censorship. Oasis Academies' Steve Chalke says a child seeing his name or photo in the school library \"can be very traumatising,\" and Camden ties the decision to keeping women and girls safe. A Manchester head teacher said it is \"really difficult to keep these books on the shelves.\"",
+     "side_a_label": null,
+     "side_b": "Kent's libraries say \"books should be available to readers unless their content is unlawful\" and that stock isn't decided by \"blanket bans on individual authors.\" Author Chloe Combi warns that pulling the books lets the conversation \"get swept under the carpet\" and that the allegations haven't been proven. Some also point out that the stories themselves have done nothing wrong.",
+     "side_b_label": null,
+     "question_underneath": "Can a work be separated from the person who made it? And when the two are tied together, how do we protect children without punishing someone on accusations alone?",
+     "thinkers_note": "The presumption of innocence (Blackstone's ratio: better that ten guilty go free than one innocent suffer) against the precautionary duty to protect the young. The art-versus-artist debate: Wilde's \"There is no such thing as a moral or an immoral book,\" against Plato's Republic, which held that stories shape children's souls and should be chosen carefully. Milton's Areopagitica against banning books, versus the communitarian view that institutions may decide what they honor.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Novelist Michel Houellebecq placed under criminal investigation in France",
+     "summary": "A Nanterre judge on Tuesday placed the French novelist under formal investigation for \"complicity in incitement to discrimination, hatred or violence\" over remarks about Muslims in a 2022 interview with philosopher Michel Onfray, including talk of \"Bataclans in reverse\" and the \"great replacement.\" It is an investigation, not a conviction. The case drew new commentary on Thursday.",
+     "sources": [
+      {
+       "name": "franceinfo",
+       "url": "https://www.franceinfo.fr/culture/livres/houellebecq/michel-houellebecq-mis-en-examen-pour-complicite-de-provocation-a-la-discrimination-a-la-haine-ou-a-la-violence-apres-des-propos-sur-les-musulmans_8276459.html",
+       "archived": "http://web.archive.org/web/20261112181830/https://www.franceinfo.fr/culture/livres/houellebecq/michel-houellebecq-mis-en-examen-pour-complicite-de-provocation-a-la-discrimination-a-la-haine-ou-a-la-violence-apres-des-propos-sur-les-musulmans_8276459.html"
+      },
+      {
+       "name": "Le Figaro",
+       "url": "https://www.lefigaro.fr/faits-divers/l-ecrivain-michel-houellebecq-mis-en-examen-apres-des-propos-sur-les-musulmans-et-le-grand-remplacement-20261110",
+       "archived": "http://web.archive.org/web/20261110194145/https://www.lefigaro.fr/faits-divers/l-ecrivain-michel-houellebecq-mis-en-examen-apres-des-propos-sur-les-musulmans-et-le-grand-remplacement-20261110"
+      },
+      {
+       "name": "Tablet",
+       "url": "https://www.tabletmag.com/the-scroll/articles/political-persecution-michel-houellebecq"
+      }
+     ],
+     "side_a": "Defenders of free expression, many of them literary conservatives, call it political persecution of a major novelist for predictions and opinions spoken in an interview. Tablet calls it \"political persecution\" and notes the French literary establishment has stayed \"conspicuously silent.\" They warn that prosecuting a writer for forecasting conflict makes honest debate about immigration a crime.",
+     "side_a_label": null,
+     "side_b": "Supporters of France's laws against inciting hatred say freedom of speech there has always had limits when words single out a religious minority. They argue that a famous writer's talk of revenge attacks on Muslims and \"civil war\" can encourage real violence, and that fame shouldn't put anyone above a law that applies to everyone.",
+     "side_b_label": null,
+     "question_underneath": "Where is the line between speech that offends and speech that endangers? And should a society protect the novelist's freedom most of all, or the vulnerable neighbor's safety?",
+     "thinkers_note": "Mill's harm principle in On Liberty: speech may be limited only to prevent harm to others. The fight is over what counts as harm. France's republican tradition of laïcité and laws against hate speech, versus the American First Amendment idea of meeting bad speech with more speech (Brandeis in Whitney v. California). Voltaire's legacy (\"I disapprove of what you say...\"), claimed by both sides in France.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "San Diego cultural center keeps Day of the Dead altar honoring Hamas and Hezbollah figures",
+     "summary": "An ofrenda at Balboa Park's Centro Cultural de la Raza honors figures including Hamas leader Yahya Sinwar and Iran's Qasem Soleimani. State Assemblymember Chris Ward and state Sen. Steve Padilla demanded it be removed, calling it \"reckless incitement\" and \"deeply antisemitic.\" The center refused, though it took down Hezbollah and Houthi flags, and defended \"the right of all people to mourn their dead.\"",
+     "sources": [
+      {
+       "name": "10News San Diego",
+       "url": "https://www.10news.com/news/local-news/state-lawmakers-condemn-san-diego-ofrenda-honoring-hezbollah-and-hamas-leaders-call-for-its-removal",
+       "archived": "http://web.archive.org/web/20261107055410/https://www.10news.com/news/local-news/state-lawmakers-condemn-san-diego-ofrenda-honoring-hezbollah-and-hamas-leaders-call-for-its-removal"
+      },
+      {
+       "name": "FOX 5 San Diego",
+       "url": "https://fox5sandiego.com/news/local-news/lawmakers-demand-day-dead-altar-removal/"
+      },
+      {
+       "name": "Times of San Diego (opinion)",
+       "url": "https://timesofsandiego.com/opinion/2026/11/12/dia-de-los-muertos-altar-centro-cultural-raza-hate/"
+      }
+     ],
+     "side_a": "Critics say honoring the planner of the Oct. 7 massacre in a sacred Latino tradition, in a city-owned park, glorifies terrorism and makes Jewish neighbors feel unsafe. The lawmakers say \"honoring their leaders in what is a sacred tradition in the Latino culture is wrong.\" They add that a cultural center whose stated mission is goodwill and understanding has lost sight of it.",
+     "side_a_label": null,
+     "side_b": "The center says mourning is a right and that the ofrenda grieves Palestinian, Lebanese and Iranian dead in solidarity with Chicano and Indigenous struggles. It rejects calling these groups terrorists and accuses the lawmakers of \"parroting\" lobbying groups to cover for Israel's conduct in Gaza. To supporters, removing the altar would mean politicians censoring a community's art.",
+     "side_b_label": null,
+     "question_underneath": "Who gets to be mourned in public, and are there people a community should refuse to honor? When does memory become celebration?",
+     "thinkers_note": "Antigone and Creon: the duty to bury and mourn one's dead against the city's right to refuse honor to its enemies. The old difference between grief (lament for the dead) and glorification (making heroes of them), going back to Pericles' Funeral Oration. Free expression in public spaces (the public forum doctrine) versus a government's right to decide what it sponsors.",
+     "sitting_id": "c3",
+     "sitting_match": "question"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo, home in Peru, denounces \"machismo\" and tells bishops to face abuse with \"truth and justice\"",
+     "summary": "On his first full day in Peru, where he served for two decades, the Peruvian-born pope told 40,000 people in Lima's Plaza Mayor that violence against women \"continues to be a reality that wounds all of humanity.\" He urged bishops to respond to clergy-abuse victims with truth and justice and to combine \"doctrinal fidelity with pastoral closeness.\" He also spoke up for marriage between a man and a woman and for the unborn. Peru's Catholic share has fallen from 76% to about 67% in a decade.",
+     "sources": [
+      {
+       "name": "PBS / AP",
+       "url": "https://www.pbs.org/newshour/world/after-emotional-return-pope-leo-denounces-machismo-in-peru-and-demands-respect-for-women",
+       "archived": "http://web.archive.org/web/20261112230355/https://www.pbs.org/newshour/world/after-emotional-return-pope-leo-denounces-machismo-in-peru-and-demands-respect-for-women"
+      },
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-to-bishops-of-peru-lima-12-november-2026.html"
+      },
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-12-november-2026/"
+      }
+     ],
+     "side_a": "Catholics who stress the Church's social witness hear a pastor naming real wounds: femicides in Peru rose 44% between 2016 and 2024, and abuse victims need justice, not silence. For them, this is the Church at its best: defending poor, Indigenous and Afro-Peruvian women and humbly owning its \"infidelities,\" as Leo put it in the cathedral.",
+     "side_a_label": null,
+     "side_b": "Catholics who stress doctrinal clarity point to the other half of the message: his defense of marriage, the unborn and the family. They argue that renewal in a shrinking church comes from clear teaching and sacraments, not social commentary, and warn against reading the trip as purely about social justice. Both camps quote Leo's own line about pairing doctrine with closeness.",
+     "side_b_label": null,
+     "question_underneath": "Is the Church's first duty to teach the truth or to heal the wounded, and can it do one without the other?",
+     "thinkers_note": "The Gospel pairing of truth and mercy (John 1:14, \"full of grace and truth\") and Leo's call to combine \"doctrinal clarity with pastoral closeness.\" Catholic social teaching from Rerum Novarum on, which holds that the dignity of the person demands social justice, alongside natural-law teaching on marriage and life. Augustine (the pope's own order's founder): \"Love, and do what you will\" — love as the root of both correction and compassion.",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Portland archdiocese tells Catholics not to hold hands or raise hands during the Our Father",
+     "summary": "The Archdiocese of Portland in Oregon's November worship newsletter says the \"orans\" posture of extended hands belongs to the priest, who prays on behalf of the people. It says laypeople shouldn't raise or extend their hands during the Lord's Prayer, and that hand-holding isn't prescribed by the Roman Missal. The guidance trended widely on X on Thursday.",
+     "sources": [
+      {
+       "name": "Archdiocese of Portland newsletter (PDF)",
+       "url": "https://archdpdx.org/documents/2026/11/DWNL%20Issue%2051%20Nov%202026-1.pdf"
+      },
+      {
+       "name": "Catholic Herald",
+       "url": "https://thecatholicherald.com/article/portland-archdiocese-tells-catholics-not-to-raise-hands-during-the-our-father"
+      },
+      {
+       "name": "Catholic Daily",
+       "url": "https://catholicdaily.com/2026/11/11/oregon-archdiocese-asks-faithful-not-to-extend-or-hold-hands-during-the-our-father-archdiocese-of-portland/"
+      }
+     ],
+     "side_a": "Supporters welcome the clarity. The liturgy belongs to the whole Church, not to any one parish, and gestures carry meaning: when the priest stands in the person of Christ and prays for the people, copying his posture blurs that role. Following the Missal faithfully, they say, is a form of humility.",
+     "side_a_label": null,
+     "side_b": "Others see holding hands during the Our Father as a simple, decades-old sign that the congregation is one family praying \"our\" Father. They worry that policing gestures will chill warmth in parishes that already struggle to feel like communities. Some also note that the Missal doesn't explicitly forbid lay gestures.",
+     "side_b_label": null,
+     "question_underneath": "Does worship form us best through shared, fixed forms, or through spontaneous signs of love? And who decides what a gesture means?",
+     "thinkers_note": "Lex orandi, lex credendi (Prosper of Aquitaine): how we pray shapes what we believe, so form matters. The appeal to tradition and right order in worship (1 Corinthians 14:40, \"decently and in order\") versus the appeal to communion and fellowship (Acts 2:42–46). The post–Vatican II tension between \"active participation\" (Sacrosanctum Concilium) and distinct roles for priest and people.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "London mosque rejects charity watchdog's warning over imam's Palestine sermons",
+     "summary": "The Lewisham Islamic Centre called a Charity Commission warning \"a troubling attempt to scrutinise, restrict and penalise legitimate religious worship.\" The regulator found that two October 2023 sermons included \"inflammatory, divisive\" content, warned of further action and told the mosque to improve how it handles speakers. The mosque is seeking legal advice, and the group CAGE says the regulator treats the word \"Zionist\" as inflammatory in itself.",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/12/uk-mosque-rebukes-comissions-warning-following-palestine-comments",
+       "archived": "https://web.archive.org/web/20261113043347/https://www.aljazeera.com/news/2026/11/12/uk-mosque-rebukes-comissions-warning-following-palestine-comments"
+      },
+      {
+       "name": "Religion Media Centre",
+       "url": "https://religionmediacentre.org.uk/morning-news-bulletin/religion-news-12-november-2026/"
+      }
+     ],
+     "side_a": "The mosque and its backers say a sermon is worship, and the state has no business dictating which subjects imams may address. They argue that Muslim charities face \"disproportionate\" scrutiny compared with pro-Israel groups, and that naming who they believe is responsible for Palestinian suffering is legitimate moral speech.",
+     "side_a_label": null,
+     "side_b": "The regulator and those who back it say charities get tax benefits and must serve the public good. Sermons that inflame division can endanger community cohesion, especially at a time of rising antisemitism and anti-Muslim hostility. In their view, the warning is about responsible use of charitable premises, not about faith itself.",
+     "side_b_label": null,
+     "question_underneath": "Where does a religious community's freedom to preach end and the state's duty to keep the peace begin? Can a government regulate speech in a house of worship without regulating faith?",
+     "thinkers_note": "Render unto Caesar (Matthew 22:21) and the long argument over what belongs to God and what to the state. Locke's Letter Concerning Toleration: the state governs outward peace, not souls, but may act when doctrine threatens civil order. The prophetic tradition (Amos, Nathan before David) of preachers denouncing injustice, against the civic duty not to stir hatred of one's neighbor.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
