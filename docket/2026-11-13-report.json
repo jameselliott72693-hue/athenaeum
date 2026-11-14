@@ -1,0 +1,276 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-13",
+ "date_long": "Friday, November 13, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-13.json",
+  "sha256": "3d86940eb99c7fbb63733a9ce8ac48092b5bb808d959d86af43e469022a67216",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Supreme Court agrees to decide whether Trump can shut off asylum at the border",
+     "summary": "On Friday the justices took up Mullin v. RAICES, the challenge to Trump's Jan. 20, 2025 proclamation declaring an \"invasion\" at the southern border and the guidance barring migrants who cross from applying for asylum. A federal appeals court in Washington struck the policy down as overreach; arguments are expected in the spring, with a ruling likely by June. It joins a crowded immigration docket that already includes third-country removals and detention without hearings.",
+     "sources": [
+      {
+       "name": "SCOTUSblog",
+       "url": "https://www.scotusblog.com/2026/11/supreme-court-agrees-to-hear-case-on-trump-administrations-suspension-of-asylum/"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/supreme-court-trump-asylum-aeed6eb39a46b6f9e56f4b6940a5cfe4"
+      },
+      {
+       "name": "Roll Call",
+       "url": "https://rollcall.com/2026/11/13/trumps-invasion-asylum-ban-to-face-justices/"
+      },
+      {
+       "name": "ACLU",
+       "url": "https://www.aclu.org/press-releases/supreme-court-to-hear-challenge-to-trump-proclamation-eliminating-asylum"
+      }
+     ],
+     "side_a": "Supporters say a president must be able to close the border in an emergency, and that the policy worked: daily crossings fell sharply. Fox's Bill Melugin argued on X that crossing illegally is not \"the right way\" and that most asylum claims are rejected and used as a path to a work permit. Pro-Trump accounts urged the Court to \"do the right thing\" and overrule what they call activist lower courts.",
+     "side_a_label": null,
+     "side_b": "Challengers, including 13 people who say they fled persecution or torture and three nonprofits, argue that Congress wrote into law that anyone who reaches U.S. soil may apply for asylum however they arrived, and a proclamation can't erase that. To them, sending people back without a hearing risks returning refugees to danger, and the lower courts rightly held the line.",
+     "side_b_label": null,
+     "question_underneath": "What does a nation owe the stranger at its door, and who decides: the executive in a crisis, or the law Congress already wrote?",
+     "thinkers_note": "The duty of hospitality to the stranger (Exodus 22:21; the parable of the Good Samaritan) and the modern refugee principle of non-refoulement. Sovereignty and the state's first duty of self-protection (Hobbes, Vattel's Law of Nations) as the case for executive power to close the border. Separation of powers and the rule of law (Locke, Federalist No. 47): can a president suspend by proclamation what a statute guarantees?",
+     "sitting_id": "p1",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Ocasio-Cortez says impeaching Supreme Court justices is \"on the table\"",
+     "summary": "In a CNN interview after Democrats won both chambers, Rep. Alexandria Ocasio-Cortez said Democrats should keep \"all options on the table,\" including impeachments, and added that \"this Supreme Court as well has also kind of legalized a lot of his criminality.\" She named no justice and laid out no plan. The remarks came as Justice Samuel Alito told a Federalist Society audience that Congress \"can turn off the lights at the Supreme Court\" by defunding it, among \"many, many other things.\"",
+     "sources": [
+      {
+       "name": "Yahoo News",
+       "url": "https://www.yahoo.com/news/politics/articles/aoc-suggests-dems-could-target-221530000.html"
+      },
+      {
+       "name": "Townhall",
+       "url": "https://townhall.com/news/amy-curtis/2026/11/13/aoc-impeach-scouts-justices-for-legitimizing-trumps-illegality-n2686369"
+      },
+      {
+       "name": "Jonathan Turley on X",
+       "url": "https://x.com/JonathanTurley/status/2121004982237339735"
+      },
+      {
+       "name": "Shannon Bream on X (Alito)",
+       "url": "https://x.com/ShannonBream/status/2121241844906447227"
+      }
+     ],
+     "side_a": "Her supporters say a Court that granted a president broad immunity and keeps ruling for him has made itself a political actor, and political actors can be held to account. Impeachment is the remedy the Constitution provides for officials who abuse their trust, and voters just handed Democrats the power to investigate. \"There are so many criminals in this administration,\" she said; the Court, in this view, shouldn't be exempt from scrutiny.",
+     "side_a_label": null,
+     "side_b": "Critics, led on X by law professor Jonathan Turley, call it an \"impeach-them-all-and-let-God-sort-them-out\" approach and say Democrats are \"becoming a party of berserkers.\" Impeaching judges for their rulings rather than for crimes, they argue, would destroy judicial independence and turn the Court into a hostage of whichever party holds the House. Others said it shows Democrats choosing revenge over the affordability message that won them the midterms.",
+     "side_b_label": null,
+     "question_underneath": "Who guards the guardians? Should judges answer to the people's representatives for how they rule, or does justice require that they answer to no one but the law?",
+     "thinkers_note": "Juvenal's \"Quis custodiet ipsos custodes?\" and Hamilton's Federalist No. 78: the judiciary as the \"least dangerous branch,\" independent so it can resist passing majorities. The precedent of Justice Samuel Chase (1805), whose acquittal established that justices aren't impeached for their opinions. Popular constitutionalism (Jefferson, Lincoln on Dred Scott): the people and their representatives, not only the Court, have a say in what the Constitution means.",
+     "sitting_id": "p2",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Trump's base turns on Thune for blocking recess appointments",
+     "summary": "With Democrats taking the Senate in January, Majority Leader John Thune is keeping the chamber in short pro forma sessions, which prevents the 10-day recess President Trump would need to make recess appointments that could last about a year. House Freedom Caucus chair Andy Harris has publicly asked for that recess. Thune is instead pushing to confirm nominees, including judges, through regular order during the lame-duck session.",
+     "sources": [
+      {
+       "name": "Washington Examiner",
+       "url": "https://www.washingtonexaminer.com/news/house/4800421/house-freedom-caucus-senate-recess-trump-appointees/"
+      },
+      {
+       "name": "Political.org",
+       "url": "https://political.org/2026/11/11/senate-republicans-led-by-john-thune-plan-54-day-lame-duck-push-on-nominees-funding-and-defense-before-democrats-take-over/"
+      },
+      {
+       "name": "Todd Starnes on X",
+       "url": "https://x.com/toddstarnes/status/2121251514035437614"
+      }
+     ],
+     "side_a": "Trump's supporters see betrayal. Radio host Todd Starnes called Thune's choice a \"flat-out 'f-you' to Republican voters\" and to the president, noting that Trump has made no recess appointments while Reagan made 232. With a hostile Senate weeks away, they say, this is the last chance to staff the government, and a leader who won't use every lawful tool isn't really on the team.",
+     "side_a_label": null,
+     "side_b": "Thune's approach protects the Senate's constitutional role of advice and consent, which senators of both parties guard jealously. Confirming nominees through regular order gives them full terms rather than temporary ones, and Senate Republicans have been fast-tracking judges for lifetime posts. In this view, emptying the Senate so a president can bypass it would weaken the institution Republicans will need when the White House changes hands.",
+     "side_b_label": null,
+     "question_underneath": "Is loyalty owed first to a leader and his agenda, or to the institution and the rules that outlast any one leader?",
+     "thinkers_note": "Madison's Federalist No. 51 (\"ambition must be made to counteract ambition\") and Federalist No. 76 on Senate confirmation as a check on favoritism. Burke's Speech to the Electors of Bristol: a representative owes his constituents his judgment, not just obedience. The ancient worry about faction and the strongman, from Aristotle's Politics to the Roman Senate's role in restraining the consuls.",
+     "sitting_id": "p3",
+     "sitting_match": "question"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "BBC chief pressed by staff over blurring trans-rights slogans and Pride pins",
+     "summary": "At an internal town hall on Thursday, BBC Director-General Matt Brittin faced at least a dozen questions after the BBC blurred actress Bethany Antonia's \"Protect the Dolls\" T-shirt on Strictly Come Dancing and digitally removed Pride flag pins from University Challenge contestants. One staffer contrasted this with mandatory poppies for presenters. Brittin said the BBC is \"definitely not an anti-LGBTQ+ organization\" but that due impartiality and inclusive values \"sometimes ... are in conflict.\"",
+     "sources": [
+      {
+       "name": "Deadline",
+       "url": "https://deadline.com/2026/11/bbc-matt-brittin-confronted-staff-transgender-rights-1237222605/",
+       "archived": "http://web.archive.org/web/20261113142630/https://deadline.com/2026/11/bbc-matt-brittin-confronted-staff-transgender-rights-1237222605/"
+      }
+     ],
+     "side_a": "Staff and allies say slogans like \"Protect the Dolls\" are statements of basic dignity, not partisan campaigning, and that erasing them while requiring poppies is selective. As one staffer quoted on X put it, it \"is a fact, and anything less IS anti-LGBTQ+.\" A public broadcaster funded by everyone, they argue, should make every viewer feel included.",
+     "side_a_label": null,
+     "side_b": "Others say a broadcaster bound by due impartiality must keep campaign messages off air on contested questions, and trans rights in Britain remain a live legal and political debate. The poppy, in this view, is a near-universal act of national remembrance, not a policy position. Critics on X said staff who can't see the difference show how hard impartiality has become inside the BBC.",
+     "side_b_label": null,
+     "question_underneath": "Can a shared public institution be neutral, and is neutrality itself a moral stance? Where is the line between dignity and advocacy?",
+     "thinkers_note": "Liberal neutrality (Rawls's public reason): shared institutions should not take sides on contested moral questions. The communitarian reply (Sandel, MacIntyre): there is no view from nowhere, and every institution expresses some account of the good. The old difference between civic ritual and partisan sign, from Rousseau's civil religion to debates over symbols in public life.",
+     "sitting_id": "c1",
+     "sitting_match": "question"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Lithuanian publisher's annotated \"Mein Kampf\" draws protest from Israel",
+     "summary": "Publisher Obuolys plans an 800-page Lithuanian edition of Hitler's Mein Kampf in late December, with more than 1,500 notes by Polish historian Eugeniusz Cezary Król and an introduction by the interim head of Lithuania's Genocide and Resistance Research Centre. Culture Minister Lukas Alsys questioned the timing, and the Israeli Embassy said it was deeply shocked and urged the publisher to reconsider.",
+     "sources": [
+      {
+       "name": "RTÉ",
+       "url": "https://www.rte.ie/news/a-european-perspective/2026/1113/1599106-lithuania-hitler-mein-kampf/"
+      },
+      {
+       "name": "Delfi (Lithuanian)",
+       "url": "https://www.delfi.lt/kultura/naujienos/izraelio-ambasada-ragina-persvarstyti-sprendima-isleisti-a-hitlerio-knyga-mein-kampf-120333281"
+      },
+      {
+       "name": "Lrytas (Lithuanian)",
+       "url": "https://www.lrytas.lt/lietuvosdiena/aktualijos/2026/11/12/news/po-obuolio-sprendimo-del-mein-kampf-izraelio-ambasados-reakcija-44906300"
+      }
+     ],
+     "side_a": "The publisher says the text is already online in old editions with no context, so \"the main question today is not whether the text is available, but whether the reader receives purely propaganda text or also the tools to understand and critically evaluate it.\" A scholarly edition, like Germany's 2016 annotated version, teaches readers to spot conspiracy thinking and scapegoating, and it is dedicated to the regime's victims.",
+     "side_a_label": null,
+     "side_b": "The Israeli Embassy and other critics say selling Hitler's manifesto commercially, in a country where most Jews were murdered in the Holocaust, offends victims' memory and widens access to hate, whatever the footnotes. Even the culture minister, while open to scholarship, said the book must be seen as \"a product of the Nazi regime\" and doubted the timing.",
+     "side_b_label": null,
+     "question_underneath": "Is the best answer to evil to bury its words or to study them? Does understanding a poison protect people from it, or spread it?",
+     "thinkers_note": "Milton's Areopagitica and Mill's On Liberty: falsehood is best defeated by open refutation, and suppressed error is never truly understood. Plato's Republic and the classical case that some texts corrupt, so a community may guard what it circulates. Santayana's warning that those who cannot remember the past are condemned to repeat it, set against the duty of memory owed to victims (Elie Wiesel).",
+     "sitting_id": "c2",
+     "sitting_match": "question"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Cultural critic Catherine Liu: the left has traded economics for trauma politics",
+     "summary": "On Channel 4 News' \"Ways to Change the World\" podcast with Krishnan Guru-Murthy, UC Irvine professor Catherine Liu, author of Traumatized: The New Politics of Public Suffering, argued that trauma, identity and representation have become a kind of social currency that distracts from class, work and economic inequality, and that public displays of fragility often benefit elites. Clips of the interview drew sharp debate on X.",
+     "sources": [
+      {
+       "name": "Podfollow (Channel 4 episode)",
+       "url": "https://podfollow.com/ways-to-change-the-world-with-krishnan-guru-murthy/episode/b9b19331469338ad457d8543e09875f889df2a2c/view"
+      },
+      {
+       "name": "Channel 4 News",
+       "url": "https://www.channel4.com/news/ways-to-change-the-world",
+       "archived": "http://web.archive.org/web/20261105093918/https://www.channel4.com/news/ways-to-change-the-world"
+      }
+     ],
+     "side_a": "Supporters, including British academic Lisa Mckenzie, say Liu is right that much of the left stopped fighting for better wages, housing and infrastructure and started policing language and feelings instead. Working-class voters, they argue, notice when a movement cares more about symbols than about their bills.",
+     "side_a_label": null,
+     "side_b": "Critics answer that the left still pushes for redistribution, and that it's the right that keeps starting culture-war fights. They also say identity and material life can't be neatly separated: discrimination and trauma have economic costs, and naming harm isn't a distraction from justice but part of it.",
+     "side_b_label": null,
+     "question_underneath": "Is justice mainly about material conditions or about recognition and dignity, and can a movement pursue both without losing its center?",
+     "thinkers_note": "Marx's materialism (economic base and cultural superstructure) against the politics of recognition (Hegel, Charles Taylor, Nancy Fraser's \"redistribution or recognition?\"). Nietzsche's Genealogy of Morals on how suffering and victimhood can become a source of moral power. Christopher Lasch's The Revolt of the Elites: a professional class that turns politics into therapy while the working class is left behind.",
+     "sitting_id": "c3",
+     "sitting_match": "question"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "U.S. denies visas to two Bethlehem clergy invited to speak on Palestinian Christians",
+     "summary": "Father Issa Thaljieh, parish priest of the Church of the Nativity, was denied a visa (on \"security\" grounds, according to organizers) to join American clergy at an event near the Capitol on Monday about Israeli settler attacks. Rev. Munther Isaac of Christmas Lutheran Church was also refused for a conference in Atlanta, despite past U.S. visits. The State Department told Middle East Eye that \"every visa decision is a national security decision.\"",
+     "sources": [
+      {
+       "name": "Middle East Eye",
+       "url": "https://www.middleeasteye.net/news/bethlehem-church-nativity-priest-denied-us-visa-speak-washington-dc-event",
+       "archived": "https://web.archive.org/web/20261114043838/https://www.middleeasteye.net/news/bethlehem-church-nativity-priest-denied-us-visa-speak-washington-dc-event"
+      },
+      {
+       "name": "Christian Newswire",
+       "url": "https://www.christiannewswire.com/vpp-demands-reversal-after-trump-admin-denies-visas-for-two-bethlehem-christian-leaders/"
+      }
+     ],
+     "side_a": "Critics, from Orthodox Christians for Palestine to the Vulnerable People Project, say a parish priest from Jesus' birthplace is being \"treated as a threat\" so Americans won't hear how Palestinian Christians are suffering. \"The people living through this are being kept from telling us about it,\" one organizer said. For many Christians, silencing fellow believers is a betrayal of the Church's own family.",
+     "side_a_label": null,
+     "side_b": "The administration says it vets every visa for national security and that applicants must prove they meet every legal requirement; visas are a privilege, not a right. Supporters note that both men have been sharply critical of Israel, a close U.S. ally at war, and argue the U.S. need not host speakers whose events are aimed at cutting arms to an ally.",
+     "side_b_label": null,
+     "question_underneath": "What do Christians owe to fellow believers across political lines, and how should a state weigh security against the free exchange of witness and ideas?",
+     "thinkers_note": "The unity of the body of Christ (1 Corinthians 12:26: \"if one member suffers, all suffer together\"). The sovereign's right to control entry (Vattel, Hobbes) against the liberal ideal of free speech and the \"marketplace of ideas\" (Mill, Holmes). Augustine's two cities: loyalty to the earthly city and its alliances versus the claims of the City of God.",
+     "sitting_id": "r1",
+     "sitting_match": "question"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Pope Leo in Peru: \"God created the human person male and female\"",
+     "summary": "In Lima on Thursday, Pope Leo XIV said God created the human person male and female, a union of reciprocity and complementarity that supports family and society, while adding that sexual difference doesn't justify unequal household burdens or the subordination of either spouse. Clips summarized as \"There is only man and woman\" went viral. On Friday he celebrated Mass for about 500,000 people at Chiclayo, his old diocese, calling the proclamation of Christ \"a crucial task.\"",
+     "sources": [
+      {
+       "name": "Vatican (Lima address)",
+       "url": "https://www.vatican.va/content/leo-xiv/en/speeches/2026/november/documents/20261112-peru-futuro.html"
+      },
+      {
+       "name": "National Catholic Reporter",
+       "url": "https://www.ncronline.org/vatican/vatican-news/lima-peru-pope-leo-rails-against-abuse-and-subordination-women",
+       "archived": "http://web.archive.org/web/20261114044010/https://www.ncronline.org/vatican/vatican-news/lima-peru-pope-leo-rails-against-abuse-and-subordination-women"
+      },
+      {
+       "name": "Vatican News (Chiclayo)",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-xiv-homily-mass-chiclayo-peru-evangelization.html"
+      }
+     ],
+     "side_a": "Traditional Catholics celebrated a pope who, as one widely shared account put it, \"defends the family, defends marriage as the union between one man and one woman, defends the rights of the unborn, and denounces gender ideology.\" They see clear teaching on the human person as an act of love in a confused culture, and the huge crowds as proof that it resonates.",
+     "side_a_label": null,
+     "side_b": "Other Catholics stress the second half of the same speech: Leo's attack on machismo and on the subordination of women, and his call for respect and inclusion. They warn against turning a pastoral visit into a culture-war soundbite, noting that the viral \"nothing else\" phrasing compresses a longer and more careful text. Critics outside the Church say such teaching wounds transgender people regardless of its tone.",
+     "side_b_label": null,
+     "question_underneath": "Is human nature a given to be received or something each person defines? And can a teaching about the body be both true and gentle?",
+     "thinkers_note": "Genesis 1:27 and natural-law reasoning (Aquinas): the body and sexual difference carry built-in meaning and purpose. John Paul II's Theology of the Body on complementarity and mutual self-gift, alongside the existentialist claim (Sartre, Beauvoir) that existence precedes essence. The Pauline ideal of \"speaking the truth in love\" (Ephesians 4:15).",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Germany's Felix Nmecha agrees to drop Christian \"crown\" goal celebration",
+     "summary": "After scoring twice for Borussia Dortmund, Nmecha mimed taking a crown off his head and laying it on the ground, a gesture widely tied to the \"The King's Return\" campaign of the Christian group Ballers in God. Critics say the group discriminates against queer and trans people; BIG says it aims to \"demonstrate love and respect towards everyone.\" Germany coach Jürgen Klopp said Thursday that Nmecha told him he \"loves all people\" and has agreed not to repeat it.",
+     "sources": [
+      {
+       "name": "DW",
+       "url": "https://www.dw.com/en/germanys-nmecha-wont-repeat-controversial-goal-celebration/a-79937994",
+       "archived": "http://web.archive.org/web/20261113162738/https://www.dw.com/en/germanys-nmecha-wont-repeat-controversial-goal-celebration/a-79937994"
+      },
+      {
+       "name": "Yahoo Sports",
+       "url": "https://sports.yahoo.com/articles/klopp-says-nmecha-drop-crown-201205073.html"
+      }
+     ],
+     "side_a": "Many Christians and free-speech defenders see a double standard. A widely shared German post said rainbow armbands and Ramadan greetings were no problem, \"but a Christian goal celebration is a problem.\" For them, a player humbly laying his crown before Christ harms no one, and pressuring him to stop is a quiet form of religious discrimination.",
+     "side_a_label": null,
+     "side_b": "Others, including many Dortmund fans, say clubs and the national team represent everyone, including LGBTQ supporters, and that a gesture tied to a group they see as hostile to queer people sends an exclusionary message. They argue this is about the group's views, not about faith itself, and note that Nmecha chose to step back after talking with his coach.",
+     "side_b_label": null,
+     "question_underneath": "Is public faith a private matter that should stay off the pitch, or a part of the person that a free society must make room for, even when it unsettles others?",
+     "thinkers_note": "Revelation 4:10, the elders who \"cast their crowns before the throne,\" the image behind the gesture. Locke's Letter Concerning Toleration and the modern question of whether toleration extends to beliefs others find exclusionary. Pluralism and the shared public square (John Courtney Murray, Richard John Neuhaus's \"naked public square\") versus the idea that civic spaces should be religiously neutral.",
+     "sitting_id": "r3",
+     "sitting_match": "question"
+    }
+   ]
+  }
+ ]
+}
