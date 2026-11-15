@@ -1,0 +1,339 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-14",
+ "date_long": "Saturday, November 14, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-14.json",
+  "sha256": "3f4acca038f13f2e16f8062ca6ba07bf1ebecfee915f8878e6c62377464551c7",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Incoming Democratic majority lines up Trump investigations, keeps impeachment off the table for now",
+     "summary": "Days after a midterm landslide, Democrats who take control of Congress in January say their first investigations will target President Trump's family business dealings, alleged corruption, immigration-enforcement abuses and the Epstein case. California Democrats set to chair key committees told the Los Angeles Times a third impeachment is off the table for now, while Reuters reports the party is split over how combative to be with a president who keeps his veto for two more years.",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/politics/white-house/democrats-say-trump-family-businesses-top-upcoming-investigations-rcna605987",
+       "archived": "https://web.archive.org/web/20261115042610/https://www.nbcnews.com/politics/white-house/democrats-say-trump-family-businesses-top-upcoming-investigations-rcna605987"
+      },
+      {
+       "name": "Los Angeles Times",
+       "url": "https://www.latimes.com/california/story/2026-11-14/powerful-california-democrats-in-new-congress-focused-on-trump",
+       "archived": "https://web.archive.org/web/20261115042642/https://www.latimes.com/california/story/2026-11-14/powerful-california-democrats-in-new-congress-focused-on-trump"
+      },
+      {
+       "name": "Reuters",
+       "url": "https://www.reuters.com/3fec1b0a85a0/world/us/after-midterm-sweep-democrats-split-over-trump-cost-cutting-agenda-2026-11-14/"
+      }
+     ],
+     "side_a": "Supporters of aggressive oversight say voters handed Democrats the gavel precisely to check a president they see as using office for self-enrichment; investigating cronyism is, in their telling, part of the affordability fight, because corruption raises costs and rigs markets. Congress has a constitutional duty to oversee the executive, and two years of one-party control left questions unanswered.",
+     "side_a_label": null,
+     "side_b": "Skeptics, including Republicans and some centrist Democrats, say voters asked for lower prices, not hearings, and that a wave of subpoenas will look like score-settling and repeat the overreach that cost majorities before. They argue the better use of power is passing cost-of-living bills Trump might sign, and that relentless investigations harden the other side and deepen distrust of institutions.",
+     "side_b_label": null,
+     "question_underneath": "What is the first duty of a new majority: holding power to account, or governing for the people's immediate needs? Accountability vs. reconciliation.",
+     "thinkers_note": "Separation of powers and 'ambition must be made to counteract ambition' (Madison, Federalist No. 51) Burke's prudence: reform what is broken without turning politics into permanent war (Reflections on the Revolution in France) Utilitarian weighing of costs: do investigations deliver more public good than legislation would? Slippery slope: each majority's investigations invite retaliation by the next (the cycle of partisan escalation)",
+     "sitting_id": "p1",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "One router, 10,000 cancellations: who answers for Friday's nationwide ground stop?",
+     "summary": "Transportation Secretary Sean Duffy said Saturday that a router installed during contractor L3Harris's copper-to-fiber upgrade at a remote FAA site flooded the air-traffic network, triggering a roughly five-hour nationwide ground stop that cancelled nearly 10,000 flights; officials found no sign of a cyberattack and are still determining whether it was installer error or a faulty router. Duffy blamed decades-old legacy equipment and the FAA chief called for $50 billion in upgrades, while House Democrats promised an oversight inquiry.",
+     "sources": [
+      {
+       "name": "USA Today (probe)",
+       "url": "https://www.usatoday.com/story/news/nation/2026/11/14/faa-ground-stop-probe-l3harris/92780406007/"
+      },
+      {
+       "name": "USA Today (Congress)",
+       "url": "https://www.usatoday.com/story/news/politics/2026/11/14/democrats-oversight-congress-investigation-nationwide-ground-stop-trump/92781114007/"
+      },
+      {
+       "name": "FAA statement",
+       "url": "https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop",
+       "archived": "http://web.archive.org/web/20261114152931/https://www.faa.gov/newsroom/faa-statement-nationwide-ground-stop"
+      },
+      {
+       "name": "DOT",
+       "url": "https://www.transportation.gov/briefing-room/icymi-us-transportation-secretary-sean-p-duffy-provides-update-restoration-airspace"
+      }
+     ],
+     "side_a": "The administration and its defenders say the failure came from 'old legacy equipment that's existed forever,' not new systems, and that controllers and pilots landed thousands of airborne planes safely. They see the outage as proof that Congress must fund a full modernization now, and argue a contractor's mistake shouldn't be turned into a partisan cudgel.",
+     "side_a_label": null,
+     "side_b": "Critics, led by incoming Democratic committee leaders, say a single router should never be able to halt the nation's airspace and call that a failure of management and oversight. They want answers on contractor accountability and on online claims about ties between Duffy's family and the maker of the FAA's new SMART planning system (which Duffy and the company deny had any role).",
+     "side_b_label": null,
+     "question_underneath": "When a complex system fails, is the fault in the people running it or in the system we have neglected to renew? Responsibility vs. structural causes.",
+     "thinkers_note": "Stewardship of the commons: each generation owes the next maintained infrastructure (Burke's partnership between the living, the dead and the unborn) Accountability and public trust: officials answer for what happens on their watch (Truman's 'The buck stops here') Charles Perrow's 'normal accidents': tightly coupled systems make failure inevitable without redundancy Prudence vs. blame: Aristotle's practical wisdom asks what fixes the problem, not only who caused it",
+     "sitting_id": "p2",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Massie seeks more Republican defectors for a fourth vote to rein in the Iran war",
+     "summary": "Rep. Thomas Massie (R-Ky.) told Fox News Digital that another Iran War Powers resolution could reach the House floor within days or around Christmas, the fourth attempt this year to limit President Trump's military operations against Iran, and that he is offering Republicans 'a lifeboat from MAGA.' House Armed Services Chairman Mike Rogers (R-Ala.) said he would oppose it; no vote has been scheduled.",
+     "sources": [
+      {
+       "name": "Fox News",
+       "url": "https://www.foxnews.com/politics/anti-trump-republican-courts-other-defectors-house-weighs-another-vote-against-iran-war",
+       "archived": "http://web.archive.org/web/20261114142436/https://www.foxnews.com/politics/anti-trump-republican-courts-other-defectors-house-weighs-another-vote-against-iran-war"
+      },
+      {
+       "name": "War Powers Resolution (text)",
+       "url": "https://www.law.cornell.edu/uscode/text/50/chapter-33",
+       "archived": "http://web.archive.org/web/20261030034020/https://www.law.cornell.edu/uscode/text/50/chapter-33"
+      }
+     ],
+     "side_a": "Backers say the Constitution gives Congress, not the president, the power to declare war, and a sustained campaign against Iran without authorization violates that design and the 1973 War Powers Resolution. After a midterm in which an unpopular war fed the cost-of-living crisis, they argue lawmakers owe voters a recorded vote.",
+     "side_a_label": null,
+     "side_b": "Opponents say the commander in chief must be able to act against a hostile regime without telegraphing limits to the enemy, that presidents of both parties have long conducted hostilities under Article II, and that a resolution would undercut troops and negotiators mid-conflict. Some also see Massie's push as political positioning after his primary loss.",
+     "side_b_label": null,
+     "question_underneath": "Who should decide when a nation goes to war: the deliberative many or the decisive one? Liberty and deliberation vs. security and energy in the executive.",
+     "thinkers_note": "Madison and the framers' choice to vest the war power in Congress (Constitution, Art. I, Sec. 8) Hamilton's case for 'energy in the executive' (Federalist No. 70) Just war tradition: legitimate authority as a condition for war (Augustine, Aquinas) Locke's 'federative power' and prerogative: the executive's room to act for the public good (Second Treatise)",
+     "sitting_id": "p3",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Democrats' new state trifectas put the National Popular Vote compact within reach",
+     "summary": "New Democratic trifectas in five states, including Michigan and Pennsylvania, could add 61 electoral votes to the National Popular Vote Interstate Compact, which already has 222 of the 270 needed to take effect and would award each member state's electors to the national popular-vote winner. Pennsylvania Gov. Josh Shapiro has said he is open to joining, and the idea was debated widely on X on Saturday.",
+     "sources": [
+      {
+       "name": "Ballotpedia News",
+       "url": "https://news.ballotpedia.org/2026/11/11/new-democratic-trifectas-in-five-states-could-provide-enough-electoral-votes-for-national-popular-vote-interstate-compact/",
+       "archived": "http://web.archive.org/web/20261112143018/https://news.ballotpedia.org/2026/11/11/new-democratic-trifectas-in-five-states-could-provide-enough-electoral-votes-for-national-popular-vote-interstate-compact/"
+      },
+      {
+       "name": "Politico",
+       "url": "https://www.politico.com/news/2026/11/10/democrats-national-popular-vote-electoral-college-2028-wisconsin-michigan-pennsylvania-01158164"
+      },
+      {
+       "name": "PennLive",
+       "url": "https://www.pennlive.com/politics/2026/11/gov-shapiro-says-hes-open-to-the-idea-of-instituting-a-national-popular-vote.html"
+      }
+     ],
+     "side_a": "Supporters say every American's vote should count equally, wherever they live, and that the winner of the most votes should win the presidency. They argue the current system lets a handful of swing states decide elections and that states have clear constitutional authority to choose how to appoint their electors.",
+     "side_a_label": null,
+     "side_b": "Opponents say the Electoral College was designed to protect a federal republic of states, forcing candidates to build broad geographic coalitions rather than run up margins in big cities. They warn the compact sidesteps the amendment process, could bind a state to a candidate its own voters rejected, and would invite legal chaos in a close national count.",
+     "side_b_label": null,
+     "question_underneath": "Is a nation a single people whose majority should rule directly, or a union of communities whose voices must be balanced? Majority rule vs. federalism.",
+     "thinkers_note": "Democratic equality: 'one person, one vote' (Reynolds v. Sims, 1964) Madison on the extended republic and guarding against majority faction (Federalist No. 10) Hamilton's defense of the electors (Federalist No. 68) Tocqueville's warning about the 'tyranny of the majority' (Democracy in America)",
+     "sitting_id": "p4",
+     "sitting_match": "fuzzy"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Comedian's Mamdani roast jokes split the internet over comedy, bigotry and double standards",
+     "summary": "At Commentary magazine's annual fundraising roast on Nov. 8, comedian Arynne Wexler called New York Mayor Zohran Mamdani 'the Grand Mufti of New York' and joked that he 'bought' his wife, Rama Duwaji. After she posted the clip it drew millions of views; Piers Morgan called it 'Disgusting' and critics labeled it Islamophobic, while defenders said she did nothing wrong. The fight was still trending Saturday.",
+     "sources": [
+      {
+       "name": "VT",
+       "url": "https://vt.co/news/us/arynne-wexler-zohran-mamdani-jokes-racism",
+       "archived": "https://web.archive.org/web/20261115042859/https://vt.co/news/us/arynne-wexler-zohran-mamdani-jokes-racism"
+      },
+      {
+       "name": "The Dispute Index (timeline)",
+       "url": "https://disputeindex.com/cases/arynne-wexler-roast-jokes-zohran-mamdani-rama-duwaji",
+       "archived": "https://web.archive.org/web/20261115042926/https://disputeindex.com/cases/arynne-wexler-roast-jokes-zohran-mamdani-rama-duwaji"
+      },
+      {
+       "name": "Not the Bee (defense)",
+       "url": "https://notthebee.com/article/piers-morgan-was-very-offended-by-this-zohran-mamdani-joke-so-you-should-definitely-not-listen-to-it",
+       "archived": "https://web.archive.org/web/20261115042952/https://notthebee.com/article/piers-morgan-was-very-offended-by-this-zohran-mamdani-joke-so-you-should-definitely-not-listen-to-it"
+      }
+     ],
+     "side_a": "Critics say the jokes recycled ugly stereotypes about Muslims (child marriage, terrorism) and aimed them at a real woman. They argue that the same material about a Jewish mayor would end a career, so tolerating it here reveals a double standard about which groups can be mocked.",
+     "side_a_label": null,
+     "side_b": "Defenders say a roast is by definition offensive, that comedy has always punched at the powerful, and that the mayor of America's largest city is fair game. They see the outrage as selective, arguing that jokes poking at real practices abroad are legitimate, and that policing punchlines chills free expression.",
+     "side_b_label": null,
+     "question_underneath": "Where does satire end and contempt begin, and should the same rule apply to everyone? Free expression vs. human dignity.",
+     "thinkers_note": "Mill's harm principle and the value of offensive speech (On Liberty) The Golden Rule as a test of consistency: would we accept this said of our own group? (Matthew 7:12) Aristophanes and the comic tradition of mocking the powerful Aristotle on wit vs. buffoonery: the virtuous jester knows the limit (Nicomachean Ethics IV.8)",
+     "sitting_id": "c1",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Florida city scraps its St. Patrick's Day parade, citing the state's anti-DEI law",
+     "summary": "Delray Beach says it will stop organizing, funding or promoting its long-running St. Patrick's Day parade and its Pride festival starting in 2027, citing Florida's SB 1134, which bars local governments from supporting events tied to ethnicity, sexual orientation or gender identity. Gov. Ron DeSantis called the move 'malicious compliance' and said the law doesn't require it; private groups may still run the events.",
+     "sources": [
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
+       "archived": "http://web.archive.org/web/20261115002240/https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei"
+      },
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/news/us-news/st-patricks-day-parade-canceled-florida-thanks-states-anti-dei-law-rcna609175"
+      },
+      {
+       "name": "Palm Beach Post",
+       "url": "https://www.palmbeachpost.com/story/news/local/delray/2026/11/10/delray-beach-cancels-st-patricks-parade-pride-fest-citing-dei-law/92705675007/"
+      }
+     ],
+     "side_a": "Supporters of the law say government should treat citizens as individuals, not as members of identity groups, and that taxpayers shouldn't fund celebrations of some groups over others. They argue the city is staging a stunt to discredit the law, since private sponsors can keep the parade alive.",
+     "side_a_label": null,
+     "side_b": "Critics say the law is so vague that cautious officials must cancel beloved civic traditions, and that heritage festivals are part of how a town builds shared community. They point out that the same rule that hits Pride also caught an Irish parade, showing how broad 'anti-DEI' language reaches.",
+     "side_b_label": null,
+     "question_underneath": "Should government stay neutral among a people's many heritages, or help celebrate them as a shared civic good? Equal treatment vs. community.",
+     "thinkers_note": "Liberal neutrality: the state should not favor particular conceptions of identity (Rawls, Political Liberalism) Tocqueville on voluntary associations doing what government need not (Democracy in America) Rule of law and vagueness: laws must be clear enough to follow (Fuller, The Morality of Law) Communitarian view that shared rituals bind citizens (Durkheim; Robert Putnam, Bowling Alone)",
+     "sitting_id": "c2",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Days before launch, 'GTA VI' becomes a culture-war flashpoint",
+     "summary": "Grand Theft Auto VI, due Nov. 19, is drawing an online 'woke' backlash from some critics aimed at its first female co-lead, Lucia Caminos, and at character designs, with author Jon Del Arroz comparing it to the flop Concord; defenders say the designs fit the game's Florida setting. Wired reports the anti-woke right has struggled to turn its complaints into a real boycott.",
+     "sources": [
+      {
+       "name": "WIRED",
+       "url": "https://www.wired.com/story/the-anti-woke-right-cant-figure-out-how-to-stop-grand-theft-auto-vi/",
+       "archived": "http://web.archive.org/web/20261105111449/https://www.wired.com/story/the-anti-woke-right-cant-figure-out-how-to-stop-grand-theft-auto-vi/"
+      },
+      {
+       "name": "El Pais English",
+       "url": "https://english.elpais.com/culture/2026-10-16/from-lara-croft-to-lucia-caminos-why-does-a-female-lead-in-a-video-game-still-provoke-backlash.html",
+       "archived": "http://web.archive.org/web/20261101175117/https://english.elpais.com/culture/2026-10-16/from-lara-croft-to-lucia-caminos-why-does-a-female-lead-in-a-video-game-still-provoke-backlash.html"
+      }
+     ],
+     "side_a": "Critics say big studios increasingly shape games around political messaging and diversity checklists rather than what longtime fans want, and that players are entitled to push back with their wallets. They see the trailers as signs of that shift in a franchise once known for unfiltered satire.",
+     "side_a_label": null,
+     "side_b": "Defenders say a Latina co-lead in a Miami-inspired game is simple realism, and that GTA has always satirized American culture from every angle. They argue the 'woke' label is applied to anything that isn't a male hero, and that most players simply want to play the game.",
+     "side_b_label": null,
+     "question_underneath": "Do artists owe their audience what it expects, or is art free to change those expectations? Artistic freedom vs. the claims of tradition and community.",
+     "thinkers_note": "Market as referendum: consumer sovereignty and exit (Hirschman, Exit, Voice, and Loyalty) Art for art's sake vs. art as moral formation (Oscar Wilde vs. Plato's Republic, Book III) Mimesis: art reflects the society it depicts (Aristotle, Poetics) Tradition and individual talent: innovation within an inherited form (T.S. Eliot)",
+     "sitting_id": "c3",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "cultural-4",
+     "number": 4,
+     "headline": "Shane Gillis says the backlash to his 'SNL' monologue was about 'the climate'",
+     "summary": "On a Joe Rogan episode released Friday, comedian Shane Gillis said the outcry over his Oct. 10 Saturday Night Live monologue, in which he said women dress like 'whores' at the gym, 'had a lot to do with the climate,' and that SNL did not review the monologue beforehand. Critics, including author Jessica Valenti and actor Dan Levy, had called the jokes misogynistic amid a national reckoning over sexual violence.",
+     "sources": [
+      {
+       "name": "Philadelphia Inquirer",
+       "url": "https://www.inquirer.com/entertainment/tv/shane-gillis-saturday-night-live-backlash-20261114.html"
+      }
+     ],
+     "side_a": "Gillis's fans say comedy depends on saying what people privately think, that a C-minus joke on live TV is not a moral crisis, and that outrage cycles punish comedians for the mood of the moment rather than their intent. His record-breaking stadium show, they argue, proves audiences want unfiltered humor.",
+     "side_a_label": null,
+     "side_b": "Critics say words that demean women are not harmless when broadcast to millions, especially during a reckoning with sexual violence, and that 'the climate' is not an excuse but the context that makes such jokes land harder. Networks, they argue, share responsibility for what airs.",
+     "side_b_label": null,
+     "question_underneath": "Is a joke judged by its intent, its effect, or the moment it is told? Freedom vs. responsibility.",
+     "thinkers_note": "Mill on liberty of expression and its limits (On Liberty) Virtue ethics: speech reveals and shapes character (Aristotle; James 3 on taming the tongue) Bergson's theory of laughter as social correction (Laughter, 1900) Kantian respect for persons: never treat others merely as means, even as a punchline",
+     "sitting_id": "c4",
+     "sitting_match": "fuzzy"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "First Muslim U.S. senator-elect plans to take his oath on a Quran, possibly Jefferson's",
+     "summary": "Michigan Senator-elect Abdul El-Sayed told NPR he will 'likely swear on a Quran,' either the 1764 copy owned by Thomas Jefferson that Keith Ellison used in 2007 or a historic Quran held by the University of Michigan, adding, 'it's not the book that you swear on. It's the book you swear allegiance to,' meaning the Constitution. The formal Senate oath is taken without any book; the plan set off an online fight that was trending Saturday.",
+     "sources": [
+      {
+       "name": "WION",
+       "url": "https://www.wionews.com/world/i-will-swear-on-a-quran-first-muslim-us-senator-elect-opens-up-on-oath-plans-1794560322676",
+       "archived": "https://web.archive.org/web/20261115043155/https://www.wionews.com/world/i-will-swear-on-a-quran-first-muslim-us-senator-elect-opens-up-on-oath-plans-1794560322676"
+      },
+      {
+       "name": "Western Journal",
+       "url": "https://www.westernjournal.com/abdul-el-sayed-mulling-quran-use-senate-swearing/"
+      },
+      {
+       "name": "Crosswire (coverage comparison)",
+       "url": "https://crosswirenews.com/story/e07febc47165"
+      }
+     ],
+     "side_a": "Supporters say Article VI bans any religious test for office, that swearing on the book one holds sacred makes the oath more binding, and that using Jefferson's own Quran honors the founders' commitment to religious liberty. The pledge, they note, is to the Constitution, not the book.",
+     "side_a_label": null,
+     "side_b": "Critics say America's founding traditions are rooted in Christianity and the Bible, that Jefferson owned a Quran to study it, not to swear on it, and that the choice signals the priorities of a senator whose views they already distrust. Some argue that oath symbols carry a nation's shared identity and shouldn't become a statement.",
+     "side_b_label": null,
+     "question_underneath": "What binds a public servant: shared civic symbols or personal conscience? Pluralism vs. a common national heritage.",
+     "thinkers_note": "No religious test (U.S. Constitution, Art. VI); Jefferson's Virginia Statute for Religious Freedom Locke, A Letter Concerning Toleration The oath as an appeal to what one holds most sacred (Hebrews 6:16; Hobbes on oaths in Leviathan) Civil religion and the need for shared sacred symbols (Rousseau, Social Contract IV.8; Robert Bellah)",
+     "sitting_id": "r1",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Sarah Huckabee Sanders tells Bill Maher a Muslim official's faith-first worldview would not be 'just as good' to her",
+     "summary": "On Friday's Real Time, Bill Maher asked Arkansas Gov. Sarah Huckabee Sanders, promoting her book 'Unapologetic,' whether a senator like El-Sayed saying his identity in 'Muhammad and Allah alone' is his foundation would be equally acceptable. She said 'Not to me personally, no, because I am a believer that there is only one God and that He sent His Son,' adding he is 'entitled to his opinion'; Maher replied that the foundation in government should be the Constitution.",
+     "sources": [
+      {
+       "name": "Interview transcript (Tommy Christopher)",
+       "url": "https://tommyxtopher.substack.com/p/bill-maher-interviews-sarah-huckabee",
+       "archived": "https://web.archive.org/web/20261115044105/https://tommyxtopher.substack.com/p/bill-maher-interviews-sarah-huckabee"
+      },
+      {
+       "name": "Real Time episode listing (TVmaze)",
+       "url": "https://www.tvmaze.com/episodes/3809414/real-time-with-bill-maher-24x34-gov-sarah-huckabee-sanders-aaron-parnas-dasha-burns"
+      }
+     ],
+     "side_a": "Sanders's defenders say she simply stated orthodox Christian belief, that every faith makes exclusive truth claims, and that she explicitly affirmed others' right to believe differently. Asking believers to pretend all religions are interchangeable, they argue, is its own kind of religious test.",
+     "side_a_label": null,
+     "side_b": "Critics, Maher among them, say officials who make faith their foundation risk treating citizens of other religions as second-class, and that public servants should ground their governing in the Constitution that all share. They see a double standard when Christian faith-first politics is praised and Muslim faith-first politics is feared.",
+     "side_b_label": null,
+     "question_underneath": "Can someone hold their faith as exclusively true and still govern all citizens as equals? Conviction vs. pluralism.",
+     "thinkers_note": "Christian exclusivism (John 14:6) alongside the duty to love one's neighbor (Luke 10) Augustine's two cities: citizens of heaven living faithfully in an earthly commonwealth (City of God) Locke's toleration and the separation of civil and religious authority Rawls's 'public reason': justify law by reasons all citizens can share (Political Liberalism)",
+     "sitting_id": "r2",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "'Christ Is King' conference in Texas sharpens a fight over Christian nationalism",
+     "summary": "The three-day 'Christ Is King: America After Trump' conference, run by Texas pastor Joel Webbon's NXR Studios at the city-owned Irving Convention Center, ended Saturday. In a speech Webbon declared 'it's good to be White' and said living near or marrying White people is 'not a universal right'; other speakers and promotional material have backed repealing women's right to vote. Christian critics on X condemned it as racism dressed in the gospel, while Webbon says GOP losses validate his long-term plan.",
+     "sources": [
+      {
+       "name": "The Atlantic",
+       "url": "https://www.theatlantic.com/politics/2026/11/christian-nationalism-trump-elections/689373/?gift=rZMxdCnJDFox-Lo_VXUNbBGmu8cIbozQ6zd5e8TRmkw"
+      },
+      {
+       "name": "Confront the Hate (speech report)",
+       "url": "https://www.confrontthehate.com/p/in-dallas-hundreds-cheer-christian",
+       "archived": "https://web.archive.org/web/20261115044202/https://www.confrontthehate.com/p/in-dallas-hundreds-cheer-christian"
+      },
+      {
+       "name": "Radar Online",
+       "url": "https://radaronline.com/p/former-jd-vance-aide-and-tucker-carlsons-son-appear-at-maga-gathering-amid-backlash-over-womens-voting-rights/",
+       "archived": "https://web.archive.org/web/20261115044228/https://radaronline.com/p/former-jd-vance-aide-and-tucker-carlsons-son-appear-at-maga-gathering-amid-backlash-over-womens-voting-rights/"
+      }
+     ],
+     "side_a": "Attendees and sympathizers say America was built by a Christian people, that liberal neutrality has failed, and that Christians should openly seek a public order shaped by Christ's lordship rather than apologize for their heritage. They frame their critics as having surrendered to secular and progressive premises.",
+     "side_a_label": null,
+     "side_b": "Most Christian critics, conservative and progressive alike, say racial identity politics contradicts the gospel that in Christ there is 'neither Jew nor Greek,' and that tying faith to ethnicity and the loss of women's rights betrays Scripture and Christian witness. Others ask why a public venue hosted speakers who have endorsed violence against women.",
+     "side_b_label": null,
+     "question_underneath": "Does Christ's kingship call Christians to rule a nation, or to witness within it? The kingdom of God vs. the kingdoms of this world.",
+     "thinkers_note": "'My kingdom is not of this world' (John 18:36) and Galatians 3:28 on unity in Christ Augustine's City of God vs. the earthly city Integralism and the Christendom tradition (Pope Leo XIII, Immortale Dei) Imago Dei and universal human dignity (Genesis 1:27; Martin Luther King Jr., 'Letter from Birmingham Jail')",
+     "sitting_id": "r3",
+     "sitting_match": "fuzzy"
+    }
+   ]
+  }
+ ]
+}
