@@ -1,6 +1,13 @@
 {
   "nights": [
     {
+      "date": "2026-11-15",
+      "label": "Sunday, November 15, 2026",
+      "file": "2026-11-15.json",
+      "report": "2026-11-15-report.json",
+      "audio": "audio/2026-11-15.mp3"
+    },
+    {
       "date": "2026-11-14",
       "label": "Saturday, November 14, 2026",
       "file": "2026-11-14.json",

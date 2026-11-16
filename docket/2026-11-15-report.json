@@ -1,0 +1,332 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-15",
+ "date_long": "Sunday, November 15, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-15.json",
+  "sha256": "425bfbcd8f899a77e6dbce68a8983f0ce40e66bbc554684b5bafc427193f5c8b",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "After the ground stop, Trump and his cabinet demand $50 billion for air traffic control, and critics on both sides push back",
+     "summary": "Two days after a router failure during routine maintenance triggered a nationwide ground stop and thousands of cancellations, Transportation Secretary Sean Duffy and Homeland Security Secretary Markwayne Mullin asked Congress for $50 billion to overhaul the air traffic control system, up from a $30 billion request. President Trump broke his silence Sunday on Truth Social, blaming the Biden administration and urging Congress to send the money 'FAST'; Democrats are asking how the $12.5 billion already approved has been spent, and former Rep. Marjorie Taylor Greene called the briefing 'a shakedown for more money.'",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/trump-ground-stop-air-travel-faa-duffy-1a308c557552b2ce24a0532fee0be191"
+      },
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/11/15/trump-blames-biden-faa-problems-first-comments-nationwide-ground-stop/"
+      },
+      {
+       "name": "The Hill",
+       "url": "https://thehill.com/homenews/administration/6220625-greene-criticizes-duffy-mullin/"
+      },
+      {
+       "name": "Daily Caller News Foundation",
+       "url": "https://dailycallernewsfoundation.org/2026/11/14/sean-duffy-doubles-down-congress-funding-request-transportation-air-traffic-control-systems-upgrade-50-billion-price/"
+      }
+     ],
+     "side_a": "Supporters of the request say the system is decades old, that Friday proved patchwork fixes are no longer safe, and that a one-time, full overhaul is cheaper than years of piecemeal repairs and more shutdowns. Keeping planes safely in the air is a core job of government, they argue, and Congress has kicked this can down the road for too long.",
+     "side_a_label": null,
+     "side_b": "Skeptics, from Democrats demanding an accounting to fiscal conservatives like Greene, say a crisis is being used to win a blank check. They note that the router swap was routine maintenance outside the modernization program, that billions already approved have not been fully explained, and that the country already collects enough in taxes to fix its infrastructure if it set better priorities.",
+     "side_b_label": null,
+     "question_underneath": "When a crisis exposes neglect, is it the moment to act boldly, or the moment we are most likely to be stampeded? Stewardship vs. the urgency of fear.",
+     "thinkers_note": "'Never let a serious crisis go to waste' and the long-running debate over crisis-driven policy (Rahm Emanuel; Robert Higgs, Crisis and Leviathan) Stewardship of the common good: maintaining what we inherit (Burke on society as a partnership between the living, the dead and the unborn) Accountability for public money: 'power of the purse' as a check on the executive (Federalist No. 58) Utilitarian calculus: the cost of an overhaul vs. the cost of more grounded flights and safety risks",
+     "sitting_id": "p1",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Iran strikes at U.S. forces in Bahrain again as pressure grows to end a nine-month war",
+     "summary": "Iran's Revolutionary Guard said it launched six drones Sunday at a U.S. air-defense radar at a helicopter base in Bahrain, its second strike there in three days in retaliation for U.S. strikes; Bahrain said the drones were intercepted. The attacks come as Democrats, newly elected to control Congress, promise to act to end the war in January, and Rep. Thomas Massie seeks enough Republican votes to force a war powers vote by mid-December.",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/15/iran-launches-drone-attacks-against-us-military-base-in-bahrain",
+       "archived": "https://web.archive.org/web/20261115174608/https://www.theguardian.com/world/2026/nov/15/iran-launches-drone-attacks-against-us-military-base-in-bahrain"
+      },
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/world/2026/11/15/iran-targets-bahrain-twice-after-months-quiet-claiming-retaliation-against-us/",
+       "archived": "http://web.archive.org/web/20261115180132/https://www.washingtonpost.com/world/2026/11/15/iran-targets-bahrain-twice-after-months-quiet-claiming-retaliation-against-us/"
+      },
+      {
+       "name": "Irish Times (Reuters)",
+       "url": "https://www.irishtimes.com/world/middle-east/2026/11/15/iranian-drone-attacks-on-bahrain-ramp-up-pressure-on-us-to-end-war/",
+       "archived": "https://web.archive.org/web/20261116042642/https://www.irishtimes.com/world/middle-east/2026/11/15/iranian-drone-attacks-on-bahrain-ramp-up-pressure-on-us-to-end-war/"
+      },
+      {
+       "name": "Iran International",
+       "url": "https://www.iranintl.com/en/202611142466",
+       "archived": "http://web.archive.org/web/20261115050634/https://www.iranintl.com/en/202611142466"
+      }
+     ],
+     "side_a": "Those who want to keep up pressure say Iran's renewed attacks show the regime responds only to strength, that pulling back now would reward aggression against U.S. troops and Gulf allies, and that a president must be free to defend American forces without waiting on Congress.",
+     "side_a_label": null,
+     "side_b": "Those who want the war ended say nine months of fighting without a clear goal or congressional authorization is exactly what the Constitution's war powers were meant to prevent. They point to polls showing most Americans want Congress to end the conflict and argue that each tit-for-tat strike risks a wider war with no exit.",
+     "side_b_label": null,
+     "question_underneath": "Who should decide when a nation goes to war and when it stops, and what makes a war just to continue? The just war vs. the endless war.",
+     "thinkers_note": "Just war theory: right intention, proportionality and reasonable hope of success (Augustine; Aquinas, Summa Theologiae II-II, q. 40) Separation of powers: Congress declares war, the president commands (U.S. Constitution, Art. I, Sec. 8; War Powers Resolution of 1973) Deterrence and credibility: 'If you want peace, prepare for war' (Vegetius) Slippery slope: limited strikes that grow into open-ended commitments (the Vietnam-era Gulf of Tonkin lesson)",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Democrats debate their 2028 message: 'Make America Nice Again' or fight fire with fire",
+     "summary": "After their midterm sweep, potential 2028 Democratic contenders are split over what voters asked for, Axios reports. Pete Buttigieg and Pennsylvania Gov. Josh Shapiro say Americans want an end to 'ruthless chaos and cruelty,' Texas Sen.-elect James Talarico cites 'love my neighbor,' while California Gov. Gavin Newsom boasts his state 'fought fire with fire' and Michigan Sen.-elect Abdul El-Sayed says he takes opponents 'to the mud.' The 'Make America Nice Again' line has become a meme online.",
+     "sources": [
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/11/15/democrats-make-america-nice-again-2028"
+      },
+      {
+       "name": "Vox",
+       "url": "https://www.vox.com/today-explained-newsletter/509237/make-america-nice-again-midterms",
+       "archived": "http://web.archive.org/web/20261113001737/https://www.vox.com/today-explained-newsletter/509237/make-america-nice-again-midterms"
+      },
+      {
+       "name": "Political Wire",
+       "url": "https://politicalwire.com/2026/11/15/make-america-nice-again/"
+      }
+     ],
+     "side_a": "The 'decency' camp says voters, including many in red states, recoiled from politics as blood sport, and that a party offering calm, competence and neighborliness can build a lasting majority and help heal divided families and communities.",
+     "side_a_label": null,
+     "side_b": "The 'fighter' camp says niceness is unilateral disarmament against opponents who play hardball, that voters reward strength, and that even the winning 'decency' candidates ran tens of millions of dollars in tough negative ads. Some conservatives mock the slogan as a sign Democrats still define themselves only against Trump.",
+     "side_b_label": null,
+     "question_underneath": "Can a free people be governed well by those who will not fight hard, or does hard fighting corrupt the people who wage it? Virtue in politics vs. effectiveness in politics.",
+     "thinkers_note": "Machiavelli: a prince must learn 'how not to be good' to survive (The Prince, ch. 15) Aristotle on civic friendship as the bond of a healthy city (Nicomachean Ethics VIII) 'Love your neighbor' and the ethic of the Sermon on the Mount (Matthew 5:43-44) Lincoln's 'with malice toward none' and the politics of reconciliation (Second Inaugural Address)",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "'Yalta 2.0'? A planned Trump-Putin-Xi summit in Shenzhen raises fears of a great-power carve-up",
+     "summary": "The Kremlin says Vladimir Putin, Xi Jinping and Donald Trump will meet Nov. 19 in Shenzhen on the sidelines of the APEC summit to discuss flashpoints from Ukraine and Iran to nuclear weapons and AI. Ukraine's President Volodymyr Zelenskyy warned the meeting must not echo the 1945 Yalta Conference, while Reuters reports analysts see slim odds of any grand bargain.",
+     "sources": [
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/world/russia/yalta-wary-trump-putin-xi-summit-rcna609291"
+      },
+      {
+       "name": "Reuters",
+       "url": "https://www.reuters.com/5f374b32b07b/world/china/new-yalta-trump-putin-push-meeting-that-xi-is-wary-hosting-2026-11-14/"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/world/2026/nov/14/yalta-trump-xi-putin-china-apec"
+      },
+      {
+       "name": "Anadolu Agency",
+       "url": "https://aa.com.tr/en/world/morning-briefing-nov-15-2026/4125489"
+      }
+     ],
+     "side_a": "Supporters of the summit say the leaders of the three biggest nuclear powers talking directly is the surest way to lower the risk of catastrophe, and that realistic deals on wars and weapons beat moralizing from the sidelines.",
+     "side_a_label": null,
+     "side_b": "Critics say smaller nations like Ukraine and Taiwan could be bargained over without a seat at the table, that it lends legitimacy to aggressors, and that history remembers Yalta as a betrayal of peoples handed to spheres of influence.",
+     "side_b_label": null,
+     "question_underneath": "Is peace among the powerful worth a price paid by the weak? Order vs. justice in a world of great powers.",
+     "thinkers_note": "Thucydides' Melian Dialogue: 'the strong do what they can and the weak suffer what they must' Realism vs. idealism in foreign policy (Kissinger, Diplomacy; Woodrow Wilson's Fourteen Points) Self-determination of peoples (Atlantic Charter, 1941; UN Charter, Art. 1) Appeasement and its lessons (Munich 1938; Churchill, The Gathering Storm)",
+     "sitting_id": "p4",
+     "sitting_match": "fuzzy"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Petition to cancel Netflix's 'The Body' nears 90,000 signatures as the show climbs the charts",
+     "summary": "A CitizenGo petition calls Netflix's new YA horror drama 'The Body,' about a Catholic-school dance troupe whose initiation 'sacrifice' goes wrong, blasphemous and anti-Christian; it has drawn tens of thousands of signatures and was reported near 90,000 by the weekend. The series, released Nov. 11, rose to No. 2 in the U.S. and into Netflix's Top 10 in 83 countries, with strong critic scores, and its showrunner says it explores both faith's beauty and systems that exploit it.",
+     "sources": [
+      {
+       "name": "What's on Netflix",
+       "url": "https://www.whats-on-netflix.com/news/the-body-netflix-top-10-cancellation-petition/"
+      },
+      {
+       "name": "Yahoo Entertainment",
+       "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/why-petition-cancel-body-just-153056835.html"
+      },
+      {
+       "name": "Church Gazette",
+       "url": "https://www.churchgazette.com/world/petition-netflix-the-body-satanic-ritual-20261111-101220.html",
+       "archived": "https://web.archive.org/web/20261116043023/https://www.churchgazette.com/world/petition-netflix-the-body-satanic-ritual-20261111-101220.html"
+      }
+     ],
+     "side_a": "Petition backers say Netflix repeatedly mocks Christianity in ways it would never mock other faiths, that turning Catholic schoolgirls and sacred imagery into a 'sex-and-Satan' story aimed at teens disrespects millions of families, and that consumers organizing a boycott is a fair, peaceful way to push back.",
+     "side_a_label": null,
+     "side_b": "Defenders say art has always wrestled with religion, horror included, that no one is forced to watch, and that the show treats faith seriously rather than simply mocking it. They argue that pressure campaigns to cancel art, whatever side they come from, chill free expression, and point to the show's strong ratings as viewers voting with their remotes.",
+     "side_b_label": null,
+     "question_underneath": "Does a society owe reverence to what its people hold sacred, or does freedom require that nothing be beyond depiction? Reverence vs. liberty of expression.",
+     "thinkers_note": "Liberty of thought and discussion, including offensive speech (John Stuart Mill, On Liberty, ch. 2) 'Thou shalt not take the name of the Lord thy God in vain' and the tradition of guarding the sacred (Exodus 20:7) Art as moral formation of the young (Plato, Republic, Books II-III) Market freedom and consumer sovereignty: boycotts as voluntary expression (Adam Smith; Milton Friedman)",
+     "sitting_id": "c1",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Todrick Hall defends his slavery-themed musical 'Midnight' amid backlash and death threats",
+     "summary": "Todrick Hall's off-Broadway musical 'Midnight,' which he wrote, directed, choreographed and stars in, follows an enslaved Black man and, in its second act, flips the racial hierarchy to show Black people enslaving white people. Critics accuse it of turning the horrors of slavery into glossy spectacle; Hall says it draws on his family's history, that he has received death threats and slurs, and that the show has been extended through Jan. 3, 2027.",
+     "sources": [
+      {
+       "name": "Complex via Yahoo",
+       "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/todrick-hall-defends-midnight-amid-162433396.html"
+      },
+      {
+       "name": "Complex",
+       "url": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/sydney-sweeney-pink-todrick-hall-slave-play-backlash"
+      }
+     ],
+     "side_a": "Hall and his defenders say art is supposed to provoke, that a Black artist telling a story rooted in his own family's history has every right to imagine it boldly, that no one speaks for Black people as a monolith, and that audiences can reject the show without threats and abuse.",
+     "side_a_label": null,
+     "side_b": "Critics say slavery is a real atrocity whose victims deserve sober remembrance, not role-reversal spectacle, and that inverting the hierarchy risks trivializing that suffering or feeding revisionist ideas. To them, the backlash is a community holding an artist accountable for how he handles a shared wound.",
+     "side_b_label": null,
+     "question_underneath": "Are some subjects too grave for certain kinds of art, and who has the authority to decide? Artistic freedom vs. the duty of memory.",
+     "thinkers_note": "Aristotle on tragedy and catharsis: art that confronts suffering can purify and teach (Poetics) The ethics of memory: remembering the victims rightly (Elie Wiesel; Primo Levi) Theodor Adorno: 'To write poetry after Auschwitz is barbaric' and the limits of aestheticizing horror Free expression and the 'marketplace of ideas' (Justice Holmes, Abrams v. United States, dissent)",
+     "sitting_id": "c2",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "A Los Angeles teacher's video about 'unpacking the midterms' with students revives the fight over politics in class",
+     "summary": "A Los Angeles teacher posted a TikTok saying she discussed the midterm results with a few seniors during her lunch break, celebrating 'historical' wins such as the first openly gay, trans and Black women candidates and Texas flipping Democratic, while saying she did not tell students how to vote. After Libs of TikTok shared it, critics called it partisan bias and urged parents to homeschool; supporters say students old enough to vote asked her about current events.",
+     "sources": [
+      {
+       "name": "The Nerd Stash",
+       "url": "https://thenerdstash.com/california-teacher-slammed-for-discussing-democrats-midterm-win-with-students-why-are-these-freaks-allowed-around-children/"
+      },
+      {
+       "name": "Ed Watch Daily",
+       "url": "https://edwatchdaily.com/if-you-live-in-los-angeles-and-if-you-love-your-children-youll-homeschool/",
+       "archived": "https://web.archive.org/web/20261116043230/https://edwatchdaily.com/if-you-live-in-los-angeles-and-if-you-love-your-children-youll-homeschool/"
+      }
+     ],
+     "side_a": "Critics say public-school teachers hold authority over other people's children and should stay politically neutral; openly celebrating one party's wins, even at lunch, signals to students which views are approved, and parents who disagree have a right to protect their kids from that influence, including by homeschooling.",
+     "side_a_label": null,
+     "side_b": "Defenders say the students were seniors, some old enough to vote, who sought her out on her own time, that discussing history-making events is part of education, and that she did not tell them how to vote. They see the backlash as a viral pile-on that makes teachers afraid to engage with the world at all.",
+     "side_b_label": null,
+     "question_underneath": "Who has the first claim to shape a child's mind: the family, the state's schools or the child's own developing reason? Education as formation vs. education as neutrality.",
+     "thinkers_note": "Parents as the primary educators of their children (Pierce v. Society of Sisters, 1925; Catechism of the Catholic Church 2223) Education for democratic citizenship (John Dewey, Democracy and Education) The teacher's duty of impartiality (Max Weber, 'Science as a Vocation') Subsidiarity: decisions belong at the most local competent level (Pius XI, Quadragesimo Anno)",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo XIV in Peru: transhumanism is a 'mirage' for 'millionaires seeking immortality,' and God made us male and female",
+     "summary": "On his trip to his adopted homeland, Pope Leo XIV told a Catholic university in Chiclayo on Nov. 13 that science must not become 'a privilege reserved for millionaires seeking immortality, while entire peoples suffer,' calling human limitation 'not a manufacturing defect, but rather the very condition of human grandeur.' Days earlier in Lima he said the Church must assert 'with even greater conviction that God created the human person male and female,' while condemning machismo, violence against women and 'the subordination of one spouse to the other.' Both messages drew praise and pushback on X this weekend.",
+     "sources": [
+      {
+       "name": "America Magazine",
+       "url": "https://www.americamagazine.org/vatican-dispatch/2026/11/13/pope-leo-chiclayo-catholic-university-transhumanism/",
+       "archived": "http://web.archive.org/web/20261114131813/https://www.americamagazine.org/vatican-dispatch/2026/11/13/pope-leo-chiclayo-catholic-university-transhumanism/"
+      },
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-the-search-for-truth-must-become-service-for-humanity.html"
+      },
+      {
+       "name": "EWTN News",
+       "url": "https://www.ewtnnews.com/world/americas/pope-leo-xiv-urges-peru-to-embrace-catholic-social-teaching-for-a-better-society",
+       "archived": "http://web.archive.org/web/20261113025144/https://www.ewtnnews.com/world/americas/pope-leo-xiv-urges-peru-to-embrace-catholic-social-teaching-for-a-better-society"
+      },
+      {
+       "name": "National Catholic Reporter",
+       "url": "https://www.ncronline.org/vatican/vatican-news/lima-peru-pope-leo-rails-against-abuse-and-subordination-women",
+       "archived": "http://web.archive.org/web/20261114044010/https://www.ncronline.org/vatican/vatican-news/lima-peru-pope-leo-rails-against-abuse-and-subordination-women"
+      }
+     ],
+     "side_a": "Admirers say the pope is defending a classic Christian anthropology against the age's two great temptations: denying the givenness of the body and the sexes, and dreaming of escaping death through technology. Accepting limits, they argue, makes people humble, grateful and attentive to the weak, while his defense of women shows that tradition and dignity go together.",
+     "side_a_label": null,
+     "side_b": "Critics come from several directions. Some progressives say restating male-and-female teaching wounds LGBTQ people; techno-optimists say medicine that extends life is a moral good, not a rich man's vanity; and some thinkers say the Church should not set limits on what science may seek. Others welcome his words on women but say the Church itself should do more on equality.",
+     "side_b_label": null,
+     "question_underneath": "Is human finitude a flaw to be engineered away, or part of what makes us human? Nature as given vs. nature as raw material.",
+     "thinkers_note": "'Male and female he created them' (Genesis 1:27) and the natural-law tradition of human nature as given (Aquinas) C.S. Lewis, The Abolition of Man: 'Man's conquest of Nature' as power of some men over others Francis Bacon's project of 'the relief of man's estate' and the transhumanist hope (Nick Bostrom) Memento mori and the Stoic acceptance of mortality (Seneca, On the Shortness of Life)",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Dortmund's Felix Nmecha drops his 'Crown for Jesus' goal celebration after pressure, sparking a free-religion fight",
+     "summary": "Borussia Dortmund midfielder Felix Nmecha 'laid down the crown for Jesus Christ' after scoring against SV Elversberg; amid concerns over his ties to the Ballers in God network, the club told him not to repeat the gesture, and Germany coach Jürgen Klopp confirmed Nmecha agreed to stop. Nmecha said his message 'was never intended to promote intolerance, discrimination or hatred in any form,' and some fans and commentators accuse the club of a double standard.",
+     "sources": [
+      {
+       "name": "Goal.com",
+       "url": "https://www.goal.com/en/news/borussia-dortmund-face-fierce-criticism-from-their-own-fans-after-two-controversial-decisions/bltd7b09a8cc55b0117"
+      },
+      {
+       "name": "Townhall",
+       "url": "https://townhall.com/news/josephchalfant/2026/11/14/german-soccer-fans-are-outraged-that-one-player-is-a-proud-christian-n2686470"
+      },
+      {
+       "name": "deublitz.de",
+       "url": "https://deublitz.de/en/news/bvb-reagiert-auf-torjubel-von-nmecha"
+      }
+     ],
+     "side_a": "Nmecha's supporters say a humble gesture giving glory to Christ harms no one, that athletes celebrate everything from causes to rap lyrics, and that singling out Christian expression shows a double standard against faith in European public life.",
+     "side_a_label": null,
+     "side_b": "The club and its defenders say a football club represents a diverse fan base and must keep a professional distance from religious movements, especially one, Ballers in God, that it says should not promote its current players, and that limiting on-field gestures is about neutrality, not hostility to faith.",
+     "side_b_label": null,
+     "question_underneath": "Should faith be kept private in shared public spaces, or does true freedom of religion include the freedom to profess it openly? Public witness vs. public neutrality.",
+     "thinkers_note": "'Whoever acknowledges me before others, I will acknowledge' (Matthew 10:32) Freedom of religion includes public manifestation (Universal Declaration of Human Rights, Art. 18; Vatican II, Dignitatis Humanae) Liberal neutrality and 'public reason' (John Rawls, Political Liberalism) Laïcité and the European tradition of a secular public square",
+     "sitting_id": "r2",
+     "sitting_match": "fuzzy"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Jordan sentences three men to death for the deadly attack on a Greek Orthodox church",
+     "summary": "Jordan's State Security Court on Sunday sentenced three men to death by hanging for the Oct. 23 attack on a funeral at St. George's Greek Orthodox Church in Karak governorate that killed nine people and wounded 25. Two men who supplied weapons got six years each; the rulings are subject to appeal and review.",
+     "sources": [
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/15/jordan-sentences-three-men-to-death-by-hanging-after-deadly-church-attack",
+       "archived": "http://web.archive.org/web/20261115174312/https://www.aljazeera.com/news/2026/11/15/jordan-sentences-three-men-to-death-by-hanging-after-deadly-church-attack"
+      },
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo",
+       "archived": "https://web.archive.org/web/20261116043446/https://www.bbc.com/news/articles/c3rrg9xgqlwpo"
+      },
+      {
+       "name": "NBC News",
+       "url": "https://www.nbcnews.com/world/middle-east/jordan-sentences-three-men-death-deadly-church-attack-rcna609390",
+       "archived": "https://web.archive.org/web/20261115191655/https://www.nbcnews.com/world/middle-east/jordan-sentences-three-men-death-deadly-church-attack-rcna609390"
+      }
+     ],
+     "side_a": "Supporters of the verdict say killing worshippers at a funeral is among the gravest crimes imaginable, that the harshest penalty affirms the equal worth of Jordan's Christian minority, and that swift justice deters further attacks on vulnerable religious communities.",
+     "side_a_label": null,
+     "side_b": "Opponents of the death penalty, including many Christians and human-rights groups, honor the victims but say execution cannot undo the killings, that the state should not take life when it can protect society by other means, and that a special security court acting quickly raises fair-trial concerns.",
+     "side_b_label": null,
+     "question_underneath": "What does justice owe the murdered, and may the state answer killing with killing? Retribution vs. mercy.",
+     "thinkers_note": "Lex talionis and proportional justice (Exodus 21:23-25; Kant, Metaphysics of Morals) 'Vengeance is mine, says the Lord' and the Christian call to mercy (Romans 12:19) Catholic teaching that the death penalty is 'inadmissible' (Catechism of the Catholic Church 2267, as revised 2018) Deterrence and the utilitarian case for and against capital punishment (Bentham; Cesare Beccaria, On Crimes and Punishments)",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
