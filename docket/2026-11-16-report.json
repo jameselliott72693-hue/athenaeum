@@ -1,0 +1,330 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-16",
+ "date_long": "Monday, November 16, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-16.json",
+  "sha256": "e9e335d11682cf0797b2e3c9f3793c04d30e9e4d4ff00e4450ca2912915ff1ef",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "White House orders agencies to get its sign-off before any employee testifies to Congress",
+     "summary": "In a one-page memo Monday, White House counsel Will Scharf told every executive department and agency to notify and get approval from his office and the Office of Legislative Affairs before any employee agrees to appear before a congressional committee, calling it the 'established White House consultation process.' It comes as Democrats, who won both chambers in the midterms, prepare investigations starting in January; a White House official said the administration 'will not be extorted, intimidated, or threatened into submission by politically motivated baseless investigations.'",
+     "sources": [
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/11/16/exclusive-white-house-requires-signoff-before-agency-staffers-testify-to-congress"
+      },
+      {
+       "name": "PBS News (full memo)",
+       "url": "https://www.pbs.org/newshour/politics/read-the-full-white-house-memo-requiring-agencies-to-get-approval-before-testifying-in-front-of-congress",
+       "archived": "http://web.archive.org/web/20261116210342/https://www.pbs.org/newshour/politics/read-the-full-white-house-memo-requiring-agencies-to-get-approval-before-testifying-in-front-of-congress"
+      },
+      {
+       "name": "Washington Times",
+       "url": "https://www.washingtontimes.com/news/2026/nov/16/white-house-says-agency-officials-must-get-approval-testifying/"
+      },
+      {
+       "name": "UPI",
+       "url": "https://www.upi.com/Top_News/US/2026/11/16/white-house-tells-agencies-personnel-need-permission-to-testify/2461794868494/"
+      }
+     ],
+     "side_a": "Supporters say a president is entitled to coordinate what his own branch tells Congress, that past administrations of both parties have used similar clearance processes, and that the Supreme Court has said investigations meant only to 'punish' or for 'personal aggrandizement' are illegitimate. Screening requests, they argue, keeps reasonable oversight going while stopping a wave of partisan fishing expeditions from paralyzing the government.",
+     "side_a_label": null,
+     "side_b": "Critics say Congress's power to investigate comes from Article I, not from White House permission, and that routing every witness through the president's lawyers is meant to scare off whistleblowers and hide wrongdoing. They see the memo, coming after a letter warning that aggressive oversight could be treated as a crime, as an attempt to blunt the voters' decision to hand Democrats a check on the administration.",
+     "side_b_label": null,
+     "question_underneath": "Who gets to decide what the people's representatives may learn about how the people's government is run? The balance between an energetic executive and an accountable one.",
+     "thinkers_note": "Separation of powers and 'ambition must be made to counteract ambition' (Madison, Federalist No. 51) An energetic, unified executive (Hamilton, Federalist No. 70) and the doctrine of executive privilege (United States v. Nixon, 1974) Congress's inherent power of inquiry (McGrain v. Daugherty, 1927) vs. its limits (Watkins v. United States, 1957, the case Scharf's letter echoes) 'Who will guard the guardians?' (Juvenal) and Lord Acton on power and accountability",
+     "sitting_id": "p1",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Trump heads to Asia for a first-ever three-way nuclear summit with Xi and Putin",
+     "summary": "President Trump left Monday for Asia, where he is set to hold an unprecedented trilateral meeting with China's Xi Jinping and Russia's Vladimir Putin in Shenzhen alongside the APEC summit, aimed at opening talks on reducing nuclear weapons. Trump said he will raise Russia's war in Ukraine and may meet North Korea's Kim Jong Un; no binding agreement is expected.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/president-donald-trump-asia-a31165456bf217de16f1c4e646b72bd2"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
+       "archived": "http://web.archive.org/web/20261116064102/https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html"
+      },
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+       "archived": "http://web.archive.org/web/20261116224625/https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+       "archived": "http://web.archive.org/web/20261116125710/https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia"
+      }
+     ],
+     "side_a": "Supporters say talking directly with the leaders of the two other great nuclear powers is the surest way to lower the risk of catastrophe, that arms control has always meant dealing with adversaries, and that only a leader willing to sit down with rivals can get China into nuclear talks for the first time. Peace through strength, they argue, includes the willingness to negotiate.",
+     "side_a_label": null,
+     "side_b": "Skeptics worry that seating Putin as an equal partner while his war in Ukraine continues rewards aggression, that a three-way photo-op with Moscow and Beijing could sideline U.S. allies, and that summits without real preparation give dictators legitimacy and little in return. They note China has long refused binding arms limits and that a weakened president abroad may be tempted to trade too much.",
+     "side_b_label": null,
+     "question_underneath": "Is it wise to sit down with those you believe to be wrongdoers for the sake of preventing a greater evil? Prudence vs. principle in a dangerous world.",
+     "thinkers_note": "Realism and the balance of power (Thucydides' Melian Dialogue; Kissinger, Diplomacy) Reagan's 'trust, but verify' and the Cold War arms-control tradition Munich 1938 and the warning against appeasement (Churchill) Just-war and 'tranquility of order' as the aim of statecraft (Augustine, City of God XIX)",
+     "sitting_id": "p2",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Trump's tariffs are unpopular, but a Democratic Congress may find them hard to undo",
+     "summary": "Democrats campaigned against President Trump's tariffs as a tax on families and will take full control of Congress in January, but the Washington Post reports that reversing them won't be easy: Trump can veto any bill repealing the import taxes or curbing his authority, and Democrats are unlikely to have the votes to override.",
+     "sources": [
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/11/16/trump-tariffs-democratic-congress-canada-veto/faaff95c-e1ac-11f1-a99e-b3e3805c6b8b_story.html"
+      },
+      {
+       "name": "AP News (live updates)",
+       "url": "https://apnews.com/live/trump-asia-politics-news-updates-11-16-2026"
+      }
+     ],
+     "side_a": "Tariff defenders say they protect American factories and workers from unfair foreign competition, give the president leverage to win better trade deals, and correct decades of policy that shipped jobs overseas. Repealing them now, they argue, would throw away bargaining power in the middle of negotiations with China and others.",
+     "side_a_label": null,
+     "side_b": "Opponents say tariffs are paid by American consumers and businesses in higher prices, that voters just rejected them, and that the Constitution gives the power to tax and regulate trade to Congress, not the president. Reclaiming that power, they argue, is about restoring the proper role of the legislature as much as about prices.",
+     "side_b_label": null,
+     "question_underneath": "Should a nation protect its own producers at the cost of its consumers, and who should hold the power to decide? Free exchange vs. economic self-reliance.",
+     "thinkers_note": "Free trade and comparative advantage (Adam Smith, Wealth of Nations; David Ricardo) Protecting 'infant industries' and national economic strength (Alexander Hamilton, Report on Manufactures; Friedrich List) Article I, Section 8: the power to 'lay and collect Taxes, Duties' and 'regulate Commerce' belongs to Congress Bastiat's 'what is seen and what is not seen' on hidden costs",
+     "sitting_id": "p3",
+     "sitting_match": "question"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Trump says 'I don't take any responsibility' for the nationwide ground stop",
+     "summary": "Speaking publicly Monday for the first time about Friday's router-related nationwide grounding of all flights, the biggest U.S. air-travel disruption since 9/11, with more than 12,000 cancellations over the weekend, President Trump blamed old technology and the Biden administration, said Transportation Secretary Sean Duffy was in charge, and rejected suggestions his White House building projects distracted him ('You don't see me on a scaffold'). Democrats say only about $1 billion of $12.5 billion already approved for upgrades has been spent.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/nationwide-ground-stop-trump-air-travel-faa-6f58e64d9ced2543aaaf7317ec389d06"
+      },
+      {
+       "name": "Democracy Now! headlines",
+       "url": "https://www.democracynow.org/2026/11/16/headlines",
+       "archived": "http://web.archive.org/web/20261116160536/https://www.democracynow.org/2026/11/16/headlines"
+      },
+      {
+       "name": "NPR Morning Edition",
+       "url": "https://www.npr.org/programs/morning-edition/nx-s1-6013907/morning-edition-for-november-16-2026",
+       "archived": "https://web.archive.org/web/20261117043115/https://www.npr.org/programs/morning-edition/nx-s1-6013907/morning-edition-for-november-16-2026"
+      }
+     ],
+     "side_a": "Defenders say the failure came from decades-old equipment and a contractor's maintenance work, problems inherited from previous administrations, and that blaming the president for a router is political theater. The responsible thing now, they argue, is to fund a full modernization rather than assign blame.",
+     "side_a_label": null,
+     "side_b": "Critics say the leader of the government owns what happens on his watch, that 'I don't take any responsibility' is the opposite of leadership, and that money already approved sat largely unspent. Accountability, they argue, starts with the person at the top acknowledging the failure.",
+     "side_b_label": null,
+     "question_underneath": "What does it mean for a leader to be responsible for things he did not personally do? Command responsibility and the moral weight of office.",
+     "thinkers_note": "'The buck stops here' (Harry Truman) and the ethic of command responsibility Aristotle on magnanimity and owning one's actions (Nicomachean Ethics IV) Systemic vs. personal fault: the 'many hands' problem in public ethics (Dennis Thompson) Max Weber's 'ethic of responsibility' in Politics as a Vocation",
+     "sitting_id": "p4",
+     "sitting_match": "question"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Schools, libraries and families wrestle with what to do with David Walliams's books",
+     "summary": "After ITV News and the Guardian published reports last week in which several women accused the best-selling children's author and comedian of sexual misconduct, including some who say he groomed them as teenagers, retailers including Waterstones stopped selling his books and some schools and councils pulled them from shelves while others, like Kent, kept them. Walliams denies the allegations, saying he is 'not a sexual predator' and has not 'broken the law'; the debate over separating the art from the artist continued this week.",
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/cvkg5jkpl2pno",
+       "archived": "http://web.archive.org/web/20261116040729/https://www.bbc.co.uk/news/articles/cvkg5jkpl2pno"
+      },
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/uk-news/2026/nov/13/families-clear-homes-of-david-walliams-books-after-sexual-offence-allegations"
+      },
+      {
+       "name": "RNZ",
+       "url": "https://www.rnz.co.nz/life/culture/what-do-we-do-with-the-works-of-problematic-pop-culture-figures",
+       "archived": "http://web.archive.org/web/20261116001328/https://www.rnz.co.nz/life/culture/what-do-we-do-with-the-works-of-problematic-pop-culture-figures"
+      }
+     ],
+     "side_a": "Those removing the books say children's spaces deserve special care, that seeing the author's name and face can upset children who have heard the news, and that institutions should not keep promoting someone credibly accused of abusing young people. Shops and schools, they argue, are making reasonable choices about what to display, not banning anything.",
+     "side_a_label": null,
+     "side_b": "Others say books should stay available unless their content is unlawful, that the author has denied the claims and has not been charged, and that pulling stories children love punishes readers for the author's alleged conduct. Some argue it is better to talk with children about what happened than to sweep it away, and that blanket removals set a precedent for judging works by their makers.",
+     "side_b_label": null,
+     "question_underneath": "Can a good work be separated from a flawed maker, and how should a community act on accusations before they are proven?",
+     "thinkers_note": "The 'intentional fallacy' and the idea that a work stands on its own (Wimsatt and Beardsley; Barthes, 'The Death of the Author') Moral contagion and the duty to protect the vulnerable, especially children (Matthew 18:6) Presumption of innocence (Blackstone's ratio: better ten guilty escape than one innocent suffer) Libraries' free-access tradition vs. community standards (Milton, Areopagitica)",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Katharine Birbalsingh's 'Diversity Is Not Our Strength' sparks a fight over 'multicultural patriotism'",
+     "summary": "Headteacher Katharine Birbalsingh, promoting her new book Diversity Is Not Our Strength (published Nov. 12), is arguing that both the left and right broke multiculturalism and that Britain needs 'multicultural patriotism,' in which minority identities remain but loyalty to the nation and its shared culture come first. On X, critics on the right said she does not go far enough on deportations, while others defended her as a unifying middle path.",
+     "sources": [
+      {
+       "name": "Hachette UK (book page)",
+       "url": "https://www.hachette.co.uk/titles/katharine-birbalsingh-2/diversity-is-not-our-strength/9780349023021/",
+       "archived": "https://web.archive.org/web/20261117043205/https://www.hachette.co.uk/titles/katharine-birbalsingh-2/diversity-is-not-our-strength/9780349023021/"
+      },
+      {
+       "name": "LBC interview",
+       "url": "https://www.globalplayer.com/videos/2JsSfR5jk48/?collectionId=8ABUn&collectionTitle=Full+Interviews+From+LBC",
+       "archived": "http://web.archive.org/web/20261117043232/https://www.globalplayer.com/videos/2JsSfR5jk48/?collectionId=8ABUn&collectionTitle=Full%2BInterviews%2BFrom%2BLBC"
+      },
+      {
+       "name": "TRIGGERnometry interview",
+       "url": "https://www.triggerpod.co.uk/p/katharine-birbalsingh-cbe",
+       "archived": "https://web.archive.org/web/20261117043303/https://www.triggerpod.co.uk/p/katharine-birbalsingh-cbe"
+      }
+     ],
+     "side_a": "Supporters say a nation needs a common culture and loyalty to hold together, that celebrating difference for its own sake has left young people taught to dislike their own country, and that a shared civic identity open to people of any background is the best answer to both identity politics and ethnic nationalism.",
+     "side_a_label": null,
+     "side_b": "Critics come from two directions: some on the left say putting national culture 'first' pressures minorities to shed who they are and echoes old demands for assimilation, while some on the right say civic patriotism ignores the scale of immigration and that culture cannot be taught to newcomers fast enough. Both doubt a book-length appeal to unity can settle the question.",
+     "side_b_label": null,
+     "question_underneath": "What makes a people one people: blood, soil, creed, or shared loves? The old question of the one and the many.",
+     "thinkers_note": "Augustine's definition of a people as a multitude 'united by agreement on the objects of its love' (City of God XIX.24) E pluribus unum and civic nationalism (Renan, 'What Is a Nation?': a 'daily plebiscite') Burke on the 'little platoons' and inherited culture vs. Enlightenment universalism Liberal multiculturalism and the politics of recognition (Charles Taylor)",
+     "sitting_id": "c2",
+     "sitting_match": "question"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "HBO's first Harry Potter series clip draws fan backlash over a scene not in the books",
+     "summary": "HBO released the first clip from its upcoming Harry Potter series, and many fans objected online because it shows Hogwarts students chanting 'Dumbledore,' something that never happens in the books, reviving arguments over how faithful the long-awaited adaptation should be.",
+     "sources": [
+      {
+       "name": "The Tab",
+       "url": "https://thetab.com/2026/11/16/hbo-released-the-first-harry-potter-clip-and-people-are-fuming-over-cringy-book-change"
+      }
+     ],
+     "side_a": "Fans upset with the change say the point of a multi-season series was to finally adapt the books faithfully, that invented crowd moments feel cheap and out of character, and that a beloved story has earned respect from the people retelling it.",
+     "side_a_label": null,
+     "side_b": "Others say every adaptation has to translate a book into a different medium, that one short clip is too little to judge by, and that some freedom is needed for a series to work on screen and reach a new generation.",
+     "side_b_label": null,
+     "question_underneath": "What do we owe to the stories we inherit? Fidelity to the original vs. the freedom to make it live again.",
+     "thinkers_note": "Tradition as 'the democracy of the dead' (Chesterton, Orthodoxy) T.S. Eliot, 'Tradition and the Individual Talent': renewal within inheritance Aristotle's Poetics on what makes a plot whole and fitting The translator's dilemma: letter vs. spirit (Jerome; 2 Corinthians 3:6)",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo XIV ends a grueling 12-day South America homecoming in Peru",
+     "summary": "Pope Leo XIV said 'hasta luego' to Peru on Monday with a final Mass in Lima the Vatican said drew about 1.5 million people, capping a tour of Uruguay, Argentina and Peru that tested his stamina a month after lung cancer surgery; he was briefly struck by a devotional object thrown from the crowd but carried on. Along the way he pressed leaders such as Argentina's Javier Milei that economic growth must benefit all, and his crowning of a Marian statue in Chiclayo set off online debate about veneration of Mary.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/peru-pope-south-america-trip-lung-cancer-3caa0880058c29386385592a28ed9304"
+      },
+      {
+       "name": "AFP",
+       "url": "https://www.afp.com/en/pope-leo-wraps-south-america-homecoming-tested-health"
+      },
+      {
+       "name": "Vatican (Lima homily)",
+       "url": "https://www.vatican.va/content/leo-xiv/en/homilies/2026/documents/20261116-peru-messa-lima.html",
+       "archived": "https://web.archive.org/web/20261117043409/https://www.vatican.va/content/leo-xiv/en/homilies/2026/documents/20261116-peru-messa-lima.html"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/16/nx-s1-6042456/pope-leo-xiv-wraps-up-demanding-emotional-latin-america-tour"
+      }
+     ],
+     "side_a": "Admirers say the trip showed a shepherd going to the poor, the elderly, prisoners and the dangerous neighborhoods, reminding governments that markets exist for people and not the other way around, and that the huge crowds show the faith is alive in Latin America. Honoring Mary, they add, is ancient Christian practice that always points to her Son.",
+     "side_a_label": null,
+     "side_b": "Critics, including free-market supporters of Milei, say a pope should preach the Gospel rather than second-guess economic policy that is pulling countries out of crisis, and some worry about pushing an ailing pope through such a schedule. Many Protestants on X objected that crowning a statue of Mary as 'Queen of heaven' gives a creature honor that belongs to God alone.",
+     "side_b_label": null,
+     "question_underneath": "What does the Church owe the world: a word about souls, a word about bread, or both? And how should honor be given to the saints without taking from God?",
+     "thinkers_note": "Catholic social teaching on the universal destination of goods (Rerum Novarum, 1891; Centesimus Annus, 1991) Hayek and the free-market tradition on spontaneous order and the limits of central planning The distinction between worship (latria) and veneration (dulia/hyperdulia) (Second Council of Nicaea, 787; Aquinas) Reformation 'soli Deo gloria' and the critique of Marian devotion (Calvin, Institutes)",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "U.S. Catholic bishops open their fall assembly in Baltimore with AI and immigration on the agenda",
+     "summary": "America's Catholic bishops opened their annual fall meeting in Baltimore on Monday, which runs through Thursday with public sessions on Nov. 17 and 18 covering migration, a new task force on preserving human dignity in the age of AI, and reports of rising interest in the Church among young people. At the opening Mass, USCCB president Archbishop Paul Coakley urged the bishops to 'be aware of our blind spots' and return to their 'first love.'",
+     "sources": [
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/religion/2026/11/16/us-catholic-bishops-gather-discuss-ai-immigration/"
+      },
+      {
+       "name": "OSV News",
+       "url": "https://www.osvnews.com/at-opening-mass-for-fall-assembly-usccb-president-encourages-bishops-to-be-aware-of-blind-spots/"
+      },
+      {
+       "name": "National Catholic Reporter",
+       "url": "https://www.ncronline.org/news/ai-migration-and-church-renewal-bishops-fall-meeting-agenda",
+       "archived": "http://web.archive.org/web/20261028083814/https://www.ncronline.org/news/ai-migration-and-church-renewal-bishops-fall-meeting-agenda"
+      },
+      {
+       "name": "USCCB",
+       "url": "https://www.usccb.org/news/2026/us-bishops-meet-november-16-19-baltimore-assembly-be-livestreamed",
+       "archived": "http://web.archive.org/web/20261109174233/https://www.usccb.org/news/2026/us-bishops-meet-november-16-19-baltimore-assembly-be-livestreamed"
+      }
+     ],
+     "side_a": "Those who want the bishops to speak strongly on immigration and AI say the dignity of every person, from the migrant to the worker whose job is threatened by machines, is central to Church teaching, and that bishops would be failing their flocks if they stayed silent on the moral questions of the day.",
+     "side_a_label": null,
+     "side_b": "Others, including many Catholics who back stricter immigration enforcement, say nations have a right and duty to control their borders, that bishops should be careful not to sound like a political party, and that the Church's first job is renewal of faith, sacraments and catechesis, which the reports of young people's interest show is where the hunger is.",
+     "side_b_label": null,
+     "question_underneath": "What is the shepherd's first task: to guard the flock's faith, or to speak for the stranger and the vulnerable in public life, and can the two be separated?",
+     "thinkers_note": "'I was a stranger and you welcomed me' (Matthew 25:35) and the Catechism on the duty to welcome migrants and the right of nations to regulate migration (CCC 2241) Subsidiarity and prudential judgment of lay Catholics in politics (Quadragesimo Anno; Gaudium et Spes 43) Human dignity and technology: the danger of treating persons as means (Kant; Laborem Exercens on the priority of labor) Renewal from within: 'Repent, and do the works you did at first' (Revelation 2:5)",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Over 90,000 sign a faith-based petition to cancel Netflix's Catholic-school horror series 'The Body'",
+     "summary": "A CitizenGO petition aimed at Netflix content chief Peter Rice passed 90,000 signatures, accusing the new series The Body, set in a Catholic high school in 2004 with a mock ritual involving the Devil, of 'defiling the faith of millions of Christian families' and mocking prayer, the Mass and saints. The show, which premiered Nov. 11, has reached No. 2 in the U.S.; Netflix has not commented, and counter-petitions are asking for a second season.",
+     "sources": [
+      {
+       "name": "The Tab / Filmshrine",
+       "url": "https://thetab.com/filmshrine/2026/11/16/why-have-more-than-90k-people-signed-a-petition-to-cancel-netflixs-the-body-before-season-2/"
+      },
+      {
+       "name": "Collider",
+       "url": "https://collider.com/the-body-netflix-cancellation-petition/"
+      },
+      {
+       "name": "CitizenGO petition",
+       "url": "https://citizengo.org/en-us/fr/19942-netflix--cancel-the-body",
+       "archived": "http://web.archive.org/web/20261115125231/https://citizengo.org/en-us/fr/19942-netflix--cancel-the-body"
+      }
+     ],
+     "side_a": "Petitioners say a company that takes Christian families' money should not use it to mock their faith, that marketing lines like 'pray hard and sin even harder' are aimed at teenagers, and that believers have every right to speak up and vote with their wallets, as other groups do when they feel their sacred things are ridiculed.",
+     "side_a_label": null,
+     "side_b": "Defenders of the show say it is fiction that deliberately leaves the supernatural open to faith or doubt, that many critics signed before seeing it, and that art has always explored belief, sin and hysteria. People who dislike it can simply not watch, they argue, and pressure campaigns to cancel shows chill creative freedom no matter who leads them.",
+     "side_b_label": null,
+     "question_underneath": "Where is the line between free expression and contempt for what others hold sacred, and what is the right response when one's faith is mocked?",
+     "thinkers_note": "Mill on liberty and the 'marketplace of ideas' (On Liberty, ch. 2) Blasphemy and reverence for the holy: the Third Commandment (Exodus 20:7) 'Blessed are you when they revile you' and the Christian ethic of enduring mockery (Matthew 5:11) The Salem trials and moral panic as a cautionary tale (Arthur Miller, The Crucible), a theme the show itself evokes",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
