@@ -1,0 +1,383 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-17",
+ "date_long": "Tuesday, November 17, 2026",
+ "title": "Nightly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "reports/data_2026-11-17.json",
+  "sha256": "a68e123b475ce9746fa091e5af653aa63782d398d853326cc5391a7df1ddc288",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Supreme Court leaves Maryland's 'sensitive places' gun bans standing, as Justice Thomas signals doubts",
+     "summary": "On Monday the Court declined to hear Novotny v. Moore, leaving in place Maryland's bans on carrying guns on public transit, in parks, at amusement venues, health-care facilities and places that serve alcohol. Justice Thomas agreed review should be denied because the challenge swept in many distinct laws, but wrote that he doubts such broad bans fit the historical 'sensitive places' tradition and urged the Court to take up a narrower case.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/supreme-court-guns-sensitive-places-maryland-clarence-thomas-78c63d55b2c77bd7abc6f0fe77169902"
+      },
+      {
+       "name": "Thomas statement (PDF)",
+       "url": "https://www.supremecourt.gov/opinions/26pdf/25-1324_0pm1.pdf",
+       "archived": "http://web.archive.org/web/20261117082621/https://www.supremecourt.gov/opinions/26pdf/25-1324_0pm1.pdf"
+      },
+      {
+       "name": "SCOTUSblog",
+       "url": "https://www.scotusblog.com/2026/11/supreme-court-turns-down-dei-related-disputes-and-second-amendment-challenge-to-gun-bans-in-sens/",
+       "archived": "http://web.archive.org/web/20261116204951/https://www.scotusblog.com/2026/11/supreme-court-turns-down-dei-related-disputes-and-second-amendment-challenge-to-gun-bans-in-sens/"
+      }
+     ],
+     "side_a": "Gun-rights supporters say Bruen promised that carry rights would be judged by history, yet states have redrawn the map so that most of daily life is a 'sensitive place.' A right you cannot exercise on the bus, in the park, or at dinner is a right in name only, and they read Thomas's statement as notice that the Court will eventually say so.",
+     "side_a_label": null,
+     "side_b": "Supporters of the Maryland law say crowded, enclosed or vulnerable places (transit, hospitals, bars, places full of children) are exactly where legislatures have always been allowed to limit weapons. Elected lawmakers, not judges hunting for 18th-century analogues, are best placed to weigh public safety, and the Court was right to leave the law alone.",
+     "side_b_label": null,
+     "question_underneath": "Liberty versus order: when a right is fundamental, who decides where it ends, and can a right be hemmed in so tightly that it is effectively denied?",
+     "thinkers_note": "Rights as pre-political (Locke's natural right of self-preservation; Blackstone's 'auxiliary right' of arms) versus the state's police power to secure the common peace (Hobbes). Originalism and appeal to historical tradition (Bruen's text-and-history test) versus living-constitution and balancing-of-interests reasoning. A slippery-slope worry from one side (exceptions swallowing the rule) and a precautionary, utilitarian safety argument from the other.",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Supreme Court turns away Trump administration appeal over UC research grants cut for DEI",
+     "summary": "In Trump v. Thakur the Court on Monday denied, without comment or noted dissent, the administration's bid to undo lower-court orders reinstating University of California research grants that were cut over DEI-related concerns. It is not a final merits ruling; the case continues in lower courts.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/supreme-court-trump-administration-dei-36d846810d632fba17364355de99efa8",
+       "archived": "http://web.archive.org/web/20261117132053/https://apnews.com/article/supreme-court-trump-administration-dei-36d846810d632fba17364355de99efa8"
+      },
+      {
+       "name": "Los Angeles Times",
+       "url": "https://www.latimes.com/politics/story/2026-11-16/supreme-court-turns-down-trumps-plan-to-cut-off-uc-research-grants-that-promote-dei",
+       "archived": "http://web.archive.org/web/20261117110241/https://www.latimes.com/politics/story/2026-11-16/supreme-court-turns-down-trumps-plan-to-cut-off-uc-research-grants-that-promote-dei"
+      },
+      {
+       "name": "SCOTUSblog case page",
+       "url": "https://www.scotusblog.com/cases/trump-v-thakur/",
+       "archived": "http://web.archive.org/web/20261112175451/https://www.scotusblog.com/cases/trump-v-thakur/"
+      }
+     ],
+     "side_a": "The researchers and their supporters say grants were cancelled midstream for the viewpoints they were seen to promote, not for scientific merit, and that the government cannot punish disfavored ideas or ignore the procedures Congress set for terminating awards. They see the denial as a check on executive overreach in academia.",
+     "side_a_label": null,
+     "side_b": "The administration and its supporters say taxpayers' money should follow the President's policy priorities, that the executive has broad discretion over discretionary grants, and that race-conscious DEI programming is itself a form of discrimination the government should stop funding. Lower courts, they argue, should not be managing the federal grant portfolio.",
+     "side_b_label": null,
+     "question_underneath": "Who governs the university: does public funding give the state the right to shape what scholars pursue, or must the free pursuit of knowledge be shielded from whoever holds power?",
+     "thinkers_note": "Academic freedom and the free marketplace of ideas (Mill's On Liberty; the AAUP tradition) versus 'he who pays the piper calls the tune' and democratic accountability for spending. Rule-of-law and procedural-justice arguments (Fuller's demand that rules be followed as written) versus arguments from a unitary executive. Competing visions of equality: equality of treatment (colorblind principle, Justice Harlan's Plessy dissent) versus remedial or substantive equality.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Senate clears a key 70-27 hurdle on a bipartisan permitting overhaul",
+     "summary": "The Senate voted 70-27 on Monday to end debate on Sen. Shelley Moore Capito's substitute to H.R. 2347, the Bipartisan American Affordability and Jobs Act, which aims to speed energy, mining and data-center projects by shortening environmental reviews and limiting lawsuits. More votes in the Senate and House approval still lie ahead before the January handover to a Democratic Congress.",
+     "sources": [
+      {
+       "name": "The Hill",
+       "url": "https://thehill.com/homenews/senate/6223468-senate-advances-baja-permitting-reform/"
+      },
+      {
+       "name": "Bloomberg Government",
+       "url": "https://news.bgov.com/bloomberg-government-news/permitting-overhaul-measure-advances-in-bipartisan-senate-vote",
+       "archived": "http://web.archive.org/web/20261118043921/https://news.bgov.com/bloomberg-government-news/permitting-overhaul-measure-advances-in-bipartisan-senate-vote"
+      }
+     ],
+     "side_a": "Backers in both parties say America cannot build power lines, mines, or the electricity AI data centers need when reviews take years and every project can be tied up in court. Faster permits, they argue, mean cheaper energy, more jobs, and even faster clean-energy buildout.",
+     "side_a_label": null,
+     "side_b": "Opponents, including Sen. Maria Cantwell, tribal leaders and environmental groups, say the bill rolls back protections for endangered species, clean water and public lands and narrows the public's day in court. Speed, they argue, is being bought by silencing affected communities and future generations.",
+     "side_b_label": null,
+     "question_underneath": "Progress versus stewardship: how much of the natural world and of local consent should a nation trade for growth, and who speaks for those who bear the cost?",
+     "thinkers_note": "Utilitarian, aggregate-welfare reasoning (Bentham; cost-benefit analysis) versus duties of stewardship and care for creation (Genesis 2:15; Leopold's land ethic; Laudato Si'). Burke's partnership 'between those who are living, those who are dead, and those who are to be born' invoked by both sides: one for building the future, one for conserving the inheritance. Due-process and participation arguments (the right to be heard) versus efficiency and the classic complaint that justice delayed is justice denied.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Nvidia's leadership scandal sets off a Washington push to police AI chip makers like national-security assets",
+     "summary": "After Jensen Huang resigned as Nvidia CEO over reported affairs, including one with a former executive U.S. intelligence reportedly flagged as a Chinese spy (China denies it), lawmakers are pressing for tighter chip-export rules and more direct security oversight of AI companies and their leaders. Bills such as the Chip Security Act and AI Overwatch Act are drawing new momentum.",
+     "sources": [
+      {
+       "name": "Politico",
+       "url": "https://www.politico.com/news/2026/11/16/nvidia-washington-ai-industry-scramble-01166738"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+       "archived": "http://web.archive.org/web/20261117032018/https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html"
+      },
+      {
+       "name": "Atlantic Council",
+       "url": "https://www.atlanticcouncil.org/content-series/fastthinking/what-jensen-huangs-nvidia-exit-means-for-washington-wall-street-and-beijing/",
+       "archived": "http://web.archive.org/web/20261113012310/https://www.atlanticcouncil.org/content-series/fastthinking/what-jensen-huangs-nvidia-exit-means-for-washington-wall-street-and-beijing/"
+      }
+     ],
+     "side_a": "Security hawks in both parties say advanced chips are now as strategic as weapons, so the companies that make them, and the people who lead them, should face clearance-style scrutiny, audits, and export controls. A private firm's lapse, they argue, can become a national vulnerability.",
+     "side_a_label": null,
+     "side_b": "Skeptics, including Sen. Rand Paul, say a personal scandal is being used to justify sweeping government control of a private industry; he said an affair alone shouldn't cost a CEO his job and he hasn't seen intelligence showing the partner was a spy. Heavy oversight, they warn, could slow American innovation and hand the lead to rivals.",
+     "side_b_label": null,
+     "question_underneath": "Private virtue and public trust: how far may the state reach into private enterprise and private lives for the sake of common security?",
+     "thinkers_note": "Hobbesian security as the first duty of the sovereign versus Lockean limits on government and protection of private enterprise. The ancient link between private character and public office (Aristotle on virtue in rulers; Plutarch's Lives) versus the liberal separation of private life from public role. Slippery-slope and 'never let a crisis go to waste' arguments against expanding state power, met by precautionary reasoning about catastrophic risk.",
+     "sitting_id": "p4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "Hundreds protest at Oxford as Nathan Cofnas speaks on DEI at Oriel College",
+     "summary": "Protesters surrounded Oriel College on Tuesday evening and tried to block its entrances as Nathan Cofnas, a self-described 'race realist,' spoke at a Reform UK student society event titled 'Is DEI undermining higher education?' Oriel declined to cancel, citing a statutory duty to protect free speech; many protesters invoked Prof. Jason Arday, who resigned from Cambridge and later died after Cofnas first raised plagiarism accusations against him.",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/uk-news/2026/nov/17/hundreds-protest-nathan-cofnas-de-oriel-college-oxford-jason-arday"
+      },
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/uk-oxford-nathan-cofnas-speech-protests-gorman-e9c8decb45ad9e256b8683bb3a3c16c7"
+      },
+      {
+       "name": "The Oxford Student",
+       "url": "https://www.oxfordstudent.com/2026/11/17/nathan-cofnas-in-oxford-live-updates/",
+       "archived": "https://web.archive.org/web/20261118044035/https://www.oxfordstudent.com/2026/11/17/nathan-cofnas-in-oxford-live-updates/#google_vignette"
+      }
+     ],
+     "side_a": "Defenders of the event say a university that cannot host a speaker it finds offensive has stopped being a university; the remedy for bad ideas is argument, and the college was legally and morally right to let the talk go ahead. Physically blocking a lecture, they argue, is intimidation, not debate.",
+     "side_a_label": null,
+     "side_b": "The protesters say free speech does not oblige a college to give a platform to someone they see as promoting racial hierarchy and as bearing responsibility for the hounding of a Black scholar. Protest is itself speech, and a community is entitled to say loudly that some views degrade the people they describe.",
+     "side_b_label": null,
+     "question_underneath": "Truth and tolerance: is the university a place where every claim may be heard and tested, or a community that must also protect the dignity of its members?",
+     "thinkers_note": "Mill's harm principle and 'collision of truth with error' versus Marcuse's 'Repressive Tolerance' and Popper's paradox of tolerance. Newman's Idea of a University (liberal education for its own sake) versus the university as a moral community with obligations to its members. Debate over the dignity of the person (Kant's ends-not-means; the imago Dei) is claimed by both sides: one for the speaker's freedom, one for those he speaks about.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Italy writes the IHRA definition of antisemitism into law",
+     "summary": "Italy's Chamber of Deputies gave final approval on Tuesday, 147-93 with five abstentions, to a law formally adopting the International Holocaust Remembrance Alliance's working definition of antisemitism along with prevention, monitoring and national-strategy measures. It creates no new crimes, but Amnesty International called it 'a bleak day for freedom of expression.'",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/italy-antisemitism-law-debate-israel-ihra-e1013623873e8711b9ce2b1d25cefba8"
+      },
+      {
+       "name": "Amnesty International",
+       "url": "https://www.amnesty.org/en/latest/news/2026/11/italy-a-bleak-day-for-freedom-of-expression-as-parliament-votes-through-repressive-definition-of-antisemitism-into-law/",
+       "archived": "http://web.archive.org/web/20261117210809/https://www.amnesty.org/en/latest/news/2026/11/italy-a-bleak-day-for-freedom-of-expression-as-parliament-votes-through-repressive-definition-of-antisemitism-into-law/"
+      },
+      {
+       "name": "Agenzia Nova",
+       "url": "https://www.agenzianova.com/en/news/via-libera-definitivo-della-camera-al-disegno-di-legge-antisemitismo/"
+      }
+     ],
+     "side_a": "Supporters say antisemitism has surged and often hides behind anti-Israel language; a clear, widely used definition helps schools, police and platforms recognize it, and Jews deserve the same clarity other minorities have. Because it adds no new crimes, they say fears of censorship are overstated.",
+     "side_a_label": null,
+     "side_b": "Critics, including Amnesty and parts of Italy's left, say the IHRA definition's examples blur antisemitism with legitimate criticism of the Israeli government, inviting censorship and self-censorship in universities and online, and could weaken the fight against real antisemitism by stretching the term.",
+     "side_b_label": null,
+     "question_underneath": "How should a free society protect a people with a long history of persecution without making some political criticism unsayable?",
+     "thinkers_note": "Remembrance as moral duty after the Shoah ('Never again'; Primo Levi; Elie Wiesel) versus classic free-speech liberalism (Milton's Areopagitica, Mill). The difficulty of definition itself: Wittgenstein-style family resemblance versus the rule-of-law demand that norms be clear and narrowly drawn. Both sides use slippery-slope reasoning: tolerated hatred spreads, or definitional creep chills speech.",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "After Russell Brand's sentencing, 400-plus UK entertainers demand an end to the 'culture of open secrets'",
+     "summary": "More than 400 UK screen and stage professionals, including Natalie Dormer and Richard Armitage, signed an open letter released Monday calling on studios, broadcasters and unions to protect whistleblowers and confront abuse that 'everyone knew' about, after Brand was sentenced last week to 10 and a half years for rape and sexual assault. It lands as David Walliams faces misconduct allegations that he denies.",
+     "sources": [
+      {
+       "name": "The Hollywood Reporter",
+       "url": "https://www.hollywoodreporter.com/news/general-news/russell-brand-open-letter-400-industry-figures-1236756889/",
+       "archived": "http://web.archive.org/web/20261117140044/https://www.hollywoodreporter.com/news/general-news/russell-brand-open-letter-400-industry-figures-1236756889/"
+      },
+      {
+       "name": "The Independent",
+       "url": "https://www.independent.co.uk/arts-entertainment/tv/news/russell-brand-david-walliams-letter-b3085629.html",
+       "archived": "http://web.archive.org/web/20261117023320/https://www.independent.co.uk/arts-entertainment/tv/news/russell-brand-david-walliams-letter-b3085629.html"
+      },
+      {
+       "name": "The letter",
+       "url": "https://www.makethisaturningpoint.com/",
+       "archived": "http://web.archive.org/web/20261117142031/https://www.makethisaturningpoint.com/"
+      }
+     ],
+     "side_a": "Signatories say Brand's crimes were enabled by an industry that protected profitable stars and punished those who spoke up; it took about 17 years for justice. Institutions, not just individuals, must be held to account, or the next 'open secret' will repeat the pattern.",
+     "side_a_label": null,
+     "side_b": "Others, while condemning Brand, warn that 'open secret' talk can slide into trial by rumor and collective guilt, and that the proper venue for accusations is the courts, which have now worked. With allegations against Walliams still unproven, they urge due process and the presumption of innocence.",
+     "side_b_label": null,
+     "question_underneath": "Justice and complicity: when wrongdoing is tolerated by many, who bears guilt, and how do we pursue accountability without abandoning the presumption of innocence?",
+     "thinkers_note": "Collective responsibility and the sin of silence (Burke's 'good men do nothing'; Bonhoeffer on cheap grace) versus individual responsibility and due process. The presumption of innocence (Blackstone's ratio: better ten guilty escape than one innocent suffer) set against the duty to believe and protect the vulnerable. Institutional reform arguments that echo Augustine's point that structures can make sin easier or harder.",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-4",
+     "number": 4,
+     "headline": "Canada's assisted-dying bill C-41 is rushed through second reading",
+     "summary": "Bill C-41 would permanently bar medical assistance in dying when mental illness is the sole condition, ahead of a March 17 expansion that would otherwise take effect, while letting provinces create advance requests for people facing conditions like dementia. The Liberals limited second-reading debate on Monday, with the vote set for Tuesday, over Conservative and Bloc objections.",
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/politics/maid-bill-liberals-debate-9.7425597",
+       "archived": "http://web.archive.org/web/20261118044250/https://www.cbc.ca/news/politics/maid-bill-liberals-debate-9.7425597"
+      },
+      {
+       "name": "Justice Canada backgrounder",
+       "url": "https://canada.justice.gc.ca/eng/csj-sjc/pl/c41/index.html",
+       "archived": "http://web.archive.org/web/20261118044217/https://canada.justice.gc.ca/eng/csj-sjc/pl/c41/index.html"
+      },
+      {
+       "name": "LEGISinfo",
+       "url": "https://www.parl.ca/legisinfo/en/bill/45-1/c-41",
+       "archived": "http://web.archive.org/web/20261116180351/https://www.parl.ca/legisinfo/en/bill/45-1/c-41"
+      }
+     ],
+     "side_a": "Supporters of advance requests say people facing dementia should be able to decide, while still competent, how their lives end rather than lose that choice as the disease advances; dignity and autonomy require it. Most also back halting the mental-illness expansion as a sensible safeguard.",
+     "side_a_label": null,
+     "side_b": "Critics, including disability advocates and many religious voices, warn that advance requests let a past self authorize the death of a present person who can no longer consent, and that Canada's MAID system keeps widening. Conservatives back the mental-illness bar but say a life-and-death bill deserves full debate, not a guillotine.",
+     "side_b_label": null,
+     "question_underneath": "What is the worth of a human life when its capacities fade, and can autonomy reach across time to decide for a self that no longer remembers choosing?",
+     "thinkers_note": "Autonomy and the right to self-determination (Mill; Dworkin's 'precedent autonomy') versus the sanctity and inviolability of life (Hippocratic oath, natural law, Catholic and disability-rights teaching). Personal-identity puzzles about whether the earlier and later self are the same person (Locke; Parfit). The slippery slope, made concrete by Canada's own expansions since 2016, versus the claim that strict safeguards can hold the line.",
+     "sitting_id": "c4",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo keeps Latin Mass limits and says married priests could divide the Church",
+     "summary": "On his return flight from Peru on Nov. 16, Pope Leo XIV said Pope Francis's 2021 restrictions on the Traditional Latin Mass (Traditionis Custodes) 'will continue to be followed,' answering 'not right now' on loosening them, and said ordaining married men could cause division. He framed both answers around his priority of Church unity, and said he is 'not at 100 percent' after October surgery.",
+     "sources": [
+      {
+       "name": "OSV News",
+       "url": "https://www.osvnews.com/for-the-unity-of-the-church-during-in-flight-presser-pope-leo-says-ordaining-married-priests-could-cause-division/",
+       "archived": "http://web.archive.org/web/20261118044334/https://www.osvnews.com/for-the-unity-of-the-church-during-in-flight-presser-pope-leo-says-ordaining-married-priests-could-cause-division/"
+      },
+      {
+       "name": "The Catholic Herald",
+       "url": "https://thecatholicherald.com/article/pope-leo-on-traditionis-custodes-we-will-continue-to-follow-it",
+       "archived": "http://web.archive.org/web/20261117095358/https://thecatholicherald.com/article/pope-leo-on-traditionis-custodes-we-will-continue-to-follow-it"
+      },
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-xiv-press-conference-latin-america-journey.html",
+       "archived": "http://web.archive.org/web/20261118044411/https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-xiv-press-conference-latin-america-journey.html"
+      }
+     ],
+     "side_a": "Supporters say the Pope is guarding unity: one Roman rite around the reformed liturgy of Vatican II, and no novel experiments with the priesthood, avoids rival camps hardening into rival churches. Continuity with his predecessor is itself a stabilizing act.",
+     "side_a_label": null,
+     "side_b": "Traditionalists, such as liturgical scholar Dom Alcuin Reid in posts circulating on X, say the restrictions punish faithful Catholics drawn to a rite that nourished saints for centuries, and that true 'liturgical peace' would mean generosity, as Benedict XVI's Summorum Pontificum offered. Some on the reform side, meanwhile, regret the closed door on married priests.",
+     "side_b_label": null,
+     "question_underneath": "Unity and diversity in the Church: is unity better kept by one common form or by generously making room for many legitimate traditions?",
+     "thinkers_note": "Appeals to tradition and organic development (Newman's Development of Christian Doctrine; lex orandi, lex credendi). Authority and obedience (the Petrine office) versus the sensus fidelium and the rights of the faithful. St. Paul's one body with many members (1 Corinthians 12) is invoked by both sides.",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "King Charles tells the Church of England it protects the space for 'every belief'",
+     "summary": "Inaugurating the 12th General Synod at Church House on Tuesday, King Charles said the established Church protects not only Christian faith but 'the very space for faith itself' for people of every belief in Britain, while affirming his own Christian faith and role. He noted rising challenges to social cohesion.",
+     "sources": [
+      {
+       "name": "The King's speech (royal.uk)",
+       "url": "https://www.royal.uk/news-and-activity/2026-11-17/a-speech-by-the-king-at-the-inauguration-ceremony-for-the-12th-general",
+       "archived": "http://web.archive.org/web/20261118044355/https://www.royal.uk/news-and-activity/2026-11-17/a-speech-by-the-king-at-the-inauguration-ceremony-for-the-12th-general"
+      },
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/cwy80x44vxk7o",
+       "archived": "http://web.archive.org/web/20261118044424/https://www.bbc.co.uk/news/articles/cwy80x44vxk7o"
+      },
+      {
+       "name": "Church of England Synod roundup",
+       "url": "https://www.churchofengland.org/news/synod-roundup-tuesday-november-17-2026",
+       "archived": "http://web.archive.org/web/20261118044451/https://www.churchofengland.org/news/synod-roundup-tuesday-november-17-2026"
+      }
+     ],
+     "side_a": "Admirers say the King is describing what an established church has quietly become: a gracious host that keeps faith itself respected in public life, giving Muslims, Jews, Sikhs and others room to worship in a secularizing country. Hospitality, they argue, flows from Christian conviction rather than diluting it.",
+     "side_a_label": null,
+     "side_b": "Critics, many on X, say the King has drifted from his coronation oath as Defender of the Faith, and that a Church whose head speaks of protecting every belief risks losing the confidence to proclaim its own. Some secularists add that an established church should not be the gatekeeper of anyone's faith at all.",
+     "side_b_label": null,
+     "question_underneath": "The role of faith in public life: can a nation have an established Christian church that also protects every faith, or does pluralism eventually dissolve establishment?",
+     "thinkers_note": "Richard Hooker's vision of church and commonwealth as one Christian society versus Locke's Letter Concerning Toleration. Christian hospitality to the stranger (Leviticus 19:34; Hebrews 13:2) versus the duty of witness (Matthew 28:19). T.S. Eliot's Idea of a Christian Society and the question of whether a common culture needs a common faith.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Syria's patriarchs warn of a dire future for Christians after an archbishop is assaulted",
+     "summary": "On Tuesday the Greek Orthodox, Syriac Orthodox and Melkite Greek Catholic patriarchs of Antioch jointly condemned repeated attacks on Syrians and especially Christians, including the assault on Melkite Archbishop Abdo Arbach, who was reportedly bound, gagged and robbed near Homs. They urged authorities to investigate, publish results, and guarantee equal citizenship.",
+     "sources": [
+      {
+       "name": "Syriac Press",
+       "url": "https://syriacpress.com/blog/2026/11/17/syria-gunmen-assault-melkite-archbishop-in-hmoth-homs-steal-religious-artifacts/"
+      },
+      {
+       "name": "CathoNews",
+       "url": "https://cathonews.com/article/armed-men-assault-melkite-bishop-in-homs-d2eced"
+      },
+      {
+       "name": "Orthodox House",
+       "url": "https://orthodoxhouse.com/article/news-86d0d729"
+      }
+     ],
+     "side_a": "Advocates for Middle Eastern Christians say the pattern is clear and urgent: an ancient community is being driven out by violence and impunity, and Western governments should tie engagement with Damascus to real protection for minorities.",
+     "side_a_label": null,
+     "side_b": "Others, including some who back the new Syrian authorities, say the violence reflects broad lawlessness that hits all Syrians, not targeted persecution, and that singling out one faith risks feeding sectarian division. The patriarchs themselves stressed equal citizenship for everyone rather than special status.",
+     "side_b_label": null,
+     "question_underneath": "Can a pluralist, equal citizenship be built where faith communities have long feared one another, and what do the strong owe the vulnerable?",
+     "thinkers_note": "Natural-rights arguments for religious liberty (Dignitatis Humanae; the Universal Declaration's Article 18). Sectarian versus civic nationalism: protection as a minority group versus equal citizens under one law. The Christian theme of witness under persecution (Tertullian's 'blood of the martyrs') beside the realist question of what states can guarantee.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-4",
+     "number": 4,
+     "headline": "UK police drop case against Watford street pastor arrested for criticizing Islam",
+     "summary": "Hertfordshire Police have taken no further action against Pastor Steve Maile, arrested in April while preaching about violence in Islam, after the Crown Prosecution Service found the evidence did not meet the threshold for a religiously aggravated public-order charge; an assault allegation was dropped earlier. Maile is considering a civil claim.",
+     "sources": [
+      {
+       "name": "Christian Today",
+       "url": "https://www.christiantoday.com/news/police-drop-case-against-street-preacher-who-criticised-islam",
+       "archived": "http://web.archive.org/web/20261117153550/https://www.christiantoday.com/news/police-drop-case-against-street-preacher-who-criticised-islam"
+      },
+      {
+       "name": "Free Speech Union",
+       "url": "https://freespeechunion.org/news/police-drop-case-against-watford-pastor-arrested-after-criticising",
+       "archived": "https://web.archive.org/web/20261118044649/https://freespeechunion.org/news/police-drop-case-against-watford-pastor-arrested-after-criticising"
+      }
+     ],
+     "side_a": "Free-speech and Christian groups say the arrest shows how public-order law is being used to chill preaching and criticism of religion; seven months under investigation is itself a punishment, and criticizing a belief is not a crime.",
+     "side_a_label": null,
+     "side_b": "Others say police must be able to act quickly when street preaching in a diverse town risks confrontation and hurts Muslim neighbors, and that the system worked: the case was reviewed and dropped. Freedom of speech, they argue, still carries a duty not to stir up hostility.",
+     "side_b_label": null,
+     "question_underneath": "Free speech and civic peace: may a preacher publicly criticize another faith, and when does criticism become provocation?",
+     "thinkers_note": "Mill's defense of offensive speech and the Milton tradition versus Hobbes on the sovereign's duty to keep the peace. The prophetic tradition of public preaching (Acts 17, Paul at the Areopagus) versus the call to live peaceably with all (Romans 12:18). Arguments from the chilling effect and 'the process is the punishment' versus prudential public-order reasoning.",
+     "sitting_id": "r4",
+     "sitting_match": "headline"
+    }
+   ]
+  }
+ ]
+}
