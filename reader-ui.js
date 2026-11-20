@@ -691,5 +691,34 @@
     else if (blocked) announce("Saved highlights in this browser use a library this page cannot change.");
   }
 
-  window.AthenaeumReaderUI = { sync, paint, announce };
+  function hasEncounter(id) {
+    return state.items.some((item) => item.block === "encounter:" + id);
+  }
+
+  function toggleEncounter(input) {
+    const source = input && typeof input === "object" ? input : {};
+    if (!source.block || !source.text) return { saved: false };
+    if (blocked) {
+      announce("Saved highlights in this browser use a library this page cannot change.");
+      return { saved: false, blocked: true };
+    }
+    const existing = state.items.find((item) => item.block === source.block);
+    if (existing) {
+      state = Reader.removeItem(state, existing.id).state;
+      persist();
+      announce("Removed from Saved.");
+      return { saved: false };
+    }
+    const added = Reader.addItem(state, source);
+    if (!added.item) {
+      announce("That suggestion could not be saved.");
+      return { saved: false };
+    }
+    state = added.state;
+    persist();
+    announce("Saved to your folder.");
+    return { saved: true, id: added.item.id };
+  }
+
+  window.AthenaeumReaderUI = { sync, paint, announce, toggleEncounter, hasEncounter };
 })();

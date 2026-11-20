@@ -25,7 +25,10 @@
   const KINDS = {
     verbatim: "Verbatim quotation",
     paraphrase: "Paraphrase",
-    passage: "Passage"
+    passage: "Passage",
+    film: "Film",
+    song: "Song",
+    poem: "Poem"
   };
 
   function hiddenWord() {
@@ -108,7 +111,7 @@
   function safeHref(value) {
     const text = typeof value === "string" ? value.trim() : "";
     if (!text || text.length > 500) return "";
-    if (!/^(?:index|docket|saved|archive)\.html(?:\?[^#\s]*)?(?:#[A-Za-z0-9_-]*)?$/.test(text)) return "";
+    if (!/^(?:index|docket|saved|archive|encounters)\.html(?:\?[^#\s]*)?(?:#[A-Za-z0-9_-]*)?$/.test(text)) return "";
     return text;
   }
 
@@ -532,6 +535,7 @@ function setSort(state, which, value) {
   function itemRecord(item) {
     const lines = [kindLabel(item.kind)];
     if (item.kind === "paraphrase") lines.push("Labeled paraphrase, not a quotation.");
+    if (item.kind === "film" || item.kind === "song" || item.kind === "poem") lines.push("The room's note, not a quotation.");
     lines.push(item.text);
     if (item.speaker) lines.push("Speaker: " + item.speaker);
     if (item.work) lines.push("Work: " + item.work);
@@ -572,6 +576,7 @@ function setSort(state, which, value) {
       group.items.forEach((item) => {
         lines.push("### " + kindLabel(item.kind));
         if (item.kind === "paraphrase") lines.push("", "Labeled paraphrase, not a quotation.");
+        if (item.kind === "film" || item.kind === "song" || item.kind === "poem") lines.push("", "The room's note, not a quotation.");
         lines.push("", quoteLines(item.text), "");
         if (item.speaker) lines.push(item.speaker);
         if (item.work || item.citation) {
@@ -691,19 +696,28 @@ function setSort(state, which, value) {
   function itemHtml(state, item, index, count) {
     const meta = [item.speaker, item.work, item.citation].filter(Boolean).join(" · ");
     const when = [item.night, item.sittingTitle].filter(Boolean).join(" · ");
-    const edition = item.edition ? `<p class="meta">Edition: ${escapeText(item.edition)}</p>` : "";
+    const editionLabel = item.kind === "film" ? "Rating" : "Edition";
+    const edition = item.edition ? `<p class="meta">${editionLabel}: ${escapeText(item.edition)}</p>` : "";
     const note = item.note ? `<p class="reader-note">${escapeText(item.note)}</p>` : "";
     const link = item.href ? `<p><a class="tap-target" href="${escapeAttr(item.href)}">Open this spot</a></p>` : "";
+    const encounter = item.kind === "film" || item.kind === "song" || item.kind === "poem";
     const paraphrase = item.kind === "paraphrase" ? `<p class="note-flag">Paraphrase, not a quotation.</p>` : "";
+    const roomNote = encounter ? `<p class="note-flag">The room's note, not a quotation.</p>` : "";
+    const body = encounter
+      ? `<p class="reader-note">${escapeText(item.text)}</p>`
+      : `<blockquote class="reader-text">${escapeText(item.text)}</blockquote>`;
+    const source = item.sourceUrl ? `<p><a class="tap-target" href="${escapeAttr(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">Open a source</a></p>` : "";
     return `<article class="reader-item reader-hl-${escapeAttr(item.color || "amber")}" data-item="${escapeAttr(item.id)}" id="saved-${escapeAttr(item.id)}">
       <p class="kicker">${escapeText(kindLabel(item.kind))}</p>
       ${paraphrase}
-      <blockquote class="reader-text">${escapeText(item.text)}</blockquote>
+      ${roomNote}
+      ${body}
       ${meta ? `<p class="meta">${escapeText(meta)}</p>` : ""}
       ${when ? `<p class="meta">${escapeText(when)}</p>` : ""}
       ${edition}
       <p class="meta">Saved ${escapeText(item.savedAt.slice(0, 10))}</p>
       ${note}
+      ${source}
       ${link}
       <div class="reader-item-actions">
         <label class="field" for="move-${escapeAttr(item.id)}">Folder</label>

@@ -1,0 +1,1014 @@
+{
+ "version": 1,
+ "tables": {
+  "letters": [
+   "good-life",
+   "truth",
+   "duty"
+  ],
+  "traditionalist": [
+   "duty",
+   "freedom-order",
+   "conscience"
+  ],
+  "classical": [
+   "freedom-order",
+   "justice",
+   "dignity"
+  ],
+  "modern": [
+   "justice",
+   "dignity",
+   "good-life"
+  ],
+  "christian": [
+   "faith-doubt",
+   "mercy",
+   "love"
+  ],
+  "ancient": [
+   "good-life",
+   "justice",
+   "duty"
+  ],
+  "victorian": [
+   "good-life",
+   "faith-doubt",
+   "duty"
+  ],
+  "eastern": [
+   "duty",
+   "mercy",
+   "good-life"
+  ],
+  "enlightenment": [
+   "freedom-order",
+   "truth",
+   "dignity"
+  ],
+  "founding": [
+   "freedom-order",
+   "duty",
+   "justice"
+  ],
+  "mixed": []
+ },
+ "sittings": {
+  "2026-10-22/p1": [
+   "justice",
+   "power"
+  ],
+  "2026-10-22/p2": [
+   "freedom-order",
+   "duty",
+   "power"
+  ],
+  "2026-10-22/p3": [
+   "truth"
+  ],
+  "2026-10-22/p4": [
+   "justice",
+   "conscience"
+  ],
+  "2026-10-22/c1": [
+   "justice"
+  ],
+  "2026-10-22/c2": [
+   "truth",
+   "good-life"
+  ],
+  "2026-10-22/c3": [
+   "love"
+  ],
+  "2026-10-22/c4": [
+   "faith-doubt",
+   "truth"
+  ],
+  "2026-10-22/r1": [
+   "faith-doubt"
+  ],
+  "2026-10-22/r2": [
+   "justice",
+   "mercy"
+  ],
+  "2026-10-22/r3": [
+   "exile"
+  ],
+  "2026-10-22/r4": [
+   "faith-doubt",
+   "truth"
+  ],
+  "2026-10-23/p1": [
+   "justice",
+   "truth"
+  ],
+  "2026-10-23/p2": [
+   "justice"
+  ],
+  "2026-10-23/p3": [
+   "justice"
+  ],
+  "2026-10-23/p4": [
+   "justice",
+   "power"
+  ],
+  "2026-10-23/c1": [
+   "duty"
+  ],
+  "2026-10-23/c2": [
+   "truth",
+   "good-life"
+  ],
+  "2026-10-23/c3": [
+   "freedom-order"
+  ],
+  "2026-10-23/c4": [
+   "truth"
+  ],
+  "2026-10-23/r1": [
+   "faith-doubt"
+  ],
+  "2026-10-23/r2": [
+   "faith-doubt",
+   "truth"
+  ],
+  "2026-10-23/r3": [
+   "faith-doubt"
+  ],
+  "2026-10-23/r4": [
+   "exile"
+  ],
+  "2026-10-24/p1": [
+   "justice"
+  ],
+  "2026-10-24/p2": [
+   "duty"
+  ],
+  "2026-10-24/p3": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-10-24/c1": [
+   "mortality",
+   "freedom-order",
+   "dignity"
+  ],
+  "2026-10-24/c2": [
+   "duty",
+   "dignity",
+   "faith-doubt"
+  ],
+  "2026-10-24/c3": [
+   "justice"
+  ],
+  "2026-10-24/c4": [
+   "freedom-order",
+   "power"
+  ],
+  "2026-10-24/r1": [
+   "faith-doubt"
+  ],
+  "2026-10-24/r2": [
+   "justice",
+   "mercy"
+  ],
+  "2026-10-24/r3": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-10-24/r4": [
+   "justice",
+   "faith-doubt",
+   "exile"
+  ],
+  "2026-10-25/p1": [
+   "justice",
+   "power"
+  ],
+  "2026-10-25/p2": [
+   "justice"
+  ],
+  "2026-10-25/p3": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-10-25/p4": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-10-25/c1": [
+   "dignity"
+  ],
+  "2026-10-25/c2": [
+   "good-life"
+  ],
+  "2026-10-25/c3": [
+   "freedom-order"
+  ],
+  "2026-10-25/c4": [
+   "justice"
+  ],
+  "2026-10-25/r1": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-10-25/r2": [
+   "justice",
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-10-25/r3": [
+   "faith-doubt"
+  ],
+  "2026-10-26/p1": [
+   "justice"
+  ],
+  "2026-10-26/p2": [
+   "freedom-order",
+   "faith-doubt"
+  ],
+  "2026-10-26/p3": [
+   "justice",
+   "power"
+  ],
+  "2026-10-26/c1": [
+   "faith-doubt",
+   "good-life"
+  ],
+  "2026-10-26/c2": [
+   "justice",
+   "dignity"
+  ],
+  "2026-10-26/c3": [
+   "good-life"
+  ],
+  "2026-10-26/r1": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-10-26/r2": [
+   "faith-doubt",
+   "duty",
+   "dignity"
+  ],
+  "2026-10-26/r3": [
+   "dignity"
+  ],
+  "2026-10-26/r4": [
+   "duty",
+   "faith-doubt",
+   "dignity"
+  ],
+  "2026-10-29/p1": [
+   "truth",
+   "power"
+  ],
+  "2026-10-29/p2": [
+   "freedom-order",
+   "duty"
+  ],
+  "2026-10-29/p3": [
+   "justice",
+   "duty"
+  ],
+  "2026-10-29/c1": [
+   "freedom-order",
+   "truth"
+  ],
+  "2026-10-29/c2": [
+   "dignity",
+   "freedom-order"
+  ],
+  "2026-10-29/c3": [
+   "freedom-order",
+   "conscience"
+  ],
+  "2026-10-29/c4": [
+   "duty",
+   "conscience"
+  ],
+  "2026-10-29/r1": [
+   "faith-doubt"
+  ],
+  "2026-10-29/r2": [
+   "faith-doubt"
+  ],
+  "2026-10-29/r3": [
+   "freedom-order",
+   "faith-doubt"
+  ],
+  "2026-10-29/r4": [
+   "faith-doubt",
+   "exile"
+  ],
+  "2026-10-29/r5": [
+   "faith-doubt"
+  ],
+  "2026-10-30/p1": [
+   "justice"
+  ],
+  "2026-10-30/p2": [
+   "justice"
+  ],
+  "2026-10-30/p3": [
+   "freedom-order"
+  ],
+  "2026-10-30/p4": [
+   "power"
+  ],
+  "2026-10-30/c1": [
+   "love",
+   "good-life"
+  ],
+  "2026-10-30/c2": [
+   "freedom-order"
+  ],
+  "2026-10-30/c3": [
+   "duty"
+  ],
+  "2026-10-30/r1": [
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-10-30/r2": [
+   "dignity"
+  ],
+  "2026-10-30/r3": [
+   "truth",
+   "mercy",
+   "conscience"
+  ],
+  "2026-10-30/r4": [
+   "justice",
+   "freedom-order",
+   "faith-doubt"
+  ],
+  "2026-10-31/p1": [
+   "justice",
+   "freedom-order",
+   "conscience"
+  ],
+  "2026-10-31/p2": [
+   "justice"
+  ],
+  "2026-10-31/p3": [
+   "justice",
+   "power"
+  ],
+  "2026-10-31/p4": [
+   "justice"
+  ],
+  "2026-10-31/c1": [
+   "truth"
+  ],
+  "2026-10-31/c2": [
+   "exile"
+  ],
+  "2026-10-31/c3": [
+   "duty"
+  ],
+  "2026-10-31/r1": [
+   "duty"
+  ],
+  "2026-10-31/r2": [
+   "truth",
+   "love",
+   "mercy"
+  ],
+  "2026-10-31/r3": [
+   "faith-doubt",
+   "truth",
+   "exile"
+  ],
+  "2026-11-01/p1": [
+   "justice",
+   "faith-doubt",
+   "conscience"
+  ],
+  "2026-11-01/p2": [
+   "justice",
+   "power"
+  ],
+  "2026-11-01/p3": [
+   "freedom-order"
+  ],
+  "2026-11-01/c1": [
+   "justice",
+   "freedom-order",
+   "duty"
+  ],
+  "2026-11-01/c3": ["freedom-order", "good-life", "duty"],
+  "2026-11-01/c2": [
+   "dignity"
+  ],
+  "2026-11-01/r1": [
+   "faith-doubt",
+   "love"
+  ],
+  "2026-11-01/r2": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-11-01/r3": [
+   "faith-doubt"
+  ],
+  "2026-11-01/r4": [
+   "justice"
+  ],
+  "2026-11-02/p1": [
+   "freedom-order"
+  ],
+  "2026-11-02/p2": [
+   "duty"
+  ],
+  "2026-11-02/p3": [
+   "duty",
+   "dignity"
+  ],
+  "2026-11-02/c1": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-11-02/c2": [
+   "freedom-order",
+   "power"
+  ],
+  "2026-11-02/c3": [
+   "truth"
+  ],
+  "2026-11-02/c4": [
+   "truth",
+   "good-life"
+  ],
+  "2026-11-02/r1": [
+   "mortality",
+   "duty",
+   "mercy"
+  ],
+  "2026-11-02/r2": [
+   "faith-doubt",
+   "justice"
+  ],
+  "2026-11-02/r3": [
+   "faith-doubt",
+   "duty",
+   "love"
+  ],
+  "2026-11-02/r4": [
+   "faith-doubt",
+   "good-life"
+  ],
+  "2026-11-03/p1": [
+   "justice"
+  ],
+  "2026-11-03/p2": [
+   "power"
+  ],
+  "2026-11-03/p3": [
+   "justice"
+  ],
+  "2026-11-03/c1": [
+   "love"
+  ],
+  "2026-11-03/c2": [
+   "duty",
+   "justice",
+   "mortality"
+  ],
+  "2026-11-03/c3": [
+   "good-life",
+   "dignity"
+  ],
+  "2026-11-03/r1": [
+   "faith-doubt"
+  ],
+  "2026-11-03/r2": [
+   "duty"
+  ],
+  "2026-11-03/r3": [
+   "faith-doubt"
+  ],
+  "2026-11-04/p1": [
+   "power"
+  ],
+  "2026-11-04/p2": [
+   "justice",
+   "power"
+  ],
+  "2026-11-04/p3": [
+   "power"
+  ],
+  "2026-11-04/c1": [
+   "justice",
+   "freedom-order",
+   "dignity"
+  ],
+  "2026-11-04/c2": [
+   "justice",
+   "duty",
+   "dignity"
+  ],
+  "2026-11-04/c3": [
+   "freedom-order"
+  ],
+  "2026-11-04/r1": [
+   "faith-doubt"
+  ],
+  "2026-11-04/r2": [
+   "faith-doubt",
+   "freedom-order"
+  ],
+  "2026-11-04/r3": [
+   "faith-doubt"
+  ],
+  "2026-11-04/r4": [
+   "faith-doubt"
+  ],
+  "2026-11-05/p1": [
+   "justice",
+   "duty"
+  ],
+  "2026-11-05/p2": [
+   "power"
+  ],
+  "2026-11-05/p3": [
+   "duty"
+  ],
+  "2026-11-05/p4": [
+   "freedom-order"
+  ],
+  "2026-11-05/c1": [
+   "truth",
+   "mercy",
+   "good-life"
+  ],
+  "2026-11-05/c2": [
+   "truth"
+  ],
+  "2026-11-05/c3": [
+   "faith-doubt"
+  ],
+  "2026-11-05/r1": [
+   "faith-doubt",
+   "love"
+  ],
+  "2026-11-05/r2": [
+   "faith-doubt",
+   "freedom-order"
+  ],
+  "2026-11-05/r3": [
+   "faith-doubt"
+  ],
+  "2026-11-06/p1": [
+   "duty"
+  ],
+  "2026-11-06/p2": [
+   "justice",
+   "power"
+  ],
+  "2026-11-06/p3": [
+   "duty"
+  ],
+  "2026-11-06/c1": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-11-06/c2": [
+   "duty"
+  ],
+  "2026-11-06/c3": [
+   "justice",
+   "duty"
+  ],
+  "2026-11-06/r1": [
+   "justice",
+   "faith-doubt",
+   "mercy"
+  ],
+  "2026-11-06/r2": [
+   "faith-doubt",
+   "duty",
+   "justice"
+  ],
+  "2026-11-06/r3": [
+   "justice",
+   "faith-doubt"
+  ],
+  "2026-11-07/p1": [
+   "justice",
+   "dignity"
+  ],
+  "2026-11-07/p2": [
+   "justice",
+   "power"
+  ],
+  "2026-11-07/p3": [
+   "power"
+  ],
+  "2026-11-07/p4": [
+   "mortality",
+   "duty",
+   "power"
+  ],
+  "2026-11-07/c1": [
+   "freedom-order"
+  ],
+  "2026-11-07/c2": [
+   "mortality",
+   "duty"
+  ],
+  "2026-11-07/c3": [
+   "love"
+  ],
+  "2026-11-07/r1": [
+   "duty",
+   "faith-doubt"
+  ],
+  "2026-11-07/r2": [
+   "exile",
+   "duty"
+  ],
+  "2026-11-07/r3": [
+   "faith-doubt"
+  ],
+  "2026-11-08/p1": [
+   "justice",
+   "power"
+  ],
+  "2026-11-08/p2": [
+   "justice"
+  ],
+  "2026-11-08/p3": [
+   "duty"
+  ],
+  "2026-11-08/c1": [
+   "freedom-order"
+  ],
+  "2026-11-08/c2": [
+   "freedom-order"
+  ],
+  "2026-11-08/c3": [
+   "mortality"
+  ],
+  "2026-11-08/r1": [
+   "faith-doubt"
+  ],
+  "2026-11-08/r2": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-11-08/r3": [
+   "faith-doubt",
+   "dignity"
+  ],
+  "2026-11-09/p1": [
+   "power",
+   "justice"
+  ],
+  "2026-11-09/p2": [
+   "duty",
+   "good-life"
+  ],
+  "2026-11-09/p3": [
+   "justice",
+   "power"
+  ],
+  "2026-11-09/c1": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-11-09/c2": [
+   "conscience"
+  ],
+  "2026-11-09/c3": [
+   "duty",
+   "love"
+  ],
+  "2026-11-09/r1": [
+   "mercy"
+  ],
+  "2026-11-09/r2": [
+   "justice",
+   "duty"
+  ],
+  "2026-11-09/r3": [
+   "justice"
+  ],
+  "2026-11-10/p1": [
+   "power"
+  ],
+  "2026-11-10/p2": [
+   "duty"
+  ],
+  "2026-11-10/p3": [
+   "duty",
+   "truth",
+   "power"
+  ],
+  "2026-11-10/p4": [
+   "freedom-order",
+   "justice",
+   "duty"
+  ],
+  "2026-11-10/c1": [
+   "duty",
+   "truth"
+  ],
+  "2026-11-10/c2": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-11-10/c3": [
+   "duty",
+   "dignity"
+  ],
+  "2026-11-10/r1": [
+   "faith-doubt"
+  ],
+  "2026-11-10/r2": [
+   "love",
+   "faith-doubt",
+   "conscience"
+  ],
+  "2026-11-10/r3": [
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-10/r4": [
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-11/p1": [
+   "justice"
+  ],
+  "2026-11-11/p2": [
+   "duty",
+   "power"
+  ],
+  "2026-11-11/p3": [
+   "duty"
+  ],
+  "2026-11-11/p4": [
+   "power"
+  ],
+  "2026-11-11/c1": [
+   "freedom-order"
+  ],
+  "2026-11-11/c2": [
+   "justice",
+   "duty",
+   "dignity"
+  ],
+  "2026-11-11/c3": [
+   "mortality",
+   "duty"
+  ],
+  "2026-11-11/c4": [
+   "faith-doubt",
+   "duty",
+   "dignity"
+  ],
+  "2026-11-11/r1": [
+   "duty"
+  ],
+  "2026-11-11/r2": [
+   "faith-doubt"
+  ],
+  "2026-11-11/r3": [
+   "mortality",
+   "mercy",
+   "conscience"
+  ],
+  "2026-11-11/r4": [
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-12/p1": [
+   "power"
+  ],
+  "2026-11-12/p2": [
+   "exile"
+  ],
+  "2026-11-12/p3": [
+   "duty"
+  ],
+  "2026-11-12/c1": [
+   "justice",
+   "dignity"
+  ],
+  "2026-11-12/c2": [
+   "freedom-order",
+   "dignity"
+  ],
+  "2026-11-12/c3": [
+   "mortality"
+  ],
+  "2026-11-12/r1": [
+   "faith-doubt",
+   "duty",
+   "truth"
+  ],
+  "2026-11-12/r2": [
+   "faith-doubt",
+   "love"
+  ],
+  "2026-11-12/r3": [
+   "freedom-order",
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-13/p1": [
+   "justice",
+   "duty",
+   "power"
+  ],
+  "2026-11-13/p2": [
+   "justice"
+  ],
+  "2026-11-13/p3": [
+   "duty"
+  ],
+  "2026-11-13/c1": [
+   "dignity"
+  ],
+  "2026-11-13/c2": [
+   "justice",
+   "truth"
+  ],
+  "2026-11-13/c3": [
+   "dignity",
+   "justice"
+  ],
+  "2026-11-13/r1": [
+   "duty"
+  ],
+  "2026-11-13/r2": [
+   "truth"
+  ],
+  "2026-11-13/r3": [
+   "faith-doubt"
+  ],
+  "2026-11-14/p1": [
+   "duty",
+   "power"
+  ],
+  "2026-11-14/p2": [
+   "duty",
+   "power"
+  ],
+  "2026-11-14/p3": [
+   "power"
+  ],
+  "2026-11-14/p4": [
+   "freedom-order"
+  ],
+  "2026-11-14/c1": [
+   "truth",
+   "dignity"
+  ],
+  "2026-11-14/c2": [
+   "freedom-order"
+  ],
+  "2026-11-14/c3": [
+   "duty"
+  ],
+  "2026-11-14/c4": [
+   "truth"
+  ],
+  "2026-11-14/r1": [
+   "duty",
+   "conscience"
+  ],
+  "2026-11-14/r2": [
+   "faith-doubt",
+   "truth"
+  ],
+  "2026-11-14/r3": [
+   "faith-doubt",
+   "power"
+  ],
+  "2026-11-15/p1": [
+   "power"
+  ],
+  "2026-11-15/p2": [
+   "power",
+   "justice"
+  ],
+  "2026-11-15/p3": [
+   "power"
+  ],
+  "2026-11-15/p4": [
+   "mercy",
+   "dignity"
+  ],
+  "2026-11-15/c1": [
+   "freedom-order",
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-15/c2": [
+   "truth",
+   "power",
+   "good-life"
+  ],
+  "2026-11-15/c3": [
+   "dignity",
+   "love"
+  ],
+  "2026-11-15/r1": [
+   "mortality"
+  ],
+  "2026-11-15/r2": [
+   "freedom-order",
+   "faith-doubt",
+   "truth"
+  ],
+  "2026-11-15/r3": [
+   "mortality",
+   "justice",
+   "duty"
+  ],
+  "2026-11-16/p1": [
+   "justice",
+   "power"
+  ],
+  "2026-11-16/p2": [
+   "justice",
+   "conscience"
+  ],
+  "2026-11-16/p3": [
+   "power"
+  ],
+  "2026-11-16/p4": [
+   "duty"
+  ],
+  "2026-11-16/c1": [
+   "justice"
+  ],
+  "2026-11-16/c2": [
+   "exile",
+   "faith-doubt"
+  ],
+  "2026-11-16/c3": [
+   "freedom-order",
+   "duty"
+  ],
+  "2026-11-16/r1": [
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-16/r2": [
+   "faith-doubt",
+   "duty",
+   "dignity"
+  ],
+  "2026-11-16/r3": [
+   "faith-doubt",
+   "freedom-order"
+  ],
+  "2026-11-17/p1": [
+   "freedom-order"
+  ],
+  "2026-11-17/p2": [
+   "power"
+  ],
+  "2026-11-17/p3": [
+   "good-life"
+  ],
+  "2026-11-17/p4": [
+   "good-life"
+  ],
+  "2026-11-17/c1": [
+   "truth",
+   "dignity"
+  ],
+  "2026-11-17/c2": [
+   "freedom-order",
+   "dignity"
+  ],
+  "2026-11-17/c3": [
+   "justice",
+   "freedom-order"
+  ],
+  "2026-11-17/c4": [
+   "dignity"
+  ],
+  "2026-11-17/r1": [
+   "justice",
+   "faith-doubt"
+  ],
+  "2026-11-17/r2": [
+   "faith-doubt",
+   "freedom-order"
+  ],
+  "2026-11-17/r3": [
+   "freedom-order",
+   "faith-doubt",
+   "duty"
+  ],
+  "2026-11-17/r4": [
+   "freedom-order",
+   "faith-doubt"
+  ]
+ }
+}

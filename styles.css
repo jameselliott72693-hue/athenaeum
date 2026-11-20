@@ -851,6 +851,34 @@ mark.reader-hl-lilac { background: var(--hl-lilac); }
 .reader-edit { margin-top: 8px; }
 .reader-edit summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
 .reader-item-actions select, .reader-tools select, .reader-tools input[type="search"] { max-width: 420px; }
+.encounter-panel { margin-top: 18px; padding-top: 8px; }
+.encounter-themes, .encounter-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.encounter-themes button, .encounter-tabs button { min-height: 44px; }
+.encounter-tabs button[aria-selected="true"],
+.encounter-themes button[aria-pressed="true"] {
+  background: var(--solid);
+  color: var(--solid-ink);
+  border-color: var(--solid);
+}
+.encounter-theme { text-decoration: none; }
+.encounter-card {
+  border: 1px solid var(--line);
+  background: var(--field);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+.encounter-card h4 { font-family: var(--serif); font-size: 22px; margin: 0 0 4px; }
+.poem-read { margin-top: 8px; }
+.poem-read summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; }
+.poem-text {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  margin: 8px 0;
+}
+.encounter-filters { margin: 12px 0 4px; }
 @media (max-width: 800px) {
   .reader-toolbar {
     left: 12px !important;

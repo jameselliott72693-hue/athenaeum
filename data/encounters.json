@@ -1,0 +1,4921 @@
+{
+ "version": 1,
+ "themes": [
+  {
+   "id": "justice",
+   "label": "Justice",
+   "blurb": "What is owed, who may judge, and whether a procedure can be fair."
+  },
+  {
+   "id": "mortality",
+   "label": "Mortality",
+   "blurb": "Death, grief, and what a finite life asks of the living."
+  },
+  {
+   "id": "freedom-order",
+   "label": "Freedom and order",
+   "blurb": "Liberty against the peace that hems it in."
+  },
+  {
+   "id": "faith-doubt",
+   "label": "Faith and doubt",
+   "blurb": "Belief, unbelief, and the God a person can or cannot answer."
+  },
+  {
+   "id": "duty",
+   "label": "Duty",
+   "blurb": "What office, family, or a vow requires when it costs."
+  },
+  {
+   "id": "love",
+   "label": "Love",
+   "blurb": "Attachment, marriage, friendship, and the claims of the heart."
+  },
+  {
+   "id": "truth",
+   "label": "Truth and lying",
+   "blurb": "What may be said, what is hidden, and whether a lie can serve a good."
+  },
+  {
+   "id": "power",
+   "label": "Power and corruption",
+   "blurb": "Rule, force, and the way power bends the people who hold it."
+  },
+  {
+   "id": "mercy",
+   "label": "Mercy",
+   "blurb": "Forgiveness, sparing, and whether punishment is the last word."
+  },
+  {
+   "id": "good-life",
+   "label": "The good life",
+   "blurb": "What a life is for, beyond winning or being safe."
+  },
+  {
+   "id": "dignity",
+   "label": "Human dignity",
+   "blurb": "The worth of a person that no office and no market invented."
+  },
+  {
+   "id": "exile",
+   "label": "Exile and home",
+   "blurb": "Leaving, belonging, and the place a person is trying to reach."
+  },
+  {
+   "id": "conscience",
+   "label": "Conscience",
+   "blurb": "The private refusal that will not sign what the room has agreed."
+  }
+ ],
+ "works": [
+  {
+   "id": "film-12-angry-men",
+   "type": "film",
+   "title": "12 Angry Men",
+   "creator": "Sidney Lumet",
+   "year": 1957,
+   "why": "A jury room asks whether a verdict is a procedure or a conscience, and whether one holdout may keep the others from mistaking weariness for proof.",
+   "themes": [
+    "justice",
+    "conscience",
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/12_Angry_Men_(1957_film)"
+  },
+  {
+   "id": "film-mockingbird",
+   "type": "film",
+   "title": "To Kill a Mockingbird",
+   "creator": "Robert Mulligan",
+   "year": 1962,
+   "why": "A small-town trial sets a child's sense of a person against the story the town has already agreed to tell. The film stays with the cost of standing beside the accused.",
+   "themes": [
+    "justice",
+    "conscience",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird_(film)"
+  },
+  {
+   "id": "film-paths-of-glory",
+   "type": "film",
+   "title": "Paths of Glory",
+   "creator": "Stanley Kubrick",
+   "year": 1957,
+   "why": "Officers send men to a useless assault and then look for someone to punish. The film asks what duty is worth when the order itself is a lie.",
+   "themes": [
+    "justice",
+    "power",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Paths_of_Glory"
+  },
+  {
+   "id": "film-nuremberg",
+   "type": "film",
+   "title": "Judgment at Nuremberg",
+   "creator": "Stanley Kramer",
+   "year": 1961,
+   "why": "A court has to say whether men who kept the forms of law can still be guilty of what the law was used to do. Obedience is put on the stand beside the victims.",
+   "themes": [
+    "justice",
+    "conscience",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Judgment_at_Nuremberg"
+  },
+  {
+   "id": "film-ox-bow",
+   "type": "film",
+   "title": "The Ox-Bow Incident",
+   "creator": "William A. Wellman",
+   "year": 1943,
+   "why": "A posse wants a hanging before the facts arrive. The film is about the speed of a crowd and the slower claim of mercy.",
+   "themes": [
+    "justice",
+    "mercy",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Ox-Bow_Incident"
+  },
+  {
+   "id": "film-rashomon",
+   "type": "film",
+   "title": "Rashomon",
+   "creator": "Akira Kurosawa",
+   "year": 1950,
+   "why": "The same violence is told four ways, and none of the tellers can leave himself out of the story. Truth here is not a missing fact so much as a temptation.",
+   "themes": [
+    "truth",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Rashomon"
+  },
+  {
+   "id": "film-ikiru",
+   "type": "film",
+   "title": "Ikiru",
+   "creator": "Akira Kurosawa",
+   "year": 1952,
+   "why": "A dying clerk asks what a life in an office was for, and whether a late act of care can still count. The film is about mortality and the good of an ordinary task.",
+   "themes": [
+    "mortality",
+    "good-life",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ikiru"
+  },
+  {
+   "id": "film-tokyo-story",
+   "type": "film",
+   "title": "Tokyo Story",
+   "creator": "Yasujirō Ozu",
+   "year": 1953,
+   "why": "Aging parents visit children who have no room for them, and the film refuses to turn that failure into a speech. Love, duty, and the approach of death sit in the same small rooms.",
+   "themes": [
+    "mortality",
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Tokyo_Story"
+  },
+  {
+   "id": "film-high-and-low",
+   "type": "film",
+   "title": "High and Low",
+   "creator": "Akira Kurosawa",
+   "year": 1963,
+   "why": "A kidnapper takes the wrong child, and a wealthy man has to decide whose life his money is for. Justice, mercy, and class share one long pursuit.",
+   "themes": [
+    "justice",
+    "mercy",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/High_and_Low_(1963_film)"
+  },
+  {
+   "id": "film-seventh-seal",
+   "type": "film",
+   "title": "The Seventh Seal",
+   "creator": "Ingmar Bergman",
+   "year": 1957,
+   "why": "A knight plays chess with Death and keeps asking for a sign that his life meant something. Faith and doubt are not settled by the game.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Seventh_Seal"
+  },
+  {
+   "id": "film-wild-strawberries",
+   "type": "film",
+   "title": "Wild Strawberries",
+   "creator": "Ingmar Bergman",
+   "year": 1957,
+   "why": "An old doctor drives toward an honor and meets the people he failed to love. The journey is a late examination of conscience.",
+   "themes": [
+    "mortality",
+    "conscience",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Wild_Strawberries_(film)"
+  },
+  {
+   "id": "film-winter-light",
+   "type": "film",
+   "title": "Winter Light",
+   "creator": "Ingmar Bergman",
+   "year": 1963,
+   "why": "A pastor who cannot pray still has to answer a man in despair. The film stays inside a faith that has gone cold and a duty that has not.",
+   "themes": [
+    "faith-doubt",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Winter_Light"
+  },
+  {
+   "id": "film-joan",
+   "type": "film",
+   "title": "The Passion of Joan of Arc",
+   "creator": "Carl Theodor Dreyer",
+   "year": 1928,
+   "why": "A court presses a prisoner to sign away the voices she trusts. The close frames make conscience and power into a single face.",
+   "themes": [
+    "faith-doubt",
+    "conscience",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Passion_of_Joan_of_Arc"
+  },
+  {
+   "id": "film-bicycle",
+   "type": "film",
+   "title": "Bicycle Thieves",
+   "creator": "Vittorio De Sica",
+   "year": 1948,
+   "why": "A stolen bicycle is a man's work, and the search for it pulls a father and son through a city that has no spare mercy. Dignity is shown as something that can be lost in an afternoon.",
+   "themes": [
+    "dignity",
+    "justice",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Bicycle_Thieves"
+  },
+  {
+   "id": "film-algiers",
+   "type": "film",
+   "title": "The Battle of Algiers",
+   "creator": "Gillo Pontecorvo",
+   "year": 1966,
+   "why": "An occupying army and an underground both claim necessity. The film will not let order or rebellion leave the room looking clean.",
+   "themes": [
+    "freedom-order",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Battle_of_Algiers"
+  },
+  {
+   "id": "film-mr-smith",
+   "type": "film",
+   "title": "Mr. Smith Goes to Washington",
+   "creator": "Frank Capra",
+   "year": 1939,
+   "why": "A new senator learns that the machinery of a republic can be turned against the people it names. The long speech is a picture of conscience against a comfortable corruption.",
+   "themes": [
+    "power",
+    "conscience",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mr._Smith_Goes_to_Washington"
+  },
+  {
+   "id": "film-waterfront",
+   "type": "film",
+   "title": "On the Waterfront",
+   "creator": "Elia Kazan",
+   "year": 1954,
+   "why": "A man who has been useful to a corrupt union has to decide whether silence is loyalty or a kind of guilt. The film is about the moment conscience becomes public.",
+   "themes": [
+    "conscience",
+    "power",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/On_the_Waterfront"
+  },
+  {
+   "id": "film-grapes",
+   "type": "film",
+   "title": "The Grapes of Wrath",
+   "creator": "John Ford",
+   "year": 1940,
+   "why": "A family driven off the land looks for work and keeps being told they are in the way. The film asks what a country owes the people it has made homeless.",
+   "themes": [
+    "dignity",
+    "justice",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Grapes_of_Wrath_(film)"
+  },
+  {
+   "id": "film-casablanca",
+   "type": "film",
+   "title": "Casablanca",
+   "creator": "Michael Curtiz",
+   "year": 1942,
+   "why": "An exile who has chosen not to choose is asked to give up the person he loves for a war he did not start. Duty and love are not allowed to be the same choice.",
+   "themes": [
+    "duty",
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Casablanca_(film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-wonderful-life",
+   "type": "film",
+   "title": "It's a Wonderful Life",
+   "creator": "Frank Capra",
+   "year": 1946,
+   "why": "A man who thinks his life was wasted is shown the town without him. The film treats an ordinary goodness as the thing that holds a place together.",
+   "themes": [
+    "good-life",
+    "mercy",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/It%27s_a_Wonderful_Life",
+   "rating": "PG"
+  },
+  {
+   "id": "film-kane",
+   "type": "film",
+   "title": "Citizen Kane",
+   "creator": "Orson Welles",
+   "year": 1941,
+   "why": "A publisher builds a fortune and a voice and cannot buy back the life he traded for them. Power here is a long loneliness with a public name.",
+   "themes": [
+    "power",
+    "love",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Citizen_Kane",
+   "rating": "PG"
+  },
+  {
+   "id": "film-godfather",
+   "type": "film",
+   "title": "The Godfather",
+   "creator": "Francis Ford Coppola",
+   "year": 1972,
+   "why": "A son who wanted a cleaner life inherits a family that calls crime a duty. The film watches power teach him to call cruelty protection.",
+   "themes": [
+    "power",
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Godfather",
+   "rating": "R"
+  },
+  {
+   "id": "film-godfather-2",
+   "type": "film",
+   "title": "The Godfather Part II",
+   "creator": "Francis Ford Coppola",
+   "year": 1974,
+   "why": "The rise of a father and the isolation of a son are told together, and neither story ends in a home. Power keeps its promises by emptying the house.",
+   "themes": [
+    "power",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Godfather_Part_II",
+   "rating": "R"
+  },
+  {
+   "id": "film-schindler",
+   "type": "film",
+   "title": "Schindler's List",
+   "creator": "Steven Spielberg",
+   "year": 1993,
+   "why": "A man who profits from a murderous system spends that profit to keep particular people alive. Mercy is shown as a list of names, not a mood.",
+   "themes": [
+    "mercy",
+    "dignity",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Schindler%27s_List",
+   "rating": "R"
+  },
+  {
+   "id": "film-lives",
+   "type": "film",
+   "title": "The Lives of Others",
+   "creator": "Florian Henckel von Donnersmarck",
+   "year": 2006,
+   "why": "A listener for the state begins to hear the people he was sent to trap. Surveillance becomes a question of conscience, and of whether a private life can survive an order that claims to protect it.",
+   "themes": [
+    "freedom-order",
+    "conscience",
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Lives_of_Others",
+   "rating": "R"
+  },
+  {
+   "id": "film-gandhi",
+   "type": "film",
+   "title": "Gandhi",
+   "creator": "Richard Attenborough",
+   "year": 1982,
+   "why": "A campaign of nonviolence asks whether a people can refuse an empire without becoming a mirror of its force. Dignity is treated as a public discipline, not a private feeling.",
+   "themes": [
+    "dignity",
+    "justice",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Gandhi_(film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-right-thing",
+   "type": "film",
+   "title": "Do the Right Thing",
+   "creator": "Spike Lee",
+   "year": 1989,
+   "why": "One hot day in a neighborhood shows how a small insult and an old grievance can meet a police order. The film leaves the question of justice in the street, not in a speech.",
+   "themes": [
+    "justice",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Do_the_Right_Thing",
+   "rating": "R"
+  },
+  {
+   "id": "film-selma",
+   "type": "film",
+   "title": "Selma",
+   "creator": "Ava DuVernay",
+   "year": 2014,
+   "why": "A march for the vote is also an argument about who is allowed to be a citizen in practice. The film stays with the discipline of a movement and the violence that answers it.",
+   "themes": [
+    "justice",
+    "dignity",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Selma_(film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-seasons",
+   "type": "film",
+   "title": "A Man for All Seasons",
+   "creator": "Fred Zinnemann",
+   "year": 1966,
+   "why": "Thomas More will not sign what his conscience will not hold, and the state answers with a trial. The film is about the cost of a single refusal.",
+   "themes": [
+    "conscience",
+    "duty",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Man_for_All_Seasons_(1966_film)",
+   "rating": "G"
+  },
+  {
+   "id": "film-dead-man",
+   "type": "film",
+   "title": "Dead Man Walking",
+   "creator": "Tim Robbins",
+   "year": 1995,
+   "why": "A nun accompanies a man condemned to death and will not pretend he is innocent or that the killing will heal the families. Mercy and justice are kept in the same room.",
+   "themes": [
+    "mercy",
+    "justice",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Dead_Man_Walking_(film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-shawshank",
+   "type": "film",
+   "title": "The Shawshank Redemption",
+   "creator": "Frank Darabont",
+   "year": 1994,
+   "why": "A prison is an order that wants to own a man's years. The film asks what hope is for when the institution has already closed the case.",
+   "themes": [
+    "justice",
+    "mercy",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Shawshank_Redemption",
+   "rating": "R"
+  },
+  {
+   "id": "film-separation",
+   "type": "film",
+   "title": "A Separation",
+   "creator": "Asghar Farhadi",
+   "year": 2011,
+   "why": "A marriage, a job, and a care for an ailing father become a legal quarrel in which everyone has a reason. Truth is partial, and duty pulls in more than one direction.",
+   "themes": [
+    "justice",
+    "truth",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Separation",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-parasite",
+   "type": "film",
+   "title": "Parasite",
+   "creator": "Bong Joon-ho",
+   "year": 2019,
+   "why": "Two families share a house without sharing a life, and the arrangement cannot stay polite. The film makes dignity and class into a single architecture.",
+   "themes": [
+    "dignity",
+    "justice",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Parasite_(2019_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-shoplifters",
+   "type": "film",
+   "title": "Shoplifters",
+   "creator": "Hirokazu Kore-eda",
+   "year": 2018,
+   "why": "A household that is not a legal family keeps a child the world has already mislaid. The film asks what mercy owes, and what a home is when the papers say otherwise.",
+   "themes": [
+    "mercy",
+    "dignity",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Shoplifters"
+  },
+  {
+   "id": "film-spirited",
+   "type": "film",
+   "title": "Spirited Away",
+   "creator": "Hayao Miyazaki",
+   "year": 2001,
+   "why": "A girl is taken into a spirit bathhouse and has to remember her name in order to find the way back. Exile here is a loss of self as much as a loss of place.",
+   "themes": [
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Spirited_Away",
+   "rating": "PG"
+  },
+  {
+   "id": "film-fireflies",
+   "type": "film",
+   "title": "Grave of the Fireflies",
+   "creator": "Isao Takahata",
+   "year": 1988,
+   "why": "Two children try to keep a household alive in a burning country. The film is about love and mortality when the adult world has already failed them.",
+   "themes": [
+    "mortality",
+    "exile",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Grave_of_the_Fireflies",
+   "rating": "Not rated"
+  },
+  {
+   "id": "film-coco",
+   "type": "film",
+   "title": "Coco",
+   "creator": "Lee Unkrich",
+   "year": 2017,
+   "why": "A boy crosses into the land of the dead to learn which ancestor his family was told to forget. Memory is treated as the form love takes after death.",
+   "themes": [
+    "mortality",
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Coco_(2017_film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-amour",
+   "type": "film",
+   "title": "Amour",
+   "creator": "Michael Haneke",
+   "year": 2012,
+   "why": "An old couple faces the slow undoing of one of them, and care becomes the whole of the marriage. Love is shown as a duty that does not get easier.",
+   "themes": [
+    "love",
+    "mortality",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Amour_(2012_film)"
+  },
+  {
+   "id": "film-babette",
+   "type": "film",
+   "title": "Babette's Feast",
+   "creator": "Gabriel Axel",
+   "year": 1987,
+   "why": "A refugee spends everything she has on one meal for a stern little congregation. The feast is a picture of mercy, and of a good life that is not the same as comfort.",
+   "themes": [
+    "mercy",
+    "faith-doubt",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Babette%27s_Feast",
+   "rating": "G"
+  },
+  {
+   "id": "film-silence",
+   "type": "film",
+   "title": "Silence",
+   "creator": "Martin Scorsese",
+   "year": 2016,
+   "why": "Priests in hiding are asked to trample an image of the God they came to serve. The film stays with faith under torture, and with the mercy that might look like surrender.",
+   "themes": [
+    "faith-doubt",
+    "mercy",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Silence_(2016_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-gods",
+   "type": "film",
+   "title": "Of Gods and Men",
+   "creator": "Xavier Beauvois",
+   "year": 2010,
+   "why": "Monks in a threatened village have to decide whether staying is faithfulness or a refusal to see the danger. Duty, doubt, and neighborly mercy are the whole plot.",
+   "themes": [
+    "faith-doubt",
+    "duty",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Of_Gods_and_Men_(film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-hidden-life",
+   "type": "film",
+   "title": "A Hidden Life",
+   "creator": "Terrence Malick",
+   "year": 2019,
+   "why": "A farmer will not swear an oath his conscience rejects, and the refusal is quiet, local, and fatal. The film asks what a private no is worth to a public order.",
+   "themes": [
+    "conscience",
+    "faith-doubt",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Hidden_Life_(2019_film)"
+  },
+  {
+   "id": "film-reformed",
+   "type": "film",
+   "title": "First Reformed",
+   "creator": "Paul Schrader",
+   "year": 2017,
+   "why": "A pastor keeps a journal as his faith thins and the world's damage presses in. Conscience and despair share the same small church.",
+   "themes": [
+    "faith-doubt",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/First_Reformed",
+   "rating": "R"
+  },
+  {
+   "id": "film-crimes",
+   "type": "film",
+   "title": "Crimes and Misdemeanors",
+   "creator": "Woody Allen",
+   "year": 1989,
+   "why": "A man arranges a death and waits to see whether guilt is a fact or only a feeling. The film sets justice, conscience, and a comfortable life side by side.",
+   "themes": [
+    "conscience",
+    "justice",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Crimes_and_Misdemeanors",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-pianist",
+   "type": "film",
+   "title": "The Pianist",
+   "creator": "Roman Polanski",
+   "year": 2002,
+   "why": "A musician survives a city that is trying to erase the people in it. The film is about dignity under hunger, and about exile inside one's own streets.",
+   "themes": [
+    "exile",
+    "dignity",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Pianist_(2002_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-departures",
+   "type": "film",
+   "title": "Departures",
+   "creator": "Yōjirō Takita",
+   "year": 2008,
+   "why": "A cellist takes work preparing the dead and learns a rite his neighbors despise. The film treats care for a body as a form of dignity and duty.",
+   "themes": [
+    "mortality",
+    "duty",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Departures_(2008_film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-paradiso",
+   "type": "film",
+   "title": "Cinema Paradiso",
+   "creator": "Giuseppe Tornatore",
+   "year": 1988,
+   "why": "A man returns to the town and the projectionist who raised him on movies. The film is a long look at exile, first love, and the home that does not stay as it was.",
+   "themes": [
+    "exile",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Cinema_Paradiso",
+   "rating": "R"
+  },
+  {
+   "id": "film-persepolis",
+   "type": "film",
+   "title": "Persepolis",
+   "creator": "Marjane Satrapi and Vincent Paronnaud",
+   "year": 2007,
+   "why": "A girl grows up through revolution, war, and a life abroad that never quite becomes home. Faith, political order, and exile are told as one childhood.",
+   "themes": [
+    "exile",
+    "freedom-order",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Persepolis_(film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-best-years",
+   "type": "film",
+   "title": "The Best Years of Our Lives",
+   "creator": "William Wyler",
+   "year": 1946,
+   "why": "Three men come back from war and cannot fit the houses that waited for them. Homecoming is shown as a second kind of duty.",
+   "themes": [
+    "exile",
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Best_Years_of_Our_Lives"
+  },
+  {
+   "id": "film-brief",
+   "type": "film",
+   "title": "Brief Encounter",
+   "creator": "David Lean",
+   "year": 1945,
+   "why": "Two married people meet and almost step out of the lives they have promised. The film is about love that does not get to cancel duty.",
+   "themes": [
+    "love",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Brief_Encounter"
+  },
+  {
+   "id": "film-zone",
+   "type": "film",
+   "title": "The Zone of Interest",
+   "creator": "Jonathan Glazer",
+   "year": 2023,
+   "why": "A family makes a pleasant household beside a camp whose purpose they treat as someone else's work. The film is about the conscience that learns not to hear.",
+   "themes": [
+    "conscience",
+    "power",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Zone_of_Interest_(film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-spotlight",
+   "type": "film",
+   "title": "Spotlight",
+   "creator": "Tom McCarthy",
+   "year": 2015,
+   "why": "Reporters follow a pattern of abuse that an institution had agreed not to name. The film is about truth as a slow public duty, and about the faith that was used as cover.",
+   "themes": [
+    "truth",
+    "power",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Spotlight_(film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-network",
+   "type": "film",
+   "title": "Network",
+   "creator": "Sidney Lumet",
+   "year": 1976,
+   "why": "A newsroom discovers that anger is a product. The film asks what happens to truth when an audience is taught to want a performance of it.",
+   "themes": [
+    "truth",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Network_(1976_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-good-night",
+   "type": "film",
+   "title": "Good Night, and Good Luck",
+   "creator": "George Clooney",
+   "year": 2005,
+   "why": "A broadcast newsroom decides how far it will go in contradicting a powerful senator. The film is a small study of truth, fear, and professional conscience.",
+   "themes": [
+    "truth",
+    "power",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Good_Night,_and_Good_Luck",
+   "rating": "PG"
+  },
+  {
+   "id": "film-groundhog",
+   "type": "film",
+   "title": "Groundhog Day",
+   "creator": "Harold Ramis",
+   "year": 1993,
+   "why": "A man is made to live the same day until he learns what to do with it. The comedy is a moral tale about the good life and about love that cannot be faked.",
+   "themes": [
+    "good-life",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Groundhog_Day_(film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-soul",
+   "type": "film",
+   "title": "Soul",
+   "creator": "Pete Docter and Kemp Powers",
+   "year": 2020,
+   "why": "A musician near death is sent to argue about what a life is for before he has finished wanting one thing. The film separates a vocation from the worth of being alive.",
+   "themes": [
+    "good-life",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Soul_(2020_film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-up",
+   "type": "film",
+   "title": "Up",
+   "creator": "Pete Docter",
+   "year": 2009,
+   "why": "A widower ties his house to balloons to keep a promise made in youth. Grief, love, and the question of a finished life are told as an adventure.",
+   "themes": [
+    "love",
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Up_(2009_film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-tree",
+   "type": "film",
+   "title": "The Tree of Life",
+   "creator": "Terrence Malick",
+   "year": 2011,
+   "why": "A family in a small town is set beside the scale of creation, and a grown son still argues with a father and with God. Love, loss, and faith are not separated.",
+   "themes": [
+    "faith-doubt",
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Tree_of_Life_(film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-rublev",
+   "type": "film",
+   "title": "Andrei Rublev",
+   "creator": "Andrei Tarkovsky",
+   "year": 1966,
+   "why": "A painter of icons travels through a violent century and falls silent. The film asks what art and faith owe a world that keeps burning its churches.",
+   "themes": [
+    "faith-doubt",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Andrei_Rublev_(film)"
+  },
+  {
+   "id": "film-sophie",
+   "type": "film",
+   "title": "Sophie Scholl: The Final Days",
+   "creator": "Marc Rothemund",
+   "year": 2005,
+   "why": "A student who distributed leaflets against a dictatorship is interrogated and still will not recant. Conscience is shown as a series of answers in a small room.",
+   "themes": [
+    "conscience",
+    "duty",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sophie_Scholl_%E2%80%93_The_Final_Days"
+  },
+  {
+   "id": "film-anatomy",
+   "type": "film",
+   "title": "Anatomy of a Fall",
+   "creator": "Justine Triet",
+   "year": 2023,
+   "why": "A death in a house becomes a trial in which a marriage is told by people who were not in it. The film is about what a court can know, and what it still has to decide.",
+   "themes": [
+    "truth",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Anatomy_of_a_Fall",
+   "rating": "R"
+  },
+  {
+   "id": "film-les-mis",
+   "type": "film",
+   "title": "Les Misérables",
+   "creator": "Tom Hooper",
+   "year": 2012,
+   "why": "A convict is spared and spends the mercy forward, while the law keeps a narrower account. The film sets justice, love, and a revolution's hunger in the same streets.",
+   "themes": [
+    "mercy",
+    "justice",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables_(2012_film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-iwo",
+   "type": "film",
+   "title": "Letters from Iwo Jima",
+   "creator": "Clint Eastwood",
+   "year": 2006,
+   "why": "Soldiers who know the battle is lost still have to decide what they owe one another. The film looks at duty and mortality from inside the defeated side.",
+   "themes": [
+    "duty",
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Letters_from_Iwo_Jima",
+   "rating": "R"
+  },
+  {
+   "id": "film-oppenheimer",
+   "type": "film",
+   "title": "Oppenheimer",
+   "creator": "Christopher Nolan",
+   "year": 2023,
+   "why": "The making of a weapon is also the story of a man who cannot put the responsibility back on the institution. Power, duty, and a late conscience share the hearing room.",
+   "themes": [
+    "duty",
+    "power",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Oppenheimer_(film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-philadelphia",
+   "type": "film",
+   "title": "Philadelphia",
+   "creator": "Jonathan Demme",
+   "year": 1993,
+   "why": "A lawyer dismissed because he is ill has to ask a court to see him as a person the office was not allowed to discard. The film is about dignity at the end of a life.",
+   "themes": [
+    "dignity",
+    "justice",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Philadelphia_(film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-blood",
+   "type": "film",
+   "title": "There Will Be Blood",
+   "creator": "Paul Thomas Anderson",
+   "year": 2007,
+   "why": "An oilman builds a fortune and a private religion of winning. The film watches power empty the promises it makes to family, neighbors, and God.",
+   "themes": [
+    "power",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/There_Will_Be_Blood",
+   "rating": "R"
+  },
+  {
+   "id": "film-apartment",
+   "type": "film",
+   "title": "The Apartment",
+   "creator": "Billy Wilder",
+   "year": 1960,
+   "why": "A clerk lends his home to his bosses' affairs and has to see what that compliance costs the woman he loves. Ambition and conscience meet in a small kitchen.",
+   "themes": [
+    "dignity",
+    "love",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Apartment"
+  },
+  {
+   "id": "film-samurai",
+   "type": "film",
+   "title": "Seven Samurai",
+   "creator": "Akira Kurosawa",
+   "year": 1954,
+   "why": "Hired swords agree to defend a village that cannot pay them in anything but rice and risk. Duty here is a promise kept for people who will not remember the names.",
+   "themes": [
+    "duty",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Seven_Samurai"
+  },
+  {
+   "id": "film-erin",
+   "type": "film",
+   "title": "Erin Brockovich",
+   "creator": "Steven Soderbergh",
+   "year": 2000,
+   "why": "A woman without a law degree follows a company's records until a town's illnesses have names. The film is about dignity and the slow work of making a harm visible.",
+   "themes": [
+    "justice",
+    "dignity",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Erin_Brockovich_(film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-insider",
+   "type": "film",
+   "title": "The Insider",
+   "creator": "Michael Mann",
+   "year": 1999,
+   "why": "A scientist decides to tell what his company kept quiet, and then has to live with the telling. Truth is shown as a decision that does not stay private.",
+   "themes": [
+    "truth",
+    "conscience",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Insider_(film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-presidents",
+   "type": "film",
+   "title": "All the President's Men",
+   "creator": "Alan J. Pakula",
+   "year": 1976,
+   "why": "Two reporters follow small facts toward a presidency that would rather the facts stay scattered. The film treats truth as a craft under pressure.",
+   "themes": [
+    "truth",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/All_the_President%27s_Men_(film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-straight",
+   "type": "film",
+   "title": "The Straight Story",
+   "creator": "David Lynch",
+   "year": 1999,
+   "why": "An old man drives a lawn mower across a state to see a brother he has not forgiven. The journey is a plain argument for duty, age, and reconciliation.",
+   "themes": [
+    "duty",
+    "love",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Straight_Story",
+   "rating": "G"
+  },
+  {
+   "id": "film-calvary",
+   "type": "film",
+   "title": "Calvary",
+   "creator": "John Michael McDonagh",
+   "year": 2014,
+   "why": "A priest is told he will be killed for the sins of the church, not for his own. The week that follows is about faith, mercy, and the death that is coming anyway.",
+   "themes": [
+    "faith-doubt",
+    "mercy",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Calvary_(2014_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-portrait",
+   "type": "film",
+   "title": "Portrait of a Lady on Fire",
+   "creator": "Céline Sciamma",
+   "year": 2019,
+   "why": "Two women share a few days in which looking at each other is the whole of the love and the whole of the danger. The film keeps the memory after the world resumes its rules.",
+   "themes": [
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Portrait_of_a_Lady_on_Fire",
+   "rating": "R"
+  },
+  {
+   "id": "film-sunrise",
+   "type": "film",
+   "title": "Before Sunrise",
+   "creator": "Richard Linklater",
+   "year": 1995,
+   "why": "Two strangers walk through a city and talk as if a night could hold a life. The film is a study of love before it has to become a plan.",
+   "themes": [
+    "love",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Before_Sunrise",
+   "rating": "R"
+  },
+  {
+   "id": "film-life",
+   "type": "film",
+   "title": "Life Is Beautiful",
+   "creator": "Roberto Benigni",
+   "year": 1997,
+   "why": "A father invents a game to hide a camp from his son. The film asks what love and dignity can still do inside a machine built to destroy both.",
+   "themes": [
+    "love",
+    "dignity",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Life_Is_Beautiful",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-mission",
+   "type": "film",
+   "title": "The Mission",
+   "creator": "Roland Joffé",
+   "year": 1986,
+   "why": "A mercenary and a priest try to protect a community that empires have already decided to move. Faith, mercy, and the use of force are left in argument.",
+   "themes": [
+    "faith-doubt",
+    "mercy",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Mission_(1986_film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-kwai",
+   "type": "film",
+   "title": "The Bridge on the River Kwai",
+   "creator": "David Lean",
+   "year": 1957,
+   "why": "A prisoner builds a bridge for his captors because his idea of duty cannot bear a shoddy job. The film asks when discipline becomes collaboration.",
+   "themes": [
+    "duty",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Bridge_on_the_River_Kwai",
+   "rating": "PG"
+  },
+  {
+   "id": "film-lawrence",
+   "type": "film",
+   "title": "Lawrence of Arabia",
+   "creator": "David Lean",
+   "year": 1962,
+   "why": "A foreign officer helps lead a revolt and cannot tell where the cause ends and his own appetite for glory begins. Exile and power share the desert.",
+   "themes": [
+    "exile",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)",
+   "rating": "PG"
+  },
+  {
+   "id": "film-oz",
+   "type": "film",
+   "title": "The Wizard of Oz",
+   "creator": "Victor Fleming",
+   "year": 1939,
+   "why": "A girl is carried out of home and spends the story trying to get back, helped by companions who want a quality they think they lack. The journey is about exile and the sufficiency of an ordinary life.",
+   "themes": [
+    "exile",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz",
+   "rating": "G"
+  },
+  {
+   "id": "film-luke",
+   "type": "film",
+   "title": "Cool Hand Luke",
+   "creator": "Stuart Rosenberg",
+   "year": 1967,
+   "why": "A prisoner refuses to let a camp own his spirit, and the refusal is both freedom and a kind of doom. The film watches an order try to break a single dignity.",
+   "themes": [
+    "freedom-order",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Cool_Hand_Luke",
+   "rating": "PG"
+  },
+  {
+   "id": "film-dunkirk",
+   "type": "film",
+   "title": "Dunkirk",
+   "creator": "Christopher Nolan",
+   "year": 2017,
+   "why": "Soldiers wait on a beach for a rescue that may not come, and civilians cross the water anyway. Duty and mortality are told with almost no speeches.",
+   "themes": [
+    "duty",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Dunkirk_(2017_film)",
+   "rating": "PG-13"
+  },
+  {
+   "id": "film-milk",
+   "type": "film",
+   "title": "Milk",
+   "creator": "Gus Van Sant",
+   "year": 2008,
+   "why": "A man asks a city to see his neighbors as citizens with a public life. The film is about dignity, organizing, and the violence that answers a claim to belong.",
+   "themes": [
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Milk_(2008_American_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-homecoming",
+   "type": "film",
+   "title": "Coming Home",
+   "creator": "Hal Ashby",
+   "year": 1978,
+   "why": "A war comes back into a marriage as injury, desire, and a changed conscience. The film asks what the people who stayed owe the people who returned.",
+   "themes": [
+    "duty",
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Coming_Home_(1978_film)",
+   "rating": "R"
+  },
+  {
+   "id": "film-killing",
+   "type": "film",
+   "title": "A Short Film About Killing",
+   "creator": "Krzysztof Kieślowski",
+   "year": 1988,
+   "why": "A murder and the state's answering killing are shown with the same unflinching attention. The film asks whether justice and cruelty can share a method.",
+   "themes": [
+    "justice",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Short_Film_About_Killing"
+  },
+  {
+   "id": "film-ordet",
+   "type": "film",
+   "title": "Ordet",
+   "creator": "Carl Theodor Dreyer",
+   "year": 1955,
+   "why": "A farm family split by kinds of belief is brought to a bedside where faith is asked to do the impossible. Doubt and devotion are not assigned to villains.",
+   "themes": [
+    "faith-doubt",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ordet"
+  },
+  {
+   "id": "film-trial",
+   "type": "film",
+   "title": "The Trial",
+   "creator": "Orson Welles",
+   "year": 1962,
+   "why": "A man is arrested and never told the charge, and every office he enters already knows more than he does. The film is a nightmare of justice without a reason.",
+   "themes": [
+    "justice",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Trial_(1962_film)"
+  },
+  {
+   "id": "film-rome",
+   "type": "film",
+   "title": "Rome, Open City",
+   "creator": "Roberto Rossellini",
+   "year": 1945,
+   "why": "Under occupation, a priest, a fighter, and a household try to keep faith with one another. Duty and dignity are ordinary acts in a city that can punish them.",
+   "themes": [
+    "duty",
+    "dignity",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Rome,_Open_City"
+  },
+  {
+   "id": "film-mood",
+   "type": "film",
+   "title": "In the Mood for Love",
+   "creator": "Wong Kar-wai",
+   "year": 2000,
+   "why": "Two neighbors discover a betrayal and almost, but not quite, make a life from the discovery. Love is shown as restraint, and as a kind of exile inside a marriage.",
+   "themes": [
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/In_the_Mood_for_Love"
+  },
+  {
+   "id": "song-strange-fruit",
+   "type": "song",
+   "title": "Strange Fruit",
+   "creator": "Billie Holiday, written by Abel Meeropol",
+   "year": 1939,
+   "why": "A nightclub song names a lynching as something the country could see and still leave hanging. It is a short, unbearable argument about justice and the dignity a crowd can refuse.",
+   "themes": [
+    "justice",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Strange_Fruit"
+  },
+  {
+   "id": "song-change",
+   "type": "song",
+   "title": "A Change Is Gonna Come",
+   "creator": "Sam Cooke",
+   "year": 1964,
+   "why": "Cooke wrote a gospel-shaped promise that a long humiliation would not be the last word. The song belongs to justice, dignity, and the hope that a people might yet be at home.",
+   "themes": [
+    "justice",
+    "dignity",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Change_Is_Gonna_Come"
+  },
+  {
+   "id": "song-whats-going-on",
+   "type": "song",
+   "title": "What's Going On",
+   "creator": "Marvin Gaye",
+   "year": 1971,
+   "why": "A soldier's brother asks a country at war with itself to listen before it answers. The record holds grief, justice, and a plea that sounds like mercy.",
+   "themes": [
+    "justice",
+    "mercy",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/What%27s_Going_On_(song)"
+  },
+  {
+   "id": "song-mississippi",
+   "type": "song",
+   "title": "Mississippi Goddam",
+   "creator": "Nina Simone",
+   "year": 1964,
+   "why": "Simone refuses the polite pace others asked of a movement after bloodshed. The song is anger disciplined into a demand for justice.",
+   "themes": [
+    "justice",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mississippi_Goddam"
+  },
+  {
+   "id": "song-blowin",
+   "type": "song",
+   "title": "Blowin' in the Wind",
+   "creator": "Bob Dylan",
+   "year": 1963,
+   "why": "A string of questions about war, freedom, and how long a person can look away. The song does not answer them, which is its moral point.",
+   "themes": [
+    "justice",
+    "conscience",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Blowin%27_in_the_Wind"
+  },
+  {
+   "id": "song-times",
+   "type": "song",
+   "title": "The Times They Are a-Changin'",
+   "creator": "Bob Dylan",
+   "year": 1964,
+   "why": "A warning to senators, parents, and writers that an order is already shifting under them. It is a song about change, not a party platform.",
+   "themes": [
+    "freedom-order",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Times_They_Are_a-Changin%27_(song)"
+  },
+  {
+   "id": "song-masters",
+   "type": "song",
+   "title": "Masters of War",
+   "creator": "Bob Dylan",
+   "year": 1963,
+   "why": "The song addresses the people who send others to die and then go home to count the profit. It is a curse on power that does not share the risk.",
+   "themes": [
+    "power",
+    "mortality",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Masters_of_War"
+  },
+  {
+   "id": "song-hard-rain",
+   "type": "song",
+   "title": "A Hard Rain's a-Gonna Fall",
+   "creator": "Bob Dylan",
+   "year": 1963,
+   "why": "A catalog of visions from a world already breaking. The song treats the coming storm as a moral weather, not only a political one.",
+   "themes": [
+    "mortality",
+    "truth",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Hard_Rain%27s_a-Gonna_Fall"
+  },
+  {
+   "id": "song-hattie",
+   "type": "song",
+   "title": "The Lonesome Death of Hattie Carroll",
+   "creator": "Bob Dylan",
+   "year": 1964,
+   "why": "A killing and a light sentence are set side by side until the disproportion is the whole song. It is a ballad about justice that failed in public.",
+   "themes": [
+    "justice",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Lonesome_Death_of_Hattie_Carroll"
+  },
+  {
+   "id": "song-chimes",
+   "type": "song",
+   "title": "Chimes of Freedom",
+   "creator": "Bob Dylan",
+   "year": 1964,
+   "why": "Lightning over a city becomes a tolling for prisoners, exiles, and anyone the thunder might still include. Freedom is imagined as a sound that does not check papers.",
+   "themes": [
+    "freedom-order",
+    "dignity",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Chimes_of_Freedom_(song)"
+  },
+  {
+   "id": "song-alright",
+   "type": "song",
+   "title": "It's Alright, Ma (I'm Only Bleeding)",
+   "creator": "Bob Dylan",
+   "year": 1965,
+   "why": "A long warning about advertising, obedience, and the faces power teaches people to wear. Truth is what is left when the slogans stop working.",
+   "themes": [
+    "truth",
+    "power",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/It%27s_Alright,_Ma_(I%27m_Only_Bleeding)"
+  },
+  {
+   "id": "song-knockin",
+   "type": "song",
+   "title": "Knockin' on Heaven's Door",
+   "creator": "Bob Dylan",
+   "year": 1973,
+   "why": "A dying officer asks to lay his badge and his guns down. The song is almost nothing but mortality and the end of a duty.",
+   "themes": [
+    "mortality",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Knockin%27_on_Heaven%27s_Door"
+  },
+  {
+   "id": "song-shelter",
+   "type": "song",
+   "title": "Shelter from the Storm",
+   "creator": "Bob Dylan",
+   "year": 1975,
+   "why": "A traveler is taken in and later finds the door changed. Love is pictured as mercy, and as a shelter that does not have to last forever.",
+   "themes": [
+    "love",
+    "mercy",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Shelter_from_the_Storm"
+  },
+  {
+   "id": "song-grain",
+   "type": "song",
+   "title": "Every Grain of Sand",
+   "creator": "Bob Dylan",
+   "year": 1981,
+   "why": "A man looks back at temptation and thinks even his failures were counted. The song is a late psalm of faith, doubt, and conscience.",
+   "themes": [
+    "faith-doubt",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Every_Grain_of_Sand"
+  },
+  {
+   "id": "song-not-dark",
+   "type": "song",
+   "title": "Not Dark Yet",
+   "creator": "Bob Dylan",
+   "year": 1997,
+   "why": "The light is going and the singer is still here, tired of his own story. Mortality arrives without a moral pasted on the end.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Not_Dark_Yet"
+  },
+  {
+   "id": "song-hallelujah",
+   "type": "song",
+   "title": "Hallelujah",
+   "creator": "Leonard Cohen",
+   "year": 1984,
+   "why": "A sacred word is carried through love, failure, and a music that will not resolve into certainty. Faith and desire share the same broken chord.",
+   "themes": [
+    "faith-doubt",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Hallelujah_(Leonard_Cohen_song)"
+  },
+  {
+   "id": "song-anthem",
+   "type": "song",
+   "title": "Anthem",
+   "creator": "Leonard Cohen",
+   "year": 1992,
+   "why": "The song tells a listener not to wait for a perfect world before telling the truth. Mercy is located in the broken place, not in a flawless order.",
+   "themes": [
+    "mercy",
+    "truth",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Anthem_(Leonard_Cohen_song)"
+  },
+  {
+   "id": "song-everybody",
+   "type": "song",
+   "title": "Everybody Knows",
+   "creator": "Leonard Cohen",
+   "year": 1988,
+   "why": "A litany of open secrets about power, money, and the deals people pretend not to see. The joke is bitter because the corruption is already common knowledge.",
+   "themes": [
+    "truth",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Everybody_Knows_(Leonard_Cohen_song)"
+  },
+  {
+   "id": "song-darker",
+   "type": "song",
+   "title": "You Want It Darker",
+   "creator": "Leonard Cohen",
+   "year": 2016,
+   "why": "An old man answers a God he is ready to meet, and does not soften the indictment. Faith at the end of a life is spoken as a challenge, not a comfort.",
+   "themes": [
+    "faith-doubt",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/You_Want_It_Darker"
+  },
+  {
+   "id": "song-will",
+   "type": "song",
+   "title": "If It Be Your Will",
+   "creator": "Leonard Cohen",
+   "year": 1984,
+   "why": "A prayer that asks to be allowed to sing, or to be silenced, if that is what is asked. Duty and faith are offered with the hands open.",
+   "themes": [
+    "faith-doubt",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/If_It_Be_Your_Will"
+  },
+  {
+   "id": "song-dance",
+   "type": "song",
+   "title": "Dance Me to the End of Love",
+   "creator": "Leonard Cohen",
+   "year": 1984,
+   "why": "Cohen said the song began from the string quartets forced to play in the camps. Love and mortality are danced to the last bar.",
+   "themes": [
+    "love",
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Dance_Me_to_the_End_of_Love"
+  },
+  {
+   "id": "song-bird",
+   "type": "song",
+   "title": "Bird on the Wire",
+   "creator": "Leonard Cohen",
+   "year": 1969,
+   "why": "A man tries to be free and still be faithful, and admits he has failed both. The song is a confession more than a boast of liberty.",
+   "themes": [
+    "freedom-order",
+    "love",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Bird_on_the_Wire"
+  },
+  {
+   "id": "song-suzanne",
+   "type": "song",
+   "title": "Suzanne",
+   "creator": "Leonard Cohen",
+   "year": 1967,
+   "why": "A riverside visit and a figure of Jesus are braided until love and faith are hard to tell apart. The song does not choose between them.",
+   "themes": [
+    "love",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Suzanne_(Leonard_Cohen_song)"
+  },
+  {
+   "id": "song-raincoat",
+   "type": "song",
+   "title": "Famous Blue Raincoat",
+   "creator": "Leonard Cohen",
+   "year": 1971,
+   "why": "A letter to a rival and a friend tries to tell the truth about a triangle without winning it. Love, guilt, and a kind of exile share the page.",
+   "themes": [
+    "love",
+    "truth",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Famous_Blue_Raincoat"
+  },
+  {
+   "id": "song-partisan",
+   "type": "song",
+   "title": "The Partisan",
+   "creator": "Leonard Cohen",
+   "year": 1969,
+   "why": "Cohen sings an English version of a Resistance song about hiding, crossing a border, and the friends who do not survive. Duty and exile are the whole story.",
+   "themes": [
+    "duty",
+    "exile",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Partisan_(song)"
+  },
+  {
+   "id": "song-who-by-fire",
+   "type": "song",
+   "title": "Who by Fire",
+   "creator": "Leonard Cohen",
+   "year": 1974,
+   "why": "Drawn from a liturgy of the ways a year may end, the song lists deaths without ranking them. Mortality is a roll call, not a sermon.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Who_by_Fire"
+  },
+  {
+   "id": "song-redemption",
+   "type": "song",
+   "title": "Redemption Song",
+   "creator": "Bob Marley",
+   "year": 1980,
+   "why": "Near the end of his life Marley asks listeners to loosen the inner chains as well as the outer ones. The song is about dignity and a freedom that is not only political.",
+   "themes": [
+    "freedom-order",
+    "dignity",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Redemption_Song"
+  },
+  {
+   "id": "song-get-up",
+   "type": "song",
+   "title": "Get Up, Stand Up",
+   "creator": "Bob Marley and the Wailers",
+   "year": 1973,
+   "why": "A refusal to wait for heaven to do the work of justice on earth. The song is a demand that dignity be practiced, not postponed.",
+   "themes": [
+    "justice",
+    "dignity",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Get_Up,_Stand_Up"
+  },
+  {
+   "id": "song-war",
+   "type": "song",
+   "title": "War",
+   "creator": "Bob Marley and the Wailers",
+   "year": 1976,
+   "why": "Marley sets a speech about equality to a rhythm and will not let the word peace mean quiet. The song is about the conditions of a just order.",
+   "themes": [
+    "justice",
+    "power",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/War_(Bob_Marley_song)"
+  },
+  {
+   "id": "song-bridge",
+   "type": "song",
+   "title": "Bridge over Troubled Water",
+   "creator": "Simon & Garfunkel",
+   "year": 1970,
+   "why": "One voice offers to stand under another person's collapse. It is a song of mercy that does not ask to be repaid.",
+   "themes": [
+    "mercy",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Bridge_over_Troubled_Water_(song)"
+  },
+  {
+   "id": "song-silence",
+   "type": "song",
+   "title": "The Sound of Silence",
+   "creator": "Simon & Garfunkel",
+   "year": 1964,
+   "why": "People talk without speaking and worship a neon god, and the singer cannot make them hear. The song is about truth going unheard in a crowd.",
+   "themes": [
+    "truth",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Sound_of_Silence"
+  },
+  {
+   "id": "song-boxer",
+   "type": "song",
+   "title": "The Boxer",
+   "creator": "Simon & Garfunkel",
+   "year": 1969,
+   "why": "A man remains in a city that has used him up, and the refrain keeps carrying him. Poverty, exile, and a stubborn dignity share the verses.",
+   "themes": [
+    "dignity",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Boxer_(song)"
+  },
+  {
+   "id": "song-american-tune",
+   "type": "song",
+   "title": "American Tune",
+   "creator": "Paul Simon",
+   "year": 1973,
+   "why": "The Statue of Liberty sails away in a dream, and ordinary people wonder what the experiment still owes them. Home and disillusion sit in the same melody.",
+   "themes": [
+    "exile",
+    "dignity",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/American_Tune"
+  },
+  {
+   "id": "song-graceland",
+   "type": "song",
+   "title": "Graceland",
+   "creator": "Paul Simon",
+   "year": 1986,
+   "why": "A pilgrimage to a mansion in Memphis is also a drive through a broken marriage and a complicated country. The song looks for home in a place the singer does not come from.",
+   "themes": [
+    "exile",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Graceland_(song)"
+  },
+  {
+   "id": "song-fast-car",
+   "type": "song",
+   "title": "Fast Car",
+   "creator": "Tracy Chapman",
+   "year": 1988,
+   "why": "Two people try to leave a town that keeps handing them the same life. The song is about love, work, and the dignity of wanting a way out.",
+   "themes": [
+    "dignity",
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Fast_Car"
+  },
+  {
+   "id": "song-revolution",
+   "type": "song",
+   "title": "Talkin' 'bout a Revolution",
+   "creator": "Tracy Chapman",
+   "year": 1988,
+   "why": "A quiet voice says the people who are waiting on the line will not wait forever. Justice is pictured as something already standing up.",
+   "themes": [
+    "justice",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Talkin%27_bout_a_Revolution"
+  },
+  {
+   "id": "song-biko",
+   "type": "song",
+   "title": "Biko",
+   "creator": "Peter Gabriel",
+   "year": 1980,
+   "why": "A funeral song for Steve Biko refuses to let a death in custody stay a local secret. It is about dignity, power, and the names a regime cannot bury.",
+   "themes": [
+    "justice",
+    "dignity",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Biko_(song)"
+  },
+  {
+   "id": "song-worth",
+   "type": "song",
+   "title": "For What It's Worth",
+   "creator": "Buffalo Springfield",
+   "year": 1967,
+   "why": "Written after a clash on a Los Angeles boulevard, the song watches a crowd and the order sent to manage it. It takes neither side's slogan as the whole truth.",
+   "themes": [
+    "freedom-order",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/For_What_It%27s_Worth"
+  },
+  {
+   "id": "song-fortunate",
+   "type": "song",
+   "title": "Fortunate Son",
+   "creator": "Creedence Clearwater Revival",
+   "year": 1969,
+   "why": "A working family's son notices who is sent to war and who is not. The song is about duty distributed by class, not about hating a country.",
+   "themes": [
+    "duty",
+    "power",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Fortunate_Son"
+  },
+  {
+   "id": "song-ohio",
+   "type": "song",
+   "title": "Ohio",
+   "creator": "Crosby, Stills, Nash & Young",
+   "year": 1970,
+   "why": "Written after students were shot on a campus, the song names the dead and the power that fired. It is a cry about justice, not a campaign.",
+   "themes": [
+    "justice",
+    "power",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ohio_(Crosby,_Stills,_Nash_%26_Young_song)"
+  },
+  {
+   "id": "song-abraham",
+   "type": "song",
+   "title": "Abraham, Martin and John",
+   "creator": "Dion",
+   "year": 1968,
+   "why": "Dick Holler's song, sung by Dion, mourns three murdered public men and asks where they have gone. Grief and the hope of a just country share the refrain.",
+   "themes": [
+    "mortality",
+    "justice",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Abraham,_Martin_and_John"
+  },
+  {
+   "id": "song-wonderful",
+   "type": "song",
+   "title": "What a Wonderful World",
+   "creator": "Louis Armstrong",
+   "year": 1967,
+   "why": "Armstrong, singing words by Bob Thiele and George David Weiss, lists ordinary beauties as if they were still worth trusting. The song is a wager on the good life in a bad season.",
+   "themes": [
+    "good-life",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/What_a_Wonderful_World"
+  },
+  {
+   "id": "song-rainbow",
+   "type": "song",
+   "title": "Over the Rainbow",
+   "creator": "Judy Garland",
+   "year": 1939,
+   "why": "Harold Arlen and Yip Harburg's song, from The Wizard of Oz, is the wish for a place the present sky does not offer. It is the anthem of exile and of wanting home to be kinder.",
+   "themes": [
+    "exile",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Over_the_Rainbow"
+  },
+  {
+   "id": "song-grace",
+   "type": "song",
+   "title": "Amazing Grace",
+   "creator": "John Newton",
+   "year": 1779,
+   "why": "A former slave trader's hymn admits a rescue he did not earn. For centuries it has been taken up as a song of mercy, by people Newton would not have imagined.",
+   "themes": [
+    "mercy",
+    "faith-doubt",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Amazing_Grace"
+  },
+  {
+   "id": "song-mirror",
+   "type": "song",
+   "title": "Man in the Mirror",
+   "creator": "Michael Jackson",
+   "year": 1988,
+   "why": "Written by Siedah Garrett and Glen Ballard, the song turns a public complaint back on the person singing it. Change begins as an examination of conscience.",
+   "themes": [
+    "conscience",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Man_in_the_Mirror"
+  },
+  {
+   "id": "song-hurt",
+   "type": "song",
+   "title": "Hurt",
+   "creator": "Johnny Cash",
+   "year": 2002,
+   "why": "Cash, late in life, sings Trent Reznor's song as a reckoning with damage done and time left. Mortality and conscience are stripped of glamour.",
+   "themes": [
+    "mortality",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Hurt_(Nine_Inch_Nails_song)"
+  },
+  {
+   "id": "song-man-comes",
+   "type": "song",
+   "title": "The Man Comes Around",
+   "creator": "Johnny Cash",
+   "year": 2002,
+   "why": "A vision of judgment, drawn from scripture and from Cash's own late voice. Faith, fear, and the end of a life are not softened.",
+   "themes": [
+    "faith-doubt",
+    "mortality",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Man_Comes_Around_(song)"
+  },
+  {
+   "id": "song-walk-line",
+   "type": "song",
+   "title": "I Walk the Line",
+   "creator": "Johnny Cash",
+   "year": 1956,
+   "why": "A promise of fidelity is sung as a discipline, not a feeling that can be trusted to last on its own. Love and duty are the same narrow path.",
+   "themes": [
+    "love",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/I_Walk_the_Line"
+  },
+  {
+   "id": "song-this-land",
+   "type": "song",
+   "title": "This Land Is Your Land",
+   "creator": "Woody Guthrie",
+   "year": 1940,
+   "why": "Guthrie answers a boastful anthem with a walk across the country and a question about who the land is for. Home, dignity, and private property argue in the verses.",
+   "themes": [
+    "dignity",
+    "exile",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/This_Land_Is_Your_Land"
+  },
+  {
+   "id": "song-deportee",
+   "type": "song",
+   "title": "Deportee (Plane Wreck at Los Gatos)",
+   "creator": "Woody Guthrie",
+   "year": 1948,
+   "why": "After a plane of deported farm workers crashed and the papers left them nameless, Guthrie gave them a song instead. It is about dignity and the stranger who picked the fruit.",
+   "themes": [
+    "dignity",
+    "exile",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Deportee_(Plane_Wreck_at_Los_Gatos)"
+  },
+  {
+   "id": "song-pastures",
+   "type": "song",
+   "title": "Pastures of Plenty",
+   "creator": "Woody Guthrie",
+   "year": 1941,
+   "why": "Migrant workers sing the wealth they make and do not keep. The song asks what a country owes the hands that feed it.",
+   "themes": [
+    "dignity",
+    "justice",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Pastures_of_Plenty"
+  },
+  {
+   "id": "song-joad",
+   "type": "song",
+   "title": "The Ghost of Tom Joad",
+   "creator": "Bruce Springsteen",
+   "year": 1995,
+   "why": "A contemporary ballad walks the roads of The Grapes of Wrath and finds the same hunger with new names. Justice and exile are not filed as history.",
+   "themes": [
+    "justice",
+    "dignity",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Ghost_of_Tom_Joad_(song)"
+  },
+  {
+   "id": "song-river",
+   "type": "song",
+   "title": "The River",
+   "creator": "Bruce Springsteen",
+   "year": 1980,
+   "why": "A young marriage, a lost job, and a river that used to mean hope. The song is about love under economic weather, and about the good life that did not arrive.",
+   "themes": [
+    "love",
+    "duty",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_River_(Bruce_Springsteen_song)"
+  },
+  {
+   "id": "song-philadelphia",
+   "type": "song",
+   "title": "Streets of Philadelphia",
+   "creator": "Bruce Springsteen",
+   "year": 1994,
+   "why": "Written for the film Philadelphia, the song walks a city with a man the city is already forgetting. Illness, dignity, and love are carried in a plain melody.",
+   "themes": [
+    "dignity",
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Streets_of_Philadelphia"
+  },
+  {
+   "id": "song-born",
+   "type": "song",
+   "title": "Born in the U.S.A.",
+   "creator": "Bruce Springsteen",
+   "year": 1984,
+   "why": "A veteran comes home to a country that can cheer the chorus and miss the abandonment in the verses. The song is about duty repaid with exile.",
+   "themes": [
+    "duty",
+    "exile",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Born_in_the_U.S.A._(song)"
+  },
+  {
+   "id": "song-thunder",
+   "type": "song",
+   "title": "Thunder Road",
+   "creator": "Bruce Springsteen",
+   "year": 1975,
+   "why": "Two people are offered a road out of a town that has already decided their lives. Freedom and love are a wager, not a guarantee.",
+   "themes": [
+    "freedom-order",
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Thunder_Road_(song)"
+  },
+  {
+   "id": "song-ruins",
+   "type": "song",
+   "title": "My City of Ruins",
+   "creator": "Bruce Springsteen",
+   "year": 2002,
+   "why": "A prayer over a wounded city asks the congregation to rise up. Grief, faith, and the work of rebuilding share the hymn.",
+   "themes": [
+    "faith-doubt",
+    "exile",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/My_City_of_Ruins"
+  },
+  {
+   "id": "song-devils",
+   "type": "song",
+   "title": "Devils & Dust",
+   "creator": "Bruce Springsteen",
+   "year": 2005,
+   "why": "A soldier asks what he becomes when the fear and the gun are his only companions. Conscience and duty do not give him a clean answer.",
+   "themes": [
+    "conscience",
+    "duty",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Devils_%26_Dust_(song)"
+  },
+  {
+   "id": "song-fall-behind",
+   "type": "song",
+   "title": "If I Should Fall Behind",
+   "creator": "Bruce Springsteen",
+   "year": 1992,
+   "why": "A wedding song that treats fidelity as waiting for each other, not as keeping pace. Love is a duty freely taken.",
+   "themes": [
+    "love",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/If_I_Should_Fall_Behind"
+  },
+  {
+   "id": "song-atlantic",
+   "type": "song",
+   "title": "Atlantic City",
+   "creator": "Bruce Springsteen",
+   "year": 1982,
+   "why": "A man in debt thinks a darker bargain might save him and the person he loves. The song is about power, desperation, and a moral line already blurring.",
+   "themes": [
+    "power",
+    "love",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Atlantic_City_(song)"
+  },
+  {
+   "id": "song-independence",
+   "type": "song",
+   "title": "Independence Day",
+   "creator": "Bruce Springsteen",
+   "year": 1980,
+   "why": "A son leaves a father's house because love and authority have worn each other out. Home is the place he has to exit in order to live.",
+   "themes": [
+    "exile",
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Independence_Day_(Bruce_Springsteen_song)"
+  },
+  {
+   "id": "song-power-people",
+   "type": "song",
+   "title": "People Have the Power",
+   "creator": "Patti Smith",
+   "year": 1988,
+   "why": "Smith offers a refrain in which ordinary people are the source of authority, not its audience. The song is a civic hymn about dignity and power.",
+   "themes": [
+    "dignity",
+    "power",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/People_Have_the_Power"
+  },
+  {
+   "id": "song-because",
+   "type": "song",
+   "title": "Because the Night",
+   "creator": "Patti Smith",
+   "year": 1978,
+   "why": "Written with Bruce Springsteen, the song lets desire speak without apologizing for its urgency. Love is a force that will not wait for a more convenient life.",
+   "themes": [
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Because_the_Night"
+  },
+  {
+   "id": "song-hurts",
+   "type": "song",
+   "title": "Everybody Hurts",
+   "creator": "R.E.M.",
+   "year": 1992,
+   "why": "A direct address to someone near despair, asking them to stay. Mercy here is as plain as a hand on a shoulder.",
+   "themes": [
+    "mercy",
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Everybody_Hurts"
+  },
+  {
+   "id": "song-nights",
+   "type": "song",
+   "title": "Nightswimming",
+   "creator": "R.E.M.",
+   "year": 1992,
+   "why": "A memory of youth, water, and a photograph that cannot be re-entered. The song is about time, mortality, and the tenderness of what is gone.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Nightswimming"
+  },
+  {
+   "id": "song-one",
+   "type": "song",
+   "title": "One",
+   "creator": "U2",
+   "year": 1991,
+   "why": "A fractured relationship is told as if it might still be carried by both people. Love and a hard mercy share the title word.",
+   "themes": [
+    "love",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/One_(U2_song)"
+  },
+  {
+   "id": "song-still",
+   "type": "song",
+   "title": "I Still Haven't Found What I'm Looking For",
+   "creator": "U2",
+   "year": 1987,
+   "why": "A gospel shout from someone who has tried belief, desire, and the road, and is still unfinished. Faith and doubt are the same search.",
+   "themes": [
+    "faith-doubt",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/I_Still_Haven%27t_Found_What_I%27m_Looking_For"
+  },
+  {
+   "id": "song-pride",
+   "type": "song",
+   "title": "Pride (In the Name of Love)",
+   "creator": "U2",
+   "year": 1984,
+   "why": "A memorial to Martin Luther King Jr. that sets his killing beside the refusal to stop the work. Justice and mortality are sung in one breath.",
+   "themes": [
+    "justice",
+    "dignity",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Pride_(In_the_Name_of_Love)"
+  },
+  {
+   "id": "song-sunday",
+   "type": "song",
+   "title": "Sunday Bloody Sunday",
+   "creator": "U2",
+   "year": 1983,
+   "why": "A song from the Troubles that refuses to enlist the listener in either army. It asks how long a people can call bloodshed an order.",
+   "themes": [
+    "freedom-order",
+    "justice",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sunday_Bloody_Sunday"
+  },
+  {
+   "id": "song-walk-on",
+   "type": "song",
+   "title": "Walk On",
+   "creator": "U2",
+   "year": 2000,
+   "why": "Dedicated to a prisoner of conscience, the song is about leaving what you cannot carry and keeping what the state cannot take. Exile and dignity are the luggage.",
+   "themes": [
+    "exile",
+    "conscience",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Walk_On_(U2_song)"
+  },
+  {
+   "id": "song-streets",
+   "type": "song",
+   "title": "Where the Streets Have No Name",
+   "creator": "U2",
+   "year": 1987,
+   "why": "A wish to be taken somewhere the old names of division do not apply. Longing, faith, and a kind of exile share the drone.",
+   "themes": [
+    "exile",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Where_the_Streets_Have_No_Name"
+  },
+  {
+   "id": "song-mlk",
+   "type": "song",
+   "title": "MLK",
+   "creator": "U2",
+   "year": 1984,
+   "why": "A lullaby for a murdered man, asking the night to carry him. Mercy and grief are almost whispered.",
+   "themes": [
+    "mercy",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/MLK_(song)"
+  },
+  {
+   "id": "song-without",
+   "type": "song",
+   "title": "With or Without You",
+   "creator": "U2",
+   "year": 1987,
+   "why": "Love as a contradiction the singer cannot leave and cannot survive unchanged. The song stays inside the knot.",
+   "themes": [
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/With_or_Without_You"
+  },
+  {
+   "id": "song-fragile",
+   "type": "song",
+   "title": "Fragile",
+   "creator": "Sting",
+   "year": 1987,
+   "why": "A quiet song about how easily a life is ended by violence, and how little the weapons explain. Mercy is the mood, and the warning.",
+   "themes": [
+    "mercy",
+    "mortality",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Fragile_(Sting_song)"
+  },
+  {
+   "id": "song-dance-alone",
+   "type": "song",
+   "title": "They Dance Alone",
+   "creator": "Sting",
+   "year": 1987,
+   "why": "The cueca danced by women whose husbands and sons were disappeared in Chile. The song is about grief, dignity, and a power that tried to erase names.",
+   "themes": [
+    "dignity",
+    "justice",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/They_Dance_Alone"
+  },
+  {
+   "id": "song-englishman",
+   "type": "song",
+   "title": "Englishman in New York",
+   "creator": "Sting",
+   "year": 1987,
+   "why": "An exile's manners in a city that finds him strange, inspired by Quentin Crisp. Dignity is the refusal to disappear in order to fit.",
+   "themes": [
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Englishman_in_New_York"
+  },
+  {
+   "id": "song-fields",
+   "type": "song",
+   "title": "Fields of Gold",
+   "creator": "Sting",
+   "year": 1993,
+   "why": "A love remembered as a walk through barley, already looking back from later years. Tenderness and the passing of time are the same picture.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Fields_of_Gold"
+  },
+  {
+   "id": "song-ne",
+   "type": "song",
+   "title": "Ne me quitte pas",
+   "creator": "Jacques Brel",
+   "year": 1959,
+   "why": "A plea that would give up pride, place, and almost the self in order not to be left. Love here is desperate and fully adult.",
+   "themes": [
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ne_me_quitte_pas"
+  },
+  {
+   "id": "song-amsterdam",
+   "type": "song",
+   "title": "Amsterdam",
+   "creator": "Jacques Brel",
+   "year": 1964,
+   "why": "Sailors drink, boast, and collapse in a port that has seen it before. The song looks at mortality and a rough dignity without sentiment.",
+   "themes": [
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Amsterdam_(Jacques_Brel_song)"
+  },
+  {
+   "id": "song-vieux",
+   "type": "song",
+   "title": "La chanson des vieux amants",
+   "creator": "Jacques Brel",
+   "year": 1967,
+   "why": "Old lovers inventory the storms they did not leave. The song is a defense of a long love that was never only gentle.",
+   "themes": [
+    "love",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/La_chanson_des_vieux_amants"
+  },
+  {
+   "id": "song-regrette",
+   "type": "song",
+   "title": "Non, je ne regrette rien",
+   "creator": "Édith Piaf",
+   "year": 1960,
+   "why": "Written by Charles Dumont and Michel Vaucaire, and owned by Piaf's voice, the song refuses to disown a life. Conscience here is acceptance, not excuse.",
+   "themes": [
+    "conscience",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Non,_je_ne_regrette_rien"
+  },
+  {
+   "id": "song-hymne",
+   "type": "song",
+   "title": "Hymne à l'amour",
+   "creator": "Édith Piaf",
+   "year": 1950,
+   "why": "Piaf's lyric, with music by Marguerite Monnot, offers a love that would follow the beloved past death. Devotion is absolute and a little terrifying.",
+   "themes": [
+    "love",
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Hymne_%C3%A0_l%27amour"
+  },
+  {
+   "id": "song-gracias",
+   "type": "song",
+   "title": "Gracias a la vida",
+   "creator": "Violeta Parra",
+   "year": 1966,
+   "why": "A thanksgiving for eyes, feet, and the beloved, sung by a woman near the end of her own life. The good life is named even when it hurts.",
+   "themes": [
+    "good-life",
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Gracias_a_la_vida"
+  },
+  {
+   "id": "song-amanda",
+   "type": "song",
+   "title": "Te recuerdo Amanda",
+   "creator": "Víctor Jara",
+   "year": 1969,
+   "why": "A factory whistle measures a love between two workers. The song makes an ordinary tenderness into a form of dignity.",
+   "themes": [
+    "love",
+    "dignity",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Te_recuerdo_Amanda"
+  },
+  {
+   "id": "song-nkosi",
+   "type": "song",
+   "title": "Nkosi Sikelel' iAfrika",
+   "creator": "Enoch Sontonga",
+   "year": 1897,
+   "why": "A hymn asking a blessing on a land and its people, later carried by movements that wanted that land to be home. Faith, exile, and dignity meet in a prayer.",
+   "themes": [
+    "faith-doubt",
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Nkosi_Sikelel%27_iAfrika"
+  },
+  {
+   "id": "song-beds",
+   "type": "song",
+   "title": "Beds Are Burning",
+   "creator": "Midnight Oil",
+   "year": 1987,
+   "why": "A rock song that tells settlers the ground they sleep on is not only theirs. Justice and home are argued without a lecture's length.",
+   "themes": [
+    "justice",
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Beds_Are_Burning"
+  },
+  {
+   "id": "song-shelter-stones",
+   "type": "song",
+   "title": "Gimme Shelter",
+   "creator": "The Rolling Stones",
+   "year": 1969,
+   "why": "A storm of war and fear is coming, and love is said to be a few steps away. The song is about mortality and the wish for mercy in a violent season.",
+   "themes": [
+    "mortality",
+    "mercy",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Gimme_Shelter"
+  },
+  {
+   "id": "song-working",
+   "type": "song",
+   "title": "Working Class Hero",
+   "creator": "John Lennon",
+   "year": 1970,
+   "why": "A bitter account of how a child is trained to want the life that will use him. Dignity and power are stripped of romance.",
+   "themes": [
+    "dignity",
+    "power",
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Working_Class_Hero"
+  },
+  {
+   "id": "song-imagine",
+   "type": "song",
+   "title": "Imagine",
+   "creator": "John Lennon",
+   "year": 1971,
+   "why": "An invitation to picture a world without the borders and creeds that organize killing. Whether one accepts the picture, the song is about peace as a picture of the good life, and about the faiths people might have to hold more lightly.",
+   "themes": [
+    "good-life",
+    "faith-doubt",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Imagine_(John_Lennon_song)"
+  },
+  {
+   "id": "song-karma",
+   "type": "song",
+   "title": "Instant Karma!",
+   "creator": "John Lennon",
+   "year": 1970,
+   "why": "A joke with a serious metaphysics: what you do comes back, and soon. Justice is treated as a law of the moral world, not only of courts.",
+   "themes": [
+    "justice",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Instant_Karma!"
+  },
+  {
+   "id": "song-god",
+   "type": "song",
+   "title": "God",
+   "creator": "John Lennon",
+   "year": 1970,
+   "why": "A list of beliefs the singer puts down, ending with a small human loyalty. Faith and doubt are spoken as a clearing of the altar.",
+   "themes": [
+    "faith-doubt",
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/God_(John_Lennon_song)"
+  },
+  {
+   "id": "song-let-it-be",
+   "type": "song",
+   "title": "Let It Be",
+   "creator": "The Beatles",
+   "year": 1970,
+   "why": "Paul McCartney's song of a mother, or a mercy, speaking in a troubled hour. Consolation is offered without a promise that the trouble will end.",
+   "themes": [
+    "mercy",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Let_It_Be_(song)"
+  },
+  {
+   "id": "song-eleanor",
+   "type": "song",
+   "title": "Eleanor Rigby",
+   "creator": "The Beatles",
+   "year": 1966,
+   "why": "Two lonely lives, a church, and a burial that the parish barely notices. The song is about dignity ignored and a death that does not become a story.",
+   "themes": [
+    "dignity",
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Eleanor_Rigby"
+  },
+  {
+   "id": "song-blackbird",
+   "type": "song",
+   "title": "Blackbird",
+   "creator": "The Beatles",
+   "year": 1968,
+   "why": "Paul McCartney's small song of a bird learning the night, long associated with the hope of a freedom still broken. It offers courage without a speech.",
+   "themes": [
+    "freedom-order",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Blackbird_(Beatles_song)"
+  },
+  {
+   "id": "song-my-life",
+   "type": "song",
+   "title": "In My Life",
+   "creator": "The Beatles",
+   "year": 1965,
+   "why": "A counting of places and people, and of one love that outranks the inventory. Memory, mortality, and attachment share three minutes.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/In_My_Life"
+  },
+  {
+   "id": "song-hey-jude",
+   "type": "song",
+   "title": "Hey Jude",
+   "creator": "The Beatles",
+   "year": 1968,
+   "why": "A song that tells a hurting person to let the sadness in and still begin. Mercy here is practical company, not a command to cheer up.",
+   "themes": [
+    "mercy",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Hey_Jude"
+  },
+  {
+   "id": "song-guitar",
+   "type": "song",
+   "title": "While My Guitar Gently Weeps",
+   "creator": "The Beatles",
+   "year": 1968,
+   "why": "George Harrison looks at a world that will not be moved and lets the guitar carry the grief. Love and a disappointed conscience share the track.",
+   "themes": [
+    "love",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/While_My_Guitar_Gently_Weeps"
+  },
+  {
+   "id": "song-sun",
+   "type": "song",
+   "title": "Here Comes the Sun",
+   "creator": "The Beatles",
+   "year": 1969,
+   "why": "After a long cold, Harrison marks the return of light as if it were a moral event. The song is a modest hymn to endurance and the good of ordinary morning.",
+   "themes": [
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Here_Comes_the_Sun"
+  },
+  {
+   "id": "song-sweet",
+   "type": "song",
+   "title": "My Sweet Lord",
+   "creator": "George Harrison",
+   "year": 1970,
+   "why": "A devotional that wants to see God and keeps asking how long. Faith is impatience as much as certainty.",
+   "themes": [
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/My_Sweet_Lord"
+  },
+  {
+   "id": "song-both",
+   "type": "song",
+   "title": "Both Sides, Now",
+   "creator": "Joni Mitchell",
+   "year": 1969,
+   "why": "Clouds, love, and life are each looked at from both sides, and the knowing does not cancel the illusion. Truth and experience refuse a single verdict.",
+   "themes": [
+    "truth",
+    "love",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Both_Sides,_Now"
+  },
+  {
+   "id": "song-circle",
+   "type": "song",
+   "title": "The Circle Game",
+   "creator": "Joni Mitchell",
+   "year": 1970,
+   "why": "A life is a carousel that does not stop for the child who wants to catch the brass ring. Mortality and the good of the turning year are the same image.",
+   "themes": [
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Circle_Game_(song)"
+  },
+  {
+   "id": "song-alabama",
+   "type": "song",
+   "title": "Alabama",
+   "creator": "John Coltrane",
+   "year": 1963,
+   "why": "An instrumental mourning the children killed in a Birmingham church. With no lyric to hide behind, grief, justice, and dignity are carried by the horn.",
+   "themes": [
+    "justice",
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Alabama_(John_Coltrane_song)"
+  },
+  {
+   "id": "song-supreme",
+   "type": "song",
+   "title": "A Love Supreme",
+   "creator": "John Coltrane",
+   "year": 1965,
+   "why": "A four-part offering in which a musician gives his craft back to God. Faith is practiced as attention, not as an argument.",
+   "themes": [
+    "faith-doubt",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Love_Supreme"
+  },
+  {
+   "id": "song-sinner",
+   "type": "song",
+   "title": "Sinnerman",
+   "creator": "Nina Simone",
+   "year": 1965,
+   "why": "A traditional spiritual, driven by Simone until the sinner runs out of places to hide. Judgment, mercy, and the last day are a long chase.",
+   "themes": [
+    "faith-doubt",
+    "justice",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sinnerman"
+  },
+  {
+   "id": "song-young",
+   "type": "song",
+   "title": "To Be Young, Gifted and Black",
+   "creator": "Nina Simone",
+   "year": 1969,
+   "why": "Written with Weldon Irvine after Lorraine Hansberry's death, the song tells a people to claim a dignity the country had tried to ration. It is affirmation with a spine.",
+   "themes": [
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/To_Be_Young,_Gifted_and_Black_(song)"
+  },
+  {
+   "id": "song-four",
+   "type": "song",
+   "title": "Four Women",
+   "creator": "Nina Simone",
+   "year": 1966,
+   "why": "Four portraits of Black women, each named and each carrying a different weight of history. The song insists on dignity by refusing to blur them into one.",
+   "themes": [
+    "dignity",
+    "justice",
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Four_Women_(song)"
+  },
+  {
+   "id": "song-free",
+   "type": "song",
+   "title": "I Wish I Knew How It Would Feel to Be Free",
+   "creator": "Nina Simone, written by Billy Taylor and Dick Dallas",
+   "year": 1967,
+   "why": "Billy Taylor and Dick Dallas's song, transformed by Simone, longs for a freedom the body would recognize. It is about liberty still ahead of the singer.",
+   "themes": [
+    "freedom-order",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/I_Wish_I_Knew_How_It_Would_Feel_to_Be_Free"
+  },
+  {
+   "id": "song-weight",
+   "type": "song",
+   "title": "The Weight",
+   "creator": "The Band",
+   "year": 1968,
+   "why": "Robbie Robertson's traveler keeps being asked to carry one more burden for a stranger. Duty, mercy, and a comic exhaustion share the road to Nazareth.",
+   "themes": [
+    "duty",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Weight"
+  },
+  {
+   "id": "song-released",
+   "type": "song",
+   "title": "I Shall Be Released",
+   "creator": "The Band",
+   "year": 1968,
+   "why": "Bob Dylan's song, released by The Band in 1968, looks out from a cell toward a light the singer still believes in. Freedom and mercy are the whole prayer.",
+   "themes": [
+    "freedom-order",
+    "mercy",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/I_Shall_Be_Released"
+  },
+  {
+   "id": "song-lift",
+   "type": "song",
+   "title": "Lift Every Voice and Sing",
+   "creator": "James Weldon Johnson and J. Rosamond Johnson",
+   "year": 1905,
+   "why": "Johnson's 1900 poem, set to music by his brother in 1905, became a hymn of a people walking out of a dark past toward a liberty still unfinished. Faith, exile, and dignity are sung standing.",
+   "themes": [
+    "dignity",
+    "faith-doubt",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Lift_Every_Voice_and_Sing"
+  },
+  {
+   "id": "song-circle-unbroken",
+   "type": "song",
+   "title": "Can the Circle Be Unbroken",
+   "creator": "The Carter Family",
+   "year": 1935,
+   "why": "A family stands at a mother's burial and asks whether the circle of the living and the dead can hold. Grief, faith, and home are one question.",
+   "themes": [
+    "mortality",
+    "faith-doubt",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Can_the_Circle_Be_Unbroken_(Bye_and_Bye)"
+  },
+  {
+   "id": "song-somewhere",
+   "type": "song",
+   "title": "Somewhere",
+   "creator": "Leonard Bernstein and Stephen Sondheim",
+   "year": 1957,
+   "why": "From West Side Story, a promise of a place where a forbidden love could be safe. Exile and tenderness share a held note.",
+   "themes": [
+    "love",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Somewhere_(song)"
+  },
+  {
+   "id": "song-river-man",
+   "type": "song",
+   "title": "Ol' Man River",
+   "creator": "Jerome Kern and Oscar Hammerstein II",
+   "year": 1927,
+   "why": "From Show Boat, a Black dock worker's song about a river that keeps rolling while human toil does not end. Dignity and exhaustion are older than the musical's plot.",
+   "themes": [
+    "dignity",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ol%27_Man_River"
+  },
+  {
+   "id": "song-peace",
+   "type": "song",
+   "title": "Give Peace a Chance",
+   "creator": "John Lennon",
+   "year": 1969,
+   "why": "A chant that tries to make peace a public habit rather than a diplomat's result. The song is simple on purpose, a moral demand set to a crowd.",
+   "themes": [
+    "good-life",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Give_Peace_a_Chance"
+  },
+  {
+   "id": "song-shape",
+   "type": "song",
+   "title": "Shape of My Heart",
+   "creator": "Sting",
+   "year": 1993,
+   "why": "A card player says he is not in it for the money but for the truth the game reveals. Love and a hunger for what is real share the metaphor.",
+   "themes": [
+    "truth",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Shape_of_My_Heart_(Sting_song)"
+  },
+  {
+   "id": "song-god-cut",
+   "type": "song",
+   "title": "God's Gonna Cut You Down",
+   "creator": "Johnny Cash",
+   "year": 2006,
+   "why": "A traditional warning, sung by Cash near the end, that no runner outlasts judgment. Justice and mortality walk at the same pace.",
+   "themes": [
+    "justice",
+    "faith-doubt",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/God%27s_Gonna_Cut_You_Down"
+  },
+  {
+   "id": "song-wayfaring",
+   "type": "song",
+   "title": "Wayfaring Stranger",
+   "creator": "Johnny Cash",
+   "year": 2000,
+   "why": "Cash sings a much older spiritual of a pilgrim going home through a hard world. Exile, faith, and death are the road.",
+   "themes": [
+    "exile",
+    "faith-doubt",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Wayfaring_Stranger"
+  },
+  {
+   "id": "poem-adlestrop",
+   "type": "poem",
+   "title": "Adlestrop",
+   "creator": "Edward Thomas",
+   "year": 1917,
+   "why": "A train stops at a station where nothing happens, and the nothing is the whole gift of the minute. The poem is about home as a glimpse, and about attention as a form of the good life.",
+   "themes": [
+    "exile",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Adlestrop_(poem)",
+   "publicDomain": true,
+   "text": "Yes. I remember Adlestrop—\nThe name, because one afternoon\nOf heat the express-train drew up there\nUnwontedly. It was late June.\n\nThe steam hissed. Someone cleared his throat.\nNo one left and no one came\nOn the bare platform. What I saw\nWas Adlestrop—only the name\n\nAnd willows, willow-herb, and grass,\nAnd meadowsweet, and haycocks dry,\nNo whit less still and lonely fair\nThan the high cloudlets in the sky.\n\nAnd for that minute a blackbird sang\nClose by, and round him, mistier,\nFarther and farther, all the birds\nOf Oxfordshire and Gloucestershire.",
+   "sourceEdition": "Poems (1917)",
+   "sourceUrl": "https://en.wikisource.org/wiki/Poems_(Edward_Thomas,_1917)/Adlestrop"
+  },
+  {
+   "id": "poem-invictus",
+   "type": "poem",
+   "title": "Invictus",
+   "creator": "William Ernest Henley",
+   "year": 1888,
+   "why": "A poem of a body that has been hurt and a will that will not hand itself over. Dignity and conscience are claimed without a promise that the world will be kind.",
+   "themes": [
+    "dignity",
+    "conscience",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Invictus",
+   "publicDomain": true,
+   "text": "Out of the night that covers me,\nBlack as the Pit from pole to pole,\nI thank whatever gods may be\nFor my unconquerable soul.\n\nIn the fell clutch of circumstance\nI have not winced nor cried aloud.\nUnder the bludgeonings of chance\nMy head is bloody, but unbowed.\n\nBeyond this place of wrath and tears\nLooms but the Horror of the shade,\nAnd yet the menace of the years\nFinds, and shall find, me unafraid.\n\nIt matters not how strait the gate,\nHow charged with punishments the scroll,\nI am the master of my fate:\nI am the captain of my soul.",
+   "sourceEdition": "Poems (1904); first published 1888",
+   "sourceUrl": "https://en.wikisource.org/wiki/Poems_(Henley)/Out_of_the_night_that_covers_me"
+  },
+  {
+   "id": "poem-uphill",
+   "type": "poem",
+   "title": "Up-Hill",
+   "creator": "Christina Rossetti",
+   "year": 1862,
+   "why": "A catechism between a traveler and a guide about whether the road is long and whether there will be rest. Duty, faith, and mortality are asked in the plainest words.",
+   "themes": [
+    "faith-doubt",
+    "duty",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Up-Hill",
+   "publicDomain": true,
+   "text": "Does the road wind up-hill all the way?\nYes, to the very end.\nWill the day's journey take the whole long day?\nFrom morn to night, my friend.\n\nBut is there for the night a resting-place?\nA roof for when the slow dark hours begin.\nMay not the darkness hide it from my face?\nYou cannot miss that inn.\n\nShall I meet other wayfarers at night?\nThose who have gone before.\nThen must I knock, or call when just in sight?\nThey will not keep you standing at that door.\n\nShall I find comfort, travel-sore and weak?\nOf labour you shall find the sum.\nWill there be beds for me and all who seek?\nYea, beds for all who come.",
+   "sourceEdition": "Goblin Market and Other Poems (1862)",
+   "sourceUrl": "https://en.wikisource.org/wiki/Goblin_Market_and_Other_Poems_(1862)/Up-Hill"
+  },
+  {
+   "id": "poem-colossus",
+   "type": "poem",
+   "title": "The New Colossus",
+   "creator": "Emma Lazarus",
+   "year": 1883,
+   "why": "The sonnet on the Statue of Liberty answers an older statue of conquest with a welcome to the tired and the homeless. Exile and dignity are set at the door of a country.",
+   "themes": [
+    "exile",
+    "dignity",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_New_Colossus",
+   "publicDomain": true,
+   "text": "Not like the brazen giant of Greek fame,\nWith conquering limbs astride from land to land;\nHere at our sea-washed, sunset gates shall stand\nA mighty woman with a torch, whose flame\nIs the imprisoned lightning, and her name\nMother of Exiles. From her beacon-hand\nGlows world-wide welcome; her mild eyes command\nThe air-bridged harbor that twin cities frame.\n\n\"Keep, ancient lands, your storied pomp!\" cries she\nWith silent lips. \"Give me your tired, your poor,\nYour huddled masses yearning to breathe free,\nThe wretched refuse of your teeming shore.\nSend these, the homeless, tempest-tost to me,\nI lift my lamp beside the golden door!\"",
+   "sourceEdition": "The New Colossus (1883)",
+   "sourceUrl": "https://en.wikisource.org/wiki/The_New_Colossus"
+  },
+  {
+   "id": "poem-ozymandias",
+   "type": "poem",
+   "title": "Ozymandias",
+   "creator": "Percy Bysshe Shelley",
+   "year": 1818,
+   "why": "A traveler reports the wreck of a king's boast in an empty desert. Power and the mortality of empires are the whole sonnet.",
+   "themes": [
+    "power",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ozymandias"
+  },
+  {
+   "id": "poem-dover",
+   "type": "poem",
+   "title": "Dover Beach",
+   "creator": "Matthew Arnold",
+   "year": 1867,
+   "why": "A love poem spoken while the tide of faith goes out. Doubt is not mocked, and the beloved is asked to be true anyway.",
+   "themes": [
+    "faith-doubt",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Dover_Beach"
+  },
+  {
+   "id": "poem-tyger",
+   "type": "poem",
+   "title": "The Tyger",
+   "creator": "William Blake",
+   "year": 1794,
+   "why": "The same maker is asked how he could form both the lamb and the burning tiger. Awe and fear of power sit inside the question of creation.",
+   "themes": [
+    "faith-doubt",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Tyger"
+  },
+  {
+   "id": "poem-london",
+   "type": "poem",
+   "title": "London",
+   "creator": "William Blake",
+   "year": 1794,
+   "why": "A walk through the city hears weakness and woe in every voice, and marks the institutions that live on them. The poem is about power written on faces.",
+   "themes": [
+    "power",
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/London_(William_Blake_poem)"
+  },
+  {
+   "id": "poem-chimney",
+   "type": "poem",
+   "title": "The Chimney Sweeper",
+   "creator": "William Blake",
+   "year": 1794,
+   "why": "From Songs of Experience, a child is sold into the chimneys and told that duty should make him happy. The poem will not accept that bargain.",
+   "themes": [
+    "justice",
+    "mercy",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Chimney_Sweeper"
+  },
+  {
+   "id": "poem-death",
+   "type": "poem",
+   "title": "Death, be not proud",
+   "creator": "John Donne",
+   "year": 1633,
+   "why": "Holy Sonnet 10 tells death it is a slave to fate and chance, and that the people it takes wake eternally. Mortality is answered by a faith that does not flatter the grave.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Death_Be_Not_Proud"
+  },
+  {
+   "id": "poem-love-iii",
+   "type": "poem",
+   "title": "Love (III)",
+   "creator": "George Herbert",
+   "year": 1633,
+   "why": "Love invites a guilty guest to sit and eat, and will not let shame refuse the meal. Mercy is the host, and the poem ends when the guest accepts.",
+   "themes": [
+    "mercy",
+    "love",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Love_(III)"
+  },
+  {
+   "id": "poem-pulley",
+   "type": "poem",
+   "title": "The Pulley",
+   "creator": "George Herbert",
+   "year": 1633,
+   "why": "God pours every blessing but rest, so that weariness itself will pull a person back. The good life is pictured as a restlessness with a purpose.",
+   "themes": [
+    "good-life",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Pulley_(poem)"
+  },
+  {
+   "id": "poem-collar",
+   "type": "poem",
+   "title": "The Collar",
+   "creator": "George Herbert",
+   "year": 1633,
+   "why": "A priest strikes the table and tries to quit, and a voice he calls My Lord answers Child. Faith, rebellion, and duty are one outburst.",
+   "themes": [
+    "faith-doubt",
+    "duty",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Collar_(poem)"
+  },
+  {
+   "id": "poem-blindness",
+   "type": "poem",
+   "title": "When I consider how my light is spent",
+   "creator": "John Milton",
+   "year": 1673,
+   "why": "A poet going blind asks whether God still wants his work, and is told that those who only stand and wait also serve. Duty is widened past achievement.",
+   "themes": [
+    "duty",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/When_I_Consider_How_My_Light_Is_Spent"
+  },
+  {
+   "id": "poem-116",
+   "type": "poem",
+   "title": "Sonnet 116",
+   "creator": "William Shakespeare",
+   "year": 1609,
+   "why": "Love is described as a mark that does not move when the beloved changes or when time bends. The sonnet is a definition, and a dare.",
+   "themes": [
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sonnet_116"
+  },
+  {
+   "id": "poem-29",
+   "type": "poem",
+   "title": "Sonnet 29",
+   "creator": "William Shakespeare",
+   "year": 1609,
+   "why": "A man in disgrace remembers the beloved and his state rises. Dignity is restored not by the world's opinion but by love.",
+   "themes": [
+    "love",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sonnet_29"
+  },
+  {
+   "id": "poem-73",
+   "type": "poem",
+   "title": "Sonnet 73",
+   "creator": "William Shakespeare",
+   "year": 1609,
+   "why": "Aging is a bare tree, a twilight, and a fire going out, and the beloved is asked to love more because of that. Mortality makes the attachment stricter.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sonnet_73"
+  },
+  {
+   "id": "poem-66",
+   "type": "poem",
+   "title": "Sonnet 66",
+   "creator": "William Shakespeare",
+   "year": 1609,
+   "why": "A catalog of public wrongs, from captive good to gilded honor, ends with the wish to die except that leaving would abandon the beloved. Power's corruption is listed without ornament.",
+   "themes": [
+    "power",
+    "justice",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sonnet_66"
+  },
+  {
+   "id": "poem-coy",
+   "type": "poem",
+   "title": "To His Coy Mistress",
+   "creator": "Andrew Marvell",
+   "year": 1681,
+   "why": "A seduction argument that would be comic if time were not actually short. Love and mortality bargain, and the poem does not pretend the bargain is fair.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/To_His_Coy_Mistress"
+  },
+  {
+   "id": "poem-world",
+   "type": "poem",
+   "title": "The World Is Too Much with Us",
+   "creator": "William Wordsworth",
+   "year": 1807,
+   "why": "Getting and spending have put the world out of tune, and the poet would rather be a pagan who could still feel the sea. The good life is set against a busy conscience.",
+   "themes": [
+    "good-life",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_World_Is_Too_Much_with_Us"
+  },
+  {
+   "id": "poem-duty-w",
+   "type": "poem",
+   "title": "Ode to Duty",
+   "creator": "William Wordsworth",
+   "year": 1807,
+   "why": "The poet asks for the stern daughter of the voice of God after a youth of unchartered freedom. Duty is desired, not only endured.",
+   "themes": [
+    "duty",
+    "good-life",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ode_to_Duty"
+  },
+  {
+   "id": "poem-slumber",
+   "type": "poem",
+   "title": "A Slumber Did My Spirit Seal",
+   "creator": "William Wordsworth",
+   "year": 1800,
+   "why": "The beloved is sealed into the diurnal course of rocks and stones and trees. Love meets a mortality that does not speak back.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Slumber_Did_My_Spirit_Seal"
+  },
+  {
+   "id": "poem-urn",
+   "type": "poem",
+   "title": "Ode on a Grecian Urn",
+   "creator": "John Keats",
+   "year": 1820,
+   "why": "A silent object outlasts the people who loved and sacrificed, and the poem asks what kind of truth that survival is. Beauty and mortality share the last claim.",
+   "themes": [
+    "truth",
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ode_on_a_Grecian_Urn"
+  },
+  {
+   "id": "poem-fears",
+   "type": "poem",
+   "title": "When I Have Fears That I May Cease to Be",
+   "creator": "John Keats",
+   "year": 1848,
+   "why": "Written in 1818 and published in 1848, the sonnet stacks the books and the love the poet may not live to have. Mortality empties fame on the shore.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/When_I_Have_Fears_That_I_May_Cease_to_Be"
+  },
+  {
+   "id": "poem-ulysses",
+   "type": "poem",
+   "title": "Ulysses",
+   "creator": "Alfred, Lord Tennyson",
+   "year": 1842,
+   "why": "An old king refuses a still hearth and asks his mariners to sail again. The good life, for him, is not the safe ending, and home is what he leaves.",
+   "themes": [
+    "good-life",
+    "mortality",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Ulysses_(poem)"
+  },
+  {
+   "id": "poem-bar",
+   "type": "poem",
+   "title": "Crossing the Bar",
+   "creator": "Alfred, Lord Tennyson",
+   "year": 1889,
+   "why": "A wish to meet death as a tide going out, and to see the Pilot face to face. Faith and mortality are asked to be courteous with each other.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Crossing_the_Bar"
+  },
+  {
+   "id": "poem-charge",
+   "type": "poem",
+   "title": "The Charge of the Light Brigade",
+   "creator": "Alfred, Lord Tennyson",
+   "year": 1854,
+   "why": "A brigade rides into cannons because someone has blundered, and the poem honors the ride without hiding the blunder. Duty and a failure of power are told together.",
+   "themes": [
+    "duty",
+    "power",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Charge_of_the_Light_Brigade"
+  },
+  {
+   "id": "poem-because",
+   "type": "poem",
+   "title": "Because I could not stop for Death",
+   "creator": "Emily Dickinson",
+   "year": 1890,
+   "why": "Death is a civil suitor who drives the speaker past the school, the fields, and a grave. Mortality is mannerly, and that politeness is the chill.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Because_I_could_not_stop_for_Death"
+  },
+  {
+   "id": "poem-hope",
+   "type": "poem",
+   "title": "Hope is the thing with feathers",
+   "creator": "Emily Dickinson",
+   "year": 1891,
+   "why": "Hope is a small bird that sings without asking for a crumb, even in the coldest land. The poem is a definition of a good that does not depend on success.",
+   "themes": [
+    "good-life",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/%22Hope%22_is_the_thing_with_feathers"
+  },
+  {
+   "id": "poem-mask",
+   "type": "poem",
+   "title": "We Wear the Mask",
+   "creator": "Paul Laurence Dunbar",
+   "year": 1895,
+   "why": "A people smiles in public and bleeds behind the smile, and the poem asks how long the world will demand the performance. Truth and dignity are what the mask costs.",
+   "themes": [
+    "truth",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/We_Wear_the_Mask"
+  },
+  {
+   "id": "poem-sympathy",
+   "type": "poem",
+   "title": "Sympathy",
+   "creator": "Paul Laurence Dunbar",
+   "year": 1899,
+   "why": "A caged bird beats its wing against the wire until the blood is part of the song. Freedom is known by the pain of not having it.",
+   "themes": [
+    "freedom-order",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sympathy_(poem)"
+  },
+  {
+   "id": "poem-die",
+   "type": "poem",
+   "title": "If We Must Die",
+   "creator": "Claude McKay",
+   "year": 1919,
+   "why": "A sonnet that refuses a cornered people the shame of dying like hunted animals. Dignity under attack is the whole argument, and McKay later said it belonged to anyone in that extremity.",
+   "themes": [
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/If_We_Must_Die"
+  },
+  {
+   "id": "poem-america",
+   "type": "poem",
+   "title": "America",
+   "creator": "Claude McKay",
+   "year": 1921,
+   "why": "The country is loved and hated in the same breath, a feeder who could also be fought. Exile and belonging are not opposites in the sonnet.",
+   "themes": [
+    "exile",
+    "love",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/America_(Claude_McKay_poem)"
+  },
+  {
+   "id": "poem-tropics",
+   "type": "poem",
+   "title": "Tropics in New York",
+   "creator": "Claude McKay",
+   "year": 1920,
+   "why": "Fruit in a shop window brings a whole climate back, and the speaker turns his face aside. Home arrives as hunger in the middle of another city.",
+   "themes": [
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Tropics_in_New_York"
+  },
+  {
+   "id": "poem-marvel",
+   "type": "poem",
+   "title": "Yet Do I Marvel",
+   "creator": "Countee Cullen",
+   "year": 1925,
+   "why": "A believer lists the cruelties he can almost accept, and then asks why God would make a poet black and bid him sing. Faith, doubt, and dignity share fourteen lines.",
+   "themes": [
+    "faith-doubt",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Yet_Do_I_Marvel"
+  },
+  {
+   "id": "poem-rivers",
+   "type": "poem",
+   "title": "The Negro Speaks of Rivers",
+   "creator": "Langston Hughes",
+   "year": 1921,
+   "why": "A voice as old as the Euphrates, the Congo, and the Mississippi claims a depth no recent hatred invented. Exile and dignity are given a long memory.",
+   "themes": [
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Negro_Speaks_of_Rivers"
+  },
+  {
+   "id": "poem-itoo",
+   "type": "poem",
+   "title": "I, Too",
+   "creator": "Langston Hughes",
+   "year": 1926,
+   "why": "The speaker who eats in the kitchen says he will sit at the table, and the company will be ashamed. Justice is imagined as a future meal.",
+   "themes": [
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/I,_Too"
+  },
+  {
+   "id": "poem-mother",
+   "type": "poem",
+   "title": "Mother to Son",
+   "creator": "Langston Hughes",
+   "year": 1922,
+   "why": "A mother tells her son the staircase has been splinters and boards torn up, and that he is not to turn back. Duty and dignity are domestic advice.",
+   "themes": [
+    "duty",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mother_to_Son"
+  },
+  {
+   "id": "poem-second",
+   "type": "poem",
+   "title": "The Second Coming",
+   "creator": "W. B. Yeats",
+   "year": 1920,
+   "why": "The center fails, a blood-dim shape slouches toward Bethlehem, and the old ceremonies do not hold it. The poem is about order breaking, and about the faiths that cannot name what is coming.",
+   "themes": [
+    "power",
+    "faith-doubt",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Second_Coming_(poem)"
+  },
+  {
+   "id": "poem-innisfree",
+   "type": "poem",
+   "title": "The Lake Isle of Innisfree",
+   "creator": "W. B. Yeats",
+   "year": 1890,
+   "why": "A city pavement still hears the lake water lapping, and the speaker wants a small cabin and a bean-row. The good life is pictured as a home one has not reached.",
+   "themes": [
+    "exile",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Lake_Isle_of_Innisfree"
+  },
+  {
+   "id": "poem-airman",
+   "type": "poem",
+   "title": "An Irish Airman Foresees His Death",
+   "creator": "W. B. Yeats",
+   "year": 1919,
+   "why": "A pilot says he does not fight for law or duty or the cheers, and that his death will balance his life. Freedom and mortality are chosen with a cold clarity.",
+   "themes": [
+    "duty",
+    "mortality",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/An_Irish_Airman_Foresees_His_Death"
+  },
+  {
+   "id": "poem-sailing",
+   "type": "poem",
+   "title": "Sailing to Byzantium",
+   "creator": "W. B. Yeats",
+   "year": 1928,
+   "why": "An old man leaves a country of the young and asks the sages to take him into the artifice of eternity. Mortality wants a form that will not die with the body.",
+   "themes": [
+    "mortality",
+    "good-life",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sailing_to_Byzantium"
+  },
+  {
+   "id": "poem-easter",
+   "type": "poem",
+   "title": "Easter, 1916",
+   "creator": "W. B. Yeats",
+   "year": 1916,
+   "why": "Ordinary people are changed by a violent sacrifice into something terrible and beautiful, and the poet does not pretend the change is simple. Duty, death, and power share the refrain.",
+   "themes": [
+    "duty",
+    "mortality",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Easter,_1916"
+  },
+  {
+   "id": "poem-daughter",
+   "type": "poem",
+   "title": "A Prayer for My Daughter",
+   "creator": "W. B. Yeats",
+   "year": 1921,
+   "why": "A father in a storm asks for his child courtesy, radical innocence, and a life not eaten by hatred. Love and the good life are prayed for against the wind.",
+   "themes": [
+    "love",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Prayer_for_My_Daughter"
+  },
+  {
+   "id": "poem-thrush",
+   "type": "poem",
+   "title": "The Darkling Thrush",
+   "creator": "Thomas Hardy",
+   "year": 1900,
+   "why": "At the end of a century a thrush sings in a landscape the speaker finds desolate. Faith is not claimed, but the song suggests a hope he cannot see.",
+   "themes": [
+    "faith-doubt",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Darkling_Thrush"
+  },
+  {
+   "id": "poem-killed",
+   "type": "poem",
+   "title": "The Man He Killed",
+   "creator": "Thomas Hardy",
+   "year": 1902,
+   "why": "A soldier explains that he shot a man because they were infantry, and that they might have shared a drink in another life. Conscience and the habit of war are left side by side.",
+   "themes": [
+    "conscience",
+    "mercy",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Man_He_Killed"
+  },
+  {
+   "id": "poem-afterwards",
+   "type": "poem",
+   "title": "Afterwards",
+   "creator": "Thomas Hardy",
+   "year": 1917,
+   "why": "The poet imagines neighbors noticing, after he is gone, that he used to notice the hawk and the hedgehog. A good life is defined as attention.",
+   "themes": [
+    "good-life",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Afterwards"
+  },
+  {
+   "id": "poem-channel",
+   "type": "poem",
+   "title": "Channel Firing",
+   "creator": "Thomas Hardy",
+   "year": 1914,
+   "why": "The guns of preparation wake the dead in a churchyard, and God says the world is as it used to be. Faith, war, and a tired mortality share the joke.",
+   "themes": [
+    "faith-doubt",
+    "power",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Channel_Firing"
+  },
+  {
+   "id": "poem-nations",
+   "type": "poem",
+   "title": "In Time of 'The Breaking of Nations'",
+   "creator": "Thomas Hardy",
+   "year": 1916,
+   "why": "A man harrowing clods and a maid and her wight will outlast the dynasties currently burning. Love and ordinary work are set above the annals of power.",
+   "themes": [
+    "love",
+    "duty",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/In_Time_of_%22The_Breaking_of_Nations%22"
+  },
+  {
+   "id": "poem-twain",
+   "type": "poem",
+   "title": "The Convergence of the Twain",
+   "creator": "Thomas Hardy",
+   "year": 1912,
+   "why": "The Titanic and the iceberg are grown toward each other by an indifferent design. Human splendor meets a power that did not consult it.",
+   "themes": [
+    "power",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Convergence_of_the_Twain"
+  },
+  {
+   "id": "poem-loveliest",
+   "type": "poem",
+   "title": "Loveliest of Trees",
+   "creator": "A. E. Housman",
+   "year": 1896,
+   "why": "A man of twenty counts the springs he has left and goes to see the cherry hung with snow. Mortality makes the good life urgent rather than gloomy.",
+   "themes": [
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Shropshire_Lad"
+  },
+  {
+   "id": "poem-athlete",
+   "type": "poem",
+   "title": "To an Athlete Dying Young",
+   "creator": "A. E. Housman",
+   "year": 1896,
+   "why": "The early dead are told they will not watch their record beaten or their name fade. The poem looks straight at glory and at how fast it spoils.",
+   "themes": [
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/To_an_Athlete_Dying_Young"
+  },
+  {
+   "id": "poem-twenty",
+   "type": "poem",
+   "title": "When I Was One-and-Twenty",
+   "creator": "A. E. Housman",
+   "year": 1896,
+   "why": "A young man is warned not to give his heart away, ignores the warning, and pays. Love is a knowledge that arrives too late to be useful.",
+   "themes": [
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/When_I_Was_One-and-Twenty"
+  },
+  {
+   "id": "poem-dulce",
+   "type": "poem",
+   "title": "Dulce et Decorum Est",
+   "creator": "Wilfred Owen",
+   "year": 1920,
+   "why": "A gas attack is described in the body's detail, and the old saying about dying for one's country is called a lie. Truth, duty, and mortality are the quarrel with the slogan.",
+   "themes": [
+    "truth",
+    "duty",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Dulce_et_Decorum_est"
+  },
+  {
+   "id": "poem-anthem-owen",
+   "type": "poem",
+   "title": "Anthem for Doomed Youth",
+   "creator": "Wilfred Owen",
+   "year": 1920,
+   "why": "The dead of the war get no prayers but the rifles' rapid rattle, and the choirs are the wailing shells. Mortality is given the rites the state forgot.",
+   "themes": [
+    "mortality",
+    "duty",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Anthem_for_Doomed_Youth"
+  },
+  {
+   "id": "poem-soldier",
+   "type": "poem",
+   "title": "The Soldier",
+   "creator": "Rupert Brooke",
+   "year": 1915,
+   "why": "A corner of a foreign field is claimed as forever England, if the speaker should die there. Duty and home are idealized, and later war poems would answer this one.",
+   "themes": [
+    "duty",
+    "exile",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Soldier_(poem)"
+  },
+  {
+   "id": "poem-if",
+   "type": "poem",
+   "title": "If—",
+   "creator": "Rudyard Kipling",
+   "year": 1910,
+   "why": "A father lists the tempers a person must keep if he is to become a man, including the courage to see his work broken and begin again. Duty and the good life are a discipline.",
+   "themes": [
+    "duty",
+    "good-life",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/If%E2%80%94"
+  },
+  {
+   "id": "poem-recessional",
+   "type": "poem",
+   "title": "Recessional",
+   "creator": "Rudyard Kipling",
+   "year": 1897,
+   "why": "At the height of an imperial jubilee the poem asks for mercy on a people who might forget judgment. Power is warned, and faith is asked to stay humble.",
+   "themes": [
+    "power",
+    "faith-doubt",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Recessional_(poem)"
+  },
+  {
+   "id": "poem-pied",
+   "type": "poem",
+   "title": "Pied Beauty",
+   "creator": "Gerard Manley Hopkins",
+   "year": 1918,
+   "why": "Written in 1877 and published in 1918, a praise of dappled things ends by returning the glory to God. The good of the varied world is a kind of faith.",
+   "themes": [
+    "faith-doubt",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Pied_Beauty"
+  },
+  {
+   "id": "poem-grandeur",
+   "type": "poem",
+   "title": "God's Grandeur",
+   "creator": "Gerard Manley Hopkins",
+   "year": 1918,
+   "why": "The world is charged with grandeur and seared with trade, and the poem still trusts a freshness deep down. Faith answers an industrial weariness.",
+   "themes": [
+    "faith-doubt",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/God%27s_Grandeur"
+  },
+  {
+   "id": "poem-spring",
+   "type": "poem",
+   "title": "Spring and Fall",
+   "creator": "Gerard Manley Hopkins",
+   "year": 1918,
+   "why": "A child grieving the leaves is told she is grieving, without knowing it, her own mortality. The poem is gentle and does not look away.",
+   "themes": [
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Spring_and_Fall"
+  },
+  {
+   "id": "poem-remember",
+   "type": "poem",
+   "title": "Remember",
+   "creator": "Christina Rossetti",
+   "year": 1862,
+   "why": "The dying speaker asks to be remembered and then, if remembering hurts, to forget and be happy. Love consents to its own absence.",
+   "themes": [
+    "love",
+    "mortality",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Remember_(Rossetti_poem)"
+  },
+  {
+   "id": "poem-annabel",
+   "type": "poem",
+   "title": "Annabel Lee",
+   "creator": "Edgar Allan Poe",
+   "year": 1849,
+   "why": "A love that the angels envied is followed into the tomb, and the speaker lies down by the sea. Devotion and death refuse to separate.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Annabel_Lee"
+  },
+  {
+   "id": "poem-raven",
+   "type": "poem",
+   "title": "The Raven",
+   "creator": "Edgar Allan Poe",
+   "year": 1845,
+   "why": "A student grieving a woman named Lenore is visited by a bird whose only word is nevermore. Mortality becomes a refrain he cannot stop asking for.",
+   "themes": [
+    "mortality",
+    "love",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Raven"
+  },
+  {
+   "id": "poem-concord",
+   "type": "poem",
+   "title": "Concord Hymn",
+   "creator": "Ralph Waldo Emerson",
+   "year": 1837,
+   "why": "The shot heard round the world is remembered, and the poem asks the river and the bridge to keep the deed. Duty to the dead is a public memory.",
+   "themes": [
+    "duty",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Concord_Hymn"
+  },
+  {
+   "id": "poem-psalm",
+   "type": "poem",
+   "title": "A Psalm of Life",
+   "creator": "Henry Wadsworth Longfellow",
+   "year": 1838,
+   "why": "A reply to a funeral gloom that tells the listener life is real and earnest, and the grave is not its goal. The good life is action, not a mood.",
+   "themes": [
+    "good-life",
+    "mortality",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/A_Psalm_of_Life"
+  },
+  {
+   "id": "poem-tide",
+   "type": "poem",
+   "title": "The Tide Rises, the Tide Falls",
+   "creator": "Henry Wadsworth Longfellow",
+   "year": 1879,
+   "why": "A traveler disappears down a shore and the tide keeps its own hours. Mortality is impersonal, and the poem does not decorate it.",
+   "themes": [
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Tide_Rises,_the_Tide_Falls"
+  },
+  {
+   "id": "poem-bells",
+   "type": "poem",
+   "title": "Christmas Bells",
+   "creator": "Henry Wadsworth Longfellow",
+   "year": 1863,
+   "why": "Written during the Civil War after a personal grief, the poem hears the old words of peace and then the cannon drowning them. Faith and doubt take turns until a last hearing.",
+   "themes": [
+    "faith-doubt",
+    "power",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/I_Heard_the_Bells_on_Christmas_Day"
+  },
+  {
+   "id": "poem-wheatley",
+   "type": "poem",
+   "title": "On Being Brought from Africa to America",
+   "creator": "Phillis Wheatley",
+   "year": 1773,
+   "why": "A Christian poem thanks mercy for a conversion and then warns those who scorn her color. Readers still argue whether the thanks can be separated from the captivity. Faith, exile, and dignity are all in the argument.",
+   "themes": [
+    "faith-doubt",
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/On_Being_Brought_from_Africa_to_America"
+  },
+  {
+   "id": "poem-bury",
+   "type": "poem",
+   "title": "Bury Me in a Free Land",
+   "creator": "Frances Ellen Watkins Harper",
+   "year": 1858,
+   "why": "The speaker refuses a grave in a country that still sells people, and asks to be buried only where that commerce has ended. Freedom and dignity are conditions of rest.",
+   "themes": [
+    "freedom-order",
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Frances_Ellen_Watkins_Harper"
+  },
+  {
+   "id": "poem-husband",
+   "type": "poem",
+   "title": "To My Dear and Loving Husband",
+   "creator": "Anne Bradstreet",
+   "year": 1678,
+   "why": "A wife says her love cannot be repaid even by rivers of gold, and asks that they live so they may live ever. Love is a theology of the household.",
+   "themes": [
+    "love",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/To_My_Dear_and_Loving_Husband"
+  },
+  {
+   "id": "poem-house",
+   "type": "poem",
+   "title": "Upon the Burning of Our House",
+   "creator": "Anne Bradstreet",
+   "year": 1666,
+   "why": "A fire takes the goods of a life, and the poet talks herself toward a treasure that cannot burn. Faith is practiced in the middle of a real loss.",
+   "themes": [
+    "faith-doubt",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Here_Follows_Some_Verses_upon_the_Burning_of_Our_House"
+  },
+  {
+   "id": "poem-rains",
+   "type": "poem",
+   "title": "There Will Come Soft Rains",
+   "creator": "Sara Teasdale",
+   "year": 1920,
+   "why": "Spring returns whether or not humankind is still there to notice. The poem is a cool look at mortality and at a world that does not need our wars.",
+   "themes": [
+    "mortality",
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/There_Will_Come_Soft_Rains"
+  },
+  {
+   "id": "poem-barter",
+   "type": "poem",
+   "title": "Barter",
+   "creator": "Sara Teasdale",
+   "year": 1917,
+   "why": "Lovely things are said to be worth the cost of tears, and the listener is told to spend everything on what is beautiful. The good life is a deliberate expense.",
+   "themes": [
+    "good-life",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sara_Teasdale"
+  },
+  {
+   "id": "poem-fig",
+   "type": "poem",
+   "title": "First Fig",
+   "creator": "Edna St. Vincent Millay",
+   "year": 1920,
+   "why": "A candle burned at both ends gives a lovely light and does not last the night. The good life and its cost are four lines.",
+   "themes": [
+    "good-life",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/First_Fig"
+  },
+  {
+   "id": "poem-dirge",
+   "type": "poem",
+   "title": "Dirge Without Music",
+   "creator": "Edna St. Vincent Millay",
+   "year": 1928,
+   "why": "The poet refuses to be soothed by the wisdom of death and says she is not resigned. Grief keeps its disagreement with the universe.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Dirge_Without_Music"
+  },
+  {
+   "id": "poem-snowman",
+   "type": "poem",
+   "title": "The Snow Man",
+   "creator": "Wallace Stevens",
+   "year": 1921,
+   "why": "To see winter as it is, one must have a mind of winter and not add a misery that is not there. Truth is a discipline of not projecting oneself.",
+   "themes": [
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Snow_Man"
+  },
+  {
+   "id": "poem-emperor",
+   "type": "poem",
+   "title": "The Emperor of Ice-Cream",
+   "creator": "Wallace Stevens",
+   "year": 1922,
+   "why": "A funeral in a poor room is told to let the lamp affix its beam, and to call the roller of cigars. Mortality is common, bodily, and not to be prettied.",
+   "themes": [
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Emperor_of_Ice-Cream"
+  },
+  {
+   "id": "poem-jar",
+   "type": "poem",
+   "title": "Anecdote of the Jar",
+   "creator": "Wallace Stevens",
+   "year": 1919,
+   "why": "A jar placed on a hill makes the wilderness arrange itself around a human object. Order is shown as an imposition, not a discovery.",
+   "themes": [
+    "power",
+    "freedom-order"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Anecdote_of_the_Jar"
+  },
+  {
+   "id": "poem-sunday",
+   "type": "poem",
+   "title": "Sunday Morning",
+   "creator": "Wallace Stevens",
+   "year": 1915,
+   "why": "A woman at late coffee wonders whether she can give up paradise and still have a sufficient earth. Faith, doubt, and the good life of the body share the meditation.",
+   "themes": [
+    "faith-doubt",
+    "good-life",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Sunday_Morning_(poem)"
+  },
+  {
+   "id": "poem-fire-ice",
+   "type": "poem",
+   "title": "Fire and Ice",
+   "creator": "Robert Frost",
+   "year": 1920,
+   "why": "The world might end in fire or in ice, in desire or in hate, and either would suffice. Mortality is given two human causes.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Fire_and_Ice_(poem)"
+  },
+  {
+   "id": "poem-road",
+   "type": "poem",
+   "title": "The Road Not Taken",
+   "creator": "Robert Frost",
+   "year": 1916,
+   "why": "A traveler chooses one path and knows he will later tell the story as if the choice had made all the difference. The good life is narrated after the fact.",
+   "themes": [
+    "good-life",
+    "truth"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Road_Not_Taken"
+  },
+  {
+   "id": "poem-wall",
+   "type": "poem",
+   "title": "Mending Wall",
+   "creator": "Robert Frost",
+   "year": 1914,
+   "why": "Two neighbors rebuild a wall the speaker is not sure they need, and the proverb about good fences is left standing anyway. Freedom and custom argue across the stones.",
+   "themes": [
+    "freedom-order",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mending_Wall"
+  },
+  {
+   "id": "poem-woods",
+   "type": "poem",
+   "title": "Stopping by Woods on a Snowy Evening",
+   "creator": "Robert Frost",
+   "year": 1923,
+   "why": "A man pauses in lovely, dark woods and remembers he has promises to keep. Beauty, mortality, and duty share the last repeated line.",
+   "themes": [
+    "duty",
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Stopping_by_Woods_on_a_Snowy_Evening"
+  },
+  {
+   "id": "poem-gold",
+   "type": "poem",
+   "title": "Nothing Gold Can Stay",
+   "creator": "Robert Frost",
+   "year": 1923,
+   "why": "Leaf, flower, and Eden last only a moment. The poem is a small complete account of mortality.",
+   "themes": [
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Nothing_Gold_Can_Stay"
+  },
+  {
+   "id": "poem-night",
+   "type": "poem",
+   "title": "Acquainted with the Night",
+   "creator": "Robert Frost",
+   "year": 1928,
+   "why": "A walker knows the rain, the furthest city light, and a clock that will not say the time is right or wrong. Exile is a habit of the streets.",
+   "themes": [
+    "exile",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Acquainted_with_the_Night"
+  },
+  {
+   "id": "poem-hired",
+   "type": "poem",
+   "title": "The Death of the Hired Man",
+   "creator": "Robert Frost",
+   "year": 1914,
+   "why": "A couple argues whether home is where you have to take a person in, while a worn-out worker dies in the next room. Mercy, duty, and the definition of home are the argument.",
+   "themes": [
+    "mercy",
+    "duty",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Death_of_the_Hired_Man"
+  },
+  {
+   "id": "poem-out",
+   "type": "poem",
+   "title": "Out, Out—",
+   "creator": "Robert Frost",
+   "year": 1916,
+   "why": "A boy's hand is taken by a saw and the people return to their affairs because they have to. Mortality is abrupt, and the living are not condemned for continuing.",
+   "themes": [
+    "mortality",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Out,_Out%E2%80%94"
+  },
+  {
+   "id": "poem-gentle",
+   "type": "poem",
+   "title": "Do not go gentle into that good night",
+   "creator": "Dylan Thomas",
+   "year": 1951,
+   "why": "A villanelle begs a dying father to rage against the close of day. Mortality is resisted as a last duty of the living man.",
+   "themes": [
+    "mortality",
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Do_not_go_gentle_into_that_good_night"
+  },
+  {
+   "id": "poem-fern",
+   "type": "poem",
+   "title": "Fern Hill",
+   "creator": "Dylan Thomas",
+   "year": 1946,
+   "why": "A child is green and golden and only later learns that time held him as he sang. Joy and mortality are the same memory.",
+   "themes": [
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Fern_Hill"
+  },
+  {
+   "id": "poem-craft",
+   "type": "poem",
+   "title": "In My Craft or Sullen Art",
+   "creator": "Dylan Thomas",
+   "year": 1946,
+   "why": "The poet says he does not write for ambition or for the proud, but for the lovers whose arms protect the griefs of the ages. Duty is aimed at love.",
+   "themes": [
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/In_My_Craft_or_Sullen_Art"
+  },
+  {
+   "id": "poem-dominion",
+   "type": "poem",
+   "title": "And death shall have no dominion",
+   "creator": "Dylan Thomas",
+   "year": 1933,
+   "why": "The dead are said to rise again, though lovers be lost and the sea give up its dead. Faith answers mortality in a refrain.",
+   "themes": [
+    "mortality",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/And_death_shall_have_no_dominion"
+  },
+  {
+   "id": "poem-hand",
+   "type": "poem",
+   "title": "The hand that signed the paper",
+   "creator": "Dylan Thomas",
+   "year": 1936,
+   "why": "A hand that signs a paper can fell a city, and the poem watches how little of the signer is in the signature. Power is reduced to five kings and a pen.",
+   "themes": [
+    "power"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Hand_That_Signed_the_Paper"
+  },
+  {
+   "id": "poem-sundays",
+   "type": "poem",
+   "title": "Those Winter Sundays",
+   "creator": "Robert Hayden",
+   "year": 1962,
+   "why": "A father gets up in the cold to warm a house, and no one thanks him, and the son understands too late. Love and duty are the blueblack cold.",
+   "themes": [
+    "duty",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Robert_Hayden"
+  },
+  {
+   "id": "poem-douglass",
+   "type": "poem",
+   "title": "Frederick Douglass",
+   "creator": "Robert Hayden",
+   "year": 1962,
+   "why": "Freedom is described not as a gift from a monument but as a condition in which people do not need statues to remember it. Dignity is the life the poem wants, not the bronze.",
+   "themes": [
+    "freedom-order",
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Robert_Hayden"
+  },
+  {
+   "id": "poem-musee",
+   "type": "poem",
+   "title": "Musée des Beaux Arts",
+   "creator": "W. H. Auden",
+   "year": 1940,
+   "why": "Bruegel's fall of Icarus happens while a ship sails calmly on and a horse scratches itself. Conscience is the question of who looks up when someone is suffering.",
+   "themes": [
+    "conscience",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux_Arts_(poem)"
+  },
+  {
+   "id": "poem-september",
+   "type": "poem",
+   "title": "September 1, 1939",
+   "creator": "W. H. Auden",
+   "year": 1939,
+   "why": "Sitting in a dive on the day a war begins, the poet looks at the lies of the decade and at the faces along the bar. Truth, power, and a difficult hope share the room.",
+   "themes": [
+    "truth",
+    "power",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/September_1,_1939"
+  },
+  {
+   "id": "poem-shield",
+   "type": "poem",
+   "title": "The Shield of Achilles",
+   "creator": "W. H. Auden",
+   "year": 1952,
+   "why": "Thetis looks for the scenes of order a shield ought to show and sees instead a modern blankness of executions and vacant lots. Power has changed the pictures of justice.",
+   "themes": [
+    "power",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Shield_of_Achilles"
+  },
+  {
+   "id": "poem-refugee",
+   "type": "poem",
+   "title": "Refugee Blues",
+   "creator": "W. H. Auden",
+   "year": 1939,
+   "why": "A couple with the right papers still cannot find a place that will have them, and the poem keeps the old yew and the door that was not theirs. Exile is counted in refusals.",
+   "themes": [
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Refugee_Blues"
+  },
+  {
+   "id": "poem-funeral",
+   "type": "poem",
+   "title": "Funeral Blues",
+   "creator": "W. H. Auden",
+   "year": 1938,
+   "why": "The clocks are to be stopped and the stars dismantled because one person has died. Love's grief asks the public world to admit a private ending.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Funeral_Blues"
+  },
+  {
+   "id": "poem-rise",
+   "type": "poem",
+   "title": "Still I Rise",
+   "creator": "Maya Angelou",
+   "year": 1978,
+   "why": "A speaker answers a history that wanted her bent, and rises anyway, with laughter in the voice. Dignity is performed as survival.",
+   "themes": [
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Still_I_Rise"
+  },
+  {
+   "id": "poem-caged",
+   "type": "poem",
+   "title": "Caged Bird",
+   "creator": "Maya Angelou",
+   "year": 1983,
+   "why": "A free bird claims the sky and a caged bird sings of freedom it cannot use. The poem is about liberty known from the inside of a bar.",
+   "themes": [
+    "freedom-order",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Caged_Bird_(poem)"
+  },
+  {
+   "id": "poem-kindness",
+   "type": "poem",
+   "title": "Kindness",
+   "creator": "Naomi Shihab Nye",
+   "year": 1980,
+   "why": "Kindness is said to be learned only after losses have shown how desolate the distance between people can be. Mercy is a knowledge, not a mood.",
+   "themes": [
+    "mercy",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Naomi_Shihab_Nye"
+  },
+  {
+   "id": "poem-summer",
+   "type": "poem",
+   "title": "The Summer Day",
+   "creator": "Mary Oliver",
+   "year": 1990,
+   "why": "A grasshopper is attended to, and the day is asked what the watcher intends to do with a life. Wonder and the good life share a field.",
+   "themes": [
+    "good-life",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mary_Oliver"
+  },
+  {
+   "id": "poem-geese",
+   "type": "poem",
+   "title": "Wild Geese",
+   "creator": "Mary Oliver",
+   "year": 1986,
+   "why": "The listener is told he does not have to be good as a punishment, and that the world goes on offering itself. Mercy and a creaturely dignity are the offer.",
+   "themes": [
+    "mercy",
+    "dignity",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Mary_Oliver"
+  },
+  {
+   "id": "poem-after-love",
+   "type": "poem",
+   "title": "Love After Love",
+   "creator": "Derek Walcott",
+   "year": 1976,
+   "why": "The time will come to greet yourself at your own door and love again the stranger who was you. Homecoming is interior, and it is a mercy.",
+   "themes": [
+    "love",
+    "dignity",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Derek_Walcott"
+  },
+  {
+   "id": "poem-far-cry",
+   "type": "poem",
+   "title": "A Far Cry from Africa",
+   "creator": "Derek Walcott",
+   "year": 1962,
+   "why": "A poet divided between ancestries cannot praise either side of a colonial war without betraying the other. Conscience and exile are the same wound.",
+   "themes": [
+    "exile",
+    "conscience",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Derek_Walcott"
+  },
+  {
+   "id": "poem-digging",
+   "type": "poem",
+   "title": "Digging",
+   "creator": "Seamus Heaney",
+   "year": 1966,
+   "why": "A son at a desk hears his father and grandfather digging, and decides his pen will be his spade. Duty to a family's work is inherited and changed.",
+   "themes": [
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Seamus_Heaney"
+  },
+  {
+   "id": "poem-midterm",
+   "type": "poem",
+   "title": "Mid-Term Break",
+   "creator": "Seamus Heaney",
+   "year": 1966,
+   "why": "A boy comes home from school to the death of a younger brother, and the house is full of old men and whispers. Mortality arrives in a small room.",
+   "themes": [
+    "mortality",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Seamus_Heaney"
+  },
+  {
+   "id": "poem-republic",
+   "type": "poem",
+   "title": "From the Republic of Conscience",
+   "creator": "Seamus Heaney",
+   "year": 1987,
+   "why": "A traveler enters a republic where the immigration officer asks him to declare the things of shame and where no one is above the law of looking. Conscience is made into a country.",
+   "themes": [
+    "conscience",
+    "justice",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Seamus_Heaney"
+  },
+  {
+   "id": "poem-envoy",
+   "type": "poem",
+   "title": "The Envoy of Mr. Cogito",
+   "creator": "Zbigniew Herbert",
+   "year": 1974,
+   "why": "A messenger is told to go upright among those who kneel, and to accept that the reward may be a golden rope or a kick. Duty and dignity are given no comfort.",
+   "themes": [
+    "duty",
+    "dignity",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Zbigniew_Herbert"
+  },
+  {
+   "id": "poem-campo",
+   "type": "poem",
+   "title": "Campo dei Fiori",
+   "creator": "Czesław Miłosz",
+   "year": 1943,
+   "why": "Near the ghetto wall a carousel turns, and the poem remembers the square where Bruno burned while the city went on. Conscience is the failure to look.",
+   "themes": [
+    "conscience",
+    "justice",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Czes%C5%82aw_Mi%C5%82osz"
+  },
+  {
+   "id": "poem-end-world",
+   "type": "poem",
+   "title": "A Song on the End of the World",
+   "creator": "Czesław Miłosz",
+   "year": 1945,
+   "why": "On the day the world ends, a bee circles a flower and a vendor sells vegetables, and no one believes it is happening. Ordinary life and catastrophe refuse to match.",
+   "themes": [
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Czes%C5%82aw_Mi%C5%82osz"
+  },
+  {
+   "id": "poem-end-begin",
+   "type": "poem",
+   "title": "The End and the Beginning",
+   "creator": "Wisława Szymborska",
+   "year": 1993,
+   "why": "After a war someone has to push the rubble aside and someone will eventually find the job boring. Mercy is the unglamorous cleanup, and memory is what gets tired.",
+   "themes": [
+    "mercy",
+    "duty",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Wis%C5%82awa_Szymborska"
+  },
+  {
+   "id": "poem-twice",
+   "type": "poem",
+   "title": "Nothing Twice",
+   "creator": "Wisława Szymborska",
+   "year": 1957,
+   "why": "No day copies itself, and the poem treats that as both a loss and a mercy. Love and time cannot be repeated on purpose.",
+   "themes": [
+    "love",
+    "mortality",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Wis%C5%82awa_Szymborska"
+  },
+  {
+   "id": "poem-home-shire",
+   "type": "poem",
+   "title": "Home",
+   "creator": "Warsan Shire",
+   "year": 2022,
+   "why": "Grown from a 2009 account of refugees in a ruined embassy, the poem says people leave home only when home is a mouth that will swallow them. Exile is not an adventure.",
+   "themes": [
+    "exile",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Warsan_Shire"
+  },
+  {
+   "id": "poem-world-ends",
+   "type": "poem",
+   "title": "Perhaps the World Ends Here",
+   "creator": "Joy Harjo",
+   "year": 1994,
+   "why": "The kitchen table is where children are given instructions, where wars are argued, and where the dead are welcomed home. Dignity and the good life are ordinary furniture.",
+   "themes": [
+    "dignity",
+    "good-life",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Joy_Harjo"
+  },
+  {
+   "id": "poem-celebrate",
+   "type": "poem",
+   "title": "won't you celebrate with me",
+   "creator": "Lucille Clifton",
+   "year": 1993,
+   "why": "A speaker who was not meant to survive invites a celebration of the kind of life she made anyway. Dignity is handmade.",
+   "themes": [
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Lucille_Clifton"
+  },
+  {
+   "id": "poem-boats",
+   "type": "poem",
+   "title": "blessing the boats",
+   "creator": "Lucille Clifton",
+   "year": 2000,
+   "why": "A blessing asks that what a person loves may go out on the water and return, or not, and still be blessed. Mercy faces the risk of leaving.",
+   "themes": [
+    "mercy",
+    "exile",
+    "love"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Lucille_Clifton"
+  },
+  {
+   "id": "poem-good-times",
+   "type": "poem",
+   "title": "good times",
+   "creator": "Lucille Clifton",
+   "year": 1969,
+   "why": "A family with unpaid bills has one night of food, music, and laughter, and the poem says it is good. Joy and dignity are not postponed until the rent is solved.",
+   "themes": [
+    "love",
+    "dignity",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Lucille_Clifton"
+  },
+  {
+   "id": "poem-rosie",
+   "type": "poem",
+   "title": "miss rosie",
+   "creator": "Lucille Clifton",
+   "year": 1969,
+   "why": "A woman who was once the best-looking girl is seen in her ruin, and the speaker says she stands up through the destruction. Dignity is witnessed, not repaired.",
+   "themes": [
+    "dignity",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Lucille_Clifton"
+  },
+  {
+   "id": "poem-work",
+   "type": "poem",
+   "title": "What Work Is",
+   "creator": "Philip Levine",
+   "year": 1991,
+   "why": "A man waits in the rain for work and thinks of his brother, and of the love he has not said. Labor, dignity, and the family debt share the line.",
+   "themes": [
+    "dignity",
+    "love",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Philip_Levine_(poet)"
+  },
+  {
+   "id": "poem-mercy-levine",
+   "type": "poem",
+   "title": "The Mercy",
+   "creator": "Philip Levine",
+   "year": 1999,
+   "why": "The poet's mother crosses the ocean in a ship of that name, carrying a language she will lose. Exile and mercy are the voyage that made the children.",
+   "themes": [
+    "exile",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Philip_Levine_(poet)"
+  },
+  {
+   "id": "poem-blessing",
+   "type": "poem",
+   "title": "A Blessing",
+   "creator": "James Wright",
+   "year": 1963,
+   "why": "Two people step into a pasture and a pony comes to be touched, and the happiness is almost too much for the body. Mercy arrives as an animal's trust.",
+   "themes": [
+    "mercy",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/James_Wright_(poet)"
+  },
+  {
+   "id": "poem-hammock",
+   "type": "poem",
+   "title": "Lying in a Hammock at William Duffy's Farm in Pine Island, Minnesota",
+   "creator": "James Wright",
+   "year": 1963,
+   "why": "A perfect idle hour ends with the recognition that a life has been wasted. The good life and the failure to live it turn on one line.",
+   "themes": [
+    "good-life",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/James_Wright_(poet)"
+  },
+  {
+   "id": "poem-martins",
+   "type": "poem",
+   "title": "Autumn Begins in Martins Ferry, Ohio",
+   "creator": "James Wright",
+   "year": 1963,
+   "why": "Fathers ashamed of their lives watch sons play football, and the poem sees the shame turning into a public beauty. Duty, dignity, and longing are the stadium.",
+   "themes": [
+    "duty",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/James_Wright_(poet)"
+  },
+  {
+   "id": "poem-hook",
+   "type": "poem",
+   "title": "Hook",
+   "creator": "James Wright",
+   "year": 1977,
+   "why": "A man with no hands asks for a cigarette and is described without pity and without disgust. Dignity is the fact of him, not a lesson.",
+   "themes": [
+    "dignity",
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/James_Wright_(poet)"
+  },
+  {
+   "id": "poem-layers",
+   "type": "poem",
+   "title": "The Layers",
+   "creator": "Stanley Kunitz",
+   "year": 1978,
+   "why": "An old poet looks back through lives he has lived and is told he is not done with his changes. The good life is a sequence, not a single choice.",
+   "themes": [
+    "good-life",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Stanley_Kunitz"
+  },
+  {
+   "id": "poem-touch",
+   "type": "poem",
+   "title": "Touch Me",
+   "creator": "Stanley Kunitz",
+   "year": 1995,
+   "why": "Late desire remembers a garden and asks to be touched because the time is short. Love and mortality are shameless and tender.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Stanley_Kunitz"
+  },
+  {
+   "id": "poem-one-art",
+   "type": "poem",
+   "title": "One Art",
+   "creator": "Elizabeth Bishop",
+   "year": 1976,
+   "why": "Losing is practiced, from keys to cities to a beloved, and the practiced calm breaks at the end. Love's losses are the art the speaker cannot master.",
+   "themes": [
+    "love",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/One_Art"
+  },
+  {
+   "id": "poem-fish",
+   "type": "poem",
+   "title": "The Fish",
+   "creator": "Elizabeth Bishop",
+   "year": 1946,
+   "why": "A huge fish is held, studied, and let go, and the victory is the letting go. Mercy is a decision after attention.",
+   "themes": [
+    "mercy"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Elizabeth_Bishop"
+  },
+  {
+   "id": "poem-skunk",
+   "type": "poem",
+   "title": "Skunk Hour",
+   "creator": "Robert Lowell",
+   "year": 1959,
+   "why": "A town's decline and a speaker's dark night end with a skunk that will not scare. Conscience at the bottom of the mind is given a stubborn animal.",
+   "themes": [
+    "conscience",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Robert_Lowell"
+  },
+  {
+   "id": "poem-union",
+   "type": "poem",
+   "title": "For the Union Dead",
+   "creator": "Robert Lowell",
+   "year": 1964,
+   "why": "A Civil War monument, a closed aquarium, and a city of cars are asked what they still owe the Black regiment and the dead. Public memory and duty are cracking.",
+   "themes": [
+    "duty",
+    "justice",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/For_the_Union_Dead"
+  },
+  {
+   "id": "poem-harlem",
+   "type": "poem",
+   "title": "Harlem",
+   "creator": "Langston Hughes",
+   "year": 1951,
+   "why": "A dream deferred is given a set of possible fates, from drying up to exploding. Justice is what happens to a hope a city will not honor.",
+   "themes": [
+    "dignity",
+    "justice"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Harlem_(poem)"
+  },
+  {
+   "id": "poem-america-hughes",
+   "type": "poem",
+   "title": "Let America Be America Again",
+   "creator": "Langston Hughes",
+   "year": 1936,
+   "why": "The poem praises a promise and then says that promise was never true for the poor, the Black, and the immigrant who built the country. Home is a claim still unpaid.",
+   "themes": [
+    "justice",
+    "dignity",
+    "exile"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Let_America_Be_America_Again"
+  },
+  {
+   "id": "poem-english-b",
+   "type": "poem",
+   "title": "Theme for English B",
+   "creator": "Langston Hughes",
+   "year": 1951,
+   "why": "A student writes that he and his instructor are part of each other whether they like it or not, and that what is true for him is not that simple. Truth and dignity share a homework assignment.",
+   "themes": [
+    "truth",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Theme_for_English_B"
+  },
+  {
+   "id": "poem-cool",
+   "type": "poem",
+   "title": "We Real Cool",
+   "creator": "Gwendolyn Brooks",
+   "year": 1959,
+   "why": "Seven pool players at the Golden Shovel speak their daring in short strikes and end on a death they already see. Style, dignity, and mortality are one breath.",
+   "themes": [
+    "mortality",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/We_Real_Cool"
+  },
+  {
+   "id": "poem-the-mother",
+   "type": "poem",
+   "title": "the mother",
+   "creator": "Gwendolyn Brooks",
+   "year": 1945,
+   "why": "A woman speaks to the children she did not have and refuses both easy blame and easy forgiveness. Mercy and grief will not simplify her.",
+   "themes": [
+    "mercy",
+    "love",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Gwendolyn_Brooks"
+  },
+  {
+   "id": "poem-kitchenette",
+   "type": "poem",
+   "title": "kitchenette building",
+   "creator": "Gwendolyn Brooks",
+   "year": 1945,
+   "why": "Dreams are asked how they expect to survive the smell of onion and the yesterday's garbage in a cramped flat. Dignity has to compete with the rent.",
+   "themes": [
+    "dignity",
+    "good-life"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Gwendolyn_Brooks"
+  },
+  {
+   "id": "poem-beans",
+   "type": "poem",
+   "title": "The Bean Eaters",
+   "creator": "Gwendolyn Brooks",
+   "year": 1960,
+   "why": "An old couple eats beans and remembers, mostly, with twinklings and twinges. Love at the end of a life is plain and sufficient.",
+   "themes": [
+    "love",
+    "dignity",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Gwendolyn_Brooks"
+  },
+  {
+   "id": "poem-turret",
+   "type": "poem",
+   "title": "The Death of the Ball Turret Gunner",
+   "creator": "Randall Jarrell",
+   "year": 1945,
+   "why": "Six lines take a gunner from his mother's sleep to a hose that washes him out of the turret. Duty and mortality are brutally short.",
+   "themes": [
+    "mortality",
+    "duty"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Death_of_the_Ball_Turret_Gunner"
+  },
+  {
+   "id": "poem-defense",
+   "type": "poem",
+   "title": "A Brief for the Defense",
+   "creator": "Jack Gilbert",
+   "year": 2005,
+   "why": "In a world of suffering the poem argues that delight is also a duty, or the cruelty wins twice. The good life is defended without denying the pain.",
+   "themes": [
+    "good-life",
+    "mercy",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Jack_Gilbert"
+  },
+  {
+   "id": "poem-requiem",
+   "type": "poem",
+   "title": "Requiem",
+   "creator": "Anna Akhmatova",
+   "year": 1963,
+   "why": "Written between 1935 and 1940 and published in 1963, the cycle stands in a prison line with the women of Leningrad. Power, grief, and the dignity of witnessing are the poem.",
+   "themes": [
+    "power",
+    "mercy",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Requiem_(Anna_Akhmatova)"
+  },
+  {
+   "id": "poem-epigram",
+   "type": "poem",
+   "title": "The Stalin Epigram",
+   "creator": "Osip Mandelstam",
+   "year": 1933,
+   "why": "A short poem said aloud about a tyrant, which the state treated as a crime. Truth and power meet in sixteen lines that cost the poet his freedom.",
+   "themes": [
+    "power",
+    "truth",
+    "conscience"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Stalin_Epigram"
+  },
+  {
+   "id": "poem-mariner",
+   "type": "poem",
+   "title": "The Rime of the Ancient Mariner",
+   "creator": "Samuel Taylor Coleridge",
+   "year": 1798,
+   "why": "A sailor kills an albatross and spends the rest of the poem learning what guilt requires, including the blessing of the creatures he had despised. Conscience, mercy, and faith are a sea story.",
+   "themes": [
+    "conscience",
+    "mercy",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Rime_of_the_Ancient_Mariner"
+  },
+  {
+   "id": "poem-kubla",
+   "type": "poem",
+   "title": "Kubla Khan",
+   "creator": "Samuel Taylor Coleridge",
+   "year": 1816,
+   "why": "A pleasure-dome is decreed in a place of sacred river and violent fountain, and the vision breaks. Power and imagination both fail to finish the palace.",
+   "themes": [
+    "power",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Kubla_Khan"
+  },
+  {
+   "id": "poem-hap",
+   "type": "poem",
+   "title": "Hap",
+   "creator": "Thomas Hardy",
+   "year": 1898,
+   "why": "The poet would rather a vengeful god had ordained his pain than accept that chance did it. Faith's absence is itself a kind of suffering.",
+   "themes": [
+    "faith-doubt",
+    "mortality"
+   ],
+   "url": "https://en.wikipedia.org/wiki/Hap_(poem)"
+  },
+  {
+   "id": "poem-creation",
+   "type": "poem",
+   "title": "The Creation",
+   "creator": "James Weldon Johnson",
+   "year": 1927,
+   "why": "A sermon-poem in which God, lonely, makes the world and then a human being out of the clay. Faith and dignity are told in the cadence of a pulpit.",
+   "themes": [
+    "faith-doubt",
+    "dignity"
+   ],
+   "url": "https://en.wikipedia.org/wiki/The_Creation_(poem)"
+  },
+  {
+   "id": "poem-go-down",
+   "type": "poem",
+   "title": "Go Down Death",
+   "creator": "James Weldon Johnson",
+   "year": 1927,
+   "why": "Sister Caroline is carried by Death as a mercy, not a theft, in a sermon from God's Trombones. Mortality is given a kind hand.",
+   "themes": [
+    "mortality",
+    "mercy",
+    "faith-doubt"
+   ],
+   "url": "https://en.wikipedia.org/wiki/God%27s_Trombones"
+  }
+ ]
+}
