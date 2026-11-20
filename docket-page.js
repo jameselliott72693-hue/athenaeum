@@ -292,6 +292,21 @@
     });
   }
 
+  function notifyDocketPage() {
+    const host = $("docket");
+    if (!host || !window.AthenaeumReaderUI) return;
+    const night = state.night;
+    const date = shownDate();
+    window.AthenaeumReaderUI.sync({
+      page: "docket",
+      root: host,
+      night: date,
+      title: (night && (night.date_long || night.title)) || date,
+      sittings: (night && night.sittings) || [],
+      place: date ? D.nightUrl(date) : ""
+    });
+  }
+
   function renderNight() {
     Object.keys(state.timers).forEach((id) => {
       window.clearInterval(state.timers[id]);
@@ -310,6 +325,7 @@
         ${nightTools("")}`;
       bindNightSelect();
       bindSearch();
+      notifyDocketPage();
       return;
     }
     const night = state.night;
@@ -324,6 +340,7 @@
         ${state.nights.length ? nightTools(state.entry && state.entry.date) : ""}`;
       bindNightSelect();
       bindSearch();
+      notifyDocketPage();
       return;
     }
     const date = shownDate();
@@ -377,8 +394,9 @@
     $("docket-share").addEventListener("click", shareNight);
     $("docket-print").addEventListener("click", () => window.print());
     const fragment = (window.location.hash || "").replace(/^#/, "");
-    const anchor = fragment && fragment.indexOf("night=") !== 0 ? document.getElementById(fragment) : null;
+    const anchor = fragment && fragment.indexOf("night=") !== 0 && fragment.indexOf("saved-") !== 0 ? document.getElementById(fragment) : null;
     if (anchor && anchor.scrollIntoView) anchor.scrollIntoView();
+    notifyDocketPage();
   }
 
   function sectionOf(node) {
@@ -624,6 +642,14 @@
     document.title = `${(page && page.name) || name} · Tonight's docket`;
     host.innerHTML = `<p class="kicker">A chair</p><p class="hint"><a class="tap-target" href="docket.html">Tonight's docket</a></p>${D.chairPageHtml(page)}${searchBox()}`;
     bindSearch();
+    if (window.AthenaeumReaderUI) {
+      window.AthenaeumReaderUI.sync({
+        page: "chair",
+        root: host,
+        quotes: (page && page.quotes) || [],
+        speaker: (page && page.name) || name
+      });
+    }
   }
 
   async function boot() {

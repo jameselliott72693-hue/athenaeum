@@ -56,6 +56,50 @@
     } catch (err) { /* ignore */ }
     return "#";
   }
+  function httpOnly(url) {
+    const value = safeUrl(url);
+    return value.indexOf("http") === 0 ? value : "";
+  }
+  function nightOf(reading) {
+    const when = reading && reading.when ? String(reading.when) : "";
+    const day = when.slice(0, 10);
+    return /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : "";
+  }
+  function readerPlace(reading) {
+    if (!reading || !reading.id) return "index.html";
+    return "index.html?sitting=" + encodeURIComponent(reading.id);
+  }
+  function readerAttr(meta) {
+    const pairs = [
+      ["data-reader-block", meta.block || ""],
+      ["data-reader-kind", meta.kind || "passage"],
+      ["data-reader-speaker", meta.speaker || ""],
+      ["data-reader-work", meta.work || ""],
+      ["data-reader-citation", meta.citation || ""],
+      ["data-reader-edition", meta.edition || ""],
+      ["data-reader-url", meta.url || ""],
+      ["data-reader-night", meta.night || ""],
+      ["data-reader-title", meta.title || ""],
+      ["data-reader-sitting", meta.sitting || ""],
+      ["data-reader-place", meta.place || ""]
+    ];
+    if (meta.claim) pairs.push(["data-reader-claim", meta.claim]);
+    if (meta.text) pairs.push(["data-reader-text", meta.text]);
+    if (meta.save) pairs.push(["data-reader-save", meta.save]);
+    return pairs.map((pair) => pair[0] + "=\"" + esc(pair[1]) + "\"").join(" ");
+  }
+  function notifyReader() {
+    if (!window.AthenaeumReaderUI || !state.reading) return;
+    const reading = state.reading;
+    window.AthenaeumReaderUI.sync({
+      page: "home",
+      root: $("session"),
+      night: nightOf(reading),
+      title: reading.topic || "",
+      place: readerPlace(reading),
+      readingId: reading.id || ""
+    });
+  }
   function subjectText() {
     return `${$("topic").value} ${$("brief").value}`.trim();
   }
@@ -719,7 +763,17 @@
 
   function remarkHtml(person, body, lean, meta, turnIndex) {
     const save = turnIndex == null ? "" : `<button type="button" class="text-btn" data-save-turn="${turnIndex}">Bookmark this turn</button>`;
-    return `<article class="remark${lean === "abstain" ? " abstain" : ""} reveal">
+    const reading = state.reading || {};
+    const attrs = readerAttr({
+      block: "home:" + (reading.id || "reading") + ":legacy:" + (turnIndex == null ? "close" : turnIndex),
+      kind: "passage",
+      speaker: person && person.name || "",
+      night: nightOf(reading),
+      title: reading.topic || "",
+      sitting: reading.id || "",
+      place: readerPlace(reading)
+    });
+    return `<article class="remark${lean === "abstain" ? " abstain" : ""} reveal" ${attrs}>
       <div class="remark-head">
         <img class="avatar" src="${esc(safeUrl(person.portrait))}" alt="" width="48" height="48" loading="lazy" decoding="async" />
         <div>
@@ -754,24 +808,76 @@
 
   function turnHtml(turn, index) {
     const save = `<button type="button" class="text-btn" data-save-turn="${index}">Bookmark this turn</button>`;
+    const reading = state.reading || {};
+    const night = nightOf(reading);
+    const place = readerPlace(reading);
     if (turn.kind === "moderator") {
       const who = turn.toId ? `To ${esc(turn.toName)}` : "To the table";
+      const ask = readerAttr({
+        block: "home:" + (reading.id || "reading") + ":turn:" + index + ":ask",
+        kind: "passage",
+        speaker: "Moderator",
+        night,
+        title: reading.topic || "",
+        sitting: reading.id || "",
+        place
+      });
       return `<article class="remark moderator" data-turn="${index}">
         <div class="remark-head"><div><p class="kicker">Moderator</p><h3>${who}</h3></div></div>
-        <p class="moderator-ask">${esc(turn.text || "")}</p>
+        <p class="moderator-ask" ${ask}>${esc(turn.text || "")}</p>
         ${save}
       </article>`;
     }
     if (turn.kind === "silence") {
+      const note = readerAttr({
+        block: "home:" + (reading.id || "reading") + ":turn:" + index + ":silence",
+        kind: "passage",
+        speaker: turn.name || "",
+        night,
+        title: reading.topic || "",
+        sitting: reading.id || "",
+        place
+      });
       return `<article class="remark notice" data-turn="${index}">
-        <p class="editorial"><span class="note-flag">Note, not a chair’s words.</span> ${esc(turn.editorial || "")}</p>
+        <p class="editorial" ${note}><span class="note-flag">Note, not a chair’s words.</span> ${esc(turn.editorial || "")}</p>
       </article>`;
     }
     const person = byId(turn.id) || { name: turn.name, years: "", portrait: "" };
     const reply = turn.replyTo ? `<p class="reply-to">Answers ${esc(turn.replyTo.name)}.</p>` : "";
-    const passages = (turn.paragraphs || []).map((paragraph) => {
+    const passages = (turn.paragraphs || []).map((paragraph, i) => {
+      const card = (turn.cards || [])[i] || {};
+      const cite = (turn.cites || [])[i] || {};
+      const block = "home:" + (reading.id || "reading") + ":turn:" + index + ":p:" + i;
+      const verbatim = !!(cite.verbatim && card.claim);
+      const attrs = readerAttr({
+        block,
+        kind: "passage",
+        speaker: turn.name || "",
+        work: verbatim ? (cite.work || card.work || "") : "",
+        citation: verbatim ? (cite.loc || card.loc || "") : "",
+        url: verbatim ? httpOnly(cite.url) : "",
+        night,
+        title: reading.topic || "",
+        sitting: reading.id || "",
+        place,
+        claim: verbatim ? card.claim : ""
+      });
+      const button = verbatim ? `<button type="button" class="reader-save-quote reader-chrome" ${readerAttr({
+        block,
+        kind: "verbatim",
+        speaker: turn.name || "",
+        work: cite.work || card.work || "",
+        citation: cite.loc || card.loc || "",
+        url: httpOnly(cite.url),
+        night,
+        title: reading.topic || "",
+        sitting: reading.id || "",
+        place,
+        text: card.claim,
+        save: "quote"
+      })}>Save quote</button>` : "";
       const full = String(paragraph || "").indexOf("From the full text") === 0;
-      return `<p class="passage${full ? " from-text" : ""}">${esc(paragraph)}</p>`;
+      return `<p class="passage${full ? " from-text" : ""}" ${attrs}>${esc(paragraph)}</p>${button}`;
     }).join("");
     const meta = turn.kind === "abstain" ? "Sits out" : (turn.hits ? `${turn.hits} passage${turn.hits === 1 ? "" : "s"}` : "");
     return `<article class="remark${turn.kind === "abstain" ? " abstain" : ""}" data-turn="${index}">
@@ -868,6 +974,7 @@
     if (state.playback.index >= reading.turns.length) finishPlayback();
     else if (!state.playback.paused) scheduleNext();
     updatePlayButtons();
+    notifyReader();
   }
 
   function beginPlayback() {
@@ -889,6 +996,7 @@
     updatePlayButtons();
     const status = $("play-status");
     if (status) status.textContent = "Saved sitting. The full conversation is on the page.";
+    notifyReader();
   }
 
   async function togglePlay() {
@@ -1142,6 +1250,7 @@
         if (sound) window.setTimeout(() => { if (token === state.revealToken) playSound(step.person); }, i * 420);
       });
       turns.insertAdjacentHTML("beforeend", closeHtml(reading));
+      notifyReader();
       return;
     }
     steps.forEach((step, i) => {
@@ -1149,10 +1258,16 @@
         if (token !== state.revealToken) return;
         turns.insertAdjacentHTML("beforeend", step.html);
         if (sound) playSound(step.person);
-        if (i === steps.length - 1) turns.insertAdjacentHTML("beforeend", closeHtml(reading));
+        if (i === steps.length - 1) {
+          turns.insertAdjacentHTML("beforeend", closeHtml(reading));
+          notifyReader();
+        }
       }, i * 520);
     });
-    if (!steps.length) turns.insertAdjacentHTML("beforeend", closeHtml(reading));
+    if (!steps.length) {
+      turns.insertAdjacentHTML("beforeend", closeHtml(reading));
+      notifyReader();
+    }
   }
 
   function modernHtml(turn, index) {
@@ -1160,8 +1275,18 @@
     const text = Modern.forTurn(turn);
     if (!text) return "";
     const open = !!state.modernDefault;
+    const reading = state.reading || {};
+    const attrs = readerAttr({
+      block: "home:" + (reading.id || "reading") + ":turn:" + index + ":modern",
+      kind: "paraphrase",
+      speaker: turn.name || "",
+      night: nightOf(reading),
+      title: reading.topic || "",
+      sitting: reading.id || "",
+      place: readerPlace(reading)
+    });
     return `<button type="button" class="text-btn modern-toggle" data-modern="${index}" aria-expanded="${open ? "true" : "false"}" aria-controls="modern-read-${index}">${open ? "Hide modern read" : "Modern read"}</button>
-      <div class="modern-read" id="modern-read-${index}"${open ? "" : " hidden"}><p><span class="note-flag">Paraphrase, not a quotation.</span> ${esc(text)}</p></div>`;
+      <div class="modern-read" id="modern-read-${index}" ${attrs}${open ? "" : " hidden"}><p><span class="note-flag">Paraphrase, not a quotation.</span> ${esc(text)}</p></div>`;
   }
 
   function playbackKeysText() {
@@ -2108,7 +2233,10 @@
     if (Share && location.hash) {
       try { shared = await Share.unpack(location.hash); } catch (err) { shared = null; }
     }
+    const askedSitting = new URLSearchParams(location.search).get("sitting");
+    const asked = askedSitting && state.minutes.find((row) => row && row.id === askedSitting);
     if (shared && shared.topic) openReading(shared, { books: false });
+    else if (asked) openReading(asked, { books: false });
     else if (state.minutes[0]) renderReading(state.minutes[0], { animate: false, sound: false });
     const thinkerLink = /^#thinker=([a-z0-9-]+)$/.exec(location.hash || "");
     if (thinkerLink && byId(thinkerLink[1]) && !(shared && shared.topic)) openDossier(thinkerLink[1]);
