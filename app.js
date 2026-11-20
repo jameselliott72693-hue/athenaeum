@@ -231,6 +231,7 @@
     presetBtn.textContent = `Seat the usual ${preset.length}`;
     renderLines();
     renderPaths();
+    renderTableEncounters();
   }
 
   function renderLines() {
@@ -577,6 +578,7 @@
     state.scoring = subjectText().length >= 3;
     renderRoster();
     renderTable();
+    renderTableEncounters();
     window.clearTimeout(scheduleScore.timer);
     scheduleScore.timer = window.setTimeout(async () => {
       const text = subjectText();
@@ -1084,7 +1086,42 @@
         <button type="button" id="share-sitting">Share link</button>
         <p id="share-note" class="hint" role="status"></p>
       </div>
-      <div id="turns"></div>`;
+      <div id="turns"></div>
+      ${readingEncounters(reading)}`;
+  }
+
+  function readingEncounters(reading) {
+    const E = window.AthenaeumEncounters;
+    if (!E || !state.encounters || !reading) return "";
+    return E.panelHtml({
+      themes: E.inferThemes(reading.topic || ""),
+      catalog: state.encounters.catalog,
+      scope: "reading",
+      limit: 3,
+      context: {
+        sittingTitle: reading.topic || "",
+        place: "index.html#session"
+      }
+    });
+  }
+
+  function renderTableEncounters() {
+    const host = $("encounters-table");
+    const E = window.AthenaeumEncounters;
+    if (!host || !E || !state.encounters) return;
+    const table = activeTable();
+    host.innerHTML = E.panelHtml({
+      themes: E.themesForTable(state.tableFilter, subjectText(), state.encounters.map),
+      catalog: state.encounters.catalog,
+      scope: "table",
+      limit: 3,
+      heading: "For this table",
+      context: {
+        sittingTitle: subjectText() || (table && table.name) || "",
+        place: "index.html#encounters-table"
+      }
+    });
+    if (window.AthenaeumEncountersUI) window.AthenaeumEncountersUI.refresh(host);
   }
 
   async function shareSitting(reading) {
@@ -1121,6 +1158,7 @@
     $("print-sitting").addEventListener("click", () => window.print());
     $("share-sitting").addEventListener("click", () => shareSitting(reading));
     bindTransport();
+    if (window.AthenaeumEncountersUI) window.AthenaeumEncountersUI.refresh(host);
     if (opts && opts.play) beginPlayback();
     else showFinished(reading);
   }
@@ -2170,11 +2208,20 @@
   }
 
   async function boot() {
-    const [catalog, lines, pathCatalog] = await Promise.all([
+    const [catalog, lines, pathCatalog, encounterCatalog, encounterMap] = await Promise.all([
       readJson("data/tables.json", true),
       readJson("data/influence.json", false),
-      readJson("data/paths.json", false)
+      readJson("data/paths.json", false),
+      readJson("data/encounters.json", false),
+      readJson("data/encounter-map.json", false)
     ]);
+    if (encounterCatalog && window.AthenaeumEncounters) {
+      state.encounters = {
+        catalog: window.AthenaeumEncounters.normalizeCatalog(encounterCatalog),
+        map: encounterMap && typeof encounterMap === "object" ? encounterMap : { sittings: {}, tables: {} }
+      };
+      window.AthenaeumEncountersData = state.encounters;
+    }
     state.tables = catalog.tables || [];
     state.relevance = catalog.relevance;
     const ids = Array.isArray(catalog.thinkers) ? catalog.thinkers : [];

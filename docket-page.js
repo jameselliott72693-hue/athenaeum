@@ -127,7 +127,29 @@
         const html = turnHtml(step);
         return index === 0 ? html : html.replace("<article ", "<article hidden ");
       }).join("")}</div>
+      ${encounterBlock(sitting)}
     </section>`;
+  }
+
+  function encounterBlock(sitting) {
+    const pack = state.encounters;
+    const E = window.AthenaeumEncounters;
+    if (!pack || !E || !sitting) return "";
+    const date = (state.night && state.night.date) || "";
+    const themes = E.themesForSitting(sitting, date, pack.map);
+    const scope = `${date}-${sitting.id}`.replace(/[^A-Za-z0-9_-]/g, "");
+    return E.panelHtml({
+      themes,
+      catalog: pack.catalog,
+      scope,
+      limit: 3,
+      context: {
+        night: date,
+        sittingId: sitting.id,
+        sittingTitle: sitting.question || "",
+        place: date ? `docket.html?night=${date}#sitting-${sitting.id}` : ""
+      }
+    });
   }
 
   function tallyHtml(night) {
@@ -397,6 +419,7 @@
     const anchor = fragment && fragment.indexOf("night=") !== 0 && fragment.indexOf("saved-") !== 0 ? document.getElementById(fragment) : null;
     if (anchor && anchor.scrollIntoView) anchor.scrollIntoView();
     notifyDocketPage();
+    if (window.AthenaeumEncountersUI) window.AthenaeumEncountersUI.refresh(host);
   }
 
   function sectionOf(node) {
@@ -461,6 +484,22 @@
       copied = true;
     } catch (err) { copied = false; }
     if (note) note.textContent = copied ? "Link copied." : url;
+  }
+
+  async function loadEncounters() {
+    try {
+      const [catalogRes, mapRes] = await Promise.all([
+        fetch("data/encounters.json"),
+        fetch("data/encounter-map.json")
+      ]);
+      if (!catalogRes.ok || !window.AthenaeumEncounters) return null;
+      const catalog = window.AthenaeumEncounters.normalizeCatalog(await catalogRes.json());
+      const map = mapRes.ok ? await mapRes.json() : { sittings: {}, tables: {} };
+      window.AthenaeumEncountersData = { catalog, map };
+      return { catalog, map };
+    } catch (err) {
+      return null;
+    }
   }
 
   async function loadDocketFile(file) {
@@ -654,11 +693,13 @@
 
   async function boot() {
     bindSpaceTurn();
-    const [response, archiveRes, agreements] = await Promise.all([
+    const [response, archiveRes, agreements, encounterPack] = await Promise.all([
       fetch("docket/index.json"),
       fetch("docket/archive.json"),
-      loadAgreements()
+      loadAgreements(),
+      loadEncounters()
     ]);
+    state.encounters = encounterPack;
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
     let storedArchive = [];
