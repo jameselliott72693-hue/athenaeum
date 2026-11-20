@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Highlights and quotes saved in this browser, kept in folders you can sort, rename, and export." />
+  <meta name="theme-color" content="#1c1712" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Athenaeum" />
+  <title>Saved · The Athenaeum</title>
+  <script>
+    try {
+      var t = localStorage.getItem("athenaeum.theme");
+      if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+      if (t === "dark") document.documentElement.dataset.theme = "dark";
+    } catch (e) {}
+  </script>
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="mark" src="images/mark.png" alt="" width="48" height="48" decoding="async" />
+      <div>
+        <p class="kicker">A reading room</p>
+        <h1>The Athenaeum</h1>
+        <p class="lede">Passages you highlight stay in this browser, with the words themselves, after a night leaves the menu.</p>
+      </div>
+    </div>
+    <div class="header-tools">
+      <button type="button" id="theme" class="theme-btn" aria-pressed="false">Dark</button>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">The room</a>
+      <a href="docket.html">Tonight's docket</a>
+      <a href="archive.html">Older nights</a>
+      <a href="saved.html" aria-current="page">Saved</a>
+    </nav>
+  </header>
+  <main>
+    <p class="kicker">This browser</p>
+    <h2>Saved</h2>
+    <p class="lede">Select text in a sitting, or use Save quote on a verified quotation. Folders keep one home for each passage.</p>
+    <p id="reader-status" class="hint" role="status"></p>
+    <div class="reader-tools">
+      <label class="field" for="reader-search">Search saved passages</label>
+      <input id="reader-search" type="search" placeholder="Words, a thinker, a night" autocomplete="off" />
+      <label class="field" for="reader-sort-folders">Sort folders</label>
+      <select id="reader-sort-folders"></select>
+      <label class="field" for="reader-sort-items">Sort passages</label>
+      <select id="reader-sort-items"></select>
+      <div class="row-btns">
+        <button type="button" id="reader-new-folder">New folder</button>
+        <button type="button" id="reader-export-json">Export JSON</button>
+        <button type="button" id="reader-export-text">Export text</button>
+        <button type="button" id="reader-export-md">Export Markdown</button>
+        <button type="button" id="reader-import">Import JSON</button>
+      </div>
+      <input id="reader-import-file" type="file" accept="application/json,.json" hidden />
+    </div>
+    <div id="reader-library" class="reader-library"></div>
+  </main>
+  <footer>
+    <p>A saved passage keeps the exact words, the speaker when one is known, and whether it is a verbatim quotation or a paraphrase. A Modern read stays labeled as a paraphrase. Nothing here is sent to a server.</p>
+  </footer>
+  <script src="reader.js"></script>
+  <script src="reader-page.js"></script>
+</body>
+</html>
