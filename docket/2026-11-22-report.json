@@ -1,0 +1,709 @@
+{
+ "schema_version": "1.0",
+ "date": "2026-11-22",
+ "date_long": "Week of Nov 16 to Nov 22",
+ "title": "Weekly Discourse Report",
+ "note": null,
+ "note_links": [],
+ "source": {
+  "format": "data_json",
+  "file": "athenaeum-sittings/nights/2026-11-22/weekly-input/data_2026-11-22.json",
+  "sha256": "dc9c9ca2ff90dd2f424c02e15e4846b3acffe76cb9eb62090272a63dfb3d40b0",
+  "question_split": "separate_fields"
+ },
+ "sections": [
+  {
+   "name": "Political",
+   "stories": [
+    {
+     "id": "political-1",
+     "number": 1,
+     "headline": "Trump posts \"The Great Powers 1945, 2026,\" pairing himself, Xi and Putin with Yalta's Big Three",
+     "summary": "Two days after a three-way summit in Shenzhen he called \"bigger than Yalta,\" Trump posted an image on Truth Social setting a photo of himself, Xi Jinping and Vladimir Putin beside the famous image of Roosevelt, Churchill and Stalin. The comparison drew alarm in Ukraine and Eastern Europe, where Yalta symbolizes great powers deciding smaller nations' fates; supporters hailed it as peace through strength.",
+     "sources": [
+      {
+       "name": "Newsweek",
+       "url": "https://www.newsweek.com/trump-shares-yalta-comparison-featuring-himself-xi-and-putin-12752798",
+       "archived": "http://web.archive.org/web/20261121233108/https://www.newsweek.com/trump-shares-yalta-comparison-featuring-himself-xi-and-putin-12752798"
+      },
+      {
+       "name": "Truth Social archive",
+       "url": "https://www.trumpstruth.org/statuses/43664"
+      },
+      {
+       "name": "AFP",
+       "url": "https://www.afp.com/en/china-us-russia-issue-declaration-toward-peace-after-first-summit",
+       "archived": "http://web.archive.org/web/20261122050035/https://www.afp.com/en/china-us-russia-issue-declaration-toward-peace-after-first-summit"
+      },
+      {
+       "name": "Atlantic Council",
+       "url": "https://www.atlanticcouncil.org/content-series/fastthinking/what-the-trump-putin-xi-meeting-actually-achieved/",
+       "archived": "http://web.archive.org/web/20261120054129/https://www.atlanticcouncil.org/content-series/fastthinking/what-the-trump-putin-xi-meeting-actually-achieved/"
+      },
+      {
+       "name": "The New Republic",
+       "url": "https://newrepublic.com/post/218174/trump-icc-international-criminal-court-xi-putin-china-russia-israel"
+      },
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/trump-putin-us-russia-friend-961f5a5b381dc7555c7bedfdd20581d8",
+       "archived": "http://web.archive.org/web/20261121040937/https://apnews.com/article/trump-putin-us-russia-friend-961f5a5b381dc7555c7bedfdd20581d8"
+      },
+      {
+       "name": "ABC News",
+       "url": "https://abcnews.com/Politics/trump-hold-news-conference-friday-asia-trip/story?id=138307456",
+       "archived": "http://web.archive.org/web/20261122183750/https://abcnews.com/Politics/trump-hold-news-conference-friday-asia-trip/story?id=138307456"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/20/trump-defends-putin-relationship-warns-ai-data-centres-must-stay-in-us",
+       "archived": "http://web.archive.org/web/20261121162021/https://www.aljazeera.com/news/2026/11/20/trump-defends-putin-relationship-warns-ai-data-centres-must-stay-in-us"
+      },
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/trump-xi-putin-nuclear-ukraine-iran-a04dc76ed8e786b087e2c1ea9598783a",
+       "archived": "http://web.archive.org/web/20261120084918/https://apnews.com/article/trump-xi-putin-nuclear-ukraine-iran-a04dc76ed8e786b087e2c1ea9598783a"
+      },
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/11/18/trump-xi-putin-meet-with-conflicting-agendas-sharp-divides/",
+       "archived": "http://web.archive.org/web/20261119190808/https://www.washingtonpost.com/politics/2026/11/18/trump-xi-putin-meet-with-conflicting-agendas-sharp-divides/"
+      },
+      {
+       "name": "BBC live",
+       "url": "https://www.bbc.com/news/live/cmlye926e2eet"
+      },
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/president-donald-trump-asia-a31165456bf217de16f1c4e646b72bd2"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
+       "archived": "http://web.archive.org/web/20261116064102/https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html"
+      },
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+       "archived": "http://web.archive.org/web/20261116224625/https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+       "archived": "http://web.archive.org/web/20261116125710/https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia"
+      }
+     ],
+     "side_a": "Peace among nuclear powers requires their leaders to talk directly; a summit of the three largest powers is realism, not betrayal, and could prevent a larger war. Supporters see a president willing to deal with adversaries where his predecessors only issued statements.",
+     "side_a_label": null,
+     "side_b": "Yalta is remembered in Warsaw, Kyiv and the Baltics as the moment the West handed half of Europe to Soviet domination; celebrating it with Putin, whose army is still at war in Ukraine, signals that small nations' sovereignty is negotiable. Calling dictators peers also blurs the line between free and unfree governments.",
+     "side_b_label": null,
+     "question_underneath": "Is peace secured by great powers dividing the world among themselves, or does a just order require that small nations have a voice in their own fate?",
+     "thinkers_note": "Realism versus liberal internationalism: Thucydides' Melian Dialogue ('the strong do what they can, the weak suffer what they must') against Kant's Perpetual Peace and a law-bound order among nations. Lessons of history: Munich 1938 and Yalta 1945 invoked as warnings against appeasement, while the Congress of Vienna is cited as proof great-power concert can keep peace. Natural law and self-determination: the claim that peoples have rights no summit can trade away.",
+     "sitting_id": "p1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-2",
+     "number": 2,
+     "headline": "Democrats split over using the Dec. 11 funding deadline to force an end to the Iran war",
+     "summary": "With a Dec. 11 deadline to keep the government open, Sen. Chris Van Hollen, joined by Sens. Duckworth, Sanders and Bennet, says any stopgap must bar funds for continuing the war against Iran, and others plan amendments requiring congressional authorization. Incoming Appropriations chair Rosa DeLauro and incoming Foreign Affairs chair Gregory Meeks oppose risking a shutdown, while Trump says he wants a permanent deal that keeps Iran from a nuclear weapon.",
+     "sources": [
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/iran-war-democrats-congress-trump/"
+      },
+      {
+       "name": "The Hill",
+       "url": "https://thehill.com/homenews/senate/6228970-senate-democrats-avoid-shutdown/"
+      },
+      {
+       "name": "Roll Call",
+       "url": "https://rollcall.com/2026/11/12/democrats-mulling-iran-war-funding-cutoff-strategy/",
+       "archived": "http://web.archive.org/web/20261122070949/http://www.rollcall.com/2026/11/12/democrats-mulling-iran-war-funding-cutoff-strategy"
+      },
+      {
+       "name": "Al Jazeera",
+       "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
+       "archived": "http://web.archive.org/web/20261123022429/https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/mideast-iran-gaza-israel-november-21-2026-29159a6f3365ff447c0ccbd1d7260f75"
+      }
+     ],
+     "side_a": "Congress holds the power of the purse and the power to declare war, and voters just elected a Democratic majority that ran on ending an unpopular conflict they blame for higher prices. A must-pass bill is the leverage the Constitution provides; refusing to fund an unauthorized war is Congress doing its job, not hostage-taking.",
+     "side_a_label": null,
+     "side_b": "A shutdown would hurt federal workers and families who rely on government services during the holidays without actually ending the war, and it hands the president a story about reckless obstruction. Cutting off a war mid-negotiation can also weaken America's hand; the new majority should use hearings, authorization votes and the regular process after January.",
+     "side_b_label": null,
+     "question_underneath": "Who decides when a nation goes to war, and how far may a legislature go to stop one it never authorized: is withholding funds principled restraint or a dangerous gamble with the common good?",
+     "thinkers_note": "Separation of powers: Madison in Federalist 51 and Article I's war and spending clauses, against Hamilton's case in Federalist 70 for 'energy in the executive' in foreign affairs. Just war tradition (Augustine, Aquinas): 'right authority' as a condition for a just war, which Democrats invoke when they demand congressional authorization. Consequentialist prudence: weighing the concrete harm of a shutdown against the uncertain benefit of leverage, the classic means-versus-ends test.",
+     "sitting_id": "p2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-3",
+     "number": 3,
+     "headline": "Senate Republicans sprint to confirm Trump judges before Democrats take the majority",
+     "summary": "Using the lame-duck session, Majority Leader John Thune has kept the Senate confirming Trump's circuit and district nominees at a rapid pace, with more cloture votes filed, because Democrats will control the Senate in January after the midterms.",
+     "sources": [
+      {
+       "name": "The Hill",
+       "url": "https://thehill.com/homenews/senate/6234572-senate-confirms-trump-judges/"
+      },
+      {
+       "name": "Senate Republican Leader",
+       "url": "https://www.republicanleader.senate.gov/newsroom/remarks/thune-senate-republicans-continue-building-on-strong-record-of-judicial-confirmations/"
+      },
+      {
+       "name": "U.S. Courts confirmations list",
+       "url": "https://www.uscourts.gov/judges-judgeships/judicial-vacancies/archive-judicial-vacancies/2026/11/confirmations"
+      }
+     ],
+     "side_a": "Republicans say they still hold the majority the voters gave them, confirming qualified nominees is the Senate's constitutional duty, and Democrats did the same thing in past lame ducks; leaving seats empty only delays justice.",
+     "side_a_label": null,
+     "side_b": "Democrats say voters just repudiated the majority, and rushing lifetime appointments out the door before the new Senate is seated defies the electorate's verdict and turns the courts into a spoils system.",
+     "side_b_label": null,
+     "question_underneath": "Does a mandate end on election day or on the last day of a term? The legitimacy of lame-duck power.",
+     "thinkers_note": "Constitutional formalism: power lasts the full term set by law (Marbury v. Madison itself grew out of Adams's 'midnight judges'). Popular sovereignty and consent: Locke's view that authority rests on the people's present will. Tu quoque and precedent: each side citing the other's past confirmation fights (Garland 2016, Barrett 2020). Judicial independence through life tenure (Federalist 78) versus fears of a politicized bench.",
+     "sitting_id": "p3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "political-4",
+     "number": 4,
+     "headline": "Trump says Cornyn blocked his Dallas judicial pick because his 'feelings were hurt'",
+     "summary": "Sen. John Cornyn withheld his 'blue slip' for T. Elliot Gaiser, a top Justice Department official nominated to the federal bench in the Northern District of Texas, citing his lack of Texas ties and trial experience and a lack of consultation. Trump responded that Cornyn acted out of hurt feelings after losing his Republican primary, calling it a 'tremendous disservice.'",
+     "sources": [
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/11/21/trump-says-cornyn-blocked-judicial-pick-because-his-feelings-were-hurt/",
+       "archived": "http://web.archive.org/web/20261122052821/https://www.washingtonpost.com/politics/2026/11/21/trump-says-cornyn-blocked-judicial-pick-because-his-feelings-were-hurt/"
+      },
+      {
+       "name": "CBS News",
+       "url": "https://www.cbsnews.com/news/john-cornyn-trump-elliot-gaiser-justice-department-federal-judge/"
+      },
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/donald-trump-judge-john-cornyn-29c80cad1197571cc3f5bb128023bf35"
+      }
+     ],
+     "side_a": "The blue slip lets home-state senators make sure district judges know the state and its bar; Cornyn is defending a century-old Senate norm and the Senate's 'advice and consent' role against a rushed, lame-duck nomination of an outsider without courtroom experience.",
+     "side_a_label": null,
+     "side_b": "With weeks left before Democrats take the Senate, a Republican senator sinking a qualified conservative nominee looks like personal score-settling after a primary loss. The president gets to pick judges, and an informal courtesy shouldn't let one senator veto his choice.",
+     "side_b_label": null,
+     "question_underneath": "Should institutional norms bind even when they frustrate one's own side, and where does principled independence end and personal grievance begin?",
+     "thinkers_note": "Appeals to tradition and custom (Burke, Chesterton's fence): unwritten norms like the blue slip hold institutions together. Constitutional text and executive prerogative: Article II gives the president the nomination; the Senate's role is advice and consent, not a single-member veto. Motive versus merits: the ad hominem question of whether a senator's reasons are judged on their substance or by his personal stake.",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "political-5",
+     "number": 5,
+     "headline": "Sotomayor says she 'wouldn't be unhappy' with term limits as Alito warns against remaking the Court",
+     "summary": "At an American Philosophical Society event in Philadelphia, Justice Sotomayor said she could accept Supreme Court term limits and noted that other democracies use age or term limits; days earlier at AEI, Justice Alito warned that campaigns to intimidate justices and then change the Court's makeup could permanently undermine its independence.",
+     "sources": [
+      {
+       "name": "Bloomberg Law",
+       "url": "https://news.bloomberglaw.com/social-justice/justice-sonia-sotomayor-wouldnt-be-unhappy-with-term-limits"
+      },
+      {
+       "name": "Philadelphia Inquirer (Sotomayor)",
+       "url": "https://www.inquirer.com/politics/nation/sonia-sotomayor-supreme-court-justice-benjamin-franklin-medal-20261120.html"
+      },
+      {
+       "name": "Philadelphia Inquirer (Alito)",
+       "url": "https://www.inquirer.com/politics/nation/samuel-alito-expanding-supreme-court-20261117.html",
+       "archived": "http://web.archive.org/web/20261118051534/https://www.inquirer.com/politics/nation/samuel-alito-expanding-supreme-court-20261117.html"
+      }
+     ],
+     "side_a": "Reform advocates say lifetime tenure made sense when life spans were shorter; regular 18-year terms would lower the stakes of each vacancy, end strategic retirements, and keep the Court more accountable, as in most democracies.",
+     "side_a_label": null,
+     "side_b": "Defenders of the current system say life tenure is what frees judges from fear and favor; changing the Court's size or tenure right after unpopular rulings looks like punishment, and once one side reshapes the Court, the other will too.",
+     "side_b_label": null,
+     "question_underneath": "Should judges be insulated from the people in order to protect the people's rights, or answerable to them? Independence versus accountability.",
+     "thinkers_note": "Federalist 78 (Hamilton): 'permanency in office' as the citadel of judicial independence. Anti-Federalist Brutus: unaccountable judges will become masters rather than servants of the law. Comparative constitutionalism: age and term limits in Germany's and other high courts. Slippery slope and retaliation: the 1937 court-packing fight as a cautionary tale.",
+     "sitting_id": null,
+     "sitting_match": null
+    }
+   ]
+  },
+  {
+   "name": "Cultural",
+   "stories": [
+    {
+     "id": "cultural-1",
+     "number": 1,
+     "headline": "'Grand Theft Auto VI' launches with a record $3.79 billion day, reopening the old fight over violent games",
+     "summary": "Take-Two says GTA VI took an estimated $3.79 billion in first-day retail sales worldwide, the biggest entertainment launch ever. Alongside the celebration, commentators from Peter Hitchens to Christianity Today argued over whether a game built on crime, sex and violence shapes the people who play it.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/grand-theft-auto-gta-vice-city-playstation-15c69f76548ab5659bc3fe44a69756d8"
+      },
+      {
+       "name": "Take-Two",
+       "url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+       "archived": "http://web.archive.org/web/20261122181709/https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
+      },
+      {
+       "name": "Christianity Today",
+       "url": "https://www.christianitytoday.com/2026/11/dont-store-riches-in-leonida-grand-theft-auto-vi/",
+       "archived": "http://web.archive.org/web/20261122042357/https://www.christianitytoday.com/2026/11/dont-store-riches-in-leonida-grand-theft-auto-vi/"
+      },
+      {
+       "name": "ChurchLeaders",
+       "url": "https://churchleaders.com/news/2225825-grand-theft-auto-prompts-debate.html"
+      },
+      {
+       "name": "France 24 / AFP",
+       "url": "https://www.france24.com/en/live-news/20261121-greek-pm-under-fire-over-grand-theft-auto-post",
+       "archived": "https://web.archive.org/web/20261123042545/https://www.france24.com/en/live-news/20261121-greek-pm-under-fire-over-grand-theft-auto-post"
+      },
+      {
+       "name": "Newsweek",
+       "url": "https://www.newsweek.com/gta-6-cited-by-trumps-education-department-in-transgender-sports-debate-12752546",
+       "archived": "http://web.archive.org/web/20261121211614/https://www.newsweek.com/gta-6-cited-by-trumps-education-department-in-transgender-sports-debate-12752546"
+      },
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/style/2026/11/21/teens-want-play-grand-theft-auto-parents-have-decision-make/"
+      },
+      {
+       "name": "HuffPost",
+       "url": "https://www.huffpost.com/entry/fox-news-grand-theft-auto-vi-backlash_n_6afd0851e4b0e902c23c2c90"
+      },
+      {
+       "name": "Kotaku",
+       "url": "https://kotaku.com/grand-theft-auto-6-gta6-fox-news-lucia-hooker-rachel-campos-duffy-2000757710",
+       "archived": "http://web.archive.org/web/20261118054436/https://kotaku.com/grand-theft-auto-6-gta6-fox-news-lucia-hooker-rachel-campos-duffy-2000757710"
+      },
+      {
+       "name": "Deadline (reviews)",
+       "url": "https://deadline.com/2026/11/grand-theft-auto-6-what-the-critics-reviews-1237227874/"
+      }
+     ],
+     "side_a": "Fans and many critics say GTA is satire and art for adults: a sprawling, brilliantly made world that lampoons American excess, enjoyed by millions who know fiction from reality. Decades of moral panics over comics, rock and games never showed the harm claimed.",
+     "side_a_label": null,
+     "side_b": "Critics, many of them religious, say you become what you rehearse; hundreds of hours enacting cruelty for fun dull the conscience, and calling it satire doesn't change what the player is invited to delight in. Some pastors instead urge engaging gamers rather than dismissing them.",
+     "side_b_label": null,
+     "question_underneath": "Does art that depicts vice teach vice, or let us see it clearly? What we love shapes who we become.",
+     "thinkers_note": "Plato's Republic: banish poets whose imitations train the soul in bad passions. Aristotle's Poetics: catharsis, the purging of emotion through representation. Virtue ethics and habituation: we become just by doing just acts (Nicomachean Ethics II); Augustine on disordered loves. Liberal harm principle (Mill): adults' private choices are their own unless others are harmed; the 'moral panic' argument.",
+     "sitting_id": "c1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-2",
+     "number": 2,
+     "headline": "Google declines to take down Russell Brand's message from prison as UK officials weigh whether it harassed victims",
+     "summary": "After Brand's wife, Laura Gallacher, read on YouTube a statement from the jailed comedian insisting he was not guilty of rape and sexual assault, Prime Minister Andy Burnham asked Google to remove it, saying victims had heard enough. The Ministry of Justice is weighing whether the message broke prison rules against causing 'serious distress' to victims; Google has reportedly declined the removal request.",
+     "sources": [
+      {
+       "name": "The Guardian",
+       "url": "https://www.theguardian.com/news/2026/nov/19/prison-authorities-consider-russell-brand-youtube-message-rules-victim-distress"
+      },
+      {
+       "name": "The Nightly",
+       "url": "https://thenightly.com.au/world/russell-brand-google-refuses-to-honour-uk-governments-request-to-remove-rapists-video-from-behind-bars-c-23188593"
+      },
+      {
+       "name": "The Hollywood Reporter",
+       "url": "https://www.hollywoodreporter.com/news/general-news/russell-brand-open-letter-400-industry-figures-1236756889/",
+       "archived": "http://web.archive.org/web/20261117140044/https://www.hollywoodreporter.com/news/general-news/russell-brand-open-letter-400-industry-figures-1236756889/"
+      },
+      {
+       "name": "The Independent",
+       "url": "https://www.independent.co.uk/arts-entertainment/tv/news/russell-brand-david-walliams-letter-b3085629.html",
+       "archived": "http://web.archive.org/web/20261117023320/https://www.independent.co.uk/arts-entertainment/tv/news/russell-brand-david-walliams-letter-b3085629.html"
+      },
+      {
+       "name": "The letter",
+       "url": "https://www.makethisaturningpoint.com/",
+       "archived": "http://web.archive.org/web/20261117142031/https://www.makethisaturningpoint.com/"
+      }
+     ],
+     "side_a": "Those who want the video gone say a convicted rapist using his platform and his wife to deny the crimes re-wounds the women who testified, and prison rules exist precisely to stop offenders from tormenting their victims from behind bars.",
+     "side_a_label": null,
+     "side_b": "Those uneasy with removal say a prisoner and his family keep the right to protest his innocence, as many wrongly convicted people have; a government pressing a tech company to erase that speech is a precedent with reach far beyond one unpopular man.",
+     "side_b_label": null,
+     "question_underneath": "Once a court has spoken, does a convicted person keep the right to publicly deny guilt, and do victims have a right not to hear it?",
+     "thinkers_note": "Retributive justice and its limits: punishment takes liberty, but traditions differ on whether it also takes the voice. Free speech for the despised: the Millian and American-civil-liberties argument that speech rights are tested by the least sympathetic speaker. Care for the wronged: the biblical and classical duty to protect the vulnerable from further harm (Psalm 82: 'defend the weak').",
+     "sitting_id": "c2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "cultural-3",
+     "number": 3,
+     "headline": "Petition tops 20,000 to pull Marilyn Manson from Wembley before his sexual-abuse trial",
+     "summary": "Brent councillor Anton Georgiou has gathered more than 20,000 signatures urging Wembley Stadium and Live Nation to cancel Manson's July slot supporting Slipknot until a verdict in a civil lawsuit by his former assistant Ashley Walters, due for trial next November. More than a dozen charities signed; Manson denies all allegations, some of which have been dropped or dismissed.",
+     "sources": [
+      {
+       "name": "BBC News",
+       "url": "https://www.bbc.co.uk/news/articles/cmn4kz7lj3jvo"
+      }
+     ],
+     "side_a": "Venues make moral choices about whom they platform; booking a performer facing serious abuse allegations sends survivors the message that celebrity outweighs their pain. Waiting for a verdict costs the venue nothing and protects its integrity.",
+     "side_a_label": null,
+     "side_b": "He hasn't been found liable of anything, several claims have been dropped or dismissed, and the case is a civil suit. Punishing him before a trial abandons the presumption of innocence and lets public pressure stand in for due process.",
+     "side_b_label": null,
+     "question_underneath": "Should a person be judged by the community before the court rules, and where do justice for accusers and fairness to the accused meet?",
+     "thinkers_note": "Presumption of innocence: Blackstone's ratio ('better that ten guilty persons escape than that one innocent suffer'). Precautionary and survivor-centered ethics: the duty to protect the vulnerable and avoid complicity, rooted in care ethics. Freedom of association: a private venue's right to choose whom it hosts, versus a culture of 'cancellation' that critics compare to trial by mob.",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "cultural-4",
+     "number": 4,
+     "headline": "126,000 sign a petition calling on Netflix to pull 'The Body' as 'blasphemous'",
+     "summary": "A CitizenGo petition with more than 126,000 signatures asks Netflix to cancel 'The Body', a coming-of-age horror series about Catholic school girls whose prophetic visions set off mass hysteria after a Halloween initiation goes wrong. The show drew 5.1 million views in its first five days; creator Quinn Shephard has said it was not meant to be hyper-critical of religion.",
+     "sources": [
+      {
+       "name": "Deadline",
+       "url": "https://deadline.com/2026/11/netflix-the-body-petition-remove-blasphemous-anti-christian-1237229570/",
+       "archived": "http://web.archive.org/web/20261120191815/https://deadline.com/2026/11/netflix-the-body-petition-remove-blasphemous-anti-christian-1237229570/"
+      },
+      {
+       "name": "The Tab / Filmshrine",
+       "url": "https://thetab.com/filmshrine/2026/11/16/why-have-more-than-90k-people-signed-a-petition-to-cancel-netflixs-the-body-before-season-2/",
+       "archived": "http://web.archive.org/web/20261116141859/https://thetab.com/filmshrine/2026/11/16/why-have-more-than-90k-people-signed-a-petition-to-cancel-netflixs-the-body-before-season-2/"
+      },
+      {
+       "name": "Collider",
+       "url": "https://collider.com/the-body-netflix-cancellation-petition/",
+       "archived": "http://web.archive.org/web/20261117043256/https://collider.com/the-body-netflix-cancellation-petition/"
+      },
+      {
+       "name": "CitizenGO petition",
+       "url": "https://citizengo.org/en-us/fr/19942-netflix--cancel-the-body",
+       "archived": "http://web.archive.org/web/20261115125231/https://citizengo.org/en-us/fr/19942-netflix--cancel-the-body"
+      }
+     ],
+     "side_a": "Petitioners say Netflix keeps treating Christian faith and Christian children as fair game for sex-and-Satan shock in a way it would not treat other religions, and that families paying for the service have every right to organize and tell a company to stop.",
+     "side_a_label": null,
+     "side_b": "Defenders say art has always wrestled with religion, sometimes darkly; no one is forced to watch, parental controls exist, and a petition to remove a show for millions of viewers is pressure toward censorship, not just a consumer complaint.",
+     "side_b_label": null,
+     "question_underneath": "Should a society protect what people hold sacred from mockery, or is the freedom to offend part of what lets faith and art both stay alive?",
+     "thinkers_note": "Reverence and blasphemy: the ancient idea, from the Third Commandment on, that holy things deserve protection from profanation. Mill's harm principle ('On Liberty'): offense alone is not harm, so it is not grounds for silencing expression. Equal treatment: the fairness argument, also behind 'Cuties' and other earlier fights, that a standard has to apply equally to every faith.",
+     "sitting_id": "c3",
+     "sitting_match": "headline"
+    }
+   ]
+  },
+  {
+   "name": "Religious",
+   "stories": [
+    {
+     "id": "religious-1",
+     "number": 1,
+     "headline": "Pope Leo XIV warns of an exodus of Middle East Christians as Syrian patriarchs condemn kidnappings and torture",
+     "summary": "Meeting the Catholic Near East Welfare Association on Nov. 20, Pope Leo XIV said war, persecution, instability and poverty are driving Eastern Christians from their homelands and called helping families stay 'an essential work of hope.' Days earlier, Syria's Orthodox, Syriac Orthodox and Melkite patriarchs jointly condemned kidnappings, ransom demands and assaults targeting Christians, including an attack on the Archbishop of Homs.",
+     "sources": [
+      {
+       "name": "Vatican.va (speech)",
+       "url": "https://www.vatican.va/content/leo-xiv/en/speeches/2026/november/documents/20261120-cnewa.html"
+      },
+      {
+       "name": "The Tablet",
+       "url": "https://www.thetablet.co.uk/news/patriarchs-demand-action-after-heinous-attacks-on-syrian-christians/"
+      },
+      {
+       "name": "Arab News",
+       "url": "https://www.arabnews.com/middle-east/syria-church-leaders-condemn-attacks-against-christians-3012686",
+       "archived": "http://web.archive.org/web/20261118103936/https://www.arabnews.com/middle-east/syria-church-leaders-condemn-attacks-against-christians-3012686"
+      },
+      {
+       "name": "Syriac Press",
+       "url": "https://syriacpress.com/blog/2026/11/17/syria-gunmen-assault-melkite-archbishop-in-hmoth-homs-steal-religious-artifacts/",
+       "archived": "http://web.archive.org/web/20261118044620/https://syriacpress.com/blog/2026/11/17/syria-gunmen-assault-melkite-archbishop-in-hmoth-homs-steal-religious-artifacts/"
+      },
+      {
+       "name": "CathoNews",
+       "url": "https://cathonews.com/article/armed-men-assault-melkite-bishop-in-homs-d2eced",
+       "archived": "http://web.archive.org/web/20261118044554/https://cathonews.com/article/armed-men-assault-melkite-bishop-in-homs-d2eced"
+      },
+      {
+       "name": "Orthodox House",
+       "url": "https://orthodoxhouse.com/article/news-86d0d729"
+      }
+     ],
+     "side_a": "Many Christians argue this is persecution that Western governments and media underplay; ancient communities that have prayed in Aramaic for two thousand years are vanishing, and protecting them should be a priority in foreign policy and aid.",
+     "side_a_label": null,
+     "side_b": "Others, including the Pope's own emphasis on dialogue, stress that Christians suffer alongside Muslim neighbors amid general lawlessness and war; framing it as a clash of religions can feed sectarianism, and the path forward is the rule of law and peace for all.",
+     "side_b_label": null,
+     "question_underneath": "What does solidarity with one's own people demand, and how does it coexist with universal love of neighbor? The particular and the universal.",
+     "thinkers_note": "The Good Samaritan (Luke 10) and Paul's 'especially to the household of faith' (Galatians 6:10). Catholic social teaching on the right to remain in one's homeland and the common good. Religious liberty as a natural right (Dignitatis Humanae; Locke's Letter Concerning Toleration). Tertullian's 'the blood of martyrs is the seed of the Church' set against prudential appeals for protection.",
+     "sitting_id": "r1",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-2",
+     "number": 2,
+     "headline": "Christian nationalists see an opening in GOP midterm losses as Christians argue over 'two kingdoms'",
+     "summary": "AP reports that activists like Joel Webbon view Republicans' 2026 midterm defeats as a chance to replace MAGA with an explicitly Christian 'America First' movement, building door-knocking, fundraising and candidate networks; KERA reports the movement's Texas momentum was cut off at the polls. On X, Christians are debating whether Christian nationalism blurs the church and state.",
+     "sources": [
+      {
+       "name": "AP",
+       "url": "https://apnews.com/article/trump-webbon-christian-nationalist-maga-theocracy-republicans-9c5e34308609af945f4e738d03c30257"
+      },
+      {
+       "name": "The Atlantic",
+       "url": "https://www.theatlantic.com/politics/2026/11/christian-nationalism-trump-elections/689373/",
+       "archived": "http://web.archive.org/web/20261115124219/https://www.theatlantic.com/politics/2026/11/christian-nationalism-trump-elections/689373/"
+      },
+      {
+       "name": "KERA",
+       "url": "https://www.kera.org/2026/11/16/texas-christian-nationalist-movement-midterm-election/"
+      }
+     ],
+     "side_a": "Supporters say every government legislates someone's morality, and a nation formed by Christianity should openly govern by Christian principles rather than a 'neutral' secularism that is itself a creed; believers have a duty to seek the good of the city through politics.",
+     "side_a_label": null,
+     "side_b": "Critics, many of them Christians, argue it confuses the two kingdoms, corrupts the church's witness by tying it to power, and misunderstands faith, which can't be coerced: nations aren't saved, people are. Religious liberty protects churches best when government stays out of theology.",
+     "side_b_label": null,
+     "question_underneath": "What is the proper relation between the City of God and the City of Man: should faith shape the laws, or stay free of the state?",
+     "thinkers_note": "Augustine's City of God and Luther's two-kingdoms doctrine, the main texts on both sides. Integralism and Christendom (from Constantine to Leo XIII's Immortale Dei) versus the free-church and Baptist tradition (Roger Williams's 'wall of separation'). Locke's Letter Concerning Toleration: belief cannot be compelled by the magistrate.",
+     "sitting_id": "r2",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-3",
+     "number": 3,
+     "headline": "Putin calls Moscow the 'Third Rome' and Russia an 'ark' for Christian values",
+     "summary": "In an interview for Emir Kusturica's documentary marking Patriarch Kirill's 80th birthday, Vladimir Putin said Christianity passed from Rome to Byzantium to Moscow, its spiritual heir, and that Russia can be an 'ark' preserving traditional values.",
+     "sources": [
+      {
+       "name": "Kremlin transcript",
+       "url": "http://en.kremlin.ru/events/president/news/81318",
+       "archived": "http://web.archive.org/web/20261120181553/http://en.kremlin.ru/events/president/news/81318"
+      },
+      {
+       "name": "Greek City Times",
+       "url": "https://greekcitytimes.com/2026/11/21/putin-calls-moscow-the-third-rome-in-kusturica-interview/"
+      },
+      {
+       "name": "RIA Novosti (Russian)",
+       "url": "https://ria.ru/20261120/putin-2133048332.html"
+      }
+     ],
+     "side_a": "Some religious conservatives, in Russia and abroad, welcome a head of state who openly defends Christian civilization and traditional morality against a secular West they see as abandoning its roots.",
+     "side_a_label": null,
+     "side_b": "Critics, including many Orthodox and Ukrainian Christians, say this is faith enlisted for empire: a state church blessing a war, and a political myth that subordinates the Gospel to national power.",
+     "side_b_label": null,
+     "question_underneath": "Can a nation be the guardian of the faith, or does Christianity become an idol when wedded to the state? The two cities.",
+     "thinkers_note": "The monk Philotheus's 16th-century 'Moscow, the Third Rome' doctrine and Byzantine symphonia of church and state. Augustine's City of God: no earthly city is the City of God. 'Render unto Caesar' (Matthew 22:21) and the long debate over caesaropapism. Appeals to tradition and civilizational identity versus Christian universalism ('neither Jew nor Greek,' Galatians 3:28).",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-4",
+     "number": 4,
+     "headline": "Hegseth hosts pastor Douglas Wilson at the Pentagon's prayer service",
+     "summary": "At the Pentagon's monthly Christian prayer service on Nov. 17, Secretary Hegseth read from Matthew and pastor Douglas Wilson of Christ Church in Moscow, Idaho, preached that God's will is not subject to courts, congresses or elections and that every society imposes a morality. Critics condemned Wilson's past views on women's voting, homosexuality and slavery, and the Freedom From Religion Foundation called the event unconstitutional.",
+     "sources": [
+      {
+       "name": "The Independent",
+       "url": "https://www.independent.co.uk/news/world/americas/us-politics/hegseth-pentagon-prayer-service-pastor-doug-wilson-b3087216.html"
+      },
+      {
+       "name": "Word&Way",
+       "url": "https://wordandway.org/2026/11/17/doug-wilson-makes-case-for-christian-theocracy-during-pentagon-worship-service/",
+       "archived": "http://web.archive.org/web/20261118003838/https://wordandway.org/2026/11/17/doug-wilson-makes-case-for-christian-theocracy-during-pentagon-worship-service/"
+      },
+      {
+       "name": "Wilson's own account",
+       "url": "https://dougwils.com/books-and-culture/s7-engaging-the-culture/the-pentagon-prayer-service.html"
+      }
+     ],
+     "side_a": "Supporters say a voluntary prayer service reflects America's heritage, attendees chose to be there, and Wilson's point that every society enforces some morality is simply honest; Christians in public office shouldn't have to hide their faith.",
+     "side_a_label": null,
+     "side_b": "Critics say the Secretary of Defense lending the Pentagon's platform to a pastor who openly favors a Christian social order blurs the line between church and state and tells non-Christian service members where they stand.",
+     "side_b_label": null,
+     "question_underneath": "Is there such a thing as a neutral public square, or does every government finally rest on some faith?",
+     "thinkers_note": "Two kingdoms versus Christendom: Augustine's City of God and Luther's two kingdoms against the older ideal of a Christian commonwealth that Wilson champions. Neutrality and its critics: Rawls's public reason asks for arguments all can share, while 'every society imposes a morality' echoes critics of liberal neutrality like Alasdair MacIntyre. Religious liberty as a two-way shield: protecting faith from the state and the state from any one faith (Roger Williams and Jefferson's 'wall of separation').",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-5",
+     "number": 5,
+     "headline": "On Christ the King Sunday, Pope Leo XIV calls Christ 'the measure of justice'",
+     "summary": "At the Angelus on Nov. 22, Pope Leo XIV, reflecting on the Last Judgment in Matthew 25, said justice sustains life, builds fraternity, upholds dignity and restores freedom, and that Christ is \"neither a despot who threatens nor a tyrant who crushes\" but the King who redeems. Online, Christians marked the feast, instituted by Pius XI in 1925 against rising secularism, while debating how mercy and judgment fit together.",
+     "sources": [
+      {
+       "name": "Vatican: Angelus text",
+       "url": "https://www.vatican.va/content/leo-xiv/en/angelus/2026/documents/20261122-angelus.html"
+      },
+      {
+       "name": "Vatican News",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-at-angelus-god-s-judgement-is-salvation.html",
+       "archived": "http://web.archive.org/web/20261122115523/https://www.vaticannews.va/en/pope/news/2026-11/pope-at-angelus-god-s-judgement-is-salvation.html"
+      }
+     ],
+     "side_a": "Christ's kingship means justice is measured by care for the hungry, the stranger, the naked and the prisoner, and God's judgment is ultimately a word of mercy and salvation; the feast is a call to serve the least.",
+     "side_a_label": null,
+     "side_b": "Many readers stress that Matthew 25 is also a warning: the King separates sheep from goats, and real judgment and accountability are part of the Gospel. Some worry that emphasizing mercy and social care can soften the call to repentance and to Christ's reign over public as well as private life.",
+     "side_b_label": null,
+     "question_underneath": "Is God's justice the same as his mercy, and does Christ's kingship govern only hearts or also nations and laws?",
+     "thinkers_note": "Justice and mercy: Anselm's Proslogion on how a just God can be merciful, and Aquinas's teaching that mercy perfects rather than abolishes justice. Two kingdoms versus social kingship: Augustine's City of God and Luther's two kingdoms against Pius XI's Quas Primas, which says Christ's reign extends to society. Works of mercy and judgment: the corporal works of mercy tradition, and Jesus's 'least of these' as the measure of a person.",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-6",
+     "number": 6,
+     "headline": "Pope Leo XIV warns that ungoverned technology poses 'enormous' risks and calls for keeping space peaceful",
+     "summary": "Addressing the International Space Forum at the Vatican on Saturday, Pope Leo XIV backed efforts to keep outer space free of non-peaceful uses and warned that 'if technologies and their applications are not adequately governed in accordance with the principles of ethics, the risks for humanity are enormous.' The same day he told young people that holiness is friendship with Jesus, not a performance.",
+     "sources": [
+      {
+       "name": "Vatican News (Space Forum)",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-meets-participants-in-the-international-space-forum.html",
+       "archived": "http://web.archive.org/web/20261121125445/https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-meets-participants-in-the-international-space-forum.html"
+      },
+      {
+       "name": "Vatican News (Lazio youth)",
+       "url": "https://www.vaticannews.va/en/pope/news/2026-11/pope-leo-xiv-meets-6-000-young-people-of-lazio-italy.html"
+      }
+     ],
+     "side_a": "The Church has the moral standing to insist that power over AI, weapons and space serve human dignity; without ethical limits and political rules, technology concentrates power and invites catastrophe, and a voice above markets and nations is needed.",
+     "side_a_label": null,
+     "side_b": "Skeptics say calls for 'governance' can slow innovation and hand control to bureaucracies or rival powers who won't comply, and that the frontier, including space, has historically been opened by bold exploration, not committees; some also question whether clergy should weigh in on technical policy.",
+     "side_b_label": null,
+     "question_underneath": "Is human mastery of nature a gift to be used or a power to be restrained, and who sets the limits?",
+     "thinkers_note": "Genesis's dominion and stewardship mandate, and Catholic social teaching on the common good (Laudato Si', Leo XIII's Rerum Novarum). The Promethean warning, from the Tower of Babel to Mary Shelley's Frankenstein and C.S. Lewis's The Abolition of Man. The progress argument: Bacon's New Atlantis and Enlightenment confidence that knowledge relieves human suffering.",
+     "sitting_id": "r3",
+     "sitting_match": "headline"
+    },
+    {
+     "id": "religious-7",
+     "number": 7,
+     "headline": "U.S. Catholic bishops launch a push for AI guardrails",
+     "summary": "At their plenary meeting, the U.S. bishops' new task force on human dignity in the age of AI urged legal guardrails for transparency, accountability and human oversight, protections for workers displaced by automation, and passage of the Kids Online Safety Act.",
+     "sources": [
+      {
+       "name": "AP News",
+       "url": "https://apnews.com/article/us-catholic-bishops-ai-artificial-intelligence-28bd7272642cd726ded003b5a20a6a9e"
+      },
+      {
+       "name": "OSV News",
+       "url": "https://www.osvnews.com/humans-must-remain-in-control-of-ai-says-bishop/"
+      },
+      {
+       "name": "USCCB remarks (PDF)",
+       "url": "https://www.usccb.org/resources/Prepared%20Remarks%20-%20Bishop%20Oscar%20Cantu.pdf"
+      }
+     ],
+     "side_a": "The bishops and their allies say technology must serve the human person, not replace or manipulate them; markets alone won't protect children or workers, so lawmakers need to set limits before harms become entrenched.",
+     "side_a_label": null,
+     "side_b": "Skeptics, including many in tech and some free-market Catholics, say heavy regulation now could freeze innovation that cures disease and creates work, existing law already covers many harms, and churches should form consciences rather than draft tech policy.",
+     "side_b_label": null,
+     "question_underneath": "What is the human person for, and should machines do what makes us human?",
+     "thinkers_note": "Catholic social teaching: from Leo XIII's Rerum Novarum on industrial labor to Pope Leo XIV's focus on AI and the dignity of work. Precaution versus discovery: Hans Jonas's ethics of responsibility against Hayek's argument that no regulator can foresee what freedom discovers. Tools and masters: the old question, from Aristotle's 'living tools' onward, of whether technology serves us or rules us.",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-8",
+     "number": 8,
+     "headline": "U.S. Catholic bishops open their fall assembly in Baltimore with AI and immigration on the agenda",
+     "summary": "America's Catholic bishops opened their annual fall meeting in Baltimore on Monday, which runs through Thursday with public sessions on Nov. 17 and 18 covering migration, a new task force on preserving human dignity in the age of AI, and reports of rising interest in the Church among young people. At the opening Mass, USCCB president Archbishop Paul Coakley urged the bishops to 'be aware of our blind spots' and return to their 'first love.'",
+     "sources": [
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/religion/2026/11/16/us-catholic-bishops-gather-discuss-ai-immigration/"
+      },
+      {
+       "name": "OSV News",
+       "url": "https://www.osvnews.com/at-opening-mass-for-fall-assembly-usccb-president-encourages-bishops-to-be-aware-of-blind-spots/"
+      },
+      {
+       "name": "National Catholic Reporter",
+       "url": "https://www.ncronline.org/news/ai-migration-and-church-renewal-bishops-fall-meeting-agenda",
+       "archived": "http://web.archive.org/web/20261028083814/https://www.ncronline.org/news/ai-migration-and-church-renewal-bishops-fall-meeting-agenda"
+      },
+      {
+       "name": "USCCB",
+       "url": "https://www.usccb.org/news/2026/us-bishops-meet-november-16-19-baltimore-assembly-be-livestreamed",
+       "archived": "http://web.archive.org/web/20261109174233/https://www.usccb.org/news/2026/us-bishops-meet-november-16-19-baltimore-assembly-be-livestreamed"
+      }
+     ],
+     "side_a": "Those who want the bishops to speak strongly on immigration and AI say the dignity of every person, from the migrant to the worker whose job is threatened by machines, is central to Church teaching, and that bishops would be failing their flocks if they stayed silent on the moral questions of the day.",
+     "side_a_label": null,
+     "side_b": "Others, including many Catholics who back stricter immigration enforcement, say nations have a right and duty to control their borders, that bishops should be careful not to sound like a political party, and that the Church's first job is renewal of faith, sacraments and catechesis, which the reports of young people's interest show is where the hunger is.",
+     "side_b_label": null,
+     "question_underneath": "What is the shepherd's first task: to guard the flock's faith, or to speak for the stranger and the vulnerable in public life, and can the two be separated?",
+     "thinkers_note": "'I was a stranger and you welcomed me' (Matthew 25:35) and the Catechism on the duty to welcome migrants and the right of nations to regulate migration (CCC 2241) Subsidiarity and prudential judgment of lay Catholics in politics (Quadragesimo Anno; Gaudium et Spes 43) Human dignity and technology: the danger of treating persons as means (Kant; Laborem Exercens on the priority of labor) Renewal from within: 'Repent, and do the works you did at first' (Revelation 2:5)",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-9",
+     "number": 9,
+     "headline": "Karnataka orders a book on the saint Basavanna confiscated after Lingayat outrage",
+     "summary": "India's Karnataka state Cabinet decided to confiscate copies of 'Basava Mantapa', a book by U.S.-based author Ravi Hanj that Lingayat leaders say insults and distorts the 12th-century reformer Basavanna, and cleared legal action against the author and publisher-journalist Vishveshwar Bhat. Community leaders rejected the author's offer to apologize and correct the book.",
+     "sources": [
+      {
+       "name": "The Hindu",
+       "url": "https://www.thehindu.com/news/national/karnataka/karnataka-cabinet-okays-confiscation-of-book-that-insults-basavanna-and-distorts-his-philosophy/article71720767.ece"
+      }
+     ],
+     "side_a": "Supporters of the ban say a revered religious founder who preached equality and the dignity of labour should not be smeared under the cover of 'research', and the state has a duty to keep the peace when a community's deepest sentiments are attacked.",
+     "side_a_label": null,
+     "side_b": "Opponents say seizing books and prosecuting an author and a journalist is a heavy-handed answer to a scholarly dispute; disagreements about history should be met with better books and argument, and an author's offer to correct errors should count.",
+     "side_b_label": null,
+     "question_underneath": "Should the state protect religious communities from insult, or protect citizens' freedom to question even what others hold holy?",
+     "thinkers_note": "Blasphemy laws and public order: the long tradition, in India's colonial-era penal code and elsewhere, of limiting speech to keep religious peace. Milton's 'Areopagitica': let truth and falsehood grapple, since 'who ever knew Truth put to the worse in a free and open encounter?' Reverence for founders and sacred memory, shared across traditions, against the critical-historical method of scholarship.",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-10",
+     "number": 10,
+     "headline": "Renewed outcry over Christian mother Shagufta Kiran, on death row for a WhatsApp 'blasphemy'",
+     "summary": "Reports this weekend highlighted the case of Shagufta Kiran, a Christian mother in Islamabad sentenced to death in 2024 by a court after being accused of sharing blasphemous content in a WhatsApp group; she was arrested in July 2021 along with two young sons and remains separated from her children while her appeal is pending.",
+     "sources": [
+      {
+       "name": "IANS",
+       "url": "https://ianslive.in/pakistan-woman-separated-from-children-after-death-sentence-in-blasphemy-case--20261122174333"
+      },
+      {
+       "name": "PJ Media",
+       "url": "https://pjmedia.com/uzay-bulut/2026/11/21/pakistan-christian-mother-of-four-sentenced-to-death-for-blasphemy-n4959557",
+       "archived": "http://web.archive.org/web/20261123015820/https://pjmedia.com/uzay-bulut/2026/11/21/pakistan-christian-mother-of-four-sentenced-to-death-for-blasphemy-n4959557"
+      }
+     ],
+     "side_a": "Rights advocates and Christians say blasphemy laws are routinely used against religious minorities on flimsy evidence, and executing someone for forwarding a message violates freedom of conscience; Western governments should press Pakistan hard.",
+     "side_a_label": null,
+     "side_b": "Defenders of the laws in Pakistan see protecting the honor of the Prophet as a duty of an Islamic state and a safeguard against sectarian violence, and say foreign pressure disrespects their courts and sovereignty, which still offer appeals.",
+     "side_b_label": null,
+     "question_underneath": "Can a state rightly punish offenses against the sacred, or does freedom of conscience forbid the civil power from enforcing religious reverence?",
+     "thinkers_note": "Freedom of conscience: Locke's Letter Concerning Toleration and Roger Williams on the magistrate's limits in matters of faith. Religious law and the state: classical Islamic jurisprudence on blasphemy versus modern reformist readings that stress the Qur'an's 'no compulsion in religion' (2:256). Proportionality in punishment: the lex talionis and Beccaria's case that penalties must fit the offense.",
+     "sitting_id": null,
+     "sitting_match": null
+    },
+    {
+     "id": "religious-11",
+     "number": 11,
+     "headline": "Viral clip of Fr. Donald Calloway calling Muhammad a 'pervert and a pedophile' splits Christians",
+     "summary": "A conference clip of Fr. Donald Calloway, an American priest of the Marian Fathers (some viral posts misidentified him as Irish), saying \"Muhammad is not God... he was a pervert and a pedophile\" and accusing church leaders of downplaying persecution of Christians, as in Nigeria, spread widely this weekend. Many praised his bluntness; others questioned whether insult serves interreligious dialogue or Christians living under Muslim-majority rule.",
+     "sources": [
+      {
+       "name": "Gateway Pundit post on X",
+       "url": "https://x.com/gatewaypundit/status/2124221670239965372"
+      },
+      {
+       "name": "Redline Headlines",
+       "url": "https://redlineheadlines.com/priest-blasts-leaders-over-persecution-of-nigerian-christians/"
+      }
+     ],
+     "side_a": "Christians in Nigeria and elsewhere are being killed and kidnapped while church leaders speak in careful diplomatic language; a priest telling hard truths about a religion's founder and calling out silence is courage, and truth isn't hate.",
+     "side_a_label": null,
+     "side_b": "Charity and the Church's own teaching (Nostra Aetate) call for respect toward Muslims even amid disagreement; inflammatory language can endanger Christian minorities and closes doors to conversion and peace. One can defend the persecuted without insulting what others hold sacred.",
+     "side_b_label": null,
+     "question_underneath": "Does love of truth require bluntness about other faiths, or does charity limit how truth may be spoken?",
+     "thinkers_note": "Speaking truth in love: Ephesians 4:15 and the tradition of fraternal correction, against prophetic denunciation in the line of Elijah and John the Baptist. Interreligious respect: Vatican II's Nostra Aetate on esteem for Muslims, set against medieval apologetics like John of Damascus's critique of Islam. Free speech versus civic peace: Mill's defense of offensive opinion against the classical concern for concord in plural societies.",
+     "sitting_id": null,
+     "sitting_match": null
+    }
+   ]
+  }
+ ]
+}
