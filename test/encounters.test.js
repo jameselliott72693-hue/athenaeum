@@ -63,14 +63,21 @@ files.forEach((name) => {
   (night.sittings || []).forEach((sitting) => {
     sittings += 1;
     const key = night.date + "/" + sitting.id;
-    const tags = map.sittings[key];
-    assert.ok(Array.isArray(tags) && tags.length >= 1 && tags.length <= 3, key);
-    tags.forEach((id) => assert.ok(enc.THEME_IDS.indexOf(id) >= 0, key));
-    const resolved = enc.themesForSitting(sitting, night.date, map);
-    assert.deepStrictEqual(resolved, tags, key);
+    if (Array.isArray(sitting.themes)) {
+      assert.ok(sitting.themes.length >= 1 && sitting.themes.length <= 3, key);
+      sitting.themes.forEach((id) => assert.ok(enc.THEME_IDS.indexOf(id) >= 0, key));
+      const resolved = enc.themesForSitting(sitting, night.date, map);
+      assert.deepStrictEqual(resolved, sitting.themes, key);
+    } else {
+      const tags = map.sittings[key];
+      assert.ok(Array.isArray(tags) && tags.length >= 1 && tags.length <= 3, key);
+      tags.forEach((id) => assert.ok(enc.THEME_IDS.indexOf(id) >= 0, key));
+      const resolved = enc.themesForSitting(sitting, night.date, map);
+      assert.deepStrictEqual(resolved, tags, key);
+    }
   });
 });
-assert.strictEqual(sittings, 260);
+assert.strictEqual(sittings, 269);
 assert.deepStrictEqual(enc.themesForSitting({ id: "x", question: "zzzz" }, "1999-01-01", { sittings: {} }), []);
 assert.deepStrictEqual(enc.themesForSitting({ id: "p1", themes: ["mercy", "justice", "nope"] }, "1999-01-01", map), ["mercy", "justice"]);
 
