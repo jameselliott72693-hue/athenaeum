@@ -5,18 +5,24 @@ const path = require("path");
 const docket = require("../docket.js");
 
 const index = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/index.json"), "utf8"));
+const archive = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/archive.json"), "utf8"));
 assert.ok(Array.isArray(index.nights) && index.nights.length);
+assert.ok(Array.isArray(archive.nights) && archive.nights.length);
 const dates = index.nights.map((night) => night.date);
 assert.deepStrictEqual(dates, dates.slice().sort().reverse());
+const archiveDates = archive.nights.map((night) => night.date);
+assert.deepStrictEqual(archiveDates, ["2026-10-23", "2026-10-22"]);
+assert.deepStrictEqual(archiveDates, archiveDates.slice().sort().reverse());
 function assertPlain(value, label) {
   if (value == null) return;
   assert.strictEqual(typeof value, "string", label);
   assert.ok(!/<[a-z!/]/i.test(value), label);
 }
 
-index.nights.forEach((night, i) => {
+function checkNightList(nights) {
+nights.forEach((night, i) => {
   assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(night.date));
-  if (i) assert.ok(night.date < index.nights[i - 1].date);
+  if (i) assert.ok(night.date < nights[i - 1].date);
   assert.ok(night.file || night.report, night.date);
   let sittingIds = null;
   if (night.file) {
@@ -98,6 +104,9 @@ index.nights.forEach((night, i) => {
     else assert.ok(!html.includes("The sitting"));
   }
 });
+}
+checkNightList(index.nights);
+checkNightList(archive.nights);
 
 const poisoned = docket.sanitizeParagraph(
   'Before <q class="vq">Not a real quote</q> <script>alert(1)</script> <span class="cite">(nowhere)</span>',
@@ -170,10 +179,22 @@ assert.strictEqual(index.nights[20].file, "2026-10-29.json");
 assert.strictEqual(index.nights[21].file, "2026-10-26.json");
 assert.strictEqual(index.nights[22].file, "2026-10-25.json");
 assert.strictEqual(index.nights[23].file, "2026-10-24.json");
-assert.strictEqual(index.nights[24].file, "2026-10-23.json");
-assert.strictEqual(index.nights[25].file, "2026-10-22.json");
+assert.strictEqual(index.nights.length, 24);
+assert.ok(!dates.includes("2026-10-23"));
+assert.ok(!dates.includes("2026-10-22"));
 assert.ok(!dates.includes("2026-10-27"));
 assert.ok(!dates.includes("2026-10-28"));
+assert.deepStrictEqual(
+  archive.nights.map((night) => [night.date, night.label, night.file, night.report]),
+  [
+    ["2026-10-23", "Friday, October 23, 2026", "2026-10-23.json", "2026-10-23-report.json"],
+    ["2026-10-22", "Thursday, October 22, 2026", "2026-10-22.json", "2026-10-22-report.json"]
+  ]
+);
+archive.nights.forEach((night) => {
+  assert.ok(fs.existsSync(path.join(__dirname, "../docket", night.file)), night.file);
+  assert.ok(fs.existsSync(path.join(__dirname, "../docket", night.report)), night.report);
+});
 const novemberTwentySecond = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-11-22.json"), "utf8"));
 assert.strictEqual(novemberTwentySecond.date, "2026-11-22");
 assert.strictEqual(novemberTwentySecond.date_long, "Week of Nov 16 to Nov 22");
@@ -368,10 +389,15 @@ assert.deepStrictEqual(mondaySections, { Political: 3, Cultural: 3, Religious: 4
 const sunday = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-10-25.json"), "utf8"));
 assert.strictEqual(sunday.sittings.length, 11);
 assert.ok(!sunday.sittings.some((sitting) => sitting.id === "r4"));
+const openable = docket.openableNights(index.nights, archive.nights);
 assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, index.nights), "2026-11-22");
-assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, index.nights), "2026-10-22");
-assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash: "" }, index.nights), "2026-10-23");
-assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, index.nights), "2026-10-22");
+assert.strictEqual(docket.nightFromLocation({ search: "", hash: "" }, openable), "2026-11-22");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, index.nights), "");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash: "" }, index.nights), "");
+assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, index.nights), "");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-22", hash: "" }, openable), "2026-10-22");
+assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-23", hash: "" }, openable), "2026-10-23");
+assert.strictEqual(docket.nightFromLocation({ search: "", hash: "#night=2026-10-22" }, openable), "2026-10-22");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-24", hash: "" }, index.nights), "2026-10-24");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-25", hash: "" }, index.nights), "2026-10-25");
 assert.strictEqual(docket.nightFromLocation({ search: "?night=2026-10-26", hash: "" }, index.nights), "2026-10-26");
@@ -484,7 +510,7 @@ assert.strictEqual(docket.storyIdForSitting(october, "p1"), "political-1");
 assert.strictEqual(docket.storyIdForSitting(october, "missing"), "");
 
 const thinkers = new Set(fs.readdirSync(path.join(__dirname, "../data/thinkers")).map((name) => name.replace(/\.json$/, "")));
-index.nights.filter((entry) => entry.file).forEach((entry) => {
+index.nights.concat(archive.nights).filter((entry) => entry.file).forEach((entry) => {
   const night = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket", entry.file), "utf8"));
   night.sittings.forEach((sitting) => {
     sitting.chairs.forEach((chair) => {
@@ -666,8 +692,10 @@ const archiveHtml = docket.archiveListHtml(stored);
 assert.ok(archiveHtml.includes('href="docket.html?night=2026-10-22"'));
 assert.ok(archiveHtml.includes("Stored"));
 assert.ok(!docket.archiveListHtml([{ date: "2026-10-22", label: "<script>" }]).includes("<script>"));
-const archiveFile = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/archive.json"), "utf8"));
-assert.deepStrictEqual(archiveFile.nights, []);
+assert.deepStrictEqual(docket.liveNights(index.nights, archive.nights).map((night) => night.date), dates);
+assert.deepStrictEqual(docket.archivedNights(index.nights, archive.nights).map((night) => night.date), ["2026-10-23", "2026-10-22"]);
+assert.ok(docket.archiveListHtml(archive.nights).includes('href="docket.html?night=2026-10-23"'));
+assert.ok(docket.archiveListHtml(archive.nights).includes('href="docket.html?night=2026-10-22"'));
 assert.ok(!index.nights.some((night) => night.archived === true));
 assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897" }), "https://www.gutenberg.org/ebooks/17897");
 assert.strictEqual(docket.quoteSourceUrl({ verified: true, source_url: "https://www.gutenberg.org/ebooks/17897", passage_url: "https://www.gutenberg.org/files/17897/17897-h/17897-h.htm#Q19" }), "https://www.gutenberg.org/files/17897/17897-h/17897-h.htm#Q19");
