@@ -202,14 +202,14 @@ assert.ok(/min-height:\s*44px/.test(fs.readFileSync(path.join(__dirname, "../sty
 assert.ok(/\.reader-swatch\s*\{[^}]*min-height:\s*44px/.test(fs.readFileSync(path.join(__dirname, "../styles.css"), "utf8")));
 assert.ok(/button\s*\{[^}]*min-height:\s*44px/.test(fs.readFileSync(path.join(__dirname, "../styles.css"), "utf8")));
 
-["index.html", "docket.html", "archive.html", "saved.html"].forEach((name) => {
+["index.html", "docket.html", "archive.html", "saved.html", "thinkers.html"].forEach((name) => {
   const page = fs.readFileSync(path.join(__dirname, "..", name), "utf8");
   assert.ok(page.indexOf('href="saved.html"') >= 0, name);
 });
 assert.ok(fs.readFileSync(path.join(__dirname, "../index.html"), "utf8").indexOf('src="reader-ui.js"') >= 0);
 assert.ok(fs.readFileSync(path.join(__dirname, "../docket.html"), "utf8").indexOf('src="reader-ui.js"') >= 0);
 
-["reader.js", "reader-ui.js", "reader-page.js", "saved.html", "app.js", "docket-page.js", "index.html", "docket.html", "archive.html", "styles.css", "README.md"].forEach((name) => {
+["reader.js", "reader-ui.js", "reader-page.js", "saved.html", "app.js", "docket-page.js", "index.html", "docket.html", "archive.html", "styles.css", "README.md", "thinkers.html", "thinkers.js", "thinkers-page.js"].forEach((name) => {
   const source = fs.readFileSync(path.join(__dirname, "..", name), "utf8");
   assert.ok(source.indexOf(word) < 0, name);
 });

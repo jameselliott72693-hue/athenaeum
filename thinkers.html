@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Thinker dossiers and the agreement matrix: who sat, what was verified, and where the docket records an agreement or a split." />
+  <meta name="theme-color" content="#1c1712" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Athenaeum" />
+  <title>Thinkers · The Athenaeum</title>
+  <script>
+    try {
+      var t = localStorage.getItem("athenaeum.theme");
+      if (!t && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+      if (t === "dark") document.documentElement.dataset.theme = "dark";
+    } catch (e) {}
+  </script>
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img class="mark" src="images/mark.png" alt="" width="48" height="48" decoding="async" />
+      <div>
+        <p class="kicker">A reading room</p>
+        <h1>The Athenaeum</h1>
+        <p class="lede">The shelf and the nights, one chair at a time.</p>
+      </div>
+    </div>
+    <div class="header-tools">
+      <button type="button" id="theme" class="theme-btn" aria-pressed="false">Dark</button>
+    </div>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">The room</a>
+      <a href="docket.html">Tonight's docket</a>
+      <a href="thinkers.html" aria-current="page">Thinkers</a>
+      <a href="encounters.html">Further encounters</a>
+      <a href="archive.html">Older nights</a>
+      <a href="saved.html">Saved</a>
+    </nav>
+  </header>
+  <main id="thinkers-main" aria-busy="true">
+    <p class="kicker">The shelf and the docket</p>
+    <h2>Thinkers</h2>
+    <p class="lede">A dossier keeps the record that was already written. The matrix counts who sat together, which of those sittings are in the agreement file, and which splits set two chairs apart.</p>
+    <nav class="docket-jumps" aria-label="On this page">
+      <a href="#dossiers">Dossiers</a>
+      <a href="#matrix">Agreement matrix</a>
+    </nav>
+
+    <section id="dossiers" aria-labelledby="dossiers-heading">
+      <h2 id="dossiers-heading">Dossiers</h2>
+      <form id="thinker-filters" class="thinker-filters">
+        <div>
+          <label class="field" for="thinker-search">Search by name</label>
+          <input id="thinker-search" type="search" placeholder="Aristotle, Hayek" autocomplete="off" />
+        </div>
+        <div>
+          <label class="field" for="thinker-tradition">Tradition</label>
+          <select id="thinker-tradition"><option value="all">Any tradition</option></select>
+        </div>
+        <div>
+          <label class="field" for="thinker-era">Era, from the years on record</label>
+          <select id="thinker-era"><option value="all">Any era</option></select>
+        </div>
+        <div>
+          <label class="field" for="thinker-frequency">Frequency</label>
+          <select id="thinker-frequency">
+            <option value="any">Any count</option>
+            <option value="seated">At least one</option>
+            <option value="often">Five or more</option>
+            <option value="unseated">Not seated</option>
+          </select>
+        </div>
+        <div>
+          <label class="field" for="thinker-sort">Sort</label>
+          <select id="thinker-sort">
+            <option value="name">Name</option>
+            <option value="frequency">Most often seated</option>
+            <option value="earliest">Earliest on the record</option>
+            <option value="latest">Latest on the record</option>
+          </select>
+        </div>
+      </form>
+      <p id="thinker-status" class="hint" role="status">Loading the dossiers.</p>
+      <div class="thinker-layout">
+        <div>
+          <ul id="thinker-list" class="thinker-list" aria-label="Thinkers"></ul>
+        </div>
+        <article id="dossier" class="dossier-panel" aria-live="polite">
+          <h3>Choose a thinker</h3>
+          <p class="lede">The note, the years, and the works come from the shelf. Sittings and verified quotations come from the docket.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="matrix" aria-labelledby="matrix-heading">
+      <h2 id="matrix-heading">Agreement matrix</h2>
+      <p class="lede">A shared sitting is a night where both were seated. When that sitting is listed in the agreement file, it counts as an agreement. When the split on that sitting puts them on different sides, it counts as a disagreement.</p>
+      <ul class="matrix-key">
+        <li><span class="swatch tone-agree">Agreed, no split</span></li>
+        <li><span class="swatch tone-mixed">Agreed, and split on some</span></li>
+        <li><span class="swatch tone-split">Split on every shared agreement</span></li>
+        <li><span class="swatch tone-meet">Seated together, no agreement on the record</span></li>
+      </ul>
+      <form id="matrix-filters" class="thinker-filters">
+        <div>
+          <label class="field" for="matrix-search">Search by thinker</label>
+          <input id="matrix-search" type="search" placeholder="A name" autocomplete="off" />
+        </div>
+        <div>
+          <label class="field" for="matrix-min">Minimum shared sittings</label>
+          <input id="matrix-min" type="number" min="1" max="99" value="2" inputmode="numeric" />
+        </div>
+        <div>
+          <label class="field" for="matrix-sort">Sort</label>
+          <select id="matrix-sort">
+            <option value="agreement">Highest agreement</option>
+            <option value="disagreement">Sharpest disagreement</option>
+            <option value="shared">Most shared sittings</option>
+          </select>
+        </div>
+      </form>
+      <p id="matrix-status" class="hint" role="status"></p>
+      <div id="matrix-grid"></div>
+      <div id="pair-drill"></div>
+      <div id="pair-list"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Quotation marks appear only around a verified passage from a sitting. A note from the shelf is the shelf's own wording. An agreement count is a sitting listed in the agreement file. Nothing on this page adds a life, a line, or a tally that the files do not already hold.</p>
+  </footer>
+  <script src="docket.js"></script>
+  <script src="thinkers.js"></script>
+  <script src="thinkers-page.js"></script>
+</body>
+</html>
