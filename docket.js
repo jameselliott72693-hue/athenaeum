@@ -463,7 +463,7 @@
     const src = audioSrc(audio);
     if (!src) return "";
     const href = escapeAttr(src);
-    return `<figure class="night-audio"><figcaption class="kicker">Audio edition</figcaption><audio controls preload="none" src="${href}" aria-label="Audio edition of this night"><a href="${href}">Listen to the audio edition</a></audio></figure>`;
+    return `<figure class="night-audio"><figcaption class="kicker">Audio edition</figcaption><audio controls preload="none" src="${href}" aria-label="Audio edition of this night"><a href="${href}">Listen to the audio edition</a></audio><a class="podcast-rss-link" href="docket/podcast.xml">Podcast RSS</a></figure>`;
   }
 
   function archiveListHtml(nights) {

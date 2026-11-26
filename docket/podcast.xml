@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:psc="http://podlove.org/simple-chapters" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Athenaeum</title>
+    <link>https://jameselliott72693-hue.github.io/athenaeum/</link>
+    <atom:link href="https://jameselliott72693-hue.github.io/athenaeum/docket/podcast.xml" rel="self" type="application/rss+xml"/>
+    <description>Audio editions of The Athenaeum. Each episode is one night's short sittings: the questions, and the chairs speaking from the record that was kept.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Nov 2026 04:21:12 GMT</lastBuildDate>
+    <generator>scripts/build-podcast.js</generator>
+    <itunes:author>The Athenaeum</itunes:author>
+    <itunes:summary>Audio editions of The Athenaeum. Each episode is one night's short sittings.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="https://jameselliott72693-hue.github.io/athenaeum/icon-192.png"/>
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Philosophy"/>
+    </itunes:category>
+    <image>
+      <url>https://jameselliott72693-hue.github.io/athenaeum/icon-192.png</url>
+      <title>The Athenaeum</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/</link>
+    </image>
+    <podcast:guid>8d270523-e207-59da-a33b-d7bfccce0bfb</podcast:guid>
+    <item>
+      <title>Week of Nov 16 to Nov 22</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22</guid>
+      <pubDate>Mon, 23 Nov 2026 04:21:12 GMT</pubDate>
+      <description>&lt;p&gt;Week of Nov 16 to Nov 22&lt;/p&gt;&lt;p&gt;Drawn from the week's Discourse Reports, Monday Nov 16 to Sunday Nov 22, 2026: the week's top stories, merged where they ran on several nights, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence across the week and balance across sections: the Trump, Xi and Putin summit and its Yalta image, which ran on five of seven nights; Sunday's lead story on Democrats weighing the Dec. 11 funding deadline to end the Iran war; the record launch of Grand Theft Auto VI, which ran on three nights; and the week's running argument over faith and the state, from Christian nationalism's two kingdoms debate to Moscow as the Third Rome.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Trump posts The Great Powers 1945, 2026, pairing himself, Xi and Putin with Yalta's Big Three&lt;/strong&gt;&lt;br/&gt;Is peace secured by great powers dividing the world among themselves, or does a just order require that small nations have a voice in their own fate?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Democrats split over using the Dec. 11 funding deadline to force an end to the Iran war&lt;/strong&gt;&lt;br/&gt;Who decides when a nation goes to war, and how far may a legislature go to stop one it never authorized: is withholding funds principled restraint or a dangerous gamble with the common good?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Grand Theft Auto VI launches with a record $3.79 billion day, reopening the old fight over violent games&lt;/strong&gt;&lt;br/&gt;Does art that depicts vice teach vice, or let us see it clearly? What we love shapes who we become.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Christian nationalists see an opening in GOP midterm losses as Christians argue over two kingdoms&lt;/strong&gt;&lt;br/&gt;What is the proper relation between the City of God and the City of Man: should faith shape the laws, or stay free of the state?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Week of Nov 16 to Nov 22</itunes:title>
+      <itunes:summary>Week of Nov 16 to Nov 22
+Drawn from the week's Discourse Reports, Monday Nov 16 to Sunday Nov 22, 2026: the week's top stories, merged where they ran on several nights, each put to a table of historical thinkers.
+Picked by prominence across the week and balance across sections: the Trump, Xi and Putin summit and its Yalta image, which ran on five of seven nights; Sunday's lead story on Democrats weighing the Dec. 11 funding deadline to end the Iran war; the record launch of Grand Theft Auto VI, which ran on three nights; and the week's running argument over faith and the state, from Christian nationalism's two kingdoms debate to Moscow as the Third Rome.
+Short edition:
+
+1. Trump posts The Great Powers 1945, 2026, pairing himself, Xi and Putin with Yalta's Big Three
+Is peace secured by great powers dividing the world among themselves, or does a just order require that small nations have a voice in their own fate?
+
+2. Democrats split over using the Dec. 11 funding deadline to force an end to the Iran war
+Who decides when a nation goes to war, and how far may a legislature go to stop one it never authorized: is withholding funds principled restraint or a dangerous gamble with the common good?
+
+3. Grand Theft Auto VI launches with a record $3.79 billion day, reopening the old fight over violent games
+Does art that depicts vice teach vice, or let us see it clearly? What we love shapes who we become.
+
+4. Christian nationalists see an opening in GOP midterm losses as Christians argue over two kingdoms
+What is the proper relation between the City of God and the City of Man: should faith shape the laws, or stay free of the state?</itunes:summary>
+      <itunes:duration>00:25:46</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-22.mp3" length="11988980" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-22.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22"/>
+        <psc:chapter start="00:00:33.842" title="1. Trump posts The Great Powers 1945, 2026, pairing himself, Xi and Putin with Yalta's Big Three — Is peace secured by great powers dividing the world among themselves, or does a just order require that small nations have a voice in their own fate?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22#sitting-p1"/>
+        <psc:chapter start="00:07:24.630" title="2. Democrats split over using the Dec. 11 funding deadline to force an end to the Iran war — Who decides when a nation goes to war, and how far may a legislature go to stop one it never authorized: is withholding funds principled restraint or a dangerous gamble with the common good?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22#sitting-p2"/>
+        <psc:chapter start="00:13:44.063" title="3. Grand Theft Auto VI launches with a record $3.79 billion day, reopening the old fight over violent games — Does art that depicts vice teach vice, or let us see it clearly? What we love shapes who we become." href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22#sitting-c1"/>
+        <psc:chapter start="00:19:14.195" title="4. Christian nationalists see an opening in GOP midterm losses as Christians argue over two kingdoms — What is the proper relation between the City of God and the City of Man: should faith shape the laws, or stay free of the state?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-22#sitting-r2"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Tuesday, November 17, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17</guid>
+      <pubDate>Wed, 18 Nov 2026 04:44:55 GMT</pubDate>
+      <description>&lt;p&gt;Tuesday, November 17, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the Supreme Court leaving Maryland's sensitive-places gun bans in place, the Court's refusal to restore the administration's cuts to University of California research grants, the Cultural debate over protests at an Oxford college talk on DEI, and the Religious sitting on the Pope keeping limits on the Latin Mass for the sake of unity.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Supreme Court leaves Maryland's sensitive-places gun bans standing, as Justice Thomas signals doubts&lt;/strong&gt;&lt;br/&gt;Liberty versus order: when a right is fundamental, who decides where it ends, and can a right be hemmed in so tightly that it is effectively denied?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Supreme Court turns away Trump administration appeal over UC research grants cut for DEI&lt;/strong&gt;&lt;br/&gt;Who governs the university: does public funding give the state the right to shape what scholars pursue, or must the free pursuit of knowledge be shielded from whoever holds power?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Hundreds protest at Oxford as Nathan Cofnas speaks on DEI at Oriel College&lt;/strong&gt;&lt;br/&gt;Truth and tolerance: is the university a place where every claim may be heard and tested, or a community that must also protect the dignity of its members?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo keeps Latin Mass limits and says married priests could divide the Church&lt;/strong&gt;&lt;br/&gt;Unity and diversity in the Church: is unity better kept by one common form or by generously making room for many legitimate traditions?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Tuesday, November 17, 2026</itunes:title>
+      <itunes:summary>Tuesday, November 17, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the Supreme Court leaving Maryland's sensitive-places gun bans in place, the Court's refusal to restore the administration's cuts to University of California research grants, the Cultural debate over protests at an Oxford college talk on DEI, and the Religious sitting on the Pope keeping limits on the Latin Mass for the sake of unity.
+Short edition:
+
+1. Supreme Court leaves Maryland's sensitive-places gun bans standing, as Justice Thomas signals doubts
+Liberty versus order: when a right is fundamental, who decides where it ends, and can a right be hemmed in so tightly that it is effectively denied?
+
+2. Supreme Court turns away Trump administration appeal over UC research grants cut for DEI
+Who governs the university: does public funding give the state the right to shape what scholars pursue, or must the free pursuit of knowledge be shielded from whoever holds power?
+
+3. Hundreds protest at Oxford as Nathan Cofnas speaks on DEI at Oriel College
+Truth and tolerance: is the university a place where every claim may be heard and tested, or a community that must also protect the dignity of its members?
+
+4. Pope Leo keeps Latin Mass limits and says married priests could divide the Church
+Unity and diversity in the Church: is unity better kept by one common form or by generously making room for many legitimate traditions?</itunes:summary>
+      <itunes:duration>00:22:48</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-17.mp3" length="10636460" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-17.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17"/>
+        <psc:chapter start="00:00:27.059" title="1. Supreme Court leaves Maryland's sensitive-places gun bans standing, as Justice Thomas signals doubts — Liberty versus order: when a right is fundamental, who decides where it ends, and can a right be hemmed in so tightly that it is effectively denied?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17#sitting-p1"/>
+        <psc:chapter start="00:06:46.099" title="2. Supreme Court turns away Trump administration appeal over UC research grants cut for DEI — Who governs the university: does public funding give the state the right to shape what scholars pursue, or must the free pursuit of knowledge be shielded from whoever holds power?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17#sitting-p2"/>
+        <psc:chapter start="00:12:31.336" title="3. Hundreds protest at Oxford as Nathan Cofnas speaks on DEI at Oriel College — Truth and tolerance: is the university a place where every claim may be heard and tested, or a community that must also protect the dignity of its members?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17#sitting-c1"/>
+        <psc:chapter start="00:17:30.659" title="4. Pope Leo keeps Latin Mass limits and says married priests could divide the Church — Unity and diversity in the Church: is unity better kept by one common form or by generously making room for many legitimate traditions?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-17#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Monday, November 16, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16</guid>
+      <pubDate>Tue, 17 Nov 2026 04:29:04 GMT</pubDate>
+      <description>&lt;p&gt;Monday, November 16, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the White House rule that agency staff need its sign-off to testify, the three-way nuclear summit in Asia, the Cultural debate over what schools and shops should do with a famous children's author's books, and the Religious sitting on the Pope's farewell to Peru, his word on the economy and the debate over honoring Mary.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;The White House orders agencies to get its sign-off before any employee testifies to Congress&lt;/strong&gt;&lt;br/&gt;Who gets to decide what the people's representatives may learn about how the people's government is run? The balance between an energetic executive and an accountable one.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The President heads to Asia for a first-ever three-way nuclear summit with the leaders of China and Russia&lt;/strong&gt;&lt;br/&gt;Is it wise to sit down with those you believe to be wrongdoers for the sake of preventing a greater evil? Prudence vs. principle in a dangerous world.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Schools, libraries and families wrestle with what to do with David Walliams's books&lt;/strong&gt;&lt;br/&gt;Can a good work be separated from a flawed maker, and how should a community act on accusations before they are proven?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo XIV ends a grueling 12-day South America homecoming in Peru&lt;/strong&gt;&lt;br/&gt;What does the Church owe the world: a word about souls, a word about bread, or both? And how should honor be given to the saints without taking from God?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Monday, November 16, 2026</itunes:title>
+      <itunes:summary>Monday, November 16, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the White House rule that agency staff need its sign-off to testify, the three-way nuclear summit in Asia, the Cultural debate over what schools and shops should do with a famous children's author's books, and the Religious sitting on the Pope's farewell to Peru, his word on the economy and the debate over honoring Mary.
+Short edition:
+
+1. The White House orders agencies to get its sign-off before any employee testifies to Congress
+Who gets to decide what the people's representatives may learn about how the people's government is run? The balance between an energetic executive and an accountable one.
+
+2. The President heads to Asia for a first-ever three-way nuclear summit with the leaders of China and Russia
+Is it wise to sit down with those you believe to be wrongdoers for the sake of preventing a greater evil? Prudence vs. principle in a dangerous world.
+
+3. Schools, libraries and families wrestle with what to do with David Walliams's books
+Can a good work be separated from a flawed maker, and how should a community act on accusations before they are proven?
+
+4. Pope Leo XIV ends a grueling 12-day South America homecoming in Peru
+What does the Church owe the world: a word about souls, a word about bread, or both? And how should honor be given to the saints without taking from God?</itunes:summary>
+      <itunes:duration>00:24:48</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-16.mp3" length="11552516" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-16.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16"/>
+        <psc:chapter start="00:00:28.435" title="1. The White House orders agencies to get its sign-off before any employee testifies to Congress — Who gets to decide what the people's representatives may learn about how the people's government is run? The balance between an energetic executive and an accountable one." href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16#sitting-p1"/>
+        <psc:chapter start="00:06:37.392" title="2. The President heads to Asia for a first-ever three-way nuclear summit with the leaders of China and Russia — Is it wise to sit down with those you believe to be wrongdoers for the sake of preventing a greater evil? Prudence vs. principle in a dangerous world." href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16#sitting-p2"/>
+        <psc:chapter start="00:12:55.781" title="3. Schools, libraries and families wrestle with what to do with David Walliams's books — Can a good work be separated from a flawed maker, and how should a community act on accusations before they are proven?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16#sitting-c1"/>
+        <psc:chapter start="00:18:45.319" title="4. Pope Leo XIV ends a grueling 12-day South America homecoming in Peru — What does the Church owe the world: a word about souls, a word about bread, or both? And how should honor be given to the saints without taking from God?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-16#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Sunday, November 15, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15</guid>
+      <pubDate>Mon, 16 Nov 2026 04:24:38 GMT</pubDate>
+      <description>&lt;p&gt;Sunday, November 15, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the $50 billion air traffic control request after the ground stop, the renewed Iranian strikes in Bahrain and the push to end the war, the Cultural fight over a petition against a new horror series, and the Religious sitting on the Pope's warning against transhumanism.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;After the ground stop, the administration asks Congress for $50 billion for air traffic control, and critics on both sides push back&lt;/strong&gt;&lt;br/&gt;When a crisis exposes neglect, is it the moment to act boldly, or the moment we are most likely to be stampeded?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Iran strikes at U.S. forces in Bahrain again as pressure grows to end a nine-month war&lt;/strong&gt;&lt;br/&gt;Who should decide when a nation goes to war and when it stops, and what makes a war just to continue?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A petition to cancel a new Netflix horror series nears 90,000 signatures as the show climbs the charts&lt;/strong&gt;&lt;br/&gt;Does a society owe reverence to what its people hold sacred, or does freedom require that nothing be beyond depiction?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo XIV in Peru: transhumanism is a mirage for millionaires seeking immortality, and God made us male and female&lt;/strong&gt;&lt;br/&gt;Is human finitude a flaw to be engineered away, or part of what makes us human?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Sunday, November 15, 2026</itunes:title>
+      <itunes:summary>Sunday, November 15, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the $50 billion air traffic control request after the ground stop, the renewed Iranian strikes in Bahrain and the push to end the war, the Cultural fight over a petition against a new horror series, and the Religious sitting on the Pope's warning against transhumanism.
+Short edition:
+
+1. After the ground stop, the administration asks Congress for $50 billion for air traffic control, and critics on both sides push back
+When a crisis exposes neglect, is it the moment to act boldly, or the moment we are most likely to be stampeded?
+
+2. Iran strikes at U.S. forces in Bahrain again as pressure grows to end a nine-month war
+Who should decide when a nation goes to war and when it stops, and what makes a war just to continue?
+
+3. A petition to cancel a new Netflix horror series nears 90,000 signatures as the show climbs the charts
+Does a society owe reverence to what its people hold sacred, or does freedom require that nothing be beyond depiction?
+
+4. Pope Leo XIV in Peru: transhumanism is a mirage for millionaires seeking immortality, and God made us male and female
+Is human finitude a flaw to be engineered away, or part of what makes us human?</itunes:summary>
+      <itunes:duration>00:26:15</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-15.mp3" length="12142388" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-15.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15"/>
+        <psc:chapter start="00:00:33.395" title="1. After the ground stop, the administration asks Congress for $50 billion for air traffic control, and critics on both sides push back — When a crisis exposes neglect, is it the moment to act boldly, or the moment we are most likely to be stampeded?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15#sitting-p1"/>
+        <psc:chapter start="00:07:36.654" title="2. Iran strikes at U.S. forces in Bahrain again as pressure grows to end a nine-month war — Who should decide when a nation goes to war and when it stops, and what makes a war just to continue?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15#sitting-p2"/>
+        <psc:chapter start="00:13:49.643" title="3. A petition to cancel a new Netflix horror series nears 90,000 signatures as the show climbs the charts — Does a society owe reverence to what its people hold sacred, or does freedom require that nothing be beyond depiction?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15#sitting-c1"/>
+        <psc:chapter start="00:20:05.603" title="4. Pope Leo XIV in Peru: transhumanism is a mirage for millionaires seeking immortality, and God made us male and female — Is human finitude a flaw to be engineered away, or part of what makes us human?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-15#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Saturday, November 14, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14</guid>
+      <pubDate>Sun, 15 Nov 2026 04:26:01 GMT</pubDate>
+      <description>&lt;p&gt;Saturday, November 14, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the incoming majority's investigations, the nationwide ground stop caused by a single router, the Cultural split over a comedian's roast of New York's mayor, and the Religious sitting on the first Muslim senator-elect's plan to swear on a Quran.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;The incoming Democratic majority lines up investigations of the President and keeps impeachment off the table for now&lt;/strong&gt;&lt;br/&gt;What is the first duty of a new majority: holding power to account, or governing for the people's immediate needs?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;One router, ten thousand cancellations: who answers for Friday's nationwide ground stop?&lt;/strong&gt;&lt;br/&gt;When a complex system fails, is the fault in the people running it or in the system we have neglected to renew?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A comedian's roast jokes about New York's mayor split the internet over comedy, bigotry and double standards&lt;/strong&gt;&lt;br/&gt;Where does satire end and contempt begin, and should the same rule apply to everyone?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The first Muslim U.S. senator-elect plans to take his oath on a Quran, possibly Jefferson's&lt;/strong&gt;&lt;br/&gt;What binds a public servant: shared civic symbols or personal conscience?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Saturday, November 14, 2026</itunes:title>
+      <itunes:summary>Saturday, November 14, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the incoming majority's investigations, the nationwide ground stop caused by a single router, the Cultural split over a comedian's roast of New York's mayor, and the Religious sitting on the first Muslim senator-elect's plan to swear on a Quran.
+Short edition:
+
+1. The incoming Democratic majority lines up investigations of the President and keeps impeachment off the table for now
+What is the first duty of a new majority: holding power to account, or governing for the people's immediate needs?
+
+2. One router, ten thousand cancellations: who answers for Friday's nationwide ground stop?
+When a complex system fails, is the fault in the people running it or in the system we have neglected to renew?
+
+3. A comedian's roast jokes about New York's mayor split the internet over comedy, bigotry and double standards
+Where does satire end and contempt begin, and should the same rule apply to everyone?
+
+4. The first Muslim U.S. senator-elect plans to take his oath on a Quran, possibly Jefferson's
+What binds a public servant: shared civic symbols or personal conscience?</itunes:summary>
+      <itunes:duration>00:24:18</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-14.mp3" length="11334188" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-14.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14"/>
+        <psc:chapter start="00:00:30.050" title="1. The incoming Democratic majority lines up investigations of the President and keeps impeachment off the table for now — What is the first duty of a new majority: holding power to account, or governing for the people's immediate needs?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14#sitting-p1"/>
+        <psc:chapter start="00:06:38.056" title="2. One router, ten thousand cancellations: who answers for Friday's nationwide ground stop? — When a complex system fails, is the fault in the people running it or in the system we have neglected to renew?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14#sitting-p2"/>
+        <psc:chapter start="00:12:45.895" title="3. A comedian's roast jokes about New York's mayor split the internet over comedy, bigotry and double standards — Where does satire end and contempt begin, and should the same rule apply to everyone?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14#sitting-c1"/>
+        <psc:chapter start="00:18:35.258" title="4. The first Muslim U.S. senator-elect plans to take his oath on a Quran, possibly Jefferson's — What binds a public servant: shared civic symbols or personal conscience?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-14#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Friday, November 13, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13</guid>
+      <pubDate>Sat, 14 Nov 2026 04:34:48 GMT</pubDate>
+      <description>&lt;p&gt;Friday, November 13, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the Supreme Court taking up the asylum shutdown, the call to keep impeaching justices on the table, the Cultural split over the BBC blurring trans-rights slogans and Pride pins, and the Religious sitting on the visas denied to two Bethlehem clergy.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;The Supreme Court agrees to decide whether the President can shut off asylum at the border&lt;/strong&gt;&lt;br/&gt;What does a nation owe the stranger at its door, and who decides: the executive in a crisis, or the law Congress already wrote?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A New York congresswoman says impeaching Supreme Court justices is on the table&lt;/strong&gt;&lt;br/&gt;Who guards the guardians? Should judges answer to the people's representatives for how they rule, or does justice require that they answer to no one but the law?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The BBC's chief is pressed by staff over blurring trans-rights slogans and Pride pins&lt;/strong&gt;&lt;br/&gt;Can a shared public institution be neutral, and is neutrality itself a moral stance? Where is the line between dignity and advocacy?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The U.S. denies visas to two Bethlehem clergy invited to speak on Palestinian Christians&lt;/strong&gt;&lt;br/&gt;What do Christians owe to fellow believers across political lines, and how should a state weigh security against the free exchange of witness and ideas?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Friday, November 13, 2026</itunes:title>
+      <itunes:summary>Friday, November 13, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the Supreme Court taking up the asylum shutdown, the call to keep impeaching justices on the table, the Cultural split over the BBC blurring trans-rights slogans and Pride pins, and the Religious sitting on the visas denied to two Bethlehem clergy.
+Short edition:
+
+1. The Supreme Court agrees to decide whether the President can shut off asylum at the border
+What does a nation owe the stranger at its door, and who decides: the executive in a crisis, or the law Congress already wrote?
+
+2. A New York congresswoman says impeaching Supreme Court justices is on the table
+Who guards the guardians? Should judges answer to the people's representatives for how they rule, or does justice require that they answer to no one but the law?
+
+3. The BBC's chief is pressed by staff over blurring trans-rights slogans and Pride pins
+Can a shared public institution be neutral, and is neutrality itself a moral stance? Where is the line between dignity and advocacy?
+
+4. The U.S. denies visas to two Bethlehem clergy invited to speak on Palestinian Christians
+What do Christians owe to fellow believers across political lines, and how should a state weigh security against the free exchange of witness and ideas?</itunes:summary>
+      <itunes:duration>00:24:41</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-13.mp3" length="11515964" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-13.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13"/>
+        <psc:chapter start="00:00:28.838" title="1. The Supreme Court agrees to decide whether the President can shut off asylum at the border — What does a nation owe the stranger at its door, and who decides: the executive in a crisis, or the law Congress already wrote?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13#sitting-p1"/>
+        <psc:chapter start="00:07:34.965" title="2. A New York congresswoman says impeaching Supreme Court justices is on the table — Who guards the guardians? Should judges answer to the people's representatives for how they rule, or does justice require that they answer to no one but the law?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13#sitting-p2"/>
+        <psc:chapter start="00:13:35.739" title="3. The BBC's chief is pressed by staff over blurring trans-rights slogans and Pride pins — Can a shared public institution be neutral, and is neutrality itself a moral stance? Where is the line between dignity and advocacy?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13#sitting-c1"/>
+        <psc:chapter start="00:19:04.209" title="4. The U.S. denies visas to two Bethlehem clergy invited to speak on Palestinian Christians — What do Christians owe to fellow believers across political lines, and how should a state weigh security against the free exchange of witness and ideas?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-13#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Thursday, November 12, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12</guid>
+      <pubDate>Fri, 13 Nov 2026 04:27:01 GMT</pubDate>
+      <description>&lt;p&gt;Thursday, November 12, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the President pulling the Vice President off the Iran talks, the Nvidia chief's resignation over a possible foreign-intelligence compromise, the Cultural split over pulling a children's author's books, and the Religious sitting on the pope's call in Peru to pair truth and justice with closeness.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Trump pulls Vance off the Iran talks and says the U.S. does not need a deal&lt;/strong&gt;&lt;br/&gt;When does strength mean refusing to negotiate, and when does it mean being willing to make peace? And can leaders fight corruption fairly if they only look at their opponents?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Jensen Huang resigns as Nvidia CEO, and the President says Tim Cook should replace him&lt;/strong&gt;&lt;br/&gt;How much does a leader's private character count in public trust? And does a great founder belong to his company, or does the company have to be able to outlive him?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;UK schools and libraries split over pulling David Walliams' books&lt;/strong&gt;&lt;br/&gt;Can a work be separated from the person who made it? And when the two are tied together, how do we protect children without punishing someone on accusations alone?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo, home in Peru, denounces machismo and tells bishops to face abuse with truth and justice&lt;/strong&gt;&lt;br/&gt;Is the Church's first duty to teach the truth or to heal the wounded, and can it do one without the other?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Thursday, November 12, 2026</itunes:title>
+      <itunes:summary>Thursday, November 12, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the President pulling the Vice President off the Iran talks, the Nvidia chief's resignation over a possible foreign-intelligence compromise, the Cultural split over pulling a children's author's books, and the Religious sitting on the pope's call in Peru to pair truth and justice with closeness.
+Short edition:
+
+1. Trump pulls Vance off the Iran talks and says the U.S. does not need a deal
+When does strength mean refusing to negotiate, and when does it mean being willing to make peace? And can leaders fight corruption fairly if they only look at their opponents?
+
+2. Jensen Huang resigns as Nvidia CEO, and the President says Tim Cook should replace him
+How much does a leader's private character count in public trust? And does a great founder belong to his company, or does the company have to be able to outlive him?
+
+3. UK schools and libraries split over pulling David Walliams' books
+Can a work be separated from the person who made it? And when the two are tied together, how do we protect children without punishing someone on accusations alone?
+
+4. Pope Leo, home in Peru, denounces machismo and tells bishops to face abuse with truth and justice
+Is the Church's first duty to teach the truth or to heal the wounded, and can it do one without the other?</itunes:summary>
+      <itunes:duration>00:24:31</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-12.mp3" length="11394692" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-12.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12"/>
+        <psc:chapter start="00:00:30.259" title="1. Trump pulls Vance off the Iran talks and says the U.S. does not need a deal — When does strength mean refusing to negotiate, and when does it mean being willing to make peace? And can leaders fight corruption fairly if they only look at their opponents?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12#sitting-p1"/>
+        <psc:chapter start="00:07:28.605" title="2. Jensen Huang resigns as Nvidia CEO, and the President says Tim Cook should replace him — How much does a leader's private character count in public trust? And does a great founder belong to his company, or does the company have to be able to outlive him?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12#sitting-p2"/>
+        <psc:chapter start="00:12:45.680" title="3. UK schools and libraries split over pulling David Walliams' books — Can a work be separated from the person who made it? And when the two are tied together, how do we protect children without punishing someone on accusations alone?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12#sitting-c1"/>
+        <psc:chapter start="00:19:09.826" title="4. Pope Leo, home in Peru, denounces machismo and tells bishops to face abuse with truth and justice — Is the Church's first duty to teach the truth or to heal the wounded, and can it do one without the other?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-12#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Wednesday, November 11, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11</guid>
+      <pubDate>Thu, 12 Nov 2026 13:53:49 GMT</pubDate>
+      <description>&lt;p&gt;Wednesday, November 11, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on a Democratic upset in a Mississippi Senate race, the widening chip and espionage scandal around the Commerce Department, the Cultural debate over a streaming service keeping a convicted performer's special, and the Religious sitting on church leaders' call for a treaty on autonomous weapons.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Colom unseats Hyde-Smith in the Mississippi Senate&lt;/strong&gt;&lt;br/&gt;Is an election a verdict on a person, a party, or a moment? And what does representation mean when a state's identity and its votes suddenly seem to diverge?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Republicans turn on Commerce Secretary Lutnick as the Nvidia espionage scandal widens&lt;/strong&gt;&lt;br/&gt;Can commerce and security be pursued together, or does a nation's safety sometimes require giving up profit? And how much should a leader's private life count as public business?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Netflix keeps Russell Brand's stand-up special after his rape conviction&lt;/strong&gt;&lt;br/&gt;Can we separate the art from the artist? Does continuing to show a work honor freedom or excuse the one who made it?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;More than 30 UK Christian leaders call for a treaty on AI killer robots&lt;/strong&gt;&lt;br/&gt;Can a machine ever bear moral responsibility for taking a life? What does it mean to keep a human in the loop of judgment?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Wednesday, November 11, 2026</itunes:title>
+      <itunes:summary>Wednesday, November 11, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on a Democratic upset in a Mississippi Senate race, the widening chip and espionage scandal around the Commerce Department, the Cultural debate over a streaming service keeping a convicted performer's special, and the Religious sitting on church leaders' call for a treaty on autonomous weapons.
+Short edition:
+
+1. Colom unseats Hyde-Smith in the Mississippi Senate
+Is an election a verdict on a person, a party, or a moment? And what does representation mean when a state's identity and its votes suddenly seem to diverge?
+
+2. Republicans turn on Commerce Secretary Lutnick as the Nvidia espionage scandal widens
+Can commerce and security be pursued together, or does a nation's safety sometimes require giving up profit? And how much should a leader's private life count as public business?
+
+3. Netflix keeps Russell Brand's stand-up special after his rape conviction
+Can we separate the art from the artist? Does continuing to show a work honor freedom or excuse the one who made it?
+
+4. More than 30 UK Christian leaders call for a treaty on AI killer robots
+Can a machine ever bear moral responsibility for taking a life? What does it mean to keep a human in the loop of judgment?</itunes:summary>
+      <itunes:duration>00:26:04</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-11.mp3" length="12156044" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-11.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11"/>
+        <psc:chapter start="00:00:31.562" title="1. Colom unseats Hyde-Smith in the Mississippi Senate — Is an election a verdict on a person, a party, or a moment? And what does representation mean when a state's identity and its votes suddenly seem to diverge?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11#sitting-p1"/>
+        <psc:chapter start="00:07:32.980" title="2. Republicans turn on Commerce Secretary Lutnick as the Nvidia espionage scandal widens — Can commerce and security be pursued together, or does a nation's safety sometimes require giving up profit? And how much should a leader's private life count as public business?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11#sitting-p2"/>
+        <psc:chapter start="00:14:32.520" title="3. Netflix keeps Russell Brand's stand-up special after his rape conviction — Can we separate the art from the artist? Does continuing to show a work honor freedom or excuse the one who made it?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11#sitting-c1"/>
+        <psc:chapter start="00:20:42.783" title="4. More than 30 UK Christian leaders call for a treaty on AI killer robots — Can a machine ever bear moral responsibility for taking a life? What does it mean to keep a human in the loop of judgment?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-11#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Tuesday, November 10, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10</guid>
+      <pubDate>Wed, 11 Nov 2026 04:36:29 GMT</pubDate>
+      <description>&lt;p&gt;Tuesday, November 10, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on the House shelving impeachment articles against the Defense Secretary, the Senate Republican leadership vote after the midterm losses, the Cultural debate over a slavery musical that reverses the racial hierarchy, and the Religious sitting on Pope Leo XIV's call to young Argentines to reject idols.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;House Republicans send the Hegseth impeachment articles to committee, 211-204&lt;/strong&gt;&lt;br/&gt;When is impeachment the remedy for bad judgment rather than lawbreaking? Does a legislature that declines to use its war powers lose them?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Senate Republicans keep John Thune as leader after losing at least seven seats&lt;/strong&gt;&lt;br/&gt;Are the rules of a deliberative body a neutral inheritance to protect, or tools to set aside when the cause is urgent? What does a defeated party owe its voters: new faces or the same principles?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Todrick Hall defends Midnight, his slavery musical that flips the racial hierarchy&lt;/strong&gt;&lt;br/&gt;What do we owe the suffering of the past when we tell its story? Can art shock us toward truth, or does shock cheapen it?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo XIV tells a million young Argentines not to bow down to idols&lt;/strong&gt;&lt;br/&gt;What do people worship when they stop worshiping God? Can a call to personal holiness be heard from an institution still repairing its own failures?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Tuesday, November 10, 2026</itunes:title>
+      <itunes:summary>Tuesday, November 10, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on the House shelving impeachment articles against the Defense Secretary, the Senate Republican leadership vote after the midterm losses, the Cultural debate over a slavery musical that reverses the racial hierarchy, and the Religious sitting on Pope Leo XIV's call to young Argentines to reject idols.
+Short edition:
+
+1. House Republicans send the Hegseth impeachment articles to committee, 211-204
+When is impeachment the remedy for bad judgment rather than lawbreaking? Does a legislature that declines to use its war powers lose them?
+
+2. Senate Republicans keep John Thune as leader after losing at least seven seats
+Are the rules of a deliberative body a neutral inheritance to protect, or tools to set aside when the cause is urgent? What does a defeated party owe its voters: new faces or the same principles?
+
+3. Todrick Hall defends Midnight, his slavery musical that flips the racial hierarchy
+What do we owe the suffering of the past when we tell its story? Can art shock us toward truth, or does shock cheapen it?
+
+4. Pope Leo XIV tells a million young Argentines not to bow down to idols
+What do people worship when they stop worshiping God? Can a call to personal holiness be heard from an institution still repairing its own failures?</itunes:summary>
+      <itunes:duration>00:26:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-10.mp3" length="12211052" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-10.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10"/>
+        <psc:chapter start="00:00:31.595" title="1. House Republicans send the Hegseth impeachment articles to committee, 211-204 — When is impeachment the remedy for bad judgment rather than lawbreaking? Does a legislature that declines to use its war powers lose them?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10#sitting-p1"/>
+        <psc:chapter start="00:07:28.567" title="2. Senate Republicans keep John Thune as leader after losing at least seven seats — Are the rules of a deliberative body a neutral inheritance to protect, or tools to set aside when the cause is urgent? What does a defeated party owe its voters: new faces or the same principles?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10#sitting-p2"/>
+        <psc:chapter start="00:13:40.996" title="3. Todrick Hall defends Midnight, his slavery musical that flips the racial hierarchy — What do we owe the suffering of the past when we tell its story? Can art shock us toward truth, or does shock cheapen it?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10#sitting-c1"/>
+        <psc:chapter start="00:20:22.090" title="4. Pope Leo XIV tells a million young Argentines not to bow down to idols — What do people worship when they stop worshiping God? Can a call to personal holiness be heard from an institution still repairing its own failures?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-10#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Monday, November 9, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09</guid>
+      <pubDate>Tue, 10 Nov 2026 04:17:08 GMT</pubDate>
+      <description>&lt;p&gt;Monday, November 9, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on impeachment articles against the Defense Secretary over the Iran war, the new White House chief of staff after the midterm losses, the Cultural clash over a comedian's joke about a slain activist, and the Religious sitting on Pope Leo meeting clergy-abuse survivors in Argentina.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Trump calls the Iran war militarily effectively over as Massie files impeachment articles against Hegseth&lt;/strong&gt;&lt;br/&gt;Who holds the power to make war in a republic, and what is the remedy when that power is used without consent? Is accountability after victory still accountability?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Stephen Miller starts as White House chief of staff&lt;/strong&gt;&lt;br/&gt;After a defeat, does a leader owe the voters a change of course, or only a change of tactics? Is loyalty in an advisor a virtue or a danger?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Dave Chappelle jokes he feels better since Charlie Kirk was murdered; Erika Kirk calls it moral decay&lt;/strong&gt;&lt;br/&gt;Are there limits to laughter? Does free speech protect a joke from moral judgment, or only from punishment?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo meets clergy-abuse survivors and urges religions to build bridges in Buenos Aires&lt;/strong&gt;&lt;br/&gt;Can an institution that caused deep harm still speak with moral authority? What is the difference between repentance and reform?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Monday, November 9, 2026</itunes:title>
+      <itunes:summary>Monday, November 9, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on impeachment articles against the Defense Secretary over the Iran war, the new White House chief of staff after the midterm losses, the Cultural clash over a comedian's joke about a slain activist, and the Religious sitting on Pope Leo meeting clergy-abuse survivors in Argentina.
+Short edition:
+
+1. Trump calls the Iran war militarily effectively over as Massie files impeachment articles against Hegseth
+Who holds the power to make war in a republic, and what is the remedy when that power is used without consent? Is accountability after victory still accountability?
+
+2. Stephen Miller starts as White House chief of staff
+After a defeat, does a leader owe the voters a change of course, or only a change of tactics? Is loyalty in an advisor a virtue or a danger?
+
+3. Dave Chappelle jokes he feels better since Charlie Kirk was murdered; Erika Kirk calls it moral decay
+Are there limits to laughter? Does free speech protect a joke from moral judgment, or only from punishment?
+
+4. Pope Leo meets clergy-abuse survivors and urges religions to build bridges in Buenos Aires
+Can an institution that caused deep harm still speak with moral authority? What is the difference between repentance and reform?</itunes:summary>
+      <itunes:duration>00:27:25</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-09.mp3" length="12719732" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-09.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09"/>
+        <psc:chapter start="00:00:33.279" title="1. Trump calls the Iran war militarily effectively over as Massie files impeachment articles against Hegseth — Who holds the power to make war in a republic, and what is the remedy when that power is used without consent? Is accountability after victory still accountability?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09#sitting-p1"/>
+        <psc:chapter start="00:09:00.454" title="2. Stephen Miller starts as White House chief of staff — After a defeat, does a leader owe the voters a change of course, or only a change of tactics? Is loyalty in an advisor a virtue or a danger?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09#sitting-p2"/>
+        <psc:chapter start="00:15:20.748" title="3. Dave Chappelle jokes he feels better since Charlie Kirk was murdered; Erika Kirk calls it moral decay — Are there limits to laughter? Does free speech protect a joke from moral judgment, or only from punishment?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09#sitting-c1"/>
+        <psc:chapter start="00:21:35.330" title="4. Pope Leo meets clergy-abuse survivors and urges religions to build bridges in Buenos Aires — Can an institution that caused deep harm still speak with moral authority? What is the difference between repentance and reform?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-09#sitting-r1"/>
+      </psc:chapters>
+    </item>
+    <item>
+      <title>Sunday, November 8, 2026</title>
+      <link>https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08</link>
+      <guid isPermaLink="true">https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08</guid>
+      <pubDate>Mon, 09 Nov 2026 04:17:15 GMT</pubDate>
+      <description>&lt;p&gt;Sunday, November 8, 2026&lt;/p&gt;&lt;p&gt;Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.&lt;/p&gt;&lt;p&gt;Picked by prominence in the report and balance across sections: the lead Political story on House Democrats backing the impeachment of the Defense Secretary over the Iran war, the coalition mandate after a split verdict in Israel, the Cultural clash over a comedian's remark about a slain activist, and the Religious sitting on Pope Leo telling Argentina that the economy must serve the person.&lt;/p&gt;&lt;p&gt;Short edition:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;House Democrats back impeaching Defense Secretary Pete Hegseth&lt;/strong&gt;&lt;br/&gt;Who may take a nation to war, and how does a republic hold its servants accountable?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Israel's president tasks Netanyahu rival Gadi Eisenkot with forming a government&lt;/strong&gt;&lt;br/&gt;Who counts as a legitimate partner in governing, and should unity or mandate rule after a split verdict?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Dave Chappelle's Kirk remark at Madison Square Garden draws backlash&lt;/strong&gt;&lt;br/&gt;What are the limits of free expression, and is any subject off-limits to laughter?&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pope Leo XIV tells Argentina's Milei that the economy must serve the person&lt;/strong&gt;&lt;br/&gt;Does the economy exist for people, or people for the economy, and what role should faith play in public life?&lt;/li&gt;&lt;/ol&gt;</description>
+      <itunes:title>Sunday, November 8, 2026</itunes:title>
+      <itunes:summary>Sunday, November 8, 2026
+Drawn from that night's Nightly Discourse Report: every political, cultural, and religious story, each put to a table of historical thinkers.
+Picked by prominence in the report and balance across sections: the lead Political story on House Democrats backing the impeachment of the Defense Secretary over the Iran war, the coalition mandate after a split verdict in Israel, the Cultural clash over a comedian's remark about a slain activist, and the Religious sitting on Pope Leo telling Argentina that the economy must serve the person.
+Short edition:
+
+1. House Democrats back impeaching Defense Secretary Pete Hegseth
+Who may take a nation to war, and how does a republic hold its servants accountable?
+
+2. Israel's president tasks Netanyahu rival Gadi Eisenkot with forming a government
+Who counts as a legitimate partner in governing, and should unity or mandate rule after a split verdict?
+
+3. Dave Chappelle's Kirk remark at Madison Square Garden draws backlash
+What are the limits of free expression, and is any subject off-limits to laughter?
+
+4. Pope Leo XIV tells Argentina's Milei that the economy must serve the person
+Does the economy exist for people, or people for the economy, and what role should faith play in public life?</itunes:summary>
+      <itunes:duration>00:24:16</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-08.mp3" length="9895033" type="audio/mpeg"/>
+      <podcast:chapters url="https://jameselliott72693-hue.github.io/athenaeum/docket/audio/2026-11-08.chapters.json" type="application/json+chapters"/>
+      <psc:chapters version="1.2">
+        <psc:chapter start="00:00:00.000" title="Intro" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08"/>
+        <psc:chapter start="00:00:36.076" title="1. House Democrats back impeaching Defense Secretary Pete Hegseth — Who may take a nation to war, and how does a republic hold its servants accountable?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08#sitting-p1"/>
+        <psc:chapter start="00:07:43.217" title="2. Israel's president tasks Netanyahu rival Gadi Eisenkot with forming a government — Who counts as a legitimate partner in governing, and should unity or mandate rule after a split verdict?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08#sitting-p2"/>
+        <psc:chapter start="00:13:32.436" title="3. Dave Chappelle's Kirk remark at Madison Square Garden draws backlash — What are the limits of free expression, and is any subject off-limits to laughter?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08#sitting-c1"/>
+        <psc:chapter start="00:18:59.305" title="4. Pope Leo XIV tells Argentina's Milei that the economy must serve the person — Does the economy exist for people, or people for the economy, and what role should faith play in public life?" href="https://jameselliott72693-hue.github.io/athenaeum/docket.html?night=2026-11-08#sitting-r1"/>
+      </psc:chapters>
+    </item>
+  </channel>
+</rss>
