@@ -737,11 +737,424 @@ function setSort(state, which, value) {
     </article>`;
   }
 
+  const GROUP_LABELS = {
+    folder: "Grouped by bookmark folder.",
+    thinker: "Grouped by thinker.",
+    source: "Grouped by theme or source."
+  };
+
+  const DOCUMENT_CSS = [
+    ":root { color-scheme: light; }",
+    "* { box-sizing: border-box; }",
+    "body { margin: 0; background: #f7f1e6; color: #1c1712; font-family: Palatino, 'Palatino Linotype', Georgia, serif; line-height: 1.5; }",
+    ".commonplace-book { max-width: 68ch; margin: 0 auto; padding: 48px 24px 72px; }",
+    ".commonplace-title-page { min-height: 70vh; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 24px 0 48px; }",
+    ".commonplace-book.is-empty .commonplace-title-page { min-height: 0; }",
+    ".kicker { letter-spacing: 0.16em; text-transform: uppercase; color: #5e4316; font-family: 'Avenir Next', 'Segoe UI', sans-serif; font-size: 12px; font-weight: 600; margin: 0 0 8px; }",
+    ".commonplace-title { font-weight: 560; letter-spacing: -0.03em; line-height: 1.05; font-size: 44px; margin: 0 0 12px; }",
+    ".commonplace-section-title, .commonplace-contents { font-weight: 560; letter-spacing: -0.03em; line-height: 1.15; font-size: 28px; margin: 0 0 12px; }",
+    ".commonplace-epigraph { font-style: italic; font-size: 20px; white-space: pre-wrap; margin: 12px 0; }",
+    ".commonplace-meta, .commonplace-cite { color: #4e463c; }",
+    "a { color: #1c1712; }",
+    ".commonplace-quote { font-size: 21px; line-height: 1.5; white-space: pre-wrap; margin: 8px 0 12px; padding: 0 0 0 14px; border-left: 2px solid #5e4316; }",
+    ".commonplace-prose, .commonplace-note { white-space: pre-wrap; overflow-wrap: anywhere; }",
+    ".commonplace-speaker { font-size: 18px; margin: 0 0 4px; }",
+    ".commonplace-note { margin-top: 8px; }",
+    ".commonplace-section { margin-top: 36px; }",
+    ".commonplace-entry + .commonplace-entry { margin-top: 28px; }",
+    ".note-flag { font-family: 'Avenir Next', 'Segoe UI', sans-serif; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #5e4316; font-weight: 600; }",
+    ".commonplace-toc a { text-decoration: underline; text-underline-offset: 3px; }",
+    ".commonplace-print-hint { font-family: 'Avenir Next', 'Segoe UI', sans-serif; font-size: 13px; color: #4e463c; }",
+    "@page { margin: 0.8in; }",
+    "@media print {",
+    "  body { background: #fff; }",
+    "  .commonplace-book:not(.is-empty) .commonplace-title-page { break-after: page; min-height: 80vh; }",
+    "  .commonplace-section { break-before: page; }",
+    "  .commonplace-entry { break-inside: avoid; }",
+    "  .commonplace-print-hint { display: none; }",
+    "  a[href]::after { content: ' (' attr(href) ')'; font-size: 10pt; word-break: break-all; }",
+    "  .commonplace-toc a[href]::after { content: none; }",
+    "}",
+    "@media (max-width: 560px) {",
+    "  .commonplace-book { padding: 28px 16px 48px; }",
+    "  .commonplace-title { font-size: 32px; }",
+    "  .commonplace-quote { font-size: 18px; }",
+    "}"
+  ].join("\n");
+
+  function oneLine(value) {
+    return String(value == null ? "" : value).replace(/\s+/g, " ").trim();
+  }
+
+  function bookTitle(value) {
+    return oneLine(clip(value, 120)) || "Commonplace Book";
+  }
+
+  function bookEpigraph(value) {
+    return clip(value, 500);
+  }
+
+  function groupByOf(value) {
+    if (value === "thinker") return "thinker";
+    if (value === "source" || value === "theme") return "source";
+    return "folder";
+  }
+
+  function scopeOf(value) {
+    return value === "folders" ? "folders" : "all";
+  }
+
+  function commonplaceOptions(input) {
+    const source = input && typeof input === "object" ? input : {};
+    const folderIds = [];
+    const seen = new Set();
+    (Array.isArray(source.folderIds) ? source.folderIds : []).forEach((id) => {
+      const safe = safeId(id);
+      if (!safe || seen.has(safe)) return;
+      seen.add(safe);
+      folderIds.push(safe);
+    });
+    return {
+      scope: scopeOf(source.scope),
+      folderIds,
+      groupBy: groupByOf(source.groupBy),
+      title: bookTitle(source.title),
+      epigraph: bookEpigraph(source.epigraph),
+      baseUrl: typeof source.baseUrl === "string" ? source.baseUrl : ""
+    };
+  }
+
+  function emptyMessage(reason) {
+    if (reason === "choose") return "Choose at least one folder. The book stays empty until you do.";
+    if (reason === "folders") return "Nothing is saved in the folders you chose.";
+    return "Nothing is saved in this browser yet.";
+  }
+
+  function encounterKind(kind) {
+    return kind === "film" || kind === "song" || kind === "poem";
+  }
+
+  function sectionMeta(entry, groupBy) {
+    const item = entry.item;
+    if (groupBy === "thinker") {
+      if (!item.speaker) return { key: "thinker:", title: "Without a named thinker", rank: 1, sort: "" };
+      return { key: "thinker:" + item.speaker, title: item.speaker, rank: 0, sort: item.speaker.toLowerCase() };
+    }
+    if (groupBy === "source") {
+      if (encounterKind(item.kind)) {
+        const order = item.kind === "film" ? "0" : (item.kind === "song" ? "1" : "2");
+        return { key: "encounter:" + item.kind, title: "Further encounters · " + kindLabel(item.kind), rank: 2, sort: order };
+      }
+      if (item.work) return { key: "work:" + item.work, title: item.work, rank: 0, sort: item.work.toLowerCase() };
+      if (item.sittingTitle) return { key: "sitting:" + item.sittingTitle, title: item.sittingTitle, rank: 1, sort: item.sittingTitle.toLowerCase() };
+      return { key: "source:", title: "Without a named source", rank: 3, sort: "" };
+    }
+    const folder = entry.folder;
+    const mark = folder.emoji ? folder.emoji + " " : "";
+    return { key: "folder:" + folder.id, title: mark + folder.name, rank: num(folder.order), sort: folder.id };
+  }
+
+  function slug(text) {
+    const base = oneLine(text).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+    return base || "section";
+  }
+
+  function groupSections(entries, groupBy) {
+    const order = [];
+    const map = new Map();
+    entries.forEach((entry) => {
+      const meta = sectionMeta(entry, groupBy);
+      let section = map.get(meta.key);
+      if (!section) {
+        section = { key: meta.key, title: meta.title, rank: meta.rank, sort: meta.sort, entries: [] };
+        map.set(meta.key, section);
+        order.push(section);
+      }
+      section.entries.push(entry);
+    });
+    if (groupBy !== "folder") {
+      order.sort((a, b) => {
+        if (a.rank !== b.rank) return a.rank - b.rank;
+        return compareText(a.sort, b.sort);
+      });
+    }
+    const used = new Set();
+    return order.map((section) => {
+      const base = slug(section.title);
+      let id = base;
+      let n = 2;
+      while (used.has(id)) {
+        id = base + "-" + n;
+        n += 1;
+      }
+      used.add(id);
+      return { id: "cb-" + id, title: oneLine(section.title), entries: section.entries };
+    });
+  }
+
+  function commonplaceBook(state, options) {
+    const opts = commonplaceOptions(options);
+    const groups = view(state, "");
+    const wanted = new Set(opts.folderIds);
+    const entries = [];
+    groups.folders.forEach((group) => {
+      if (opts.scope === "folders" && !wanted.has(group.folder.id)) return;
+      group.items.forEach((item) => entries.push({ item, folder: group.folder }));
+    });
+    let emptyReason = "";
+    if (!entries.length) {
+      if (opts.scope === "folders" && !opts.folderIds.length) emptyReason = "choose";
+      else if (opts.scope === "folders") emptyReason = "folders";
+      else emptyReason = "none";
+    }
+    return {
+      title: opts.title,
+      epigraph: opts.epigraph,
+      scope: opts.scope,
+      groupBy: opts.groupBy,
+      groupLabel: GROUP_LABELS[opts.groupBy],
+      count: entries.length,
+      emptyReason,
+      message: emptyReason ? emptyMessage(emptyReason) : "",
+      sections: emptyReason ? [] : groupSections(entries, opts.groupBy)
+    };
+  }
+
+  function usableBase(value) {
+    const text = typeof value === "string" ? value.trim() : "";
+    if (!text || text.length > 500 || !/^https?:\/\/\S+$/.test(text)) return "";
+    try {
+      const url = new URL(text);
+      if (url.protocol !== "http:" && url.protocol !== "https:") return "";
+      return url.href;
+    } catch (err) {
+      return "";
+    }
+  }
+
+  function resolveLink(href, baseUrl) {
+    const external = httpUrl(href);
+    if (external) return external;
+    const local = safeHref(href);
+    if (!local) return "";
+    const base = usableBase(baseUrl);
+    if (!base) return local;
+    try {
+      return new URL(local, base).href;
+    } catch (err) {
+      return local;
+    }
+  }
+
+  function markdownHref(url) {
+    return String(url).replace(/[()\s]/g, (ch) => encodeURIComponent(ch));
+  }
+
+  function markdownLabel(value) {
+    const text = oneLine(value).replace(/[\[\]]/g, "");
+    return text || "Link";
+  }
+
+  function plainBlock(value) {
+    return String(value == null ? "" : value).split("\n").map((line) => {
+      if (/^\s*(?:[#>\-*]|\d+\.)/.test(line)) return " " + line;
+      return line;
+    }).join("\n");
+  }
+
+  function countSentence(count) {
+    return (count === 1 ? "1 passage" : count + " passages") + " saved in this browser.";
+  }
+
+  function entryMarkdown(entry, groupBy, baseUrl) {
+    const item = entry.item;
+    const lines = ["### " + kindLabel(item.kind), ""];
+    if (item.kind === "paraphrase") lines.push("Labeled paraphrase, not a quotation.", "");
+    if (encounterKind(item.kind)) lines.push("The room's note, not a quotation.", "");
+    if (item.kind === "verbatim" || item.kind === "passage") lines.push(quoteLines(item.text), "");
+    else lines.push(plainBlock(item.text), "");
+    if (item.speaker) lines.push(plainBlock(item.speaker), "");
+    const cite = [item.work, item.citation].filter(Boolean).join(", ");
+    if (cite) lines.push(plainBlock(cite), "");
+    const source = resolveLink(item.sourceUrl, baseUrl);
+    if (source) lines.push("[Open the source](" + markdownHref(source) + ")", "");
+    if (item.edition) lines.push(plainBlock((item.kind === "film" ? "Rating: " : "Edition: ") + item.edition), "");
+    if (item.night) lines.push("Night: " + item.night, "");
+    if (item.sittingTitle) lines.push("Sitting: " + plainBlock(item.sittingTitle), "");
+    if (groupBy !== "folder" && entry.folder) lines.push("Folder: " + plainBlock(entry.folder.name), "");
+    const spot = resolveLink(item.href, baseUrl);
+    const place = resolveLink(item.place, baseUrl);
+    if (spot) lines.push("[Open this spot](" + markdownHref(spot) + ")", "");
+    if (place && place !== spot) lines.push("[Open the sitting](" + markdownHref(place) + ")", "");
+    if (item.note) lines.push("Note: " + plainBlock(item.note), "");
+    return lines.join("\n");
+  }
+
+  function commonplaceMarkdown(state, options) {
+    const opts = commonplaceOptions(options);
+    const book = commonplaceBook(state, opts);
+    const lines = ["# " + book.title, ""];
+    if (book.epigraph) lines.push(quoteLines(book.epigraph), "");
+    if (book.message) {
+      lines.push(book.message, "");
+      return lines.join("\n").replace(/\n+$/, "\n");
+    }
+    lines.push(book.groupLabel + " " + countSentence(book.count), "");
+    lines.push("## Table of contents", "");
+    book.sections.forEach((section) => {
+      lines.push("- [" + markdownLabel(section.title) + "](#" + section.id + ")");
+    });
+    lines.push("");
+    book.sections.forEach((section) => {
+      lines.push('<a id="' + section.id + '"></a>', "", "## " + section.title, "");
+      section.entries.forEach((entry) => {
+        lines.push(entryMarkdown(entry, book.groupBy, opts.baseUrl).replace(/\n+$/, ""), "");
+      });
+    });
+    return lines.join("\n").replace(/\n+$/, "\n");
+  }
+
+  function anchorHtml(href, label, external) {
+    const extra = external ? ' target="_blank" rel="noopener noreferrer"' : "";
+    return `<a href="${escapeAttr(href)}"${extra}>${escapeText(label)}</a>`;
+  }
+
+  function citeHtml(item, baseUrl) {
+    const url = resolveLink(item.sourceUrl, baseUrl);
+    if (!item.work && !item.citation && !url) return "";
+    const parts = [];
+    if (item.work) {
+      const name = url ? anchorHtml(url, item.work, true) : escapeText(item.work);
+      parts.push(`<cite>${name}</cite>`);
+    } else if (url) {
+      parts.push(anchorHtml(url, "Open the source", true));
+    }
+    if (item.citation) parts.push(escapeText(item.citation));
+    return `<p class="commonplace-cite">${parts.join(", ")}</p>`;
+  }
+
+  function entryHtml(entry, groupBy, baseUrl) {
+    const item = entry.item;
+    const quoted = item.kind === "verbatim" || item.kind === "passage";
+    const flag = item.kind === "paraphrase"
+      ? `<p class="note-flag">Labeled paraphrase, not a quotation.</p>`
+      : (encounterKind(item.kind) ? `<p class="note-flag">The room's note, not a quotation.</p>` : "");
+    const body = quoted
+      ? `<blockquote class="commonplace-quote">${escapeText(item.text)}</blockquote>`
+      : `<p class="commonplace-prose">${escapeText(item.text)}</p>`;
+    const bits = [];
+    if (item.speaker) bits.push(`<p class="commonplace-speaker">${escapeText(item.speaker)}</p>`);
+    const cite = citeHtml(item, baseUrl);
+    if (cite) bits.push(cite);
+    if (item.edition) {
+      const label = item.kind === "film" ? "Rating" : "Edition";
+      bits.push(`<p class="commonplace-meta">${escapeText(label)}: ${escapeText(item.edition)}</p>`);
+    }
+    const when = [item.night, item.sittingTitle].filter(Boolean).join(" · ");
+    if (when) bits.push(`<p class="commonplace-meta">${escapeText(when)}</p>`);
+    if (groupBy !== "folder" && entry.folder) bits.push(`<p class="commonplace-meta">Folder: ${escapeText(entry.folder.name)}</p>`);
+    const spot = resolveLink(item.href, baseUrl);
+    const place = resolveLink(item.place, baseUrl);
+    if (spot) bits.push(`<p>${anchorHtml(spot, "Open this spot", false)}</p>`);
+    if (place && place !== spot) bits.push(`<p>${anchorHtml(place, "Open the sitting", false)}</p>`);
+    if (item.note) bits.push(`<p class="commonplace-note"><span class="kicker">Note</span> ${escapeText(item.note)}</p>`);
+    return `<article class="commonplace-entry">
+      <p class="kicker">${escapeText(kindLabel(item.kind))}</p>
+      ${flag}
+      ${body}
+      ${bits.join("\n")}
+    </article>`;
+  }
+
+  function headingTag(embedded, level) {
+    return embedded ? (level === 1 ? "h2" : "h3") : (level === 1 ? "h1" : "h2");
+  }
+
+  function commonplaceMarkup(book, baseUrl, embedded) {
+    const titleTag = headingTag(embedded, 1);
+    const sectionTag = headingTag(embedded, 2);
+    const epigraph = book.epigraph ? `<p class="commonplace-epigraph">${escapeText(book.epigraph)}</p>` : "";
+    const summary = book.message
+      ? `<p class="commonplace-empty">${escapeText(book.message)}</p>`
+      : `<p class="commonplace-meta">${escapeText(book.groupLabel)} ${escapeText(countSentence(book.count))}</p>`;
+    const hint = embedded ? "" : `<p class="commonplace-print-hint">Print this page, or save it as PDF from the browser.</p>`;
+    let toc = "";
+    let body = "";
+    if (!book.message) {
+      const items = book.sections.map((section) => `<li><a href="#${escapeAttr(section.id)}">${escapeText(section.title)}</a></li>`).join("");
+      toc = `<nav class="commonplace-toc" aria-label="Table of contents"><${sectionTag} class="commonplace-contents">Table of contents</${sectionTag}><ol>${items}</ol></nav>`;
+      body = book.sections.map((section) => {
+        const entries = section.entries.map((entry) => entryHtml(entry, book.groupBy, baseUrl)).join("");
+        return `<section class="commonplace-section" id="${escapeAttr(section.id)}" aria-labelledby="${escapeAttr(section.id)}-title"><${sectionTag} class="commonplace-section-title" id="${escapeAttr(section.id)}-title">${escapeText(section.title)}</${sectionTag}>${entries}</section>`;
+      }).join("");
+    }
+    const emptyClass = book.message ? " is-empty" : "";
+    return `<article class="commonplace-book${emptyClass}" id="commonplace-book" tabindex="-1">
+      <header class="commonplace-title-page">
+        <p class="kicker">The Athenaeum</p>
+        <${titleTag} class="commonplace-title">${escapeText(book.title)}</${titleTag}>
+        ${epigraph}
+        ${summary}
+        ${hint}
+      </header>
+      ${toc}
+      ${body}
+    </article>`;
+  }
+
+  function commonplaceHtml(state, options) {
+    const book = commonplaceBook(state, options);
+    return commonplaceMarkup(book, "", true);
+  }
+
+  function commonplaceDocument(state, options) {
+    const opts = commonplaceOptions(options);
+    const book = commonplaceBook(state, opts);
+    const inner = commonplaceMarkup(book, opts.baseUrl, false);
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>${escapeText(book.title)}</title>
+<style>
+${DOCUMENT_CSS}
+</style>
+</head>
+<body>
+${inner}
+</body>
+</html>
+`;
+  }
+
+  function commonplaceFilename(title, ext) {
+    const text = oneLine(clip(title, 120)).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+    return (text || "commonplace-book") + (ext === "md" ? ".md" : ".html");
+  }
+
+  function commonplaceFolderFields(state, selectedIds) {
+    const selected = new Set();
+    (Array.isArray(selectedIds) ? selectedIds : []).forEach((id) => {
+      const safe = safeId(id);
+      if (safe) selected.add(safe);
+    });
+    return view(state, "").folders.map((group) => {
+      const folder = group.folder;
+      const id = "commonplace-folder-" + folder.id;
+      const checked = selected.has(folder.id) ? " checked" : "";
+      const mark = folder.emoji ? folder.emoji + " " : "";
+      const count = group.items.length === 1 ? "1 passage" : group.items.length + " passages";
+      return `<label class="check" for="${escapeAttr(id)}"><input type="checkbox" id="${escapeAttr(id)}" name="commonplace-folder" value="${escapeAttr(folder.id)}"${checked} /> <span>${escapeText(mark + folder.name)}</span> <span class="hint">(${escapeText(count)})</span></label>`;
+    }).join("");
+  }
+
   return {
     VERSION, STORAGE_KEY, UNSORTED, COLORS, SORTS, KINDS,
     emptyState, normalize, load, save, addItem, updateItem, removeItem,
     createFolder, renameFolder, labelFolder, deleteFolder, moveItem, reorder, orderIds, setSort,
     view, kindLabel, locate, exportText, exportMarkdown, exportJson, importLibrary, findByBlock,
-    escapeText, escapeAttr, safeHref, exactText, libraryHtml, colorChoices, folderOptions
+    escapeText, escapeAttr, safeHref, exactText, libraryHtml, colorChoices, folderOptions,
+    commonplaceBook, commonplaceMarkdown, commonplaceHtml, commonplaceDocument, commonplaceFilename, commonplaceFolderFields
   };
 });
