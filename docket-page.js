@@ -1,9 +1,11 @@
 (function () {
   const D = window.AthenaeumDocket;
   const $ = (id) => document.getElementById(id);
-  const state = { nights: [], openable: [], archiveNights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, agreementRows: [], catalog: null, chair: "" };
+  const state = { nights: [], openable: [], archiveNights: [], night: null, report: null, entry: null, timers: {}, read: {}, unknown: "", fileNote: "", spaceTurn: false, agreements: {}, agreementRows: [], catalog: null, chair: "", encounters: null };
   let searchTimer = 0;
   let requestSeq = 0;
+  let encountersPromise = null;
+  let encountersScheduled = false;
 
   function esc(text) {
     return D.escapeText(text);
@@ -420,6 +422,7 @@
     if (anchor && anchor.scrollIntoView) anchor.scrollIntoView();
     notifyDocketPage();
     if (window.AthenaeumEncountersUI) window.AthenaeumEncountersUI.refresh(host);
+    scheduleEncounters();
   }
 
   function sectionOf(node) {
@@ -499,6 +502,52 @@
       return { catalog, map };
     } catch (err) {
       return null;
+    }
+  }
+
+  function mountEncounterPanels() {
+    if (!state.encounters || !state.night || state.chair) return;
+    const host = $("docket");
+    if (!host) return;
+    (state.night.sittings || []).forEach((sitting) => {
+      const section = document.getElementById("sitting-" + sitting.id);
+      if (!section || section.querySelector(".encounter-panel")) return;
+      const html = encounterBlock(sitting);
+      if (!html) return;
+      section.insertAdjacentHTML("beforeend", html);
+    });
+    if (window.AthenaeumEncountersUI) window.AthenaeumEncountersUI.refresh(host);
+  }
+
+  function ensureEncounters() {
+    if (state.encounters) return Promise.resolve(state.encounters);
+    if (!encountersPromise) {
+      encountersPromise = loadEncounters().then((pack) => {
+        state.encounters = pack;
+        mountEncounterPanels();
+        return pack;
+      }).catch(() => null);
+    }
+    return encountersPromise;
+  }
+
+  function scheduleEncounters() {
+    if (state.encounters || encountersPromise || encountersScheduled) return;
+    if (!state.night || !(state.night.sittings || []).length) return;
+    encountersScheduled = true;
+    let started = false;
+    const start = () => {
+      if (started) return;
+      started = true;
+      window.removeEventListener("scroll", onScroll);
+      ensureEncounters();
+    };
+    const onScroll = () => start();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    if (typeof window.requestIdleCallback === "function") {
+      window.requestIdleCallback(start, { timeout: 1500 });
+    } else {
+      window.setTimeout(start, 1);
     }
   }
 
@@ -693,13 +742,11 @@
 
   async function boot() {
     bindSpaceTurn();
-    const [response, archiveRes, agreements, encounterPack] = await Promise.all([
+    const [response, archiveRes, agreements] = await Promise.all([
       fetch("docket/index.json"),
       fetch("docket/archive.json"),
-      loadAgreements(),
-      loadEncounters()
+      loadAgreements()
     ]);
-    state.encounters = encounterPack;
     if (!response.ok) throw new Error("missing docket index");
     const index = await response.json();
     let storedArchive = [];
@@ -748,11 +795,31 @@
     });
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  function bindPodcastCopy() {
+    const button = $("podcast-copy");
+    if (!button) return;
+    button.addEventListener("click", () => {
+      const url = button.getAttribute("data-feed") || "";
+      const note = $("podcast-copy-note");
+      const show = (message) => { if (note) note.textContent = message; };
+      const write = navigator.clipboard && navigator.clipboard.writeText;
+      if (!url || !write) {
+        show(url);
+        return;
+      }
+      write.call(navigator.clipboard, url).then(() => show("Feed address copied.")).catch(() => show(url));
+    });
+  }
+
+  function start() {
+    bindPodcastCopy();
     boot().catch((err) => {
       const host = $("docket");
       if (host) host.innerHTML = `<p class="err">The docket could not be loaded. Open this page through the site, not as a loose file.</p>`;
       console.error(err);
     });
-  });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
 })();

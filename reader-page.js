@@ -83,6 +83,8 @@
     const host = $("reader-library");
     if (!host) return;
     host.innerHTML = Reader.libraryHtml(state, query);
+    refreshCommonplaceFolders();
+    refreshCommonplacePreview();
     announce(baseStatus());
     if (!focusSelector) return;
     const node = document.querySelector(focusSelector);
@@ -375,4 +377,107 @@
     render();
     announce("Order saved.");
   });
+
+  function checkedValues(selector) {
+    return Array.prototype.map.call(document.querySelectorAll(selector), (node) => node.value);
+  }
+
+  function commonplaceOptions(withBase) {
+    const scopeNode = document.querySelector("input[name='commonplace-scope']:checked");
+    const groupNode = document.querySelector("input[name='commonplace-group']:checked");
+    const options = {
+      scope: scopeNode ? scopeNode.value : "all",
+      groupBy: groupNode ? groupNode.value : "folder",
+      folderIds: checkedValues("input[name='commonplace-folder']:checked"),
+      title: $("commonplace-title") ? $("commonplace-title").value : "",
+      epigraph: $("commonplace-epigraph") ? $("commonplace-epigraph").value : ""
+    };
+    if (withBase) options.baseUrl = new URL("./", window.location.href).href;
+    return options;
+  }
+
+  function refreshCommonplaceFolders() {
+    const box = $("commonplace-folders");
+    if (!box || !Reader.commonplaceFolderFields) return;
+    const selected = checkedValues("#commonplace-folders input:checked");
+    box.innerHTML = Reader.commonplaceFolderFields(state, selected);
+  }
+
+  function syncCommonplaceScope() {
+    const selected = document.querySelector("input[name='commonplace-scope']:checked");
+    const box = $("commonplace-folders");
+    if (!box) return;
+    box.hidden = !selected || selected.value !== "folders";
+  }
+
+  function refreshCommonplacePreview() {
+    const host = $("commonplace-preview-host");
+    if (!host || host.hidden || !Reader.commonplaceHtml) return;
+    host.innerHTML = Reader.commonplaceHtml(state, commonplaceOptions(false));
+  }
+
+  function openCommonplacePreview() {
+    const host = $("commonplace-preview-host");
+    if (!host) return null;
+    const options = commonplaceOptions(false);
+    host.hidden = false;
+    host.innerHTML = Reader.commonplaceHtml(state, options);
+    const book = Reader.commonplaceBook(state, options);
+    const article = host.querySelector(".commonplace-book");
+    if (article && article.focus) article.focus();
+    if (host.scrollIntoView) host.scrollIntoView({ behavior: "smooth", block: "start" });
+    announce(book.message || ("Commonplace book ready. " + book.count + (book.count === 1 ? " passage." : " passages.")));
+    return book;
+  }
+
+  const commonplaceForm = $("commonplace-form");
+  if (commonplaceForm) {
+    syncCommonplaceScope();
+    commonplaceForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      openCommonplacePreview();
+    });
+    commonplaceForm.addEventListener("change", (event) => {
+      const name = event.target && event.target.name;
+      if (name === "commonplace-scope") syncCommonplaceScope();
+      if (!$("commonplace-preview-host").hidden) refreshCommonplacePreview();
+    });
+    commonplaceForm.addEventListener("input", (event) => {
+      const id = event.target && event.target.id;
+      if (id !== "commonplace-title" && id !== "commonplace-epigraph") return;
+      if (!$("commonplace-preview-host").hidden) refreshCommonplacePreview();
+    });
+    $("commonplace-print").addEventListener("click", () => {
+      openCommonplacePreview();
+      document.body.classList.add("commonplace-printing");
+      const cleanup = () => {
+        document.body.classList.remove("commonplace-printing");
+        window.removeEventListener("afterprint", cleanup);
+      };
+      window.addEventListener("afterprint", cleanup);
+      try { window.print(); } catch (err) { cleanup(); }
+    });
+    $("commonplace-html").addEventListener("click", () => {
+      const options = commonplaceOptions(true);
+      const book = Reader.commonplaceBook(state, options);
+      download(Reader.commonplaceFilename(book.title, "html"), Reader.commonplaceDocument(state, options), "text/html");
+      announce(book.message || "Downloaded the commonplace book as HTML.");
+    });
+    $("commonplace-md").addEventListener("click", () => {
+      const options = commonplaceOptions(true);
+      const book = Reader.commonplaceBook(state, options);
+      download(Reader.commonplaceFilename(book.title, "md"), Reader.commonplaceMarkdown(state, options), "text/markdown");
+      announce(book.message || "Downloaded the commonplace book as Markdown.");
+    });
+  }
+
+  const commonplaceJump = $("reader-commonplace");
+  if (commonplaceJump) {
+    commonplaceJump.addEventListener("click", () => {
+      const section = $("commonplace");
+      if (section && section.scrollIntoView) section.scrollIntoView({ behavior: "smooth", block: "start" });
+      const title = $("commonplace-title");
+      if (title && title.focus) title.focus();
+    });
+  }
 })();

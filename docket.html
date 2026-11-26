@@ -20,6 +20,7 @@
   <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="alternate" type="application/rss+xml" title="The Athenaeum Podcast" href="docket/podcast.xml" />
 </head>
 <body>
   <header>
@@ -46,6 +47,11 @@
       <a href="archive.html">Older nights</a>
       <a href="saved.html">Saved</a>
     </nav>
+    <p class="podcast-rss">
+      <a href="docket/podcast.xml">Podcast RSS</a>
+      <button type="button" id="podcast-copy" class="podcast-copy" data-feed="https://jameselliott72693-hue.github.io/athenaeum/docket/podcast.xml">Copy feed</button>
+      <span id="podcast-copy-note" class="hint" role="status"></span>
+    </p>
   </header>
   <main>
     <div id="docket" class="docket" aria-live="polite" aria-busy="true">
@@ -57,12 +63,12 @@
   <footer>
     <p>A line in quotation marks is a verified verbatim passage, cited to its work and place. A Modern read is a paraphrase of that chair's turn, labeled as such. Everything else on this page is the night's own wording. A chair's name opens the live sittings and verified quotations for that chair. A chair on the shelf also links there. A highlight keeps the words themselves in this browser.</p>
   </footer>
-  <script src="reader.js"></script>
-  <script src="docket.js"></script>
-  <script src="keys.js"></script>
-  <script src="encounters.js"></script>
-  <script src="reader-ui.js"></script>
-  <script src="encounters-ui.js"></script>
-  <script src="docket-page.js"></script>
+  <script src="reader.js" defer></script>
+  <script src="docket.js" defer></script>
+  <script src="keys.js" defer></script>
+  <script src="encounters.js" defer></script>
+  <script src="reader-ui.js" defer></script>
+  <script src="encounters-ui.js" defer></script>
+  <script src="docket-page.js" defer></script>
 </body>
 </html>
