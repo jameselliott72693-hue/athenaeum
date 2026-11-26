@@ -120,7 +120,7 @@ const word = hiddenWord();
 const guide = fs.readFileSync(path.join(root, "build_sittings.md"), "utf8");
 assert.ok(guide.indexOf("Week of <Monday> to <Sunday>") >= 0);
 assert.ok(guide.indexOf('"themes"') >= 0);
-["index.html", "docket.html", "archive.html", "saved.html", "encounters.html"].forEach((name) => {
+["index.html", "docket.html", "archive.html", "saved.html", "encounters.html", "thinkers.html"].forEach((name) => {
   const page = fs.readFileSync(path.join(root, name), "utf8");
   assert.ok(page.indexOf('href="encounters.html"') >= 0, name);
 });
