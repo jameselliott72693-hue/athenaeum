@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Highlights and quotes saved in this browser, kept in folders you can sort, rename, and export." />
+  <meta name="description" content="Highlights and quotes saved in this browser, kept in folders you can sort, rename, export, and compile into a commonplace book." />
   <meta name="theme-color" content="#1c1712" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="Athenaeum" />
@@ -43,9 +43,11 @@
     </nav>
   </header>
   <main>
-    <p class="kicker">This browser</p>
-    <h2>Saved</h2>
-    <p class="lede">Select text in a sitting, or use Save quote on a verified quotation. A film, a song, or a poem from Further encounters can sit in the same folders. Each one is marked by its kind.</p>
+    <div class="saved-intro">
+      <p class="kicker">This browser</p>
+      <h2>Saved</h2>
+      <p class="lede">Select text in a sitting, or use Save quote on a verified quotation. A film, a song, or a poem from Further encounters can sit in the same folders. Each one is marked by its kind.</p>
+    </div>
     <p id="reader-status" class="hint" role="status"></p>
     <div class="reader-tools">
       <label class="field" for="reader-search">Search saved passages</label>
@@ -60,10 +62,42 @@
         <button type="button" id="reader-export-text">Export text</button>
         <button type="button" id="reader-export-md">Export Markdown</button>
         <button type="button" id="reader-import">Import JSON</button>
+        <button type="button" id="reader-commonplace">Commonplace book</button>
       </div>
       <input id="reader-import-file" type="file" accept="application/json,.json" hidden />
     </div>
     <div id="reader-library" class="reader-library"></div>
+    <section class="commonplace" id="commonplace" aria-labelledby="commonplace-heading">
+      <form id="commonplace-form" class="commonplace-controls" action="#">
+        <p class="kicker">This browser</p>
+        <h2 id="commonplace-heading">Commonplace book</h2>
+        <p class="lede">Gather the passages, quotations, and encounters already saved here into a book. The words stay as they were saved. Nothing is written for you.</p>
+        <fieldset>
+          <legend>What to include</legend>
+          <label class="check"><input type="radio" name="commonplace-scope" value="all" checked /> All saved items</label>
+          <label class="check"><input type="radio" name="commonplace-scope" value="folders" /> Selected folders</label>
+          <div id="commonplace-folders" class="commonplace-folders" hidden></div>
+        </fieldset>
+        <fieldset>
+          <legend>Arrange by</legend>
+          <label class="check"><input type="radio" name="commonplace-group" value="folder" checked /> Bookmark folder</label>
+          <label class="check"><input type="radio" name="commonplace-group" value="thinker" /> Thinker</label>
+          <label class="check"><input type="radio" name="commonplace-group" value="source" /> Theme or source</label>
+          <p class="hint" id="commonplace-group-hint">Theme or source follows the work, or the sitting when a passage names no work. A film, a song, or a poem stays with its kind.</p>
+        </fieldset>
+        <label class="field" for="commonplace-title">Book title</label>
+        <input id="commonplace-title" type="text" maxlength="120" autocomplete="off" placeholder="Commonplace Book" />
+        <label class="field" for="commonplace-epigraph">Epigraph or subtitle</label>
+        <textarea id="commonplace-epigraph" maxlength="500" placeholder="Optional. Your own line, shown under the title."></textarea>
+        <div class="row-btns">
+          <button type="submit" class="solid" id="commonplace-preview">Preview</button>
+          <button type="button" id="commonplace-print">Print or save as PDF</button>
+          <button type="button" id="commonplace-html">Download HTML</button>
+          <button type="button" id="commonplace-md">Download Markdown</button>
+        </div>
+      </form>
+      <div id="commonplace-preview-host" class="commonplace-preview" hidden aria-label="Commonplace book preview"></div>
+    </section>
   </main>
   <footer>
     <p>A saved passage keeps the exact words, the speaker when one is known, and whether it is a verbatim quotation or a paraphrase. A Modern read stays labeled as a paraphrase. Nothing here is sent to a server.</p>

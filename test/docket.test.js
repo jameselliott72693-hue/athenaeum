@@ -495,10 +495,14 @@ assert.ok(archivedStory.includes("https://web.archive.org/web/20261031190939id_/
 assert.ok(!/javascript:/i.test(archivedStory));
 assert.strictEqual(archivedStory.split(">archived<").length - 1, 1);
 const novemberReport = JSON.parse(fs.readFileSync(path.join(__dirname, "../docket/2026-11-01-report.json"), "utf8"));
-const circuit = novemberReport.sections.flatMap((section) => section.stories).flatMap((story) => story.sources || []).find((source) => source.url === "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf");
+const circuit = novemberReport.sections.flatMap((section) => section.stories).flatMap((story) => story.sources || []).find((source) => source.name === "Ninth Circuit order");
+const waybackPdf = /^https:\/\/web\.archive\.org\/web\/\d+id_\/https:\/\/cdn\.ca9\.uscourts\.gov\/datastore\/opinions\/2026\/10\/30\/26-7231\.pdf$/;
 assert.ok(circuit, "November 1 Ninth Circuit source");
-assert.ok(/^https:\/\/web\.archive\.org\/web\/\d+id_\/https:\/\/cdn\.ca9\.uscourts\.gov\/datastore\/opinions\/2026\/10\/30\/26-7231\.pdf$/.test(circuit.archived), circuit.archived);
+assert.ok(waybackPdf.test(circuit.url), circuit.url);
+assert.ok(waybackPdf.test(circuit.archived), circuit.archived);
+assert.strictEqual(docket.httpUrl(circuit.url), circuit.url);
 assert.strictEqual(docket.httpUrl(circuit.archived), circuit.archived);
+assert.ok(!novemberReport.sections.some((section) => (section.stories || []).some((story) => (story.sources || []).some((source) => source.url === "https://cdn.ca9.uscourts.gov/datastore/opinions/2026/10/30/26-7231.pdf"))));
 assert.ok(poisonedStory.includes('target="_blank"'));
 const tapCss = fs.readFileSync(path.join(__dirname, "../styles.css"), "utf8");
 assert.ok(/a\.tap-target\s*\{[^}]*min-height:\s*24px/.test(tapCss));

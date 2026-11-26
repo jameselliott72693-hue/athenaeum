@@ -124,3 +124,25 @@ assert.ok(guide.indexOf('"themes"') >= 0);
   const page = fs.readFileSync(path.join(root, name), "utf8");
   assert.ok(page.indexOf('href="encounters.html"') >= 0, name);
 });
+
+const replaced = {
+  "song-young": "https://en.wikipedia.org/wiki/To_Be_Young,_Gifted_and_Black",
+  "poem-slumber": "https://en.wikipedia.org/wiki/A_slumber_did_my_spirit_seal",
+  "poem-fears": "https://en.wikipedia.org/wiki/When_I_Have_Fears",
+  "poem-house": "https://en.wikipedia.org/wiki/Verses_upon_the_Burning_of_Our_House",
+  "poem-wheatley": "https://en.wikipedia.org/wiki/Poems_on_Various_Subjects,_Religious_and_Moral#%22On_Being_Brought_from_Africa_to_America%22"
+};
+Object.keys(replaced).forEach((id) => {
+  const work = catalog.works.find((row) => row.id === id);
+  assert.ok(work, id);
+  assert.strictEqual(work.url, replaced[id]);
+});
+[
+  "https://en.wikipedia.org/wiki/To_Be_Young,_Gifted_and_Black_(song)",
+  "https://en.wikipedia.org/wiki/A_Slumber_Did_My_Spirit_Seal",
+  "https://en.wikipedia.org/wiki/When_I_Have_Fears_That_I_May_Cease_to_Be",
+  "https://en.wikipedia.org/wiki/Here_Follows_Some_Verses_upon_the_Burning_of_Our_House",
+  "https://en.wikipedia.org/wiki/On_Being_Brought_from_Africa_to_America"
+].forEach((url) => {
+  assert.ok(!raw.works.some((work) => work.url === url), url);
+});
