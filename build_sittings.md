@@ -41,3 +41,13 @@ If `themes` is absent, the page looks in `data/encounter-map.json` under `date/s
 If both are missing, the page infers tags from the question. If that inference finds nothing, the Further encounters section is omitted. The sitting still reads as before.
 
 Works for those tags live in `data/encounters.json`. Add a work there when the catalog should grow. Do not paste song lyrics, and do not paste a poem that is still in copyright. A public-domain poem may include its text only with the edition it was taken from.
+
+## Podcast feed
+
+When the edition has an audio file, commit `docket/audio/YYYY-MM-DD.mp3` and set `"audio": "audio/YYYY-MM-DD.mp3"` on that night in `docket/index.json`. Then regenerate the feed and the chapter file:
+
+```
+node scripts/build-podcast.js
+```
+
+Commit `docket/podcast.xml` and `docket/audio/YYYY-MM-DD.chapters.json` with the MP3. The script measures the file's duration and size. It does not invent either. Chapter markers follow the short edition: an introduction, then each sitting named in `short_edition.picks`, timed by the length of that sitting's text. To publish exact cue times instead, add `audio_chapters` to the sittings file, one row per part, with `id` and `start` in seconds. The intro id is `intro`. Run the same script again after replacing an MP3 or moving an audio night into `docket/archive.json`.

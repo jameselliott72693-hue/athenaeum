@@ -20,6 +20,7 @@
   <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="alternate" type="application/rss+xml" title="The Athenaeum Podcast" href="docket/podcast.xml" />
 </head>
 <body>
   <header>
@@ -45,6 +46,11 @@
       <a href="archive.html">Older nights</a>
       <a href="saved.html">Saved</a>
     </nav>
+    <p class="podcast-rss">
+      <a href="docket/podcast.xml">Podcast RSS</a>
+      <button type="button" id="podcast-copy" class="podcast-copy" data-feed="https://jameselliott72693-hue.github.io/athenaeum/docket/podcast.xml">Copy feed</button>
+      <span id="podcast-copy-note" class="hint" role="status"></span>
+    </p>
   </header>
   <main>
     <div id="docket" class="docket" aria-live="polite" aria-busy="true">

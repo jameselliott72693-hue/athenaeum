@@ -454,6 +454,31 @@ footer { color: var(--soft); font-size: 14px; }
 #docket a.source-archived, #archive a.source-archived { color: var(--soft); }
 .night-audio { margin: 8px 0 16px; max-width: 420px; }
 .night-audio audio { display: block; width: 100%; margin-top: 6px; }
+.podcast-rss {
+  flex: 1 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0 0;
+}
+.podcast-rss a,
+#docket a.podcast-rss-link {
+  color: var(--brass);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+button.podcast-copy {
+  min-height: 32px;
+  padding: 4px 12px;
+  background: transparent;
+  color: var(--soft);
+  font-size: 13px;
+}
+.night-audio .podcast-rss-link { display: inline-block; margin-top: 8px; }
 .archive-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
 .archive-list a {
   display: flex;

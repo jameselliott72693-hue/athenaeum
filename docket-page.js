@@ -748,7 +748,24 @@
     });
   }
 
+  function bindPodcastCopy() {
+    const button = $("podcast-copy");
+    if (!button) return;
+    button.addEventListener("click", () => {
+      const url = button.getAttribute("data-feed") || "";
+      const note = $("podcast-copy-note");
+      const show = (message) => { if (note) note.textContent = message; };
+      const write = navigator.clipboard && navigator.clipboard.writeText;
+      if (!url || !write) {
+        show(url);
+        return;
+      }
+      write.call(navigator.clipboard, url).then(() => show("Feed address copied.")).catch(() => show(url));
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
+    bindPodcastCopy();
     boot().catch((err) => {
       const host = $("docket");
       if (host) host.innerHTML = `<p class="err">The docket could not be loaded. Open this page through the site, not as a loose file.</p>`;
